@@ -1,0 +1,12 @@
+Possible script:
+ add "\override VerticalAxisGroup #'staff-affinity = #0"
+ to the \Lyrics context
+
+ Get rid of \with clauses in Lyrics
+
+reverse order of \new Lyrics directives
+
+ remove all \dropLyrics commands...
+
+
+(Sometimes \dropLyrics is used to center lyrics for choruses.  I am not sure how this will work with the staff-affinity = #0 line.)
