@@ -1,0 +1,100 @@
+# -*-compilation-*-
+Changing working directory to: `C:/BTSync/Christmas Carol Book/ly/unmapped/lytemp'
+Processing `C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly'
+Parsing...
+Interpreting music...[8]
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:69:4: warning: trying to use \partial after the start of a piece
+    
+    \partial 2. g2. \bar "||" \break
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:116:11: warning: barcheck failed at: -3/4
+  g2. fis4 
+           |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:223:12: warning: barcheck failed at: -3/4
+  e2( d4) c 
+            |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:272:12: warning: barcheck failed at: -3/4
+  c( a b) d 
+            |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:71:4: warning: trying to use \partial after the start of a piece
+    
+    \partial 4 d'4 |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:117:6: warning: barcheck failed at: -1/4
+  g2. 
+      |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:224:6: warning: barcheck failed at: -1/4
+  b2. 
+      |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:273:7: warning: barcheck failed at: -1/4
+  g,2. 
+       |
+[16]
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:78:4: warning: trying to use \partial after the start of a piece
+    
+    \partial 2. <<e2. {s2^\> s8. s16\!}>>  \break
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:125:12: warning: barcheck failed at: -3/4
+  e( c b) b 
+            |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:232:14: warning: barcheck failed at: -3/4
+  a2( g4) fis 
+              |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:281:12: warning: barcheck failed at: -3/4
+  c( a b) b 
+            |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:82:2: warning: trying to use \partial after the start of a piece
+  
+  \partial 4 e4 |
+[24][32]
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:96:2: warning: trying to use \partial after the start of a piece
+  
+  \partial 2. g2. \bar "||" \break
+Preprocessing graphical objects...
+Interpreting music...
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:69:4: warning: trying to use \partial after the start of a piece
+    
+    \partial 2. g2. \bar "||" \break
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:116:11: warning: barcheck failed at: -3/4
+  g2. fis4 
+           |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:223:12: warning: barcheck failed at: -3/4
+  e2( d4) c 
+            |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:272:12: warning: barcheck failed at: -3/4
+  c( a b) d 
+            |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:71:4: warning: trying to use \partial after the start of a piece
+    
+    \partial 4 d'4 |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:117:6: warning: barcheck failed at: -1/4
+  g2. 
+      |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:224:6: warning: barcheck failed at: -1/4
+  b2. 
+      |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:273:7: warning: barcheck failed at: -1/4
+  g,2. 
+       |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:78:4: warning: trying to use \partial after the start of a piece
+    
+    \partial 2. <<e2. {s2^\> s8. s16\!}>>  \break
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:125:12: warning: barcheck failed at: -3/4
+  e( c b) b 
+            |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:232:14: warning: barcheck failed at: -3/4
+  a2( g4) fis 
+              |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:281:12: warning: barcheck failed at: -3/4
+  c( a b) b 
+            |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:82:2: warning: trying to use \partial after the start of a piece
+  
+  \partial 4 e4 |
+C:/BTSync/Christmas Carol Book/ly/unmapped/Veni, Veni, Emmanuel.ly:96:2: warning: trying to use \partial after the start of a piece
+  
+  \partial 2. g2. \bar "||" \break
+MIDI output to `Veni, Veni, Emmanuel.mid'...
+Finding the ideal number of pages...
+Fitting music on 1 page...
+Drawing systems...
+Layout output to `Veni, Veni, Emmanuel.ps'...
+Converting to `./Veni, Veni, Emmanuel.pdf'...
+Success: compilation successfully completed
