@@ -1,29 +1,52 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Away In A Manger"}}
-  poet = \markup\oldStyleNum"Anonymous"
-  composer = \markup\oldStyleNum"Jonathan E. Spilman (1812–1896)"
-  tagline = \markup { "from" \concat{\italic "Christmas Carols and Hymns for School and Choir" \oldStyleNum", 1910"}}
-}
+  tagline = ""%\markup { "from" \italic {ChristmasCarolMusic.org}}
+
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Away In A Manger"}}
+    poet = \markup\oldStyleNum"Anonymous"
+    composer = \markup\oldStyleNum"James Ramsey Murray (1841–1905)"
+    tagline = ""%\markup { "from" \italic {ChristmasCarolMusic.org}}
+  }
 \paper {
+  print-all-headers = ##f
   paper-height = 9\in
   paper-width = 6\in
   indent = 0\in
   %system-system-spacing = #'((basic-distance . 10) (padding . 0))
+  score-markup-spacing =
+    #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 80))
   system-system-spacing =
     #'((basic-distance . 0)
        (minimum-distance . 0)
-       (padding . -5)
+       (padding . -10)
        (stretchability . 100))
-  ragged-last-bottom = ##f
+  markup-system-spacing =
+    #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+  last-bottom-spacing =
+    #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+%{IF_LESSER
+  markup-system-spacing #'stretchability = 50
+  top-markup-spacing #'stretchability = 30
+  last-bottom-spacing #'stretchability = 60
+%}%END_IF_LESSER
+  ragged-last-bottom = ##t
   ragged-bottom = ##f
   two-sided = ##t
   inner-margin = 0.5\in
   outer-margin = 0.25\in
   top-margin = 0.25\in
   bottom-margin = 0.25\in
-  first-page-number = #029
+  first-page-number = #028
   print-first-page-number = ##t
   headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
@@ -42,99 +65,68 @@
         \fill-line{\headerLine}
   }
 }
+#(set-global-staff-size 13.6) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 13.6 20))) }
+%8.5x11 #(set-global-staff-size 17.8) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 17.8 20))) }
+%{IF_LESSER
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
+%}%END_IF_LESSER
 global = {
-  \key a \major
+  \key f \major
   \time 3/4
   \autoBeamOff
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
 }
 
-sopMusic = \relative c' {
-  \partial 4 e4^\p |
-  a4 a cis8[ b] |
-  a4 a e |
-  fis a fis |
-  e2 e4 |
-  a a b |
+sopMusic = \relative c'' {
+  \partial 4 c4 |
+  c4. bes8 a4 |
+  a g f |
+  f e d |
+  c2 c4 |
+  c4. d8 c4 |
   
-  cis cis e |
-  e cis a |
-  b2 e,4 |
-  a a cis8[ b] |
-  a4 a e |
-  fis d' fis, |
+  c g' e |
+  d c f |
+  a2 c4 |
+  c4. bes8 a4 |
+  \slurDotted a g f |
   
-  e2 e4 |
-  a a b |
-  cis e\fermata d |
-  e, e gis |
-  a2\fermata gis8[^\markup\italic"piu mosso" a] |
-  b4 b e |
-  b b gis |
-  
-  b a fis |
-  e2 gis8[ a] |
-  b4 b e |
-  b b gis |
-  a8[ gis]^\markup\italic"poco rit." a[ b] cis[ dis] |
-  << e2 {s4. s8^\f} >> fis4\fermata |
-  << e4-> {s16 s8.^\markup\italic"a tempo"}>> cis4 cis8[ b] |
-  
-  a4 a e |
-  fis d' fis, |
-  e2 e4^\p |
-  a a b |
-  cis^\pp e\fermata d |
-  e, e gis |
-  \partial 2 a2 \bar "|."
+  f e d |
+  c2 c4 |
+  bes'4. a8 g4 |
+  a g f |
+  g d e |
+  \partial 2 f2 \bar "|."
+%{IF_LESSER
+\pageBreak
+%}%END_IF_LESSER
 }
 sopWords = \lyricmode {
   
 }
 
 altoMusic = \relative c' {
-  e4 |
-  e e e |
-  e e cis |
-  d fis d |
-  cis2 cis4 |
-  cis cis e |
+  f4 |
+  f4. g8 f4 |
+  f e d |
+  d c bes |
+  a2 a4 |
+  bes4. bes8 bes4 |
   
-  e e e |
-  e e dis |
-  e2 e4 |
-  e e e |
-  e e cis |
-  d fis d |
+  bes bes bes |
+  bes a c |
+  f2 a8[ g] |
+  f4. g8 f4 |
+  f e d |
   
-  cis2 cis4 |
-  cis e e |
-  e e fis |
-  e cis d |
-  cis2 e8[ fis] |
-  gis4 gis gis |
-  gis gis e |
-  
-  dis dis dis |
-  e2 e8[ fis] |
-  gis4 gis gis |
-  gis gis e |
-  fis8[ e] fis[ gis] a4 |
-  gis2 gis4 |
-  a e e |
-  
-  e e cis |
-  d fis d |
-  cis2 cis4 |
-  cis e e |
-  e a fis |
-  e cis d |
-  cis2 \bar "|."
+  d c bes |
+  a2 c4 |
+  e4. f8 g4 |
+  f e d |
+  d bes bes8[ c] |
+  a2 \bar "|."
 }
 altoWords = \lyricmode {
-  \dropLyricsVII
+  \dropLyricsIV
   \set stanza = #"1. "
   A -- way in a man -- ger,
   No crib for His bed,
@@ -144,19 +136,22 @@ altoWords = \lyricmode {
   Look’d down where He lay,
   The lit -- tle Lord Je -- sus
   A -- sleep in the hay.
-  
+}
+altoWordsII = \lyricmode {
+  \dropLyricsIV
+  \set stanza = #"2. "
   The cat -- tle are low -- ing,
   The poor ba -- by wakes,
   But lit -- tle Lord Je -- sus
-  No cry -- ing He __ makes;
+  No cry -- ing He makes;
   I love Thee, Lord Je -- sus,
   Look down from the sky,
   And stay by my cra -- dle
   Till mor -- ning is nigh.
 }
-altoWordsII = \lyricmode {
-  \dropLyricsVII
-  \set stanza = #"2. "
+altoWordsIII = \lyricmode {
+  \dropLyricsIV
+  \set stanza = #"3. "
   Be near me, Lord Je -- sus,
   I ask Thee to stay
   Close by me for -- ev -- er
@@ -165,102 +160,55 @@ altoWordsII = \lyricmode {
   In Thy ten -- der care,
   And take us to heav -- en
   To live with Thee there.
-  
-  A -- way in a man -- ger,
-  No crib for His bed,
-  The lit -- tle Lord Je -- sus
-  Laid down His sweet head:
-  The stars in the heav -- ens
-  Look’d down where He lay,
-  The lit -- tle Lord Je -- sus
-  A -- sleep in the hay.
-}
-altoWordsIII = \lyricmode {
 }
 altoWordsIV = \lyricmode {
 }
 
 tenorMusic = \relative c {
-  e4_\p |
-  cis' cis e8[ d] |
-  cis4 cis a |
-  a a a |
-  a2 a4 |
-  a a gis |
+  a'4 |
+  a4. bes8 c4 |
+  c bes a |
+  bes g f |
+  f2 f4 |
+  e4. f8 e4 |
   
-  a a cis |
-  cis a a |
-  gis2 e4 |
-  cis' cis e8[ d] |
-  cis4 cis a |
-  a a a |
+  e e g |
+  f f a |
+  c2 c8[ bes] |
+  a4. bes8 c4 |
+  c bes a |
   
-  a2 a4 |
-  a a gis |
-  a cis b |
-  cis a b |
-  a2 b4\rest |
-  a1*3/4\rest |
-  a1*3/4\rest |
-  
-  a1*3/4\rest |
-  a2\rest b4\rest |
-  a1*3/4\rest |
-  a1*3/4\rest |
-  a1*3/4\rest |
-  << a2\rest {s4. s8_\f} >> d4 |
-  cis-> a e'8[ d] |
-  
-  cis4 cis a |
-  a a a |
-  << a2 {s4. s8_\p} >> a4 |
-  a a gis |
-  a_\pp cis b |
-  cis a b |
-  a2 \bar "|."
+  bes g f |
+  f2 c'4 |
+  c4. c8 c4 |
+  c bes a |
+  bes g g |
+  f2 \bar "|."
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-  e4 |
-  a, a a |
-  a a a |
-  d d d |
-  a2 a4 |
-  a cis e |
+  f4 |
+  f4. e8 f4 |
+  f,4 c' d |
+  bes c bes8[ c] |
+  f2 f4 |
+  c4. bes8 c4 |
   
-  a a a |
-  a a fis |
-  e2 e4 |
-  a, a a |
-  a a a |
-  d d d |
+  c c c |
+  bes f' f |
+  f2 f4 |
+  f4. e8 f4 |
+  f, c' d |
   
-  a2 a4 |
-  a cis e |
-  a a\fermata d, |
-  e e e |
-  a,2\fermata e'4 |
-  e e e |
-  e e e |
-  
-  b b b |
-  e2 e4 |
-  e e e |
-  e e e |
-  b b b |
-  e2 e4\fermata |
-  a,4 a a |
-  
-  a a a |
-  d d d |
-  a2 a4 |
-  a cis e |
-  a a\fermata d, |
-  e e e |
-  a,2 \bar "|."
+  bes c bes8[ c] |
+  f2 c4 |
+  c4. d8 e4 |
+  f c d |
+  bes bes c4 |
+  f,2 \bar "|."
 }
 bassWords = \lyricmode {
 
@@ -278,7 +226,7 @@ bassWords = \lyricmode {
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "sopranos" \altoWords
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
@@ -290,6 +238,12 @@ bassWords = \lyricmode {
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
   \layout {
+    %#(layout-set-staff-size 13)
+    #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14 20)))
+    %8.5x11 #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 17.8 20)))
+%{IF_LESSER
+#(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20)))
+%}%END_IF_LESSER
     \context {
       \Score
       \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 2)
@@ -300,6 +254,7 @@ bassWords = \lyricmode {
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
     }
   }
+  
   \midi {
     \tempo 4 = 90
     \set Staff.midiInstrument = "flute"

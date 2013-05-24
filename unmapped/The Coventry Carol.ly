@@ -4,8 +4,8 @@
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Coventry Carol"}}
   poet = \markup\oldStyleNum"Robert Croo, 1534"
   composer = \markup\oldStyleNum"16th Centry English Carol"
-  arranger = \markup\oldStyleNum"Arranged by Martin Fallas Shaw (1875–1958)"
-  tagline = \markup { "from" \italic {ChristmasCarolMusic.org}}
+  arranger = \markup\oldStyleNum"Adapted and Arranged by Sir John Stainer (1840–1901)"
+  tagline = \markup { "from" \italic {Christmas Carols, New and Old}}
 }
 \paper {
   paper-height = 9\in
@@ -24,7 +24,7 @@
   outer-margin = 0.25\in
   top-margin = 0.25\in
   bottom-margin = 0.25\in
-  first-page-number = #063
+  first-page-number = #062
   print-first-page-number = ##t
   headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
@@ -47,31 +47,36 @@
 global = {
   \key bes \major
   \time 3/4
+  \override DynamicLineSpanner #'staff-padding = #0.0
+  \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
 }
 
 sopMusic = \relative c'' {
-  g4 g fis |
-  g2 bes4 |
-  a8 a a4 g |
-  fis2. |
-  g4 a bes |
-  c a2 |
-  b2. \bar "||" \break
+  <g d>4^\p <g d> <fis d> |
+  <g d>2 <bes d,>4 |
+  <a f>2 <g d>4 |
+  <fis d>2. |
+  <g d>4 <fis d> <g bes,> | \break
+  <c ees,>2 <a d,>4 | 
+  <b d,>2. \bar "||" 
   
   g4 g fis |
   g2 bes4 |
   a2 g4 |
-  fis2. |
-  g4 a bes | \break
-  c a2 |
-  g2 d'4 |
+  fis2. | \break
   
+  g4 a bes |
+  c2 a4 |
+  g2.~ |
+  <<g2 {s4 s^\mf}>> d'4 |
   c2 bes4 |
-  a2 bes4 |
-  a2 g4 | \break
+  a2 bes4 | \break
+  
+  a2^\markup\italic"dim." g4 |
   fis2. |
-  g4 fis g |
-  c a2 |
+  <<g4 {s8^\pp s^\markup\italic"rall."}>> fis4 g |
+  c2 a4 |
+  b2.~ |
   b2. \bar "|."
 }
 sopWords = \lyricmode {
@@ -79,117 +84,118 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  d4 d d |
-  d2 g4 |
-  f8 f f4 d |
-  d2. |
-  d4 f f |
-  g2 fis4 |
-  g2. |
+  s2.*7 |
   
   d4 d d |
-  d2 g4 |
+  d2 d4 |
   f2 d4 |
   d2. |
-  d4 f f |
-  g2 fis4 |
-  g2 f4 |
   
-  a2 g4 |
-  f2 d4 |
-  f2 c4 |
-  d2. |
   d4 d d |
-  g2 fis4 |
-  g2. \bar "|."
+  ees2 d4 |
+  d2.~ |
+  d2 f4 |
+  f2 f4 |
+  f2 g4 |
+  
+  ees2 c4 |
+  d2. |
+  d4 d bes |
+  ees2 d4 |
+  d2.~ |
+  d2. \bar "|."
 }
 altoWords = \lyricmode {
   \dropLyricsXI
-  Lul -- ly, lul -- lay, Thou lit -- tle ti -- ny Child,
-  By, by, lul -- ly, lul -- lay;
-  
+  \repeat unfold 14 \skip 1
   \set stanza = #"1. "
-  O sis -- ters too, how may we do,
-  For to pre -- serve this day;
-  This poor Young -- ling for whom we sing
-  By, by, lul -- ly, lul -- lay?
+  Lul -- lay, Thou lit -- tle ti -- ny Child,
+  By, by, lul -- ly, lul -- lay; __
+  Lul -- lay, Thou lit -- tle ti -- ny child,
+  By, by, lul -- ly, lul -- lay. __
 }
 altoWordsII = \lyricmode {
   \dropLyricsXI
-  \repeat unfold 16 { \skip 1 }
+  \repeat unfold 14 \skip 1
   \set stanza = #"2. "
-  Her -- od, the king, in his rag -- ing,
-  Charg -- ed he hath this day;
-  His men of might, in his own sight,
-  All chil -- dren young to slay.
+  O sis -- ters too, how may we do,
+  For to pre -- serve this day; __
+  This poor Young -- ling for whom we sing,
+  By, by, lul -- ly, lul -- lay? __
 }
 altoWordsIII = \lyricmode {
   \dropLyricsXI
-  \repeat unfold 16 { \skip 1 }
+  \repeat unfold 14 \skip 1
   \set stanza = #"3. "
-  Then woe is me, poor Child, for Thee!
-  And ev -- er mourn and say;
-  For Thy part -- ing nor say nor sing,
-  By, by, lul -- ly, lul -- lay.
+  Her -- od, the king, in his rag -- ing,
+  Charg -- ed he hath this day; __
+  His men of might, in his own sight,
+  All chil -- dren young to slay. __
 }
 altoWordsIV = \lyricmode {
-  \repeat unfold 2 { \skip 1 }
+  \dropLyricsXI
+  \repeat unfold 14 \skip 1
   \set stanza = #"4. "
-  
+  Then woe is me, poor Child, for Thee,
+  And ev -- er mourn and say; __
+  For Thy part -- ing nor say nor sing,
+  By, by, lul -- ly, lul -- lay. __
 }
 
 tenorMusic = \relative c' {
-  bes4 bes a |
-  bes2 ees4 |
-  c8 c c4 bes |
-  a2. |
-  bes4 c d |
-  ees4 d2 |
-  d2. |
+  s2.*6_\p |
+  
+  <g g,>2. ~ |
   
   bes4 bes a |
-  bes2 ees4 |
+  bes2 bes4 |
   c2 bes4 |
   a2. |
-  bes4 c d |
-  ees4 d2 |
-  d d4 |
   
-  f2 d4 |
-  d2 bes4 |
-  c2 g4 |
+  bes4 a g |
+  g2 fis4 |
+  bes2.~ |
+  <<bes2 {s4 s_\mf}>> bes4 |
+  a2 bes4 |
+  c2 d4 |
+  
+  c2_\markup\italic"dim." g4 |
   a2. |
-  bes4 a bes |
-  ees d2 |
-  d2. \bar "|."
+  <<bes4 {s8_\pp s_\markup\italic"rall."}>> a4 g |
+  g2 fis4 |
+  g2.~ |
+  g2. \bar "|."
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c' {
+  <bes g>4 q <a d,> |
+  <bes g>2 q4 |
+  <c f,>2 <bes g>4 |
+  <a d,>2. |
+  <bes g>4 <a d,> <g ees> |
+  <g c,>2 <fis d>4 |
+  
+  s2. |
   g4 g d |
-  g2 ees4 |
-  f8 f f4 g |
-  d2. |
-  g4 f d |
-  c d2 |
-  g,2. |
-  
-  g'4 g d |
-  g2 ees4 |
+  g2 g4 |
   f2 g4 |
   d2. |
-  g4 f d |
-  c d2 |
-  g bes4 |
   
-  f2 g4 |
-  d2 g4 |
-  f2 ees4 |
+  g4 fis g |
+  c,2 d4 |
+  g2.~ |
+  g2 bes,4 |
+  f'2 d4 |
+  f2 bes,4 |
+  
+  c2 ees4 |
   d2. |
-  g4 d g |
-  c, d2 |
+  g4 d ees |
+  c2 d4 |
+  g,2.~ |
   g2. \bar "|."
 }
 bassWords = \lyricmode {

@@ -2,10 +2,9 @@
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Personent hodie"}}
-  poet = \markup \concat{"from " \italic "Piæ Cantiones" \oldStyleNum", 1582"}
-  composer = \markup \concat{"from " \italic "Piæ Cantiones" \oldStyleNum", 1582"}
-  arranger = \markup\oldStyleNum"Arranged by George Ratcliffe Woodward (1848–1934)"
-  tagline = \markup\concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
+  poet = \markup \concat{"Words from " \italic "Piæ Cantiones" \oldStyleNum", 1582"}
+  composer = \markup\oldStyleNum"Arranged by Gustav Holst (1874–1934)"
+  tagline = ""
 }
 \paper {
   %print-all-headers = ##f
@@ -25,7 +24,7 @@
   outer-margin = 0.25\in
   top-margin = 0.25\in
   bottom-margin = 0.25\in
-  first-page-number = #197
+  first-page-number = #196
   print-first-page-number = ##t
   headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
@@ -46,65 +45,44 @@
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 global = {
-  \key d \major
+  \key ees \major
   \time 4/4
   \autoBeamOff
 }
 
 sopMusic = \relative c' {
-  e4 e |
-  b'2 a4 a b2 b4 b |
-  e2 cis4 d |
-  b2 a4 b |
+  b'1\rest |
+  b1\rest |
+  \oneVoice
+  f4 f c'2 |
+  bes4 bes c2 |
+  c4 c f2 |
+  d4 ees c2 |
   
-  d2 a4 b |
-  g2 |
-  fis4 e fis d |
-  e2 e |
-  fis4 g a d, |
+  bes4 c ees2 |
+  bes4 c aes2 |
+  g4 f g ees |
+  f2 f |
+  g4 aes bes ees, |
+  f2 f |
+  <ees g>4 <f aes> <bes g>2 |
   
-  e2 e |
-  fis4 g |
-  a2 a |
-  a g4 a |
-  b2 b |
-  b fis4 g |
-  a2 g4 fis |
-  e2 |
-  fis4 e e d |
-  e2 e\fermata \bar "|."
+  <bes g> <bes g> |
+  <aes f>4 <bes g> <c aes>2 |
+  <c aes> <c aes> |
+  <g ees>4 <aes f> <bes g>2 |
+  aes4 g f2 |
+  g4 f f ees |
+  f2 f \bar "|."
 }
 sopWords = \lyricmode {
   
 }
 
 altoMusic = \relative c' {
-  b4 b |
-  d2 d4 d |
-  d2 d4 e |
-  g2 fis4 fis |
-  fis2 fis4 g |
   
-  fis2 fis4 fis |
-  e2 |
-  d4 cis cis d |
-  cis2 b |
-  d4 e e d |
-  
-  b2 b |
-  d4 d |
-  fis2 e |
-  fis g4 fis |
-  g2 fis |
-  
-  g fis4 d |
-  d2 e4 dis |
-  e2 |
-  d4 b a a |
-  cis2 b \bar "|."
 }
 altoWords = \lyricmode {
-  \dropLyricsV
   \set stanza = #"1. "
   Per -- so -- nent ho -- di -- e
   vo -- ces pu -- e -- ru -- læ,
@@ -117,7 +95,6 @@ altoWords = \lyricmode {
   ven -- tre pro -- cre -- a -- tus.
 }
 altoWordsII = \lyricmode {
-  \dropLyricsV
 %\markup\italic
   \set stanza = #"2. "
   In mun -- do na -- sci -- tur,
@@ -131,7 +108,6 @@ altoWordsII = \lyricmode {
   prin -- ceps in -- fer -- no -- rum.
 }
 altoWordsIII = \lyricmode {
-  \dropLyricsV
   \set stanza = #"3. "
   Ma -- gi tres ve -- ne -- runt,
   par -- vu -- lum in -- qui -- runt,
@@ -144,7 +120,6 @@ altoWordsIII = \lyricmode {
   E -- i of -- fe -- ren -- do.
 }
 altoWordsIV = \lyricmode {
-  \dropLyricsV
   \set stanza = #"4. "
   Om -- nes cle -- ri -- cu -- li,
   par -- i -- ter pu -- e -- ri,
@@ -165,66 +140,77 @@ altoWordsVI = \lyricmode {
   \set ignoreMelismata = ##t
 }
 tenorMusic = \relative c' {
-  g4 g |
-  fis2 fis4 fis |
-  g2 g4 b |
-  b2 ais4 b |
-  d2 d4 d |
   
-  d2 d4 d |
-  c4( b) |
-  a4 a a fis |
-  a2 g |
-  b4 b a a |
-  
-  a( fis) gis2 |
-  a4 b |
-  d2 d4( cis) |
-  d2 d4 c |
-  e2 e4( dis) |
-  
-  e2 d4 b |
-  a2 b4 a |
-  b2 |
-  a4 g e fis |
-  a2 gis \bar "|."
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-  e4 e |
-  b2 d4 d |
-  g,2 g'4 g |
-  e2 fis4 b, |
-  b2 d4 g |
-  
-  d2 d4 b |
-  c2 |
-  d4  a fis b |
-  a2 e' |
-  b4 e cis fis |
-  
-  e2 e |
-  d4 g |
-  fis( g) a2 |
-  d, b'4 a |
-  g( a) b2 |
-  
-  e, b'4 g |
-  fis2 e4 fis |
-  g2 |
-  d4 e cis d |
-  a2 e'\fermata \bar "|."
+ 
 }
 bassWords = \lyricmode {
 
 }
 
 pianoRH = \relative c' {
+  r1 |
+  r1 |
+  <f c aes>4 q <c g' c>2 |
+  <ees bes'>4 <ees g bes> <ees aes c>2 |
+  <f aes c>4 q << <f f'>2 \\ {bes4 aes} >> |
+  <g d'>4 << {<ees ees'> <ees c'>2} \\ {bes'4 bes aes} >> |
+  
+  <ees g bes>4 <ees aes c> <ees bes' ees>2 |
+  <f bes>4 <ees g c> << <c aes'>2 \\ {g'4 f} >> |
+  <g d bes>4 <f d> <g d bes> <ees c> |
+  <f c aes>2 q |
+  <g d g,>4 <aes ees c> <bes d, bes> <ees, c g> |
+  <f d bes>2 q |
+  << {b'4\rest <bes ees> <aes d> <g c>} \\ {<g, ees>4 <aes f> <bes g>2} >> |
+  
+  <<
+    {
+      <f' bes>4 <ees aes> <d g> <c f> |
+      b'4\rest <bes ees> <aes d> <g c> |
+      <f bes>4 <ees aes> <d g> <c f> |
+      b'4\rest <aes ees'> <g d'> <ees bes'> |
+      c'4 <c f> <aes ees'> <f c'> |
+    } \\
+    {
+      <g, bes>2 q|
+      <f aes>4 <g bes> <aes c>2 |
+      q q |
+      <g ees>4 <aes f> <bes g>2 |
+      <aes f>4 <bes g> <c aes>2 |
+    }
+  >>
+  <g bes ees g>4 <f f'> <f g c f> <ees ees'> |
+  <f a c f>2 q \bar "||"
 }
 pianoLH = \relative c' {
+  r4 <f f,> <ees ees,> <d d,> |
+  <c c,> <bes bes,> <aes aes,> <g g,> |
+  <f f,> <d d,> <ees ees,> <c c,> |
+  <g g'> <ees ees'> <aes aes'> <g g'> |
+  <f f'> <ees ees'> <d d'> <c c'> |
+  <bes bes'> <g g'> <aes aes'> <c c'> |
+  
+  <ees ees'> <aes aes'> <g g'> <ees ees'> |
+  <d d'> <c c'> <f f'> <d d'> |
+  <g g'> <bes bes'> <g g'> <c g'> |
+  <f f,> <ees ees,> <d d,> <c c,> |
+  <bes bes,> <aes aes,> <g g,> <c c,> |
+  <bes bes,> <aes aes,> <g g,> <f f,> |
+  <ees ees,>1~ |
+  
+  q |
+  q~ |
+  q |
+  q |
+  q |
+  <ees ees'>4 r <c c'> r |
+  <f a c f>2 q \bar "|."
 }
 
 \score {
@@ -240,22 +226,15 @@ pianoLH = \relative c' {
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "sopranos" \altoWords
-   \new Staff = men <<
-      \clef bass
-      \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
-      \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
-    >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
   >>
-%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
+    \new PianoStaff << \new Staff { \new Voice { \global \pianoRH } } \new Staff { \clef "bass" \global \pianoLH } >>
   >>
   \layout {
     \context {
       \Score
-      %\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 8)
-      %\override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
+      \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 8)
+      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
     }
     \context {
       % Remove all empty staves

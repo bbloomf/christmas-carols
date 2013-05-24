@@ -74,7 +74,7 @@ global = {
 }
 
 sopMusic = \relative c' {
-  \tempo 4 = 66
+  %\tempo 4 = 66
   e4 gis b b |
   a cis cis b \bar "||"
   gis ais b b |

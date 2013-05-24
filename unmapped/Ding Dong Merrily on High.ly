@@ -48,10 +48,122 @@
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 
+global = {
+  \key bes \major
+  \time 4/4
+  \autoBeamOff
+}
 
+sopMusic = \relative c'' {
+  \repeat unfold 2 {
+    bes4 bes c8 bes a g |
+    f2. f4 |
+    g bes bes a |
+    bes2 bes
+  } \break
+  \repeat volta 2 {
+    f'4.( ees8[ d ees f d] |
+    ees4. d8[ c d ees c] |
+    d4. c8[ bes c d bes] |
+    c4. bes8[ a bes c a] |
+    
+    bes4. a8[ g a bes g] |
+    a4.) g8 f4 f |
+    g bes bes a |
+    bes2 bes 2
+  }
+}
+sopWords = \lyricmode {
+  
+}
+
+altoMusic = \relative c' {
+  \repeat unfold 2 {
+    f4 f g8 g ees ees |
+    c2. f4 |
+    f ees c f |
+    f2 f |
+  }
+  \repeat volta 2 {
+    r4 f2( bes4 |
+    bes8[ a g f] g[ f] ees4) |
+    r4  f8([ ees] d4 g |
+    g8[ f ees d] ees[ d] c4) |
+    
+    r4 d8([ c] bes4 ees |
+    c8[ d ees]) d c4 f |
+    f ees c f |
+    f2 f
+  }
+}
+altoWords = \lyricmode {
+  \dropLyricsVII
+  \set stanza = #"1. "
+  Ding dong! mer -- ri -- ly on high in heav’n the bells are ring -- ing:
+  Ding dong!  Ve -- ri -- ly the sky is riv’n with an -- gel sing -- ing.
+  \markup\italic Glo -- \markup\italic ri -- \markup\italic a, \markup\italic ho -- \markup\italic san -- \markup\italic na \markup\italic in \markup\italic ex -- \markup\italic cel -- \markup\italic sis!
+}
+altoWordsII = \lyricmode {
+  \dropLyricsVII
+  \set stanza = #"2. "
+  E’en so here be -- low, be -- low, let stee -- ple bells be swung -- en.
+  And i -- o, i -- o, i -- o by priest and peo -- ple sung -- en.
+}
+altoWordsIII = \lyricmode {
+  \dropLyricsVII
+  \set stanza = #"3. "
+  Pray ye du -- ti -- ful -- ly prime your ma -- tin chime, ye ring -- ers;
+  may ye beau -- ti -- ful -- ly rime your eve -- time song, ye sing -- ers.
+}
+
+tenorMusic = \relative c' {
+  \repeat unfold 2 {
+    d4 bes g8 g c bes |
+    a2. bes4 |
+    bes bes c c |
+    d2 d |
+  }
+  \repeat volta 2 {
+    d,4\rest c'( d bes |
+    c bes2 c4) |
+    d,4\rest a'( bes g |
+    a g2 a4) |
+    
+    d,\rest f( g2 |
+    c4) bes c d |
+    bes bes c c |
+    d2 d
+  }
+}
+tenorWords = \lyricmode {
+  \repeat unfold 28 { \skip 1}
+  \markup\italic Glo -- _ _ \markup\italic ri -- \markup\italic a, \markup\italic ho -- \markup\italic san -- \markup\italic na \markup\italic in \markup\italic ex -- \markup\italic cel -- \markup\italic sis!
+}
+
+bassMusic = \relative c {
+  \repeat unfold 2 {
+    bes4 d ees8 ees c c |
+    f2. d4 |
+    ees g f f |
+    bes,2 bes |
+  }
+  \repeat volta 2 {
+    s4 a'4( bes d, |
+    c d ees8[ d] c4) |
+    s4 f( g bes, |
+    a bes c8[ bes] a4) |
+    
+    s4 d( ees g |
+    f) g a bes |
+    ees, g f f |
+    bes,2 bes
+  }
+}
+bassWords = \lyricmode {
+
+}
 
 \score {
-  \unfoldRepeats
   <<
    \new ChoirStaff <<
     \new Staff = women <<
@@ -72,8 +184,24 @@
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
+  \layout {
+    \context {
+      \Score
+      %\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 8)
+      %\override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
+    }
+    \context {
+      % Remove all empty staves
+      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+    }
+  }
   \midi {
-    \tempo 4 = 160
+    \tempo 4 = 90
     \set Staff.midiInstrument = "flute"
+  
+    \context {
+      \Voice
+      \remove "Dynamic_performer"
+    }
   }
 }

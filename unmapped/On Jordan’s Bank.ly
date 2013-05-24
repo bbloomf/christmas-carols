@@ -65,7 +65,7 @@ global = {
 }
 
 sopMusic = \relative c' {
-  \tempo 4 = 56
+  %\tempo 4 = 56
   \partial 4 f4 |
   bes f g g |
   f ees d d |

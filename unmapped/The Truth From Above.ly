@@ -4,8 +4,8 @@
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Truth From Above"}}
   subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #10.5 "(Herefordshire Carol)"}}
   poet = \markup\oldStyleNum"Traditional"
-  composer = \markup\oldStyleNum"Arranged by Ralph Vaughan Williams (1872–1958)"
-  tagline = ""
+  composer = \markup\oldStyleNum"Traditional"  
+  tagline = \markup { "from" \italic {ChristmasCarolMusic.org}}
 }
 \paper {
   %print-all-headers = ##f
@@ -25,7 +25,7 @@
   outer-margin = 0.25\in
   top-margin = 0.25\in
   bottom-margin = 0.25\in
-  first-page-number = #103
+  first-page-number = #102
   print-first-page-number = ##t
   headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
@@ -45,48 +45,42 @@
   }
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
-#(define ((compound-time one two num numtwo) grob)
-   (grob-interpret-markup grob
-                          (markup #:override '(baseline-skip . 0) #:number
-                                  (#:line ((#:column (one num))
-                                           (#:column (two numtwo)))))))
 global = {
   \key c \major
+  \time 4/4
   \autoBeamOff
-  \override Staff.TimeSignature #'stencil = #(compound-time "5" "3" "4" "2")
-  \time 11/4
 }
 
 sopMusic = \relative c' {
   \repeat volta 3 {
-    \partial 2 e2 |
-    \partial 4*5 a4 b c( b) a |
-    \partial 2*3 g a e2. b'4 |
+    \partial 4 e4 |
+    a b \times 2/3 { c( b) a} |
+    \partial 4*6 g a e2. b'4 |
+    c c \times 2/3 {b( a) g} |
     
-    \partial 4*5 c c b( a) g |
-    \partial 2*3 a b c2. \bar""\break c8[ d] |
-    \partial 2*3 e4 e d2 c4( b) |
+    \partial 4*6 a b c2. \bar""\break c8[ d] |
+    e4 e d c8[ b] |
+    \partial 4*6 a4 a e2. \slurDotted e8( g) |
     
-    \partial 4*5 \slurDotted a a e2 e8( g) |
-    \slurSolid
-    \partial 2*3 a4 b c( d) e( d) |
-    \partial 1 c8[ a] b4 a2
+    a4 b c8[ d] e[ d] |
+    c[ a] b4 a2
   }
   \break
   
   
+  \slurSolid
   \repeat volta 2 {
-    \partial 2 e2 |
-    \partial 4*5 a4 b c( b) a |
-    \partial 2*3 g a e2. b'4 |
+    \partial 4 e4 |
+    a b \times 2/3 { c( b) a} |
+    \partial 4*6 g a e2. b'4 |
+    c c \times 2/3 {b( a) g} |
     
-    \partial 4*5 c c b( a) g |
-    \partial 2*3 a b c2. \bar""\break c8[ d] |
-    \partial 2*3 e4 e d2 c4( b) |
+    \partial 4*6 a b c2. \bar""\break c8[ d] |
+    e4 e d c8[ b] |
+    \partial 4*6 a4 a e2. e8[ g] |
     
-    \partial 4*5 a a e2 e8[ g] |
-    \partial 2*3 a4 b c( d) e( d) |
-    \partial 1 c8[ a] b4 a2
+    a4 b c8[ d] e[ d] |
+    c[ a] b4 a2
   }
 }
 sopWords = \lyricmode {
@@ -94,32 +88,34 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  e2 |
-  a4 a a( g) f |
+  e4 |
+  a a \times 2/3 {a( g) f} |
   e d b2. e4 |
+  e a \times 2/3 {g( f) e} |
   
-  e a g( f) e |
-  f f f( e2) a4 |
-  g g8[ a] d,4( g) c,( d) |
+  f4 f f( e2) a4 |
+  g g8[ a] d,4 a'8[ g] |
+  e4 fis b,2. \slurDotted e8( e) |
   
-  \slurDotted e fis b,2 e8( g) |
-  \slurSolid a4 e a8([ g] fis4) e( fis) |
-  g8[ a] g[ fis] e2
-  
+  e4 e a16[ g fis8] e[ fis] |
+  e4 e e2
   
   
-  e2 |
-  a4 a a( g) f |
+  
+  \slurSolid
+  e4 |
+  a a \times 2/3 {a( g) f} |
   e d b2. e4 |
+  e a \times 2/3 {g( f) e} |
   
-  e a g( f) e |
-  f f f( e2) a4 |
-  g g8[ a] d,4( g) c,( d) |
+  f4 f f( e2) a4 |
+  g g8[ a] d,4 a'8[ g] |
+  e4 fis b,2. e8[ e] |
   
-  e fis b,2 e8[ g] |
-  a4 e a8([ g] fis4) e( fis) |
-  g8[ a] g[ fis] e2
+  e4 e a16[ g fis8] e[ fis] |
+  e4 e e2
 }
+
 
 altoWords = \lyricmode {
   \dropLyricsXI
@@ -206,64 +202,63 @@ altoWordsVI = \lyricmode {
   \set ignoreMelismata = ##t
 }
 tenorMusic = \relative c' {
-  e2 |
-  c4 d e2 c4 |
+  e4 |
+  c d \times 2/3 {e2 c4} |
   c a a( g2) b4 |
+  a e' \times 2/3 {e( c) c} |
   
-  a e' e( c) c |
   c d g,2. a4 |
-  b c b2 e4( d) |
+  b c b e8[ d] |
+  c4 a g2( fis!4) \slurDotted g8( b) |
   
-  c a g( fis!) \slurDotted g8( b) |
-  \slurSolid c4 b a4.( b8) c4( a) |
-  e'4 d cis2
+  c4 b a8[ b] c[ a] |
+  g4 b c2
   
   
-  
-  e2 |
-  c4 d e2 c4 |
+  \slurSolid
+  e4 |
+  c d \times 2/3 {e2 c4} |
   c a a( g2) b4 |
+  a e' \times 2/3 {e( c) c} |
   
-  a e' e( c) c |
   c d g,2. a4 |
-  b c b2 e4( d) |
+  b c b e8[ d] |
+  c4 a g2( fis!4) g8[ b] |
   
-  c a g( fis!) g8[ b] |
-  c4 b a4.( b8) c4( a) |
-  e'4 d cis2
+  c4 b a8[ b] c[ a] |
+  g4 b c2
 }
 tenorWords = \lyricmode {
-  
+
 }
 
 bassMusic = \relative c {
-  e2 |
-  a4 a a( e) f |
-  c f e2. g4 |
+  e4 |
+  a2 \times 2/3 {a4( e) f} |
+  c4 f e2. g4 |
+  a a \times 2/3 {e( f) c} |
   
-  a4 a e( f) c |
   f8[ e] d4 c2. f4 |
-  e e8[ fis] g4( g,) a( b) |
+  e e8[ fis] g[ g,] a[ b] |
+  c4 d e2. \slurDotted e8( e) |
   
-  c4 d e2 \slurDotted e8( e) |
-  a4 g \slurSolid f8([ e] d4) c( d) |
-  e8[ fis] g4 a2
-  
-  
+  a4 g f16[ e d8] c[ d] |
+  e4 g a2
   
   
   
-  e2 |
-  a4 a a( e) f |
-  c f e2. g4 |
+  \slurSolid
+  e4 |
+  a2 \times 2/3 {a4( e) f} |
+  c4 f e2. g4 |
+  a a \times 2/3 {e( f) c} |
   
-  a4 a e( f) c |
   f8[ e] d4 c2. f4 |
-  e e8[ fis] g4( g,) a( b) |
+  e e8[ fis] g[ g,] a[ b] |
+  c4 d e2. e8[ e] |
   
-  c4 d e2 e8[ e] |
-  a4 g f8([ e] d4) c( d) |
-  e8[ fis] g4 a2
+  a4 g f16[ e d8] c[ d] |
+  e4 g a2
 }
 bassWords = \lyricmode {
 
@@ -303,8 +298,8 @@ pianoLH = \relative c' {
   \layout {
     \context {
       \Score
-      \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 2)
-      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 2)
+      %\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 8)
+      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
     }
     \context {
       % Remove all empty staves

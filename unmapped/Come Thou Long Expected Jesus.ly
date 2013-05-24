@@ -5,9 +5,7 @@
 
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Come Thou Long Expected Jesus"}}
     poet = \markup\oldStyleNum"Charles Wesley (1707–1788)"
-    composer = \markup\concat{\italic"Stuttgart" \oldStyleNum", Christian F. Witt (c. 1660–1716)"}
-    arranger = \markup\oldStyleNum"Adapted by Henry J. Gauntlett (1805–1876)"
-    tagline = \markup { "from" \italic "CyberHymnal.org"}
+    composer = \markup\concat{\italic"Cross of Jesus" \oldStyleNum", Sir John Stainer (1840–1901)"}
   }
 \paper {
   print-all-headers = ##f
@@ -52,75 +50,43 @@
   }
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
-
-\markup\fill-line \center-align {\concat{"from "\italic"The Church Hymnary" \oldStyleNum", 1902, via " \italic"HymnsAndCarolsOfChristmas.com"}}
-\markup \vspace #1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 global = {
-  \key g \major
+  \key aes \major
   \time 4/4
   \autoBeamOff
 }
 
 sopMusic = \relative c' {
-  d4 d g g |
-  a a b g |
-  d' d e c |
-  a d b2 |
+  c'4 aes ees ees |
+  ees aes aes g |
+  aes c f,8[ g] aes4 |
+  des c c( bes) |
   
-  b4 b a b |
-  g a g fis |
-  g e d g |
-  g fis g2 \bar "|."
+  aes des des c |
+  bes f' f ees |
+  ees des c8[ bes] aes4 |
+  aes g aes2 \bar "|."
 }
 sopWords = \lyricmode {
   
 }
 
 altoMusic = \relative c' {
-  d4 d b b |
-  e d d d |
-  d g g g |
-  g fis g2 |
-  g4 g fis fis |
-  b, e d d |
-  d c b d |
-  d d d2 \bar "|."
+  ees4 c des des |
+  c c8[ d] ees4 ees |
+  ees c f ees8[ f] |
+  g4 aes aes( g) |
+  
+  aes8[ g] f4 ees aes8[ ges] |
+  f4 f8[ g!] aes4 ges |
+  f g!8[ f] e4 c8[ d] |
+  ees4 ees8[ des] c2 \bar "|."
 }
 altoWords = \lyricmode {
   \dropLyricsVII
   \set stanza = #"1. "
   Come, Thou long ex -- pect -- ed Je -- sus,
-  born to set Thy peo -- ple free;
+  born to set __ Thy peo -- ple free;
   from our fears and sins re -- lease us, let us find our rest in Thee.
 }
 altoWordsII = \lyricmode {
@@ -128,7 +94,7 @@ altoWordsII = \lyricmode {
 %\markup\italic
   \set stanza = #"2. "
   Is -- rael’s strength and con -- so -- la -- tion,
-  hope of all the earth Thou art:
+  hope of all __ the earth Thou art:
   dear de -- sire of ev -- ’ry na -- tion, joy of ev -- ’ry long -- ing heart.
 }
 altoWordsIII = \lyricmode {
@@ -140,7 +106,7 @@ altoWordsIII = \lyricmode {
 altoWordsIV = \lyricmode {
   \dropLyricsVII
   \set stanza = #"4. "
-  By Thine own e -- ter -- nal Spi -- rit rule in all our hearts a -- lone;
+  By Thine own e -- ter -- nal Spi -- rit rule in all __ our hearts a -- lone;
   by Thy grace, help us to mer -- it life e -- ter -- nal at Thy throne.
 }
 altoWordsV = \lyricmode {
@@ -152,30 +118,30 @@ altoWordsVI = \lyricmode {
   \set ignoreMelismata = ##t
 }
 tenorMusic = \relative c' {
-  b4 a g g |
-  g fis g b |
-  g b c e |
-  d d d2 |
+  aes4 aes bes bes |
+  aes aes8[ bes] c4 bes |
+  aes aes aes8[ bes] c4 |
+  des ees ees2 |
   
-  e4 b c b |
-  b a a a |
-  g g d' b |
-  a8[ b] c4 b2 \bar "|."
+  c4 des8[ c] bes4 c |
+  des bes c aes |
+  aes bes8[ aes] g4 aes8[ bes] |
+  c4 bes aes2 \bar "|."
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-  g'4 fis e d |
-  c d g g, |
-  b g c a |
-  d d g2 |
+  aes4 aes' aes g |
+  aes f ees ees8[ des] |
+  c4 aes des c |
+  bes aes ees'2 |
   
-  e4 e e dis |
-  e cis d c |
-  b c g b8[ c] |
-  d4 d g,2 \bar "|."
+  f4 bes8[ aes] g4 aes |
+  des, des c c |
+  des bes c f |
+  ees ees aes,2 \bar "|."
 }
 bassWords = \lyricmode {
 
@@ -196,12 +162,12 @@ pianoLH = \relative c' {
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWords
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women"  \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = #"women"  \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women"  \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women"  \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women"  \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women"  \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }

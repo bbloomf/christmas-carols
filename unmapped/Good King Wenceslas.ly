@@ -4,8 +4,8 @@
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Good King Wenceslas"}}
   poet = \markup\oldStyleNum"John Mason Neale (1818–1866)"
   composer = \markup \concat{ \italic "Tempus adest floridum" ", from " \italic "Piæ Cantiones" \oldStyleNum", 1582"}
-  arranger = \markup\oldStyleNum"Arranged by George Ratcliffe Woodward (1848–1934)"
-  tagline = \markup \concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
+  arranger = \markup\oldStyleNum"Arranged by Sir John Stainer (1840–1901)"
+  tagline = \markup { "from" \italic {Christmas Carols, New and Old}}
 }
 \paper {
   paper-height = 9\in
@@ -24,7 +24,7 @@
   outer-margin = 0.25\in
   top-margin = 0.25\in
   bottom-margin = 0.25\in
-  first-page-number = #043
+  first-page-number = #042
   print-first-page-number = ##t
   headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
@@ -45,7 +45,7 @@
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 global = {
-  \key aes \major
+  \key a \major
   \time 4/4
   \override DynamicLineSpanner #'staff-padding = #0.0
   \override DynamicLineSpanner #'Y-extent = #'(0.2 . -0.2)
@@ -56,52 +56,52 @@ global = {
 sopMusic = \relative c'' {
   \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
   \mark "Moderato"
-  aes4 aes aes bes |
-  aes aes ees2 |
-  f4 ees f g |
-  aes2 aes |
+  a4 a a b |
+  a a e2 |
+  fis4 e fis gis |
+  a2 a |
   
-  aes4 aes aes bes |
-  aes aes ees2 |
-  f4 ees f g |
-  aes2 aes |
+  a4 a a b |
+  a a e2 |
+  fis4 e fis gis |
+  a2 a |
   
-  ees'4 des c bes |
-  c bes aes2 |
-  f4 ees f g |
-  aes2 aes |
+  e'4 d cis b |
+  cis b a2 |
+  fis4 e fis gis |
+  a2 a |
   
-  ees4 ees f g |
-  aes aes bes2 |
-  ees4 des c bes |
-  aes2( des) |
-  aes1 \bar "|."
+  e4 e fis gis |
+  a a b2 |
+  e4^\markup\italic"poco più lento" d cis b |
+  a2( d) |
+  a1 \bar "|."
 }
 sopWords = \lyricmode {
   
 }
 
 altoMusic = \relative c' {
-  ees4 ees f ees |
-  ees f bes,2 |
-  des4 ees des des |
-  c2 c |
+  e4 e fis e |
+  e fis b,2 |
+  d4 e d d |
+  e2 e |
   
-  ees4 ees f f |
-  ees des bes2 |
-  des4 c8[ bes] aes4 des |
-  des( c8[ bes]) c2 |
+  e4 e fis e |
+  e fis b,2 |
+  d4 e d d |
+  e2 e |
   
-  aes'4 aes aes g |
-  g g f2 |
-  aes,4 ees' des des |
-  c2 c |
+  e4 fis e e |
+  e e cis2 |
+  d4 e d d |
+  e2 e |
   
-  c4 bes c ees |
-  f ees ees2 |
-  ees4 aes g g |
-  aes2( f) |
-  ees1 \bar "|."
+  e4 e d d |
+  cis cis e2 |
+  e4 fis e d |
+  cis2( fis) |
+  e1 \bar "|."
 }
 altoWords = \lyricmode {
   \dropLyricsIX
@@ -127,17 +127,19 @@ altoWordsII = \lyricmode {
   Right a -- gainst the for -- est fence,
   By Saint Ag -- nes’ foun -- tain.
 }
-altoWordsIII = \lyricmode {
+altoWordsIII = {
   \dropLyricsIX
-  \set stanza = #"3. "
-  “Bring me flesh, and bring me wine,
-  Bring me pine -- logs hith -- er;
-  Thou and I will see him dine
-  When we bear them thith -- er.”
-  Page and mon -- arch forth they went,
-  Forth they went to -- geth -- er;
-  Thro’ the rude wind’s wild la -- ment
-  And the bit -- ter weath -- er.
+  \set stanza = \markup{\dynamic"f  " "3. "}
+  \lyricmode {
+    “Bring me flesh, and bring me wine,
+    Bring me pine -- logs hith -- er;
+    Thou and I will see him dine
+    When we bear them thith -- er.”
+    Page and mon -- arch forth they went,
+    Forth they went to -- geth -- er;
+    Thro’ the rude wind’s wild la -- ment
+    And the bit -- ter weath -- er.
+  }
 }
 altoWordsIV = \lyricmode {
   \dropLyricsIX
@@ -164,52 +166,52 @@ altoWordsV = \lyricmode {
   Shall your -- selves find bless -- ing.
 }
 tenorMusic = \relative c' {
-  c4 c c bes |
-  c des g,2 |
-  aes4 aes aes bes |
-  ees,2 ees |
+  cis4 cis cis b |
+  cis d gis,2 |
+  a4 a a b |
+  cis2 cis |
   
-  c'4 c c des |
-  aes f g2 |
-  bes8[ aes] g4 f8[ ees] ees4 |
-  ees2 ees |
+  cis4 cis cis b |
+  cis d gis,2 |
+  a4 a a b |
+  cis2 cis |
   
-  ees'4 f ees ees |
-  ees ees c2 |
-  des4 aes aes bes |
-  ees,2 ees |
+  a4 a a gis |
+  a gis a2 |
+  a4 a a b |
+  cis2 cis |
   
-  aes4 bes aes bes |
-  des aes g2 |
-  aes4 f' ees ees8[ des] |
-  c2( des)
-  c1 \bar "|."
+  a4 a a b |
+  a a gis2 |
+  a4 a a gis |
+  a2~ a |
+  cis1 \bar "|."
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c' {
-  aes4 aes f g |
-  aes des, ees2 |
-  des4 c des8[ c] bes4 |
-  aes2 aes |
+  a4 a fis gis |
+  a d, e2 |
+  d4 cis d b |
+  a2 a |
   
-  aes'4 aes f bes, |
-  c des ees2 |
-  bes4 c des8[ c] bes4 |
-  aes2 aes |
+  a'4 a fis gis |
+  a d, e2 |
+  d4 cis d b |
+  a2 a |
   
-  c4 des aes' ees |
-  c ees f2 |
-  des4 c des bes |
-  aes2 aes |
+  cis4 d e e |
+  a, e' fis2 |
+  d4 cis d b |
+  a2 a |
   
-  aes'4 g f ees |
-  des4 c ees2 |
-  c4 des ees ees |
-  f2( des) |
-  aes1\fermata \bar "|."
+  cis4 cis d b |
+  fis' fis e2 |
+  cis4 d e e |
+  fis2( d) |
+  a1 \bar "|."
 }
 bassWords = \lyricmode {
 
