@@ -69,5 +69,3 @@
 \markup\vspace #2
 
 %CONTENTS%
-\pageBreak
-\markup""
