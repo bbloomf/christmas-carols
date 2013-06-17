@@ -24,19 +24,19 @@
   evenHeaderMarkup = ""
 }
 #(set-global-staff-size 23) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 23 20))) }
-\markup\vspace #5
+\markup\vspace #4
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #50 \smallCapsOldStyle"A Collection"}}
 \markup\vspace #0.75
 \markup\fill-line \center-align {\abs-fontsize #35 \italic"of"}
 \markup\vspace #0.5
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #50 \smallCapsOldStyle"Christmas Carols"}}
-\markup\vspace #8.5
+\markup\vspace #9.5
 \markup\fill-line \center-align {\abs-fontsize #28 \smallCapsOldStyle"selected, transcribed, and edited"}
 \markup\vspace #0.25
 \markup\fill-line \center-align {\abs-fontsize #24 \italic"by"}
 \markup\vspace #0.25
 \markup\fill-line \center-align {\abs-fontsize #28 \smallCapsOldStyle"benjamin bloomfield"}
-\markup\vspace #9
+\markup\vspace #9.5 
 \markup{\abs-fontsize #12 {Fifth edition, \smallCapsOldStyle"august 2013"}}
 \markup\vspace #0.1
 \markup{\abs-fontsize #12 "This work is free of known copyright restrictions."}
@@ -45,11 +45,9 @@
 \markup\vspace #0.1
 \markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \wordwrap{Inside cover artwork illustrated by Arthur Hughes, as found in \italic Christmas \italic Carols, \italic New \italic and \concat{\italic Old ";"} downloaded from \with-url #"http://www.ccel.org/b/bramley/carols/jpg-hires/0001=i.jpg" \italic"http://www.ccel.org/b/bramley/carols/jpg-hires/0001=i.jpg"}}
 \pageBreak
-\markup\vspace#1
 \markup\epsfile #X #85 #"title.eps"
 \pageBreak
 %\markup{\abs-fontsize #5 \wordwrap{i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i }}
-\markup\vspace#1
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #32 \smallCapsOldStyle"preface"}}
 \markup\vspace #1
 \markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \justify{Several years ago, I found an old collection of Christmas carols on the Internet, originally published in the late \oldStyleNum 1800s, called \italic Christmas \italic Carols, \italic New \italic and \concat{\italic Old ","} the music edited by Sir John Stainer and the words by Henrey Ramsden Bramley.  Just before Christmas \oldStyleNum 2010, I had this collection printed as a book through Lulu.com, and I enjoyed some of its more obscure carols enough that I thought I might combine them into a single volume containing Christmas carols from several different sources.  So in early \oldStyleNum 2011, I set about creating such a book by simply taking pages from several old collections of Christmas music and combining them into a single volume.  I thought briefly of taking the trouble of making new engravings of all the music, but it seemed an enormous task: though I had used a program called Lilypond to engrave music in the past, the amount of music I wanted to include would take many days of transcribing and proofreading, and it did not seem necessary at the time.}}
@@ -67,9 +65,8 @@
 \markup\fill-line {"" \abs-fontsize #12 \italic"Benjamin Bloomfield"}
 \markup\fill-line {"" \abs-fontsize #12 "Cincinnati, 2013"}
 \pageBreak
-\markup\vspace#0.5
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #32 \smallCapsOldStyle"contents"}}
-\markup\vspace #0.5 
+\markup\vspace #0
 
 %CONTENTS%
 \markup{{\override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \column{
