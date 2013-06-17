@@ -15,8 +15,8 @@
   ragged-right = ##f
   inner-margin = 1\in
   outer-margin = 0.75\in
-  top-margin = 0.5\in
-  bottom-margin = 0.5\in
+  top-margin = 0.26\in
+  bottom-margin = 0.25\in
   first-page-number = #1
   print-first-page-number = ##t
   headerLine = ""
@@ -24,7 +24,7 @@
   evenHeaderMarkup = ""
 }
 #(set-global-staff-size 23) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 23 20))) }
-\markup\vspace #4
+\markup\vspace #5
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #50 \smallCapsOldStyle"A Collection"}}
 \markup\vspace #0.75
 \markup\fill-line \center-align {\abs-fontsize #35 \italic"of"}
@@ -45,9 +45,11 @@
 \markup\vspace #0.1
 \markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \wordwrap{Inside cover artwork illustrated by Arthur Hughes, as found in \italic Christmas \italic Carols, \italic New \italic and \concat{\italic Old ";"} downloaded from \with-url #"http://www.ccel.org/b/bramley/carols/jpg-hires/0001=i.jpg" \italic"http://www.ccel.org/b/bramley/carols/jpg-hires/0001=i.jpg"}}
 \pageBreak
+\markup\vspace#1
 \markup\epsfile #X #85 #"title.eps"
 \pageBreak
 %\markup{\abs-fontsize #5 \wordwrap{i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i }}
+\markup\vspace#1
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #32 \smallCapsOldStyle"preface"}}
 \markup\vspace #1
 \markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \justify{Several years ago, I found an old collection of Christmas carols on the Internet, originally published in the late \oldStyleNum 1800s, called \italic Christmas \italic Carols, \italic New \italic and \concat{\italic Old ","} the music edited by Sir John Stainer and the words by Henrey Ramsden Bramley.  Just before Christmas \oldStyleNum 2010, I had this collection printed as a book through Lulu.com, and I enjoyed some of its more obscure carols enough that I thought I might combine them into a single volume containing Christmas carols from several different sources.  So in early \oldStyleNum 2011, I set about creating such a book by simply taking pages from several old collections of Christmas music and combining them into a single volume.  I thought briefly of taking the trouble of making new engravings of all the music, but it seemed an enormous task: though I had used a program called Lilypond to engrave music in the past, the amount of music I wanted to include would take many days of transcribing and proofreading, and it did not seem necessary at the time.}}
@@ -65,8 +67,9 @@
 \markup\fill-line {"" \abs-fontsize #12 \italic"Benjamin Bloomfield"}
 \markup\fill-line {"" \abs-fontsize #12 "Cincinnati, 2013"}
 \pageBreak
+\markup\vspace#0.5
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #32 \smallCapsOldStyle"contents"}}
-\markup\vspace #0
+\markup\vspace #0.5 
 
 %CONTENTS%
 \markup{{\override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \column{
@@ -149,7 +152,7 @@
 {\page-link #60 {\fill-with-pattern #0.1 #RIGHT . \italic"Good people all, this Christmas time" \oldStyleNum"56"}}
 {\page-link #134 {\fill-with-pattern #0.1 #RIGHT . \scale #'(0.96 . 1) \italic"The Great God of Heaven is come down to earth" \oldStyleNum"130"}}
 {\page-link #173 {\fill-with-pattern #0.1 #RIGHT . "Hacia Belén va una burra" \oldStyleNum"173"}}
-{\page-link #152 {\fill-with-pattern #0.1 #RIGHT . \scale #'(0.98 . 1) "Hail! Holy Child, Lain In An Oxen Manger" \oldStyleNum"152"}}
+{\page-link #152 {\fill-with-pattern #0.1 #RIGHT . \scale #'(0.97 . 1) "Hail! Holy Child, Lain In An Oxen Manger" \oldStyleNum"152"}}
 {\page-link #6 {\fill-with-pattern #0.1 #RIGHT . "Hark! a Herald Voice is Calling" \oldStyleNum"6"}}
 {\page-link #112 {\fill-with-pattern #0.1 #RIGHT . \italic"Hark! how the bells" \oldStyleNum"108"}}
 {\page-link #18 {\fill-with-pattern #0.1 #RIGHT . "Hark! the Herald Angels Sing" \oldStyleNum"18"}}
@@ -175,6 +178,7 @@
 {\page-link #20 {\fill-with-pattern #0.1 #RIGHT . "It Came Upon the Midnight Clear" \oldStyleNum"20"}}
 {\page-link #172 {\fill-with-pattern #0.1 #RIGHT . \italic"It was the very noon of night" \oldStyleNum"168"}}
 }}}
+\markup\vspace#1
 \markup{{\override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \column{
 {\page-link #167 {\fill-with-pattern #0.1 #RIGHT . "Jacob's Ladder" \oldStyleNum"167"}}
 {\page-link #120 {\fill-with-pattern #0.1 #RIGHT . "Jesu, hail! O God most holy" \oldStyleNum"120"}}
