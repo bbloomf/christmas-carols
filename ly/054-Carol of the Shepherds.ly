@@ -1,5 +1,5 @@
 ﻿\version "2.14.2"
-\include "../util.ly"
+\include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Carol of the Shepherds"}}
   poet = \markup\oldStyleNum"English by Eda Lou Walton (1894–1961)"

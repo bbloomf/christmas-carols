@@ -1,5 +1,5 @@
 ﻿\version "2.14.2"
-\include "../util.ly"
+\include "util.ly"
 \header {
   tagline = \markup \concat{ "from " \italic"The Wartburg Hymnal" \oldStyleNum", 1918, via " \italic"HymnsAndCarolsOfChristmas.com"}
 }

@@ -1,5 +1,5 @@
 ﻿\version "2.14.2"
-\include "../util.ly"
+\include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Come Ye Lofty"}}
   poet = \markup\oldStyleNum"Rev. Archer Gurney (1820–1887)"

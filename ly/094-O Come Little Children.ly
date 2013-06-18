@@ -1,5 +1,5 @@
 ﻿\version "2.14.2"
-\include "../util.ly"
+\include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"O Come, Little Children"}}
   poet = \markup\concat{\italic"Ihr Kinderlein kommet" ", by Christoph von Schmid (1768–1854)"}
