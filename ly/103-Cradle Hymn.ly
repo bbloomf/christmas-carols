@@ -17,6 +17,11 @@
        (minimum-distance . 0)
        (padding . -3)
        (stretchability . 100))
+  top-markup-spacing =
+    #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
   ragged-last-bottom = ##f
   ragged-bottom = ##f
   two-sided = ##t
@@ -24,11 +29,11 @@
   outer-margin = 0.75\in
   top-margin = 0.26\in
   bottom-margin = 0.25\in
-  first-page-number = #196
+  first-page-number = #103
   print-first-page-number = ##t
-  headerLine = ""
+  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -36,7 +41,7 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -84,56 +89,89 @@ sopWords = \lyricmode {
     Ho -- ly an -- gels guard thy bed,
   Heav -- n’ly bless -- ings with -- out num -- ber,
     Gen -- tly fall -- ing on thy head.
-  How much bet -- ter thou’rt at -- tend -- ed,
-    Than the Son of God could be,
-  When from Heav -- en He de -- scend -- ed,
-    And be -- came a child like thee!
+
+  Sleep, my babe; thy food and rai -- ment,
+    House and home, thy friends pro -- vide;	 
+  All with -- out thy care or pay -- ment:	 
+    All thy wants are well sup -- plied.
 }
 
 sopWordsII = \lyricmode {
   \set stanza = #"2. "
+  How much bet -- ter thou’rt at -- tend -- ed,
+    Than the Son of God could be,
+  When from Heav -- en He de -- scend -- ed,
+    And be -- came a child like thee!
+    
   Soft and ea -- sy is thy cra -- dle,
     Coarse and hard thy Sav -- ior lay:
   When His birth -- place was a sta -- ble,
     And His soft -- est bed was hay.
-  Was there no -- thing but a man -- ger
+}
+
+sopWordsIII = \lyricmode { 
+  \set stanza = "3. "
+  Bless -- ed babe! what glo -- rious fea -- tures—	 
+    Spot -- less fair, di -- vine -- ly bright!	 
+  Must He dwell with bru -- tal crea -- tures?	 
+    How could an -- gels bear the sight?
+  
+  Was there noth -- ing but a man -- ger
     Curs -- ed sin -- ners could af -- ford
   To re -- ceive the heav’n -- ly Stran -- ger?
     Did they thus af -- front their Lord?
 }
 
-sopWordsIII = \lyricmode {
-  \set stanza = #"3. "
+sopWordsIV = \lyricmode {
+  \set stanza = #"4. "
   Soft, my child, I did not chide thee,
     Though my song may seem too hard;
   ’Tis thy mo -- ther sits be -- side thee,
     And her arms shall be thy guard.
+ 
   Yet to tell the shame -- ful sto -- ry,
     How His foes a -- bused their King;
   How they killed the Lord of glo -- ry,
     Makes me an -- gry while I sing.
-    
-    
-%  May’st thou learn to know and fear him,
-%    Love and serve Him all thy days;
-%  Then to dwell for -- ev -- er near Him,
-%    See His face, and sing His praise.
 }
 
-sopWordsIV = \lyricmode {
-  \set stanza = #"4. "
+sopWordsV = \lyricmode {
+  \set stanza = #"5. "
+  See the kind -- er shep -- herds round Him,	 
+    Tell -- ing won -- ders from the sky!	 
+  Where they sought Him, there they found Him,
+    With His Vir -- gin mo -- ther by.	 
+
+  See the love -- ly Babe a -- dress -- ing;	 
+    Love -- ly in -- fant, how He smiled!	 
+  When He wept, the mo -- ther’s bless -- ing	 
+    Soothed and hush’d the ho -- ly Child.
+}
+
+sopWordsVI = \lyricmode {
+  \set stanza = #"6. "
   Lo, He slum -- bers in His man -- ger,
     Where the horn -- ed ox -- en fed:
   Peace, my dar -- ling; here’s no dan -- ger,
     Here’s no ox a -- near thy bed.
+
   ’Twas to save thee, child, from dy -- ing,
     Save my dear from burn -- ing flame,
   Bit -- ter groans and end -- less cry -- ing,
     That thy blest Re -- deem -- er came.
 }
 
-sopWordsV = \lyricmode {
-  \set stanza = #"5. "
+sopWordsVII = \lyricmode {
+  \set stanza = #"7. "
+  Mayst thou live to know and fear him,	
+    Trust and love him all thy days;
+  Then go dwell for -- ev -- er near him,	
+    See his face and sing his praise!	
+   
+  I could give thee thou -- sand kiss -- es,	
+    Hop -- ing what I most de -- sire;	
+  Not a mo -- ther’s fond -- est wish -- es
+    Can to great -- er joys a -- spire.
 }
 
 altoMusic = \relative c' {
@@ -258,6 +296,8 @@ pianoLH = \relative c' {
     \new Lyrics = "altosIII"  \lyricsto "altos" \sopWordsIII
     \new Lyrics = "altosIV"  \lyricsto "altos" \sopWordsIV
     \new Lyrics = "altosV"  \lyricsto "altos" \sopWordsV
+    \new Lyrics = "altosVI"  \lyricsto "altos" \sopWordsVI
+    \new Lyrics = "altosVII"  \lyricsto "altos" \sopWordsVII
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" \transpose d ees{ \voiceOne << \global \tenorMusic >> }
@@ -278,6 +318,7 @@ pianoLH = \relative c' {
       \Lyrics
       \override LyricText #'font-size = #1.3
       \override VerticalAxisGroup #'staff-affinity = #0
+      \override LyricText #'X-offset = #center-on-word
     }
     \context {
       \Score
