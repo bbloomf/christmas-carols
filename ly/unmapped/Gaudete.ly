@@ -1,6 +1,10 @@
 ﻿\version "2.14.2"
 \include "util.ly"
-\paper {
+\header {
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Gaudete"}}
+    composer = \markup\oldStyleNum"15th Century"
+    tagline = \markup\concat{"Chorus and text of verses from " \italic"Piæ Cantiones" \oldStyleNum", 1582, via " \italic"imslp.org" ", Melody of verses from " \italic "www.cpdl.org"}
+  }\paper {
   print-all-headers = ##f
   paper-height = 9\in
   paper-width = 6\in
@@ -36,9 +40,6 @@
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Gaudete"}}
-  composer = \markup\oldStyleNum"15th Century"
-  tagline = \markup\concat{"Chorus and text of verses from " \italic"Piæ Cantiones" \oldStyleNum", 1582, via " \italic"imslp.org" ", Melody of verses from " \italic "www.cpdl.org"}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 global = {
@@ -202,6 +203,10 @@ pianoLH = \relative c' {
     \context {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+    }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
     }
   }
   

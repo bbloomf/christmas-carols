@@ -1,6 +1,12 @@
 ﻿\version "2.14.2"
 \include "util.ly"
-\paper {
+\header {
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"In dulci jubilo"}}
+    poet = \markup\oldStyleNum"Heinrich Seuse (1300–1366)"
+    composer = \markup\oldStyleNum"Arranged by J.S. Bach (1685–1750)"
+    
+    tagline = \markup \concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
+  }\paper {
   print-all-headers = ##f
   paper-height = 9\in
   paper-width = 6\in
@@ -47,11 +53,6 @@
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"In dulci jubilo"}}
-  poet = \markup\oldStyleNum"Heinrich Seuse (1300–1366)"
-  composer = \markup\oldStyleNum"Arranged by J.S. Bach (1685–1750)"
-  
-  tagline = \markup \concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 global = {
@@ -262,6 +263,10 @@ bassWords = \lyricmode {
     \context {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+    }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
     }
   }
   

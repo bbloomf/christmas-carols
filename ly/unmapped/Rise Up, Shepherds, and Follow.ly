@@ -282,6 +282,10 @@ pianoLH = \relative c' {
       \Staff
       \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3)
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \midi {
     \tempo 4 = 90

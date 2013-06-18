@@ -271,6 +271,10 @@ pianoLH = \relative c' {
     }
 %6.14g    \context { \Lyrics \override LyricText #'font-size = #0.6 }
 %6x9 \context {\Lyrics\override LyricText #'font-size = #1.2 }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   
   \midi {

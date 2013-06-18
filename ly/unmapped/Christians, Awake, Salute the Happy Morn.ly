@@ -299,6 +299,10 @@ bassWords = \lyricmode {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \midi {
     \tempo 4 = 90

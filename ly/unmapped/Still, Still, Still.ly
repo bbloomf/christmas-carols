@@ -1,6 +1,11 @@
 ﻿\version "2.14.2"
 \include "util.ly"
-\paper {
+\header {
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Still, Still, Still"}}
+    poet = \markup\oldStyleNum"Traditional Austrian"
+    composer = \markup\oldStyleNum"Salzburg Melody, c. 1819"
+    tagline = \markup\concat{ "from " \italic "Salzburgische Volks-Lieder" \oldStyleNum", 1865"}
+  }\paper {
   print-all-headers = ##f
   paper-height = 9\in
   paper-width = 6\in
@@ -46,10 +51,6 @@
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Still, Still, Still"}}
-  poet = \markup\oldStyleNum"Traditional Austrian"
-  composer = \markup\oldStyleNum"Salzburg Melody, c. 1819"
-  tagline = \markup\concat{ "from " \italic "Salzburgische Volks-Lieder" \oldStyleNum", 1865"}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 %IF_NOT_LESSER
@@ -250,6 +251,10 @@ pianoLH = \relative c' {
     \context {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+    }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
     }
   }
   

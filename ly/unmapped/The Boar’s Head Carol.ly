@@ -1,6 +1,11 @@
 ﻿\version "2.14.2"
 \include "util.ly"
-\paper {
+\header {
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Boar’s Head Carol"}}
+    poet = \markup\oldStyleNum"15th Century English"
+    composer = \markup\oldStyleNum"Traditional English"
+    tagline = ""
+  }\paper {
   print-all-headers = ##f
   paper-height = 9\in
   paper-width = 6\in
@@ -46,10 +51,6 @@
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Boar’s Head Carol"}}
-  poet = \markup\oldStyleNum"15th Century English"
-  composer = \markup\oldStyleNum"Traditional English"
-  tagline = ""
 }
 
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
@@ -262,6 +263,10 @@ pianoLH = \relative c' {
     \context {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+    }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
     }
   }
   

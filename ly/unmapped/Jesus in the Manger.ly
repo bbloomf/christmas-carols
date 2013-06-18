@@ -1,6 +1,11 @@
 ﻿\version "2.14.2"
 \include "util.ly"
-\paper {
+\header {
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Jesus in the Manger"}}
+    poet = \markup\oldStyleNum"Translated by Rev. H.R. Bramley (1833–1917) from Latin"
+    composer = \markup\oldStyleNum"Henry Smart (1813–1879)"
+    tagline = \markup { "from" \italic {Christmas Carols, New and Old}}
+  }\paper {
   print-all-headers = ##f
   paper-height = 9\in
   paper-width = 6\in
@@ -41,10 +46,6 @@
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Jesus in the Manger"}}
-  poet = \markup\oldStyleNum"Translated by Rev. H.R. Bramley (1833–1917) from Latin"
-  composer = \markup\oldStyleNum"Henry Smart (1813–1879)"
-  tagline = \markup { "from" \italic {Christmas Carols, New and Old}}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 
@@ -371,6 +372,10 @@ pianoLH = \relative c' {
       % Remove all empty staves
       \Staff \RemoveEmptyStaves
       \override VerticalAxisGroup #'remove-first = ##t
+    }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
     }
   }
   

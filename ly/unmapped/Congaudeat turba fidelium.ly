@@ -1,6 +1,11 @@
 ﻿\version "2.14.2"
 \include "util.ly"
-\paper {
+\header {
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Congaudeat turba fidelium"}}
+    poet = \markup\concat{\italic \oldStyleNum"from an 11th Century Manuscript"}
+    composer = \markup\oldStyleNum"Old Melody in Hypo-Dorian Mode"
+    arranger = \markup\oldStyleNum"Arranged by G. H. Palmer"
+  }\paper {
   print-all-headers = ##f
   paper-height = 9\in
   paper-width = 6\in
@@ -41,10 +46,6 @@
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Congaudeat turba fidelium"}}
-  poet = \markup\concat{\italic \oldStyleNum"from an 11th Century Manuscript"}
-  composer = \markup\oldStyleNum"Old Melody in Hypo-Dorian Mode"
-  arranger = \markup\oldStyleNum"Arranged by G. H. Palmer"
 }
 
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
@@ -224,6 +225,10 @@ pianoLH = \relative c' {
       % can be closer to the staff
       \Staff
       \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3)
+    }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
     }
   }
   

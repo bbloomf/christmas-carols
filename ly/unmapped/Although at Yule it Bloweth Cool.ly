@@ -1,6 +1,12 @@
 ﻿\version "2.14.2"
 \include "util.ly"
-\paper {
+\header {
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Although at Yule it Bloweth Cool"}}
+    poet = \markup\oldStyleNum"George Ratcliffe Woodward (1848–1934)"
+    composer = \markup \concat{\italic "Der wind der wet, der han der kret" \oldStyleNum", 1554"}
+    arranger = \markup\oldStyleNum"Arranged by Charles Wood (1866–1926)"
+    tagline = \markup \concat{ "from " \italic "The Cambridge Carol Book" \oldStyleNum", 1924"}
+  }\paper {
   print-all-headers = ##f
   paper-height = 9\in
   paper-width = 6\in
@@ -41,12 +47,6 @@
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
-  
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Although at Yule it Bloweth Cool"}}
-  poet = \markup\oldStyleNum"George Ratcliffe Woodward (1848–1934)"
-  composer = \markup \concat{\italic "Der wind der wet, der han der kret" \oldStyleNum", 1554"}
-  arranger = \markup\oldStyleNum"Arranged by Charles Wood (1866–1926)"
-  tagline = \markup \concat{ "from " \italic "The Cambridge Carol Book" \oldStyleNum", 1924"}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 
@@ -203,6 +203,10 @@ pianoLH = \relative c' {
     \context {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+    }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
     }
   }
   

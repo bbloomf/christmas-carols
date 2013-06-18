@@ -254,6 +254,10 @@ pianoLH = \relative c' {
       \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
       \remove "Time_signature_engraver"
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   
   \midi {

@@ -1,6 +1,10 @@
 ﻿\version "2.14.2"
 \include "util.ly"
-\paper {
+\header {
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"While Shepherds Watched Their Flocks"}}
+    poet = \markup\oldStyleNum"Nahum Tate (1652–1715)"
+    composer = \markup\oldStyleNum"Adapted from George F. Handel"
+  }\paper {
   print-all-headers = ##f
   paper-height = 9\in
   paper-width = 6\in
@@ -47,9 +51,6 @@
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"While Shepherds Watched Their Flocks"}}
-  poet = \markup\oldStyleNum"Nahum Tate (1652–1715)"
-  composer = \markup\oldStyleNum"Adapted from George F. Handel"
 }
 #(set-global-staff-size 14.6) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14.6 20))) }
 global = {
@@ -219,6 +220,10 @@ bassWords = \lyricmode {
   \override LyricText #'font-size = #1.1
 }
 %}%END_IF_LESSER
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   
   \midi {

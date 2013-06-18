@@ -1,6 +1,13 @@
 ﻿\version "2.14.2"
 \include "util.ly"
-\paper {
+\header {
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"How Great Our Joy!"}}
+    poet = \markup\oldStyleNum"German Carol"
+    meter = \markup\oldStyleNum"Translated by Theodore Baker (1851–1934)"
+    composer = \markup\oldStyleNum"German Melody"
+    arranger = \markup\oldStyleNum"Arranged by Hugo Jüngst (1853–1923)"
+    tagline = \markup { "from" \italic "CyberHymnal.org"}
+  }\paper {
   print-all-headers = ##f
   paper-height = 9\in
   paper-width = 6\in
@@ -41,12 +48,6 @@
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"How Great Our Joy!"}}
-  poet = \markup\oldStyleNum"German Carol"
-  meter = \markup\oldStyleNum"Translated by Theodore Baker (1851–1934)"
-  composer = \markup\oldStyleNum"German Melody"
-  arranger = \markup\oldStyleNum"Arranged by Hugo Jüngst (1853–1923)"
-  tagline = \markup { "from" \italic "CyberHymnal.org"}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 global = {
@@ -280,6 +281,10 @@ pianoLH = \relative c' {
     \context {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+    }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
     }
   }
   
