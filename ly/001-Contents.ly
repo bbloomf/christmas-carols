@@ -65,7 +65,7 @@
 \markup{\abs-fontsize #12 \override #'(baseline-skip . 2.35) \justify{In a few cases I have included the original foreign-language words as well as an English translation, but in other cases this was impossible, for Bramley and Stainer, while noting which texts were translations, were not so thoughtful as to include the \italic names of the original texts, and I have only been able to find the source texts for a few of them.  There are also a few foreign-language carols for which I have not included any English translation.}}
 \markup\vspace #0.8
 \markup\fill-line {"" \abs-fontsize #12 \italic"Benjamin Bloomfield"}
-\markup\fill-line {"" \abs-fontsize #12 "Cincinnati, 2013"}
+\markup\fill-line {"" \abs-fontsize #12 "Cincinnati, 2012"}
 \pageBreak
 \markup\vspace #0.4
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #32 \smallCapsOldStyle"contents"}}
