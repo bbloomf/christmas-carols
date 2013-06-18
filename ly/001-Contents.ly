@@ -179,7 +179,8 @@
 {\page-link #24 {\fill-with-pattern #0.1 #RIGHT . "It Came Upon the Midnight Clear" \oldStyleNum"20"}}
 {\page-link #172 {\fill-with-pattern #0.1 #RIGHT . \italic"It was the very noon of night" \oldStyleNum"168"}}
 }}}
-\markup\vspace#1
+\pageBreak
+\markup\vspace#0.8
 \markup{{\override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \column{
 {\page-link #171 {\fill-with-pattern #0.1 #RIGHT . "Jacob's Ladder" \oldStyleNum"167"}}
 {\page-link #124 {\fill-with-pattern #0.1 #RIGHT . "Jesu, hail! O God most holy" \oldStyleNum"120"}}
