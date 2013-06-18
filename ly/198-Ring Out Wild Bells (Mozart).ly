@@ -1,5 +1,5 @@
 ﻿\version "2.14.2"
-\include "../util.ly"
+\include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Ring Out, Wild Bells"}}
   poet = \markup\oldStyleNum"Alfred Lord Tennyson (1809–1892)"

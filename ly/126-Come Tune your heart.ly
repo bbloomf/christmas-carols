@@ -1,5 +1,5 @@
 ﻿\version "2.14.2"
-\include "../util.ly"
+\include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Come! Tune Your Heart"}}
   poet = \markup\concat{\italic"Auf, schicke dich" ", by Christian Fürchtegott Gellert (1715–1769)"}

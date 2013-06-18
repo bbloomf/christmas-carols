@@ -1,5 +1,5 @@
 ﻿\version "2.14.2"
-\include "../util.ly"
+\include "util.ly"
 \paper {
   print-all-headers = ##t
   paper-height = 9\in

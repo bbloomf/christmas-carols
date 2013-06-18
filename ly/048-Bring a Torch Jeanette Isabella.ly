@@ -1,5 +1,5 @@
 ﻿\version "2.14.2"
-\include "../util.ly"
+\include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Bring a Torch, Jeanette, Isabella!"}}
   poet = \markup\concat{\italic"Un flambeau, Jeannette, Isabelle" \oldStyleNum", by Émile Blémont (1839–1927)"}

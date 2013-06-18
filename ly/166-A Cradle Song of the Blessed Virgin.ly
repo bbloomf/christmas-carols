@@ -1,5 +1,5 @@
 ﻿\version "2.14.2"
-\include "../util.ly"
+\include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"A Cradle-Song of the Blessed Virgin"}}
   poet = \markup\oldStyleNum"Translated by Rev. H.R. Bramley (1833–1917) from Latin"
