@@ -559,5 +559,10 @@ pianoLH = \relative c {
          (padding . 1)
          (stretchability . 2))
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
 }
+

@@ -196,6 +196,7 @@ pianoLH = \relative c' {
   \layout {
 %6x9  \context {\Lyrics\override LyricText #'font-size = #0.75 }
 %6.14 \context {\Lyrics\override LyricText #'font-size = #0.25 }
+%8.5x11g \context {\Lyrics\override LyricText #'font-size = #1.1 }
 %{IF_LESSER
 \context {\Lyrics\override LyricText #'font-size = #0.6 }
 %}%END_IF_LESSER
@@ -208,6 +209,10 @@ pianoLH = \relative c' {
     \context {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+    }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
     }
   }
   \header {
@@ -385,6 +390,10 @@ pianoLH = \relative c' {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"I Heard the Bells on Christmas Day"}}
@@ -394,3 +403,4 @@ pianoLH = \relative c' {
   }
 }
 \header {tagline = \markup\concat{"from "\italic"HymnsAndCarolsOfChristmas.com"}}
+

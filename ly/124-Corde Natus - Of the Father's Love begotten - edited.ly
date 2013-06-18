@@ -276,5 +276,10 @@ pianoLH = \relative c' {
 %{IF_LESSER
 \context { \Lyrics \override LyricText #'font-size = #1.2 }
 %}%END_IF_LESSER
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
 }
+

@@ -280,6 +280,10 @@ pianoLH = \relative c' {
       \Staff
       \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3)
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"From Church to Church"}}
@@ -293,3 +297,4 @@ pianoLH = \relative c' {
 \header {
     tagline = \markup\concat{ "from " \italic"The Cowley Carol Book" \oldStyleNum", 1919"}
   }
+

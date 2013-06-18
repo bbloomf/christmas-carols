@@ -400,6 +400,10 @@ pianoLH = \relative c' {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
 }
 \markup {\fontsize #0.8 \override #'(font-name . "Garamond Premier Pro")
@@ -470,3 +474,4 @@ pianoLH = \relative c' {
     " "
   }
 }
+

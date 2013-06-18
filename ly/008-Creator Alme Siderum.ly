@@ -249,6 +249,10 @@ pianoLH = \relative c' {
       \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
       \remove "Time_signature_engraver"
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Creator alme siderum"}}
@@ -470,6 +474,10 @@ pianoLH = \relative c' {
       \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
       \remove "Time_signature_engraver"
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Creator of the Stars of Night"}}
@@ -619,6 +627,10 @@ bassWords = \lyricmode {
       \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
       \remove "Time_signature_engraver"
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Conditor alme siderum"}}
@@ -691,6 +703,10 @@ sopWords = \lyricmode {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Christmas is Coming"}}
@@ -699,3 +715,4 @@ sopWords = \lyricmode {
     composer = \markup\oldStyleNum"Edith Nesbitt (1858–1924)"
   }
 }
+

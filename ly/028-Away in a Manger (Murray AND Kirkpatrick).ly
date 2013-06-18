@@ -248,6 +248,10 @@ bassWords = \lyricmode {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Away In A Manger"}}
@@ -465,6 +469,10 @@ bassWords = \lyricmode {
 %8.5x11g    \context {\Lyrics \override LyricText #'font-size = #0.7 }
 %6.14g    \context {\Lyrics \override LyricText #'font-size = #0.7 }
 %6x9 \context {\Lyrics\override LyricText #'font-size = #1.2 }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Away In A Manger"}}
@@ -472,3 +480,4 @@ bassWords = \lyricmode {
     composer = \markup\oldStyleNum"William Kirkpatrick (1838–1921)"
   }
 }
+

@@ -229,6 +229,10 @@ pianoLH = \relative c' {
       % Remove all empty staves
       % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
     }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Glad Christmas Bells"}}
@@ -237,3 +241,4 @@ pianoLH = \relative c' {
     tagline = \markup\concat{ "from " \italic\oldStyleNum"Franklin Square Song Collection, No. 1" \oldStyleNum", 1881, via " \italic"HymnsAndCarolsOfChristmas.com"}
   }
 }
+
