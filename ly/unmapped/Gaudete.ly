@@ -35,11 +35,10 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Gaudete"}}
-    composer = \markup\oldStyleNum"15th Century"
-    tagline = \markup\concat{"Chorus and text of verses from " \italic"Piæ Cantiones" \oldStyleNum", 1582, via " \italic"imslp.org" ", Melody of verses from " \italic "www.cpdl.org"}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Gaudete"}}
+  composer = \markup\oldStyleNum"15th Century"
+  tagline = \markup\concat{"Chorus and text of verses from " \italic"Piæ Cantiones" \oldStyleNum", 1582, via " \italic"imslp.org" ", Melody of verses from " \italic "www.cpdl.org"}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 global = {

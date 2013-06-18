@@ -40,12 +40,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Friendly Beasts"}}
-    poet = \markup\oldStyleNum"Robert Davis (1881–1950)"
-    composer = \markup\concat{"Adapted from "\italic"Orientis Partibus" \oldStyleNum", 12th Century French"}
-    tagline = \markup { "from" \italic {HymnsAndCarolsOfChristmas.com}}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Friendly Beasts"}}
+  poet = \markup\oldStyleNum"Robert Davis (1881–1950)"
+  composer = \markup\concat{"Adapted from "\italic"Orientis Partibus" \oldStyleNum", 12th Century French"}
+  tagline = \markup { "from" \italic {HymnsAndCarolsOfChristmas.com}}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 global = {

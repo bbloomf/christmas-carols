@@ -45,12 +45,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Sweet was the song the Virgin sung"}}
-    poet = \markup\concat{"From William Ballet’s " \italic"Lute Book" ", c. 1600"}
-    composer = \markup\oldStyleNum"Arranged by Charles Wood (1866–1926)"
-    tagline = \markup\concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Sweet was the song the Virgin sung"}}
+  poet = \markup\concat{"From William Ballet’s " \italic"Lute Book" ", c. 1600"}
+  composer = \markup\oldStyleNum"Arranged by Charles Wood (1866–1926)"
+  tagline = \markup\concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 %IF_NOT_LESSER

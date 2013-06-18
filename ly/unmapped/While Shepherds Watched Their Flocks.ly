@@ -46,11 +46,10 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"While Shepherds Watched Their Flocks"}}
-    poet = \markup\oldStyleNum"Nahum Tate (1652–1715)"
-    composer = \markup\oldStyleNum"Adapted from George F. Handel"
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"While Shepherds Watched Their Flocks"}}
+  poet = \markup\oldStyleNum"Nahum Tate (1652–1715)"
+  composer = \markup\oldStyleNum"Adapted from George F. Handel"
 }
 #(set-global-staff-size 14.6) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14.6 20))) }
 global = {

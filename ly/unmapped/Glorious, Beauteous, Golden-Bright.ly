@@ -35,12 +35,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Glorious, Beauteous, Golden-Bright"}}
-    poet = \markup\oldStyleNum"Anna M. E. Nichols"
-    composer = \markup\oldStyleNum"Maria Tiddeman (1837–1915)"
-    tagline = \markup { "from" \italic {Christmas Carols, New and Old}}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Glorious, Beauteous, Golden-Bright"}}
+  poet = \markup\oldStyleNum"Anna M. E. Nichols"
+  composer = \markup\oldStyleNum"Maria Tiddeman (1837–1915)"
+  tagline = \markup { "from" \italic {Christmas Carols, New and Old}}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 

@@ -50,12 +50,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    %title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Unto us is born a Son"}}
-    subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #10.5 "(The same, in English)"}}
-    %poet = \markup{\oldStyleNum"Words and tune (14th cent.) from" \italic"Piæ Cantiones," 1582}
-    %composer = \markup\oldStyleNum"Arranged by G.H. Palmer"
   }
+  %title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Unto us is born a Son"}}
+  subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #10.5 "(The same, in English)"}}
+  %poet = \markup{\oldStyleNum"Words and tune (14th cent.) from" \italic"Piæ Cantiones," 1582}
+  %composer = \markup\oldStyleNum"Arranged by G.H. Palmer"
 }
 #(set-global-staff-size 14.8) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14.8 20))) }
 

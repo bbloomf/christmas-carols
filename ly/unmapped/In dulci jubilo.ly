@@ -46,13 +46,12 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"In dulci jubilo"}}
-    poet = \markup\oldStyleNum"Heinrich Seuse (1300–1366)"
-    composer = \markup\oldStyleNum"Arranged by J.S. Bach (1685–1750)"
-    
-    tagline = \markup \concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"In dulci jubilo"}}
+  poet = \markup\oldStyleNum"Heinrich Seuse (1300–1366)"
+  composer = \markup\oldStyleNum"Arranged by J.S. Bach (1685–1750)"
+  
+  tagline = \markup \concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 global = {

@@ -40,12 +40,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Orientis Partibus"}}
-    poet = \markup\oldStyleNum"Attributed to Pierre de Corbeil, Bishop of Sens (d. 1222)"
-    composer = \markup\oldStyleNum"12th Century French"
-    tagline = \markup \concat{ "Words from " \italic"HymnsAndCarolsOfChristmas.com" ", Music from " \italic"CyberHymnal.org"}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Orientis Partibus"}}
+  poet = \markup\oldStyleNum"Attributed to Pierre de Corbeil, Bishop of Sens (d. 1222)"
+  composer = \markup\oldStyleNum"12th Century French"
+  tagline = \markup \concat{ "Words from " \italic"HymnsAndCarolsOfChristmas.com" ", Music from " \italic"CyberHymnal.org"}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 

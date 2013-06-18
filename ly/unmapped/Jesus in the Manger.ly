@@ -40,12 +40,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Jesus in the Manger"}}
-    poet = \markup\oldStyleNum"Translated by Rev. H.R. Bramley (1833–1917) from Latin"
-    composer = \markup\oldStyleNum"Henry Smart (1813–1879)"
-    tagline = \markup { "from" \italic {Christmas Carols, New and Old}}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Jesus in the Manger"}}
+  poet = \markup\oldStyleNum"Translated by Rev. H.R. Bramley (1833–1917) from Latin"
+  composer = \markup\oldStyleNum"Henry Smart (1813–1879)"
+  tagline = \markup { "from" \italic {Christmas Carols, New and Old}}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 

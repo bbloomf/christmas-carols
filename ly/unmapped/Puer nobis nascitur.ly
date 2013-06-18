@@ -50,12 +50,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Puer nobis nascitur"}}
-    poet = \markup\concat{\oldStyleNum"Words and tune (14th cent.) from " \italic"Piæ Cantiones" \oldStyleNum", 1582"}
-    composer = \markup\oldStyleNum"Arranged by G.H. Palmer"
-    tagline = \markup\concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Puer nobis nascitur"}}
+  poet = \markup\concat{\oldStyleNum"Words and tune (14th cent.) from " \italic"Piæ Cantiones" \oldStyleNum", 1582"}
+  composer = \markup\oldStyleNum"Arranged by G.H. Palmer"
+  tagline = \markup\concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
 }
 #(set-global-staff-size 14.8) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14.8 20))) }
 global = {

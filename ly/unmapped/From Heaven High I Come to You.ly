@@ -45,14 +45,13 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"From Heaven High I Come to You"}}
-    poet = \markup\oldStyleNum"Martin Luther (1483–1546)"
-    meter = \markup\oldStyleNum"Translated by Catherine Winkworth (1827–1878)"
-    composer = \markup\oldStyleNum"Old German Melody Attributed to Martin Luther"
-    arranger = \markup\oldStyleNum"Adapted by J.S. Bach (1685–1750)"
-    tagline = \markup \concat{ "from " \italic "The English Hymnal" \oldStyleNum", 1906"}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"From Heaven High I Come to You"}}
+  poet = \markup\oldStyleNum"Martin Luther (1483–1546)"
+  meter = \markup\oldStyleNum"Translated by Catherine Winkworth (1827–1878)"
+  composer = \markup\oldStyleNum"Old German Melody Attributed to Martin Luther"
+  arranger = \markup\oldStyleNum"Adapted by J.S. Bach (1685–1750)"
+  tagline = \markup \concat{ "from " \italic "The English Hymnal" \oldStyleNum", 1906"}
 }
 
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }

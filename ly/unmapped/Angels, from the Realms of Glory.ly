@@ -45,12 +45,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Angels, from the Realms of Glory"}}
-    poet = \markup\oldStyleNum"James Montgomery (1771–1854)"
-    composer = \markup\oldStyleNum"Henry Smart (1813–1879)"
-    tagline = \markup { "from" \concat{\italic "Christmas Carols and Hymns for School and Choir" \oldStyleNum", 1910"}}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Angels, from the Realms of Glory"}}
+  poet = \markup\oldStyleNum"James Montgomery (1771–1854)"
+  composer = \markup\oldStyleNum"Henry Smart (1813–1879)"
+  tagline = \markup { "from" \concat{\italic "Christmas Carols and Hymns for School and Choir" \oldStyleNum", 1910"}}
 }
 
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }

@@ -40,14 +40,13 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"From Church to Church"}}
-    poet = \markup\concat{\italic "Congaudeat turba fidelium" \oldStyleNum", from an 11th Century Manuscript"}
-    meter = \markup\oldStyleNum"Versified by John Mason Neale (1818–1866)"
-    composer = \markup\oldStyleNum"Old Melody in Hypo-Dorian Mode"
-    arranger = \markup\oldStyleNum"Arranged by G. H. Palmer"
-    tagline = \markup\concat{ "from " \italic"The Cowley Carol Book" \oldStyleNum", 1919"}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"From Church to Church"}}
+  poet = \markup\concat{\italic "Congaudeat turba fidelium" \oldStyleNum", from an 11th Century Manuscript"}
+  meter = \markup\oldStyleNum"Versified by John Mason Neale (1818–1866)"
+  composer = \markup\oldStyleNum"Old Melody in Hypo-Dorian Mode"
+  arranger = \markup\oldStyleNum"Arranged by G. H. Palmer"
+  tagline = \markup\concat{ "from " \italic"The Cowley Carol Book" \oldStyleNum", 1919"}
 }
 
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }

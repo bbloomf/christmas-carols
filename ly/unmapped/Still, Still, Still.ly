@@ -45,12 +45,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Still, Still, Still"}}
-    poet = \markup\oldStyleNum"Traditional Austrian"
-    composer = \markup\oldStyleNum"Salzburg Melody, c. 1819"
-    tagline = \markup\concat{ "from " \italic "Salzburgische Volks-Lieder" \oldStyleNum", 1865"}
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Still, Still, Still"}}
+  poet = \markup\oldStyleNum"Traditional Austrian"
+  composer = \markup\oldStyleNum"Salzburg Melody, c. 1819"
+  tagline = \markup\concat{ "from " \italic "Salzburgische Volks-Lieder" \oldStyleNum", 1865"}
 }
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 %IF_NOT_LESSER

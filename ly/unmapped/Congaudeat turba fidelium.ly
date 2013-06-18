@@ -40,12 +40,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Congaudeat turba fidelium"}}
-    poet = \markup\concat{\italic \oldStyleNum"from an 11th Century Manuscript"}
-    composer = \markup\oldStyleNum"Old Melody in Hypo-Dorian Mode"
-    arranger = \markup\oldStyleNum"Arranged by G. H. Palmer"
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Congaudeat turba fidelium"}}
+  poet = \markup\concat{\italic \oldStyleNum"from an 11th Century Manuscript"}
+  composer = \markup\oldStyleNum"Old Melody in Hypo-Dorian Mode"
+  arranger = \markup\oldStyleNum"Arranged by G. H. Palmer"
 }
 
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }

@@ -45,12 +45,11 @@
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
-  
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Boar’s Head Carol"}}
-    poet = \markup\oldStyleNum"15th Century English"
-    composer = \markup\oldStyleNum"Traditional English"
-    tagline = ""
   }
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Boar’s Head Carol"}}
+  poet = \markup\oldStyleNum"15th Century English"
+  composer = \markup\oldStyleNum"Traditional English"
+  tagline = ""
 }
 
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
