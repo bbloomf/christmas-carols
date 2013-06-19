@@ -62,7 +62,7 @@ global = {
 }
 
 sopMusic = \relative c' {
-  \tempo \markup\italic"Very slow and solemn" 4 = 39
+  \tempo \markup\italic"Very slow and solemn" 4 = 64
   \repeat volta 2 {
     d4 fis a a |
     a a b2 |
@@ -314,25 +314,8 @@ pianoLH = \relative c' {
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
-  \layout {
-
-%6.14 \context {\Lyrics\override LyricText #'font-size = #0.75 }
-    \context {
-      \Score
-      %\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 8)
-      %\override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
-    }
-    \context {
-      % Remove all empty staves
-      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
-    }
-    \context {
-      \Lyrics
-      \override LyricText #'X-offset = #center-on-word
-    }
-  }
   \midi {
-    \tempo 4 = 90
+    \tempo 4 = 180
     \set Staff.midiInstrument = "flute"
   
     \context {

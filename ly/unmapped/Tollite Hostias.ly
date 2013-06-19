@@ -354,6 +354,7 @@ bassWords = \lyricmode {
 }
 
 pianoRH = \relative c' {
+  \set Staff.midiInstrument = "piano"
   \repeat volta 2 {
     <g' b d>2_\f q4 <fis c' d> |
     <g d' g>4. <g b d>8 q2 |
@@ -414,6 +415,7 @@ pianoRH = \relative c' {
   
 }
 pianoLH = \relative c' {
+  \set Staff.midiInstrument = "piano"
   \repeat volta 2 {
     <g g,>2 q4 <a a,> |
     <b b,>4. <g g,>8 q2 |
@@ -511,7 +513,7 @@ pianoLH = \relative c' {
   }
   
   \midi {
-    \tempo 4 = 90
+    \tempo 4 = 105
     \set Staff.midiInstrument = "flute"
   
     \context {
