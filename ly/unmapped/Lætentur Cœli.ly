@@ -220,6 +220,28 @@ pianoLH = \relative c' {
       \override LyricText #'X-offset = #center-on-word
     }
   }
+  
+}
+
+\score {
+  \unfoldRepeats
+
+  <<
+   \new ChoirStaff <<
+    \new Staff = women <<
+      \new Voice = "sopranos" { \global \sopMusic }
+    >>
+    \new Lyrics \with { alignBelowContext = #"women" } \lyricsto "sopranos" \sopWords
+   \new Staff = men <<
+      \clef bass
+      \new Voice = "basses" { \global \bassMusic }
+    >>
+    %\new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
+  >>
+%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
+  >>
+  
   \midi {
     \tempo 4 = 120
     \set Staff.midiInstrument = "flute"
@@ -230,3 +252,4 @@ pianoLH = \relative c' {
     }
   }
 }
+

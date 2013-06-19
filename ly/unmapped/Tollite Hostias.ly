@@ -131,28 +131,34 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  d2 g4 fis |
-  g4. b8 b2 |
-  b a4 a |
-  g2 fis |
-  g4 a g4. g8 |
-  g4. a8 d,2 |
+  \repeat volta 2 {
+    d2 g4 fis |
+    g4. b8 b2 |
+    b a4 a |
+    g2 fis |
+    g4 a g4. g8 |
+    g4. a8 d,2 |
+    
+    a'4 a g( a) |
+    fis2. s4 |
+  }
   
-  a'4 a g( a) |
-  fis2. s4 |
   
-  
-  fis2 fis4 fis |
-  e2 e4 d |
-  d2 g4 g |
-  fis2 g |
-  
-  %page2
-  g4 fis8 e d4 g8 a |
-  b4 c8 d e4 d8[ c] |
-  b4 g g fis |
-  d2. s4 |
-  d2. s4 |
+  \repeat volta 2 {
+    fis2 fis4 fis |
+    e2 e4 d |
+    d2 g4 g |
+    fis2 g |
+    
+    %page2
+    g4 fis8 e d4 g8 a |
+    b4 c8 d e4 d8[ c] |
+    b4 g g fis |
+  }
+  \alternative {
+    { d2. s4 }
+    { d2. s4 }
+  }
   s4 e e d |
   
   c c' c b |
@@ -233,28 +239,34 @@ altoWordsVI = \lyricmode {
   \set ignoreMelismata = ##t
 }
 tenorMusic = \relative c' {
-  b2 b4 c |
-  d4. d8 d2 |
-  g2 d4 d |
-  d2 d |
-  g,4 d' d4. d8 |
-  e4. fis8 g2 |
+  \repeat volta 2 {
+    b2 b4 c |
+    d4. d8 d2 |
+    g2 d4 d |
+    d2 d |
+    g,4 d' d4. d8 |
+    e4. fis8 g2 |
+    
+    e4 d d( e) |
+    d2. s4 |
+  }
   
-  e4 d d( e) |
-  d2. s4 |
   
-  
-  a2 d4 d |
-  b2 b4 a |
-  g2 b4 e |
-  d2 d |
-  
-  %page2
-  b4 c d c |
-  b a g a |
-  b e d d |
-  b2. s4 |
-  b4 b b a |
+  \repeat volta 2 {
+    a2 d4 d |
+    b2 b4 a |
+    g2 b4 e |
+    d2 d |
+    
+    %page2
+    b4 c d c |
+    b a g a |
+    b e d d |
+  }
+  \alternative {
+    { b2. s4 }
+    { b4 b b a }
+  }
   g1~ |
   
   g~ |
@@ -304,27 +316,32 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  g'2 g4 a |
-  b4. g8 g2 |
-  e fis4 d |
-  g2 d |
-  e4 fis g4. g8 |
-  c4. c8 b2 |
+  \repeat volta 2 {
+    g'2 g4 a |
+    b4. g8 g2 |
+    e fis4 d |
+    g2 d |
+    e4 fis g4. g8 |
+    c4. c8 b2 |
+    
+    a4 fis g( c,) |
+    d2. d4\rest |
+  }
   
-  a4 fis g( c,) |
-  d2. d4\rest |
-  
-  
-  d2 d4 b |
-  e2 e4 fis |
-  g2 e4 c |
-  d2 g |
-  
-  g4 a b a |
-  g fis e fis |
-  g c, d d |
-  g,2. d'4\rest |
-  g,2. r4 |
+  \repeat volta 2 {
+    d2 d4 b |
+    e2 e4 fis |
+    g2 e4 c |
+    d2 g |
+    
+    g4 a b a |
+    g fis e fis |
+    g c, d d |
+  }
+  \alternative {
+    { g,2. d'4\rest }
+    { g,2. r4 }
+  }
   r1 |
   
   r |
@@ -512,6 +529,38 @@ pianoLH = \relative c' {
     }
   }
   
+  
+}
+
+\score {
+  \unfoldRepeats
+
+  <<
+   \new ChoirStaff <<
+    \new Staff = women <<
+      \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
+      \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
+    >>
+    \new Staff = men <<
+      \clef bass
+      \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
+      \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
+    >>
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "altos" \altoWords
+   \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+  >>
+  \new PianoStaff <<
+\new Staff = "one" { \new Voice { \global \pianoRH } } \new Staff = "two" { \global \clef "bass" \pianoLH } >>
+>>
+  
+  
   \midi {
     \tempo 4 = 105
     \set Staff.midiInstrument = "flute"
@@ -522,3 +571,4 @@ pianoLH = \relative c' {
     }
   }
 }
+

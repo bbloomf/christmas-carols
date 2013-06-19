@@ -104,14 +104,17 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c'' {
-  a8 |
-  a4 f8 f4 e8 |
-  f( f) f8 c4 c8 |
-  d4 d8 c[ f] e |
-  
-  f4 c8 f4 |
-  
-  f4 c8 f4. |
+  \repeat volta 2 {
+    a8 |
+    a4 f8 f4 e8 |
+    f( f) f8 c4 c8 |
+    d4 d8 c[ f] e |
+  }
+  \alternative {
+    { f4 c8 f4 | }
+      
+    { f4 c8 f4. | }
+  }
   e d4 d8 |
   e[ f] g a[ g] f |
   
@@ -123,14 +126,17 @@ altoMusic = \relative c'' {
   
   
   
-  a8 |
-  a4 f8 f4 e8 |
-  f4 f8 c4 c8 |
-  d4 d8 c[ f] e |
+  \repeat volta 2 {
+    a8 |
+    a4 f8 f4 e8 |
+    f4 f8 c4 c8 |
+    d4 d8 c[ f] e |
+  }
+  \alternative {
+    { f4 c8 f4 | }
   
-  f4 c8 f4 |
-  
-  f4 c8 f4. |
+    { f4 c8 f4. | }
+  }
   e d4 d8 |
   e[ f] g a[ g] f |
   
@@ -192,14 +198,17 @@ altoWordsVI = \lyricmode {
   \set ignoreMelismata = ##t
 }
 tenorMusic = \relative c' {
-  c8 |
-  c4 c8 d4 c8 |
-  c( bes) a bes4 bes8 |
-  a4 a8 bes[ a] c |
+  \repeat volta 2 {
+    c8 |
+    c4 c8 d4 c8 |
+    c( bes) a bes4 bes8 |
+    a4 a8 bes[ a] c |
+  }
+  \alternative {
+    { d4 bes8 a4 | }
   
-  d4 bes8 a4 |
-  
-  d4 bes8 a4. |
+    { d4 bes8 a4. | }
+  }
   g bes4 a8 |
   bes[ f] c' f,4 c'8 |
   
@@ -211,14 +220,17 @@ tenorMusic = \relative c' {
   
   
   
-  c8 |
-  c4 c8 d4 c8 |
-  c[ bes] a bes4 bes8 |
-  a4 a8 bes[ a] c |
+  \repeat volta 2 {
+    c8 |
+    c4 c8 d4 c8 |
+    c[ bes] a bes4 bes8 |
+    a4 a8 bes[ a] c |
+  }
+  \alternative {
+    { d4 bes8 a4 | }
   
-  d4 bes8 a4 |
-  
-  d4 bes8 a4. |
+    { d4 bes8 a4. | }
+  }
   g bes4 a8 |
   bes[ f] c' f,4 c'8 |
   
@@ -232,14 +244,17 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  f8 |
-  f4 f8 bes,4 c8 |
-  f( f) f8 e4 c8 |
-  d4 d8 e[ d] c |
+  \repeat volta 2 {
+    f8 |
+    f4 f8 bes,4 c8 |
+    f( f) f8 e4 c8 |
+    d4 d8 e[ d] c |
+  }
+  \alternative {
+    { d4 e8 f4 | }
   
-  d4 e8 f4 |
-  
-  d4 e8 f4. |
+    { d4 e8 f4. | }
+  }
   c g'4 d8 |
   c[ f] e f4 f8 |
   c2. |
@@ -249,14 +264,17 @@ bassMusic = \relative c {
   
   
   
-  f8 |
-  f4 f8 bes,4 c8 |
-  f4 f8 e4 c8 |
-  d4 d8 e[ d] c |
+  \repeat volta 2 {
+    f8 |
+    f4 f8 bes,4 c8 |
+    f4 f8 e4 c8 |
+    d4 d8 e[ d] c |
+  }
+  \alternative {
+    { d4 e8 f4 | }
   
-  d4 e8 f4 |
-  
-  d4 e8 f4. |
+    { d4 e8 f4. | }
+  }
   c g'4 d8 |
   c[ f] e f4 f8 |
   c2. |
@@ -274,8 +292,9 @@ pianoRH = \relative c' {
 pianoLH = \relative c' {
   
 }
-
 \score {
+  \unfoldRepeats
+
   <<
    \new ChoirStaff <<
     \new Staff = women <<
@@ -324,3 +343,4 @@ pianoLH = \relative c' {
     }
   }
 }
+

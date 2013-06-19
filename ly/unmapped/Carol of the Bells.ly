@@ -143,55 +143,63 @@ sopWords = \lyricmode {
 altoMusic = \relative c'' {
   s2.*4 |
   
-  g2.-> |
-  f-> |
-  ees-> |
-  d-> |
+  \repeat volta 2 {  
+    g2.-> |
+    f-> |
+    ees-> |
+    d-> |
+    
+    g2.-> |
+    f-> |
+    ees-> |
+    d-> |
+    
+    g4-> g8 g g4 |
+    g4-> g8 g g4 |
+    g4-> g8 g g4 |
+    g4-> g8 g g4 |
+    
+    bes4-> a8 bes g4 |
+    bes4-> a8 bes g4 |
+    bes4-> a8 bes g4 |
+    bes4-> a8 bes g4 |
+    
+    %third system
+    bes4-> bes8 bes bes4 |
+    g4-> g8 g g4 |
+    g4-> g8 g g4 |
+    g4-> g8 g g4 |
+    
+    d2. |
+    e4( fis) g |
+    
+    d2. |
+    e4( fis) g |
+    
+    %page3
+    d2.-> |
+    bes-> |
+    f'-> |
+    ees-> |
+  }
   
-  g2.-> |
-  f-> |
-  ees-> |
-  d-> |
-  
-  g4-> g8 g g4 |
-  g4-> g8 g g4 |
-  g4-> g8 g g4 |
-  g4-> g8 g g4 |
-  
-  bes4-> a8 bes g4 |
-  bes4-> a8 bes g4 |
-  bes4-> a8 bes g4 |
-  bes4-> a8 bes g4 |
-  
-  %third system
-  bes4-> bes8 bes bes4 |
-  g4-> g8 g g4 |
-  g4-> g8 g g4 |
-  g4-> g8 g g4 |
-  
-  d2. |
-  e4( fis) g |
-  
-  d2. |
-  e4( fis) g |
-  
-  %page3
-  d2.-> |
-  bes-> |
-  f'-> |
-  ees-> |
-  
-  d-> |
-  d-> |
-  d-> |
-  d-> |
-  
-  d-> |
-  d-> |
-  d-> |
-  d-> |
-  bes'4-> a8-> bes-> g4->~ |
-  g2. \bar "|."
+  \alternative {
+    {
+      d-> |
+      d-> |
+      d-> |
+      d-> |
+    }
+    
+    {
+      d-> |
+      d-> |
+      d-> |
+      d-> |
+      bes'4-> a8-> bes-> g4->~ |
+      g2. \bar "|."
+    }
+  }
 }
 altoWords = {
   \lyricmode {
@@ -231,53 +239,61 @@ altoWords = {
   }
 }
 tenorMusic = \relative c' {
-  s2.*8 |
+  s2.*4 |
   
-  ees2.-> |
-  d-> |
-  c-> |
-  g-> |
-  
-  c4-> c8 c c4 |
-  d4-> d8 d d4 |
-  ees4-> ees8 ees ees4 |
-  d4-> d8 d d4 |
-  
-  d4 d8 d d4 |
-  e4 e8 e e4 |
-  f4 ees8\noBeam ees d4 |
-  g8[ f] ees8 ees d4 |
-  
-  %third system
-  d4 d8 d d4 |
-  d4 d8 c d4 |
-  d4 c8 d bes4 |
-  d4 c8 d bes4 |
-  
-  bes4 a8 bes g4 |
-  bes4 a8 bes g4 |
-  bes4 a8 bes g4 |
-  bes4 a8 bes g4 |
-  
-  %page3
-  bes2.-> |
-  g-> |
-  c-> |
-  c-> |
-  
-  bes-> |
-  bes-> |
-  bes-> |
-  bes-> |
-  
-  
-  bes4-> a8 bes g4 |
-  bes4-> a8 bes g4 |
-  bes4-> a8 bes g4 |
-  bes4-> a8 bes g4 |
-  
-  s2. |
-  g2.-> \bar "|."
+  \repeat volta 2 {
+    s2.*4
+    
+    ees2.-> |
+    d-> |
+    c-> |
+    g-> |
+    
+    c4-> c8 c c4 |
+    d4-> d8 d d4 |
+    ees4-> ees8 ees ees4 |
+    d4-> d8 d d4 |
+    
+    d4 d8 d d4 |
+    e4 e8 e e4 |
+    f4 ees8\noBeam ees d4 |
+    g8[ f] ees8 ees d4 |
+    
+    %third system
+    d4 d8 d d4 |
+    d4 d8 c d4 |
+    d4 c8 d bes4 |
+    d4 c8 d bes4 |
+    
+    bes4 a8 bes g4 |
+    bes4 a8 bes g4 |
+    bes4 a8 bes g4 |
+    bes4 a8 bes g4 |
+    
+    %page3
+    bes2.-> |
+    g-> |
+    c-> |
+    c-> |
+  }
+  \alternative {
+    {
+      bes-> |
+      bes-> |
+      bes-> |
+      bes-> |
+    }
+    
+    {
+      bes4-> a8 bes g4 |
+      bes4-> a8 bes g4 |
+      bes4-> a8 bes g4 |
+      bes4-> a8 bes g4 |
+      
+      s2. |
+      g2.-> \bar "|."
+    }
+  }
 }
 tenorWords = \lyricmode {
   \repeat unfold 76 {\skip 1}
@@ -288,48 +304,55 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  s2.*12 |
+  s2.*4 |
   
-  ees4 ees8 ees8 ees4 |
-  g4-> g8 g g4 |
-  c4-> c8 c c4 |
-  g4-> g8 g g4 |
-  
-  g4 g8 g g4 |
-  g4 g8 g g4 |
-  g4 g8 g g4 |
-  g4 g8 g g4 |
-  
-  %third system
-  bes4 a8 bes g4 |
-  bes4 a8 bes g4 |
-  bes4 a8 bes g4 |
-  bes4 a8 bes g4 |
-  
-  d2. |
-  d |
-  d |
-  d |
-  
-  %page3
-  g2.-> |
-  ees-> |
-  <d a'>-> |
-  <c g'>-> |
-  
-  <g d'>-> |
-  q-> |
-  q-> |
-  q-> |
-  
-  
-  q-> |
-  q-> |
-  q-> |
-  q-> |
-  
-  d'\rest |
-  q->\fermata \bar "|."
+  \repeat volta 2 {
+    s2.*8
+    
+    ees4 ees8 ees8 ees4 |
+    g4-> g8 g g4 |
+    c4-> c8 c c4 |
+    g4-> g8 g g4 |
+    
+    g4 g8 g g4 |
+    g4 g8 g g4 |
+    g4 g8 g g4 |
+    g4 g8 g g4 |
+    
+    %third system
+    bes4 a8 bes g4 |
+    bes4 a8 bes g4 |
+    bes4 a8 bes g4 |
+    bes4 a8 bes g4 |
+    
+    d2. |
+    d |
+    d |
+    d |
+    
+    %page3
+    g2.-> |
+    ees-> |
+    <d a'>-> |
+    <c g'>-> |
+  }
+  \alternative {
+    {
+      <g d'>-> |
+      q-> |
+      q-> |
+      q-> |
+    }
+    {
+      q-> |
+      q-> |
+      q-> |
+      q-> |
+    
+      d'\rest |
+      q->\fermata \bar "|."
+    }
+  }
 }
 bassWords = \lyricmode {
   \repeat unfold 52 { \skip 1 }
@@ -379,6 +402,32 @@ pianoLH = \relative c' {
       \override LyricText #'X-offset = #center-on-word
     }
   }
+  
+}
+
+\score {
+  \unfoldRepeats
+
+  <<
+   \new ChoirStaff <<
+    \new Staff = women <<
+      \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
+      \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
+    >>
+   \new Staff = men <<
+      \clef bass
+      \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
+      \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
+    >>
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWords
+    \context Lyrics = "altos" \lyricsto "sopranos" \sopWordsBelow
+    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "basses" \bassWords
+  >>
+%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
+  >>
+  
   \midi {
     \tempo 4 = 170
     \set Staff.midiInstrument = "flute"
@@ -389,3 +438,4 @@ pianoLH = \relative c' {
     }
   }
 }
+

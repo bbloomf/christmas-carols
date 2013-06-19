@@ -88,26 +88,35 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  a4 fis' e e8 e |
-  a,4 fis' e2 |
-  e4 a8 gis a[ gis] fis e |
-  d4 dis e e |
-  a, fis' e e8 e |
-  a,4 fis' e2 |
-  
-  e4 fis8[ gis] a4 fis8 e |
-  d[ fis] e[ d] cis2 |
-  a'4 b cis b8 a |
-  b4 d cis2 |
-  a4 a a8[ cis] a a |
-  a4 fis8[ a] a4 gis |
-  
-  a b cis b8 a |
-  b4 d cis2 |
-  a4 a a a8 a |
-  a4 e8[ fis] gis2 |
-  cis,4 gis' e e8 a |
-  a2. gis4 | <e a>1\fermata \bar "|."
+  \repeat volta 4 {
+    a4 fis' e e8 e |
+    a,4 fis' e2 |
+    e4 a8 gis a[ gis] fis e |
+    d4 dis e e |
+    a, fis' e e8 e |
+    a,4 fis' e2 |
+    
+    e4 fis8[ gis] a4 fis8 e |
+    d[ fis] e[ d] cis2 |
+  }
+  \alternative {
+    {
+      a'4 b cis b8 a |
+      b4 d cis2 |
+      a4 a a8[ cis] a a |
+      a4 fis8[ a] a4 gis |
+      
+      a b cis b8 a |
+      b4 d cis2 |
+      a4 a a a8 a |
+      a4 e8[ fis] gis2 |
+    }
+    {
+      cis,4 gis' e e8 a |
+      a2. gis4 |
+      <e a>1\fermata \bar "|."
+    }
+  }
 }
 altoWords = \lyricmode {
   Il est né le di -- vin En -- fant,
@@ -155,27 +164,35 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  cis4 d cis a8 cis |
-  cis4 d8[ b] cis2 |
-  d1\rest |
-  d\rest |
-  cis4 d cis a8 cis |
-  cis4 d8[ b] cis2 |
-  
-  d1\rest |
-  d\rest |
-  d\rest |
-  d\rest |
-  a'4 b cis8[ a] d cis |
-  b4 a e' e |
-  
-  d,1\rest |
-  d\rest |
-  a'4 b cis d8 cis |
-  b4 a e2 |
-  fis4 e a b8 cis |
-  d2 e |
-  a,1\fermata \bar "|."
+  \repeat volta 4 {
+    cis4 d cis a8 cis |
+    cis4 d8[ b] cis2 |
+    d1\rest |
+    d\rest |
+    cis4 d cis a8 cis |
+    cis4 d8[ b] cis2 |
+    
+    d1\rest |
+    d\rest |
+  }
+  \alternative {
+    {
+      d\rest |
+      d\rest |
+      a'4 b cis8[ a] d cis |
+      b4 a e' e |
+      
+      d,1\rest |
+      d\rest |
+      a'4 b cis d8 cis |
+      b4 a e2 |
+    }
+    {
+      fis4 e a b8 cis |
+      d2 e |
+      a,1\fermata \bar "|."
+    }
+  }
 }
 bassWords = \lyricmode {
 
@@ -218,6 +235,34 @@ bassWords = \lyricmode {
       \override LyricText #'X-offset = #center-on-word
     }
   }
+  
+}
+
+\score {
+  \unfoldRepeats
+
+  <<
+   \new ChoirStaff <<
+    \new Staff = women <<
+      \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
+      \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
+    >>
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
+   \new Staff = men <<
+      \clef bass
+      \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
+      \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
+    >>
+    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+  >>
+%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
+  >>
+  
   \midi {
     \tempo 4 = 125
     \set Staff.midiInstrument = "flute"
@@ -228,3 +273,4 @@ bassWords = \lyricmode {
     }
   }
 }
+

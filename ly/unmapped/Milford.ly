@@ -315,6 +315,35 @@ pianoLH = \relative c' {
       \override LyricText #'X-offset = #center-on-word
     }
   }
+  
+}
+
+\score {
+  \unfoldRepeats
+
+  <<
+   \new ChoirStaff <<
+    \new Staff = women <<
+      \new Voice = "sopranos" { << \global \voiceOne \sopMusic >> }
+      \new Voice = "altos" { << \global \voiceTwo \altoMusic >> }
+    >>
+    \new Staff = tenors <<
+      \clef "G_8"
+      \new Voice = "tenors" { << \global \tenorMusic >> }
+    >>
+    \new Staff = basses <<
+      \clef bass
+      \new Voice = "basses" { << \global \bassMusic >> }
+    >>
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWords
+   
+    \new Lyrics \with { alignBelowContext = #"tenors" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"basses" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+  >>
+%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
+  >>
+  
   \midi {
     \tempo 4 = 180
     \set Staff.midiInstrument = "flute"
@@ -325,3 +354,4 @@ pianoLH = \relative c' {
     }
   }
 }
+

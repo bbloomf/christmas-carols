@@ -124,10 +124,12 @@ altoMusic = \relative c' {
   f4 f f4. c8 |
   \slurSolid f[ e] d4 e2 |
   
-  e4. e8 d4 d |
-  e e d2 |
-  c4 c c4. d8 |
-  \slurSolid d[ e] f4 e |
+  \repeat volta 2 {
+    e4. e8 d4 d |
+    e e d2 |
+    c4 c c4. d8 |
+    \slurSolid d[ e] f4 e |
+  }
 }
 altoWords = {
   \dropLyricsIX
@@ -191,10 +193,12 @@ tenorMusic = \relative c' {
   c4 c c4. a8 |
   c4 b c2 |
   
-  g4. g8 g4 g |
-  g a \slurSolid c( b) |
-  a a a4. a8 |
-  c4 b c |
+  \repeat volta 2 {
+    g4. g8 g4 g |
+    g a \slurSolid c( b) |
+    a a a4. a8 |
+    c4 b c |
+  }
 }
 tenorWords = \lyricmode {
 
@@ -213,10 +217,12 @@ bassMusic = \relative c {
   a4 \slurSolid a8[ g] f4 f |
   g4 g c,2 |
   
-  c4. c8 g'4 g |
-  c, a' g2 |
-  a4 a8[ g] f[ e] d4 |
-  g4 g, c\fermata |
+  \repeat volta 2 {
+    c4. c8 g'4 g |
+    c, a' g2 |
+    a4 a8[ g] f[ e] d4 |
+    g4 g, c\fermata |
+  }
 }
 bassWords = \lyricmode {
 
@@ -270,6 +276,38 @@ pianoLH = \relative c' {
     }
   }
   
+  
+}
+
+\score {
+  \unfoldRepeats
+
+  <<
+   \new ChoirStaff <<
+%    \new Lyrics = sopranos \with { \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) }
+    \new Staff = women <<
+      \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
+      \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
+    >>
+   \new Staff = men <<
+      \clef bass
+      \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
+      \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
+    >>
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((padding . -0.5))} \lyricsto "tenors" \altoWords
+    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+  >>
+%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
+  >>
+  
+  
   \midi {
     \tempo 4 = 150
     \set Staff.midiInstrument = "flute"
@@ -280,3 +318,4 @@ pianoLH = \relative c' {
     }
   }
 }
+
