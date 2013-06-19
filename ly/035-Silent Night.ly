@@ -52,7 +52,7 @@ global = {
 }
 
 sopMusic = \relative c' {
-  \tempo \markup\italic"Tranquillo" 8 = 112
+  \tempo \markup\italic"Tranquillo" 8 = 90
   f8.[ g16] f8 d4. |
   f8.[ g16] f8 d4. |
   c'8.[ b16] c8 a4. | \break
