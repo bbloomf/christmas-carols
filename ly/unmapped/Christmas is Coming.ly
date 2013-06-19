@@ -126,7 +126,7 @@ sopWords = \lyricmode {
   }
   
   \midi {
-    \tempo 4 = 90
+    \tempo 4 = 240
     \set Staff.midiInstrument = "flute"
   
     \context {

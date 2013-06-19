@@ -360,7 +360,7 @@ bassWords = \lyricmode {
     }
   }
   \midi {
-    \tempo 4 = 90
+    \tempo 4 = 170
     \set Staff.midiInstrument = "flute"
   
     \context {

@@ -154,6 +154,7 @@ bassWords = \lyricmode {
 }
 
 pianoRH = \relative c' {
+  \set Staff.midiInstrument = "piano"
   r1 |
   r1 |
   <f c aes>4 q <c g' c>2 |
@@ -189,6 +190,7 @@ pianoRH = \relative c' {
   <f a c f>2 q \bar "||"
 }
 pianoLH = \relative c' {
+  \set Staff.midiInstrument = "piano"
   r4 <f f,> <ees ees,> <d d,> |
   <c c,> <bes bes,> <aes aes,> <g g,> |
   <f f,> <d d,> <ees ees,> <c c,> |
@@ -246,7 +248,7 @@ pianoLH = \relative c' {
     }
   }
   \midi {
-    \tempo 4 = 90
+    \tempo 4 = 120
     \set Staff.midiInstrument = "flute"
   
     \context {

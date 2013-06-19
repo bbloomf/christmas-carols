@@ -62,7 +62,7 @@ sopMusic = \relative c'' {
   cis4.( b8 a4) gis |
   a2. gis4 |
   a2 cis |
-  b2. ais4 |
+  b2. a4 |
   \partial 2. b2.
   \repeat volta 2 {
     \partial 4 b4\rest |
@@ -316,7 +316,7 @@ pianoLH = \relative c' {
     }
   }
   \midi {
-    \tempo 4 = 90
+    \tempo 4 = 180
     \set Staff.midiInstrument = "flute"
   
     \context {

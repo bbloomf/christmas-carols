@@ -362,6 +362,7 @@ bassWords = \lyricmode {
 }
 
 pianoRH = \relative c'' {
+  \set Staff.midiInstrument = "piano"
   <b d,>4\(_\p <g e> <fis d'> <b fis d> |
   <g b,> <e c> <fis a,> <d c>\) |
   << {<g b,>\( <e c> <fis a,> <d c> |
@@ -395,6 +396,7 @@ pianoRH = \relative c'' {
 }
 
 pianoLH = \relative c' {
+  \set Staff.midiInstrument = "piano"
   << {b4 c a s | s1} \\
      {<d, g,>1~ | q} >> |
   << {d1~ | d2 s2 | g2. s4 } \\

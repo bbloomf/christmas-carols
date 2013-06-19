@@ -304,10 +304,6 @@ bassWords = \lyricmode {
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
-  \midi {
-    \tempo 4 = 90
-    \set Staff.midiInstrument = "flute"
-  }
   \layout {
     \context {
       \Score
@@ -322,5 +318,9 @@ bassWords = \lyricmode {
       \Lyrics
       \override LyricText #'X-offset = #center-on-word
     }
+  }
+  \midi {
+    \tempo 4 = 100
+    \set Staff.midiInstrument = "flute"
   }
 }

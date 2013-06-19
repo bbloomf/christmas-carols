@@ -52,7 +52,7 @@ global = {
 }
 
 sopMusic = \relative c' {
-  \tempo \markup\italic"Tranquillo" 8 = 112
+  \tempo \markup\italic"Tranquillo" 8 = 90
   f8.[ g16] f8 d4. |
   f8.[ g16] f8 d4. |
   c'8.[ b16] c8 a4. | \break
@@ -197,23 +197,8 @@ bassWords = \lyricmode {
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
-  \layout {
-    \context {
-      \Score
-      %\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 8)
-      %\override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
-    }
-    \context {
-      % Remove all empty staves
-      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
-    }
-    \context {
-      \Lyrics
-      \override LyricText #'X-offset = #center-on-word
-    }
-  }
   \midi {
-    \tempo 4 = 90
+    \tempo 8 = 112
     \set Staff.midiInstrument = "flute"
   
     \context {

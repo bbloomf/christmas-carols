@@ -309,10 +309,6 @@ pianoLH = \relative c' {
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
-  \midi {
-    \tempo 4 = 90
-    \set Staff.midiInstrument = "flute"
-  }
   \layout {
     \context {
       \Lyrics
@@ -337,6 +333,14 @@ pianoLH = \relative c' {
     \context {
       \Lyrics
       \override LyricText #'X-offset = #center-on-word
+    }
+  }
+  \midi {
+    \tempo 4 = 90
+    \set Staff.midiInstrument = "flute"
+    \context {
+      \Voice
+      \remove "Dynamic_performer"
     }
   }
 }

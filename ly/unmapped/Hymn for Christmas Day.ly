@@ -271,7 +271,9 @@ pianoLH = \relative c' {
     \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
     \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
-    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
+    \new PianoStaff << \new Staff { \new Voice { 
+    \set Staff.midiInstrument = "piano" \pianoRH } } \new Staff { \clef "bass" 
+    \set Staff.midiInstrument = "piano" \pianoLH } >>
   >>
   \layout {
     \context {
@@ -289,7 +291,7 @@ pianoLH = \relative c' {
     }
   }
   \midi {
-    \tempo 4 = 90
+    \tempo 4 = 100
     \set Staff.midiInstrument = "flute"
   
     \context {

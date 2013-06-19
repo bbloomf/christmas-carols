@@ -251,6 +251,7 @@ bassWords = \lyricmode {
 }
 
 pianoRH = \relative c' {
+  \set Staff.midiInstrument = "piano"
   <c ees>8[ c' bes aes] |
   <ees c~>2 |
   q8[ c' bes aes] |
@@ -312,6 +313,7 @@ pianoRH = \relative c' {
   aes8 \ottava #0 r <aes, ees c>4 \bar "|."
 }
 pianoLH = \relative c {
+  \set Staff.midiInstrument = "piano"
   \mergeDifferentlyHeadedOn
   \mergeDifferentlyDottedOn
   << {aes8[ aes' ees aes]
@@ -428,7 +430,7 @@ pianoLH = \relative c {
     }
   }
   \midi {
-    \tempo 4 = 90
+    \tempo 4 = 105
     \set Staff.midiInstrument = "flute"
   
     \context {

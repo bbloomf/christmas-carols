@@ -53,12 +53,14 @@ global = {
 
 sopMusic = \relative c' {
 %Introduction
+  \set Staff.midiInstrument = "piano"
   ees4_\p g bes c~c2 f, |
   d4 f aes bes bes2 ees, |
   bes'2\rest bes4\rest <aes d,>~ q <g ees> f <ees ces> |
   <ees bes g> bes'\rest bes2\rest bes1\rest |
   ees,2-> d2 bes'1\rest \bar "|:" 
 %
+  \set Staff.midiInstrument = "flute"
   ees,1^\pp ees2. aes4 |
   g1.^\markup\italic"cresc." ees'2 |
   ees d4( c) bes2. aes4 |
@@ -87,12 +89,14 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
 %Introduction
+  \set Staff.midiInstrument = "piano"
   s1 ees |
   s1 des |
   s2. ces4~ ces bes c aes |
   s1*2 |
   aes1 s1 \bar "|:"
 %
+  \set Staff.midiInstrument = "flute"
   bes1 c2. ees4 |
   ees1 g |
   aes2 aes g f |
@@ -174,12 +178,14 @@ altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
 %Introduction
+  \set Staff.midiInstrument = "piano"
   s1 a |
   s1 g |
   s1*2 |
   ees4 g bes c~ c2 bes~ |
   bes1 bes \bar "|:"
 %
+  \set Staff.midiInstrument = "flute"
   g1_\pp aes2. c4 |
   bes1._\markup\italic"cresc." b2 |
   c2 d4( ees) ees2 d |
@@ -208,12 +214,14 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c {
 %Introduction
+  \set Staff.midiInstrument = "piano"
   d1\rest f, |
   d'\rest ees, |
   aes4 c ees f~ f g aes aes, |
   bes bes\rest d2\rest d1\rest |
   bes1 d\rest \bar "|:"
 %
+  \set Staff.midiInstrument = "flute"
   ees1 ees2. ees4 |
   ees1 ees |
   aes,2 aes bes bes' |
@@ -288,7 +296,7 @@ pianoLH = \relative c' {
     }
   }
   \midi {
-    \tempo 4 = 90
+    \tempo 4 = 150
     \set Staff.midiInstrument = "flute"
   
     \context {

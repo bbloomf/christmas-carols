@@ -320,6 +320,7 @@ bassWords = \lyricmode {
 }
 
 pianoRH = \relative c {
+  \set Staff.midiInstrument = "piano"
   \override TupletBracket #'bracket-visibility = ##f 
   \mergeDifferentlyHeadedOn
 %  \times 2/3 { f8[(_\mf des' aes} \times 2/3 { f' des aes])} \times 2/3 { f8[( des' aes } \times 2/3 { f' des aes]) } |
@@ -420,6 +421,7 @@ pianoRH = \relative c {
     <des aes f>2. r4 \bar "|."
 }
 pianoLH = \relative c {
+  \set Staff.midiInstrument = "piano"
   \partial 2 <des aes'>2 |
   <f aes>2 <ges bes> |
   <g bes>2~ q4 s |
