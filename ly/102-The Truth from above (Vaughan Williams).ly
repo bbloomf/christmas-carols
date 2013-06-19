@@ -25,7 +25,7 @@
   outer-margin = 0.25\in
   top-margin = 0.25\in
   bottom-margin = 0.25\in
-  first-page-number = #103
+  first-page-number = #102
   print-first-page-number = ##t
   headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
