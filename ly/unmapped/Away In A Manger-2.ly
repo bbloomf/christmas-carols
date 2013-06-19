@@ -289,6 +289,21 @@ bassWords = \lyricmode {
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 2)
+      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 2)
+    }
+    \context {
+      % Remove all empty staves
+      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+    }
+    \context {
+      \Lyrics
+      \override LyricText #'X-offset = #center-on-word
+    }
+  }
   \midi {
     \tempo 4 = 100
     \set Staff.midiInstrument = "flute"
