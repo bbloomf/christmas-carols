@@ -6,7 +6,7 @@ $result = '{"name":"A Collection of Christmas Carols","tagline":"","body":"You c
 foreach ($_ in $files) {
   $title = $_.BaseName;
   $filename = $_.Name;
-  $result += "\r\n* $title [(midi)](downloads/$filename)";
+  $result += "\r\n* [(midi)](downloads/$filename) $title";
 }
 $result += '","google":"UA-41742275-1","note":"Don''t delete this file! It''s used internally to help with page regeneration."}';
 
