@@ -4,8 +4,8 @@
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"The Truth From Above"}}
   subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Herefordshire Carol)"}}
   poet = \markup\oldStyleNum"Traditional"
-  composer = \markup\oldStyleNum"Traditional"  
-  tagline = \markup { "from" \italic {ChristmasCarolMusic.org}}
+  composer = \markup\oldStyleNum"Traditional"
+  tagline = ""
 }
 \paper {
   %print-all-headers = ##t
@@ -45,42 +45,47 @@
   }
 }
 #(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
+#(define ((compound-time one two num numtwo) grob)
+   (grob-interpret-markup grob
+                          (markup #:override '(baseline-skip . 0) #:number
+                                  (#:line ((#:column (one num))
+                                           (#:column (two numtwo)))))))
 global = {
   \key c \major
-  \time 4/4
   \autoBeamOff
+  \time 3/2
 }
 
 sopMusic = \relative c' {
   \repeat volta 3 {
     \partial 4 e4 |
-    a b \times 2/3 { c( b) a} |
-    \partial 4*6 g a e2. b'4 |
-    c c \times 2/3 {b( a) g} |
+    \partial 4*5 a4 b c( b) a |
+    \partial 2*3 g a e2. b'4 |
     
-    \partial 4*6 a b c2. \bar""\break c8[ d] |
-    e4 e d c8[ b] |
-    \partial 4*6 a4 a e2. \slurDotted e8( g) |
+    \partial 2*3 c c b( a2) g4 |
+    \partial 2*3 a b c2. \bar""\break c8[ d] |
+    \partial 2*3 e4 e d2 c4( b) |
     
-    a4 b c8[ d] e[ d] |
-    c[ a] b4 a2
+    \partial 2*3 \slurDotted a a e2. e8( g) |
+    \slurSolid
+    \partial 2*3 a4 b c( d) e( d) |
+    \partial 2*3 c( a) b4 a2.
   }
   \break
   
   
-  \slurSolid
   \repeat volta 2 {
     \partial 4 e4 |
-    a b \times 2/3 { c( b) a} |
-    \partial 4*6 g a e2. b'4 |
-    c c \times 2/3 {b( a) g} |
+    \partial 4*5 a4 b c( b) a |
+    \partial 2*3 g a e2. b'4 |
     
-    \partial 4*6 a b c2. \bar""\break c8[ d] |
-    e4 e d c8[ b] |
-    \partial 4*6 a4 a e2. e8[ g] |
+    \partial 2*3 c c b( a2) g4 |
+    \partial 2*3 a b c2. \bar""\break c8[ d] |
+    \partial 2*3 e4 e d2 c4( b) |
     
-    a4 b c8[ d] e[ d] |
-    c[ a] b4 a2
+    \partial 2*3 a a e2. e8[ g] |
+    \partial 2*3 a4 b c( d) e( d) |
+    \partial 2*3 c( a) b a2.
   }
 }
 sopWords = \lyricmode {
@@ -89,33 +94,31 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   e4 |
-  a a \times 2/3 {a( g) f} |
+  a4 a a( g) f |
   e d b2. e4 |
-  e a \times 2/3 {g( f) e} |
   
-  f4 f f( e2) a4 |
-  g g8[ a] d,4 a'8[ g] |
-  e4 fis b,2. \slurDotted e8( e) |
+  e a g( f2) e4 |
+  f f f( e2) a4 |
+  g g8[ a] d,4( g) c,( d) |
   
-  e4 e a16[ g fis8] e[ fis] |
-  e4 e e2
+  \slurDotted e fis b,2. e8( e) |
+  \slurSolid e4 e a8([ g] fis4) e( fis) |
+  g( a) g8[ fis] e2.
   
   
   
-  \slurSolid
   e4 |
-  a a \times 2/3 {a( g) f} |
+  a4 a a( g) f |
   e d b2. e4 |
-  e a \times 2/3 {g( f) e} |
   
-  f4 f f( e2) a4 |
-  g g8[ a] d,4 a'8[ g] |
-  e4 fis b,2. e8[ e] |
+  e a g( f2) e4 |
+  f f f( e2) a4 |
+  g g8[ a] d,4( g) c,( d) |
   
-  e4 e a16[ g fis8] e[ fis] |
-  e4 e e2
+  e fis b,2. e4 |
+  e4 e a8([ g] fis4) e( fis) |
+  g( a) g8[ fis] e2.
 }
-
 
 altoWords = \lyricmode {
   \dropLyricsXI
@@ -203,62 +206,63 @@ altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
   e4 |
-  c d \times 2/3 {e2 c4} |
+  c4 d e2 c4 |
   c a a( g2) b4 |
-  a e' \times 2/3 {e( c) c} |
   
+  a e' e( c2) c4 |
   c d g,2. a4 |
-  b c b e8[ d] |
-  c4 a g2( fis!4) \slurDotted g8( b) |
+  b c b2 e4( d) |
   
-  c4 b a8[ b] c[ a] |
-  g4 b c2
+  c a g( fis!2) \slurDotted g8( b) |
+  \slurSolid c4 b a4.( b8) c4( a) |
+  e'2 d4 c2.
   
   
-  \slurSolid
+  
   e4 |
-  c d \times 2/3 {e2 c4} |
+  c4 d e2 c4 |
   c a a( g2) b4 |
-  a e' \times 2/3 {e( c) c} |
   
+  a e' e( c2) c4 |
   c d g,2. a4 |
-  b c b e8[ d] |
-  c4 a g2( fis!4) g8[ b] |
+  b c b2 e4( d) |
   
-  c4 b a8[ b] c[ a] |
-  g4 b c2
+  c a g( fis!2) g8[ b] |
+  c4 b a4.( b8) c4( a) |
+  e'2 d4 cis2.
 }
 tenorWords = \lyricmode {
-
+  
 }
 
 bassMusic = \relative c {
   e4 |
-  a2 \times 2/3 {a4( e) f} |
-  c4 f e2. g4 |
-  a a \times 2/3 {e( f) c} |
+  a4 a a( e) f |
+  c f e2. g4 |
   
+  a4 a e( f2) c4 |
   f8[ e] d4 c2. f4 |
-  e e8[ fis] g[ g,] a[ b] |
+  e e8[ fis] g4( g,) a( b) |
+  
   c4 d e2. \slurDotted e8( e) |
-  
-  a4 g f16[ e d8] c[ d] |
-  e4 g a2
-  
+  a4 g \slurSolid f8([ e] d4) c( d) |
+  e( fis) g a2.
   
   
-  \slurSolid
+  
+  
+  
   e4 |
-  a2 \times 2/3 {a4( e) f} |
-  c4 f e2. g4 |
-  a a \times 2/3 {e( f) c} |
+  a4 a a( e) f |
+  c f e2. g4 |
   
+  a4 a e( f2) c4 |
   f8[ e] d4 c2. f4 |
-  e e8[ fis] g[ g,] a[ b] |
-  c4 d e2. e8[ e] |
+  e e8[ fis] g4( g,) a( b) |
   
-  a4 g f16[ e d8] c[ d] |
-  e4 g a2
+  c4 d e2. e4 |
+  a4 g f8([ e] d4) c( d) |
+  e( fis) g a2.
 }
 bassWords = \lyricmode {
 
@@ -302,8 +306,8 @@ pianoLH = \relative c' {
   }
     \context {
       \Score
-      %\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 8)
-      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
+      \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 2)
+      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 2)
     }
     \context {
       % Remove all empty staves

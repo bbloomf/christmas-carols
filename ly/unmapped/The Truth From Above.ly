@@ -53,40 +53,39 @@
 global = {
   \key c \major
   \autoBeamOff
-  \override Staff.TimeSignature #'stencil = #(compound-time "5" "3" "4" "2")
-  \time 11/4
+  \time 3/2
 }
 
 sopMusic = \relative c' {
   \repeat volta 3 {
-    \partial 2 e2 |
+    \partial 4 e4 |
     \partial 4*5 a4 b c( b) a |
     \partial 2*3 g a e2. b'4 |
     
-    \partial 4*5 c c b( a) g |
+    \partial 2*3 c c b( a2) g4 |
     \partial 2*3 a b c2. \bar""\break c8[ d] |
     \partial 2*3 e4 e d2 c4( b) |
     
-    \partial 4*5 \slurDotted a a e2 e8( g) |
+    \partial 2*3 \slurDotted a a e2. e8( g) |
     \slurSolid
     \partial 2*3 a4 b c( d) e( d) |
-    \partial 1 c8[ a] b4 a2
+    \partial 2*3 c( a) b4 a2.
   }
   \break
   
   
   \repeat volta 2 {
-    \partial 2 e2 |
+    \partial 4 e4 |
     \partial 4*5 a4 b c( b) a |
     \partial 2*3 g a e2. b'4 |
     
-    \partial 4*5 c c b( a) g |
+    \partial 2*3 c c b( a2) g4 |
     \partial 2*3 a b c2. \bar""\break c8[ d] |
     \partial 2*3 e4 e d2 c4( b) |
     
-    \partial 4*5 a a e2 e8[ g] |
+    \partial 2*3 a a e2. e8[ g] |
     \partial 2*3 a4 b c( d) e( d) |
-    \partial 1 c8[ a] b4 a2
+    \partial 2*3 c( a) b a2.
   }
 }
 sopWords = \lyricmode {
@@ -94,31 +93,31 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  e2 |
+  e4 |
   a4 a a( g) f |
   e d b2. e4 |
   
-  e a g( f) e |
+  e a g( f2) e4 |
   f f f( e2) a4 |
   g g8[ a] d,4( g) c,( d) |
   
-  \slurDotted e fis b,2 e8( g) |
-  \slurSolid a4 e a8([ g] fis4) e( fis) |
-  g8[ a] g[ fis] e2
+  \slurDotted e fis b,2. e8( e) |
+  \slurSolid e4 e a8([ g] fis4) e( fis) |
+  g( a) g8[ fis] e2.
   
   
   
-  e2 |
+  e4 |
   a4 a a( g) f |
   e d b2. e4 |
   
-  e a g( f) e |
+  e a g( f2) e4 |
   f f f( e2) a4 |
   g g8[ a] d,4( g) c,( d) |
   
-  e fis b,2 e8[ g] |
-  a4 e a8([ g] fis4) e( fis) |
-  g8[ a] g[ fis] e2
+  e fis b,2. e4 |
+  e4 e a8([ g] fis4) e( fis) |
+  g( a) g8[ fis] e2.
 }
 
 altoWords = \lyricmode {
@@ -206,64 +205,64 @@ altoWordsVI = \lyricmode {
   \set ignoreMelismata = ##t
 }
 tenorMusic = \relative c' {
-  e2 |
+  e4 |
   c4 d e2 c4 |
   c a a( g2) b4 |
   
-  a e' e( c) c |
+  a e' e( c2) c4 |
   c d g,2. a4 |
   b c b2 e4( d) |
   
-  c a g( fis!) \slurDotted g8( b) |
+  c a g( fis!2) \slurDotted g8( b) |
   \slurSolid c4 b a4.( b8) c4( a) |
-  e'4 d cis2
+  e'2 d4 c2.
   
   
   
-  e2 |
+  e4 |
   c4 d e2 c4 |
   c a a( g2) b4 |
   
-  a e' e( c) c |
+  a e' e( c2) c4 |
   c d g,2. a4 |
   b c b2 e4( d) |
   
-  c a g( fis!) g8[ b] |
+  c a g( fis!2) g8[ b] |
   c4 b a4.( b8) c4( a) |
-  e'4 d cis2
+  e'2 d4 cis2.
 }
 tenorWords = \lyricmode {
   
 }
 
 bassMusic = \relative c {
-  e2 |
+  e4 |
   a4 a a( e) f |
   c f e2. g4 |
   
-  a4 a e( f) c |
+  a4 a e( f2) c4 |
   f8[ e] d4 c2. f4 |
   e e8[ fis] g4( g,) a( b) |
   
-  c4 d e2 \slurDotted e8( e) |
+  c4 d e2. \slurDotted e8( e) |
   a4 g \slurSolid f8([ e] d4) c( d) |
-  e8[ fis] g4 a2
+  e( fis) g a2.
   
   
   
   
   
-  e2 |
+  e4 |
   a4 a a( e) f |
   c f e2. g4 |
   
-  a4 a e( f) c |
+  a4 a e( f2) c4 |
   f8[ e] d4 c2. f4 |
   e e8[ fis] g4( g,) a( b) |
   
-  c4 d e2 e8[ e] |
+  c4 d e2. e4 |
   a4 g f8([ e] d4) c( d) |
-  e8[ fis] g4 a2
+  e( fis) g a2.
 }
 bassWords = \lyricmode {
 
@@ -316,7 +315,7 @@ pianoLH = \relative c' {
     }
   }
   \midi {
-    \tempo 4 = 100
+    \tempo 4 = 115
     \set Staff.midiInstrument = "flute"
   
     \context {

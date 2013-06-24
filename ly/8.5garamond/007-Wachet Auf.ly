@@ -62,7 +62,7 @@ global = {
 }
 
 sopMusic = \relative c' {
-  \tempo \markup\italic"Very slow and solemn" 4 = 39
+  \tempo \markup\italic"Very slow and solemn" 4 = 64
   \repeat volta 2 {
     d4 fis a a |
     a a b2 |
