@@ -8,6 +8,6 @@ foreach ($_ in $files) {
   $filename = $_.Name;
   $result += "* $title [(midi)](downloads/$filename)\n";
 }
-$result += '","google":"","note":"Don''t delete this file! It''s used internally to help with page regeneration."}';
+$result += '","google":"UA-41742275-1","note":"Don''t delete this file! It''s used internally to help with page regeneration."}';
 Set-Content -Path ../params.json -Value $result -Encoding UTF8
 
