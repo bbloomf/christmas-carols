@@ -1,4 +1,4 @@
-gswin64c -o ccc.pdf -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -c "[/CropBox [27 18 585 774] /PAGES pdfmark" -f !full.pdf pdfmarks.txt
+gswin64c -o ccc.pdf -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -f !full.pdf pdfmarks.txt
 rem copy !full.pdf 9781484022801_content.pdf
 pdftk A=!full.pdf cat Aodd output odd.pdf
 pdftk A=!full.pdf cat Aeven output even.pdf
