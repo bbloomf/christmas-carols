@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+\version "2.14.2"
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"O Come, O Come, Emmanuel"}}
@@ -304,10 +304,6 @@ bassWords = \lyricmode {
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
-  \midi {
-    \tempo 4 = 90
-    \set Staff.midiInstrument = "flute"
-  }
   \layout {
     \context {
       \Score
