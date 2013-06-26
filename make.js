@@ -5,7 +5,7 @@ function processLy(lyFile,callback) {
     if(!outputName) {
         console.info('Skipping "' + lyFile + '" because it is not a .ly file.');
         if(typeof(callback)=='function') {
-            callback(null,'','');
+            callback(null,'','',undefined,false);
         }
         return false;
     }
@@ -20,7 +20,7 @@ function processLy(lyFile,callback) {
             if(lyContent == oldLyContent) {
                 //console.info('Skipping "' + lyFile + '" because its .ps file already exists and the lilypond content was the same.');
                 if(typeof(callback)=='function') {
-                    callback(null,'','',psName);
+                    callback(null,'','',psName,false);
                 }
                 return false;
             }
@@ -42,11 +42,13 @@ function processLy(lyFile,callback) {
         }
         
         if(typeof(callback)=='function'){
-            callback(error,stdout,stderr,psName);
+            callback(error,stdout,stderr,psName,true);
         }
     });
     return true;
 }
+var gsCmds = ['gs','gswin64c','gswin32c'],
+    gsI = 0;
 function ps2pdf(psFiles,width,height,outputName) {
     outputName = outputName || '!full.pdf';
     width *= 72;
@@ -56,15 +58,18 @@ function ps2pdf(psFiles,width,height,outputName) {
                 '-r1200','-sDEVICE=pdfwrite','-dEmbedAllFonts=true','-dSubsetFonts=true','-sOutputFile='+outputName,'-c.setpdfwrite','-f'].concat(psFiles);
     console.info('Processing PDF of ' + psFiles.length + ' files...');
     //console.info('gs ' + args.join(' '));
-    child_process.execFile('gs',args,undefined,function(error,stdout,stderr){
+    var gsCmd = gsCmds[gsI];
+    var cb = function(error,stdout,stderr){
         if(error) {
             console.error(error);
             console.error(stderr);
             console.info(stdout);
+            if ((gsCmd=gsCmds[++gsI])) child_process.execFile(gsCmd,args,undefined,cb);
             return;
         }
         console.info('Finished');
-    });
+    };
+    child_process.execFile(gsCmd,args,undefined,cb);
 }
 
 //processLy('ly/001-Contents.ly');
@@ -75,11 +80,11 @@ var dir = 'ly/8.5garamond/',
     currentlyActive = 0,
     i = 0,
     psFiles = [],
-    callback = function(error,stdout,stderr,psName) {
+    callback = function(error,stdout,stderr,psName,startedWorker) {
         if(typeof(psName)=='string' && psName.length > 0) {
             psFiles.push(psName);
         }
-        if(currentlyActive > 0 && stdout!=='') --currentlyActive;
+        if(currentlyActive > 0 && startedWorker) --currentlyActive;
         while(i < files.length && currentlyActive < maxConcurrent) {
             //++currentlyActive;
             if(processLy(dir + files[i++], callback)) {
