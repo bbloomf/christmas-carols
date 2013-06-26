@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+\version "2.14.2"
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Ding Dong Merrily on High"}}
@@ -202,9 +202,5 @@ bassWords = \lyricmode {
       \Lyrics
       \override LyricText #'X-offset = #center-on-word
     }
-  }
-  \midi {
-    \tempo 4 = 160
-    \set Staff.midiInstrument = "flute"
   }
 }

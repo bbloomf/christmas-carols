@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+\version "2.14.2"
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Cradle Hymn"}}
@@ -309,10 +309,6 @@ pianoLH = \relative c' {
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
-  \midi {
-    \tempo 4 = 90
-    \set Staff.midiInstrument = "flute"
-  }
   \layout {
   \context {
     \Lyrics
