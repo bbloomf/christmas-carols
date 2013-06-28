@@ -91,10 +91,24 @@ var dir = 'ly/8.5garamond/',
                 console.info('Processing file ' + i + ' of ' + files.length + '; ' + (++currentlyActive) + ' active');
             }
         }
-        if(i==files.length && currentlyActive === 0) {
-            ps2pdf(psFiles.sort(),8.5,11,'!full.pdf');
-            ++i;
-            ++currentlyActive;
+        if(i==files.length && currentlyActive < maxConcurrent) {
+            if(currentlyActive === 0) {
+                psFiles.sort(function(a,b){
+                  var regex = /^(?:.*\/)?(\d+)/,
+                      mA = regex.exec(a),
+                      mB = regex.exec(b);
+                  if(mA && mB) {
+                    a = parseInt(mA[1]);
+                    b = parseInt(mB[1]);
+                  }
+                  return (a < b)? -1 : ((a > b)? 1 : 0);
+                });
+                ps2pdf(psFiles,8.5,11,'!full.pdf');
+                ++i;
+                ++currentlyActive;
+            } else if(startedWorker) {
+                console.info(currentlyActive + ' active');
+            }
         }
     };
 callback();
