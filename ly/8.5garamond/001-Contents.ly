@@ -23,7 +23,7 @@
   oddHeaderMarkup = ""
   evenHeaderMarkup = ""
 }
-#(set-global-staff-size 23) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 23 20))) }
+#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
 \markup\vspace #5
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #50 \smallCapsOldStyle"A Collection"}}
 \markup\vspace #0.75
@@ -71,13 +71,14 @@
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #32 \smallCapsOldStyle"contents"}}
 \markup\vspace #0.4
 
-%\scale #'(0.97 . 1) 
+%\scale #'(0.98 . 1) 
 %CONTENTS%
 \markup{{\override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \override #'(word-space . 0) \column{
 {\page-link #150 {\fill-with-pattern #0.1 #CENTER . "Ad cantus lætitiæ" \oldStyleNum"146"}}
 {\page-link #16 {\fill-with-pattern #0.1 #CENTER . "Adeste Fideles" \oldStyleNum"12"}}
 {\page-link #68 {\fill-with-pattern #0.1 #CENTER . "All my heart this night rejoices" \oldStyleNum"64"}}
 {\page-link #146 {\fill-with-pattern #0.1 #CENTER . \italic"All this night bright angels sing" \oldStyleNum"142"}}
+{\page-link #200 {\fill-with-pattern #0.1 #CENTER . "Alma Redemptoris Mater" \oldStyleNum"196"}}
 {\page-link #83 {\fill-with-pattern #0.1 #CENTER . "Although at Yule it Bloweth Cool" \oldStyleNum"79"}}
 {\page-link #53 {\fill-with-pattern #0.1 #CENTER . "The Angel Gabriel" \oldStyleNum"49"}}
 {\page-link #81 {\fill-with-pattern #0.1 #CENTER . "Angels from the Realms of Glory" \oldStyleNum"77"}}
@@ -86,7 +87,7 @@
 {\page-link #171 {\fill-with-pattern #0.1 #CENTER . \italic"As Jacob with travel was weary one day" \oldStyleNum"167"}}
 {\page-link #89 {\fill-with-pattern #0.1 #CENTER . "As Lately We Watched" \oldStyleNum"85"}}
 {\page-link #71 {\fill-with-pattern #0.1 #CENTER . "As With Gladness Men of Old" \oldStyleNum"67"}}
-{\page-link #205 {\fill-with-pattern #0.1 #CENTER . "Auld Lang Syne" \oldStyleNum"201"}}
+{\page-link #207 {\fill-with-pattern #0.1 #CENTER . "Auld Lang Syne" \oldStyleNum"203"}}
 {\page-link #125 {\fill-with-pattern #0.1 #CENTER . "Ave Jesu Deus" \oldStyleNum"121"}}
 {\page-link #32 {\fill-with-pattern #0.1 #CENTER . "Away in a Manger" \oldStyleNum"28, 29"}}
 {\page-link #138 {\fill-with-pattern #0.1 #CENTER . "The Babe of Bethlehem" \oldStyleNum"134"}}
@@ -124,9 +125,9 @@
 {\page-link #118 {\fill-with-pattern #0.1 #CENTER . \italic"Dashing through the snow" \oldStyleNum"114"}}
 {\page-link #152 {\fill-with-pattern #0.1 #CENTER . "A Day, a Day of Glory" \oldStyleNum"148"}}
 {\page-link #116 {\fill-with-pattern #0.1 #CENTER . "Deck the Hall" \oldStyleNum"112"}}
-{\page-link #37 {\fill-with-pattern #0.1 #CENTER . \italic"Ding dong ding." \oldStyleNum"33"}}
 }
 \hspace #0.01 \path #0.1 #'((moveto 0 1.4) (lineto 0 -117.54125)) \hspace #0.01 \override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \override #'(word-space . 0) \column {
+{\page-link #37 {\fill-with-pattern #0.1 #CENTER . \italic"Ding dong ding." \oldStyleNum"33"}}
 {\page-link #36 {\fill-with-pattern #0.1 #CENTER . "Ding Dong Merrily on High" \oldStyleNum"32"}}
 {\page-link #153 {\fill-with-pattern #0.1 #CENTER . "Earth Today Rejoices" \oldStyleNum"149"}}
 {\page-link #96 {\fill-with-pattern #0.1 #CENTER . "Es ist ein Ros entsprungen" \oldStyleNum"92"}}
@@ -137,7 +138,7 @@
 {\page-link #95 {\fill-with-pattern #0.1 #CENTER . "From Church to Church" \oldStyleNum"91"}}
 {\page-link #142 {\fill-with-pattern #0.1 #CENTER . "From far away" \oldStyleNum"138"}}
 {\page-link #80 {\fill-with-pattern #0.1 #CENTER . "From Heaven High I Come to You" \oldStyleNum"76"}}
-{\page-link #176 {\fill-with-pattern #0.1 #CENTER . "Fum, Fum, Fum" \oldStyleNum"172"}}
+{\page-link #180 {\fill-with-pattern #0.1 #CENTER . "Fum, Fum, Fum" \oldStyleNum"176"}}
 {\page-link #198 {\fill-with-pattern #0.1 #CENTER . "Gaudete" \oldStyleNum"194"}}
 {\page-link #108 {\fill-with-pattern #0.1 #CENTER . "Glad Christmas Bells" \oldStyleNum"104"}}
 {\page-link #198 {\fill-with-pattern #0.1 #CENTER . "Glorious, Beauteous, Golden-Bright" \oldStyleNum"194"}}
@@ -151,8 +152,8 @@
 {\page-link #46 {\fill-with-pattern #0.1 #CENTER . "Good King Wenceslas" \oldStyleNum"42, 43"}}
 {\page-link #60 {\fill-with-pattern #0.1 #CENTER . \italic"Good people all, this Christmas time" \oldStyleNum"56"}}
 {\page-link #134 {\fill-with-pattern #0.1 #CENTER . \scale #'(0.98 . 1) \italic"The Great God of Heaven is come down to earth" \oldStyleNum"130"}}
-{\page-link #177 {\fill-with-pattern #0.1 #CENTER . "Hacia Belén va una burra" \oldStyleNum"173"}}
-{\page-link #156 {\fill-with-pattern #0.1 #CENTER . \scale #'(0.98 . 1) "Hail! Holy Child, Lain In An Oxen Manger" \oldStyleNum"152"}}
+{\page-link #181 {\fill-with-pattern #0.1 #CENTER . "Hacia Belén va una burra" \oldStyleNum"177"}}
+{\page-link #156 {\fill-with-pattern #0.1 #CENTER . "Hail! Holy Child, Lain In An Oxen Manger" \oldStyleNum"152"}}
 {\page-link #10 {\fill-with-pattern #0.1 #CENTER . "Hark! a Herald Voice is Calling" \oldStyleNum"6"}}
 {\page-link #112 {\fill-with-pattern #0.1 #CENTER . \italic"Hark! how the bells" \oldStyleNum"108"}}
 {\page-link #22 {\fill-with-pattern #0.1 #CENTER . "Hark! the Herald Angels Sing" \oldStyleNum"18"}}
@@ -174,14 +175,14 @@
 {\page-link #192 {\fill-with-pattern #0.1 #CENTER . "In Terra Pax" \oldStyleNum"188"}}
 {\page-link #184 {\fill-with-pattern #0.1 #CENTER . "In the Bleak Midwinter" \oldStyleNum"180, 182"}}
 {\page-link #134 {\fill-with-pattern #0.1 #CENTER . "The Incarnation" \oldStyleNum"130"}}
-{\page-link #180 {\fill-with-pattern #0.1 #CENTER . "Infant Holy, Infant Lowly" \oldStyleNum"176"}}
+{\page-link #177 {\fill-with-pattern #0.1 #CENTER . "Infant Holy, Infant Lowly" \oldStyleNum"173"}}
 {\page-link #192 {\fill-with-pattern #0.1 #CENTER . \italic"Infant of days, yet Lord of Life" \oldStyleNum"188"}}
 {\page-link #24 {\fill-with-pattern #0.1 #CENTER . "It Came Upon the Midnight Clear" \oldStyleNum"20"}}
-{\page-link #172 {\fill-with-pattern #0.1 #CENTER . \italic"It was the very noon of night" \oldStyleNum"168"}}
 }}}
 \pageBreak
-\markup\vspace#1.275
+\markup\vspace#0.475
 \markup{{\override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \override #'(word-space . 0) \column{
+{\page-link #172 {\fill-with-pattern #0.1 #CENTER . \italic"It was the very noon of night" \oldStyleNum"168"}}
 {\page-link #171 {\fill-with-pattern #0.1 #CENTER . "Jacob's Ladder" \oldStyleNum"167"}}
 {\page-link #124 {\fill-with-pattern #0.1 #CENTER . "Jesu, hail! O God most holy" \oldStyleNum"120"}}
 {\page-link #140 {\fill-with-pattern #0.1 #CENTER . "Jesus in the Manger" \oldStyleNum"136"}}
@@ -191,7 +192,7 @@
 {\page-link #120 {\fill-with-pattern #0.1 #CENTER . "Jolly Old Saint Nicholas" \oldStyleNum"116"}}
 {\page-link #42 {\fill-with-pattern #0.1 #CENTER . "Joseph, O Dear Joseph Mine" \oldStyleNum"38"}}
 {\page-link #18 {\fill-with-pattern #0.1 #CENTER . "Joy to the World!" \oldStyleNum"14"}}
-{\page-link #179 {\fill-with-pattern #0.1 #CENTER . "Kling Glöckchen" \oldStyleNum"175"}}
+{\page-link #176 {\fill-with-pattern #0.1 #CENTER . "Kling Glöckchen" \oldStyleNum"172"}}
 {\page-link #122 {\fill-with-pattern #0.1 #CENTER . \italic"Like silver lamps in a distant shrine" \oldStyleNum"118"}}
 {\page-link #30 {\fill-with-pattern #0.1 #CENTER . \italic"Listen Lordings unto me" \oldStyleNum"26"}}
 {\page-link #97 {\fill-with-pattern #0.1 #CENTER . "Lo, How a Rose E'er Blooming" \oldStyleNum"93"}}
@@ -207,7 +208,7 @@
 {\page-link #190 {\fill-with-pattern #0.1 #CENTER . "Myn Lyking" \oldStyleNum"186"}}
 {\page-link #166 {\fill-with-pattern #0.1 #CENTER . "New Prince, New Pompe" \oldStyleNum"162"}}
 {\page-link #147 {\fill-with-pattern #0.1 #CENTER . \italic"Now the Holly bears a berry" \oldStyleNum"143"}}
-{\page-link #181 {\fill-with-pattern #0.1 #CENTER . "Noël Nouvelet" \oldStyleNum"177"}}
+{\page-link #179 {\fill-with-pattern #0.1 #CENTER . "Noël Nouvelet" \oldStyleNum"175"}}
 {\page-link #114 {\fill-with-pattern #0.1 #CENTER . "O Christmas Tree" \oldStyleNum"110"}}
 {\page-link #17 {\fill-with-pattern #0.1 #CENTER . "O Come, All Ye Faithful" \oldStyleNum"13"}}
 {\page-link #9 {\fill-with-pattern #0.1 #CENTER . "O Come, Divine Messiah" \oldStyleNum"5"}}
@@ -229,13 +230,13 @@
 {\page-link #83 {\fill-with-pattern #0.1 #CENTER . "Orientis Partibus" \oldStyleNum"79"}}
 {\page-link #51 {\fill-with-pattern #0.1 #CENTER . "Past Three a Clock" \oldStyleNum"47"}}
 {\page-link #72 {\fill-with-pattern #0.1 #CENTER . "Pat-a-Pan" \oldStyleNum"68"}}
-{\page-link #200 {\fill-with-pattern #0.1 #CENTER . "Personent Hodie" \oldStyleNum"196, 197"}}
+{\page-link #202 {\fill-with-pattern #0.1 #CENTER . "Personent Hodie" \oldStyleNum"198, 199"}}
 {\page-link #158 {\fill-with-pattern #0.1 #CENTER . "Puer Natus in Bethlehem" \oldStyleNum"154"}}
 {\page-link #162 {\fill-with-pattern #0.1 #CENTER . "Puer nobis nascitur" \oldStyleNum"158"}}
 {\page-link #167 {\fill-with-pattern #0.1 #CENTER . "Quem Pastores" \oldStyleNum"163"}}
-{\page-link #202 {\fill-with-pattern #0.1 #CENTER . "Ring Out, Wild Bells" \oldStyleNum"198, 200"}}
+{\page-link #204 {\fill-with-pattern #0.1 #CENTER . "Ring Out, Wild Bells" \oldStyleNum"200, 202"}}
 }
-\hspace #0.01 \path #0.1 #'((moveto 0 1.4) (lineto 0 -119.89007500000001)) \hspace #0.01 \override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \override #'(word-space . 0) \column {
+\hspace #0.01 \path #0.1 #'((moveto 0 1.4) (lineto 0 -122.2389)) \hspace #0.01 \override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \override #'(word-space . 0) \column {
 {\page-link #104 {\fill-with-pattern #0.1 #CENTER . "Rise Up, Shepherds, and Follow" \oldStyleNum"100"}}
 {\page-link #182 {\fill-with-pattern #0.1 #CENTER . "Riu Riu Chiu" \oldStyleNum"178"}}
 {\page-link #147 {\fill-with-pattern #0.1 #CENTER . "The Sans Day Carol" \oldStyleNum"143"}}
@@ -244,7 +245,7 @@
 {\page-link #70 {\fill-with-pattern #0.1 #CENTER . "The Seven Joys of Mary" \oldStyleNum"66"}}
 {\page-link #25 {\fill-with-pattern #0.1 #CENTER . "Shepherds! Shake Off Your Drowsy Sleep" \oldStyleNum"21"}}
 {\page-link #188 {\fill-with-pattern #0.1 #CENTER . "Shiloh" \oldStyleNum"184"}}
-{\page-link #205 {\fill-with-pattern #0.1 #CENTER . \italic"Should auld acquaintance be forgot" \oldStyleNum"201"}}
+{\page-link #207 {\fill-with-pattern #0.1 #CENTER . \italic"Should auld acquaintance be forgot" \oldStyleNum"203"}}
 {\page-link #39 {\fill-with-pattern #0.1 #CENTER . "Silent Night" \oldStyleNum"35"}}
 {\page-link #105 {\fill-with-pattern #0.1 #CENTER . "Sleep, Holy Babe!" \oldStyleNum"101"}}
 {\page-link #160 {\fill-with-pattern #0.1 #CENTER . "The Son of God is born for all" \oldStyleNum"156"}}
@@ -257,6 +258,7 @@
 {\page-link #99 {\fill-with-pattern #0.1 #CENTER . "There’s a Song in the Air!" \oldStyleNum"95"}}
 {\page-link #104 {\fill-with-pattern #0.1 #CENTER . \italic"There’s a star in the east" \oldStyleNum"100"}}
 {\page-link #92 {\fill-with-pattern #0.1 #CENTER . "This Endris Night" \oldStyleNum"88"}}
+{\page-link #106 {\fill-with-pattern #0.1 #CENTER . \italic"This is the truth sent from above" \oldStyleNum"102"}}
 {\page-link #163 {\fill-with-pattern #0.1 #CENTER . "To us is born a little Child" \oldStyleNum"159"}}
 {\page-link #164 {\fill-with-pattern #0.1 #CENTER . "To Us This Morn a Child is Born" \oldStyleNum"160"}}
 {\page-link #196 {\fill-with-pattern #0.1 #CENTER . "Tollite Hostias" \oldStyleNum"192"}}
