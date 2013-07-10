@@ -153,7 +153,7 @@
 {\page-link #60 {\fill-with-pattern #0.1 #CENTER . \italic"Good people all, this Christmas time" \oldStyleNum"56"}}
 {\page-link #134 {\fill-with-pattern #0.1 #CENTER . \scale #'(0.98 . 1) \italic"The Great God of Heaven is come down to earth" \oldStyleNum"130"}}
 {\page-link #181 {\fill-with-pattern #0.1 #CENTER . "Hacia Belén va una burra" \oldStyleNum"177"}}
-{\page-link #156 {\fill-with-pattern #0.1 #CENTER . "Hail! Holy Child, Lain In An Oxen Manger" \oldStyleNum"152"}}
+{\page-link #156 {\fill-with-pattern #0.1 #CENTER . \scale #'(0.98 . 1) "Hail! Holy Child, Lain In An Oxen Manger" \oldStyleNum"152"}}
 {\page-link #10 {\fill-with-pattern #0.1 #CENTER . "Hark! a Herald Voice is Calling" \oldStyleNum"6"}}
 {\page-link #112 {\fill-with-pattern #0.1 #CENTER . \italic"Hark! how the bells" \oldStyleNum"108"}}
 {\page-link #22 {\fill-with-pattern #0.1 #CENTER . "Hark! the Herald Angels Sing" \oldStyleNum"18"}}
