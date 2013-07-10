@@ -1,8 +1,8 @@
-[/Title (--Preface--) /Page 3 /OUT pdfmark
 [/Title (--Contents--) /Page 4 /OUT pdfmark
-[/Title (Ad cantus lætitiæ) /Page 150 /OUT pdfmark
+[/Title (Ad cantus lÃ¦titiÃ¦) /Page 150 /OUT pdfmark
 [/Title (Adeste Fideles) /Page 16 /OUT pdfmark
 [/Title (All my heart this night rejoices) /Page 68 /OUT pdfmark
+[/Title (Alma Redemptoris Mater) /Page 200 /OUT pdfmark
 [/Title (Although at Yule it Bloweth Cool) /Page 83 /OUT pdfmark
 [/Title (The Angel Gabriel) /Page 53 /OUT pdfmark
 [/Title (Angels from the Realms of Glory) /Page 81 /OUT pdfmark
@@ -10,7 +10,7 @@
 [/Title (Angelus ad Virginem) /Page 54 /OUT pdfmark
 [/Title (As Lately We Watched) /Page 89 /OUT pdfmark
 [/Title (As With Gladness Men of Old) /Page 71 /OUT pdfmark
-[/Title (Auld Lang Syne) /Page 205 /OUT pdfmark
+[/Title (Auld Lang Syne) /Page 207 /OUT pdfmark
 [/Title (Ave Jesu Deus) /Page 125 /OUT pdfmark
 [/Title (Away in a Manger (Kirkpatrick)) /Page 32 /OUT pdfmark
 [/Title (Away in a Manger (Murray)) /Page 32 /OUT pdfmark
@@ -52,13 +52,13 @@
 [/Title (Ding Dong Merrily on High) /Page 36 /OUT pdfmark
 [/Title (Earth Today Rejoices) /Page 153 /OUT pdfmark
 [/Title (Es ist ein Ros entsprungen) /Page 96 /OUT pdfmark
-[/Title (The First Noël) /Page 20 /OUT pdfmark
+[/Title (The First NoÃ«l) /Page 20 /OUT pdfmark
 [/Title (Flos de radice Jesse) /Page 96 /OUT pdfmark
 [/Title (The Friendly Beasts) /Page 82 /OUT pdfmark
 [/Title (From Church to Church) /Page 95 /OUT pdfmark
 [/Title (From far away) /Page 142 /OUT pdfmark
 [/Title (From Heaven High I Come to You) /Page 80 /OUT pdfmark
-[/Title (Fum, Fum, Fum) /Page 176 /OUT pdfmark
+[/Title (Fum, Fum, Fum) /Page 180 /OUT pdfmark
 [/Title (Gaudete) /Page 198 /OUT pdfmark
 [/Title (Glad Christmas Bells) /Page 108 /OUT pdfmark
 [/Title (Glorious, Beauteous, Golden-Bright) /Page 198 /OUT pdfmark
@@ -70,7 +70,7 @@
 [/Title (Good Christian Men, Rejoice) /Page 77 /OUT pdfmark
 [/Title (Good King Wenceslas (Woodward)) /Page 47 /OUT pdfmark
 [/Title (Good King Wenceslas) /Page 46 /OUT pdfmark
-[/Title (Hacia Belén va una burra) /Page 177 /OUT pdfmark
+[/Title (Hacia BelÃ©n va una burra) /Page 181 /OUT pdfmark
 [/Title (Hail! Holy Child, Lain In An Oxen Manger) /Page 156 /OUT pdfmark
 [/Title (Hark! a Herald Voice is Calling) /Page 10 /OUT pdfmark
 [/Title (Hark! the Herald Angels Sing) /Page 22 /OUT pdfmark
@@ -80,13 +80,13 @@
 [/Title (How Great Our Joy!) /Page 140 /OUT pdfmark
 [/Title (Hymn for Christmas Day) /Page 44 /OUT pdfmark
 [/Title (I Heard the Bells on Christmas Day) /Page 93 /OUT pdfmark
-[/Title (Il est né le divin Enfant) /Page 178 /OUT pdfmark
+[/Title (Il est nÃ© le divin Enfant) /Page 178 /OUT pdfmark
 [/Title (In Bethlehem, that noble place) /Page 145 /OUT pdfmark
 [/Title (The Incarnation) /Page 134 /OUT pdfmark
 [/Title (In Dulci Jubilo (Bach)) /Page 74 /OUT pdfmark
 [/Title (In Dulci Jubilo (Pearsall)) /Page 76 /OUT pdfmark
 [/Title (In Dulci Jubilo) /Page 75 /OUT pdfmark
-[/Title (Infant Holy, Infant Lowly) /Page 180 /OUT pdfmark
+[/Title (Infant Holy, Infant Lowly) /Page 177 /OUT pdfmark
 [/Title (In natali Domini) /Page 48 /OUT pdfmark
 [/Title (In Terra Pax) /Page 192 /OUT pdfmark
 [/Title (In the Bleak Midwinter (Darke)) /Page 184 /OUT pdfmark
@@ -101,8 +101,8 @@
 [/Title (Jolly Old Saint Nicholas) /Page 120 /OUT pdfmark
 [/Title (Joseph, O Dear Joseph Mine) /Page 42 /OUT pdfmark
 [/Title (Joy to the World!) /Page 18 /OUT pdfmark
-[/Title (Kling Glöckchen) /Page 179 /OUT pdfmark
-[/Title (Lætentur Cœli) /Page 187 /OUT pdfmark
+[/Title (Kling GlÃ¶ckchen) /Page 176 /OUT pdfmark
+[/Title (LÃ¦tentur CÅ“li) /Page 187 /OUT pdfmark
 [/Title (Lo, How a Rose E'er Blooming) /Page 97 /OUT pdfmark
 [/Title (Make we joy now in this fest (27)) /Page 157 /OUT pdfmark
 [/Title (The Manger Throne) /Page 122 /OUT pdfmark
@@ -110,13 +110,13 @@
 [/Title (Milford) /Page 195 /OUT pdfmark
 [/Title (Myn Lyking) /Page 190 /OUT pdfmark
 [/Title (New Prince, New Pompe) /Page 166 /OUT pdfmark
-[/Title (Noël Nouvelet) /Page 181 /OUT pdfmark
+[/Title (NoÃ«l Nouvelet) /Page 179 /OUT pdfmark
 [/Title (O Christmas Tree) /Page 114 /OUT pdfmark
 [/Title (O Come, All Ye Faithful) /Page 17 /OUT pdfmark
 [/Title (O Come, Divine Messiah) /Page 9 /OUT pdfmark
 [/Title (O Come, Little Children) /Page 98 /OUT pdfmark
 [/Title (O Come, O Come, Emmanuel) /Page 6 /OUT pdfmark
-[/Title (O Du Fröhliche) /Page 92 /OUT pdfmark
+[/Title (O Du FrÃ¶hliche) /Page 92 /OUT pdfmark
 [/Title (Of the Father's Love Begotten) /Page 128 /OUT pdfmark
 [/Title (O Holy Night) /Page 84 /OUT pdfmark
 [/Title (O Little Town of Bethlehem) /Page 43 /OUT pdfmark
@@ -127,14 +127,14 @@
 [/Title (O Tannenbaum) /Page 115 /OUT pdfmark
 [/Title (Past Three a Clock) /Page 51 /OUT pdfmark
 [/Title (Pat-a-Pan) /Page 72 /OUT pdfmark
-[/Title (Personent Hodie (Holst)) /Page 200 /OUT pdfmark
-[/Title (Personent Hodie (Woodward)) /Page 201 /OUT pdfmark
+[/Title (Personent Hodie (Holst)) /Page 202 /OUT pdfmark
+[/Title (Personent Hodie (Woodward)) /Page 203 /OUT pdfmark
 [/Title (Puer Natus in Bethlehem (1)) /Page 158 /OUT pdfmark
 [/Title (Puer nobis nascitur (25)) /Page 162 /OUT pdfmark
 [/Title (Quem Pastores (26)) /Page 167 /OUT pdfmark
 [/Title (Quem Pastores) /Page 167 /OUT pdfmark
-[/Title (Ring Out, Wild Bells (Mendelssohn)) /Page 204 /OUT pdfmark
-[/Title (Ring Out, Wild Bells (Mozart)) /Page 202 /OUT pdfmark
+[/Title (Ring Out, Wild Bells (Mendelssohn)) /Page 206 /OUT pdfmark
+[/Title (Ring Out, Wild Bells (Mozart)) /Page 204 /OUT pdfmark
 [/Title (Rise Up, Shepherds, and Follow) /Page 104 /OUT pdfmark
 [/Title (Riu Riu Chiu) /Page 182 /OUT pdfmark
 [/Title (The Sans Day Carol) /Page 147 /OUT pdfmark
