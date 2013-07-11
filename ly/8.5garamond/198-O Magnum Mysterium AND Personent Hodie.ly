@@ -9,11 +9,16 @@
   paper-width = 8.5\in
   indent = 0\in
   %system-system-spacing = #'((basic-distance . 10) (padding . 0))
-%  system-system-spacing =
-%    #'((basic-distance . 0)
-%       (minimum-distance . 0)
-%       (padding . -3)
-%       (stretchability . 100))
+  system-system-spacing =
+    #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 100))
+  score-markup-spacing =
+    #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 100))
 %  top-markup-spacing =
 %    #'((basic-distance . 0)
 %       (minimum-distance . 0)
@@ -64,7 +69,7 @@ sopMusic = \relative c' {
   bes c d4. d8 |
   
   d4 a bes a(~ |
-  a8[ g f e f g a f] |
+  a8[ g f e] f[ g a f] |
   g[ f] f[ e16 d] e2~ |
   e) d |
   fis1 |
@@ -258,7 +263,7 @@ altoMusic = \relative c' {
   d8([ c bes a] g4) g'~( |
   g8[ f ees d] c4 ees) |
   d2 r4 a |
-  bes4.( c8 d4) ees~( |
+  bes4.( c8 d4) ees(~ |
   e d c4. d8 |
   ees2) d~ |
   d1 \bar"|."
@@ -536,7 +541,7 @@ pianoLH = \relative c' {
     \context {
       \Lyrics
       \override LyricText #'font-size = #1.3
-      \override VerticalAxisGroup #'staff-affinity = #0
+      %\override VerticalAxisGroup #'staff-affinity = #0
     }
     \context {
       \Score
@@ -547,11 +552,11 @@ pianoLH = \relative c' {
       % Remove all empty staves
       \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
       
-%      \override VerticalAxisGroup #'staff-staff-spacing =
-%      #'((basic-distance . 0)
-%         (minimum-distance . 0)
-%         (padding . -1)
-%         (stretchability . 2))
+      \override VerticalAxisGroup #'staff-staff-spacing =
+      #'((basic-distance . 0)
+         (minimum-distance . 0)
+         (padding . -1)
+         (stretchability . 65))
     }
     \context {
       \Lyrics

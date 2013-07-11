@@ -356,7 +356,7 @@ pianoLH = \relative c' {
     \context {
       \Lyrics
       \override LyricText #'font-size = #1.3
-      \override VerticalAxisGroup #'staff-affinity = #0
+      %\override VerticalAxisGroup #'staff-affinity = #0
     }
     \context {
       \Score
@@ -367,11 +367,11 @@ pianoLH = \relative c' {
       % Remove all empty staves
       \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
       
-%      \override VerticalAxisGroup #'staff-staff-spacing =
-%      #'((basic-distance . 0)
-%         (minimum-distance . 0)
-%         (padding . -1)
-%         (stretchability . 2))
+      \override VerticalAxisGroup #'staff-staff-spacing =
+      #'((basic-distance . 2)
+         (minimum-distance . 0)
+         (padding . 2)
+         (stretchability . 60))
     }
     \context {
       \Lyrics
