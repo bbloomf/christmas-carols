@@ -87,7 +87,7 @@
 {\page-link #171 {\fill-with-pattern #0.1 #CENTER . \italic"As Jacob with travel was weary one day" \oldStyleNum"167"}}
 {\page-link #89 {\fill-with-pattern #0.1 #CENTER . "As Lately We Watched" \oldStyleNum"85"}}
 {\page-link #71 {\fill-with-pattern #0.1 #CENTER . "As With Gladness Men of Old" \oldStyleNum"67"}}
-{\page-link #207 {\fill-with-pattern #0.1 #CENTER . "Auld Lang Syne" \oldStyleNum"203"}}
+{\page-link #210 {\fill-with-pattern #0.1 #CENTER . "Auld Lang Syne" \oldStyleNum"206"}}
 {\page-link #125 {\fill-with-pattern #0.1 #CENTER . "Ave Jesu Deus" \oldStyleNum"121"}}
 {\page-link #32 {\fill-with-pattern #0.1 #CENTER . "Away in a Manger" \oldStyleNum"28, 29"}}
 {\page-link #138 {\fill-with-pattern #0.1 #CENTER . "The Babe of Bethlehem" \oldStyleNum"134"}}
@@ -217,6 +217,7 @@
 {\page-link #92 {\fill-with-pattern #0.1 #CENTER . "O Du Fröhliche" \oldStyleNum"88"}}
 {\page-link #84 {\fill-with-pattern #0.1 #CENTER . "O Holy Night" \oldStyleNum"80"}}
 {\page-link #43 {\fill-with-pattern #0.1 #CENTER . "O Little Town of Bethlehem" \oldStyleNum"39"}}
+{\page-link #202 {\fill-with-pattern #0.1 #CENTER . "O Magnum Mysterium" \oldStyleNum"198"}}
 {\page-link #115 {\fill-with-pattern #0.1 #CENTER . "O Tannenbaum" \oldStyleNum"111"}}
 {\page-link #128 {\fill-with-pattern #0.1 #CENTER . "Of the Father's Love Begotten" \oldStyleNum"124"}}
 {\page-link #117 {\fill-with-pattern #0.1 #CENTER . \italic"Oh how lovely is the evening" \oldStyleNum"113"}}
@@ -230,13 +231,13 @@
 {\page-link #83 {\fill-with-pattern #0.1 #CENTER . "Orientis Partibus" \oldStyleNum"79"}}
 {\page-link #51 {\fill-with-pattern #0.1 #CENTER . "Past Three a Clock" \oldStyleNum"47"}}
 {\page-link #72 {\fill-with-pattern #0.1 #CENTER . "Pat-a-Pan" \oldStyleNum"68"}}
-{\page-link #202 {\fill-with-pattern #0.1 #CENTER . "Personent Hodie" \oldStyleNum"198, 199"}}
+{\page-link #205 {\fill-with-pattern #0.1 #CENTER . "Personent Hodie" \oldStyleNum"201, 202"}}
 {\page-link #158 {\fill-with-pattern #0.1 #CENTER . "Puer Natus in Bethlehem" \oldStyleNum"154"}}
 {\page-link #162 {\fill-with-pattern #0.1 #CENTER . "Puer nobis nascitur" \oldStyleNum"158"}}
 {\page-link #167 {\fill-with-pattern #0.1 #CENTER . "Quem Pastores" \oldStyleNum"163"}}
-{\page-link #204 {\fill-with-pattern #0.1 #CENTER . "Ring Out, Wild Bells" \oldStyleNum"200, 202"}}
 }
 \hspace #0.01 \path #0.1 #'((moveto 0 1.4) (lineto 0 -122.2389)) \hspace #0.01 \override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \override #'(word-space . 0) \column {
+{\page-link #207 {\fill-with-pattern #0.1 #CENTER . "Ring Out, Wild Bells" \oldStyleNum"203, 204"}}
 {\page-link #104 {\fill-with-pattern #0.1 #CENTER . "Rise Up, Shepherds, and Follow" \oldStyleNum"100"}}
 {\page-link #182 {\fill-with-pattern #0.1 #CENTER . "Riu Riu Chiu" \oldStyleNum"178"}}
 {\page-link #147 {\fill-with-pattern #0.1 #CENTER . "The Sans Day Carol" \oldStyleNum"143"}}
@@ -245,7 +246,7 @@
 {\page-link #70 {\fill-with-pattern #0.1 #CENTER . "The Seven Joys of Mary" \oldStyleNum"66"}}
 {\page-link #25 {\fill-with-pattern #0.1 #CENTER . "Shepherds! Shake Off Your Drowsy Sleep" \oldStyleNum"21"}}
 {\page-link #188 {\fill-with-pattern #0.1 #CENTER . "Shiloh" \oldStyleNum"184"}}
-{\page-link #207 {\fill-with-pattern #0.1 #CENTER . \italic"Should auld acquaintance be forgot" \oldStyleNum"203"}}
+{\page-link #210 {\fill-with-pattern #0.1 #CENTER . \italic"Should auld acquaintance be forgot" \oldStyleNum"206"}}
 {\page-link #39 {\fill-with-pattern #0.1 #CENTER . "Silent Night" \oldStyleNum"35"}}
 {\page-link #105 {\fill-with-pattern #0.1 #CENTER . "Sleep, Holy Babe!" \oldStyleNum"101"}}
 {\page-link #160 {\fill-with-pattern #0.1 #CENTER . "The Son of God is born for all" \oldStyleNum"156"}}
@@ -258,7 +259,6 @@
 {\page-link #99 {\fill-with-pattern #0.1 #CENTER . "There’s a Song in the Air!" \oldStyleNum"95"}}
 {\page-link #104 {\fill-with-pattern #0.1 #CENTER . \italic"There’s a star in the east" \oldStyleNum"100"}}
 {\page-link #92 {\fill-with-pattern #0.1 #CENTER . "This Endris Night" \oldStyleNum"88"}}
-{\page-link #106 {\fill-with-pattern #0.1 #CENTER . \italic"This is the truth sent from above" \oldStyleNum"102"}}
 {\page-link #163 {\fill-with-pattern #0.1 #CENTER . "To us is born a little Child" \oldStyleNum"159"}}
 {\page-link #164 {\fill-with-pattern #0.1 #CENTER . "To Us This Morn a Child is Born" \oldStyleNum"160"}}
 {\page-link #196 {\fill-with-pattern #0.1 #CENTER . "Tollite Hostias" \oldStyleNum"192"}}

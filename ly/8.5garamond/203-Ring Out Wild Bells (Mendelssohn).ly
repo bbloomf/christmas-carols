@@ -1,11 +1,10 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Auld Lang Syne"}}
-  poet = \markup\oldStyleNum"First verse, traditional"
-  meter = \markup\oldStyleNum"Other verses, Robert Burns (1759–1796)"
-  composer = \markup\oldStyleNum"Traditional"
-  tagline = \markup \concat{ "from " \italic "Favorite Songs and Hymns for School and Home" \oldStyleNum", 1899"}
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Ring Out, Wild Bells"}}
+  poet = \markup\oldStyleNum"Alfred Lord Tennyson (1809–1892)"
+  composer = \markup\oldStyleNum"Felix Mendelssohn (1809–1847)"
+  tagline = \markup\concat { "from " \italic"The Life Hymnal" \oldStyleNum", 1904"}
 }
 \paper {
   %print-all-headers = ##t
@@ -46,102 +45,107 @@
 }
 #(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
 global = {
-  \key g \major
-  \time 2/4
+  \key ees \major
+  \time 6/8
   \autoBeamOff
   \override DynamicLineSpanner #'staff-padding = #0.0
   \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
 }
 
 sopMusic = \relative c' {
-  \partial 8 d8^\p |
-  g8. g16 g8 b |
-  a8. g16 a8 b |
-  g8. g16 b8 d |
-  e4. \bar""\break e8 |
-  d8. b16 b8 g |
+  \partial 8 bes'8 |
+  bes4 g8 ees4 f8 |
+  g4 aes8 bes4 g8 |
+  g[ f] g ees4 bes'8 | \break
   
-  a8. g16 a8 b |
-  \slurDotted g8.( e16) e8( d) |
-  \partial 4. g4 b8\rest \bar "|:" \break
-  \partial 8 e8 |
-  d8.[ b16] b8[ g] |
-  a8. g16 a8 b16\rest b |
+  bes[ aes] bes g4 bes8\rest |
+  ees, g bes ees4 d8 |
+  c4 b8 c4 c8 | \break
   
-  b8.[ g16] b8.[ d16] |
-  e4. \bar""\break e8 |
-  d8. b16 b8 g |
-  a8. g16 a8 b |
-  g8.[ e16] e8[ d] |
-  \partial 4. g4  b8\rest \bar ":|"
+  ees[ c] aes f4 c'8 |
+  bes4 aes8 g4 bes8\rest |
+  ees, g bes ees4 d8 | \break
+  
+  c4 b8 c4 c8 ees4.~ ees8[ c] aes |
+  f4 g8 aes4 d,8 |
+  ees2.~ |
+  ees \bar "|."
 }
 sopWords = \lyricmode {
-  
+  \repeat unfold40 {\skip1}
+  Ring out, __ wild bells, and let him die. __
+}
+sopWordsII = \lyricmode {
+  \repeat unfold40 {\skip1}
+  Ring out __ the false, ring in the true. __
+}
+sopWordsIII = \lyricmode {
+  \repeat unfold40 {\skip1}
+  Ring in __ the Christ that is to be. __
 }
 
 altoMusic = \relative c' {
-  d8 |
-  d8. d16 d8 g |
-  fis8. e16 fis8 fis |
-  d8. d16 g8 g |
-  g4. g8 |
-  g8. g16 g8 g |
+  ees8 |
+  ees4 bes8 bes4 d8 |
+  ees4 ees8 ees4 ees8 |
+  d4 d8 ees4 g8 |
   
-  fis8. e16 fis8 g |
-  \slurDotted e8.( c16) c8( c) |
-  b4 s8 |
-  g'8 |
-  g4 g |
-  fis8. e16 fis8 s16 g |
+  g8[ f] g ees4 s8 |
+  ees ees ees g4 f8 |
+  ees8[ g] f ees4 ees8 |
   
-  g8.[ e16] g8.[ b16] |
-  c4. c8 |
-  b8. g16 g8 g |
-  fis8. e16 fis8 fis |
-  e4 c4 |
-  b4 s8 \bar ":|"
+  aes4 ees8 ees4 ees8 |
+  d4 f8 ees4 s8 |
+  ees ees ees g4 f8 |
+  
+  ees[ g] f ees4 g8\rest |
+  g4\rest c,8 ees4 ees8 |
+  ees4 c8\rest c4\rest bes8 bes4( ees8) d4( c8) |
+  bes2. \bar "|."
 }
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
-  \set ignoreMelismata = ##t
-  Should auld ac -- quain -- tance be for -- got,
-  And nev -- er brought to mind?
-  Should auld ac -- quain -- tance be for -- got,
-  And days of auld lang syne?
+  Ring out, wild bells, \set ignoreMelismata = ##t to the \unset ignoreMelismata wild sky,
+  The fly -- ing cloud, the frost -- y light:
+  The year is dy -- ing in the night;
+  Ring out, \set associatedVoice = "sopranos"
+  wild bells, and let him die.
 
-  \unset ignoreMelismata
-  \set associatedVoice = "sopranos"
-  For auld lang syne, my dear,
-  For auld lang syne;
-  We’ll tak’ a cup o’ kind -- ness yet
-  For auld lang syne.
-  
+  \unset associatedVoice
+  The year is dy -- ing in the night;
+  Ring out, wild bells, and let __ him __ die.
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
 %\markup\italic
   \set stanza = #"2. "
-  We twa ha’e run a -- boot the braes,
-  And pu’d the gow -- ans fine;
-  But_we’ve wan -- der’d mon -- y~a wea -- ry foot,
-  Sin’ auld __ lang __ syne.
+  Ring out the old, ring in the new,
+  Ring, hap -- py bells a -- cross the snow:
+  The year is go -- ing, let him go;
+  Ring out \set associatedVoice = "sopranos"
+  the false, ring in the true.
+
+  \unset associatedVoice
+  The year is go -- ing, let him go;
+  Ring out the false, ring in __ the __ true.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
   \set stanza = #"3. "
-  We twa ha’e sport -- ed i’ the burn,
-  Frae morn -- in’ sun till dine,
-  But seas be -- tween us braid ba’e roared
-  Sin’ auld __ lang __ syne.
+  Ring in the val -- iant man and free,
+  The lar -- ger heart, the kind -- lier hand;
+  Ring out the dark -- ness of the land,
+  Ring in \set associatedVoice = "sopranos"
+  the Christ that is to be.
+
+  \unset associatedVoice
+  Ring out the dark -- ness of the land,
+  Ring in the Christ that is __ to __ be.
 }
 altoWordsIV = \lyricmode {
-  \dropLyricsV
   \set stanza = #"4. "
-  And here’s a hand, my trust -- y frien’,
-  And gie’s a hand o’ thine;
-  We’ll tak’ a cup o’ kind -- ness yet,
-  For auld __ lang __ syne.
+  \set ignoreMelismata = ##t
 }
 altoWordsV = \lyricmode {
   \set stanza = #"5. "
@@ -152,52 +156,48 @@ altoWordsVI = \lyricmode {
   \set ignoreMelismata = ##t
 }
 tenorMusic = \relative c' {
-  b8 |
-  b8. b16 b8 d |
-  d8. d16 d8 d |
-  b8. b16 d8 b |
-  c4. c8 |
-  b8. d16 d8 b |
+  g8 |
+  g4 g8 g4 bes8 |
+  bes4 aes8 g4 bes8 |
+  bes4 aes8 g4 bes8 |
   
-  d8. d16 d8 d |
-  \slurDotted c8.( g16) fis8( fis) |
-  g4 s8 |
-  c |
-  b8.[ d16] d4 |
-  d8. d16 d8 s16 d |
+  bes4 bes8 bes4 s8 |
+  g g g bes4 aes8 |
+  g[ ees'] d c4 c8 |
   
-  d4 d |
-  c4. c8 |
-  d8. d16 d8 b |
-  d8. d16 d8 d |
-  b4 fis |
-  g s8 \bar ":|"
+  c4 c8 c4 aes8 |
+  f4 bes8 bes4 s8 |
+  g8 g g  bes4 aes8 |
+  
+  g[ ees'] d c4 s8 |
+  s4 aes8 c4 c8 |
+  c4 s8 s4 aes8 |
+  g4( c8) bes4( aes8) |
+  g2. \bar "|."
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-  g'8 |
-  g8. g16 g8 g |
-  d8. d16 d8 d |
-  g8. g16 g8 g |
-  c,4. c8 |
-  g'8. g16 g8 g |
+  ees8 |
+  ees4 ees8 ees4 bes8 |
+  ees[ d] c bes4 bes8 |
+  bes4 bes8 bes4 bes8 |
   
-  d8. d16 d8 g |
-  \slurDotted c,8.( c16) d8( d) |
-  g,4 d'8\rest |
-  g |
-  g4 g4 |
-  d8. d16 d8 d16\rest g |
+  d4 d8 ees4 d8\rest |
+  ees8 ees ees ees4 f8 |
+  g4 g8 aes4 aes8 |
   
-  g4 g |
-  c,4. c8 |
-  g'8. g16 g8 g |
-  d8. d16 d8 b |
-  e4 d |
-  g, d'8\rest \bar ":|"
+  aes4 aes8 aes4 aes,8 |
+  bes4 d8 ees4 d8\rest |
+  ees ees ees ees4 f8 |
+  g4 g8 aes4 d,8\rest |
+  d4\rest aes'8 aes4 aes8 |
+  aes4 d,8\rest d4\rest bes8 |
+  ees4. ees |
+  ees2. \bar "|."
+  
 }
 bassWords = \lyricmode {
 
@@ -218,6 +218,8 @@ pianoLH = \relative c' {
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWordsII
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWordsIII
     \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsVI
     \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIV

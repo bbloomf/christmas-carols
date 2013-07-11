@@ -10,7 +10,7 @@
 [/Title (Angelus ad Virginem) /Page 54 /OUT pdfmark
 [/Title (As Lately We Watched) /Page 89 /OUT pdfmark
 [/Title (As With Gladness Men of Old) /Page 71 /OUT pdfmark
-[/Title (Auld Lang Syne) /Page 207 /OUT pdfmark
+[/Title (Auld Lang Syne) /Page 210 /OUT pdfmark
 [/Title (Ave Jesu Deus) /Page 125 /OUT pdfmark
 [/Title (Away in a Manger (Kirkpatrick)) /Page 32 /OUT pdfmark
 [/Title (Away in a Manger (Murray)) /Page 32 /OUT pdfmark
@@ -120,6 +120,7 @@
 [/Title (Of the Father's Love Begotten) /Page 128 /OUT pdfmark
 [/Title (O Holy Night) /Page 84 /OUT pdfmark
 [/Title (O Little Town of Bethlehem) /Page 43 /OUT pdfmark
+[/Title (O Magnum Mysterium) /Page 202 /OUT pdfmark
 [/Title (Once in Royal David's City) /Page 50 /OUT pdfmark
 [/Title (On Jordan's Bank) /Page 10 /OUT pdfmark
 [/Title (On the Birthday of the Lord) /Page 49 /OUT pdfmark
@@ -127,14 +128,14 @@
 [/Title (O Tannenbaum) /Page 115 /OUT pdfmark
 [/Title (Past Three a Clock) /Page 51 /OUT pdfmark
 [/Title (Pat-a-Pan) /Page 72 /OUT pdfmark
-[/Title (Personent Hodie (Holst)) /Page 202 /OUT pdfmark
-[/Title (Personent Hodie (Woodward)) /Page 203 /OUT pdfmark
+[/Title (Personent Hodie (Holst)) /Page 206 /OUT pdfmark
+[/Title (Personent Hodie (Woodward)) /Page 205 /OUT pdfmark
 [/Title (Puer Natus in Bethlehem (1)) /Page 158 /OUT pdfmark
 [/Title (Puer nobis nascitur (25)) /Page 162 /OUT pdfmark
 [/Title (Quem Pastores (26)) /Page 167 /OUT pdfmark
 [/Title (Quem Pastores) /Page 167 /OUT pdfmark
-[/Title (Ring Out, Wild Bells (Mendelssohn)) /Page 206 /OUT pdfmark
-[/Title (Ring Out, Wild Bells (Mozart)) /Page 204 /OUT pdfmark
+[/Title (Ring Out, Wild Bells (Mendelssohn)) /Page 207 /OUT pdfmark
+[/Title (Ring Out, Wild Bells (Mozart)) /Page 208 /OUT pdfmark
 [/Title (Rise Up, Shepherds, and Follow) /Page 104 /OUT pdfmark
 [/Title (Riu Riu Chiu) /Page 182 /OUT pdfmark
 [/Title (The Sans Day Carol) /Page 147 /OUT pdfmark
