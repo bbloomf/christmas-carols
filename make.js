@@ -56,6 +56,7 @@ function ps2pdf(psFiles,width,height,outputName) {
     if(typeof(psFiles)=='string') psFiles = [psFiles];
     var args = ['-q','-dSAFER','-dDEVICEWIDTHPOINTS='+width,'-dDEVICEHEIGHTPOINTS='+height,'-dCompatibilityLevel=1.4','-dNOPAUSE','-dBATCH',
                 '-r1200','-sDEVICE=pdfwrite','-dEmbedAllFonts=true','-dSubsetFonts=true','-sOutputFile='+outputName,'-c.setpdfwrite','-f'].concat(psFiles);
+    //console.info(psFiles);
     console.info('Processing PDF of ' + psFiles.length + ' files...');
     //console.info('gs ' + args.join(' '));
     var gsCmd = gsCmds[gsI];
@@ -93,16 +94,19 @@ var dir = 'ly/8.5garamond/',
         }
         if(i==files.length && currentlyActive < maxConcurrent) {
             if(currentlyActive === 0) {
-                psFiles.sort(function(a,b){
+                psFiles = psFiles.sort(function(a,b){
                   var regex = /^(?:.*\/)?(\d+)/,
                       mA = regex.exec(a),
                       mB = regex.exec(b);
                   if(mA && mB) {
                     a = parseInt(mA[1]);
                     b = parseInt(mB[1]);
+                    //console.info('a:' + a + ';b:' + b + ';' + (a+b));
                   }
                   return (a < b)? -1 : ((a > b)? 1 : 0);
                 });
+                psFiles.sort();
+                console.info(psFiles);
                 ps2pdf(psFiles,8.5,11,'!full.pdf');
                 ++i;
                 ++currentlyActive;
