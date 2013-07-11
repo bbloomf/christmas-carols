@@ -102,7 +102,7 @@ sopMusic = \relative c' {
   r4 g c2 |
   
   bes4 g a( b) |
-  c4.( bes8[ a g] g4~ |
+  c4.( bes?8[ a g] g4~ |
   g fis8[ e] fis4) fis |
   g2 r \bar"||"\pageBreak
   fis2. fis4 |
@@ -556,15 +556,6 @@ pianoLH = \relative c' {
     \context {
       \Lyrics
       \override LyricText #'X-offset = #center-on-word
-    }
-  }
-  \midi {
-    \tempo 4 = 100
-    \set Staff.midiInstrument = "flute"
-  
-    \context {
-      \Voice
-      \remove "Dynamic_performer"
     }
   }
   \header {
