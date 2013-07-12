@@ -261,7 +261,7 @@ altoMusic = \relative c' {
   g8[ f ees d] c4 ees) |
   d2 r4 a |
   bes4.( c8 d4) ees~( |
-  e d c4. d8 |
+  ees d c4. d8 |
   ees2) d~ |
   d1 \bar"|."
 }
