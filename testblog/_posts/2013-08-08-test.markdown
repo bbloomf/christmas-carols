@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2013-08-08 09:58:00
+categories: test
+---
+
+I don't think I shall need to use code snippets.  Quoque Latina lingua non utar.
