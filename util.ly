@@ -320,7 +320,10 @@ doHlig = ##t
       (preword-width (if (string? text) (width grob preword) 0))
       (word-width (if (string? text) (width grob word) (width grob text)))
       ; TODO: get the note width dynamically instead of hard coded
-      (note-width 1.3)
+      (notehead (ly:grob-parent grob X))
+      (refp (ly:grob-common-refpoint notehead grob X))
+      (note-extent (ly:grob-extent notehead refp X))
+      (note-width (- (cdr note-extent) (car note-extent)))
     )
     (if (= -1 (ly:grob-property-data grob 'self-alignment-X))
       (- 0 preword-width)
