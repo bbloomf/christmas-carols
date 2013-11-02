@@ -70,7 +70,7 @@ altoMusic = \relative c' {
   d4 bes8 f'4 c8 d4 |
   d2.
   
-  \slurDotted \oneVoice
+  \slurDashed \oneVoice
   g8 d' d c bes( a) g4 |
   a8 bes a g f4 d |
   
@@ -247,7 +247,7 @@ global = {
   \autoBeamOff
   \override DynamicLineSpanner #'staff-padding = #0.0
   \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
-  \tieDotted
+  \tieDashed
 }
 
 sopMusic = \relative c' {
@@ -270,7 +270,7 @@ sopMusic = \relative c' {
   \repeat volta 3 {
     \partial 2 a4. a8 |
     fis'4 d b e |
-    \slurDotted
+    \slurDashed
     d4( cis8[) b] a4. a8 |
     a4. a8 d4 d |
     
@@ -319,7 +319,7 @@ altoMusic = \relative c' {
   
   fis4. fis8 |
   a4 a a g |
-  \slurDotted
+  \slurDashed
   g4.~ g8 g4. g8 |
   fis4. fis8 fis4 gis |
   
@@ -422,7 +422,7 @@ tenorMusic = \relative c' {
   
   d4. d8 |
   d4 d d e |
-  \slurDotted
+  \slurDashed
   e4.( d8) e4. e8 |
   d4. d8 d4 d |
   
@@ -472,7 +472,7 @@ bassMusic = \relative c {
   
   d4. d8 |
   d4 fis g e |
-  \slurDotted
+  \slurDashed
   a4.( b8) cis4. cis8 |
   d4. d8 b4 b |
   

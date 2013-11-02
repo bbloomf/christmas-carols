@@ -64,7 +64,7 @@ sopMusic = \relative c' {
   c4^\mf f a c2 a4^\markup\italic"cresc." |
   a( g) a f2. \bar "||"
   f4^\p f f c'( a) d |
-  \slurDotted
+  \slurDashed
   d2.(^\> g,)\! \bar "||"
   
   \slurSolid
@@ -187,7 +187,7 @@ altoMusic = \relative c' {
   c4 c f f2 f4 |
   e2 e4 f2. \bar "||"
   f4 e d c2 f4 |
-  \slurDotted
+  \slurDashed
   f2.( f) \bar "||"
   
   \slurSolid
@@ -387,7 +387,7 @@ tenorMusic = \relative c' {
   c4_\mf c c a2 c4 |
   c( bes) c a2( c4) \bar "||"
   d_\p c bes a2 a4 |
-  \tieDotted
+  \tieDashed
   b2.~ b \bar "||"
   
   \tieSolid
@@ -500,7 +500,7 @@ bassMusic = \relative c {
   a'4 a f c( f) a |
   c2 c,4 f2. \bar "||"
   f4 f f f2 d4 |
-  \tieDotted
+  \tieDashed
   g2.~ g \bar "||"
   
   \tieSolid

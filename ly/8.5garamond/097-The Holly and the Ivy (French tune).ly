@@ -65,7 +65,7 @@ sopMusic = \relative c' {
   
   d4.~ d4 \bar""\break d8 |
   a'4 a8 a4 d8 |
-  \slurDotted
+  \slurDashed
   c8( c) bes8 a4 gis8 |
   a4 b8 c4 b8 |
   
@@ -94,7 +94,7 @@ sopMusic = \relative c' {
   d4.~ d4 \bar""\break d8 |
   a'4 a8 a4 d8 |
   c4 bes8 a4 gis8 |
-  \tieDotted
+  \tieDashed
   a4 b8 c8~ c b8 |
   
   \tieSolid
@@ -112,7 +112,7 @@ altoMusic = \relative c' {
   
   d4.~ d4 d8 |
   d4 g8 f4 a8 |
-  \slurDotted
+  \slurDashed
   g8( g) g8 f4 e8 |
   a4 a8 a4 gis8 |
   
@@ -140,7 +140,7 @@ altoMusic = \relative c' {
   d4.~ d4 d8 |
   d4 g8 f4 a8 |
   g4 g8 f4 e8 |
-  \tieDotted
+  \tieDashed
   a4 a8 a~ a gis8 |
   
   \tieSolid
@@ -228,7 +228,7 @@ tenorMusic = \relative c {
   
   f4.~f4 bes8 |
   a4 cis8 d4 d8 |
-  \slurDotted
+  \slurDashed
   d8( d) d8 d4 b8 |
   e4 f8 e4 d8 |
   
@@ -258,7 +258,7 @@ tenorMusic = \relative c {
   f4.~f4 bes8 |
   a4 cis8 d4 d8 |
   d4 d8 d4 b8 |
-  \tieDotted
+  \tieDashed
   e4 f8 e~ e d8 |
   
   \tieSolid
@@ -276,7 +276,7 @@ bassMusic = \relative c {
   
   d4.~ d4 g8 |
   f4 e8 d4 f8 |
-  \slurDotted
+  \slurDashed
   g8( g) g8 d4 d8 |
   c4 d8 e4 e8 |
   
@@ -304,7 +304,7 @@ bassMusic = \relative c {
   d4.~ d4 g8 |
   f4 e8 d4 f8 |
   g4 g8 d4 d8 |
-  \tieDotted
+  \tieDashed
   c4 d8 e~ e e8 |
   
   \tieSolid

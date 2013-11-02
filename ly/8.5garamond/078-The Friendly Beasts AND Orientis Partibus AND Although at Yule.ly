@@ -53,7 +53,7 @@ sopMusic = \relative c' {
   \repeat volta 3 {
     f4 f g |
     a2 a4 |
-    \slurDotted g( g) e |
+    \slurDashed g( g) e |
     f2 c'4 |
     c( c) c |
     
@@ -75,7 +75,7 @@ sopMusic = \relative c' {
   \repeat volta 4 {
     f4 f g |
     a2 a8( a) |
-    \slurDotted g4( g) e |
+    \slurDashed g4( g) e |
     f2 c'8( c) |
     c4( c) c |
     
@@ -98,7 +98,7 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  \slurDotted
+  \slurDashed
   c4 d e |
   f2 c4 |
   d4( e) c |
@@ -117,13 +117,13 @@ altoMusic = \relative c' {
   f4 f f |
   \slurSolid
   e( d) d |
-  \slurDotted
+  \slurDashed
   d( e) c |
   c2.
   
   
   
-  \slurDotted
+  \slurDashed
   c4 d e |
   f2 c8( c) |
   d4( e) c |
@@ -141,7 +141,7 @@ altoMusic = \relative c' {
   
   f4 f f |
   e( d) d |
-  \slurDotted
+  \slurDashed
   d( e) c |
   c2.
 }
@@ -203,7 +203,7 @@ altoWordsVI = \lyricmode {
 altoWordsVII = \lyricmode {
 }
 tenorMusic = \relative c' {
-  \slurDotted
+  \slurDashed
   a4 a bes |
   c2 a4 |
   bes( bes) g |
@@ -211,7 +211,7 @@ tenorMusic = \relative c' {
   
   a( a) a |
   \slurSolid
-  bes( a) \slurDotted f8( f) |
+  bes( a) \slurDashed f8( f) |
   g2 g4 |
   a2 c8( c) |
   
@@ -223,13 +223,13 @@ tenorMusic = \relative c' {
   a4 a d |
   \slurSolid
   c( bes) a |
-  \slurDotted
+  \slurDashed
   bes( a) g |
   a2.
   
   
   
-  \slurDotted
+  \slurDashed
   a4 a bes |
   c2 a8( a) |
   bes4( bes) g |
@@ -248,7 +248,7 @@ tenorMusic = \relative c' {
   a4 a d |
   \slurSolid
   c( bes) a |
-  \slurDotted
+  \slurDashed
   bes( a) g |
   a2.
 }
@@ -257,7 +257,7 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  \slurDotted
+  \slurDashed
   f4 d c |
   f2 f,4 |
   bes4( c) c4 |
@@ -281,7 +281,7 @@ bassMusic = \relative c {
   
   
   
-  \slurDotted
+  \slurDashed
   f4 d c |
   f2 f,8( f) |
   bes4( c) c4 |
@@ -300,7 +300,7 @@ bassMusic = \relative c {
   
   f4 f' f |
   c2 d4 |
-  \slurDotted
+  \slurDashed
   bes( c) c4 |
   f2.
 }

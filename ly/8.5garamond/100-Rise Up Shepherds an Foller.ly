@@ -48,14 +48,14 @@ global = {
 
 sopMusic = \relative c'' {
   \partial 4 ees8\noBeam^\mf c |
-  \slurDotted
+  \slurDashed
   ees4 ees8\noBeam( c) ees4 c8\noBeam( c) |
   \slurSolid
   c4 bes bes2 |
   bes4^\p bes des8\noBeam des c4 |
   bes8 bes4. bes4\rest ees8\noBeam^\f c | \break
   
-  \slurDotted
+  \slurDashed
   ees4 c8\noBeam( c) ees4 c8\noBeam c |
   \slurSolid
   bes4 c g8[( f] ees4) |
@@ -87,14 +87,14 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c'' {
   g8\noBeam aes |
-  \slurDotted
+  \slurDashed
   g4 g8\noBeam( aes) g4 g8\noBeam( g) |
   \slurSolid
   aes4 aes g2 |
   f4 f e8\noBeam e ees4 |
   d8 d4. s4 ees8\noBeam  f |
   
-  \slurDotted
+  \slurDashed
   g4 aes8\noBeam( aes) g4 f8\noBeam f |
   \slurSolid
   d4 d d( ees) |
@@ -158,14 +158,14 @@ altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
   bes8\noBeam_\mf c |
-  \slurDotted
+  \slurDashed
   bes4 bes8\noBeam( c) bes4 c8\noBeam( c) |
   \slurSolid
   ees4 d ees2 |
   des4_\p des bes8\noBeam bes a4 |
   aes!8 aes4. s4 g8\noBeam_\f aes |
   
-  \slurDotted
+  \slurDashed
   bes4 c8\noBeam( c) bes4 aes8\noBeam aes |
   \slurSolid
   bes4 aes aes( g) |
@@ -197,14 +197,14 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c {
  ees8\noBeam ees |
- \slurDotted
+ \slurDashed
  ees4 ees8\noBeam( ees) ees4 e8\noBeam(e) |
  \slurSolid
  f4 bes ees,2 |
  bes'4 aes g8\noBeam g fis4 |
  f!8 bes,4. d4\rest ees8\noBeam ees |
  
- \slurDotted
+ \slurDashed
  ees4 ees8\noBeam( ees) ees4 ees8\noBeam ees |
  \slurSolid
  bes4 bes b( c) |

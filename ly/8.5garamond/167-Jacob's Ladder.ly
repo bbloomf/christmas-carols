@@ -48,7 +48,7 @@ global = {
   \key g \major
   \time 2/4
   \autoBeamOff
-  \slurDotted
+  \slurDashed
 }
 
 sopMusic = \relative c' {
@@ -66,7 +66,7 @@ sopMusic = \relative c' {
   
   d4 a8 b |
   c4 c8 c |
-  \slurDotted
+  \slurDashed
   c4 b8( c) |
   d4 d8 e |
   d[ b] c a|
@@ -108,7 +108,7 @@ altoMusic = \relative c' {
   
   fis4 f8 f |
   e4 ees8 ees8 |
-  \slurDotted
+  \slurDashed
   d4 d8( c) |
   g'4 g8 g |
   g[ f] e fis |
@@ -207,7 +207,7 @@ tenorMusic = \relative c' {
   
   a4 d8 d |
   c4 a8 a |
-  \slurDotted
+  \slurDashed
   a4 g8( g) |
   g4 d'8 c |
   b[ gis] a c |
@@ -249,7 +249,7 @@ bassMusic = \relative c {
   
   d4 d8 d |
   a'4 g8 g |
-  \slurDotted
+  \slurDashed
   fis4 g8( e) |
   b4 b8 c |
   d4 d8 d |

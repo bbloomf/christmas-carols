@@ -53,7 +53,7 @@ global = {
 }
 
 sopMusic = \relative c' {
-  \slurDotted
+  \slurDashed
   \tempo 4 = 88
   a'8. gis16 a8 c b a |
   gis( e) a b8\rest gis b\rest
@@ -89,7 +89,7 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  \slurDotted
+  \slurDashed
   e8. e16 e8 e f f |
   e( e) e s e s |
   e2 |
@@ -166,7 +166,7 @@ altoWordsVI = \lyricmode {
   \set ignoreMelismata = ##t
 }
 tenorMusic = \relative c' {
-  \slurDotted
+  \slurDashed
   c8. b16 c8 e d c |
   b( gis) a r b r |
   c2 |
@@ -194,7 +194,7 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  \slurDotted
+  \slurDashed
   a8 e' a a d, d |
   e( d) c d e e |
   a e a,4 |

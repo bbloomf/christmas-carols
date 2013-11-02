@@ -61,7 +61,7 @@ sopMusic = \relative c'' {
   \partial 4*3 g4. fis8 g4 | \break
   
   \mark \markup {\musicglyph #"scripts.segno"} \partial 4 g4_\f |
-  \slurDotted d'8\noBeam(d) \slurSolid b4 g a8[ b] |
+  \slurDashed d'8\noBeam(d) \slurSolid b4 g a8[ b] |
   c4 b8[ a] b4 b |
   a4. a8 b4 d |
   
@@ -94,7 +94,7 @@ altoMusic = \relative c' {
   <b d> <a d> <b d> |
   
   d |
-  \slurDotted d8\noBeam( d) \slurSolid fis4 g e |
+  \slurDashed d8\noBeam( d) \slurSolid fis4 g e |
   a fis g g |
   d4. d8 g4 fis |
   
@@ -173,7 +173,7 @@ tenorMusic = \relative c' {
   d d, g \bar "||"
   
   b'^\f |
-  \slurDotted a8\noBeam( a) \slurSolid d4 b e |
+  \slurDashed a8\noBeam( a) \slurSolid d4 b e |
   e d d d |
   d4. d8 d4 d |
   
@@ -205,7 +205,7 @@ bassMusic = \relative c' {
   s4*3 \bar "||"
   
   g'4 |
-  \slurDotted fis8\noBeam( fis) \slurSolid d4 e c |
+  \slurDashed fis8\noBeam( fis) \slurSolid d4 e c |
   a d g g |
   fis4. fis8 g4 b |
   

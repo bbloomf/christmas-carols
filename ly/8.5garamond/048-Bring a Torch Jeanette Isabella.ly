@@ -50,20 +50,20 @@ global = {
   \time 3/8
   %\override DynamicLineSpanner #'staff-padding = #0.0
   %\override DynamicLineSpanner #'Y-extent = #'(0 . 0)
-  \slurDotted
-  \tieDotted
+  \slurDashed
+  \tieDashed
 }
 
 sopMusic = \relative c'' {
   \tempo "Brightly"
   \override DynamicText #'X-offset = #-4
   d4_\f g,8 ||
-  \slurDotted g\noBeam( fis\noBeam)  g |
+  \slurDashed g\noBeam( fis\noBeam)  g |
   a\noBeam( b\noBeam) c |
   b4 a8 |
   
   d4 g,8 |
-  \slurDotted g\noBeam( fis\noBeam)  g | \break
+  \slurDashed g\noBeam( fis\noBeam)  g | \break
   a\noBeam( b\noBeam) a |
   g4 b8\rest |
   
@@ -71,7 +71,7 @@ sopMusic = \relative c'' {
   d4_\mf d8 |
   d8\noBeam( c\noBeam) b |
   b\noBeam a\noBeam g | 
-  \slurDotted g4( fis8) | \break
+  \slurDashed g4( fis8) | \break
   
   \once\override DynamicText #'X-offset = #-3
   e_\f\noBeam( fis\noBeam) g |
@@ -81,7 +81,7 @@ sopMusic = \relative c'' {
   
   g4_\p b8\rest |
   a4 b8\rest | 
-  \slurDotted b8\noBeam( c\noBeam) b | \break
+  \slurDashed b8\noBeam( c\noBeam) b | \break
   a4 d8 |
   b4 a8 |
   
@@ -99,12 +99,12 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c'' {
   g4 d8 |
-  \slurDotted e\noBeam~ e\noBeam e |
+  \slurDashed e\noBeam~ e\noBeam e |
   e\noBeam~ e\noBeam e |
   d4 d8 |
   
   d4 d8 |
-  \slurDotted e\noBeam~ e\noBeam e |
+  \slurDashed e\noBeam~ e\noBeam e |
   
   
   fis8\noBeam~ fis\noBeam fis8 |
@@ -187,7 +187,7 @@ __
 tenorMusic = \relative c' {
   \override DynamicText #'X-offset = #-4
   b4 b8 |
-  \slurDotted b8\noBeam( a\noBeam) b |
+  \slurDashed b8\noBeam( a\noBeam) b |
   a\noBeam( gis\noBeam) a |
   fis4 fis8 |
   
@@ -232,7 +232,7 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c' {
   g4 g8 |
-  \slurDotted e8\noBeam~ e\noBeam e |
+  \slurDashed e8\noBeam~ e\noBeam e |
   c\noBeam( b\noBeam) a |
   d4 c8 |
   

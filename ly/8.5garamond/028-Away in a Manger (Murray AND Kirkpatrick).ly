@@ -83,7 +83,7 @@ sopMusic = \relative c'' {
   d c f |
   a2 c4 |
   c4. bes8 a4 |
-  \slurDotted a g f |
+  \slurDashed a g f |
   
   f e d |
   c2 c4 |

@@ -57,14 +57,14 @@ sopMusic = \relative c'' {
   a2 e4 a |
   b2 e, |
   cis'4 b cis d |
-  \slurDotted cis2 b4 \bar"" a |
+  \slurDashed cis2 b4 \bar"" a |
   a2 gis4 fis |
   
   gis( a)( b) cis |
   \slurSolid gis2( fis4.) e8 |
   e2. b'4\rest |
   e2 d4 cis |
-  \slurDotted d2( cis) |
+  \slurDashed d2( cis) |
   b4 cis a b |
   \slurSolid \partial 4*3 gis4.( fis8) e4 | \break
   
@@ -91,11 +91,11 @@ altoMusic = \relative c' {
   e2 e4 cis |
   cis( dis) e dis |
   
-  \slurDotted e( dis8[) cis]( b4) e |
+  \slurDashed e( dis8[) cis]( b4) e |
   \slurSolid e2( dis4.) e8 |
   e2. s4 |
   e2 fis8[ gis] a4 |
-  a( \slurDotted gis)( a2) |
+  a( \slurDashed gis)( a2) |
   e4 e fis fis |
   \slurSolid \partial 4*3 e2 e4 |
   
@@ -164,14 +164,14 @@ tenorMusic = \relative c' {
   cis2 cis4 cis |
   b2 b |
   a4 b a a |
-  \slurDotted a2 gis4 a |
+  \slurDashed a2 gis4 a |
   a2 b4 b |
   
   b( a)( e') cis |
   \slurSolid b2( a4.) gis8 |
   gis2. d4\rest |
   cis'2 d4 e |
-  \slurDotted e2( e2) |
+  \slurDashed e2( e2) |
   e4 a, cis d |
   \slurSolid \partial 4*3 b4.( a8) gis4 |
   
@@ -195,7 +195,7 @@ bassMusic = \relative c' {
   a2 a4 a |
   gis2 gis |
   a4 gis a d, |
-  \slurDotted e2 e4 fis |
+  \slurDashed e2 e4 fis |
   fis2 e4 b |
   
   e( cis)( gis) a |

@@ -54,14 +54,14 @@ sopMusic = \relative c' {
   \time 6/8
   \partial 8 e8 |
   e4 fis8 gis4 fis8 |
-  \slurDotted e4( fis8) gis4 fis8 |
+  \slurDashed e4( fis8) gis4 fis8 |
   e4 b'8 b4 b8 |
   
   \slurSolid b4.( b4) \bar""
   b8 |
   cis4 cis8 b4 gis8 |
   b4.( a4) gis8 |
-  \slurDotted fis4( e8) fis4 gis8 |
+  \slurDashed fis4( e8) fis4 gis8 |
   \partial 4. a4. \bar "||"
   
   \time 2/2
@@ -88,10 +88,10 @@ sopMusic = \relative c' {
   \mark "Additional Verses"
   \partial 8 e8 |
   e4 fis8 gis4 fis8 |
-  \slurDotted e4( fis8) gis4 fis8 |
+  \slurDashed e4( fis8) gis4 fis8 |
   e4 b'8 b4 b8 |
   
-  \slurSolid b4.( \slurDotted b4) | \bar""
+  \slurSolid b4.( \slurDashed b4) | \bar""
   b8 |
   cis4 cis8 b4 gis8 |
   b4( b8)( a4) gis8 |
@@ -106,13 +106,13 @@ altoMusic = \relative c' {
   \time 6/8
   e8 |
   e4 e8 dis4 dis8 |
-  \slurDotted e4( e8) dis4 dis8 |
+  \slurDashed e4( e8) dis4 dis8 |
   e4 e8 a4 gis8 |
   
   fis4.~ fis4 fis8 |
   a4 e8 e4 e8 |
   \slurSolid fis4.( dis4) e8 |
-  \slurDotted cis4( e8) dis4 e8 |
+  \slurDashed cis4( e8) dis4 e8 |
   dis4. \bar "||"
   
   
@@ -136,7 +136,7 @@ altoMusic = \relative c' {
   \time 6/8 
   e8 |
   e4 e8 dis4 dis8 |
-  \slurDotted e4( e8) dis4 dis8 |
+  \slurDashed e4( e8) dis4 dis8 |
   e4 e8 a4 gis8 |
   
   fis4.~ fis4 fis8 |
@@ -234,7 +234,7 @@ tenorMusic = \relative c' {
   \time 6/8
   gis8 |
   gis4 a8 b4 a8 |
-  \slurDotted gis4( a8) b4 a8 |
+  \slurDashed gis4( a8) b4 a8 |
   gis4 b8 dis4 e8 |
   
   dis4.~ dis4 dis8 |
@@ -264,7 +264,7 @@ tenorMusic = \relative c' {
   \time 6/8 
   gis8 |
   gis4 a8 b4 a8 |
-  \slurDotted gis4( a8) b4 a8 |
+  \slurDashed gis4( a8) b4 a8 |
   gis4 b8 dis4 e8 |
   
   dis4.~ dis4 dis8 |
@@ -281,13 +281,13 @@ bassMusic = \relative c {
   \time 6/8
   e8 |
   e4 e8 b4 b8 |
-  \slurDotted e4( e8) b4 b8 |
+  \slurDashed e4( e8) b4 b8 |
   e4 gis8 fis4 e8 |
   
   b'4.~ b4 b8 |
   a4 a8 gis4 e8 |
   \slurSolid dis4.( fis4) e8 |
-  \slurDotted a4( gis8) fis4 e8 |
+  \slurDashed a4( gis8) fis4 e8 |
   b4. \bar "||"
   
   e4 fis |
@@ -311,7 +311,7 @@ bassMusic = \relative c {
   \time 6/8 
   e8 |
   e4 e8 b4 b8 |
-  \slurDotted e4( e8) b4 b8 |
+  \slurDashed e4( e8) b4 b8 |
   e4 gis8 fis4 e8 |
   
   b'4.~ b4 b8 |

@@ -57,7 +57,7 @@ sopMusic = \relative c' {
   g4 ees ees |
   
   c' c8\noBeam des c\noBeam bes |
-  \slurDotted aes4 f ees8\noBeam( ees) |
+  \slurDashed aes4 f ees8\noBeam( ees) |
   f4 bes g |
   \partial 2 aes2^\markup\italic"Fine" \bar "||" \break
   \partial 4 ees4 |
@@ -83,7 +83,7 @@ altoMusic = \relative c' {
   ees4 ees ees |
   
   e e8\noBeam e e\noBeam e |
-  \slurDotted f4 c ees8\noBeam( ees) |
+  \slurDashed f4 c ees8\noBeam( ees) |
   des4 f ees |
   ees2 \bar "||"
   c4 |
@@ -149,7 +149,7 @@ tenorMusic = \relative c {
   ees4 g g |
   
   g g8\noBeam g c\noBeam c |
-  \slurDotted c4 aes aes8\noBeam( aes) |
+  \slurDashed c4 aes aes8\noBeam( aes) |
   aes4 des des |
   c2_\markup\italic"Fine" \bar "||"
   aes4 |
@@ -175,7 +175,7 @@ bassMusic = \relative c {
   ees4 ees des |
   
   c c8\noBeam c c\noBeam c |
-  \slurDotted f4 f c8\noBeam( c) |
+  \slurDashed f4 f c8\noBeam( c) |
   des4 bes ees |
   aes2 \bar "||"
   aes4 |

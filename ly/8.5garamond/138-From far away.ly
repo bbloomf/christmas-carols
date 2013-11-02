@@ -55,7 +55,7 @@ global = {
 sopMusic = \relative c' {
   \repeat volta 3 {
     \partial 8 f8^\mf |
-    \slurDotted
+    \slurDashed
     f( f) bes8 d8( d) c8 |
     bes[ a] g f4 \bar"" f8^\pp |
     bes bes bes a a a |
@@ -91,7 +91,7 @@ sopMusic = \relative c' {
   %2ndPage
   \repeat volta 3 {
     \partial 8 f8^\mf |
-    \slurDotted
+    \slurDashed
     f( f) bes8 d8( d) c8 |
     bes[ a] g f4 \bar"" f8^\pp |
     bes bes bes a a a |
@@ -128,7 +128,7 @@ sopMusic = \relative c' {
   
   %3rdPage
   \repeat volta 3 {
-    \slurDotted
+    \slurDashed
     \partial 8 f16(^\mf f) |
     f8( f) bes8 d8( d) c8 |
     bes( a) g f4 \bar"" f8^\pp |
@@ -167,7 +167,7 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   f8 |
-  \slurDotted
+  \slurDashed
   f( f) f8 f8( f) f8 |
   g[ f] ees d4 f8 |
   f g f f f f |
@@ -205,7 +205,7 @@ altoMusic = \relative c' {
   
   %2ndPageAlto
   f8 |
-  \slurDotted
+  \slurDashed
   f( f) f8 f8( f) f8 |
   g[ f] ees d4 f8 |
   f g f f f f |
@@ -245,7 +245,7 @@ altoMusic = \relative c' {
   
   
   %3rdPageAlto
-  \slurDotted
+  \slurDashed
   f16( f) |
   f8( f) f8 f8( f) f8 |
   g( f) ees d4 f8 |
@@ -499,7 +499,7 @@ altoWordsIX = \lyricmode {
 
 tenorMusic = \relative c {
   d'8_\mf |
-  \slurDotted
+  \slurDashed
   d( d) d8 bes( bes) bes8 |
   bes4 bes8 d4 d8_\pp |
   d d d d cis d |
@@ -536,7 +536,7 @@ tenorMusic = \relative c {
   
   %2ndPageTenor
   d'8_\mf |
-  \slurDotted
+  \slurDashed
   d( d) d8 bes( bes) bes8 |
   bes4 bes8 d4 d8_\pp |
   d d d d cis d |
@@ -574,7 +574,7 @@ tenorMusic = \relative c {
   
   
   %3rdPageTenor
-  \slurDotted
+  \slurDashed
   d'16(_\mf d) |
   d8( d) d8 bes( bes) bes8 |
   bes8( bes) bes8 d4 d8_\pp |
@@ -611,7 +611,7 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c {
   bes'8 |
-  \slurDotted
+  \slurDashed
   bes( bes) bes8 bes,( bes) d8 |
   ees4 g8 bes4 a8 |
   g g g a a a |
@@ -646,7 +646,7 @@ bassMusic = \relative c {
   
   %2ndPageBass
   bes'8 |
-  \slurDotted
+  \slurDashed
   bes( bes) bes8 bes,( bes) d8 |
   ees4 g8 bes4 a8 |
   g g g a a a |
@@ -679,7 +679,7 @@ bassMusic = \relative c {
   
   
   %3rdPageBass
-  \slurDotted
+  \slurDashed
   bes'16( bes) |
   bes8( bes) bes8 bes,( bes) d8 |
   ees8( ees) g8 bes4 a8 |

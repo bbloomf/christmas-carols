@@ -55,18 +55,18 @@ sopMusic = \relative c' {
   \repeat volta 2 {
     \partial 4 e4 |
     e b' b a |
-    \slurDotted g( fis) e d |
+    \slurDashed g( fis) e d |
     \slurSolid e fis g a |
     b2. \bar""\break e,4 |
     
     e b' b a |
-    \slurDotted g( fis) e d |
+    \slurDashed g( fis) e d |
     \slurSolid
     e fis g a |
     b2 b4\rest \bar""\break b |
     
     c a b c |
-    \slurDotted d( e) b a |
+    \slurDashed d( e) b a |
     \slurSolid
     g e fis g |
     \partial 2 a2 \bar "||" \break
@@ -88,18 +88,18 @@ sopWords = \lyricmode {
 altoMusic = \relative c' {
   e4 |
   e g fis dis |
-  \slurDotted e( d?) c b |
+  \slurDashed e( d?) c b |
   \slurSolid e dis e e |
   dis2. e4 |
   
   e g fis dis |
-  \slurDotted e( d?) c b |
+  \slurDashed e( d?) c b |
   \slurSolid
   e dis e e |
   dis2 s4 e |
   
   e d d g |
-  \slurDotted f( e) d dis |
+  \slurDashed f( e) d dis |
   \slurSolid
   e cis d g |
   fis2 |
@@ -203,19 +203,19 @@ altoWordsVII = \lyricmode {
 tenorMusic = \relative c {
   e4 |
   g e fis b |
-  \slurDotted b( b) g g |
+  \slurDashed b( b) g g |
   \slurSolid
   g b b e, |
   fis2. e4 |
   
   g e fis b |
-  \slurDotted b( b) g g |
+  \slurDashed b( b) g g |
   \slurSolid
   g b b e, |
   fis2 s4 g |
   
   a a g g |
-  \slurDotted g( g) g fis |
+  \slurDashed g( g) g fis |
   \slurSolid
   g g a d |
   d( c) |
@@ -236,19 +236,19 @@ tenorWords = \lyricmode {
 bassMusic = \relative c {
   e4 |
   e e dis b |
-  \slurDotted e( b) c g |
+  \slurDashed e( b) c g |
   \slurSolid
   c b e c |
   b2. e4 |
   
   e e dis b |
-  \slurDotted e( b) c g |
+  \slurDashed e( b) c g |
   \slurSolid
   c b e c |
   b2 d4\rest e |
   
   a fis g e |
-  \slurDotted b( c) g b |
+  \slurDashed b( c) g b |
   \slurSolid
   e e d b |
   d2 |

@@ -61,7 +61,7 @@ global = {
 
 sopMusic = \relative c' {
   \tempo "Allegro"
-  \slurDotted
+  \slurDashed
   \oneVoice
   s2*7 | \break
   
@@ -192,7 +192,7 @@ altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
   \autoBeamOff
-  \slurDotted
+  \slurDashed
   s2*24 |
   
   %page2
@@ -222,7 +222,7 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c' {
 \autoBeamOff
-\slurDotted
+\slurDashed
   s2*24 |
   
   %page2

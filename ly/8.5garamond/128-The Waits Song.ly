@@ -50,7 +50,7 @@ global = {
   \autoBeamOff
   \override DynamicLineSpanner #'staff-padding = #0.0
   \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
-  \slurDotted
+  \slurDashed
 }
 
 sopMusic = \relative c'' {

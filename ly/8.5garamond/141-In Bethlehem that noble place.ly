@@ -62,7 +62,7 @@ sopMusic = \relative c' {
   
   fis[^\markup\italic"cresc." g] a4 |
   b8[ cis] d[ e] |
-  cis4 \bar""\break \slurDotted a8( a) |
+  cis4 \bar""\break \slurDashed a8( a) |
   b4 a |
   d4. a8 |
   b4 a |
@@ -118,7 +118,7 @@ altoMusic = \relative c' {
   
   d d |
   g fis |
-  e \slurDotted a8( a) |
+  e \slurDashed a8( a) |
   b4 a |
   d,4. fis8 |
   g4 a |
@@ -253,7 +253,7 @@ tenorMusic = \relative c' {
   
   a d |
   g, a |
-  a \slurDotted a8( a) |
+  a \slurDashed a8( a) |
   b4 a |
   d4. d8 |
   d4 d |
@@ -309,7 +309,7 @@ bassMusic = \relative c {
   
   d fis |
   e d |
-  a \slurDotted a'8( a) |
+  a \slurDashed a'8( a) |
   b4 a |
   d4. d,8 |
   g4 fis |

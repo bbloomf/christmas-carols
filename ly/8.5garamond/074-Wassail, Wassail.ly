@@ -61,18 +61,18 @@ sopMusic = \relative c' {
   \tempo"Allegro" 
   \repeat volta 2 {
     \partial 4 d4 |
-    \slurDotted g4( g) g |
+    \slurDashed g4( g) g |
     g( a) b |
     c b a |
     \slurSolid b( d) d4 |
     
     c4 a a |
-    \slurDotted a( b) c |
+    \slurDashed a( b) c |
     \slurSolid b8[ a] g[ a] b4 |
     a2 c4 |
     
     b8[ a] g[ a] b[ c] |
-    d2 \slurDotted d8\noBeam( c) |
+    d2 \slurDashed d8\noBeam( c) |
     b4 g b |
     a2 g8\noBeam a |
     
@@ -85,18 +85,18 @@ sopMusic = \relative c' {
   
   \repeat volta 2 {
     \partial 4 d4 |
-    \slurDotted g4 g g |
+    \slurDashed g4 g g |
     g a b |
     c b a |
-    \slurSolid b( d) \slurDotted d8( d) |
+    \slurSolid b( d) \slurDashed d8( d) |
     
     c4 a a |
-    \slurDotted a( b) c |
+    \slurDashed a( b) c |
     \slurSolid b8[ a] g[ a] b4 |
     a2 c4 |
     
     b8[ a] g[ a] b[ c] |
-    d2 \slurDotted d8\noBeam( c) |
+    d2 \slurDashed d8\noBeam( c) |
     b4 g b |
     a2 g8\noBeam( a) |
     
@@ -112,7 +112,7 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   d4 |
-  \slurDotted d( d) e|
+  \slurDashed d( d) e|
   d( fis) g|
   g g fis |
   g2 g4 |
@@ -123,7 +123,7 @@ altoMusic = \relative c' {
   fis2 fis4 |
   
   g8[ fis] e[ fis] g4 |
-  fis2 \slurDotted fis8\noBeam( fis) |
+  fis2 \slurDashed fis8\noBeam( fis) |
   g4 g g |
   fis2 e8\noBeam fis |
   
@@ -136,7 +136,7 @@ altoMusic = \relative c' {
   
   
   d4 |
-  \slurDotted d d e|
+  \slurDashed d d e|
   d fis g|
   g g fis |
   g2 g8( g) |
@@ -147,7 +147,7 @@ altoMusic = \relative c' {
   fis2 fis4 |
   
   g8[ fis] e[ fis] g4 |
-  fis2 \slurDotted fis8\noBeam( fis) |
+  fis2 \slurDashed fis8\noBeam( fis) |
   g4 g g |
   fis2 e8\noBeam( fis) |
   
@@ -219,12 +219,12 @@ altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
   b4 |
-  \slurDotted b( b) c |
+  \slurDashed b( b) c |
   b( c) d |
   e d c |
   \slurSolid d( b) b4 |
   
-  \slurDotted
+  \slurDashed
   e4 d c |
   d( g,) a |
   g e' d |
@@ -244,12 +244,12 @@ tenorMusic = \relative c' {
   
   
   b4 |
-  \slurDotted b b c |
+  \slurDashed b b c |
   b c d |
   e d c |
-  \slurSolid d( b) \slurDotted b8( b) |
+  \slurSolid d( b) \slurDashed b8( b) |
   
-  \slurDotted
+  \slurDashed
   e4 d c |
   d( g,) a |
   g e' d |
@@ -271,7 +271,7 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c {
   g'4 |
-  \slurDotted g4( g) c, |
+  \slurDashed g4( g) c, |
   g'( d) g |
   c, g' d |
   g2 g4 |
@@ -282,7 +282,7 @@ bassMusic = \relative c {
   d2 d4 |
   
   g4 b g8[ e] |
-  d2 \slurDotted d8\noBeam( d) |
+  d2 \slurDashed d8\noBeam( d) |
   g4 g g |
   d2 e8\noBeam d |
   
@@ -295,7 +295,7 @@ bassMusic = \relative c {
   
   
   g'4 |
-  \slurDotted g4 g c, |
+  \slurDashed g4 g c, |
   g' d g |
   c, g' d |
   g2 g8( g) |
@@ -306,7 +306,7 @@ bassMusic = \relative c {
   d2 d4 |
   
   g4 b g8[ e] |
-  d2 \slurDotted d8\noBeam( d) |
+  d2 \slurDashed d8\noBeam( d) |
   g4 g g |
   d2 e8\noBeam( d) |
   

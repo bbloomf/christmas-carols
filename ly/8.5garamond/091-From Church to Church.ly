@@ -67,7 +67,7 @@ sopMusic = \relative c'' {
   \repeat volta 2 {
     \partial 4 g4 |
     g( a bes a g) f |
-    \slurDotted
+    \slurDashed
     g2.( d'2)  d4 |
     \slurSolid
     c( d) ees d( c) d |
@@ -98,7 +98,7 @@ altoMusic = \relative c'' {
   
   g4 |
   e2( f4 f2) f4 |
-  \slurDotted
+  \slurDashed
   e2.( f2) f4 |
   \slurSolid
   f2 g4 f2 f4 |
@@ -178,7 +178,7 @@ tenorMusic = \relative c' {
   
   g4 |
   c2( d4 c2) a4 |
-  \slurDotted
+  \slurDashed
   c2.( \slurSolid d4)( c4) bes |
   a2 bes4 a2 a4 |
   bes2.~ bes4 s4 bes |
@@ -208,7 +208,7 @@ bassMusic = \relative c' {
   
   g'4 |
   c,2( bes4 f'2) f4 |
-  \slurDotted
+  \slurDashed
   c2.( bes2) bes4 |
   \slurSolid
   f'2 ees4 f2 f4 |

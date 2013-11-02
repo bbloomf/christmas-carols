@@ -80,7 +80,7 @@ sopMusicPre = \relative c' {
   r2 | r1 | r1 | r1 | \mark \markup { \musicglyph #"scripts.segno" }
   r2 f4^\mf f8.\noBeam f16 | \break
   
-  \slurDotted aes4( aes8.\noBeam) aes16\noBeam bes8.\noBeam( bes16\noBeam) ges8.\noBeam bes16 |
+  \slurDashed aes4( aes8.\noBeam) aes16\noBeam bes8.\noBeam( bes16\noBeam) ges8.\noBeam bes16 |
   des2 aes8\noBeam r16 aes16 f8.\noBeam ees16 | \break
   
   des4 f8. ges16\noBeam aes4 ges8.\noBeam ees16 |

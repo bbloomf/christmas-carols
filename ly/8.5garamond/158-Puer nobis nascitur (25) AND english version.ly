@@ -65,7 +65,7 @@ sopMusic = \relative c' {
   \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
   \mark \markup\italic"To be sung in Unison."
   d4 e fis g |
-  fis e \slurDotted d4( d) |
+  fis e \slurDashed d4( d) |
   a'4 a b cis |
   d2 d2 \bar "||"
   d4 e cis d |
@@ -255,7 +255,7 @@ global = {
 
 sopMusic = \relative c' {
   d4 e fis g |
-  fis e \slurDotted d4( d) |
+  fis e \slurDashed d4( d) |
   a'4 a b cis |
   d2 d4( d) \bar "||"
   d4 e cis d |

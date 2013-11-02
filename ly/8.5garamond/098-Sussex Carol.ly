@@ -52,7 +52,7 @@ global = {
   \override DynamicLineSpanner #'staff-padding = #0.0
   \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
   \override Score.TimeSignature #'break-visibility = #'#(#f #f #f)
-  \slurDotted
+  \slurDashed
 }
 
 sopMusic = \relative c'' {

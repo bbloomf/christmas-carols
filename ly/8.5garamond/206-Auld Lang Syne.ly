@@ -62,7 +62,7 @@ sopMusic = \relative c' {
   d8. b16 b8 g |
   
   a8. g16 a8 b |
-  \slurDotted g8.( e16) e8( d) |
+  \slurDashed g8.( e16) e8( d) |
   \partial 4. g4 b8\rest \bar "|:" \break
   \partial 8 e8 |
   d8.[ b16] b8[ g] |
@@ -88,7 +88,7 @@ altoMusic = \relative c' {
   g8. g16 g8 g |
   
   fis8. e16 fis8 g |
-  \slurDotted e8.( c16) c8( c) |
+  \slurDashed e8.( c16) c8( c) |
   b4 s8 |
   g'8 |
   g4 g |
@@ -160,7 +160,7 @@ tenorMusic = \relative c' {
   b8. d16 d8 b |
   
   d8. d16 d8 d |
-  \slurDotted c8.( g16) fis8( fis) |
+  \slurDashed c8.( g16) fis8( fis) |
   g4 s8 |
   c |
   b8.[ d16] d4 |
@@ -186,7 +186,7 @@ bassMusic = \relative c {
   g'8. g16 g8 g |
   
   d8. d16 d8 g |
-  \slurDotted c,8.( c16) d8( d) |
+  \slurDashed c,8.( c16) d8( d) |
   g,4 d'8\rest |
   g |
   g4 g4 |

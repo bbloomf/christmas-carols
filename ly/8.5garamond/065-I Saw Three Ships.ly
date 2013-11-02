@@ -55,7 +55,7 @@ global = {
 sopMusic = \relative c' {
     \repeat volta 2 {
     \partial 8 d8 |
-    \slurDotted  g4 g8\noBeam a\noBeam( a\noBeam) b |
+    \slurDashed  g4 g8\noBeam a\noBeam( a\noBeam) b |
     d4 b8 a4 c8 |
     
     b4 g8 g4 b8 |
@@ -73,7 +73,7 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   d8 |
-  \slurDotted d4 d8 d\noBeam( d\noBeam) d |
+  \slurDashed d4 d8 d\noBeam( d\noBeam) d |
   d4 d8 d4 d8 |
   
   d4 d8 d4 d8 |
@@ -171,7 +171,7 @@ altoWordsIX = \lyricmode {
 
 tenorMusic = \relative c {
   d8 |
-  \slurDotted b'4 b8 c\noBeam( c\noBeam) b |
+  \slurDashed b'4 b8 c\noBeam( c\noBeam) b |
   a4 g8 fis4 a8 |
   
   g4 b8 b4 g8 |
@@ -188,7 +188,7 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c {
   d8 |
-  \slurDotted g4 g8 g\noBeam( g\noBeam) g |
+  \slurDashed g4 g8 g\noBeam( g\noBeam) g |
   fis4 g8 d4 fis8 |
   
   g4 g8 g4 g8 |

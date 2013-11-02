@@ -54,7 +54,7 @@ global = {
 sopMusic = \relative c'' {
   \partial 4 b4 |
   b b ais b |
-  \slurDotted d( c) e, a |
+  \slurDashed d( c) e, a |
   \slurSolid g fis8[ g] a4 d, |
   b'2. \bar""\break b4 |
   
@@ -80,7 +80,7 @@ sopWords = \lyricmode {
 altoMusic = \relative c' {
   d4 |
   d d cis d |
-  \slurDotted f( e) c e |
+  \slurDashed f( e) c e |
   d d d d |
   d2. d4 |
   
@@ -155,7 +155,7 @@ altoWordsIV = \lyricmode {
 tenorMusic = \relative c' {
   g4 |
   g g g g |
-  \slurDotted gis( a) a c |
+  \slurDashed gis( a) a c |
   \slurSolid b a8[ b] c4 c |
   b2. g4 |
   
@@ -181,7 +181,7 @@ tenorWords = \lyricmode {
 bassMusic = \relative c' {
   g4 |
   g g g g |
-  \slurDotted c,( c) c c |
+  \slurDashed c,( c) c c |
   d d d d |
   g,2. g'4 |
   

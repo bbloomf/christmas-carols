@@ -57,15 +57,15 @@ sopMusic = \relative c'' {
   a2 e4 a |
   b2 e, |
   cis'4 b cis d |
-  \slurDotted cis4.( cis8) b4 a |
+  \slurDashed cis4.( cis8) b4 a |
   a2 gis4( fis) | \break
   
   \slurSolid
-  gis( a) \slurDotted b( cis) |
+  gis( a) \slurDashed b( cis) |
   gis2( fis4.) e8 |
   e2. b'4\rest |
   e2 d4 cis |
-  \slurDotted d2( cis) |
+  \slurDashed d2( cis) |
   b4 cis a b |
   \slurSolid \partial 4*3 gis4.( fis8) e4 | \break
   
@@ -89,14 +89,14 @@ altoMusic = \relative c' {
   e2 e4 e |
   e2 e |
   e4 e e fis |
-  \slurDotted e4.( e8) e4 cis |
-  \slurSolid cis( dis) \slurDotted e( dis) |
+  \slurDashed e4.( e8) e4 cis |
+  \slurSolid cis( dis) \slurDashed e( dis) |
   
-  \slurSolid e( dis8[) cis] \slurDotted b4( e) |
+  \slurSolid e( dis8[) cis] \slurDashed b4( e) |
   e2( dis4.) e8 |
   e2. s4 |
   e2 fis8[ gis] a4 |
-  \slurSolid a( \slurDotted gis)( a2) |
+  \slurSolid a( \slurDashed gis)( a2) |
   e4 e fis fis |
   \slurSolid \partial 4*3 e2 e4 |
   
@@ -165,14 +165,14 @@ tenorMusic = \relative c' {
   cis2 cis4 cis |
   b2 b |
   a4 b a a |
-  \slurDotted a4.( a8) gis4 a |
+  \slurDashed a4.( a8) gis4 a |
   a2 b4( b) |
   
-  \slurSolid b( a) \slurDotted e'( cis) |
+  \slurSolid b( a) \slurDashed e'( cis) |
   b2( a4.) gis8 |
   gis2. d4\rest |
   cis'2 d4 e |
-  \slurDotted e2( e2) |
+  \slurDashed e2( e2) |
   e4 a, cis d |
   \slurSolid \partial 4*3 b4.( a8) gis4 |
   
@@ -196,10 +196,10 @@ bassMusic = \relative c' {
   a2 a4 a |
   gis2 gis |
   a4 gis a d, |
-  \slurDotted e4.( e8) e4 fis |
+  \slurDashed e4.( e8) e4 fis |
   fis2 e4( b) |
   
-  \slurSolid e( cis) \slurDotted gis( a) |
+  \slurSolid e( cis) \slurDashed gis( a) |
   b2( b4.) e8 |
   e2. s4 |
   cis'2 b4 a |

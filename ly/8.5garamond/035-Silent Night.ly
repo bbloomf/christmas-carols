@@ -60,7 +60,7 @@ sopMusic = \relative c' {
   
   g4 g8 bes8.[ a16] g8 |
   f8.\noBeam g16\noBeam f8 d4 bes'8\rest | \break
-  \slurDotted g4 g8\noBeam bes8.\noBeam( a16\noBeam) g8 |
+  \slurDashed g4 g8\noBeam bes8.\noBeam( a16\noBeam) g8 |
   f8.\noBeam( g16\noBeam) f8 d4 bes'8\rest |
   
   \slurSolid c4 c8\noBeam ees8.\noBeam c16\noBeam a8 | \break
@@ -80,7 +80,7 @@ altoMusic = \relative c' {
   
   ees4 ees8 g8.[ f16] ees8 |
   d8.\noBeam ees16\noBeam d8\noBeam bes4 s8 |
-  \slurDotted ees4 ees8\noBeam g8.\noBeam( f16\noBeam) ees8 |
+  \slurDashed ees4 ees8\noBeam g8.\noBeam( f16\noBeam) ees8 |
   d8.\noBeam( ees16\noBeam) d8 bes4 s8 |
   
   \slurSolid ees4 ees8 c8.\noBeam ees16\noBeam c8 |
@@ -142,7 +142,7 @@ tenorMusic = \relative c' {
   
   bes4 bes8 g8.[ a16] bes8 |
   bes8.\noBeam bes16\noBeam bes8 f4 s8 |
-  \slurDotted bes4 bes8 g8.\noBeam( a16\noBeam) bes8 |
+  \slurDashed bes4 bes8 g8.\noBeam( a16\noBeam) bes8 |
   bes8.\noBeam( bes16\noBeam) bes8 f4 s8 |
   
   a4 a8\noBeam a8.\noBeam a16\noBeam f8 |
@@ -162,7 +162,7 @@ bassMusic = \relative c {
   
   ees4 ees8 ees4 ees8 |
   bes8.\noBeam bes16\noBeam bes8\noBeam bes4 d8\rest |
-  \slurDotted ees4 ees8\noBeam ees8.\noBeam( ees16\noBeam) ees8 |
+  \slurDashed ees4 ees8\noBeam ees8.\noBeam( ees16\noBeam) ees8 |
   bes8.\noBeam( bes16\noBeam) bes8 bes4 d8\rest |
   
   f4 f8\noBeam f8.\noBeam f16\noBeam f8 |

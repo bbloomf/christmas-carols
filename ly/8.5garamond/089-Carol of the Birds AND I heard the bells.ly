@@ -59,7 +59,7 @@ global = {
 sopMusic = \relative c'' {
   \tempo \markup\italic"Not slow."
   g4 f8\noBeam g a4 a |
-  \slurDotted bes bes8\noBeam( bes) a2 |
+  \slurDashed bes bes8\noBeam( bes) a2 |
   
   g4 f8\noBeam g a4 g |
   f e d2 |
@@ -76,7 +76,7 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   d4 d8\noBeam d f4 f |
-  \slurDotted f f8\noBeam( f) f2 |
+  \slurDashed f f8\noBeam( f) f2 |
   
   d4 d8\noBeam d f4 d |
   d cis d2 |
@@ -129,12 +129,12 @@ altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
   bes4 a8\noBeam bes c4 c |
-  \slurDotted d d8\noBeam( d) c2 |
+  \slurDashed d d8\noBeam( d) c2 |
   
   bes4 bes8\noBeam bes c4 bes |
   a \slurSolid a8[ g] f2 |
   
-  \slurDotted bes4 a8\noBeam bes c4 c |
+  \slurDashed bes4 a8\noBeam bes c4 c |
   d d c2 |
   
   bes4 bes8\noBeam a bes4 ees |
@@ -146,7 +146,7 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c' {
   g4 d8\noBeam g f4 f |
-  \slurDotted bes bes8\noBeam( bes) f2 |
+  \slurDashed bes bes8\noBeam( bes) f2 |
   
   g4 bes8\noBeam g f4 g |
   a a, d2 |

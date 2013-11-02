@@ -53,7 +53,7 @@ global = {
 
 sopMusic = \relative c' {
   \tempo \markup\italic"Tranquillo" 8 = 90
-  \slurDotted 
+  \slurDashed 
   f8.[ g16] f8 d4. |
   f8. g16 f8 d4. |
   c'8.[ b16] c8 a4. | \break
@@ -74,7 +74,7 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  \slurDotted 
+  \slurDashed 
   d8.[ ees16] d8 bes4. |
   d8. ees16 d8 bes4. |
   ees8.[ d16] ees8 c4. |
@@ -145,7 +145,7 @@ altoWordsIV = \lyricmode {
 }
 
 tenorMusic = \relative c' {
-  \slurDotted 
+  \slurDashed 
   bes4 bes8 f4. |
   bes8. bes16 bes8 f4. |
   a4 a8 f4. |
@@ -166,7 +166,7 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  \slurDotted 
+  \slurDashed 
   bes4 bes8 bes4. |
   bes8. bes16 bes8 bes4. |
   f'4 f8 f4. |

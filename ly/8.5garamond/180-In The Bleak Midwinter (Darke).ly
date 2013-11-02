@@ -60,7 +60,7 @@ sopMusic = \relative c'' {
   r1 |
   r2 r4. \parenthesize b8 |
   b4.^\mp a8 d4 b |
-  \slurDotted
+  \slurDashed
   g4.( g8) fis2 |
   e4. fis8 g4 e |
   d2.( d4) |
@@ -72,7 +72,7 @@ sopMusic = \relative c'' {
   b4.^\markup{\dynamic"p"\italic" a tempo"} a8 d4 g, |
   << f2 { s4. \parenthesize e8}>> e2 |
   
-  \slurDotted g2(^\> c4)\! e,4 |
+  \slurDashed g2(^\> c4)\! e,4 |
   d2.( d4) |
   g4.^\< a8 b4 g |
   g\!( a) b( c) |

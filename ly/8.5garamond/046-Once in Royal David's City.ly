@@ -69,9 +69,9 @@ sopMusic = \relative c' {
   g2 \bar""\break e'4 e |
   
   d4. g,8 c4 c |
-  \slurDotted b4( b) e e |
+  \slurDashed b4( b) e e |
   \slurSolid d4. b8 b[ a] g[ fis] |
-  \partial 2 \slurDotted g4( g) \bar "|."
+  \partial 2 \slurDashed g4( g) \bar "|."
 }
 sopWords = \lyricmode {
   
@@ -90,7 +90,7 @@ altoMusic = \relative c' {
   d2 g4 g |
   
   g8[ fis g] g g4 fis |
-  \slurDotted g4( g) e8[ fis] g[ a] |
+  \slurDashed g4( g) e8[ fis] g[ a] |
   d,[ fis g] d e4 d |
   d( d) \bar "|."
 }
@@ -167,7 +167,7 @@ tenorMusic = \relative c' {
   b2 c4 c |
   
   b8[ c d] b a4 d |
-  \slurDotted d4( d) c c |
+  \slurDashed d4( d) c c |
   c8[ a b] d d[ c] b[ a] |
   b4( b) \bar "|."
 }
@@ -188,7 +188,7 @@ bassMusic = \relative c {
   b2 c8[ d] e[ fis] |
   
   g[ a b] g d4 d |  
-  \slurDotted g4( g) c,8[ d] e[ fis] |
+  \slurDashed g4( g) c,8[ d] e[ fis] |
   g4. g8 c,4 d |
   g,( g) \bar "|."
 }

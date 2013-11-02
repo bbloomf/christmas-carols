@@ -51,7 +51,7 @@ global = {
 
 sopMusic = \relative c'' {
   \partial 4 a4 |
-  \slurDotted
+  \slurDashed
   a4.( bes8) c4 a |
   g4( g) f bes\rest |
   g4.( a8) g4 d |
@@ -78,7 +78,7 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   \partial 4 f4 |
-  \slurDotted f4.( f8) f4 c |
+  \slurDashed f4.( f8) f4 c |
   d4( d) d s |
   d4.( d8) d4 c |
   bes2. c4 |
@@ -174,12 +174,12 @@ altoWordsV = \lyricmode {
 
 tenorMusic = \relative c' {
   \partial 4 c4 |
-  \slurDotted c4.( c8) c4 f, |
+  \slurDashed c4.( c8) c4 f, |
   a( a) a s |
   g4.( d8) d4 f |
   \slurSolid f2( e4) f |
   
-  \slurDotted f4.( c'8) c4 f, |
+  \slurDashed f4.( c'8) c4 f, |
   a4.( a8) a4 a |
   d( d) bes4. a8 |
   a2. a4 |
@@ -200,12 +200,12 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c {
   \partial 4 f4 |
-  \slurDotted f4.( g8) a4 f |
+  \slurDashed f4.( g8) a4 f |
   d( d) d d\rest |
   bes4.( c8) bes4 a |
   \slurSolid g2( c4) f |
   
-  \slurDotted f4.( g8) a4 f |
+  \slurDashed f4.( g8) a4 f |
   d4.( d8) d4 d |
   bes( bes) c4. f8 |
   f2. f4 |
