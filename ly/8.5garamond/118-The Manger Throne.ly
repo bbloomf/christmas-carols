@@ -51,21 +51,22 @@ global = {
 }
 
 sopMusic = \relative c'' {
-  \slurDotted 
+  \slurDotted
+  \tieDotted
   \partial 4 d4 |
-  a b a fis8( fis) |
-  e4( e8) fis8 d4 e |
-  fis b8( b) a( a) d4 | \break
+  a b a fis8~ fis |
+  e4~ e8 fis8 d4 e |
+  fis b8~ b a~ a d4 | \break
   
   cis2. a4 |
   d4 cis8 b a g fis[ e] |
-  fis4 gis8( gis) a4 b8( b) | \break
-  cis4. d8 e( e) a,4 |
+  fis4 gis8~ gis a4 b8~ b | \break
+  cis4. d8 e~ e a,4 |
   
-  b4( b8) cis8 a4 a |
+  b4~ b8 cis8 a4 a |
   b fis a a8 a | \break
-  b4 fis a a8( a) |
-  b8( b) d8( d) e4. fis8 |
+  b4 fis a a8~ a |
+  b8~ b d8~ d e4. fis8 |
   \partial 2. d2. \bar "||" \pageBreak
   
   d8 a b4 a8 a fis4 |
@@ -74,13 +75,13 @@ sopMusic = \relative c'' {
   cis2. a4 |
   
   d8( d) cis[ b] a( g) fis( e) |
-  fis8( fis) gis4 a b8( b) | \break
-  cis4. d8 e8( e) a,8( a) |
-  b4. cis8 a4 a |
+  fis8~ fis gis4 a b8~ b | \break
+  cis4. d8 e8~ e a,8~ a |
+  b4.*2/3 \teeny cis8~ \normalsize cis8 a4 a |
   
-  b4 fis8( fis) a4. a8 | \break
-  b4 fis a a8( a) |
-  b( b) d8( d) e( e) fis4 |
+  b4 fis8~ fis a4. a8 | \break
+  b4 fis a a8~ a |
+  b~ b d8~ d e~ e fis4 |
   \partial 2. d2. \bar "|."
 }
 sopWords = \lyricmode {
@@ -88,21 +89,22 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  \slurDotted 
+  \slurDotted
+  \tieDotted
   fis4 |
-  d d d d8( d) |
-  d4( d8) d8 d4 a |
-  d d8( e) fis( fis) g4 |
+  d d d d8~ d |
+  d4~ d8 d8 d4 a |
+  d d8( e) fis~ fis g4 |
   
   a2. a4 |
   d cis8 b a g fis[ e] |
-  d[ cis] b8( b) cis4 e8( e) |
-  e4 fis e8( e) cis4 |
+  d[ cis] b8~ b cis4 e8~ e |
+  e4 fis e8~ e cis4 |
   
-  d4( d8) d8 cis4 cis |
+  d4~ d8 d8 cis4 cis |
   d d e d8 d |
-  d4 d e d8( d) |
-  d8( d) g8( g) g4. g8 |
+  d4 d e d8~ d |
+  d8~ d g8~ g g4. g8
   fis2. |
   
   fis8 d d4 d8 d d4 |
@@ -110,14 +112,14 @@ altoMusic = \relative c' {
   d d8 e fis fis g4 |
   a2. a4 |
   
-  d8( d) cis[ b] a( g) fis( e) |
-  d( cis) b4 cis e8( e) |
-  e4 fis e8( e) cis8( cis) |
-  d4. d8 cis4 cis |
+  d8~ d cis[ b] a( g) fis( e) |
+  d( cis) b4 cis e8~ e |
+  e4 fis e8~ e cis8~ cis |
+  d4.*2/3 \teeny d8~ \normalsize d8 cis4 cis |
   
-  d4 d8( d) e4 d8( d) |
-  d4 d e d8( d) |
-  d( d) g8( g) g( g) g4 |
+  d4 d8~ d e4 d8~ d |
+  d4 d e d8~ d |
+  d~ d g8~ g g~ g g4
   fis2. \bar "|."
 }
 altoWords = \lyricmode {
@@ -145,7 +147,7 @@ altoWords = \lyricmode {
   \unset associatedVoice
   \set ignoreMelismata = ##t
   And nev -- er a __ _ pa -- lace shone __ _ half __ _ so fair
-  As the man -- ger bed __ _ where our Sav -- ior lies;
+  As the man -- ger bed __ _ where our Sav -- _ ior lies;
   No night in the year is __ _ half so dear
   As __ _ this __ _ which has end -- ed our sighs.
 }
@@ -175,7 +177,7 @@ altoWordsII = \lyricmode {
   A child is __ born
   \set ignoreMelismata = ##t
   who shall con -- quer the foe,
-  And __ _ all the spi -- rits of __ _ wicked -- ness quell:
+  And __ _ all the spi -- rits of __ _ wicked -- ness _ quell:
   For Ma -- ry’s __ _ Son is the Might -- y One
   Whom the pro -- phets of __ _ God __ _ fore -- tell.
 }
@@ -204,21 +206,22 @@ altoWordsV = \lyricmode {
 altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
-  \slurDotted 
+  \slurDotted
+  \tieDotted
   a4 |
-  fis g fis a8( a) |
-  g4( g8) a8 fis4 a |
-  a b8( cis) d( d) d4 |
+  fis g fis a8~ a |
+  g4~ g8 a8 fis4 a |
+  a b8( cis) d~ d d4 |
   
   e2. a,4 |
   d cis8 b a g fis[ e] |
-  fis'4 e8( e) e4 b8( b) |
-  a4 a a8( a) a4 |
+  fis'4 e8~ e e4 b8~ b |
+  a4 a a8~ a a4 |
   
-  gis4( gis8) gis8 a4 cis |
+  gis4~ gis8 gis8 a4 cis |
   b d cis d8 d |
-  b4 d cis d8( d) |
-  d8( d) d8( d) cis4. cis8 |
+  b4 d cis d8~ d |
+  d8~ d d8~ d cis4. cis8
   d2. |
   
   a8 fis g4 fis8 fis a4 |
@@ -226,14 +229,14 @@ tenorMusic = \relative c' {
   a b8 cis d d d4 |
   e2. a,4 |
   
-  d8( d) cis[ b] a( g) fis( e) |
-  fis'8( fis) e4 e b8( b) |
-  a4 a a8( a) a8( a) |
-  gis4. gis8 a4 cis |
+  d8~ d cis[ b] a( g) fis( e) |
+  fis'8~ fis e4 e b8~ b |
+  a4 a a8~ a a8~ a |
+  gis4.*2/3 \teeny gis8~ \normalsize gis8 a4 cis |
   
-  b d8( d) cis4 d8( d) |
-  b4 d cis d8( d) |
-  d( d) d8( d) cis( cis) cis4 |
+  b d8~ d cis4 d8~ d |
+  b4 d cis d8~ d |
+  d~ d d8~ d cis~ cis cis4
   <d a>2. \bar "|."
 }
 tenorWords = \lyricmode {
@@ -241,21 +244,22 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  \slurDotted 
+  \slurDotted
+  \tieDotted
   d4 |
-  d d d d8( d) |
-  d4( d8) d8 d4 cis |
-  d g8( g) fis( fis) b4 |
+  d d d d8~ d |
+  d4~ d8 d8 d4 cis |
+  d g8~ g fis~ fis b4 |
   
   a2. a4 |
   d cis8 b a g fis[ e] |
-  d4 e8( e) a4 gis8( gis) |
-  a4 fis cis8( cis) fis4 |
+  d4 e8~ e a4 gis8~ gis |
+  a4 fis cis8~ cis fis4 |
   
-  e4( e8) e8 a,4 a' |
+  e4~ e8 e8 a,4 a' |
   g b a fis8 fis |
-  g4 b a fis8( fis) |
-  g8( g) b8( b) a4. a8 |
+  g4 b a fis8~ fis |
+  g8~ g b8~ b a4. a8
   d,2. |
   
   d8 d d4 d8 d d4 |
@@ -263,14 +267,14 @@ bassMusic = \relative c {
   d g8 g fis fis b4 |
   a2. a4 |
   
-  d8( d) cis[ b] a( g) fis( e) |
-  d8( d) e4 a gis8( gis) |
-  a4 fis cis8( cis) fis8( fis) |
-  e4. e8 a,4 a' |
+  d8~ d cis[ b] a( g) fis( e) |
+  d8~ d e4 a gis8~ gis |
+  a4 fis cis8~ cis fis8~ fis |
+  e4.*2/3 \teeny e8~ \normalsize e8 a,4 a' |
   
-  g b8( b) a4 fis8( fis) |
-  g4 b a fis8( fis) |
-  g8( g) b8( b) a( a) a4 |
+  g b8~ b a4 fis8~ fis |
+  g4 b a fis8~ fis |
+  g8~ g b8~ b a~ a a4
   d,2. \bar "|."
 }
 bassWords = \lyricmode {
