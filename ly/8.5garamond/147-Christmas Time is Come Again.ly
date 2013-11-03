@@ -54,12 +54,12 @@ global = {
 
 sopMusic = \relative c' {
   a'8. a16 a4. a8 |
-  a8. g16 << g2 {s4. \parenthesize d8 } >>
+  a8. g16 << g2 {s4. \teeny d8 \normalsize } >>
   c8 e g4. bes8 |
   bes a4. b4\rest |
   
   c,8 f a4. c8 |
-  c8. bes16 d,4 bes'8\rest \parenthesize d,8 |
+  c8. bes16 d,4 bes'4*1/2\rest \teeny d,8 \normalsize |
   c f a4. g8 |
   g f4. bes4\rest |
   e,8 f g4. a8 |
@@ -88,12 +88,12 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   f8. f16 f4. f8 |
-  f8. e16 << e2 {s4. \parenthesize d8} >> |
+  f8. e16 << e2 {s4. \teeny d8 \normalsize} >> |
   c8 c e4. g8 |
   g f4. s4 |
   
   c8 c f4. c8 |
-  d8. d16 bes4 s8 \parenthesize bes8 |
+  d8. d16 bes4 s8 \teeny bes8 \normalsize |
   a c f4. e8 |
   e c4. s4 |
   c8 d e4. f8 |
@@ -170,12 +170,12 @@ altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
   c8. c16 c4. c8 |
-  c8. c16 << c2 { s4. \parenthesize c8 } >> |
+  c8. c16 << c2 { s4. \teeny c8 \normalsize } >> |
   c g c4. c8 |
   c c4. s4 |
   
   a8 a c4. a8 |
-  bes8. bes16 f4 s8 \parenthesize f8 |
+  bes8. bes16 f4 s8 \teeny f8 \normalsize |
   f a c4. bes8 |
   bes a4. s4 |
   g8 g g4( c8) c |
@@ -204,12 +204,12 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c {
   f8. f16 f4. f8 |
-  c8. c16 << c2 {s4. \parenthesize c8} >>
+  c8. c16 << c2 {s4. \teeny c8 \normalsize} >>
   c c c4. c8 |
   f f4. d4\rest |
   
   f8 f f4. f8 |
-  bes,8. bes16 bes4 s8 \parenthesize bes8 |
+  bes,8. bes16 bes4 d4*1/2\rest \teeny bes8 \normalsize |
   c c c4. c8 |
   f f4. d4\rest |
   c8 c c4. c8 |
