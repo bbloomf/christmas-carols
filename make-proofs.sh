@@ -17,7 +17,7 @@ then
 
   pdftk A=\!odd.pdf B=\!even.pdf shuffle A B output \!ccc-playbook.pdf
 
-  if gswin64c -o gh-pages/pdf/ccc-playbook.pdf -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -c "[/CropBox [27 18 585 774] /PAGES pdfmark" -f \!ccc-playbook.pdf pdfmarks.txt
+  if gswin64c -o gh-pages/pdfs/ccc-playbook.pdf -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -c "[/CropBox [27 18 585 774] /PAGES pdfmark" -f \!ccc-playbook.pdf pdfmarks.txt
   then
     pushd gh-pages
     if git add pdfs/ccc-playbook.pdf pdfs/ccc.pdf
