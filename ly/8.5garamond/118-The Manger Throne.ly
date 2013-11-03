@@ -147,7 +147,7 @@ altoWords = \lyricmode {
   \unset associatedVoice
   \set ignoreMelismata = ##t
   And nev -- er a __ _ pa -- lace shone __ _ half __ _ so fair
-  As the man -- ger bed __ _ where our Sav -- _ ior lies;
+  As the man -- ger bed __ _ where our Sav -- \skip1 ior lies;
   No night in the year is __ _ half so dear
   As __ _ this __ _ which has end -- ed our sighs.
 }
