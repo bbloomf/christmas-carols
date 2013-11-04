@@ -1,6 +1,8 @@
 var child_process = require('child_process'),
     fs = require('fs');
 function processLy(lyFile,callback) {
+    var lyFileToProcess = lyFile;
+    var deleteFileAfterProcessed = false;
     var outputName = lyFile.match(/^(?:.*\/)?((\d+).*\.ly)$/);
     if(!outputName) {
         console.info('Skipping "' + lyFile + '" because it is not a .ly file.');
@@ -13,6 +15,15 @@ function processLy(lyFile,callback) {
     outputName = 'lytemp/'+outputName[2];
     var psName = outputName + '.ps',
         lyContent = fs.readFileSync(lyFile,'utf8');
+    if(lyContent.indexOf('%year%') >= 0) {
+      var date = new Date();
+      var months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+      lyContent = lyContent.replace('%date%',date.getDate());
+      lyContent = lyContent.replace('%month%',months[date.getMonth()]);
+      lyContent = lyContent.replace('%year%',date.getFullYear());
+      lyFileToProcess = lyName + '.pre';
+      deleteFileAfterProcessed = true;
+    }
     if(fs.existsSync(psName)) {
         //Check if the .ly file was the same.
         if(fs.existsSync(lyName)) {
@@ -30,7 +41,10 @@ function processLy(lyFile,callback) {
     if(fs.existsSync(lyName)) {
         fs.unlinkSync(lyName);
     }
-    var args = ['-dno-point-and-click','--ps','-o'+outputName,lyFile];
+    if(deleteFileAfterProcessed) {
+      fs.writeFileSync(lyFileToProcess,lyContent);
+    }
+    var args = ['-dno-point-and-click','--ps','-o'+outputName,lyFileToProcess];
     console.info('Processing ' + lyFile);
     child_process.execFile('lilypond',args,undefined,function(error,stdout,stderr){
         if(error) {
@@ -39,6 +53,9 @@ function processLy(lyFile,callback) {
             console.info(stdout);
         } else {
             fs.writeFile(lyName,lyContent);
+            if(deleteFileAfterProcessed) {
+              fs.unlink(lyFileToProcess);
+            }
         }
         
         if(typeof(callback)=='function'){
