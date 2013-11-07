@@ -264,7 +264,7 @@ global = {
 sopMusic = \relative c'' {
   \partial 4 g4 |
   \slurDashed c4( c) c4( c8) c8 |
-  b4 c g4 \teeny e8\noBeam \normalsize e |
+  b4 c g4.*2/3 \teeny e8\noBeam \normalsize e |
   
   f4 f a4. f8 |
   g4. g8 c4 \bar""\break g8\noBeam( g) |
@@ -288,7 +288,7 @@ sopWords = \lyricmode {
 altoMusic = \relative c' {
   e4 |
   \slurDashed e( e) e4( e8) e8 |
-  g4 g e4 \teeny e8\noBeam \normalsize e |
+  g4 g e4.*2/3 \teeny e8\noBeam \normalsize e |
   
   f4 f f4. c8 |
   \slurSolid f8[ e] d4 e \slurDashed e8\noBeam( e) |
@@ -355,7 +355,7 @@ altoWordsVI = \lyricmode {
 tenorMusic = \relative c' {
   c4 |
   \slurDashed g( g) g4( g8) g8 |
-  d'4 e c4 \teeny c8\noBeam \normalsize c |
+  d'4 e c4.*2/3 \teeny c8\noBeam \normalsize c |
   
   c4 c c4. a8 |
   c4 b c c8\noBeam( c) |
