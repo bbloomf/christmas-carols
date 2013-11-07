@@ -60,7 +60,7 @@ sopMusic = \relative c' {
   \slurSolid b4.( b4) \bar""
   b8 |
   cis4 cis8 b4 gis8 |
-  b4.( a4) gis8 |
+  b4. a4 gis8 |
   \slurDashed fis4( e8) fis4 gis8 |
   \partial 4. a4. \bar "||"
   
@@ -111,7 +111,7 @@ altoMusic = \relative c' {
   
   fis4.~ fis4 fis8 |
   a4 e8 e4 e8 |
-  \slurSolid fis4.( dis4) e8 |
+  \slurSolid fis4. dis4 e8 |
   \slurDashed cis4( e8) dis4 e8 |
   dis4. \bar "||"
   
@@ -218,7 +218,7 @@ altoWordsIII = \lyricmode {
 }
 altoWordsIV = \lyricmode {
   \dropLyricsIX
-  \repeat unfold 58\skip1
+  \repeat unfold 59\skip1
   \set stanza = #"7. "
   \set ignoreMelismata = ##t
   God bless the mas -- ter of this house, Like -- wise the mis -- tress too; __ _
@@ -239,7 +239,7 @@ tenorMusic = \relative c' {
   
   dis4.~ dis4 dis8 |
   e4 a,8 b4 b8 |
-  b4.~ b4 b8 |
+  b4. b4 b8 |
   cis4( b8) a4 gis8 |
   fis4. \bar "||" 
   
@@ -286,7 +286,7 @@ bassMusic = \relative c {
   
   b'4.~ b4 b8 |
   a4 a8 gis4 e8 |
-  \slurSolid dis4.( fis4) e8 |
+  \slurSolid dis4. fis4 e8 |
   \slurDashed a4( gis8) fis4 e8 |
   b4. \bar "||"
   
