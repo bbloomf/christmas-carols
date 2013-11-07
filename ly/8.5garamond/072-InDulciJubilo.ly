@@ -54,12 +54,12 @@ global = {
 sopMusic = \relative c' {
   \partial 4 f4 |
   f2 f4 a2 bes4 |
-  c2( d4 c2) c4 |
+  c2( d4 c2) \teeny c4 \normalsize |
   f,2 f4 a2 bes4 |
   c2( d4 c2.) | \break
 
   c2 d4 c2 bes4 |
-  a2. f2 f4 |
+  a2. f2 \teeny f4 \normalsize |
   g2 g4 a2 g4 |
   f2( g4 a2) a4 |
   c2 d4 c2 bes4 |
@@ -87,12 +87,12 @@ sopWords = \lyricmode {
 altoMusic = \relative c' {
   \partial 4 c4 |
   d2 c4 f4.( e8 d4) |
-  c2( f4 e2) f4 |
+  c2( f4 e2) \teeny f4 \normalsize |
   d2 c4 f4.( e8) d4 |
   c2( f4 e2.) |
 
   f2 f4 e2 g4 |
-  c,2. d2 f4 |
+  c,2. d2 \teeny f4 \normalsize |
   f2 f4 f2 e4 |
   f2( f4 f2) f4 |
   f2 f4 e2 g4 |
@@ -174,12 +174,12 @@ altoWordsIV = \lyricmode {
 tenorMusic = \relative c' {
   \partial 4 a4 |
   bes2 a4 c2 bes4 |
-  a2( bes4 g2) a4 |
+  a2( bes4 g2) \teeny a4 \normalsize |
   bes2 a4 c2 d4 |
   a2( bes4 g2.) |
 
   c2 bes4 g2 e4 |
-  f2. a2 a4 |
+  f2. a2 \teeny a4 \normalsize |
   d2 d4 c4.( d8) bes4 |
   a2( bes4 c2) d4 |
   c2 bes4 g2 e4 |
@@ -206,12 +206,12 @@ tenorWords = \lyricmode {
 bassMusic = \relative c {
   \partial 4 f4 |
   f2 f4 f2 f4 |
-  f2.( f2) f4 |
+  f2.( f2) \teeny f4 \normalsize |
   f2 f4 f2 f4 |
   f2.( c2.) |
 
   a2 bes4 c2 c4 |
-  f2. d2 d4 |
+  f2. d2 \teeny d4 \normalsize |
   bes2 bes4 c2 c4 |
   f2.( f2) d4 |
   a2 bes4 c2 c4 |

@@ -57,14 +57,14 @@ global = {
 sopMusic = \relative c' {
   \partial 4 f4 |
   f2 f4 a2 bes4 |
-  c2( d4 c2) c4 |
+  c2( d4 c2) \teeny c4 \normalsize |
   f,2 f4 a2 bes4 |
-  c2( d4 c2) c4 | \break
+  c2( d4 c2) \teeny c4 \normalsize | \break
 
   c2 d4 c2 bes4 |
-  a4.( bes8[ a g]) f2 f4 |
+  a4.( bes8[ a g]) f2 \teeny f4 \normalsize |
   g2 g4 a2 g4 |
-  f2( g4 a2) a4 |
+  f2( g4 a2) \teeny a4 \normalsize |
   c2 d4 c2 bes4 |
   a4.( bes8[ a g]) f2 f4 | \break
 
@@ -82,14 +82,14 @@ sopWords = \lyricmode {
 altoMusic = \relative c' {
   \partial 4 c4 |
   d2 d4 e2 e4 |
-  f2.~ f2 f4 |
+  f2.~ f2 \teeny f4 \normalsize |
   f( e) d4 c2 d4 |
-  c( e g e2) e4 |
+  c( e g e2) \teeny e4 \normalsize |
   
   f2 f4 e( f) g |
-  cis,( d e) f2 f4 |
+  cis,( d e) f2 \teeny f4 \normalsize |
   f4( e8[ d]) e4 f2 e4 |
-  f4.( g8[ f e] f2) f4 |
+  f4.( g8[ f e] f2) \teeny f4 \normalsize |
   
   f2 f4 g( f) g |
   g( f e) d2 f4~ |
@@ -175,14 +175,14 @@ altoWordsIV = \lyricmode {
 tenorMusic = \relative c' {
   \partial 4 a4 |
   a2 bes4 c2 bes4 |
-  a2( bes4 a2) a4 |
+  a2( bes4 a2) \teeny a4 \normalsize |
   a2 bes4 a( g) f |
-  g( c b g2) g4 |
+  g( c b g2) \teeny g4 \normalsize |
   
   a2 bes4 c( d) e |
-  a,( b cis) d2 c4 |
+  a,( b cis) d2 \teeny c4 \normalsize |
   d( bes) c c2 c4 |
-  c( a c c2) c4 |
+  c( a c c2) \teeny c4 \normalsize |
   
   a2 bes4 g2 e'4 |
   e( d cis) a2 c4 |
@@ -201,14 +201,14 @@ tenorWords = \lyricmode {
 bassMusic = \relative c {
   \partial 4 f4 |
   d( c) bes a( bes8[ a]) g[ a] |
-  f([ f' ees d c bes] f'2) f4 |
+  f([ f' ees d c bes] f'2) \teeny f4 \normalsize |
   d( c) bes f'( e) d |
-  e( c g c2) c4 |
+  e( c g c2) \teeny c4 \normalsize |
   
   f2 bes4~ bes a g~ |
-  g f( e) d2 a4 |
+  g f( e) d2 \teeny a4 \normalsize |
   bes( g) c f,8[ g a bes] c[ bes] |
-  a4( f c f2) f4 |
+  a4( f c f2) \teeny f4 \normalsize |
   
   f'4( e) d e( d) c |
   f8([ g] a4 a,) |
@@ -310,7 +310,7 @@ sopMusic = \relative c' {
   c4( d8 c4) b8\rest |
   c4 d8 c4 bes8 |
   
-  a4( g8) f4 f8 |
+  a4( g8) f4 \teeny f8 \normalsize |
   g4 g8 a4 g8 |
   f4( g8 a4) a8 |
   c4 d8 c4 bes8 |
@@ -335,7 +335,7 @@ altoMusic = \relative c' {
   c4( f8 e4) s8 |
   f4 f8 e4 g8 |
   
-  f4( e8) f4 f8 |
+  f4( e8) f4 \teeny f8 \normalsize |
   f4 f8 e4 e8 |
   f4.~ f4 f8 |
   f4 f8 e4 g8 |
@@ -403,7 +403,7 @@ tenorMusic = \relative c' {
   a4( bes8 g4) s8 |
   c4 bes8 g4 c8 |
   
-  c4. a4 a8 |
+  c4. a4 \teeny a8 \normalsize |
   d4 d8 c4 bes8 |
   a4( bes8 c4) c8 |
   c4 bes8 g4 c8 |
@@ -428,7 +428,7 @@ bassMusic = \relative c {
   f4.( c4) d8\rest |
   a4 bes8 c4 e8 |
   
-  f4( c8) d4 d8 |
+  f4( c8) d4 \teeny d8 \normalsize |
   bes4 bes8 c4 c8 |
   f4.~ f4 f8 |
   a,4 bes8 c4 e8 |
