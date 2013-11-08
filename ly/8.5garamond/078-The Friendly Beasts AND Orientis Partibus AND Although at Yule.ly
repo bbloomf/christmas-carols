@@ -478,7 +478,7 @@ tenorMusic = \relative c' {
   
   c4 c bes c |
   d d cis2 |
-  c4. d8 c4 a |
+  c?4. d8 c4 a |
   bes g a2
 }
 tenorWords = \lyricmode {
@@ -642,9 +642,9 @@ altoWordsIII = \lyricmode {
   No itch -- ing palms have we for alms,
   Con -- tent if Christ, the bur -- den
   Of these our lays, be -- stow His praise,
-  And one day be our guer -- don
+  And one day be our guer -- don.
   
-  \set stanza = #"3. "
+  \set stanza = #"6. "
   We think to spell, ‘Good news, No -- el,
   And eke a won -- der sto -- ry:
   The Vir -- gin mild hath borne the Child:
