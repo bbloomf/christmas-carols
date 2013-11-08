@@ -275,9 +275,9 @@ sopWords = \lyricmode {
 altoMusic = \relative c' {
   ees4 |
   ees4. ees8 ees4 des |
-  d4. cis8 d4 ees |
+  d?4. cis8 d4 ees |
   ees g g ees |
-  f4. f8 f4 |
+  f4. f8 f4
   
   ees4 |
   ees4. ees8 ees4 c |
@@ -323,7 +323,7 @@ tenorMusic = \relative c' {
   bes4. a8 bes4 bes |
   bes4. bes8 bes4 c |
   bes4 bes bes bes |
-  d4. d8 d4 |
+  d4. d8 d4
   
   ees4 |
   c4. c8 bes4 ees, |
@@ -340,7 +340,7 @@ bassMusic = \relative c {
   ees4. ees8 ees4 e |
   f4. e8 f4 fis |
   g ees ees g |
-  aes4. aes8 aes4 |
+  aes4. aes8 aes4
   
   g4 |
   aes4. aes8 ees4 ees |

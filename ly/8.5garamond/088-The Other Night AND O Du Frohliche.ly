@@ -134,7 +134,7 @@ tenorMusic = \relative c' {
   
   ees2 aes,4 bes2 c4 |
   c( d) c b2 c4 |
-  bes2 c4 c bes( aes) |
+  bes?2 c4 c bes( aes) |
   g2.~ g2 \bar"|."
 }
 tenorWords = \lyricmode {
@@ -307,7 +307,7 @@ altoMusic = \relative c' {
   f2 f |
   f2 f2 |
   f4 f fis g |
-  f2 e |
+  f?2 e |
   f2. s4 \bar "|."
 }
 altoWords = \lyricmode {
