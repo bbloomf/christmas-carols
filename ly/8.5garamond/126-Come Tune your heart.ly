@@ -109,8 +109,8 @@ altoMusic = \relative c' {
   ees d |
   ees f |
   f e |
-  f |
-  ees |
+  f
+  ees? |
   ees ees |
   
   ees ees |
