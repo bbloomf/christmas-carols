@@ -58,7 +58,7 @@ sopMusic = \relative c'' {
   \oneVoice
   \tempo \markup{\override #'(font-name . "Garamond Premier Pro") "Moderato e tranquillo"}
   r1 |
-  r2 r4. \parenthesize b8 |
+  r2 r4. \teeny b8 | \normalsize
   b4.^\mp a8 d4 b |
   \slurDashed
   g4.( g8) fis2 |
@@ -68,9 +68,9 @@ sopMusic = \relative c'' {
   g4.^\<( g8) b4 g |
   e'2^\mf d4( d) |
   b4 a^\markup\italic"poco rall." d4. g,8 |
-  << c1 { s2. s8 \parenthesize b8 }>>|
+  << c1 { s2. s8 \teeny b8 \normalsize }>>|
   b4.^\markup{\dynamic"p"\italic" a tempo"} a8 d4 g, |
-  << f2 { s4. \parenthesize e8}>> e2 |
+  << f2 { s4. \teeny e8 \normalsize}>> e2 |
   
   \slurDashed g2(^\> c4)\! e,4 |
   d2.( d4) |

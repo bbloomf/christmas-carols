@@ -65,21 +65,22 @@ sopMusic = \relative c' {
   \oneVoice
   s2*7 | \break
   
-  r4 r8 \parenthesize ees8 |
+  r4 r8 \teeny ees8 | \normalsize
   ees c' bes aes |
-  ees4 r8 ees16( ees16) |
+  \tieDashed ees4 r8 \teeny ees16~ ees16 | \normalsize
+  \tieSolid
   ees8 c' bes aes|
-  f4. f8 |
+  f4. \teeny f8 | \normalsize
   f des' c bes |
   
-  g4. g8 |
+  g4. \teeny g8 | \normalsize
   g f' ees des |
-  c4. \parenthesize ees,8 |
+  c4. \teeny ees,8 | \normalsize
   ees c' bes aes |
-  ees4. ees8 |
+  ees4. \teeny ees8 | \normalsize
   ees c' bes aes |
   
-  f4. f8 |
+  f4. \teeny f8 | \normalsize
   f des' c bes |
   g ees' d ees |
   f ees des bes |
