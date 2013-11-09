@@ -58,9 +58,9 @@ sopMusic = \relative c'' {
   d' b g a8[ b] |
   c4 b8[ a] b4 a8[ g] |
   fis[ e] <e' c>[ <d b>] <c a>[ <b g>] a[ g] |
-  \partial 4*3 g4. fis8 g4 | \break
+  g4. fis8 g4 \bar"||" \break
   
-  \mark \markup {\musicglyph #"scripts.segno"} \partial 4 g4_\f |
+  \mark \markup {\musicglyph #"scripts.segno"} \teeny g4_\f \normalsize |
   \slurDashed d'8\noBeam(d) \slurSolid b4 g a8[ b] |
   c4 b8[ a] b4 b |
   a4. a8 b4 d |
@@ -79,7 +79,7 @@ sopMusic = \relative c'' {
   d4. d8 g,8[ a] b[ c] |
   d4 c8[ b] a2 |
   b4. c8 d4 g, |
-  \partial 4*3 b a g4\fermata \bar "|."
+  b a g\fermata \bar "|."
   
 }
 sopWords = \lyricmode {
@@ -91,9 +91,9 @@ altoMusic = \relative c' {
   d fis e e |
   e <d fis> <d g> d |
   d8[ e] e4 e8[ d] c4 |
-  <b d> <a d> <b d> |
+  <b d> <a d> <b d>
   
-  d |
+  \teeny d \normalsize |
   \slurDashed d8\noBeam( d) \slurSolid fis4 g e |
   a fis g g |
   d4. d8 g4 fis |
@@ -172,7 +172,7 @@ tenorMusic = \relative c' {
   g a,8[ b] c[ d] e4 |
   d d, g \bar "||"
   
-  b'^\f |
+  \teeny b'^\f \normalsize |
   \slurDashed a8\noBeam( a) \slurSolid d4 b e |
   e d d d |
   d4. d8 d4 d |
@@ -204,7 +204,7 @@ bassMusic = \relative c' {
   c s4*3 |
   s4*3 \bar "||"
   
-  g'4 |
+  \teeny g'4 \normalsize |
   \slurDashed fis8\noBeam( fis) \slurSolid d4 e c |
   a d g g |
   fis4. fis8 g4 b |
