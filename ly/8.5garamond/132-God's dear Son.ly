@@ -55,11 +55,11 @@ global = {
 sopMusic = \relative c' {
   \repeat unfold 2 {
     \repeat volta 3 {
-      \partial 4 f4 |
+      \partial 4 \teeny f4 | \normalsize
       f des' c4. bes8 |
       aes4 f g e |
       f4. g8 aes4 aes |
-      bes bes c4. \bar""\break f,8 |
+      bes bes c4. \bar""\break \teeny f,8 | \normalsize
       
       f4 des' c4. bes8 |
       aes4 f g e |
@@ -85,11 +85,11 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   \repeat unfold 2{
-    f4 |
+    \teeny f4 | \normalsize
     f f e g |
     f f des c |
     c4. e8 f4 aes |
-    g8[ f] e[ f] g4. f8 |
+    g8[ f] e[ f] g4. \teeny f8 | \normalsize
     
     f4 f e4. g8 |
     f4 f des c |
@@ -215,11 +215,11 @@ altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
   \repeat unfold 2 {
-    aes4 |
+    \teeny aes4 | \normalsize
     aes bes g c |
     c c bes g |
     c4. bes8 aes4 c |
-    bes8[ aes] g[ f] e4. aes8 |
+    bes8[ aes] g[ f] e4. \teeny aes8 | \normalsize
     
     aes4 bes g c |
     c c bes g |
@@ -244,11 +244,11 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c {
   \repeat unfold 2 {
-    f4 |
+    \teeny f4 | \normalsize
     f bes, c e |
     f aes, bes c |
     aes'4. g8 f4 ees? |
-    des des c4. f8 |
+    des des c4. \teeny f8 | \normalsize
     
     f4 bes, c e |
     f aes, bes c |
