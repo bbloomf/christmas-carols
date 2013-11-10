@@ -654,7 +654,7 @@ altoMusic = \relative c' {
   g fis4 d |
   d2 e4 dis |
   e2 |
-  d4 b a a |
+  d?4 b a a |
   cis2 b \bar "|."
 }
 altoWords = \lyricmode {
