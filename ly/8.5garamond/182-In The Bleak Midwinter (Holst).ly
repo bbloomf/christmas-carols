@@ -50,22 +50,22 @@ global = {
 }
 
 sopMusic = \relative c'' {
-  \partial 4 a4 |
+  \partial 4 \teeny a4 | \normalsize
   \slurDashed
   a4.( bes8) c4 a |
   g4( g) f bes\rest |
   g4.( a8) g4 d |
-  g2. \bar""\break a4 |
+  g2. \bar""\break \teeny a4 | \normalsize
   
   a4.( bes8) c4 a |
-  g4.( g8) f4 f |
+  g4.( g8) f4 \teeny f | \normalsize
   g4( a) g4. f8 |
-  f2. \bar""\break f4 |
+  f2. \bar""\break \teeny f4 | \normalsize
   
   bes4. a8 bes4( c) |
-  d( d) a a |
+  d( d) a \teeny a | \normalsize
   c( a) g( f) |
-  e2. \bar""\break a4 |
+  e2. \bar""\break \teeny a4 | \normalsize
   
   a4.( bes8) c4 a |
   g2 f4 bes\rest |
@@ -77,21 +77,21 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  \partial 4 f4 |
+  \partial 4 \teeny f4 | \normalsize
   \slurDashed f4.( f8) f4 c |
   d4( d) d s |
   d4.( d8) d4 c |
-  bes2. c4 |
+  bes2. \teeny c4 | \normalsize
   
   c4.( f8) f4 c |
-  d4.( d8) d4 d |
+  d4.( d8) d4 \teeny d | \normalsize
   f4( f) e4. f8 |
-  f2. f4 |
+  f2. \teeny f4 | \normalsize
   
   f4. f8 f4( ees4) |
-  d( d) f f |
+  d( d) f \teeny f | \normalsize
   f( e) d( d) |
-  c2. c4 |
+  c2. \teeny c4 | \normalsize
   
   c4.( f8) f4 c |
   d2 d4 s |
@@ -173,21 +173,21 @@ altoWordsV = \lyricmode {
 }
 
 tenorMusic = \relative c' {
-  \partial 4 c4 |
+  \partial 4 \teeny c4 | \normalsize
   \slurDashed c4.( c8) c4 f, |
   a( a) a s |
   g4.( d8) d4 f |
-  \slurSolid f2( e4) f |
+  \slurSolid f2( e4) \teeny f | \normalsize
   
   \slurDashed f4.( c'8) c4 f, |
-  a4.( a8) a4 a |
+  a4.( a8) a4 \teeny a | \normalsize
   d( d) bes4. a8 |
-  a2. a4 |
+  a2. \teeny a4 | \normalsize
   
   bes4. c8 bes4( a) |
-  bes( bes) a a |
+  bes( bes) a \teeny a | \normalsize
   f( c') bes( a) |
-  g2. f4 |
+  g2. \teeny f4 | \normalsize
   
   f4.( c'8) c4 f, |
   a2 a4 s |
@@ -199,21 +199,21 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  \partial 4 f4 |
+  \partial 4 \teeny f4 | \normalsize
   \slurDashed f4.( g8) a4 f |
   d( d) d d\rest |
   bes4.( c8) bes4 a |
-  \slurSolid g2( c4) f |
+  \slurSolid g2( c4) \teeny f | \normalsize
   
   \slurDashed f4.( g8) a4 f |
-  d4.( d8) d4 d |
+  d4.( d8) d4 \teeny d | \normalsize
   bes( bes) c4. f8 |
-  f2. f4 |
+  f2. \teeny f4 | \normalsize
   
   d4. f8 d4( c) |
-  bes( bes) d d |
+  bes( bes) d \teeny d | \normalsize
   a( a) bes( bes) |
-  c2. f4 |
+  c2. \teeny f4 | \normalsize
   
   f4.( g8) a4 f |
   d2 d4 d\rest |

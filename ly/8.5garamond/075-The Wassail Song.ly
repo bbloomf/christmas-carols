@@ -52,13 +52,13 @@ global = {
 
 sopMusic = \relative c' {
   \time 6/8
-  \partial 8 e8 |
+  \partial 8 \teeny e8 | \normalsize
   e4 fis8 gis4 fis8 |
   \slurDashed e4( fis8) gis4 fis8 |
   e4 b'8 b4 b8 |
   
   \slurSolid b4.( b4) \bar""
-  b8 |
+  \teeny b8 | \normalsize
   cis4 cis8 b4 gis8 |
   b4. a4 gis8 |
   \slurDashed fis4( e8) fis4 gis8 |
@@ -86,15 +86,15 @@ sopMusic = \relative c' {
   \time 6/8 
   \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
   \mark "Additional Verses"
-  \partial 8 e8 |
+  \partial 8 \teeny e8 | \normalsize
   e4 fis8 gis4 fis8 |
   \slurDashed e4( fis8) gis4 fis8 |
   e4 b'8 b4 b8 |
   
-  \slurSolid b4.( \slurDashed b4) | \bar""
-  b8 |
+  \slurSolid b4.~ \slurDashed b4) | \bar""
+  \teeny b8 | \normalsize
   cis4 cis8 b4 gis8 |
-  b4( b8)( a4) gis8 |
+  \tieDashed b4~ b8( a4) gis8 |
   fis4 e8 fis4 gis8 |
   \partial 4. a4. \bar "||"
 }
@@ -104,12 +104,12 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   \time 6/8
-  e8 |
+  \teeny e8 | \normalsize
   e4 e8 dis4 dis8 |
   \slurDashed e4( e8) dis4 dis8 |
   e4 e8 a4 gis8 |
   
-  fis4.~ fis4 fis8 |
+  fis4.~ fis4 \teeny fis8 | \normalsize
   a4 e8 e4 e8 |
   \slurSolid fis4. dis4 e8 |
   \slurDashed cis4( e8) dis4 e8 |
@@ -134,14 +134,14 @@ altoMusic = \relative c' {
   
   
   \time 6/8 
-  e8 |
+  \teeny e8 | \normalsize
   e4 e8 dis4 dis8 |
   \slurDashed e4( e8) dis4 dis8 |
   e4 e8 a4 gis8 |
   
-  fis4.~ fis4 fis8 |
+  fis4.~ fis4 \teeny fis8 | \normalsize
   a4 e8 e4 e8 |
-  fis4( fis8)( dis4) e8 |
+  \tieDashed fis4~ fis8( dis4) e8 |
   cis4 e8 dis4 e8 |
   dis4. \bar "||"
 }
@@ -232,12 +232,12 @@ altoWordsVII = \lyricmode {
 }
 tenorMusic = \relative c' {
   \time 6/8
-  gis8 |
+  \teeny gis8 | \normalsize
   gis4 a8 b4 a8 |
   \slurDashed gis4( a8) b4 a8 |
   gis4 b8 dis4 e8 |
   
-  dis4.~ dis4 dis8 |
+  dis4.~ dis4 \teeny dis8 | \normalsize
   e4 a,8 b4 b8 |
   b4. b4 b8 |
   cis4( b8) a4 gis8 |
@@ -262,14 +262,14 @@ tenorMusic = \relative c' {
   
   
   \time 6/8 
-  gis8 |
+  \teeny gis8 | \normalsize
   gis4 a8 b4 a8 |
   \slurDashed gis4( a8) b4 a8 |
   gis4 b8 dis4 e8 |
   
-  dis4.~ dis4 dis8 |
+  dis4.~ dis4 \teeny dis8 | \normalsize
   e4 a,8 b4 b8 |
-  b4( b8)( b4) b8 |
+  \tieDashed b4~ b8~ b4 b8 |
   cis4 b8 a4 gis8 |
   fis4. \bar "||" 
 }
@@ -279,12 +279,12 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c {
   \time 6/8
-  e8 |
+  \teeny e8 | \normalsize
   e4 e8 b4 b8 |
   \slurDashed e4( e8) b4 b8 |
   e4 gis8 fis4 e8 |
   
-  b'4.~ b4 b8 |
+  b'4.~ b4 \teeny b8 | \normalsize
   a4 a8 gis4 e8 |
   \slurSolid dis4. fis4 e8 |
   \slurDashed a4( gis8) fis4 e8 |
@@ -309,14 +309,14 @@ bassMusic = \relative c {
   
   
   \time 6/8 
-  e8 |
+  \teeny e8 | \normalsize
   e4 e8 b4 b8 |
   \slurDashed e4( e8) b4 b8 |
   e4 gis8 fis4 e8 |
   
-  b'4.~ b4 b8 |
+  b'4.~ b4 \teeny b8 | \normalsize
   a4 a8 gis4 e8 |
-  dis4( dis8)( fis4) e8 |
+  \tieDashed dis4~ dis8( fis4) e8 |
   a4 gis8 fis4 e8 |
   b4. \bar "||"
 }

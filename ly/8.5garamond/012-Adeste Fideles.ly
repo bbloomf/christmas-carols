@@ -53,14 +53,14 @@ global = {
 
 sopMusic = \relative c'' {
   \tempo 4 = 100
-  \partial 4 a4 |
+  \partial 4 \teeny a4 | \normalsize
   a2 e4 a |
   b2 e, |
   cis'4 b cis d |
-  \slurDashed cis4.( cis8) b4 a |
+  \tieDashed\slurDashed cis4.~ cis8 b4 \teeny a | \normalsize
   a2 gis4( fis) | \break
   
-  \slurSolid
+  \tieSolid\slurSolid
   gis( a) \slurDashed b( cis) |
   gis2( fis4.) e8 |
   e2. b'4\rest |
@@ -85,14 +85,14 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  \partial 4 e4 |
+  \partial 4 \teeny e4 | \normalsize
   e2 e4 e |
   e2 e |
   e4 e e fis |
-  \slurDashed e4.( e8) e4 cis |
+  \tieDashed\slurDashed e4.~ e8 e4 \teeny cis | \normalsize
   \slurSolid cis( dis) \slurDashed e( dis) |
   
-  \slurSolid e( dis8[) cis] \slurDashed b4( e) |
+  \tieSolid\slurSolid e( dis8[) cis] \slurDashed b4( e) |
   e2( dis4.) e8 |
   e2. s4 |
   e2 fis8[ gis] a4 |
@@ -161,14 +161,14 @@ altoWordsIV = \lyricmode {
 }
 
 tenorMusic = \relative c' {
-  \partial 4 cis4 |
+  \partial 4 \teeny cis4 | \normalsize
   cis2 cis4 cis |
   b2 b |
   a4 b a a |
-  \slurDashed a4.( a8) gis4 a |
-  a2 b4( b) |
+  \tieDashed\slurDashed a4.~ a8 gis4 \teeny a | \normalsize
+  a2 b4~ b |
   
-  \slurSolid b( a) \slurDashed e'( cis) |
+  \tieSolid\slurSolid b( a) \slurDashed e'( cis) |
   b2( a4.) gis8 |
   gis2. d4\rest |
   cis'2 d4 e |
@@ -192,16 +192,16 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c' {
-  \partial 4 a4 |
+  \partial 4 \teeny a4 | \normalsize
   a2 a4 a |
   gis2 gis |
   a4 gis a d, |
-  \slurDashed e4.( e8) e4 fis |
+  \tieDashed\slurDashed e4.~ e8 e4 \teeny fis | \normalsize
   fis2 e4( b) |
   
-  \slurSolid e( cis) \slurDashed gis( a) |
-  b2( b4.) e8 |
-  e2. s4 |
+  \tieSolid\slurSolid e( cis) \slurDashed gis( a) |
+  \tieDashed b2~ b4. e8 |
+  \tieSolid e2. s4 |
   cis'2 b4 a |
   b2( a2) |
   gis4 a fis d |

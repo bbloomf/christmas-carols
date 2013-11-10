@@ -53,17 +53,18 @@ global = {
 
 sopMusic = \relative c'' {
   \tempo 4 = 100
-  \partial 4 a4 |
-  a2 e4 a |
-  b2 e, |
-  cis'4 b cis d |
-  \slurDashed cis2 b4 \bar"" a |
+  \partial 4 \teeny a4 | \normalsize
+  \slurDashed
+  a2 e4( a) |
+  b2( e,) |
+  cis'4( b) cis( d) |
+  cis2( b4) \bar"" \teeny a | \normalsize
   a2 gis4 fis |
   
   gis( a)( b) cis |
   \slurSolid gis2( fis4.) e8 |
   e2. b'4\rest |
-  e2 d4 cis |
+  \slurDashed e2 d4( cis) |
   \slurDashed d2( cis) |
   b4 cis a b |
   \slurSolid \partial 4*3 gis4.( fis8) e4 | \break
@@ -84,20 +85,21 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  \partial 4 e4 |
-  e2 e4 e |
-  e2 e |
-  e4 e e fis |
-  e2 e4 cis |
-  cis( dis) e dis |
+  \partial 4 \teeny e4 | \normalsize
+  \tieDashed\slurDashed
+  e2 e4~ e |
+  e2~ e |
+  e4~ e e( fis) |
+  e2~ e4 \teeny cis | \normalsize
+  \slurSolid cis( dis) e dis |
   
   \slurDashed e( dis8[) cis]( b4) e |
   \slurSolid e2( dis4.) e8 |
   e2. s4 |
-  e2 fis8[ gis] a4 |
+  \slurDashed e2 fis8[ gis]( a4) | \slurSolid
   a( \slurDashed gis)( a2) |
   e4 e fis fis |
-  \slurSolid \partial 4*3 e2 e4 |
+  \slurSolid\tieSolid \partial 4*3 e2 e4 |
   
   e4 |
   e1~ |
@@ -137,7 +139,7 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   \set ignoreMelismata = ##t
   _ God, of __ _ God, __ _
-  Light __ _ of __ _ Light, __ _ ""
+  Light __ _ of __ _ Light, _ ""
   Lo, He ab -- hors _ not the Vir -- _ gin’s womb;
   Ve -- ry __ _ God,
   Be -- got -- ten, not cre -- at -- _ ed:
@@ -160,18 +162,19 @@ altoWordsIV = \lyricmode {
 }
 
 tenorMusic = \relative c' {
-  \partial 4 cis4 |
-  cis2 cis4 cis |
-  b2 b |
-  a4 b a a |
-  \slurDashed a2 gis4 a |
+  \partial 4 \teeny cis4 | \normalsize
+  \slurDashed\tieDashed
+  cis2 cis4~ cis |
+  b2~ b |
+  a4( b) a~ a |
+  a2( gis4) \teeny a | \normalsize
   a2 b4 b |
   
   b( a)( e') cis |
   \slurSolid b2( a4.) gis8 |
   gis2. d4\rest |
-  cis'2 d4 e |
-  \slurDashed e2( e2) |
+  \slurDashed cis'2 d4( e) |
+  e2( e2) |
   e4 a, cis d |
   \slurSolid \partial 4*3 b4.( a8) gis4 |
   
@@ -191,17 +194,17 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c' {
-  \partial 4 a4 |
-  a2 a4 a |
-  gis2 gis |
-  a4 gis a d, |
-  \slurDashed e2 e4 fis |
+  \partial 4 \teeny a4 | \normalsize
+  \slurDashed\tieDashed a2 a4~ a |
+  gis2~ gis |
+  a4( gis) a( d,) |
+  e2~ e4 \teeny fis | \normalsize
   fis2 e4 b |
   
   e( cis)( gis) a |
-  b2~b4. e8 |
+  \tieSolid b2~b4. e8 |
   e2. s4 |
-  cis'2 b4 a |
+  cis'2 b4( a) |
   b2( a2) |
   gis4 a fis d |
   \partial 4*3 e2 e4 |
