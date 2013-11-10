@@ -190,10 +190,10 @@ altoWordsII = {
     \raiseLyrics
     you your was -- sail too,
     And God bless you, and send you a hap -- py new
+    \dropLyrics
     year,
     \unset associatedVoice
     And God
-    \dropLyrics
     send you a hap -- py new year.
     \dropLyricsIX
     
