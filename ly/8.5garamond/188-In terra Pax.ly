@@ -89,7 +89,7 @@ sopMusic = \relative c' {
   
   f2( g4 a2 bes4 |
   c2.~ c~ |
-  c~ c |
+  c)~ c( |
   a2) f4 a2 d4 |
   
   c2 bes4 a2 g4 |
@@ -97,7 +97,7 @@ sopMusic = \relative c' {
   f~ f~ |
   f~ f |
   bes1.\rest |
-  a2.~ a2.\fermata \bar "||" \break
+  a2.~ a2.\fermata \bar ":|" \break
   
   % verse 4
   c,4 f a c2 a4 |
@@ -211,7 +211,7 @@ altoMusic = \relative c' {
   c2.~ c2 c4 |
   
   d2. f~ |
-  f) c2.~ |
+  f c2.~ |
   c2 c4 c( d) e |
   f2.~ f |
   
@@ -220,7 +220,7 @@ altoMusic = \relative c' {
   d2) d4 d2 d4 |
   c2.~ c |
   s1. |
-  f2.~ f \bar "||"
+  f2.~ f \bar ":|"
   
   % verse 4
   c4 c f f2 f4 |
@@ -299,10 +299,11 @@ altoWords = {
   }
   \set stanza = \markup\dynamic"pp"
   \lyricmode{
-    \markup\italic Pax.” __
+    \markup\italic Pax.”
     
     \dropLyricsV
     \set associatedVoice = "sopranos"
+    \set stanza = #"4. "
     O hear Thy Church, with one __ ac -- cord,
     \set associatedVoice = "tenors"
     Her long -- lost Peace im -- plor -- ing:
@@ -420,7 +421,7 @@ tenorMusic = \relative c' {
   bes2) bes4 bes2 bes4 |
   a2.~ a |
   s1. |
-  <c a>2.~ q \bar "||"
+  <c \tweak #'font-size #-2 a>2.~ q \bar ":|"
   
   
   %verse 4
@@ -532,7 +533,7 @@ bassMusic = \relative c {
   bes,2.~ bes |
   f'~ f |
   d1.\rest |
-  <c f,>2.~ q\fermata \bar "||"
+  <\tweak #'font-size #-2 c f,>2.~ q\fermata \bar ":|"
   
   %verse 4
   a'4 a f c( f) a |
@@ -588,7 +589,7 @@ bassMusicII = \relative c {
   d( bes) |
   c~ c~ |
   c c |
-  <f f,>1. \bar "|."
+  <f \tweak #'font-size #-2 f,>1. \bar "|."
 }
 bassWords = \lyricmode {
   \repeat unfold 44 {\skip 1}
