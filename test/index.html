@@ -60,7 +60,7 @@ title: A Collection of Christmas Carols
 
 <ul>
 {% for song in site.data.songs %}
-<li><a href="../downloads/{{ song.url }}">(midi)</a> <a href="#" class="play" url="../downloads/{{ song.url }}">(play)</a> {{ song.title }}</li>
+<li><a href="../downloads/{{ song.url }}">(midi)</a> <a href="../downloads/{{ song.url }}" class="play">(play)</a> {{ song.title }}</li>
 {% endfor %}
 </ul>
       </section>

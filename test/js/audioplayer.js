@@ -8,9 +8,12 @@ $(function(){
     MIDI.loader = new widgets.Loader;
     MIDI.loadPlugin(function(){
       _playMIDI(url);
-      window.playMIDI = _playMIDI;
+      playMIDI = _playMIDI;
       MIDI.loader.stop();
     });
   };
-  window.playMIDI = playMIDI;
+  $('a.play').click(function(e){
+    playMIDI($(this).attr('href'));
+    e.preventDefault();
+  });
 });
