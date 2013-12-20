@@ -3,6 +3,7 @@ $(function(){
   var playUrl = null;
   var playTag = null;
   var _playMIDI = function(url) {
+    $('div.player').show(400);
     player = MIDI.Player;
     player.timeWarp = 1; // speed the song is played back
     player.loadFile(url, player.start);
@@ -50,7 +51,6 @@ $(function(){
     var $time2 = $("#time2");
     var $capsule = $("#capsule");
     var $timeCursor = $("#cursor");
-    $('div.player').show(400);
     //
     Event.add($capsule.get(0), "drag", function (event, self) {
       Event.cancel(event);
