@@ -81,8 +81,7 @@ $(function(){
       var now = data.now >> 0; // where we are now
       var end = data.end >> 0; // end of song
       if (now === end) { // go to next song
-        var id = ++ songid % song.length;
-        player.loadFile(song[id], player.start); // load MIDI
+        player.getNextSong(1);
       }
       // display the information to the user
       $timeCursor.width((percent * 100) + "%");
