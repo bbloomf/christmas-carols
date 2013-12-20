@@ -17,7 +17,7 @@ $(function(){
     MIDIPlayerPercentage(MIDI.Player);
   });
   var playMIDI = function(url) {
-    MIDI.loader = new widgets.Loader;
+    if(!MIDI.loader) MIDI.loader = new widgets.Loader;
     playUrl = url;
   };
   $('a.play').click(function(e){
