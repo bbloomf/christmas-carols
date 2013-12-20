@@ -10,6 +10,7 @@ $(function(){
     playMIDI = _playMIDI;
     midiLoaded = true;
     if(playUrlOnLoad) playMIDI(playUrlOnLoad);
+    if(MIDI.loader) MIDI.loader.stop();
   });
   var playMIDI = function(url) {
     MIDI.loader = new widgets.Loader;
