@@ -79,8 +79,8 @@ title: A Collection of Christmas Carols
       <div style="margin: 5px auto; width: 160px; float: right;">
         <input type="image" src="./images/pause.png" align="absmiddle" value="pause" onclick="pausePlayStop()" id="pausePlayStop">
         <input type="image" src="./images/stop.png" align="absmiddle" value="stop" onclick="pausePlayStop(true)">
-        <input type="image" src="./images/backward.png" align="absmiddle" value="stop" onclick="player.getNextSong(-1);">
-        <input type="image" src="./images/forward.png" align="absmiddle" value="stop" onclick="player.getNextSong(+1);">
+        <input type="image" src="./images/backward.png" align="absmiddle" value="stop" onclick="MIDI.Player.getNextSong(-1);">
+        <input type="image" src="./images/forward.png" align="absmiddle" value="stop" onclick="MIDI.Player.getNextSong(+1);">
       </div>
       <div class="time-controls" style="float: left; margin: 0; position: relative; top: 5px;">
         <span id="time1" class="time">0:00</span>

@@ -13,7 +13,7 @@ $(function(){
     midiLoaded = true;
     if(playUrl) playMIDI(playUrl);
     if(MIDI.loader) MIDI.loader.stop();
-    MIDIPlayerPercentage();
+    MIDIPlayerPercentage(MIDI.Player);
   });
   var playMIDI = function(url) {
     MIDI.loader = new widgets.Loader;
