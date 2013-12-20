@@ -46,7 +46,7 @@ $(function(){
     var $time2 = $("#time2");
     var $capsule = $("#capsule");
     var $timeCursor = $("#cursor");
-    $('div.player').display();
+    $('div.player').show();
     //
     Event.add($capsule.get(0), "drag", function (event, self) {
       Event.cancel(event);
