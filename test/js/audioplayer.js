@@ -20,7 +20,11 @@ $(function(){
     playUrl = url;
   };
   $('a.play').click(function(e){
-    playMIDI($(this).attr('href'));
+    var $this = $(this);
+    playMIDI($this.attr('href'));
+    $li = $this.parent();
+    $li.parents().children().css('background','');
+    $li.css('background','lightblue');
     e.preventDefault();
   });
 
@@ -70,7 +74,7 @@ $(function(){
       $current = $('a.play[href="'+playUrl+'"]').parent();
       $songs = $current.parent().children();
       var id = Math.abs(($songs.index($current) + n) % $songs.length);
-      playMIDI($($songs.get(id)).find('a.play').attr('href'));
+      $($songs.get(id)).find('a.play').click();
     };
     player.setAnimation(function(data, element) {
       var percent = data.now / data.end;
