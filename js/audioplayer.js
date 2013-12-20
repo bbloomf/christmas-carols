@@ -50,7 +50,7 @@ $(function(){
     var $time2 = $("#time2");
     var $capsule = $("#capsule");
     var $timeCursor = $("#cursor");
-    $('div.player').show(0.5);
+    $('div.player').show(400);
     //
     Event.add($capsule.get(0), "drag", function (event, self) {
       Event.cancel(event);
