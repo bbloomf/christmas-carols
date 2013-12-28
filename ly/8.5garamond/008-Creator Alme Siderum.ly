@@ -646,7 +646,7 @@ bassWords = \lyricmode {
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Conditor alme siderum"}}
-    poet = \markup\oldStyleNum"Vesper Hymn"
+    poet = \markup\oldStyleNum"Anonymous, 7th Century"
     composer = \markup\oldStyleNum"Arranged by Michael Praetorius (1571–1621)"
     
     tagline = \markup{from \italic"cpdl.org"}
