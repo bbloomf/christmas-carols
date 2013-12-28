@@ -2,7 +2,7 @@
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"God’s dear Son"}}
-  poet = \markup\oldStyleNum"Traditional"
+  poet = \markup\oldStyleNum"17th Century English"
   composer = \markup\oldStyleNum"Traditional"
   tagline = \markup { "from" \italic {Christmas Carols, New and Old}}
 }
