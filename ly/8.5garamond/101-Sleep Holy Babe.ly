@@ -76,7 +76,7 @@ sopMusic = \relative c' {
   d2^\pp |
   ees4( g) bes( c) bes2. d,4 |
   << { ees1( ees) }
-     { s1. <ees d g,>2_\markup\smallCapsOldStyle"Accomp." }
+     { s1. <ees des g,>2_\markup\smallCapsOldStyle"Accomp." }
   >> |
   <ees c aes>1 <ees ces aes> |
   <ees bes g>1 bes'1\rest \bar ":|"
@@ -96,7 +96,7 @@ altoMusic = \relative c' {
   bes1 c2. ees4 |
   ees1 g |
   aes2 aes g f |
-  f1. |
+  f1. 
   
   f2 f2. f4 f2 f |
   f2. f4 f2 f |
@@ -183,7 +183,7 @@ tenorMusic = \relative c' {
   g1_\pp aes2. c4 |
   bes1._\markup\italic"cresc." b2 |
   c2 d4( ees) ees2 d |
-  d1. |
+  d1. 
   
   d2_\mf |
   b2. b4 c2 d |
@@ -217,7 +217,7 @@ bassMusic = \relative c {
   ees1 ees2. ees4 |
   ees1 ees |
   aes,2 aes bes bes' |
-  b1. |
+  b1. 
   
   b!2 |
   g2. g4 g2 g, |

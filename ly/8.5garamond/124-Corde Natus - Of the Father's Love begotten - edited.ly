@@ -49,24 +49,24 @@
 #(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
 global = {
   \key f \major
-  \time 10/4
+  \time 12/4
   \autoBeamOff
   \override DynamicLineSpanner #'staff-padding = #0.0
   \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
+  \mergeDifferentlyDottedOn
 }
 
 sopMusic = \relative c' {
   \repeat volta 3 {
-    f4. g8 a4 bes a g a4.( g8) f2 |
-    a4 bes c d c( a2) bes4 c2 \bar "||"
+    f4. g8 a4 bes a g a4.( g8) f1 |
+    a4 bes c d c( a2) bes4 c1 \bar "||"
     
-    d4. e8 f4 c c bes a4.( g8) f2 |
-    d4. e8 f4 g f( d2) e4 f2 \bar "||"
+    d4. e8 f4 c c bes a4.( g8) f1 |
+    d4. e8 f4 g f( d2) e4 f1 \bar "||"
     
-    \partial 4*6 f4. g8 a4 bes a g |
-    \partial 4*8 c4( d) c4( a2 bes4 c2) |
-    \partial 4*8 f,4 e4 d4 e \bar"" f d c2 |
-    f4 g a c a f g2( f)
+    f4. g8 a4 bes a g c4( d) c1 |
+    \partial 4*2 a4 \partial 4*12 bes4 c( f,4) e4 d4 e f4.( d8 c1)
+    f4 g a c a f g2( f1)
   }
 }
 sopWords = \lyricmode {
@@ -74,16 +74,15 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  f4. f8 f4 f f f f2 f |
-  f4 f f f e( f2) f4 e2 \bar "||"
+  f4. f8 f4 f f f f2 f1 |
+  f4 f f f e( f2) f4 e1 \bar "||"
   
-  f4. g8 f4 f f f8[ g] f4( e) d2 |
-  bes4. c8 c4 d c2 bes a \bar "||"
+  f4. g8 f4 f f f8[ g] f4( e) d1 |
+  bes4. c8 c4 d c2 bes a1 \bar "||"
   
-  f'4. f8 f4 f f g |
-  f2 e4( f)~ f1 |
-  c4 c4 bes4 bes a bes a2 |
-  f'4 f f e e f e2( f)
+  f'4. f8 f4 f f g f2 e1 |
+  f4 f f( c) c4 bes4 bes a4.( bes8 a1) |
+  f'4 f f e e f e2( f1)
 }
 altoWords = \lyricmode {
   \dropLyricsIX
@@ -93,8 +92,8 @@ altoWords = \lyricmode {
       Ere the worlds be -- gan to be,
   He is Al -- pha and O -- me -- ga,
       He the source, the end -- ing He,
-  Of the things that are, that have been, __
-      And that fu -- ture years shall see,
+  Of the things that are, that have been,
+      And that fu -- ture years shall see, __
   Ev -- er -- more and ev -- er -- more!
   
   \set stanza = #"4."
@@ -102,8 +101,8 @@ altoWords = \lyricmode {
     When the Vir -- gin, full of grace,
 By the Ho -- ly Ghost con -- ceiv -- ing,
     Bare the Sav -- ior of our race;
-And the Babe, the world’s Re -- deem -- er, __
-    First re -- vealed His sa -- cred face,
+And the Babe, the world’s Re -- deem -- er,
+    First re -- vealed His sa -- cred face, __
         Ev -- er -- more and ev -- er -- more!
   
   
@@ -112,7 +111,7 @@ And the Babe, the world’s Re -- deem -- er, __
     Right -- eous King of them that live,
 On the Fa -- ther’s throne ex -- alt -- ed
     None in might with Thee may strive;
-Who at last in ven -- geance com -- ing __
+Who at last in ven -- geance com -- ing
     Sin -- ners from Thy face shalt drive,
         Ev -- er -- more and ev -- er -- more!
 }
@@ -125,8 +124,8 @@ altoWordsII = \lyricmode {
     He com -- mand -- ed; it __ was done:
 Heav’n and earth and depths of o -- cean
     In their three -- fold or -- der one;
-All that grows be -- neath the shin -- ing __
-    Of the moon and burn -- ing sun,
+All that grows be -- neath the shin -- ing
+    Of the moon and burn -- ing sun, __
         Ev -- er -- more and ev -- er -- more!
   
   \set stanza = #"5."
@@ -134,8 +133,8 @@ All that grows be -- neath the shin -- ing __
     Chant -- ed of with one ac -- cord;
 Whom the voi -- ces of the pro -- phets
     Prom -- ised in their faith -- ful word;
-Now He shines, the long ex -- pect -- ed, __
-    Let cre -- a -- tion praise its Lord,
+Now He shines, the long ex -- pect -- ed,
+    Let cre -- a -- tion praise its Lord, __
         Ev -- er -- more and ev -- er -- more!
   
   \set stanza = #" 8."
@@ -143,7 +142,7 @@ Now He shines, the long ex -- pect -- ed, __
     Thee let boys in cho -- rus sing;
 Ma -- trons, vir -- gins, lit -- tle maid -- ens,
     With glad voi -- ces an -- swer -- ing:
-Let their guile -- less songs re -- ech -- o, __
+Let their guile -- less songs re -- ech -- o,
     And the heart its mu -- sic bring,
         Ev -- er -- more and ev -- er -- more!
 }
@@ -155,8 +154,8 @@ altoWordsIII = \lyricmode {
     Death and sor -- row here to know,
 That the race of A -- dam’s chil -- dren
     Doomed by law to end -- less woe,
-May not hence -- forth die and per -- ish __
-    In the dread -- ful gulf be -- low,
+May not hence -- forth die and per -- ish
+    In the dread -- ful gulf be -- low, __
         Ev -- er -- more and ev -- er -- more!
   
   
@@ -165,8 +164,8 @@ May not hence -- forth die and per -- ish __
     An -- gel hosts, His prais -- es sing;
 Pow’rs, do -- min -- ions, bow be -- fore Him,
     And ex -- tol our God and King!
-Let no tongue on earth be si -- lent, __
-    Ev -- ’ry voice in con -- cert sing,
+Let no tongue on earth be si -- lent,
+    Ev -- ’ry voice in con -- cert sing, __
         Ev -- er -- more and ev -- er -- more!
   
   \set stanza = #" 9."
@@ -174,8 +173,8 @@ Let no tongue on earth be si -- lent, __
     And, O Ho -- ly Ghost, to Thee,
 Hymn and chant with high thanks -- giv -- ing,
     And un -- wear -- ied prais -- es be:
-Hon -- or, glo -- ry, and do -- min -- ion, __
-    And e -- ter -- nal vic -- to -- ry,
+Hon -- or, glo -- ry, and do -- min -- ion,
+    And e -- ter -- nal vic -- to -- ry, __
         Ev -- er -- more and ev -- er -- more!
 }
 altoWordsIV = \lyricmode {
@@ -197,32 +196,30 @@ altoWordsIX = \lyricmode {
   \set associatedVoice = "sopranos"
 }
 tenorMusic = \relative c' {
-  a4. bes8 c4 d c bes c4.( bes8) a2 |
-  c4 bes a bes g( f2) f4 g2 \bar "||"
+  a4. bes8 c4 d c bes c4.( bes8) a1 |
+  c4 bes a bes g( f2) f4 g1 \bar "||"
   
-  d'4. c8 c4 f8[ e] d4 d c4.( bes8) a2 |
-  bes4. g8 f4 f f2. c4 c2 \bar "||"
+  d'4. c8 c4 f8[ e] d4 d c4.( bes8) a1 |
+  bes4. g8 f4 f f2. c4 c1 \bar "||"
   
-  a'4. bes8 c4 d c4. bes8 |
-  bes8[( a] bes4) g4( f2~ f8[ g8] a2) |
-  f4 f4 f4 g f f f2 |
-  a4 bes c c c a bes2( a)
+  a'4. bes8 c4 d c4. bes8 bes8[( a] bes4) g1 |
+  f4. g8 a4( f) f4 f4 g f1. |
+  a4 bes c c c a bes2( a1)
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-  f4. f8 f4 f f f f2 f |
-  f4 e8[ d] c4 bes c( f2) d4 c2 \bar "||"
+  f4. f8 f4 f f f f2 f1 |
+  f4 e8[ d] c4 bes c( f2) d4 c1 \bar "||"
   
-  bes'4. bes8 a4 a bes g c,2 d |
-  bes4. bes8 a4 bes a( bes2) bes4 f2 \bar "||"
+  bes'4. bes8 a4 a bes g c,2 d1 |
+  bes4. bes8 a4 bes a( bes2) bes4 f1 \bar "||"
   
-  f'4. f8 f4 f f e |
-  f4( bes,) c4( f2 d4 f,2) |
-  a4 a4 bes4 bes f f f2 |
-  f'4 f f a,8[ bes] c4 d c2( f)
+  f'4. f8 f4 f f e f4( bes,) c1 |
+  f4 d4 f,4( a4) a4 bes4 bes f1. |
+  f'4 f f a,8[ bes] c4 d c2( f1)
 }
 bassWords = \lyricmode {
 
