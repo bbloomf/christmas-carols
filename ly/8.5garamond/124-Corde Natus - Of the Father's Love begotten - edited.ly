@@ -59,14 +59,14 @@ global = {
 sopMusic = \relative c' {
   \repeat volta 3 {
     f4. g8 a4 bes a g a4.( g8) f1 |
-    a4 bes c d c( a2) bes4 c1 \bar "||"
+    a4 bes c d \bar"" c( a2) bes4 c1 \bar "||"
     
-    d4. e8 f4 c c bes a4.( g8) f1 |
-    d4. e8 f4 g f( d2) e4 f1 \bar "||"
+    d4. e8 f4 c \bar"" c bes a4.( g8) f1 |
+    d4. e8 f4 g \bar"" f( d2) e4 f1 \bar "||"
     
-    f4. g8 a4 bes a g c4( d) c1 |
-    \partial 4*2 a4 \partial 4*12 bes4 c( f,4) e4 d4 e f4.( d8 c1)
-    f4 g a c a f g2( f1)
+    f4. g8 a4 bes a \bar"" g c4( d) c1 |
+    \partial 4*2 a4 \partial 4*12 bes4 c( f,4) e4 \bar"" d4 e f4.( d8 c1)
+    f4 g a c \bar"" a f g2( f1)
   }
 }
 sopWords = \lyricmode {
@@ -112,7 +112,7 @@ And the Babe, the world’s Re -- deem -- er,
 On the Fa -- ther’s throne ex -- alt -- ed
     None in might with Thee may strive;
 Who at last in ven -- geance com -- ing
-    Sin -- ners from Thy face shalt drive,
+    Sin -- ners from Thy face shalt drive, __
         Ev -- er -- more and ev -- er -- more!
 }
 altoWordsII = \lyricmode {
@@ -143,7 +143,7 @@ Now He shines, the long ex -- pect -- ed,
 Ma -- trons, vir -- gins, lit -- tle maid -- ens,
     With glad voi -- ces an -- swer -- ing:
 Let their guile -- less songs re -- ech -- o,
-    And the heart its mu -- sic bring,
+    And the heart its mu -- sic bring, __
         Ev -- er -- more and ev -- er -- more!
 }
 altoWordsIII = \lyricmode {

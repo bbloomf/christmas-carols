@@ -51,7 +51,7 @@
 %6x9 #(set-global-staff-size 14.5) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14.5 20))) }
 global = {
   \key f \major
-  \time 10/2
+  \time 12/2
   \autoBeamOff
   \override DynamicLineSpanner #'staff-padding = #0.0
   \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
@@ -59,17 +59,17 @@ global = {
 
 sopMusic = \relative c' {
   \repeat volta 3 {
-    f2. g4 a2 bes a g a2.( g4) f1 |
-    a2 bes c d c( a1) bes2 c1 \bar "||"
+    f2. g4 a2 bes a g a2.( g4) f\breve |
+    a2 bes c d c( a1) bes2 c\breve \bar "||"
     
-    d2. e4 f2 c c bes a2.( g4) f1 |
-    d2. e4 f2 g f( d1) e2 f1 \bar "||"
+    d2. e4 f2 c c bes a2.( g4) f\breve |
+    d2. e4 f2 g f( d1) e2 f\breve \bar "||"
     
-    f2. g4 a2 bes a g c1 d |
+    f2. g4 a2 bes a g c1 d\breve |
     \partial 2*6 c2( a) bes c( f,) e |
     
-    \partial 2*6 d2 e f2.( d4 c1) |
-    f2. g4 a2 c a f g1( f)
+    \partial 2*8 d2 e f2.( d4 c\breve) |
+    f2. g4 a2 c a f g1( f\breve)
   }
 }
 sopWords = \lyricmode {
@@ -77,17 +77,17 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  f2. f4 f2 f f f f1 f |
-  f2 f f f e( f1) f2 e1 \bar "||"
+  f2. f4 f2 f f f f1 f\breve |
+  f2 f f f e( f1) f2 e\breve \bar "||"
   
-  f2. g4 f2 f f f4( g) f2( e) d1 |
-  bes2. c4 c2 d c1 bes a \bar "||"
+  f2. g4 f2 f f f4( g) f2( e) d\breve |
+  bes2. c4 c2 d c1 bes a\breve \bar "||"
   
-  f'2. f4 f2 f f g f1 f |
+  f'2. f4 f2 f f g f1 f\breve |
   e2( f) f f( c) c |
   
-  bes2 bes a2.( bes4 a1) |
-  f'2. f4 f2 e e f e1( f)
+  bes2 bes a2.( bes4 a\breve) |
+  f'2. f4 f2 e e f e1( f\breve)
 }
 altoWords = \lyricmode {
   \dropLyricsIX
@@ -201,34 +201,34 @@ altoWordsIX = \lyricmode {
   \set associatedVoice = "sopranos"
 }
 tenorMusic = \relative c' {
-  a2. bes4 c2 d c bes c2.( bes4) a1 |
-  c2 bes a bes g( f1) f2 g1 \bar "||"
+  a2. bes4 c2 d c bes c2.( bes4) a\breve |
+  c2 bes a bes g( f1) f2 g\breve \bar "||"
   
-  d'2. c4 c2 f4( e) d2 d c2.( bes4) a1 |
-  bes2. g4 f2 f f1. c2 c1 \bar "||"
+  d'2. c4 c2 f4( e) d2 d c2.( bes4) a\breve |
+  bes2. g4 f2 f f1. c2 c\breve \bar "||"
   
-  a'2. bes4 c2 d c2. bes4 bes2( a) bes1 |
+  a'2. bes4 c2 d c2. bes4 bes2( a) bes\breve |
   g2( f2.) g4 a2( f) f |
   
-  f2 g f1~f |
-  a2. bes4 c2 c c a bes1( a)
+  f2 g f1~f\breve |
+  a2. bes4 c2 c c a bes1( a\breve)
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-  f2. f4 f2 f f f f1 f |
-  f2 e4( d) c2 bes c( f1) d2 c1 \bar "||"
+  f2. f4 f2 f f f f1 f\breve |
+  f2 e4( d) c2 bes c( f1) d2 c\breve \bar "||"
   
-  bes'2. bes4 a2 a bes g c,1 d |
-  bes2. bes4 a2 bes a( bes1) bes2 f1 \bar "||"
+  bes'2. bes4 a2 a bes g c,1 d\breve |
+  bes2. bes4 a2 bes a( bes1) bes2 f\breve \bar "||"
   
-  f'2. f4 f2 f f e f1 bes, |
+  f'2. f4 f2 f f e f1 bes,\breve |
   c2( f) d a( a) a |
   
-  bes2 bes f1~ f |
-  f'2. f4 f2 a,4( bes) c2 d c1( f)
+  bes2 bes f1~ f\breve |
+  f'2. f4 f2 a,4( bes) c2 d c1( f\breve)
 }
 bassWords = \lyricmode {
 
