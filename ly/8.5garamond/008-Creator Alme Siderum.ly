@@ -51,7 +51,7 @@
   }
 }
 global = {
-  \key ees \major
+  \key f \major
   \time 6/8
   \autoBeamOff
   \override DynamicLineSpanner #'staff-padding = #0.0
@@ -61,37 +61,45 @@ global = {
 
 sopMusic = \relative c'' {
   \repeat volta 2 {
-    g4 ees g
-    bes bes c aes
-    bes \bar "|"
-    bes c aes
-    bes aes g f
-    g\fermata \bar "|"
+    a4 f a
+    c c d bes
+    c \bar "|"
+    c d bes
+    c bes a g
+    a\fermata \bar "|"
     
-    bes aes f
-    g aes g f
-    ees \bar "|"
-    ees g aes
-    bes aes g f
-    g\fermata
+    c bes g
+    a bes a g
+    f \bar "|"
+    f a bes
+    c bes a g
+    a\fermata
   }
 }
 sopAmen = \relative c'' {
-  g4( aes g) f2( g) \bar "|."
+  a4( bes a) g2( a) \bar "|."
 }
 sopWords = \lyricmode {
   
 }
 
 altoMusic = \relative c' {
-  d4 c c d ees ees ees d
-  ees ees c d ees ees d ees \bar"|"
-
-  ees ees bes ees ees ees d c
-  ees d c bes ees ees d d
+  f4 f f
+  f f f d
+  f
+  a f d
+  e d f e
+  f \bar "|"
+  
+  a g e
+  f g f e
+  d
+  d f g
+  a g f e
+  f
 }
 altoAmen = \relative c' {
-  ees2. d2( ees)
+  f2. e2( f)
 }
 altoWords = \lyricmode {
   \dropLyricsIX
@@ -154,28 +162,44 @@ altoWordsVI = \lyricmode {
   \set ignoreMelismata = ##t
 }
 tenorMusic = \relative c' {
-  bes4 g ees f aes aes aes f
-  g g aes f c' bes bes bes \bar"|"
-
-  g aes bes bes c bes bes g
-  g g ees ees c' bes bes bes
+  c4 a c
+  a a bes g
+  a
+  c bes bes
+  c bes c c
+  c \bar "|"
+  
+  c c c
+  c d c bes
+  a
+  a c bes
+  a g a c
+  c
 }
 tenorAmen = \relative c' {
-  c2. bes1
+  c2. c1
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-  g4 c c bes aes aes c bes
-  ees c f bes, c ees bes ees\fermata \bar"|"
-
-  ees c d ees aes, ees' bes c
-  c bes aes g aes ees' bes g\fermata
+  f4 f f
+  f f bes, g'
+  f
+  f bes, bes
+  c bes c c
+  f\fermata \bar "|"
+  
+  f c c
+  f g c, c
+  d
+  d c bes
+  f g d' c
+  f\fermata
 }
 bassAmen = \relative c {
-  c4( aes c) bes2( ees)
+  f2. c2( f)
 }
 bassWords = \lyricmode {
 
@@ -238,7 +262,7 @@ pianoLH = \relative c' {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Creator alme siderum"}}
     %subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Vesper Hymn for Sundays in Advent)"}}
     %arranger = \markup\oldStyleNum"Edited by Benjamin Bloomfield (1984–)"
-    tagline = \markup \concat{ "from " \italic "The English Hymnal" \oldStyleNum", 1906"}
+    tagline = \markup { "from" \italic "Peters’ Sodality Hymn Book," 1914, via \italic "books.google.com"}
   }
 }
 \markup\vspace#0.5
@@ -260,7 +284,7 @@ pianoLH = \relative c' {
 
 
 global = {
-  \key ees \major
+  \key f \major
   \time 6/8
   \autoBeamOff
   \override DynamicLineSpanner #'staff-padding = #0.0
@@ -268,10 +292,48 @@ global = {
   \set Score.timing = ##f
 }
 
+sopMusic = \relative c'' {
+  \repeat volta 2 {
+    a4 f a
+    c c d bes
+    c \bar "|"
+    c d bes
+    c bes a g
+    a\fermata \bar "|"
+    
+    c bes g \bar""
+    a bes \bar"" a g
+    f \bar "|"
+    f a bes
+    c bes a g
+    a\fermata
+  }
+}
+sopAmen = \relative c'' {
+  a4( bes a) g2( a) \bar "|."
+}
 sopWords = \lyricmode {
   
 }
 
+altoMusic = \relative c' {
+  f4 f f
+  f f f d
+  f
+  a f d
+  e d f e
+  f \bar "|"
+  
+  a g e
+  f g f e
+  d
+  d f g
+  a g f e
+  f
+}
+altoAmen = \relative c' {
+  f2. e2( f)
+}
 altoWords = \lyricmode {
   \dropLyricsIX
   \set stanza = #"1."
@@ -329,10 +391,46 @@ altoWordsVI = \lyricmode {
   \set stanza = #"6. "
   \set ignoreMelismata = ##t
 }
+tenorMusic = \relative c' {
+  c4 a c
+  a a bes g
+  a
+  c bes bes
+  c bes c c
+  c \bar "|"
+  
+  c c c
+  c d c bes
+  a
+  a c bes
+  a g a c
+  c
+}
+tenorAmen = \relative c' {
+  c2. c1
+}
 tenorWords = \lyricmode {
 
 }
 
+bassMusic = \relative c {
+  f4 f f
+  f f bes, g'
+  f
+  f bes, bes
+  c bes c c
+  f\fermata \bar "|"
+  
+  f c c
+  f g c, c
+  d
+  d c bes
+  f g d' c
+  f\fermata
+}
+bassAmen = \relative c {
+  f2. c2( f)
+}
 bassWords = \lyricmode {
 
 }
@@ -393,10 +491,10 @@ pianoLH = \relative c' {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Creator of the Stars of Night"}}
     poet = \markup\oldStyleNum"Translated by John Mason Neale (1818–1866)"
     %arranger = \markup\oldStyleNum"Edited by Benjamin Bloomfield (1984–)"
-    tagline = \markup \concat{ "from " \italic "The English Hymnal" \oldStyleNum", 1906"}
+    tagline = \markup { "from" \italic "Peters’ Sodality Hymn Book," 1914, via \italic "books.google.com"}
   }
 }
-\markup \fill-line{\concat{ "from " \italic "The English Hymnal" \oldStyleNum", 1906"}}
+\markup \fill-line{\concat{ "from " \italic "Peters’ Sodality Hymn Book" \oldStyleNum", 1914, via " \italic "books.google.com"}}
 \markup\vspace#0
 
 
