@@ -270,7 +270,7 @@ tenorMusic = \relative c {
   \repeat unfold 7 {a4 a8 a g fis |}
   
   d'2 cis |
-  c1 |
+  c!1 |
   
   g4 g8 a b4 |
   g g c |
@@ -315,7 +315,7 @@ bassMusic = \relative c {
   \repeat unfold 7 {d4 fis8 fis e d |}
   
   b'2 ais |
-  a1 |
+  a!1 |
   
   g4 g8 g e4 |
   c c c |
