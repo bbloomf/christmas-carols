@@ -303,8 +303,11 @@ doHlig = ##t
         'text-font-defaults))
       )
     )
-    (cdr (ly:stencil-extent (ly:text-interface::interpret-markup layout
-      props (markup text-string)) X)
+    (if (eq? 0 (string-length text-string))
+        0
+        (cdr (ly:stencil-extent (ly:text-interface::interpret-markup layout
+          props (markup text-string)) X)
+        )
     )
   )
 )
@@ -319,7 +322,6 @@ doHlig = ##t
       (word (substring syllable word-position word-end ))
       (preword-width (if (string? text) (width grob preword) 0))
       (word-width (if (string? text) (width grob word) (width grob text)))
-      ; TODO: get the note width dynamically instead of hard coded
       (notehead (ly:grob-parent grob X))
       (refp (ly:grob-common-refpoint notehead grob X))
       (note-extent (ly:grob-extent notehead refp X))
