@@ -167,7 +167,7 @@
 {\page-link #93 {\fill-with-pattern #0.1 #CENTER . "I Heard the Bells on Christmas Day" \oldStyleNum"89"}}
 {\page-link #190 {\fill-with-pattern #0.1 #CENTER . \italic"I saw a fair Mayden syttin and sing" \oldStyleNum"186"}}
 {\page-link #69 {\fill-with-pattern #0.1 #CENTER . "I Saw Three Ships" \oldStyleNum"65"}}
-{\page-link #195 {\fill-with-pattern #0.1 #CENTER . \italic"If angels sung a Savior's birth" \oldStyleNum"191"}}
+{\page-link #195 {\fill-with-pattern #0.1 #CENTER . \italic"If angels sung a Savior’s birth" \oldStyleNum"191"}}
 {\page-link #178 {\fill-with-pattern #0.1 #CENTER . "Il est né le divin Enfant" \oldStyleNum"174"}}
 {\page-link #145 {\fill-with-pattern #0.1 #CENTER . "In Bethlehem, that noble place" \oldStyleNum"141"}}
 {\page-link #74 {\fill-with-pattern #0.1 #CENTER . "In Dulci Jubilo" \oldStyleNum"70, 71, 72"}}
@@ -180,10 +180,10 @@
 {\page-link #24 {\fill-with-pattern #0.1 #CENTER . "It Came Upon the Midnight Clear" \oldStyleNum"20"}}
 }}}
 \pageBreak
-\markup\vspace#0.475
+\markup\vspace#1.275
 \markup{{\override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \override #'(word-space . 0) \column{
 {\page-link #172 {\fill-with-pattern #0.1 #CENTER . \italic"It was the very noon of night" \oldStyleNum"168"}}
-{\page-link #171 {\fill-with-pattern #0.1 #CENTER . "Jacob's Ladder" \oldStyleNum"167"}}
+{\page-link #171 {\fill-with-pattern #0.1 #CENTER . "Jacob’s Ladder" \oldStyleNum"167"}}
 {\page-link #124 {\fill-with-pattern #0.1 #CENTER . "Jesu, hail! O God most holy" \oldStyleNum"120"}}
 {\page-link #140 {\fill-with-pattern #0.1 #CENTER . "Jesus in the Manger" \oldStyleNum"136"}}
 {\page-link #82 {\fill-with-pattern #0.1 #CENTER . \italic"Jesus our brother kind and good" \oldStyleNum"78"}}
@@ -193,12 +193,12 @@
 {\page-link #42 {\fill-with-pattern #0.1 #CENTER . "Joseph, O Dear Joseph Mine" \oldStyleNum"38"}}
 {\page-link #18 {\fill-with-pattern #0.1 #CENTER . "Joy to the World!" \oldStyleNum"14"}}
 {\page-link #176 {\fill-with-pattern #0.1 #CENTER . "Kling Glöckchen" \oldStyleNum"172"}}
+{\page-link #187 {\fill-with-pattern #0.1 #CENTER . "Lætentur Cœli" \oldStyleNum"183"}}
 {\page-link #122 {\fill-with-pattern #0.1 #CENTER . \italic"Like silver lamps in a distant shrine" \oldStyleNum"118"}}
 {\page-link #30 {\fill-with-pattern #0.1 #CENTER . \italic"Listen Lordings unto me" \oldStyleNum"26"}}
-{\page-link #97 {\fill-with-pattern #0.1 #CENTER . "Lo, How a Rose E'er Blooming" \oldStyleNum"93"}}
+{\page-link #97 {\fill-with-pattern #0.1 #CENTER . "Lo, How a Rose E’er Blooming" \oldStyleNum"93"}}
 {\page-link #62 {\fill-with-pattern #0.1 #CENTER . \italic"The Lord at first had Adam made" \oldStyleNum"58"}}
 {\page-link #66 {\fill-with-pattern #0.1 #CENTER . \italic"Lullay, Thou Little Tiny Child" \oldStyleNum"62"}}
-{\page-link #187 {\fill-with-pattern #0.1 #CENTER . "Lætentur Cœli" \oldStyleNum"183"}}
 {\page-link #157 {\fill-with-pattern #0.1 #CENTER . "Make we joy now in this fest" \oldStyleNum"153"}}
 {\page-link #122 {\fill-with-pattern #0.1 #CENTER . "The Manger Throne" \oldStyleNum"118"}}
 {\page-link #27 {\fill-with-pattern #0.1 #CENTER . "Masters in This Hall" \oldStyleNum"23"}}
@@ -207,8 +207,8 @@
 {\page-link #132 {\fill-with-pattern #0.1 #CENTER . \italic"The moon shines bright" \oldStyleNum"128"}}
 {\page-link #190 {\fill-with-pattern #0.1 #CENTER . "Myn Lyking" \oldStyleNum"186"}}
 {\page-link #166 {\fill-with-pattern #0.1 #CENTER . "New Prince, New Pompe" \oldStyleNum"162"}}
-{\page-link #147 {\fill-with-pattern #0.1 #CENTER . \italic"Now the Holly bears a berry" \oldStyleNum"143"}}
 {\page-link #179 {\fill-with-pattern #0.1 #CENTER . "Noël Nouvelet" \oldStyleNum"175"}}
+{\page-link #147 {\fill-with-pattern #0.1 #CENTER . \italic"Now the Holly bears a berry" \oldStyleNum"143"}}
 {\page-link #114 {\fill-with-pattern #0.1 #CENTER . "O Christmas Tree" \oldStyleNum"110"}}
 {\page-link #17 {\fill-with-pattern #0.1 #CENTER . "O Come, All Ye Faithful" \oldStyleNum"13"}}
 {\page-link #9 {\fill-with-pattern #0.1 #CENTER . "O Come, Divine Messiah" \oldStyleNum"5"}}
@@ -219,15 +219,15 @@
 {\page-link #43 {\fill-with-pattern #0.1 #CENTER . "O Little Town of Bethlehem" \oldStyleNum"39"}}
 {\page-link #202 {\fill-with-pattern #0.1 #CENTER . "O Magnum Mysterium" \oldStyleNum"198"}}
 {\page-link #115 {\fill-with-pattern #0.1 #CENTER . "O Tannenbaum" \oldStyleNum"111"}}
-{\page-link #128 {\fill-with-pattern #0.1 #CENTER . "Of the Father's Love Begotten" \oldStyleNum"124"}}
+{\page-link #128 {\fill-with-pattern #0.1 #CENTER . "Of the Father’s Love Begotten" \oldStyleNum"124"}}
 {\page-link #117 {\fill-with-pattern #0.1 #CENTER . \italic"Oh how lovely is the evening" \oldStyleNum"113"}}
 {\page-link #102 {\fill-with-pattern #0.1 #CENTER . \italic"On Christmas Night all Christians Sing" \oldStyleNum"98"}}
-{\page-link #10 {\fill-with-pattern #0.1 #CENTER . "On Jordan's Bank" \oldStyleNum"6"}}
+{\page-link #10 {\fill-with-pattern #0.1 #CENTER . "On Jordan’s Bank" \oldStyleNum"6"}}
 {\page-link #49 {\fill-with-pattern #0.1 #CENTER . "On the Birthday of the Lord" \oldStyleNum"45"}}
 {\page-link #28 {\fill-with-pattern #0.1 #CENTER . \italic"On the first day of Christmas" \oldStyleNum"24"}}
 {\page-link #90 {\fill-with-pattern #0.1 #CENTER . \italic"On yesternight I saw a sight" \oldStyleNum"86"}}
 {\page-link #168 {\fill-with-pattern #0.1 #CENTER . \italic"Once again O blessed time" \oldStyleNum"164"}}
-{\page-link #50 {\fill-with-pattern #0.1 #CENTER . "Once in Royal David's City" \oldStyleNum"46"}}
+{\page-link #50 {\fill-with-pattern #0.1 #CENTER . "Once in Royal David’s City" \oldStyleNum"46"}}
 {\page-link #83 {\fill-with-pattern #0.1 #CENTER . "Orientis Partibus" \oldStyleNum"79"}}
 {\page-link #51 {\fill-with-pattern #0.1 #CENTER . "Past Three a Clock" \oldStyleNum"47"}}
 {\page-link #72 {\fill-with-pattern #0.1 #CENTER . "Pat-a-Pan" \oldStyleNum"68"}}
@@ -242,7 +242,7 @@
 {\page-link #182 {\fill-with-pattern #0.1 #CENTER . "Riu Riu Chiu" \oldStyleNum"178"}}
 {\page-link #147 {\fill-with-pattern #0.1 #CENTER . "The Sans Day Carol" \oldStyleNum"143"}}
 {\page-link #111 {\fill-with-pattern #0.1 #CENTER . \italic"Saw ye never in the twilight" \oldStyleNum"107"}}
-{\page-link #44 {\fill-with-pattern #0.1 #CENTER . \italic"See Amid the Winter's Snow" \oldStyleNum"40"}}
+{\page-link #44 {\fill-with-pattern #0.1 #CENTER . \italic"See Amid the Winter’s Snow" \oldStyleNum"40"}}
 {\page-link #70 {\fill-with-pattern #0.1 #CENTER . "The Seven Joys of Mary" \oldStyleNum"66"}}
 {\page-link #25 {\fill-with-pattern #0.1 #CENTER . "Shepherds! Shake Off Your Drowsy Sleep" \oldStyleNum"21"}}
 {\page-link #188 {\fill-with-pattern #0.1 #CENTER . "Shiloh" \oldStyleNum"184"}}
@@ -272,8 +272,8 @@
 {\page-link #90 {\fill-with-pattern #0.1 #CENTER . "The Virgin and Child" \oldStyleNum"86"}}
 {\page-link #170 {\fill-with-pattern #0.1 #CENTER . \italic"The virgin stills the crying" \oldStyleNum"166"}}
 {\page-link #34 {\fill-with-pattern #0.1 #CENTER . "A Virgin Unspotted" \oldStyleNum"30"}}
-{\page-link #132 {\fill-with-pattern #0.1 #CENTER . "The Waits' Song" \oldStyleNum"128"}}
-{\page-link #88 {\fill-with-pattern #0.1 #CENTER . \italic"Wake all music's magic powers" \oldStyleNum"84"}}
+{\page-link #132 {\fill-with-pattern #0.1 #CENTER . "The Waits’ Song" \oldStyleNum"128"}}
+{\page-link #88 {\fill-with-pattern #0.1 #CENTER . \italic"Wake all music’s magic powers" \oldStyleNum"84"}}
 {\page-link #11 {\fill-with-pattern #0.1 #CENTER . "Wake, O Wake! with Tidings Thrilling" \oldStyleNum"7"}}
 {\page-link #79 {\fill-with-pattern #0.1 #CENTER . "The Wassail Song" \oldStyleNum"75"}}
 {\page-link #78 {\fill-with-pattern #0.1 #CENTER . \italic"Wassail, Wassail" \oldStyleNum"74"}}
