@@ -255,7 +255,7 @@ var stopAudio = function () {
 		} else { // webaudio
 			var source = o.source;
 			source.disconnect(0);
-			source.noteOff(0);
+			try { source.noteOff(0); } catch(ex) { }
 		}
 	}
 	// run callback to cancel any notes still playing
