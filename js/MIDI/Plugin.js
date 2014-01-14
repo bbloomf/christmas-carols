@@ -203,7 +203,7 @@ if (window.AudioContext || window.webkitAudioContext) (function () {
 		// add { "metadata": { release: 0.3 } } to soundfont files
 		source.gain.linearRampToValueAtTime(1, delay);
 		source.gain.linearRampToValueAtTime(0, delay + 0.2);
-		source.noteOff(delay + 0.3);
+		try{source.noteOff(delay + 0.3);} catch(ex){}
 		return source;
 	};
 
