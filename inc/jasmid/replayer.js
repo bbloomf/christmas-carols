@@ -1,8 +1,15 @@
-function Replayer(midiFile, synth) {
+var clone = function (o) {
+	if (typeof o != 'object') return (o);
+	if (o == null) return (o);
+	var ret = (typeof o.length == 'number') ? [] : {};
+	for (var key in o) ret[key] = clone(o[key]);
+	return ret;
+};
+
+function Replayer(midiFile, timeWarp, eventProcessor) {
 	var trackStates = [];
 	var beatsPerMinute = 120;
 	var ticksPerBeat = midiFile.header.ticksPerBeat;
-	var channelCount = 16;
 	
 	for (var i = 0; i < midiFile.tracks.length; i++) {
 		trackStates[i] = {

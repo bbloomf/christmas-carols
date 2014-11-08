@@ -184,12 +184,13 @@ if (window.AudioContext || window.webkitAudioContext) (function () {
 		source.buffer = audioBuffers[instrument + "" + note];
 		source.connect(ctx.destination);
 		///
-		var gainNode = ctx.createGainNode();
+		var gainNode = ctx.createGain();
 		var value = (velocity / 127) * (masterVolume / 127) * 2 - 1;
 		gainNode.connect(ctx.destination);
 		gainNode.gain.value = Math.max(-1, value);
 		source.connect(gainNode);
-		source.noteOn(delay || 0);
+		source.gain = gainNode.gain;
+		source.start(delay || 0);
 		return source;
 	};
 
@@ -203,7 +204,7 @@ if (window.AudioContext || window.webkitAudioContext) (function () {
 		// add { "metadata": { release: 0.3 } } to soundfont files
 		source.gain.linearRampToValueAtTime(1, delay);
 		source.gain.linearRampToValueAtTime(0, delay + 0.2);
-		try{source.noteOff(delay + 0.3);} catch(ex){}
+		try{source.stop(delay + 0.3);} catch(ex){}
 		return source;
 	};
 
