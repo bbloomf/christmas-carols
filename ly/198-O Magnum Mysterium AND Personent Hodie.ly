@@ -671,7 +671,7 @@ altoWordsII = \lyricmode {
 %\markup\italic
   \set stanza = #"2. "
   In mun -- do na -- sci -- tur,
-  pa -- nis in -- vol -- vi -- tur,
+  pan -- nis in -- vol -- vi -- tur,
   præ -- se -- pi po -- ni -- tur
   sta -- bu -- lo bru -- to -- rum,
   rec -- tor su -- per -- no -- rum,
