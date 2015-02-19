@@ -142,6 +142,19 @@ altoWordsIV = \lyricmode {
   \dropLyricsIX
 \set ignoreMelismata = ##t
   \set stanza = #"4. "
+  Where chil -- dren pure and hap -- _ py
+    pray to the _ bless -- ed Child,
+  Where mis -- e -- ry cries out to Thee,
+    Son of the _ \set associatedVoice = "altos" mo -- ther mild; \unset associatedVoice
+  Where cha -- ri -- ty stands watch -- ing
+    and faith holds wide the door,
+  The dark night wakes, the glo -- ry breaks,
+    and Christ -- \set associatedVoice = "altos" mas comes once more
+}
+altoWordsV = \lyricmode {
+  \dropLyricsIX
+\set ignoreMelismata = ##t
+  \set stanza = #"5. "
   O ho -- ly Child of Beth -- le -- hem!
   De -- scend to _ us, we pray;
   Cast out our sin, and en -- ter in,
@@ -213,6 +226,7 @@ bassWords = \lyricmode {
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
