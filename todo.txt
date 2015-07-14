@@ -10,3 +10,234 @@ reverse order of \new Lyrics directives
 
 
 (Sometimes \dropLyrics is used to center lyrics for choruses.  I am not sure how this will work with the staff-affinity = #0 line.)
+
+Latin translations: (from http://www.tnfeldhaus.com/latinsongs.pdf)
+
+== Jolly Old Saint Nicholas ==
+
+Læ -- tus Sanc -- tus Ní -- cho -- laus
+Au -- rem ten -- de huc.
+Ne di -- cas ul -- li vi -- vo
+Quid dic -- tú -- rus sim.
+Vi -- gí -- li -- a pró -- xi -- ma
+Nunc ca -- re se -- nex,
+Me di -- cas quid mi fe -- ras,
+Mi dic si pot -- es.
+
+Mé -- di -- a noc -- te fac -- ta
+Som -- no so -- pí -- tus,
+Per com -- plú -- vi -- um a -- trum
+Re -- bus pa -- rá -- tis,
+Ti -- bi -- á -- li -- a cun -- cta
+Jam in ór -- di -- ne,
+Me -- um e -- rit mí -- ni -- mum
+Si -- ne dú -- bi -- o.
+
+
+== O Christmas Tree ==
+Ec -- ce ar -- bor hu -- jus noc -- tis
+Fó -- li -- a num -- quam mu -- tant
+Vi -- rí -- di -- a in æ -- sta -- te,
+Et é -- ti -- am in hie -- me.
+
+Nec -- non æ -- sta -- tis tem -- po -- re
+Ra -- mi la -- ti et vi -- ri -- des,
+Sed e -- tiam flo -- ret ni -- ve
+Cum ter -- ra al -- ba hie -- me.
+
+Nar -- rat no -- bis de cus -- tó -- de
+Et an -- ge -- ló -- rum cár -- mi -- ne,
+De In -- fán -- te in præ -- sé -- pe
+Est le -- gén -- dum mi -- rá -- bi -- le.
+
+
+== What Child is This? ==
+Qua -- lis pu -- er qui in Ma -- rí -- æ
+  gré -- mi -- o nunc dor -- mit?
+Quem án -- ge -- li nunc sa -- lú -- tant
+  dum pa -- stó -- res ví -- gi -- lant.
+
+Il -- le est Chri -- stus Rex
+  quem pa -- stó -- res et án -- ge -- li
+cur -- runt ad lau -- dán -- dum
+  Fí -- li -- um de Ma -- rí -- a.
+
+== Silent Night ==
+Si -- lens nox, san -- cta nox,
+Plá -- ci -- da, lú -- ci -- da.
+Vír -- gi -- nem et Pú -- e -- rum
+Dul -- cem at -- que té -- ne -- rum
+Som -- no óp -- pri -- me.
+Som -- no óp -- pri -- me.
+
+Si -- lens nox, san -- cta nox,
+Án -- ge -- li ní -- ti -- di
+“Al -- le -- lú -- ia” cón -- ci -- nunt.
+Nunc pa -- stó -- res mé -- tu -- unt.
+Chri -- stus na -- tus est.
+Chri -- stus na -- tus est.
+
+Si -- lens nox, san -- cta nox,
+Cán -- di -- da, splén -- di -- da.
+Fi -- li De -- i fá -- ci -- es
+No -- bis præ -- bet no -- vas spes;
+Chri -- stus na -- tus est.
+Chri -- stus na -- tus est.
+
+
+== O Little Town of Bethlehem ==
+O par -- ve vi -- ce Bé -- thle -- hem,
+  Quam tá -- ci -- tus ja -- ces!
+Su -- per som -- num stel -- læ tu -- um
+  Vol -- vún -- tur si -- lén -- tes.
+Sed noc -- tis in té -- ne -- bris
+  Æ -- tér -- na Lux splen -- det.
+Jam tem -- pó -- rum spes óm -- ni -- um
+  Cu -- ræ in te ma -- nent.
+
+Nam Chri -- stus ex Ma -- rí -- a
+  Na -- tus, et in cæ -- lo
+Sunt con -- grés -- si cum án -- ge -- li
+  A -- mó -- re cum pi -- o.
+O stel -- læ ma -- tu -- tí -- næ
+  Can -- tá -- te cæ -- li -- tus!
+De -- o sint lau -- des in -- sí -- gnes
+  Et pax ho -- mí -- ni -- bus.
+
+== Jingle Bells ==
+Ni -- ves, glá -- ci -- es,
+  nox pu -- e -- rí -- ti -- a!
+Ri -- sus de -- cet, nunc
+  de -- cent cár -- mi -- na!
+Læ -- tos ju -- vat nos
+  i -- re per a -- gros.
+Tra -- ha fert ve -- ló -- ci -- ter,
+  et ca -- chi -- né -- mus nos.
+
+  Tín -- ni -- ant, tín -- ni -- ant tin -- tin -- ná -- bu -- la.
+  Lu -- dus est e -- quo tra -- hi in cur -- ru a -- pér -- to.
+  Tín -- ni -- ant, tín -- ni -- ant tin -- tin -- ná -- bu -- la.
+  Lu -- dus est e -- quo tra -- hi in cur -- ru a -- pér -- to.
+
+Me nu -- per mí -- se -- rum
+  temp -- tá -- vit lu -- næ lux.
+As -- si -- dé -- bat mi -- hi
+  pu -- él -- la fac -- ta dux!
+Vec -- ti sú -- bi -- to
+  in ni -- vis cú -- mu -- los.
+Ca -- bál -- lus est per -- tér -- ri -- tus
+  et tunc e -- vér -- si nos.
+
+So -- lum scin -- tíl -- lat,
+  ni -- ve cán -- di -- dum.
+Re -- pe -- tá -- tur nunc
+  con -- cén -- tus cár -- mi -- num:
+Ca -- ní -- ti -- es ab -- sit
+  mo -- ró -- sa óm -- ni -- bus!
+Pu -- él -- lu -- las cum pú -- e -- ris
+  de -- léc -- tat hic -- cur -- sus.
+
+
+== Hark the Herald Angels Sing ==
+En ca -- nén -- tes án -- ge -- li,
+“Glo -- ri -- a Re -- gi,~In -- fán -- ti;
+Pax in ter -- ra, et De -- us
+con -- cors cum mor -- tá -- li -- bus.”
+Læ -- ti, om -- nes pó -- pu -- li
+Cum cæ -- lé -- sti -- bus jun -- cti,
+Præ -- di -- cá -- te “Nunc Chri -- stus
+Est in Bé -- thle -- hem na -- tus.”
+
+En ca -- nén -- tes án -- ge -- li,
+“Glo -- ri -- a Re -- gi~In -- fán -- ti.”
+
+A -- do -- rá -- tus cæ -- li -- tus,
+Chri -- stus, sem -- per Dó -- mi -- nus.
+Sé -- ri -- us ad -- vé -- nit spe
+Gé -- ni -- tus a vír -- gi -- ne.
+Car -- ne tam -- quam ób -- si -- tus,
+Ho -- mo ex De -- o fac -- tus,
+Vo -- lens ut par sit ho -- nos,
+Com -- mo -- rá -- tur in -- ter nos.
+
+
+== Good King Wenceslaus ==
+Sanc -- tus Wen -- ces -- lá -- us rex
+Sté -- pha -- ni ad fes -- tum.
+A -- grum vi -- dit ní -- vi -- bus
+Gé -- li -- dis con -- gés -- tum.
+Vi -- dit páu -- pe -- rem si -- bi
+Li -- gna col -- li -- gén -- tem.
+Qui sub lu -- na splén -- di -- da
+Sen -- sit se fri -- gén -- tem.
+
+“Af -- fer car -- nem, vi -- num fer,
+Li -- gnum af -- fe -- rá -- mus,
+Ut nos il -- li páu -- pe -- ri
+Ce -- nam præ -- be -- á -- mus.”
+Rex et pu -- er pro -- dí -- bant
+Á -- ni -- mo æ -- quá -- li,
+Ven -- to flan -- te á -- cri -- ter
+Tém -- po -- re bru -- má -- li.
+
+
+== Deck the Halls ==
+A -- qua -- fó -- li -- a or -- ná -- tis
+Fa la la la la, la la la la.
+Tem -- pus hoc hi -- la -- ri -- tá -- tis
+Fa la la la la, la la la la.
+Ves -- tes cla -- ras in -- du -- á -- mus
+Fa la la, la la la, la la la.
+Can -- ti -- lé -- nas nunc pro -- má -- mus
+Fa la la la la, la la la la.
+
+
+== Joy to the World ==
+Læ -- tís -- si -- mus ac -- cí -- pi -- at
+Jam mun -- dus Dó -- mi -- num.
+Dum óm -- ni -- a in cor -- da nos
+ac -- cí -- pi -- mus Il -- lum.
+
+
+== God Rest You Merry, Gentlemen ==
+Sal -- vé -- te, læ -- ti có -- mi -- tes,
+Ni -- hil vos tér -- re -- at.
+Nam Je -- sus Chri -- stus na -- tus est
+Ut om -- nes ré -- di -- mat,
+Et in Sá -- ta -- næ sé -- mi -- tas
+Er -- rán -- tes re -- dú -- cat.
+O nún -- ti -- um gra -- tís -- si -- mum,
+  gra -- tís -- si -- mum.
+O nún -- ti -- um gra -- tís -- si -- mum.
+
+
+== We Three Kings ==
+O -- ri -- én -- tis re -- ges tres,
+Pro -- cul do -- na por -- tán -- tes
+Per cam -- pos et mon -- tes i -- mus
+Post stel -- lam se -- quén -- tes.
+
+  O, Stel -- la po -- tens et mi -- ra,
+  Stel -- la re -- ga -- lis pul -- chra,
+  Sem -- per mo -- vens ad oc -- cá -- sum
+  Du -- e nos ad cla -- ram lu -- cem.
+
+In -- fans na -- te Bé -- thle -- hem,
+Por -- tá -- mus hanc co -- ró -- nam,
+Rex æ -- tér -- ne, sem -- pi -- tér -- ne,
+Dó -- mi -- ne ter -- rá -- rum!
+
+Dis Sa -- bæ -- um Ti -- bi fe -- ro,
+Tus di -- gnum ma -- gno De -- o;
+Te lau -- dán -- tes et o -- rán -- tes
+Có -- li -- mus in Cæ -- lo.
+
+Myr -- rham fe -- ro a -- má -- ram,
+Cir -- cum te fu -- mat ca -- lí -- go,
+Te lan -- guén -- tem et ge -- mén -- tem
+cón -- di -- tum~in tú -- mu -- lo.
+
+Cla -- rus sur -- git, O spec -- ta!
+De -- us, Rex, et Víc -- ti -- ma.
+Al -- le -- lu -- ia, Al -- le -- lu -- ia,
+Ca -- nunt cæ -- lum ter -- ra.
