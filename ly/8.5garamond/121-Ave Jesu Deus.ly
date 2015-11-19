@@ -143,37 +143,37 @@ altoWords = {
     A -- ve Je -- su De -- us ma -- gne,
     A -- ve Pu -- er, mi -- tis a -- gne,
     A -- ve De -- us ho -- mo na -- te,
-    In Præ -- se -- pi re -- cli -- na -- te!
+    In Præ -- sé -- pi re -- cli -- ná -- te!
   }
   
   \set stanza = \markup\dynamic"f   "
   \lyricmode {
     \set associatedVoice = "tenors"
-    O po -- tes -- tas, o e -- ges -- tas,
-    O ma -- jes -- tas Do -- mi -- ni!
-    O ma -- jes -- tas, quid non præ -- stas
+    O po -- tés -- tas, o e -- gés -- tas,
+    O ma -- jés -- tas Dó -- mi -- ni!
+    O ma -- jés -- tas, quid non præ -- stas
   }
   \set stanza = \markup\dynamic"  ff "
   \lyricmode{
-    ho -- mi -- ni?
-    ho -- mi -- ni?
+    hó -- mi -- ni?
+    hó -- mi -- ni?
   }
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
 %\markup\italic
   \set stanza = #"2. "
-  Ut me pau -- pe -- rem di -- ta -- res,
-  Ut me per -- di -- tum sal -- va -- res,
-  Ja -- ces pan -- nis in -- vo -- lu -- tus,
-  Om -- ni o -- pe des -- ti -- tu -- tus.
+  Ut me páu -- pe -- rem di -- tá -- res,
+  Ut me pér -- di -- tum sal -- vá -- res,
+  Ja -- ces pan -- nis in -- vo -- lú -- tus,
+  Om -- ni o -- pe des -- ti -- tú -- tus.
 }
 altoWordsIII = {
   \dropLyricsV
   \set stanza = \markup{\dynamic "mf  " "3. "}
   \lyricmode {
-    In -- ter bru -- ta quam ab -- jec -- tus
-    Va -- gis, Pa -- tris o di -- lec -- tus!
+    In -- ter bru -- ta quam ab -- jéc -- tus
+    Va -- gis, Pa -- tris o di -- léc -- tus!
     Ju -- dex sum -- me, ve -- rus De -- us,
     Prop -- ter me fis ho -- mo re -- us!
   }
@@ -181,18 +181,18 @@ altoWordsIII = {
 altoWordsIV = \lyricmode {
   \dropLyricsV
   \set stanza = #"4. "
-  O mi Je -- su, cor de -- vo -- tum
+  O mi Je -- su, cor de -- vó -- tum
   Post te tra -- he, su -- me to -- tum,
   I -- gne tu -- o san -- cto u -- re,
-  Ah, ah pe -- ni -- tus com -- bu -- re.
+  Ah, ah pé -- ni -- tus com -- bú -- re.
 }
 altoWordsV = \lyricmode {
   \dropLyricsV
   \set stanza = #"5. "
-  Pro -- cul va -- nos hinc a -- mo -- res,
+  Pro -- cul va -- nos hinc a -- mó -- res,
   Pro -- cul ma -- los ar -- ce mo -- res,
   Tu -- is me -- os ap -- tos fin -- ge,
-  Æ -- ter -- no me ne -- xu strin -- ge,
+  Æ -- tér -- no me ne -- xu strin -- ge,
 }
 altoWordsVI = \lyricmode {
   \set stanza = #"6. "
