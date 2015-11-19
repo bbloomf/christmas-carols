@@ -84,52 +84,52 @@ altoMusic = \relative c' {
 }
 altoWords = \lyricmode {
   \set stanza = #"1. "
-  Per -- so -- nent ho -- di -- e
-  vo -- ces pu -- e -- ru -- læ,
-  lau -- dan -- tes ju -- cun -- de
+  Per -- só -- nent hó -- di -- e
+  vo -- ces pu -- é -- ru -- læ,
+  lau -- dán -- tes ju -- cún -- de
   Qui no -- bis est na -- tus,
   sum -- mo De -- o da -- tus,
-  et de vir, vir, vir,
-  et de vir, vir, vir,
-  et de vir -- gi -- ne -- o
-  ven -- tre pro -- cre -- a -- tus.
+  et de vir-, vir-, vir-,
+  et de vir-, vir-, vir-,
+  et de vir -- gí -- ne -- o
+  ven -- tre pro -- cre -- á -- tus.
 }
 altoWordsII = \lyricmode {
 %\markup\italic
   \set stanza = #"2. "
-  In mun -- do na -- sci -- tur,
-  pan -- nis in -- vol -- vi -- tur,
-  præ -- se -- pi po -- ni -- tur
-  sta -- bu -- lo bru -- to -- rum,
-  rec -- tor su -- per -- no -- rum,
-  per -- di -- dit, dit, dit,
-  per -- di -- dit, dit, dit,
-  per -- di -- dit spo -- li -- a
-  prin -- ceps in -- fer -- no -- rum.
+  In mun -- do ná -- sci -- tur,
+  pan -- nis in -- vól -- vi -- tur,
+  præ -- sé -- pi pó -- ni -- tur
+  stá -- bu -- lo bru -- tó -- rum,
+  rec -- tor su -- per -- nó -- rum,
+  pér -- di -- dit, -dit, -dit,
+  pér -- di -- dit, -dit, -dit,
+  pér -- di -- dit spó -- li -- a
+  prin -- ceps in -- fer -- nó -- rum.
 }
 altoWordsIII = \lyricmode {
   \set stanza = #"3. "
-  Ma -- gi tres ve -- ne -- runt,
-  par -- vu -- lum in -- qui -- runt,
-  Beth -- le -- hem ad -- e -- unt,
-  stel -- lu -- lam se -- quen -- do,
-  ip -- sum ad -- o -- ran -- do,
+  Ma -- gi tres ve -- né -- runt,
+  pár -- vu -- lum in -- quí -- runt,
+  Béth -- le -- hem ád -- e -- unt,
+  stél -- lu -- lam se -- quén -- do,
+  ip -- sum ad -- o -- rán -- do,
   au -- rum thus, thus, thus,
   au -- rum thus, thus, thus,
   au -- rum thus, et myr -- rham
-  E -- i of -- fe -- ren -- do.
+  E -- i of -- fe -- rén -- do.
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "
-  Om -- nes cle -- ri -- cu -- li,
-  par -- i -- ter pu -- e -- ri,
-  can -- tent ut an -- ge -- li:
-  Ad -- ven -- is -- ti mun -- do,
+  Om -- nes cle -- rí -- cu -- li,
+  pár -- i -- ter pú -- e -- ri,
+  can -- tent ut án -- ge -- li:
+  Ad -- ven -- ís -- ti mun -- do,
   lau -- des Ti -- bi fun -- do.
-  Id -- e -- o, o, o,
-  id -- e -- o, o, o,
-  id -- e -- o, glo -- ri -- a
-  in ex -- cel -- sis De -- o.
+  Id -- e -- o, -o, -o,
+  íd -- e -- o, -o, -o,
+  íd -- e -- o, gló -- ri -- a
+  in ex -- cél -- sis De -- o.
 }
 altoWordsV = \lyricmode {
   \set stanza = #"5. "

@@ -37,7 +37,7 @@
 \markup\vspace #0.25
 \markup\fill-line \center-align {\abs-fontsize #28 \smallCapsOldStyle"benjamin bloomfield"}
 \markup\vspace #9.5 
-\markup{\abs-fontsize #12 {Fifth edition, \smallCapsOldStyle"%date% %month% %year%"}}
+\markup{\abs-fontsize #12 {Sixth edition, \smallCapsOldStyle"%date% %month% %year%"}}
 \markup\vspace #0.1
 \markup{\abs-fontsize #12 "This work is free of known copyright restrictions."}
 \markup\vspace #0.1

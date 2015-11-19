@@ -354,33 +354,33 @@ altoMusic = \relative c'' {
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
-  Flos de ra -- di -- ce Jes -- se, est na -- tus ho -- di -- e.
-  Quem no -- bis jam ad -- es -- se, læ -- ta -- mur u -- ni -- ce.
+  Flos de ra -- dí -- ce Jes -- se, est na -- tus hó -- di -- e.
+  Quem no -- bis jam ad -- és -- se, læ -- tá -- mur ú -- ni -- ce.
   Flos il -- le Je -- sus est.
-  Ma -- ri -- a Vir -- go ra -- dix de qua flos or -- tus est.
+  Ma -- rí -- a Vir -- go ra -- dix de qua flos or -- tus est.
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
   \set stanza = #"2. "
-  Hunc I -- sa -- ias flo -- rem, præ -- sa -- gi -- is ce -- ci -- nit.
-  Ad e -- jus nos a -- mo -- rem, Na -- scen -- tis al -- li -- cit.
-  Flos vir -- gam su -- pe -- rat
-  cœ -- li ter -- ræ -- que ci -- ves, Flos il -- le re -- cre -- at.
+  Hunc I -- sá -- i -- as flo -- rem, præ -- sá -- giis cé -- ci -- nit.
+  Ad e -- jus nos a -- mó -- rem, Na -- scén -- tis ál -- li -- cit.
+  Flos vir -- gam sú -- per -- at
+  cœ -- li ter -- ræ -- que ci -- ves, Flos il -- le ré -- cre -- at.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
   \set stanza = #"3. "
-  Est cam -- pi flos pu -- di -- ci, est flos con -- val -- li -- um.
-  Pul -- crum -- que pot -- est di -- ci, in spi -- nis li -- li -- um.
-  O -- do -- ris op -- ti -- mi;
-  vel so -- li quod -- vis ce -- dit a -- ro -- ma no -- mi -- ni.
+  Est cam -- pi flos pu -- dí -- ci, est flos con -- vál -- li -- um.
+  Pul -- chrúm -- que pot -- est di -- ci, in spi -- nis lí -- li -- um.
+  O -- dó -- ris óp -- ti -- mi;
+  vel so -- li quod -- vis ce -- dit a -- ró -- ma nó -- mi -- ni.
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "
-%  Hic su -- o flos o -- do -- re, fi -- de -- les at -- tra -- hit. 
-%  Di -- vi -- no mox a -- mo -- re, at -- trac -- tos im -- bu -- it.
-%  O flos o gra -- ti -- a:
-%  ad te sus -- pi -- ro, de te me sa -- ti -- a.
+%  Hic su -- o flos o -- dó -- re, fi -- dé -- les át -- tra -- hit. 
+%  Di -- ví -- no mox a -- mó -- re, at -- trác -- tos ím -- bu -- it.
+%  O flos o grá -- ti -- a:
+%  ad te su -- spí -- ro, de te me sá -- ti -- a.
 }
 altoWordsV = \lyricmode {
 }
