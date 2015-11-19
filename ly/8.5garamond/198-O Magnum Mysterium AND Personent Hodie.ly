@@ -660,7 +660,7 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
-  Per -- só -- nent hó -- di -- e
+  Pér -- so -- nent hó -- di -- e
   vo -- ces pu -- é -- ru -- læ,
   lau -- dán -- tes ju -- cún -- de
   Qui no -- bis est na -- tus,

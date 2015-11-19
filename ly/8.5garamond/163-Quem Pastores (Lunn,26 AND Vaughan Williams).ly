@@ -104,47 +104,47 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsIX
   \set stanza = #"1. "
-  Quem pas -- to -- res lau -- da -- ve -- re,
-  Qui -- bus an -- ge -- li di -- xe -- re,
-  “Ab -- sit vo -- bis jam ti -- me -- \set associatedVoice = "tenors"
+  Quem pas -- tó -- res lau -- da -- vé -- re,
+  Qui -- bus án -- ge -- li di -- xé -- re,
+  “Ab -- sit vo -- bis jam ti -- mé -- \set associatedVoice = "tenors"
   re,
   Na -- \unset associatedVoice
-  tus est Rex glo -- ri -- æ,
-  Rex glo -- ri -- æ.”
+  tus est Rex gló -- ri -- æ,
+  Rex gló -- ri -- æ.”
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set stanza = #"2. "
-  Ad quem ma -- gi am -- bu -- la -- bant,
-  Au -- rum, thus, myr -- rham por -- ta -- bant,
-  Im -- mo -- la -- bant hæc sin -- ce -- \set associatedVoice = "tenors"
+  Ad quem ma -- gi am -- bu -- lá -- bant,
+  Au -- rum, thus, myr -- rham por -- tá -- bant,
+  Im -- mo -- lá -- bant hæc sin -- cé -- \set associatedVoice = "tenors"
   re
   Le -- \unset associatedVoice
-  o -- ni vic -- to -- ri -- æ,
-  vic -- to -- ri -- æ.
+  ó -- ni vic -- tó -- ri -- æ,
+  vic -- tó -- ri -- æ.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"3. "
-  Ex -- ul -- te -- mus cum Ma -- ri -- a
-  In cœ -- les -- ti hie -- rar -- chi -- a
+  Ex -- ul -- té -- mus cum Ma -- rí -- a
+  In cæ -- lés -- ti hie -- rár -- chi -- a
   Na -- tum pro -- mat vo -- ce pi -- \set associatedVoice = "tenors"
   a
   Laus, \unset associatedVoice
-  ho -- nor et glo -- ri -- a,
-  et glo -- ri -- a.
+  ho -- nor et gló -- ri -- a,
+  et gló -- ri -- a.
 }
 altoWordsIV = \lyricmode {
   \dropLyricsIX
   \set stanza = #"4. "
   Chris -- to re -- gi, De -- o na -- to,
-  Per Ma -- ri -- am no -- bis da -- to,
-  Me -- ri -- to re -- so -- net ve -- \set associatedVoice = "tenors"
+  Per Ma -- rí -- am no -- bis da -- to,
+  Mé -- ri -- to ré -- so -- net ve -- \set associatedVoice = "tenors"
   re
   Dul -- \unset associatedVoice
-  ci cum me -- lo -- di -- a,
-  me -- lo -- di -- a.
+  ci cum me -- ló -- di -- a,
+  me -- ló -- di -- a.
 }
 altoWordsV = \lyricmode {
   \set stanza = #"5. "
@@ -340,35 +340,35 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsIX
   \set stanza = #"1. "
-  Quem pas -- to -- res lau -- da -- ve -- re,
-  Qui -- bus an -- ge -- li di -- xe -- re,
-  “Ab -- sit vo -- bis jam ti -- me -- re,
-  Na -- tus est rex glo -- ri -- æ.”
+  Quem pas -- tó -- res lau -- da -- vé -- re,
+  Qui -- bus án -- ge -- li di -- xé -- re,
+  “Ab -- sit vo -- bis jam ti -- mé -- re,
+  Na -- tus est rex gló -- ri -- æ.”
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set stanza = #"2. "
-  Ad quem ma -- gi am -- bu -- la -- bant,
-  Au -- rum, thus, myr -- rham por -- ta -- bant,
-  Im -- mo -- la -- bant hæc sin -- ce -- re
-  Le -- o -- ni vic -- to -- ri -- æ.
+  Ad quem ma -- gi am -- bu -- lá -- bant,
+  Au -- rum, thus, myr -- rham por -- tá -- bant,
+  Im -- mo -- lá -- bant hæc sin -- cé -- re
+  Le -- ó -- ni vic -- tó -- ri -- æ.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"3. "
-  Ex -- ul -- te -- mus cum Ma -- ri -- a
-  In cœ -- les -- ti hie -- rar -- chi -- a
+  Ex -- ul -- té -- mus cum Ma -- rí -- a
+  In cæ -- lés -- ti hie -- rár -- chi -- a
   Na -- tum pro -- mat vo -- ce pi -- a
-  Laus, ho -- nor et glo -- ri -- a.
+  Laus, ho -- nor et gló -- ri -- a.
 }
 altoWordsIV = \lyricmode {
   \dropLyricsIX
   \set stanza = #"4. "
   Chris -- to re -- gi, De -- o na -- to,
-  Per Ma -- ri -- am no -- bis da -- to,
-  Me -- ri -- to re -- so -- net ve -- re
-  Dul -- ci cum me -- lo -- di -- a.
+  Per Ma -- rí -- am no -- bis da -- to,
+  Mé -- ri -- to ré -- so -- net ve -- re
+  Dul -- ci cum me -- ló -- di -- a.
 }
 altoWordsV = \lyricmode {
   \set stanza = #"5. "
