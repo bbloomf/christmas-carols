@@ -557,7 +557,7 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsVI
   \set stanza = #"1."
-  Con -- dí -- tor al -- me sí -- de -- rum,
+  Cón -- di -- tor al -- me sí -- de -- rum,
   Æ -- tér -- na lux __ cre -- dén -- ti -- um,
   \dropLyricsIX
   Chri -- ste, Re -- dém -- ptor óm -- ni -- um,

@@ -93,94 +93,94 @@ altoWords = \lyricmode {
   \dropLyricsIX
   \set associatedVoice = "sopranos"
   \set stanza = #"1. "
-  Cor -- de na -- tus ex pa -- ren -- tis
-  An -- te mun -- di~ex -- or -- di -- um
-  A et O co -- gno -- mi -- na -- tus,
-  ip -- se fons et clau -- su -- la
-  Om -- ni -- um quæ sunt, fu -- e -- runt,
-  quæ -- que post fu -- tu -- ra sunt. __
-  Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
+  Cor -- de na -- tus ex pa -- rén -- tis
+  An -- te mun -- di~ex -- ór -- di -- um
+  A et O co -- gno -- mi -- ná -- tus,
+  ip -- se fons et cláu -- su -- la
+  Om -- ni -- um quæ sunt, fu -- é -- runt,
+  quæ -- que post fu -- tú -- ra sunt. __
+  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
   
   \set stanza = #"4. "
-  O be -- a -- tus or -- tus il -- le,
-  vir -- go cum pu -- er -- pe -- ra
-  E -- di -- dit nos -- tram sa -- lu -- tem,
+  O be -- á -- tus or -- tus il -- le,
+  vir -- go cum pu -- ér -- pe -- ra
+  E -- di -- dit nos -- tram sa -- lú -- tem,
   fe -- ta San -- cto Spi -- ri -- tu,
-  Et pu -- er re -- dem -- ptor or -- bis
-  os sa -- cra -- tum pro -- tu -- lit. __
-  Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
+  Et pu -- er re -- dém -- ptor or -- bis
+  os sa -- crá -- tum pró -- tu -- lit. __
+  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
   
   
   \set stanza = #"7. "
-  Mac -- te ju -- dex mor -- tu -- o -- rum,
-  mac -- te rex vi -- ven -- ti -- um,
-  Dex -- ter in Pa -- ren -- tis ar -- ce
-  qui clu -- is vir -- tu -- ti -- bus,
-  Om -- ni -- um ven -- tu -- rus in -- de
-  jus -- tus ul -- tor cri -- mi -- num. __
-  Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
+  Mac -- te ju -- dex mor -- tu -- ó -- rum,
+  mac -- te rex vi -- vén -- ti -- um,
+  Dex -- ter in Pa -- rén -- tis ar -- ce
+  qui clu -- is vir -- tú -- ti -- bus,
+  Om -- ni -- um ven -- tú -- rus in -- de
+  jus -- tus ul -- tor crí -- mi -- num. __
+  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set associatedVoice = "sopranos"
   \set stanza = #"2. "
-  Ip -- se jus -- sit et cre -- a -- ta,
+  Ip -- se jus -- sit et cre -- á -- ta,
   di -- xit ip -- se~et fac -- ta sunt,
   Ter -- ra, cæ -- lum, fos -- sa pon -- ti,
-  tri -- na re -- rum ma -- chi -- na,
+  tri -- na re -- rum má -- chi -- na,
   Quæ -- que~in his vi -- gent sub al -- to
   so -- lis et lu -- næ glo -- bo. __
-  Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
+  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
   
   \set stanza = #"5. "
-  Psal -- lat al -- ti -- tu -- do cæ -- li,
-  psal -- lant om -- nes an -- ge -- li,
-  Quid -- quid est vir -- tu -- tis us -- quam
+  Psal -- lat al -- ti -- tú -- do cæ -- li,
+  psal -- lant om -- nes án -- ge -- li,
+  Quid -- quid est vir -- tú -- tis us -- quam
   psal -- lat in lau -- dem De -- i,
-  Nul -- la lin -- gua -- rum si -- les -- cat,
-  vox et om -- nis con -- so -- net. __
-  Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
+  Nul -- la lin -- guá -- rum si -- lés -- cat,
+  vox et om -- nis cón -- so -- net. __
+  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
   
   \set stanza = #"8. "
-  Te se -- nes et te ju -- ven -- tus,
-  par -- vu -- lo -- rum te cho -- rus,
-  Tur -- ba ma -- trum, vir -- gi -- num -- que,
-  sim -- pli -- ces pu -- el -- lu -- læ,
-  Vo -- ce con -- cor -- des pu -- di -- cis
-  per -- stre -- pant con -- cen -- ti -- bus. __
-  Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
+  Te se -- nes et te ju -- vén -- tus,
+  par -- vu -- ló -- rum te cho -- rus,
+  Tur -- ba ma -- trum, vir -- gi -- núm -- que,
+  sím -- pli -- ces pu -- él -- lu -- læ,
+  Vo -- ce con -- cór -- des pu -- dí -- cis
+  pér -- stre -- pant con -- cén -- ti -- bus. __
+  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set associatedVoice = "sopranos"
   \set stanza = #"3. "
-  Cor -- po -- ris for -- mam ca -- du -- ci,
-  mem -- bra mor -- ti~ob -- no -- xi -- a
-  In -- du -- it, ne gens per -- i -- ret
-  pri -- mo -- plas -- ti~ex ger -- mi -- ne,
-  Mer -- se -- rat quem lex pro -- fun -- do
-  no -- xi -- a -- lis tar -- ta -- ro. __
-  Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
+  Cór -- po -- ris for -- mam ca -- dú -- ci,
+  mem -- bra mor -- ti~ob -- nó -- xi -- a
+  In -- du -- it, ne gens per -- í -- ret
+  pri -- mo -- plás -- ti~ex gér -- mi -- ne,
+  Mér -- se -- rat quem lex pro -- fún -- do
+  no -- xi -- á -- lis tár -- ta -- ro. __
+  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
   
   
   \set stanza = #"6. "
-  Ec -- ce, quem va -- tes ve -- tus -- tis
-  con -- ci -- ne -- bant sæ -- cu -- lis,
-  Quem pro -- phe -- ta -- rum fi -- de -- les
-  pa -- gi -- næ spo -- pon -- de -- rant,
-  E -- mi -- cat pro -- mis -- sus o -- lim;
-  cun -- cta con -- lau -- dent e -- um. __
-  Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
+  Ec -- ce, quem va -- tes ve -- tús -- tis
+  con -- ci -- né -- bant sæ -- cu -- lis,
+  Quem pro -- phe -- tá -- rum fi -- dé -- les
+  pá -- gi -- næ spo -- pón -- de -- rant,
+  E -- mi -- cat pro -- mís -- sus o -- lim;
+  cun -- cta con -- láu -- dent e -- um. __
+  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
   
   \set stanza = #"9. "
   Ti -- bi, Chris -- te, sit cum Pa -- tre
-  ha -- gio -- que Pne -- u -- ma -- te
-  Hym -- nus, de -- cus, laus pe -- ren -- nis,
-  gra -- ti -- a -- rum ac -- ti -- o,
-  Ho -- nor, vir -- tus, vic -- to -- ri -- a,
-  re -- gnum æ -- ter -- na -- li -- ter. __
-  Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
+  há -- gio -- que Pne -- ú -- ma -- te
+  Hym -- nus, de -- cus, laus pe -- rén -- nis,
+  gra -- ti -- á -- rum ác -- ti -- o,
+  Ho -- nor, vir -- tus, vic -- tó -- ri -- a,
+  re -- gnum æ -- ter -- ná -- li -- ter. __
+  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
 }
 altoWordsIV = \lyricmode {
   \set associatedVoice = "sopranos"

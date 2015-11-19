@@ -82,49 +82,49 @@ altoMusic = \relative c'' {
 altoWords = \lyricmode {
   \dropLyricsIX
   \set stanza = #"1. "
-  Con -- gau -- de -- at __ tur -- ba fi -- de -- li -- um, __
-  Vir -- go ma -- ter pe -- pe -- rit fi -- li -- um
-  in Beth -- le -- hem. __
+  Con -- gáu -- de -- at __ tur -- ba fi -- dé -- li -- um, __
+  Vir -- go ma -- ter pé -- pe -- rit fí -- li -- um
+  in Béth -- le -- hem. __
   
   
   \set stanza = #"5. "
-  In o -- cta -- va __ dum cir -- cum -- ci -- di -- tur, __
-  No -- men e -- i Je -- sus im -- po -- ni -- tur
-  in Beth -- le -- hem. __
+  In o -- ctá -- va __ dum cir -- cum -- cí -- di -- tur, __
+  No -- men e -- i Je -- sus im -- pó -- ni -- tur
+  in Béth -- le -- hem. __
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set stanza = #"2. "  
-  Ad pa -- sto -- res __ de -- scen -- dit an -- ge -- lus, __
-  Di -- cens e -- is_: na -- tus est Do -- mi -- nus
-  in Beth -- le -- hem. __
+  Ad pa -- stó -- res __ de -- scén -- dit án -- ge -- lus, __
+  Di -- cens e -- is_: na -- tus est Dó -- mi -- nus
+  in Béth -- le -- hem. __
   
   
   \set stanza = #"6. "
-  Tri -- ni, __ tri -- no, __ tri -- na dant mu -- ne -- ra, __
-  Re -- gi re -- gum fu -- gen -- ti u -- be -- ra
-  in Beth -- le -- hem. __
+  Tri -- ni, __ tri -- no, __ tri -- na dant mú -- ne -- ra, __
+  Re -- gi re -- gum fu -- gén -- ti ú -- be -- ra
+  in Béth -- le -- hem. __
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"3. "
-  Lo -- que -- ban -- tur __ pa -- sto -- res in -- vi -- cem, __
-  Trans -- e -- a -- mus ad no -- vum ho -- mi -- nem
-  in Beth -- le -- hem. __
+  Lo -- que -- bán -- tur __ pa -- stó -- res ín -- vi -- cem, __
+  Trans -- e -- á -- mus ad no -- vum hó -- mi -- nem
+  in Béth -- le -- hem. __
   
   
   \set stanza = #"7. "
-  Col -- ly -- ri -- das __ si -- mul cum nec -- ta -- re __
-  Be -- ne -- di -- cat Chri -- stus Rex glo -- ri -- æ
-  in Beth -- le -- hem. __
+  Col -- lý -- ri -- das __ si -- mul cum néc -- ta -- re __
+  Be -- ne -- dí -- cat Chri -- stus Rex gló -- ri -- æ
+  in Béth -- le -- hem. __
 }
 altoWordsIV = \lyricmode {
   \dropLyricsIX
   \set stanza = #"4. "
-  Ad præ -- se -- pe __ stant bos et a -- si -- nus, __
-  Co -- gno -- ve -- runt quis es -- set Do -- mi -- nus
-  in Beth -- le -- hem. __
+  Ad præ -- sé -- pe __ stant bos et á -- si -- nus, __
+  Co -- gno -- vé -- runt quis es -- set Dó -- mi -- nus
+  in Béth -- le -- hem. __
 }
 altoWordsV = \lyricmode {
 }
