@@ -309,7 +309,7 @@ sopMusic = \relative c' {
   
   a a f8[ a] |
   g4 d f |
-  e2 c4 |
+  e2 \bar"" c4 |
   f f g8[ a] |
   f4 f a8[ bes] |
   
@@ -326,20 +326,20 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   c4 |
-  a a e' |
-  a, a a8[ c] |
+  c d e |
+  d c c |
   f4 f f |
   g2 d4 |
-  g d e |
+  g g e |
   f f d |
   
   d d c 
   c2 c4 |
-  a a e' |
-  a, a a8[ c] |
+  c d e |
+  d c c |
   f4 f f |
   g2 d4 |
-  g d e |
+  g g e |
   f f d |
   d d bes |
   c2 \bar"|."
@@ -385,22 +385,22 @@ altoWordsIV = \lyricmode {
 
 tenorMusic = \relative c' {
   c4 |
-  c d g, |
-  c c c8[ g] |
+  a a c |
+  a a a8[ g] |
   a4 a bes |
-  d2 c4 |
-  d g, g |
+  d2 bes8[ c] |
+  d4 d c |
   a a a8[ f] |
   
-  bes4 bes g |
+  bes4 bes a |
   g2 c4 |
-  c d g, |
-  c c c8[ g] |
+  a a c |
+  a a a8[ g] |
   a4 a bes |
-  d2 c4 |
-  d g, g |
+  d2 bes8[ c] |
+  d4 d c |
   a a a8[ f] |
-  bes4 bes c |
+  bes4 bes g |
   a2 \bar"|."
 }
 tenorWords = \lyricmode {
@@ -417,14 +417,14 @@ bassMusic = \relative c {
   d d d |
   
   g g c, |
-  e8([ d] c4) c4 |
+  c2 c4 |
   f d c |
   d f f8[ e] |
   f4 f bes, |
   g'2 g4 |
   g g c, |
   d d d |
-  g g g8[ c,] |
+  g g c, |
   f2 \bar"|."
 }
 bassWords = \lyricmode {

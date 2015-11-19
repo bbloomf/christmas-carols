@@ -303,7 +303,7 @@ doHlig = ##t
         'text-font-defaults))
       )
     )
-    (if (eq? 0 (string-length text-string))
+    (if (and (string? text-string) (eq? 0 (string-length text-string)))
         0
         (cdr (ly:stencil-extent (ly:text-interface::interpret-markup layout
           props (markup text-string)) X)
