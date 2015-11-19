@@ -118,80 +118,80 @@ altoMusic = \relative c'' {
 altoWords = \lyricmode {
   \dropLyricsIX
   \set stanza = #"1. "
-  An -- ge -- lus ad vir -- gi -- nem
-      Sub -- in -- trans in con -- cla -- ve.
-  Vir -- gi -- nis for -- mi -- di -- nem
-      De -- mul -- cens in -- quit “A -- ve.”
-  A -- ve re -- gi -- na vir -- gi -- num,
-  Cœ -- li ter -- ræ -- que do -- mi -- num
-      Con -- ci -- pi -- es
-      Et pa -- ri -- es
-      In -- tac -- ta,
-      Sa -- lu -- tem ho -- mi -- num.
-      Tu por -- ta cœ -- li fac -- ta
-      Me -- del -- la cri -- mi -- num.
+  An -- ge -- lus ad vír -- gi -- nem
+      Sub -- ín -- trans in con -- clá -- ve.
+  Vír -- gi -- nis for -- mí -- di -- nem
+      De -- múl -- cens in -- quit “A -- ve.”
+  A -- ve re -- gí -- na vír -- gi -- num,
+  Cæ -- li ter -- ræ -- que Dó -- mi -- num
+      Con -- cí -- pi -- es
+      Et pá -- ri -- es
+      In -- tác -- ta,
+      Sa -- lú -- tem hó -- mi -- num.
+      Tu por -- ta cæ -- li fac -- ta
+      Me -- dél -- la crí -- mi -- num.
       
   \set stanza = #"3. "
-  Ad hæc vir -- go no -- bi -- lis
-      Re -- spon -- dens in -- quit e -- i;
-  An -- cil -- la sum hu -- mi -- lis
-      O -- mni -- po -- ten -- tis De -- i.
-  Ti -- bi cœ -- les -- ti nun -- ti -- o,
-  Tan -- ta se -- cre -- ti con -- sci -- o,
-      Con -- sen -- ti -- ens
-      Et cu -- pi -- ens
-      Vi -- de -- re
-      fac -- tum quod au -- di -- o,
-      Pa -- ra -- ta sum pa -- re -- re
-      De -- i con -- si -- li -- o.
+  Ad hæc vir -- go nó -- bi -- lis
+      Re -- spón -- dens in -- quit e -- i;
+  An -- cíl -- la sum hú -- mi -- lis
+      O -- mni -- po -- tén -- tis De -- i.
+  Ti -- bi cæ -- lés -- ti nún -- ti -- o,
+  Tan -- ta se -- cré -- ti cón -- sci -- o,
+      Con -- sén -- ti -- ens
+      Et cú -- pi -- ens
+      Vi -- dé -- re
+      fac -- tum quod áu -- di -- o,
+      Pa -- rá -- ta sum pa -- ré -- re
+      De -- i con -- sí -- li -- o.
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set stanza = #"2. "
-  Quo -- mo -- do con -- ci -- pe -- rem,
-      quæ vi -- rum non co -- gno -- vi?
-  Qua -- li -- ter in -- frin -- ge -- rem,
+  Quó -- mo -- do con -- cí -- pe -- rem,
+      quæ vi -- rum non co -- gnó -- vi?
+  Quá -- li -- ter in -- frín -- ge -- rem,
       quæ fir -- ma men -- te vo -- vi?
-  ‘Spi -- ri -- tus san -- cti gra -- ti -- a
-  Per -- fi -- ci -- et hæc o -- mni -- a;
-      Ne ti -- me -- as,
-      sed gau -- de -- as,
-      se -- cu -- ra,
-      quod cas -- ti -- mo -- ni -- a
-      Ma -- ne -- bit in te pu -- ra
-      De -- i po -- ten -- ti -- a.’
+  ‘Spí -- ri -- tus San -- cti gra -- ti -- a
+  Per -- fí -- ci -- et hæc ó -- mni -- a;
+      Ne tí -- me -- as,
+      sed gáu -- de -- as,
+      se -- cú -- ra,
+      quod cas -- ti -- mó -- ni -- a
+      Ma -- né -- bit in te pu -- ra
+      De -- i po -- tén -- ti -- a.’
       
   \set stanza = #"4. "
-  An -- ge -- lus dis -- pa -- ru -- it
-      Et sta -- tim pu -- el -- la -- ris
-  U -- te -- rus in -- tu -- mu -- it
-      Vi par -- tus sa -- lu -- ta -- ris.
-  Qui, cir -- cum -- da -- tus u -- te -- ro
-  No -- vem men -- si -- um nu -- me -- ro,
-      Hinc Ex -- i -- it
-      Et in -- i -- it
-      Con -- flic -- tum,
-      Af -- fi -- gens hu -- me -- ro
+  An -- ge -- lus dis -- pá -- ru -- it
+      Et sta -- tim pu -- el -- lá -- ris
+  U -- te -- rus in -- tú -- mu -- it
+      Vi par -- tus sa -- lu -- tá -- ris.
+  Qui, cir -- cum -- dá -- tus ú -- te -- ro
+  No -- vem mén -- si -- um nú -- me -- ro,
+      Hinc éx -- i -- it
+      Et ín -- i -- it
+      Con -- flíc -- tum,
+      Af -- fí -- gens hú -- me -- ro
       Cru -- cem, qua de -- dit ic -- tum
-      Hos -- ti mor -- ti -- fe -- ro.
+      Hos -- ti mor -- tí -- fe -- ro.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \repeat unfold 74 \skip1
   \set stanza = #"5. "
-  E -- ia Ma -- ter Do -- mi -- ni,
-      Quæ pa -- cem red -- di -- di -- sti
-  An -- ge -- lis et ho -- mi -- ni,
-      Cum Chri -- stum ge -- nu -- i -- sti;
-  Tu -- um ex -- o -- ra fi -- li -- um
-  Ut se no -- bis pro -- pi -- ti -- um
-      Ex -- hi -- be -- at,
-      Et de -- le -- at
-      Pec -- ca -- ta;
-      Præ -- stans au -- xi -- li -- um
-      Vi -- ta fru -- i be -- a -- ta
-      Post hoc ex -- si -- li -- um.
+  E -- ia Ma -- ter Dó -- mi -- ni,
+      Quæ pa -- cem red -- di -- dí -- sti
+  An -- ge -- lis et hó -- mi -- ni,
+      Cum Chri -- stum ge -- nu -- í -- sti;
+  Tu -- um ex -- ó -- ra fí -- li -- um
+  Ut se no -- bis pro -- pí -- ti -- um
+      Ex -- hí -- be -- at,
+      Et dé -- le -- at
+      Pec -- cá -- ta;
+      Præ -- stans au -- xí -- li -- um
+      Vi -- ta fru -- i be -- á -- ta
+      Post hoc ex -- sí -- li -- um.
 }
 altoWordsIV = \lyricmode {
 }

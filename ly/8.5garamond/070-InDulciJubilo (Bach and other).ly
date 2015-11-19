@@ -148,7 +148,7 @@ altoWordsIII = \lyricmode {
   er -- wor --
   \unset associatedVoice
   ben
-  \markup\italic Cœ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
+  \markup\italic Cæ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
   \markup\italic Quan -- \markup\italic ta \markup\italic gra -- \markup\italic ti -- \markup\italic a! __
   \markup\italic Quan -- \markup\italic ta \markup\italic gra -- 
   \set associatedVoice = "altos"
@@ -380,7 +380,7 @@ altoWordsIII = \lyricmode {
   Deep -- ly were we stain -- ed
   \markup\italic Per \markup\italic nos -- \markup\italic tra \markup\italic cri -- \markup\italic mi -- \markup\italic na; __
   But Thou for us hast gain -- ed
-  \markup\italic Cœ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
+  \markup\italic Cæ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
   O that we were there! O that we were there! 
 }
 altoWordsIV = \lyricmode {

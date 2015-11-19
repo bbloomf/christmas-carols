@@ -86,9 +86,9 @@ altoMusic = \relative c' {
 }
 altoWords = \lyricmode {
   \set stanza = #"1. "
-  Ad can -- tus læ -- ti -- ti -- æ
-  Nos in -- vi -- tat ho -- di -- e
-  Spes et a -- mor pa -- tri -- æ Cœ -- le -- stis.
+  Ad can -- tus læ -- tí -- ti -- æ
+  Nos in -- ví -- tat hó -- di -- e
+  Spes et a -- mor pá -- tri -- æ Cæ -- lés -- tis.
   
   \set stanza = #"1. "
   Love and hope of heav’n -- ly __ rest,
@@ -97,9 +97,9 @@ altoWords = \lyricmode {
 }
 bassWords = \lyricmode {
   \set stanza = #"1. "
-  Ad can -- tus læ -- ti -- ti -- æ
-  Nos in -- vi -- tat ho -- di -- e
-  Spes et a -- mor pa -- tri -- æ Cœ -- le -- stis.
+  Ad can -- tus læ -- tí -- ti -- æ
+  Nos in -- ví -- tat hó -- di -- e
+  Spes et a -- mor pá -- tri -- æ Cæ -- lés -- tis.
   
   \set stanza = #"1. "
   Love and hope of heav’n -- ly rest,
@@ -109,9 +109,9 @@ bassWords = \lyricmode {
 altoWordsII = \lyricmode {
 %\markup\italic
   \set stanza = #"2. "
-  Na -- tus est E -- ma -- nu -- el,
-  Quod præ -- di -- xit Ga -- bri -- el,
-  Un -- de san -- ctus Da -- ni -- el Est te -- stis.
+  Na -- tus est E -- má -- nu -- el,
+  Quod præ -- dí -- xit Gá -- bri -- el,
+  Un -- de san -- ctus Dá -- ni -- el Est te -- stis.
   
   \set stanza = #"2. "
   Born is our E -- man -- u -- el,
@@ -120,9 +120,9 @@ altoWordsII = \lyricmode {
 }
 altoWordsIII = \lyricmode {
   \set stanza = #"3. "
-  Er -- go nos cum gau -- di -- o,
-  No -- stra si -- mul con -- ti -- o
-  Be -- ne -- di -- cat Do -- mi -- no Ju -- bi -- lo.
+  Er -- go nos cum gáu -- di -- o,
+  No -- stra si -- mul cón -- ti -- o
+  Be -- ne -- dí -- cat Dó -- mi -- no Jú -- bi -- lo.
   
   \set stanza = #"3. "
   Where -- fore let th’as -- sem -- bly __ all
@@ -132,9 +132,9 @@ altoWordsIII = \lyricmode {
 
 bassWordsIII = \lyricmode {
   \set stanza = #"3. "
-  Er -- go nos cum gau -- di -- o,
-  No -- stra si -- mul con -- ti -- o
-  Be -- ne -- di -- cat Do -- mi -- no Ju -- bi -- lo.
+  Er -- go nos cum gáu -- di -- o,
+  No -- stra si -- mul cón -- ti -- o
+  Be -- ne -- dí -- cat Dó -- mi -- no Jú -- bi -- lo.
   
   \set stanza = #"3. "
   Where -- fore let th’as -- sem -- bly all

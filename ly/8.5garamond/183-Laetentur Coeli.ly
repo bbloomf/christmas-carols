@@ -2,7 +2,7 @@
 \version "2.14.2"
 #(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Lætentur Cœli"}}
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Lætentur Cæli"}}
   composer = \markup\oldStyleNum"Rev. Hubert Gruender, S.J."
   tagline = ""
 }
@@ -102,12 +102,12 @@ sopMusic = \relative c' {
   
 }
 sopWords = \lyricmode {
-  Læ -- ten -- tur Cœ -- li __ et ex -- sul -- tet ter -- ra,
+  Læ -- ten -- tur Cæ -- li __ et ex -- sul -- tet ter -- ra,
   et ex -- sul -- tet ter -- ra
   an -- te fa -- ci -- em Do -- mi -- ni.
-  Læ -- ten -- tur __ cœ -- li
+  Læ -- ten -- tur __ cæ -- li
   
-  Læ -- ten -- tur __ cœ -- li.
+  Læ -- ten -- tur __ cæ -- li.
   An -- te fa -- ci -- em Do -- mi -- ni.
   Quo -- ni -- am ve -- nit,
   quo -- ni -- am ve -- nit, __
@@ -167,12 +167,12 @@ bassMusic = \relative c {
   g1 \bar "|."
 }
 bassWords = \lyricmode {
-  Læ -- ten -- tur Cœ -- li et ex -- sul -- tet ter -- ra,
+  Læ -- ten -- tur Cæ -- li et ex -- sul -- tet ter -- ra,
   et ex -- sul -- tet ter -- ra
   an -- te fa -- ci -- em Do -- mi -- ni.
-  Læ -- ten -- tur cœ -- li et ex -- sul -- tet ter -- ra.
+  Læ -- ten -- tur cæ -- li et ex -- sul -- tet ter -- ra.
   
-  Læ -- ten -- tur cœ -- li et ex -- sul -- tet ter -- ra.
+  Læ -- ten -- tur cæ -- li et ex -- sul -- tet ter -- ra.
   An -- te fa -- ci -- em Do -- mi -- ni.
   Quo -- ni -- am ve -- nit,
   quo -- ni -- am ve -- nit,

@@ -365,7 +365,7 @@ altoWordsII = \lyricmode {
   Hunc I -- sá -- i -- as flo -- rem, præ -- sá -- giis cé -- ci -- nit.
   Ad e -- jus nos a -- mó -- rem, Na -- scén -- tis ál -- li -- cit.
   Flos vir -- gam sú -- per -- at
-  cœ -- li ter -- ræ -- que ci -- ves, Flos il -- le ré -- cre -- at.
+  cæ -- li ter -- ræ -- que ci -- ves, Flos il -- le ré -- cre -- at.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV

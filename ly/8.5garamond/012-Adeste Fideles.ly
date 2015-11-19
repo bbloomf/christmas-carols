@@ -116,48 +116,48 @@ altoWords = {
   \lyricmode {
     \set stanza = #"1. "
   \set ignoreMelismata = ##t
-    Ad -- e -- ste fi -- de -- les, Læ -- ti tri -- um -- phan -- _ tes,
-    Ve -- ni -- te, ve -- ni -- _ te in Beth -- _ le -- hem; Na -- tum vi -- de -- te,
-    Re -- gem an -- ge -- lo -- _ rum;
+    Ad -- és -- te fi -- dé -- les, Læ -- ti tri -- um -- phán -- _ tes,
+    Ve -- ní -- te, ve -- ní -- _ te in Béth -- _ le -- hem; Na -- tum vi -- dé -- te,
+    Re -- gem an -- ge -- ló -- _ rum;
   \unset ignoreMelismata
   }
   \set stanza = \markup\dynamic"mf  "
   \lyricmode {
-    Ve -- ni -- te ad -- o -- re -- mus,
+    Ve -- ní -- te ad -- o -- ré -- mus,
   }
   \set stanza = \markup\dynamic" f "
   \lyricmode {
-    Ve -- ni -- te ad -- o -- re -- mus,
+    Ve -- ní -- te ad -- o -- ré -- mus,
   }
   \set stanza = \markup\dynamic"ff  "
   \lyricmode {
     \raiseLyrics
-    Ve -- ni -- te ad -- o -- re -- mus, __ Do -- mi -- num.
+    Ve -- ní -- te ad -- o -- ré -- mus, __ Dó -- mi -- num.
   }
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
   \set stanza = #"2. "
   \set ignoreMelismata = ##t
-  _ De -- um de De -- o, lu -- _ men de lu -- mi -- ne, ""
-  Ges -- tant pu -- el -- _ læ __ _ vi -- _ sce -- ra.
-  De -- um __ _ ve -- rum, ge -- ni -- tum non fac -- _ tum.
+  _ De -- um de De -- o, lu -- _ men de lú -- mi -- ne, ""
+  Ges -- tant pu -- él -- _ læ __ _ ví -- _ sce -- ra.
+  De -- um __ _ ve -- rum, gé -- ni -- tum non fac -- _ tum.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
   \set stanza = #"3. "
   \set ignoreMelismata = ##t
-  _ Can -- tet nunc ‘I -- o,’ cho -- rus an -- ge -- lo -- _ rum_; ""
-  Can -- tet nunc au -- _ la __ _ cæ -- les -- ti -- um,
-  Glo -- ri -- _ a! __ _ So -- li De -- o Glo -- ri -- a!
+  _ Can -- tet nunc ‘I -- o,’ cho -- rus an -- ge -- ló -- _ rum_; ""
+  Can -- tet nunc au -- _ la __ _ cæ -- lés -- ti -- um,
+  Gló -- ri -- _ a! __ _ So -- li De -- o Gló -- ri -- a!
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
   \set stanza = #"4. "
   \set ignoreMelismata = ##t
-  _ Er -- go qui na -- tus di -- e ho -- di -- er -- _ na. ""
-  Je -- su, __ _ ti -- _ bi sit glo -- _ ri -- a,
-  Pa -- tris æ -- ter -- ni Ver -- bum ca -- ro fac -- _ tum.
+  _ Er -- go qui na -- tus di -- e ho -- di -- ér -- _ na. ""
+  Je -- su, __ _ ti -- _ bi sit gló -- _ ri -- a,
+  Pa -- tris æ -- tér -- ni Ver -- bum ca -- ro fac -- _ tum.
 }
 
 tenorMusic = \relative c' {

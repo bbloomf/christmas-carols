@@ -157,24 +157,24 @@ sopMusic = \relative c' {
   g \bar"|."
 }
 sopWords = \lyricmode {
-  O ma -- gnum my -- ste -- ri -- um et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum.
-    O ma -- gnum my -- ste -- ri -- um et ad -- mi -- ra -- bi -- le,
-      et ad -- mi -- ra -- bi -- le
-    sa -- cra -- men -- tum,
-  ut a -- ni -- ma -- li -- a vi -- de -- rent Do -- mi -- num na -- tum,
-    vi -- de -- rent Do -- mi -- num na -- tum
-  ja -- cen -- tem in præ -- se -- pi -- o,
-    ja -- cen -- tem in præ -- se -- pi -- o.
+  O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum.
+    O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le,
+      et ad -- mi -- rá -- bi -- le
+    sa -- cra -- mén -- tum,
+  ut a -- ni -- má -- li -- a vi -- dé -- rent Dó -- mi -- num na -- tum,
+    vi -- dé -- rent Dó -- mi -- num na -- tum
+  ja -- cén -- tem in præ -- sé -- pi -- o,
+    ja -- cén -- tem in præ -- sé -- pi -- o.
   
-  O be -- a -- ta vir -- go cu -- jus vi -- sce -- ra
-  me -- ru -- e -- runt por -- ta -- re Do -- mi -- num Je -- sum Chri -- stum.
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja. __
+  O be -- á -- ta vir -- go cu -- jus ví -- sce -- ra
+  me -- ru -- é -- runt por -- tá -- re Dó -- mi -- num Je -- sum Chri -- stum.
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja. __
 }
 
 altoMusic = \relative c' {
@@ -269,27 +269,27 @@ altoMusic = \relative c' {
   d1 \bar"|."
 }
 altoWords = \lyricmode {
-  O ma -- gnum my -- ste -- ri -- um et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum.
-    O ma -- gnum my -- ste -- ri -- um et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
-      et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
-  ut a -- ni -- ma -- li -- a vi -- de -- rent Do -- mi -- num na -- tum,
-    vi -- de -- rent Do -- mi -- num na -- tum
-  ja -- cen -- tem,
-    ja -- cen -- tem
-  in præ -- se -- pi -- o,
-    ja -- cen -- tem in præ -- se -- pi -- o.
+  O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum.
+    O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
+      et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
+  ut a -- ni -- má -- li -- a vi -- dé -- rent Dó -- mi -- num na -- tum,
+    vi -- dé -- rent Dó -- mi -- num na -- tum
+  ja -- cén -- tem,
+    ja -- cén -- tem
+  in præ -- sé -- pi -- o,
+    ja -- cén -- tem in præ -- sé -- pi -- o.
   
-  O be -- a -- ta vir -- go cu -- jus vi -- sce -- ra
-  me -- ru -- e -- runt por -- ta -- re Do -- mi -- num Je -- sum Chri -- stum.
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja. __
+  O be -- á -- ta vir -- go cu -- jus ví -- sce -- ra
+  me -- ru -- é -- runt por -- tá -- re Dó -- mi -- num Je -- sum Chri -- stum.
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja. __
 }
 
 tenorMusic = \relative c' {
@@ -377,27 +377,27 @@ tenorMusic = \relative c' {
 }
 
 tenorWords = \lyricmode {
-  O ma -- gnum my -- ste -- ri -- um et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
-    et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
-  ut a -- ni -- ma -- li -- a,
-    ut a -- ni -- ma -- li -- a
-  vi -- de -- rent Do -- mi -- num na -- tum,
-    vi -- de -- rent Do -- mi -- num na -- tum
-  ja -- cen -- tem in præ -- se -- pi -- o,
-    ja -- cen -- tem in præ -- se -- pi -- o,
-      in præ -- se -- pi -- o.
+  O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
+    et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
+  ut a -- ni -- má -- li -- a,
+    ut a -- ni -- má -- li -- a
+  vi -- dé -- rent Dó -- mi -- num na -- tum,
+    vi -- dé -- rent Dó -- mi -- num na -- tum
+  ja -- cén -- tem in præ -- sé -- pi -- o,
+    ja -- cén -- tem in præ -- sé -- pi -- o,
+      in præ -- sé -- pi -- o.
   
-  O be -- a -- ta vir -- go cu -- jus vi -- sce -- ra
-  me -- ru -- e -- runt por -- ta -- re Do -- mi -- num Je -- sum Chri -- stum.
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja.
+  O be -- á -- ta vir -- go cu -- jus ví -- sce -- ra
+  me -- ru -- é -- runt por -- tá -- re Dó -- mi -- num Je -- sum Chri -- stum.
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja.
 }
 
 bassMusic = \relative c' {
@@ -485,22 +485,22 @@ bassMusic = \relative c' {
   g1 \bar"|."
 }
 bassWords = \lyricmode {
-  O ma -- gnum my -- ste -- ri -- um et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
-    et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
-  ut a -- ni -- ma -- li -- a vi -- de -- rent Do -- mi -- num na -- tum,
-  ja -- cen -- tem in præ -- se -- pi -- o,
-    ja -- cen -- tem in præ -- se -- pi -- o,
-    in præ -- se -- pi -- o.
+  O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
+    et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
+  ut a -- ni -- má -- li -- a vi -- dé -- rent Dó -- mi -- num na -- tum,
+  ja -- cén -- tem in præ -- sé -- pi -- o,
+    ja -- cén -- tem in præ -- sé -- pi -- o,
+    in præ -- sé -- pi -- o.
   
-  O be -- a -- ta vir -- go cu -- jus vi -- sce -- ra
-  me -- ru -- e -- runt Je -- sum Chri -- stum.
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja,
-  Al -- le -- lu -- ja. __
+  O be -- á -- ta vir -- go cu -- jus ví -- sce -- ra
+  me -- ru -- é -- runt Je -- sum Chri -- stum.
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja,
+  Al -- le -- lú -- ja. __
 }
 
 pianoRH = \relative c' {

@@ -193,7 +193,7 @@
 {\page-link #42 {\fill-with-pattern #0.1 #CENTER . "Joseph, O Dear Joseph Mine" \oldStyleNum"38"}}
 {\page-link #18 {\fill-with-pattern #0.1 #CENTER . "Joy to the World!" \oldStyleNum"14"}}
 {\page-link #176 {\fill-with-pattern #0.1 #CENTER . "Kling Glöckchen" \oldStyleNum"172"}}
-{\page-link #187 {\fill-with-pattern #0.1 #CENTER . "Lætentur Cœli" \oldStyleNum"183"}}
+{\page-link #187 {\fill-with-pattern #0.1 #CENTER . "Lætentur Cæli" \oldStyleNum"183"}}
 {\page-link #122 {\fill-with-pattern #0.1 #CENTER . \italic"Like silver lamps in a distant shrine" \oldStyleNum"118"}}
 {\page-link #30 {\fill-with-pattern #0.1 #CENTER . \italic"Listen Lordings unto me" \oldStyleNum"26"}}
 {\page-link #97 {\fill-with-pattern #0.1 #CENTER . "Lo, How a Rose E’er Blooming" \oldStyleNum"93"}}
