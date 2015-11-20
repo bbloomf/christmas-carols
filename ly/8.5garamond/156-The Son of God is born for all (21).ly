@@ -163,9 +163,9 @@ altoWordsII = \lyricmode {
   
   \set stanza = #"10. "
   Now chant we mer -- ri -- ly \markup\italic i -- \markup\italic o
-  With such as play \markup\italic in \markup\italic or -- \markup\italic ga -- \markup{\italic "no" ";"}
+  With such as play \markup\italic in \markup\italic ór -- \markup\italic ga -- \markup{\italic "no" ";"}
   And with the sing -- ers \markup\italic in \markup\italic cho -- \markup\italic ro
-  \markup\italic Be -- \markup\italic ne -- \markup\italic di -- \markup\italic ca -- \markup\italic mus \markup\italic Do -- \markup\italic mi -- \markup\italic no.
+  \markup\italic Be -- \markup\italic ne -- \markup\italic di -- \markup\italic cá -- \markup\italic mus \markup\italic Dó -- \markup\italic mi -- \markup\italic no.
 }
 altoWordsIII = \lyricmode {
 }

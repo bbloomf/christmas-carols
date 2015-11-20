@@ -89,7 +89,8 @@ altoWords = \lyricmode {
   The an -- gel Ga -- bri -- el from heav -- en came, __
   His wings as drif -- ted snow, his eyes __ a -- flame; __
   “All hail,” said he, “thou low -- ly maid -- en Ma -- ry, __
-  Most high -- ly fa -- vored la -- dy,” Glo -- ri -- a! __
+  Most high -- ly fa -- vored la -- dy,”
+  \markup\italic Gló -- \markup\italic ri -- \markup\italic a! __
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
@@ -102,7 +103,7 @@ altoWordsII = \lyricmode {
   \unset ignoreMelismata
   told, __
   Most high -- ly fa -- vored la -- dy,”
-  Glo -- ri -- a! __
+  \markup\italic Gló -- \markup\italic ri -- \markup\italic a! __
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
@@ -116,7 +117,7 @@ altoWordsIII = \lyricmode {
   Name.”
 __
   Most high -- ly fa -- vored la -- dy,
-  Glo -- ri -- a! __
+  \markup\italic Gló -- \markup\italic ri -- \markup\italic a! __
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
@@ -129,7 +130,7 @@ altoWordsIV = \lyricmode {
   \unset ignoreMelismata
   say, __
   “Most high -- ly fa -- vored la -- dy,”
-  Glo -- ri -- a! __
+  \markup\italic Gló -- \markup\italic ri -- \markup\italic a! __
 }
 
 tenorMusic = \relative c' {

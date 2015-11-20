@@ -132,9 +132,9 @@ altoWordsIII = \lyricmode {
   At Beth -- lem Eph -- ra -- tha. __
   
   \set stanza = #"6. "
-  \markup\italic Glo -- \markup\italic ri -- \markup\italic a \markup\italic ti -- \markup\italic bi, \markup\italic Do -- \markup\italic mi -- \markup\italic ne,
+  \markup\italic Gló -- \markup\italic ri -- \markup\italic a \markup\italic ti -- \markup\italic bi, \markup\italic Dó -- \markup\italic mi -- \markup\italic ne,
   Al -- le -- lu -- ia,
-  \markup\italic Qui \markup\italic na -- \markup\italic tus \markup\italic es \markup\italic pro \markup\italic ho -- \markup\italic mi -- \markup\italic ne,
+  \markup\italic Qui \markup\italic na -- \markup\italic tus \markup\italic es \markup\italic pro \markup\italic hó -- \markup\italic mi -- \markup\italic ne,
   Al -- le -- _ _ lu -- ia. __
 }
 altoWordsIV = \lyricmode {

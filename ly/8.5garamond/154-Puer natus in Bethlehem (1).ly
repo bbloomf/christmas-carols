@@ -111,97 +111,97 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
-  Pu -- er na -- tus in Beth -- le -- hem,
-  Al -- le -- lu -- ia.
-  Un -- de gau -- det Je -- ru -- sa -- lem,
-  Al -- le -- lu -- ia.
+  Pu -- er na -- tus in Béth -- le -- hem,
+  Al -- le -- lú -- ia.
+  Un -- de gau -- det Je -- rú -- sa -- lem,
+  Al -- le -- lú -- ia.
   
   \set stanza = #"5. "
-  Si -- ne ser -- pen -- tis vul -- ne -- re,
-  Al -- le -- lu -- ia.
-  De nos -- tro ve -- nit san -- gui -- ne,
-  Al -- le -- lu -- ia.
+  Si -- ne ser -- pén -- tis vúl -- ne -- re,
+  Al -- le -- lú -- ia.
+  De nos -- tro ve -- nit sán -- gui -- ne,
+  Al -- le -- lú -- ia.
   
   \set stanza = #"9. "
-  Co -- gno -- vit bos et a -- si -- nus
-  Al -- le -- lu -- ia.
-  Quod Pu -- er e -- rat Do -- mi -- nus.
-  Al -- le -- lu -- ia.
+  Co -- gnó -- vit bos et á -- si -- nus
+  Al -- le -- lú -- ia.
+  Quod Pu -- er e -- rat Dó -- mi -- nus.
+  Al -- le -- lú -- ia.
   
   \set stanza = #"12. "
-  In -- tran -- tes do -- mum in -- vi -- cem,
-  Al -- le -- lu -- ia.
-  Na -- tum sa -- lu -- tant Ho -- mi -- nem,
-  Al -- le -- lu -- ia.
+  In -- trán -- tes do -- mum ín -- vi -- cem,
+  Al -- le -- lú -- ia.
+  Na -- tum sa -- lú -- tant Hó -- mi -- nem,
+  Al -- le -- lú -- ia.
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
 %\markup\italic
   \set stanza = #"2. "
-  As -- sum -- psit car -- nem ho -- mi -- nis,
-  Al -- le -- lu -- ia.
-  Ver -- bum Pa -- tris al -- tis -- si -- mi,
-  Al -- le -- lu -- ia.
+  As -- súm -- psit car -- nem hó -- mi -- nis,
+  Al -- le -- lú -- ia.
+  Ver -- bum Pa -- tris al -- tís -- si -- mi,
+  Al -- le -- lú -- ia.
   
   
   \set stanza = #"6. "
-  In car -- ne no -- bis si -- mi -- lis,
-  Al -- le -- lu -- ia.
-  Pec -- ca -- to sed dis -- si -- mi -- lis,
-  Al -- le -- lu -- ia.
+  In car -- ne no -- bis sí -- mi -- lis,
+  Al -- le -- lú -- ia.
+  Pec -- cá -- to sed dis -- sí -- mi -- lis,
+  Al -- le -- lú -- ia.
   
   \set stanza = #"10. "
-  Et an -- ge -- lus pas -- to -- ri -- bus,
-  Al -- le -- lu -- ia.
-  Re -- ve -- lat Quis sit Do -- mi -- nus,
-  Al -- le -- lu -- ia.
+  Et án -- ge -- lus pas -- tó -- ri -- bus,
+  Al -- le -- lú -- ia.
+  Re -- vé -- lat Quis sit Dó -- mi -- nus,
+  Al -- le -- lú -- ia.
   
   
   \set stanza = #"13. "
-  In hoc na -- ta -- li gau -- di -- o,
-  Al -- le -- lu -- ia.
-  Be -- ne -- di -- ca -- mus Do -- mi -- no,
-  Al -- le -- lu -- ia.
+  In hoc na -- tá -- li gáu -- di -- o,
+  Al -- le -- lú -- ia.
+  Be -- ne -- di -- cá -- mus Dó -- mi -- no,
+  Al -- le -- lú -- ia.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
   \set stanza = #"3. "
-  Per Ga -- bri -- e -- lis nun -- ti -- um,
-  Al -- le -- lu -- ia.
-  Vir -- go con -- ce -- pit Fi -- li -- um,
-  Al -- le -- lu -- ia.
+  Per Ga -- bri -- é -- lis nún -- ti -- um,
+  Al -- le -- lú -- ia.
+  Vir -- go con -- cé -- pit Fí -- li -- um,
+  Al -- le -- lú -- ia.
   
   \set stanza = #"7. "
-  Tam -- quam spon -- sus de tha -- la -- mo,
-  Al -- le -- lu -- ia.
-  Pro -- ces -- sit ma -- tris u -- te -- ro,
-  Al -- le -- lu -- ia.
+  Tam -- quam spon -- sus de thá -- la -- mo,
+  Al -- le -- lú -- ia.
+  Pro -- cés -- sit ma -- tris ú -- te -- ro,
+  Al -- le -- lú -- ia.
   
   \set stanza = #"11. "
-  Ma -- gi de lon -- ge ve -- ni -- unt,
-  Al -- le -- lu -- ia.
-  Au -- rum, thus, myr -- rham of -- fe -- runt.
-  Al -- le -- lu -- ia.
+  Ma -- gi de lon -- ge vé -- ni -- unt,
+  Al -- le -- lú -- ia.
+  Au -- rum, thus, myr -- rham óf -- fe -- runt.
+  Al -- le -- lú -- ia.
   
   \set stanza = #"14. "
-  Lau -- de -- tur san -- cta Tri -- ni -- tas,
-  Al -- le -- lu -- ia.
-  De -- o di -- ca -- mus gra -- ti -- as,
-  Al -- le -- lu -- ia.
+  Lau -- dé -- tur san -- cta Trí -- ni -- tas,
+  Al -- le -- lú -- ia.
+  De -- o di -- cá -- mus grá -- ti -- as,
+  Al -- le -- lú -- ia.
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
   \set stanza = #"4. "
-  De ma -- tre na -- tus vir -- gi -- ne,
-  Al -- le -- lu -- ia.
-  Si -- ne vi -- ri -- li se -- mi -- ne,
-  Al -- le -- lu -- ia.
+  De ma -- tre na -- tus vír -- gi -- ne,
+  Al -- le -- lú -- ia.
+  Si -- ne vi -- rí -- li sé -- mi -- ne,
+  Al -- le -- lú -- ia.
   
   \set stanza = #"8. "
-  Hic ja -- cet in præ -- se -- pi -- o,
-  Al -- le -- lu -- ia.
-  Qui re -- gnat si -- ne ter -- mi -- no.
-  Al -- le -- lu -- ia.
+  Hic ja -- cet in præ -- sé -- pi -- o,
+  Al -- le -- lú -- ia.
+  Qui re -- gnat si -- ne tér -- mi -- no.
+  Al -- le -- lú -- ia.
   
   
 }

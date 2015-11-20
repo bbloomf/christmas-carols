@@ -128,10 +128,10 @@ altoWords = \lyricmode {
   
   \raiseLyrics
   Born of mo -- ther, blest o’er o -- ther,
-  \markup\italic ex \markup\italic Ma -- \markup\italic ri -- \markup\italic a
-  \markup\italic Vir -- \markup\italic gi -- \markup\italic ne
+  \markup\italic ex \markup\italic Ma -- \markup\italic rí -- \markup\italic a
+  \markup\italic Vír -- \markup\italic gi -- \markup\italic ne
   In a sta -- ble "(’tis" no fa -- ble),
-  \markup\italic Chris -- \markup\italic tus \markup\italic na -- \markup\italic tus \markup\italic ho -- \markup\italic di -- \markup\italic e.
+  \markup\italic Chris -- \markup\italic tus \markup\italic na -- \markup\italic tus \markup\italic hó -- \markup\italic di -- \markup\italic e.
 }
 altoWordsII = \lyricmode {
   \dropLyricsV

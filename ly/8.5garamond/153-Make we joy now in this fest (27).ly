@@ -189,56 +189,56 @@ altoWords = \lyricmode {
   \markup\italic E -- \markup\italic ia. __
   
   \set stanza = #"1. "
-  \markup\italic A \markup\italic Pa -- \markup\italic tre \markup\italic U -- \markup\italic ni -- \markup\italic gen -- \markup\italic i -- \markup\italic tus
+  \markup\italic A \markup\italic Pa -- \markup\italic tre \markup\italic U -- \markup\italic ni -- \markup\italic gén -- \markup\italic i -- \markup\italic tus
   Is through a maid -- en come to us:
   Sing we of Him and say Wel -- come,
-  \markup\italic Ve -- \markup\italic ni, \markup\italic Re -- \markup\italic dem -- \markup\italic ptor
+  \markup\italic Ve -- \markup\italic ni, \markup\italic Re -- \markup\italic dém -- \markup\italic ptor
   \set associatedVoice = "sopranos"
-  \markup\italic gen -- \markup\italic ti -- \markup\italic um.
+  \markup\italic gén -- \markup\italic ti -- \markup\italic um.
   
   
   \set stanza = #"4. "
   \unset associatedVoice
-  \markup\italic Ma -- \markup\italic ri -- \markup\italic a \markup\italic ven -- \markup\italic tre \markup\italic con -- \markup\italic ce -- \markup\italic pit,
+  \markup\italic Ma -- \markup\italic rí -- \markup\italic a \markup\italic ven -- \markup\italic tre \markup\italic con -- \markup\italic cé -- \markup\italic pit,
   The Ho -- ly Ghost was ay her with,
   Of her in Beth -- lem born He is,
-  \markup\italic Con -- \markup\italic sors \markup\italic pa -- \markup\italic ter -- \markup\italic ni
+  \markup\italic Con -- \markup\italic sors \markup\italic pa -- \markup\italic tér -- \markup\italic ni
   \set associatedVoice = "sopranos"
-  \markup\italic lu -- \markup\italic mi -- \markup\italic nis.
+  \markup\italic lú -- \markup\italic mi -- \markup\italic nis.
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
   \repeat unfold 16{\skip1}
   \set stanza = #"2. "
-  \markup\italic A -- \markup\italic gno -- \markup\italic scat \markup\italic o -- \markup\italic mne \markup\italic sæ -- \markup\italic cu -- \markup\italic lum,
+  \markup\italic A -- \markup\italic gnós -- \markup\italic cat \markup\italic o -- \markup\italic mne \markup\italic sæ -- \markup\italic cu -- \markup\italic lum,
   A bright star made three kings to come,
   Him for to seek with their pre -- sen’s,
-  \markup\italic Ver -- \markup\italic bum \markup\italic su -- \markup\italic per -- \markup\italic num
+  \markup\italic Ver -- \markup\italic bum \markup\italic su -- \markup\italic pér -- \markup\italic num
   \set associatedVoice = "sopranos"
-  \markup\italic prod -- \markup\italic i -- \markup\italic ens.
+  \markup\italic pród -- \markup\italic i -- \markup\italic ens.
   
   
   \set stanza = #"5. "
   \unset associatedVoice
-  \markup\italic O \markup\italic lux \markup\italic be -- \markup\italic a -- \markup\italic ta \markup\italic Tri -- \markup\italic ni -- \markup\italic tas,
+  \markup\italic O \markup\italic lux \markup\italic be -- \markup\italic á -- \markup\italic ta \markup\italic Trí -- \markup\italic ni -- \markup\italic tas,
   He lay be -- tween an ox and ass,
   Be -- side His moth -- er maid -- en free,
-  \markup\italic Glo -- \markup\italic ri -- \markup\italic a \markup\italic Ti -- \markup\italic bi,
+  \markup\italic Gló -- \markup\italic ri -- \markup\italic a \markup\italic Ti -- \markup\italic bi,
   \set associatedVoice = "sopranos"
-  \markup\italic Do -- \markup\italic mi -- \markup\italic ne.
+  \markup\italic Dó -- \markup\italic mi -- \markup\italic ne.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
   \repeat unfold 16{\skip1}
   \set stanza = #"3. "
-  \markup\italic A \markup\italic so -- \markup\italic lis \markup\italic or -- \markup\italic tus \markup\italic car -- \markup\italic di -- \markup\italic ne
+  \markup\italic A \markup\italic so -- \markup\italic lis \markup\italic or -- \markup\italic tus \markup\italic cár -- \markup\italic di -- \markup\italic ne
   \set ignoreMelismata = ##t
   So might -- y a Lord is none as He;
   \unset ignoreMelismata
   And to our kind He hath Him knit,
   \markup\italic A -- \markup\italic dam \markup\italic pa -- \markup\italic rens \markup\italic quod
   \set associatedVoice = "sopranos"
-  \markup\italic pol -- \markup\italic lu -- \markup\italic it.
+  \markup\italic pól -- \markup\italic lu -- \markup\italic it.
 }
 altoWordsIV = \lyricmode {
   \repeat unfold 16{\skip1}

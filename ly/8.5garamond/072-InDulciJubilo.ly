@@ -116,58 +116,58 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
-  \markup\italic In \markup\italic dul -- \markup\italic ci \markup\italic ju -- \markup\italic bi -- \markup\italic lo __ Let us our hom -- age show: __
-  Our heart’s joy re -- clin -- eth "" \markup\italic In \markup\italic præ -- \markup\italic se -- \markup\italic pi -- \markup\italic o, __
+  \markup\italic In \markup\italic dul -- \markup\italic ci \markup\italic jú -- \markup\italic bi -- \markup\italic lo __ Let us our hom -- age show: __
+  Our heart’s joy re -- clin -- eth "" \markup\italic In \markup\italic præ -- \markup\italic sé -- \markup\italic pi -- \markup\italic o, __
   And like a bright star shin -- eth
-  \markup\italic Ma -- \markup\italic tris \markup\italic in \markup\italic gre -- \markup\italic mi -- \markup\italic o __
+  \markup\italic Ma -- \markup\italic tris \markup\italic in \markup\italic gré -- \markup\italic mi -- \markup\italic o __
   \markup\italic Al -- \markup\italic pha \markup\italic es \markup\italic et \markup\italic O! __
   \markup\italic Al -- \markup\italic pha \markup\italic es \markup\italic et \markup\italic O! __
 
-  \markup\italic Ma -- \markup\italic tris \markup\italic in \markup\italic gre -- \markup\italic mi -- \markup\italic o __
+  \markup\italic Ma -- \markup\italic tris \markup\italic in \markup\italic gré -- \markup\italic mi -- \markup\italic o __
   \markup\italic Al -- \markup\italic pha \markup\italic es \markup\italic et \markup\italic O! __
   \markup\italic Al -- \markup\italic pha \markup\italic es \markup\italic et \markup\italic O! __
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
   \set stanza = #"2. "
-  \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic par -- \markup\italic vu -- \markup\italic le, __
+  \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic pár -- \markup\italic vu -- \markup\italic le, __
   I yearn for Thee al -- way; __
   Hear me, I be -- seech Thee, ""
-  \markup\italic O \markup\italic Puer \markup\italic op -- \markup\italic ti -- \markup\italic me, __
+  \markup\italic O \markup\italic Puer \markup\italic óp -- \markup\italic ti -- \markup\italic me, __
   My pray -- ing let it reach Thee,
-  \markup\italic O \markup\italic Prin -- \markup\italic ceps \markup\italic glo -- \markup\italic ri -- \markup\italic æ. __
+  \markup\italic O \markup\italic Prin -- \markup\italic ceps \markup\italic gló -- \markup\italic ri -- \markup\italic æ. __
   \markup\italic Tra -- \markup\italic he \markup\italic me \markup\italic post \markup\italic Te! __
   \markup\italic Tra -- \markup\italic he \markup\italic me \markup\italic post \markup\italic Te! __
-  \markup\italic O \markup\italic Prin -- \markup\italic ceps \markup\italic glo -- \markup\italic ri -- \markup\italic æ. __
+  \markup\italic O \markup\italic Prin -- \markup\italic ceps \markup\italic gló -- \markup\italic ri -- \markup\italic æ. __
   \markup\italic Tra -- \markup\italic he \markup\italic me \markup\italic post \markup\italic Te! __
   \markup\italic Tra -- \markup\italic he \markup\italic me \markup\italic post \markup\italic Te! __
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
   \set stanza = #"3. "
-  \markup\italic O \markup\italic Pa -- \markup\italic tris \markup\italic ca -- \markup\italic ri -- \markup\italic tas! __
-  \markup\italic O \markup\italic na -- \markup\italic ti \markup\italic lem -- \markup\italic i -- \markup\italic tas! __
+  \markup\italic O \markup\italic Pa -- \markup\italic tris \markup\italic cá -- \markup\italic ri -- \markup\italic tas! __
+  \markup\italic O \markup\italic na -- \markup\italic ti \markup\italic lé -- \markup\italic ni -- \markup\italic tas! __
   Deep -- ly were we stain -- ed
-  \markup\italic Per \markup\italic nos -- \markup\italic tra \markup\italic cri -- \markup\italic mi -- \markup\italic na; __
+  \markup\italic Per \markup\italic nos -- \markup\italic tra \markup\italic crí -- \markup\italic mi -- \markup\italic na; __
   But Thou for us hast gain -- ed
-  \markup\italic Cæ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
-    \markup\italic Qua -- \markup\italic lis \markup\italic glo -- \markup\italic ri -- \markup\italic a! __
-    \markup\italic Qua -- \markup\italic lis \markup\italic glo -- \markup\italic ri -- \markup\italic a! __
-  \markup\italic Cæ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
-    \markup\italic Qua -- \markup\italic lis \markup\italic glo -- \markup\italic ri -- \markup\italic a! __
-    \markup\italic Qua -- \markup\italic lis \markup\italic glo -- \markup\italic ri -- \markup\italic a! __
+  \markup\italic Cæ -- \markup\italic ló -- \markup\italic rum \markup\italic gáu -- \markup\italic di -- \markup\italic a. __
+    \markup\italic Qua -- \markup\italic lis \markup\italic gló -- \markup\italic ri -- \markup\italic a! __
+    \markup\italic Qua -- \markup\italic lis \markup\italic gló -- \markup\italic ri -- \markup\italic a! __
+  \markup\italic Cæ -- \markup\italic ló -- \markup\italic rum \markup\italic gáu -- \markup\italic di -- \markup\italic a. __
+    \markup\italic Qua -- \markup\italic lis \markup\italic gló -- \markup\italic ri -- \markup\italic a! __
+    \markup\italic Qua -- \markup\italic lis \markup\italic gló -- \markup\italic ri -- \markup\italic a! __
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
   \set stanza = #"4. "
-  \markup\italic U -- \markup\italic bi \markup\italic sunt \markup\italic gau -- \markup\italic di -- \markup\italic a __
+  \markup\italic U -- \markup\italic bi \markup\italic sunt \markup\italic gáu -- \markup\italic di -- \markup\italic a __
   "" If they be not there? __
   There are an -- gels sing -- ing ""
-  \markup\italic No -- \markup\italic va \markup\italic can -- \markup\italic ti -- \markup\italic ca; __
+  \markup\italic No -- \markup\italic va \markup\italic cán -- \markup\italic ti -- \markup\italic ca; __
   And there the bells are ring -- ing
-  \markup\italic In \markup\italic Re -- \markup\italic gis \markup\italic cu -- \markup\italic ri -- \markup\italic a __
+  \markup\italic In \markup\italic Re -- \markup\italic gis \markup\italic cú -- \markup\italic ri -- \markup\italic a __
   O that we were there! O that we were there!
-  \markup\italic In \markup\italic Re -- \markup\italic gis \markup\italic cu -- \markup\italic ri -- \markup\italic a __
+  \markup\italic In \markup\italic Re -- \markup\italic gis \markup\italic cú -- \markup\italic ri -- \markup\italic a __
   O that we were there! __ O that we were there!
 }
 

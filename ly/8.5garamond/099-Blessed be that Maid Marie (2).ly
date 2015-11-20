@@ -137,8 +137,8 @@ altoWords = \lyricmode {
   Born in __
   \unset associatedVoice
   time the Son of Man.
-  \markup\italic E -- \markup\italic ya! \markup\italic Je -- \markup\italic sus \markup\italic ho -- \markup\italic di -- \markup\italic e __
-  \markup\italic Na -- \markup\italic tus \markup\italic est \markup\italic de \markup\italic Vir --
+  \markup\italic E -- \markup\italic ya! \markup\italic Je -- \markup\italic sus \markup\italic hó -- \markup\italic di -- \markup\italic e __
+  \markup\italic Na -- \markup\italic tus \markup\italic est \markup\italic de \markup\italic Vír --
   \set associatedVoice = "tenors"
   \markup\italic gi -- \markup\italic ne. __
   
@@ -157,7 +157,7 @@ altoWords = \lyricmode {
   \set associatedVoice = "tenors"
   \markup\italic Stel -- \markup\italic la
   \unset associatedVoice
-  \markup\italic duc -- \markup\italic ti \markup\italic lu -- \markup\italic mi -- \markup\italic ne.
+  \markup\italic duc -- \markup\italic ti \markup\italic lú -- \markup\italic mi -- \markup\italic ne.
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
@@ -175,7 +175,7 @@ altoWordsII = \lyricmode {
   \set associatedVoice = "tenors"
   \markup\italic Pro \markup\italic pec --
   \unset associatedVoice
-  \markup\italic can -- \markup\italic te \markup\italic ho -- \markup\italic mi -- \markup\italic ne.
+  \markup\italic cán -- \markup\italic te \markup\italic hó -- \markup\italic mi -- \markup\italic ne.
   
   
   \repeat unfold 14 \skip1
@@ -209,7 +209,7 @@ altoWordsIII = \lyricmode {
   \set associatedVoice = "tenors"
   \markup\italic In \markup\italic ex --
   \unset associatedVoice
-  \markup\italic cel -- \markup\italic sis \markup\italic glo -- \markup\italic ri -- \markup\italic a.
+  \markup\italic cél -- \markup\italic sis \markup\italic gló -- \markup\italic ri -- \markup\italic a.
 }
 altoWordsIV = \lyricmode {
 }

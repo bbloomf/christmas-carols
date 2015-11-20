@@ -102,16 +102,16 @@ sopMusic = \relative c' {
   
 }
 sopWords = \lyricmode {
-  Læ -- ten -- tur Cæ -- li __ et ex -- sul -- tet ter -- ra,
-  et ex -- sul -- tet ter -- ra
-  an -- te fa -- ci -- em Do -- mi -- ni.
-  Læ -- ten -- tur __ cæ -- li
+  Læ -- tén -- tur Cæ -- li __ et ex -- súl -- tet ter -- ra,
+  et ex -- súl -- tet ter -- ra
+  an -- te fá -- ci -- em Dó -- mi -- ni.
+  Læ -- tén -- tur __ cæ -- li
   
-  Læ -- ten -- tur __ cæ -- li.
-  An -- te fa -- ci -- em Do -- mi -- ni.
-  Quo -- ni -- am ve -- nit,
-  quo -- ni -- am ve -- nit, __
-  quo -- ni -- am ve -- nit.
+  Læ -- tén -- tur __ cæ -- li.
+  An -- te fá -- ci -- em Dó -- mi -- ni.
+  Quó -- ni -- am ve -- nit,
+  quó -- ni -- am ve -- nit, __
+  quó -- ni -- am ve -- nit.
   
   ve -- nit, ve -- nit!
 }
@@ -167,17 +167,17 @@ bassMusic = \relative c {
   g1 \bar "|."
 }
 bassWords = \lyricmode {
-  Læ -- ten -- tur Cæ -- li et ex -- sul -- tet ter -- ra,
-  et ex -- sul -- tet ter -- ra
-  an -- te fa -- ci -- em Do -- mi -- ni.
-  Læ -- ten -- tur cæ -- li et ex -- sul -- tet ter -- ra.
+  Læ -- tén -- tur Cæ -- li et ex -- súl -- tet ter -- ra,
+  et ex -- súl -- tet ter -- ra
+  an -- te fá -- ci -- em Dó -- mi -- ni.
+  Læ -- tén -- tur cæ -- li et ex -- súl -- tet ter -- ra.
   
-  Læ -- ten -- tur cæ -- li et ex -- sul -- tet ter -- ra.
-  An -- te fa -- ci -- em Do -- mi -- ni.
-  Quo -- ni -- am ve -- nit,
-  quo -- ni -- am ve -- nit,
-  quo -- ni -- am ve -- nit,
-  quo -- ni -- am ve -- nit.
+  Læ -- tén -- tur cæ -- li et ex -- súl -- tet ter -- ra.
+  An -- te fá -- ci -- em Dó -- mi -- ni.
+  Quó -- ni -- am ve -- nit,
+  quó -- ni -- am ve -- nit,
+  quó -- ni -- am ve -- nit,
+  quó -- ni -- am ve -- nit.
   
   ve -- nit, ve -- nit!
 }

@@ -170,7 +170,7 @@ altoWords = {
     Of the
     \unset ignoreMelismata
     Vir -- gin Ma -- ry, filled with Grace,
-    \markup\italic Sal -- \markup\italic va -- \markup\italic tor \markup\italic mun --
+    \markup\italic Sal -- \markup\italic vá -- \markup\italic tor \markup\italic mun --
     \set associatedVoice = "sopranos"
     \markup\italic di \markup\italic na -- \markup\italic tus
     \unset associatedVoice
@@ -180,7 +180,7 @@ altoWords = {
   \set stanza = \markup\dynamic"ff  "
   \lyricmode {
     Be we mer -- ry in this Fest,
-    \markup\italic In \markup\italic quo \markup\italic Sal -- \markup\italic va -- \markup\italic tor \markup\italic na -- \markup\italic tus \markup\italic est.
+    \markup\italic In \markup\italic quo \markup\italic Sal -- \markup\italic vá -- \markup\italic tor \markup\italic na -- \markup\italic tus \markup\italic est.
     
   }
   \set stanza = \markup{\dynamic" mf" "4."}
@@ -191,7 +191,7 @@ altoWords = {
   \set stanza = \markup\dynamic"f  "
   \lyricmode{
     On Ma -- ry’s lap, that gen -- tle maid:
-    \markup\italic Sal -- \markup\italic va -- \markup\italic tor \markup\italic mun --
+    \markup\italic Sal -- \markup\italic vá -- \markup\italic tor \markup\italic mun --
     \set associatedVoice = "sopranos"
     \markup\italic di \markup\italic na -- \markup\italic tus \markup\italic est.
     \unset associatedVoice
@@ -207,7 +207,7 @@ altoWordsII = {
   \set stanza = \markup\dynamic"f  "
   \lyricmode{
     In __ Beth -- le -- hem, full nigh the wold,
-    \markup\italic “Sal -- \markup\italic va -- \markup\italic tor \markup\italic mun --
+    \markup\italic “Sal -- \markup\italic vá -- \markup\italic tor \markup\italic mun --
     \set associatedVoice = "sopranos"
     \markup\italic di \markup\italic na -- \markup\italic tus \markup\italic est.”
     \unset associatedVoice
@@ -218,7 +218,7 @@ altoWordsII = {
     “And thus in faith find Him ye shall
     Laid poor -- ly in an ox -- ’s stall.”
     The shep -- herds then laud -- ed God all,
-    \markup\italic Qui -- \markup\italic a \markup\italic Sal -- \markup\italic va --
+    \markup\italic Qui -- \markup\italic a \markup\italic Sal -- \markup\italic vá --
     \set associatedVoice = "sopranos"
     \markup\italic tor \markup\italic na -- \markup\italic tus \markup\italic est.
     \unset associatedVoice
@@ -230,7 +230,7 @@ altoWordsIII = \lyricmode {
   The shep -- herds were en -- com -- passed right,
   A -- bout them shone a glo -- rious light,
   “Dread ye naught,” said the An -- gel bright,
-  \markup\italic “Sal -- \markup\italic va -- \markup\italic tor \markup\italic mun --
+  \markup\italic “Sal -- \markup\italic vá -- \markup\italic tor \markup\italic mun --
   \set associatedVoice = "sopranos"
   \markup\italic di \markup\italic na -- \markup\italic tus \markup\italic est.”
   

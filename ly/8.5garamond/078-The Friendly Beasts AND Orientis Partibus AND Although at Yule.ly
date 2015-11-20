@@ -421,45 +421,45 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsIX
   \set stanza = #"1. "
-  O -- ri -- en -- tis par -- ti -- bus
-  Ad -- ven -- ta -- vit a -- si -- nus,
-  Pul -- cher et for -- tis -- si -- mus,
-  Sar -- ci -- nis ap -- tis -- si -- mus.
+  O -- ri -- én -- tis pár -- ti -- bus
+  Ad -- ven -- tá -- vit á -- si -- nus,
+  Pul -- cher et for -- tís -- si -- mus,
+  Sár -- ci -- nis ap -- tís -- si -- mus.
 
   \set stanza = #"4. "
-  Dum tra -- hit ve -- hi -- cu -- la,
-  Mul -- ta cum sar -- ci -- nu -- la
-  Il -- li -- us man -- di -- bu -- la
-  Du -- ra te -- rit pa -- bu -- la.
+  Dum tra -- hit ve -- hí -- cu -- la,
+  Mul -- ta cum sar -- cí -- nu -- la
+  Il -- lí -- us man -- dí -- bu -- la
+  Du -- ra te -- rit pá -- bu -- la.
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set stanza = #"2. "
-  Sal -- tu vin -- cit hin -- nu -- los
-  Da -- mas et ca -- pre -- o -- los
-  Su -- per dro -- me -- da -- ri -- os
-  Ve -- lox ma -- di -- a -- ne -- os.
+  Sal -- tu vin -- cit hín -- nu -- los
+  Da -- mas et ca -- pré -- o -- los
+  Su -- per dro -- me -- dá -- ri -- os
+  Ve -- lox Ma -- di -- á -- ne -- os.
   
   \set stanza = #"5. "
-  Cum a -- ris -- tis, hor -- de -- um
-  Co -- me -- dit et car -- du -- um
-  Tri -- ti -- cum ex pa -- le -- a
-  Se -- gre -- gat in a -- re -- a.
+  Cum a -- rís -- tis, hór -- de -- um
+  Có -- me -- dit et cár -- du -- um
+  Trí -- ti -- cum ex pá -- le -- a
+  Sé -- gre -- gat in á -- re -- a.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"3. "
-  Hic in col -- li -- bus Sy -- chen,
-  Jam nu -- tri -- tus sub Ru -- ben
-  Trans -- i -- it per Jor -- da -- nem
-  Sa -- li -- it in Beth -- le -- hem.
+  Hic in cól -- li -- bus Sy -- chen,
+  Jam nu -- trí -- tus sub Ru -- ben
+  Tráns -- i -- it per Jór -- da -- nem
+  Sá -- li -- it in Béth -- le -- hem.
   
   \set stanza = #"6. "
-  A -- men di -- cas, a -- si -- ne;
-  Jam sa -- tur ex gra -- mi -- ne.
-  A -- men, a -- men i -- te -- ra
-  As -- per -- na -- re ve -- te -- ra.
+  A -- men di -- cas, á -- si -- ne;
+  Jam sa -- tur ex grá -- mi -- ne.
+  A -- men, a -- men í -- te -- ra
+  As -- per -- ná -- re vé -- te -- ra.
 }
 altoWordsIV = \lyricmode {
 }

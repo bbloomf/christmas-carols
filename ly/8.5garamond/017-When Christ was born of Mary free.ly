@@ -123,15 +123,15 @@ altoWords = {
     When Christ was born of Ma -- ry free,
     In Beth -- le -- hem, that fair ci -- ty,
     An -- gels sang there with mirth and glee,
-    \markup\italic “In \markup\italic ex -- \markup\italic cel -- \markup\italic sis \markup\italic Glo -- \markup\italic ri -- \markup\italic a.”
+    \markup\italic “In \markup\italic ex -- \markup\italic cél -- \markup\italic sis \markup\italic Gló -- \markup\italic ri -- \markup\italic a.”
   }
   \set stanza = \markup\dynamic"ff "
   \lyricmode {
     \dropLyricsIV
-    \markup\italic In \markup\italic ex -- \markup\italic cel -- \markup\italic sis \markup\italic Glo -- \markup\italic ri -- \markup\italic a,
-    \markup\italic In \markup\italic ex -- \markup\italic cel -- \markup\italic sis \markup\italic Glo -- \markup\italic ri -- \markup\italic a,
-    \markup\italic In \markup\italic ex -- \markup\italic cel -- \markup\italic sis \markup\italic Glo -- \markup\italic ri -- \markup\italic a,
-    \markup\italic In \markup\italic ex -- \markup\italic cel -- \markup\italic sis \markup\italic Glo -- \markup\italic ri -- \markup\italic a.
+    \markup\italic In \markup\italic ex -- \markup\italic cél -- \markup\italic sis \markup\italic Gló -- \markup\italic ri -- \markup\italic a,
+    \markup\italic In \markup\italic ex -- \markup\italic cél -- \markup\italic sis \markup\italic Gló -- \markup\italic ri -- \markup\italic a,
+    \markup\italic In \markup\italic ex -- \markup\italic cél -- \markup\italic sis \markup\italic Gló -- \markup\italic ri -- \markup\italic a,
+    \markup\italic In \markup\italic ex -- \markup\italic cél -- \markup\italic sis \markup\italic Gló -- \markup\italic ri -- \markup\italic a.
   }
 }
 altoWordsII = \lyricmode {
@@ -144,7 +144,7 @@ altoWordsII = \lyricmode {
   be -- held these An -- gels bright,
   To them ap -- pear -- ing with great light,
   Who said God’s Son is born to -- night,
-  \markup\italic “In \markup\italic ex -- \markup\italic cel -- \markup\italic sis \markup\italic Glo -- \markup\italic ri -- \markup\italic a.”
+  \markup\italic “In \markup\italic ex -- \markup\italic cél -- \markup\italic sis \markup\italic Gló -- \markup\italic ri -- \markup\italic a.”
 }
 altoWordsIII = \lyricmode {
   \dropLyricsVI
@@ -153,7 +153,7 @@ altoWordsIII = \lyricmode {
   The King is come to save man -- kind, ""
   As in scrip -- ture truths we find,
   There -- fore this song we have in mind,
-  \markup\italic “In \markup\italic ex -- \markup\italic cel -- \markup\italic sis \markup\italic Glo -- \markup\italic ri -- \markup\italic a.”
+  \markup\italic “In \markup\italic ex -- \markup\italic cél -- \markup\italic sis \markup\italic Gló -- \markup\italic ri -- \markup\italic a.”
 }
 altoWordsIV = \lyricmode {
   \dropLyricsVI
@@ -162,7 +162,7 @@ altoWordsIV = \lyricmode {
   _ Then dear Lord, for Thy great grace,
   Grant us in bliss to see Thy face,
   That we may sing to Thy sol -- ace,
-  \markup\italic “In \markup\italic ex -- \markup\italic cel -- \markup\italic sis \markup\italic Glo -- \markup\italic ri -- \markup\italic a.”
+  \markup\italic “In \markup\italic ex -- \markup\italic cél -- \markup\italic sis \markup\italic Gló -- \markup\italic ri -- \markup\italic a.”
 }
 
 tenorMusic = \relative c' {

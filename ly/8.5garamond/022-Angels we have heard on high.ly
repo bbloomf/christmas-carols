@@ -123,11 +123,11 @@ altoWords = {
   \raiseLyrics
   \set stanza = \markup\dynamic"mf  "
   \lyricmode {
-    \markup\italic Glo -- \markup\italic ri -- \markup\italic a \markup\italic in \markup\italic ex -- \markup\italic cel -- \markup\italic sis \markup\italic De -- \markup\italic o, __
+    \markup\italic Gló -- \markup\italic ri -- \markup\italic a \markup\italic in \markup\italic ex -- \markup\italic cél -- \markup\italic sis \markup\italic De -- \markup\italic o, __
   }
   \set stanza = \markup\dynamic"f   "
   \lyricmode {
-    \markup\italic Glo -- \markup\italic ri -- \markup\italic a \markup\italic in \markup\italic ex -- \markup\italic cel -- \markup\italic sis \markup\italic De -- \markup\italic o!
+    \markup\italic Gló -- \markup\italic ri -- \markup\italic a \markup\italic in \markup\italic ex -- \markup\italic cél -- \markup\italic sis \markup\italic De -- \markup\italic o!
   }
 }
 altoWordsII = \lyricmode {

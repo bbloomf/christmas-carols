@@ -105,15 +105,15 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
-  \markup\italic In \markup\italic dul -- \markup\italic ci \markup\italic ju -- \markup\italic bi -- \markup\italic lo __
+  \markup\italic In \markup\italic dul -- \markup\italic ci \markup\italic jú -- \markup\italic bi -- \markup\italic lo __
   Nun sing -- et und seid froh! __ ""
   Al -- le un -- ser Won -- ne
-  Liegt \markup\italic in \markup\italic præ -- \markup\italic se -- \markup\italic pi -- \markup\italic o, __
+  Liegt \markup\italic in \markup\italic præ -- \markup\italic sé -- \markup\italic pi -- \markup\italic o, __
   Sie leuch -- tet wie \set associatedVoice = "altos" 
   die Son --
   \unset associatedVoice
   ne
-  \markup\italic Ma -- \markup\italic tris \markup\italic in \markup\italic gre -- \markup\italic mi -- \markup\italic o __
+  \markup\italic Ma -- \markup\italic tris \markup\italic in \markup\italic gré -- \markup\italic mi -- \markup\italic o __
   \markup\italic Al -- \markup\italic pha \markup\italic es \markup\italic et \markup\italic O! __
   \markup\italic Al -- \markup\italic pha \markup\italic es 
   \set associatedVoice = "altos"
@@ -123,15 +123,15 @@ altoWords = \lyricmode {
 altoWordsII = \lyricmode {
   \dropLyricsV
   \set stanza = #"2. "
-  \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic par -- \markup\italic vu -- \markup\italic le, __
+  \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic pár -- \markup\italic vu -- \markup\italic le, __
   Nach Dir ist mir so weh. __ ""
   Tröst mir mein Ge -- mü -- te, ""
-  \markup\italic O \markup\italic Puer \markup\italic op -- \markup\italic ti -- \markup\italic me, __ ""
+  \markup\italic O \markup\italic Puer \markup\italic óp -- \markup\italic ti -- \markup\italic me, __ ""
   Durch all Dei -- \set associatedVoice = "altos" 
   ne Gü --
   \unset associatedVoice
   te,
-  \markup\italic O \markup\italic Prin -- \markup\italic ceps \markup\italic glo -- \markup\italic ri -- \markup\italic æ. __
+  \markup\italic O \markup\italic Prin -- \markup\italic ceps \markup\italic gló -- \markup\italic ri -- \markup\italic æ. __
   \markup\italic Tra -- \markup\italic he \markup\italic me \markup\italic post \markup\italic Te! __
   \markup\italic Tra -- \markup\italic he \markup\italic me 
   \set associatedVoice = "altos"
@@ -140,32 +140,32 @@ altoWordsII = \lyricmode {
 altoWordsIII = \lyricmode {
   \dropLyricsV
   \set stanza = #"3. "
-  \markup\italic O \markup\italic Pa -- \markup\italic tris \markup\italic ca -- \markup\italic ri -- \markup\italic tas! __
-  \markup\italic O \markup\italic na -- \markup\italic ti \markup\italic lem -- \markup\italic i -- \markup\italic tas! __
+  \markup\italic O \markup\italic Pa -- \markup\italic tris \markup\italic cá -- \markup\italic ri -- \markup\italic tas! __
+  \markup\italic O \markup\italic na -- \markup\italic ti \markup\italic lé -- \markup\italic ni -- \markup\italic tas! __
   Wir wär -- en all ver -- lor -- en,
-  \markup\italic Per \markup\italic nos -- \markup\italic tra \markup\italic cri -- \markup\italic mi -- \markup\italic na; __
+  \markup\italic Per \markup\italic nos -- \markup\italic tra \markup\italic crí -- \markup\italic mi -- \markup\italic na; __
   So hat er uns \set associatedVoice = "altos" 
   er -- wor --
   \unset associatedVoice
   ben
-  \markup\italic Cæ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
-  \markup\italic Quan -- \markup\italic ta \markup\italic gra -- \markup\italic ti -- \markup\italic a! __
-  \markup\italic Quan -- \markup\italic ta \markup\italic gra -- 
+  \markup\italic Cæ -- \markup\italic ló -- \markup\italic rum \markup\italic gáu -- \markup\italic di -- \markup\italic a. __
+  \markup\italic Quan -- \markup\italic ta \markup\italic grá -- \markup\italic ti -- \markup\italic a! __
+  \markup\italic Quan -- \markup\italic ta \markup\italic grá -- 
   \set associatedVoice = "altos"
   \markup\italic ti -- \markup\italic a! __
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
   \set stanza = #"4. "
-  \markup\italic U -- \markup\italic bi \markup\italic sunt \markup\italic gau -- \markup\italic di -- \markup\italic a __ ""
+  \markup\italic U -- \markup\italic bi \markup\italic sunt \markup\italic gáu -- \markup\italic di -- \markup\italic a __ ""
   Nir -- gend mehr denn da, __ ""
   Wo die Eng -- el sing -- en ""
-  \markup\italic No -- \markup\italic va \markup\italic can -- \markup\italic ti -- \markup\italic ca __ ""
+  \markup\italic No -- \markup\italic va \markup\italic cán -- \markup\italic ti -- \markup\italic ca __ ""
   Und die Har -- \set associatedVoice = "altos" 
   fen kling --
   \unset associatedVoice
   en
-  \markup\italic In \markup\italic Re -- \markup\italic gis \markup\italic cu -- \markup\italic ri -- \markup\italic a __
+  \markup\italic In \markup\italic Re -- \markup\italic gis \markup\italic cú -- \markup\italic ri -- \markup\italic a __
   E -- ia, wär’n wir da! __
   E -- ia, wär’n
   \set associatedVoice = "altos"
@@ -352,46 +352,46 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
-  \markup\italic In \markup\italic dul -- \markup\italic ci \markup\italic ju -- \markup\italic bi -- \markup\italic lo __ Now sing with hearts a -- glow!
+  \markup\italic In \markup\italic dul -- \markup\italic ci \markup\italic jú -- \markup\italic bi -- \markup\italic lo __ Now sing with hearts a -- glow!
 __
-  Our de -- light and plea -- sure Lies \markup\italic in \markup\italic præ -- \markup\italic se -- \markup\italic pi -- \markup\italic o, __
+  Our de -- light and plea -- sure Lies \markup\italic in \markup\italic præ -- \markup\italic sé -- \markup\italic pi -- \markup\italic o, __
   Like sun -- shine is our trea -- sure
-  \markup\italic Ma -- \markup\italic tris \markup\italic in \markup\italic gre -- \markup\italic mi -- \markup\italic o __
+  \markup\italic Ma -- \markup\italic tris \markup\italic in \markup\italic gré -- \markup\italic mi -- \markup\italic o __
   \markup\italic Al -- \markup\italic pha \markup\italic es \markup\italic et \markup\italic O! __
   \markup\italic Al -- \markup\italic pha \markup\italic es \markup\italic et \markup\italic O!
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
   \set stanza = #"2. "
-  \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic par -- \markup\italic vu -- \markup\italic le, __
+  \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic pár -- \markup\italic vu -- \markup\italic le, __
   For thee I long al -- way; __
   Com -- fort my heart’s blind -- ness ""
-  \markup\italic O \markup\italic Puer \markup\italic op -- \markup\italic ti -- \markup\italic me, __
+  \markup\italic O \markup\italic Puer \markup\italic óp -- \markup\italic ti -- \markup\italic me, __
   With all Thy lov -- ing kind -- ness,
-  \markup\italic O \markup\italic Prin -- \markup\italic ceps \markup\italic glo -- \markup\italic ri -- \markup\italic æ. __
+  \markup\italic O \markup\italic Prin -- \markup\italic ceps \markup\italic gló -- \markup\italic ri -- \markup\italic æ. __
   \markup\italic Tra -- \markup\italic he \markup\italic me \markup\italic post \markup\italic Te! __
   \markup\italic Tra -- \markup\italic he \markup\italic me \markup\italic post \markup\italic Te!
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
   \set stanza = #"3. "
-  \markup\italic O \markup\italic Pa -- \markup\italic tris \markup\italic ca -- \markup\italic ri -- \markup\italic tas! __
-  \markup\italic O \markup\italic na -- \markup\italic ti \markup\italic lem -- \markup\italic i -- \markup\italic tas! __
+  \markup\italic O \markup\italic Pa -- \markup\italic tris \markup\italic cá -- \markup\italic ri -- \markup\italic tas! __
+  \markup\italic O \markup\italic na -- \markup\italic ti \markup\italic lé -- \markup\italic ni -- \markup\italic tas! __
   Deep -- ly were we stain -- ed
-  \markup\italic Per \markup\italic nos -- \markup\italic tra \markup\italic cri -- \markup\italic mi -- \markup\italic na; __
+  \markup\italic Per \markup\italic nos -- \markup\italic tra \markup\italic crí -- \markup\italic mi -- \markup\italic na; __
   But Thou for us hast gain -- ed
-  \markup\italic Cæ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
+  \markup\italic Cæ -- \markup\italic ló -- \markup\italic rum \markup\italic gáu -- \markup\italic di -- \markup\italic a. __
   O that we were there! O that we were there! 
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
   \set stanza = #"4. "
-  \markup\italic U -- \markup\italic bi \markup\italic sunt \markup\italic gau -- \markup\italic di -- \markup\italic a __
+  \markup\italic U -- \markup\italic bi \markup\italic sunt \markup\italic gáu -- \markup\italic di -- \markup\italic a __
   In an -- y place  but there?
   There are an -- gels sing -- ing ""
-  \markup\italic No -- \markup\italic va \markup\italic can -- \markup\italic ti -- \markup\italic ca __
+  \markup\italic No -- \markup\italic va \markup\italic cán -- \markup\italic ti -- \markup\italic ca __
   And there the bells are ring -- ing
-  \markup\italic In \markup\italic Re -- \markup\italic gis \markup\italic cu -- \markup\italic ri -- \markup\italic a __
+  \markup\italic In \markup\italic Re -- \markup\italic gis \markup\italic cú -- \markup\italic ri -- \markup\italic a __
   O that we were there! O that we were there!
 }
 

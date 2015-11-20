@@ -159,14 +159,14 @@ sopWords = {
   }
   \set stanza = \markup\dynamic"mf"
   \lyricmode {
-    \markup\italic In \markup\italic ter -- \markup\italic ra \markup\italic Pax \markup\italic ho -- \markup\italic mi -- \markup\italic ni -- \markup\italic bus, __ \markup\italic Pax __
+    \markup\italic In \markup\italic ter -- \markup\italic ra \markup\italic Pax \markup\italic ho -- \markup\italic mí -- \markup\italic ni -- \markup\italic bus, __ \markup\italic Pax __
   }
   \lyricmode {
     ""
     
     \repeat unfold 47 {\skip 1}
     \repeat unfold 37 {\skip 1}
-    \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, __
+    \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, __
   }
 }
 
@@ -291,7 +291,7 @@ altoWords = {
     That chimes its Christ -- mas news for us,
     
     \markup\italic “In \markup\italic ter -- \markup\italic ra __ \markup\italic Pax, __
-    \markup\italic In \markup\italic ter -- \markup\italic ra \markup\italic Pax, \markup\italic Pax __ \markup\italic Pax __ \markup\italic ho -- \markup\italic mi -- \markup\italic ni -- \markup\italic bus, __
+    \markup\italic In \markup\italic ter -- \markup\italic ra \markup\italic Pax, \markup\italic Pax __ \markup\italic Pax __ \markup\italic ho -- \markup\italic mí -- \markup\italic ni -- \markup\italic bus, __
     \markup\italic Pax, __ \markup\italic Pax __ \markup\italic In \markup\italic ter -- \markup\italic ra
     
     \dropLyrics
@@ -318,18 +318,18 @@ altoWords = {
     \dropLyricsII
     \markup\italic “In \markup\italic Cæ -- \markup\italic lo __ \markup\italic Pax, __
     \set associatedVoice = "sopranos"
-    \markup\italic Et __ \markup\italic in \unset associatedVoice \markup\italic Ex -- \markup\italic cel -- \markup\italic sis,
+    \markup\italic Et __ \markup\italic in \unset associatedVoice \markup\italic Ex -- \markup\italic cél -- \markup\italic sis,
     \set associatedVoice = "sopranos"
-    \markup\italic Glo -- \markup\italic ri -- \markup\italic a,
-    \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis \markup\italic Glo -- \markup\italic ri -- \markup\italic a,
+    \markup\italic Gló -- \markup\italic ri -- \markup\italic a,
+    \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis \markup\italic Gló -- \markup\italic ri -- \markup\italic a,
     
-    \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, \markup\italic Glo -- \markup\italic ri -- \markup\italic a.
+    \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, \markup\italic Gló -- \markup\italic ri -- \markup\italic a.
     
-    \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel --
+    \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél --
     \set associatedVoice = "sopranos"
-    \markup\italic sis, \markup\italic Glo -- \markup\italic ri -- \set associatedVoice = "altos" \markup\italic a,
+    \markup\italic sis, \markup\italic Gló -- \markup\italic ri -- \set associatedVoice = "altos" \markup\italic a,
     
-    \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, \markup\italic Glo -- 
+    \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, \markup\italic Gló -- 
     \set associatedVoice = "sopranos"
     \markup\italic ri -- \markup\italic a.”
   }
@@ -482,19 +482,19 @@ tenorMusicII = \relative c' {
 tenorWords = \lyricmode {
   \repeat unfold 44 {\skip 1}
   \repeat unfold 7 {\skip 1}
-  \markup\italic Pax, __ \markup\italic In \markup\italic ter -- \markup\italic ra \markup\italic Pax \markup\italic ho -- \markup\italic mi -- \markup\italic ni -- \markup\italic bus, __
-  \markup\italic ho -- \markup\italic mi -- \markup\italic ni -- \markup\italic bus __ \markup\italic In \markup\italic ter -- \markup\italic ra "" "" ""
+  \markup\italic Pax, __ \markup\italic In \markup\italic ter -- \markup\italic ra \markup\italic Pax \markup\italic ho -- \markup\italic mí -- \markup\italic ni -- \markup\italic bus, __
+  \markup\italic ho -- \markup\italic mí -- \markup\italic ni -- \markup\italic bus __ \markup\italic In \markup\italic ter -- \markup\italic ra "" "" ""
   
   %\repeat unfold 51 {\skip 1}
 }
 tenorWordsII = \lyricmode {
   \dropLyricsII
   \markup\italic “In \markup\italic Cæ -- \markup\italic lo __ \markup\italic Pax, __
-  \markup\italic Et __ \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, \markup\italic Glo -- \markup\italic ri -- \markup\italic a, __
-  \markup\italic Glo -- \markup\italic ri -- \markup\italic a, \markup\italic In \markup\italic Cæ -- \markup\italic lo \markup\italic Pax,
-  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, \markup\italic Glo -- \markup\italic ri -- \markup\italic a.
-  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, \markup\italic Glo -- \markup\italic ri -- \markup\italic a,
-  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, __ \markup\italic Glo -- \markup\italic ri -- \markup\italic a.”
+  \markup\italic Et __ \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, \markup\italic Gló -- \markup\italic ri -- \markup\italic a, __
+  \markup\italic Gló -- \markup\italic ri -- \markup\italic a, \markup\italic In \markup\italic Cæ -- \markup\italic lo \markup\italic Pax,
+  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, \markup\italic Gló -- \markup\italic ri -- \markup\italic a.
+  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, \markup\italic Gló -- \markup\italic ri -- \markup\italic a,
+  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, __ \markup\italic Gló -- \markup\italic ri -- \markup\italic a.”
 }
 
 bassMusic = \relative c {
@@ -595,7 +595,7 @@ bassWords = \lyricmode {
   \repeat unfold 44 {\skip 1}
   \markup\italic In \markup\italic ter -- \markup\italic ra \markup\italic Pax
   \repeat unfold 7 {\skip 1}
-  \markup\italic Pax, __ \markup\italic Pax, __ \markup\italic ho -- \markup\italic mi -- \markup\italic ni -- \markup\italic bus, \markup\italic In \markup\italic ter -- \markup\italic ra \markup\italic Pax. __ ""
+  \markup\italic Pax, __ \markup\italic Pax, __ \markup\italic ho -- \markup\italic mí -- \markup\italic ni -- \markup\italic bus, \markup\italic In \markup\italic ter -- \markup\italic ra \markup\italic Pax. __ ""
   
   %\repeat unfold 49 {\skip 1}
 }
@@ -603,14 +603,14 @@ bassWordsII = \lyricmode {
   \dropLyricsII
   \markup\italic “In \markup\italic Cæ -- \markup\italic lo \markup\italic Pax, __
   \markup\italic “In \markup\italic Cæ -- \markup\italic lo \markup\italic Pax, __
-  \markup\italic Et __ \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis,
-  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, \markup\italic Glo -- \markup\italic ri -- \markup\italic a,
-  \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis,
-  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, __
+  \markup\italic Et __ \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis,
+  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, \markup\italic Gló -- \markup\italic ri -- \markup\italic a,
+  \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis,
+  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, __
   \markup\italic In \markup\italic cæ -- \markup\italic lo, \markup\italic Pax,
-  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, \markup\italic Glo -- \markup\italic ri -- \markup\italic a,
-  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cel -- \markup\italic sis, __
-  \markup\italic Glo -- \markup\italic ri -- \markup\italic a.”
+  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, \markup\italic Gló -- \markup\italic ri -- \markup\italic a,
+  \markup\italic Et \markup\italic in \markup\italic Ex -- \markup\italic cél -- \markup\italic sis, __
+  \markup\italic Gló -- \markup\italic ri -- \markup\italic a.”
 }
 
 pianoRH = \relative c' {

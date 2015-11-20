@@ -147,58 +147,58 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsVII
   \set stanza = #"1. "
-  Ve -- ni, ve -- ni, Em -- ma -- nu -- el
-  cap -- ti -- vum sol -- ve Is -- ra -- el,
-  qui ge -- mit in ex -- si -- li -- o,
-  pri -- va -- tus De -- i Fi -- li -- o.
+  Ve -- ni, ve -- ni, Em -- má -- nu -- el
+  cap -- tí -- vum sol -- ve Is -- ra -- el,
+  qui ge -- mit in ex -- sí -- li -- o,
+  pri -- vá -- tus De -- i Fí -- li -- o.
   
-  Gau -- de! Gau -- de! Em -- ma -- nu -- el,
-  na -- sce -- tur pro te Is -- ra -- el!
+  Gau -- de! Gau -- de! Em -- má -- nu -- el,
+  na -- scé -- tur pro te Is -- ra -- el!
   
   
   \set stanza = #"5. "
-  Ve -- ni, Cla -- vis Da -- vi -- di -- ca,
-  re -- gna re -- clu -- de cæ -- li -- ca,
-  fac i -- ter tu -- tum su -- pe -- rum,
-  et clau -- de vi -- as in -- fe -- rum.
+  Ve -- ni, Cla -- vis Da -- ví -- di -- ca,
+  re -- gna re -- clú -- de cæ -- li -- ca,
+  fac i -- ter tu -- tum sú -- pe -- rum,
+  et clau -- de vi -- as ín -- fe -- rum.
 }
 altoWordsII = \lyricmode {
   \dropLyricsVII
   \set stanza = #"2. "
-  Ve -- ni, O Sa -- pi -- en -- ti -- a,
-  quæ hic dis -- po -- nis om -- ni -- a,
-  ve -- ni, vi -- am pru -- den -- ti -- æ
-  ut do -- ce -- as et glo -- ri -- æ.
+  Ve -- ni, O Sa -- pi -- én -- ti -- a,
+  quæ hic dis -- pó -- nis óm -- ni -- a,
+  ve -- ni, vi -- am pru -- dén -- ti -- æ
+  ut dó -- ce -- as et gló -- ri -- æ.
   
   \repeat unfold 16\skip1
   \set stanza = #"6. "
   Ve -- ni, ve -- ni, O O -- ri -- ens,
-  so -- la -- re nos ad -- ve -- ni -- ens,
-  noc -- tis de -- pel -- le ne -- bu -- las,
-  di -- ras -- que mor -- tis te -- ne -- bras.
+  so -- lá -- re nos ad -- vé -- ni -- ens,
+  noc -- tis de -- pél -- le né -- bu -- las,
+  di -- rás -- que mor -- tis té -- ne -- bras.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsVII
   \set stanza = #"3. "
   Ve -- ni, ve -- ni, A -- do -- na -- i,
-  qui po -- pu -- lo in Si -- na -- i
-  le -- gem de -- dis -- ti ver -- ti -- ce
-  in ma -- jes -- ta -- te glo -- ri -- æ.
+  qui pó -- pu -- lo in Si -- na -- i
+  le -- gem de -- dís -- ti vér -- ti -- ce
+  in ma -- jes -- tá -- te gló -- ri -- æ.
   
   \repeat unfold16\skip1
   \set stanza = #"7. "
-  Ve -- ni, ve -- ni, Rex Gen -- ti -- um,
-  ve -- ni, Re -- dem -- ptor om -- ni -- um,
-  ut sal -- vas tu -- os fa -- mu -- los
-  pec -- ca -- ti si -- bi con -- sci -- os.
+  Ve -- ni, ve -- ni, Rex Gén -- ti -- um,
+  ve -- ni, Re -- dém -- ptor óm -- ni -- um,
+  ut sal -- vas tu -- os fá -- mu -- los
+  pec -- cá -- ti si -- bi cón -- sci -- os.
 }
 altoWordsIV = \lyricmode {
   \dropLyricsVII
   \set stanza = #"4. "
-  Ve -- ni, O Jes -- se vir -- gu -- la,
-  ex hos -- tis tu -- os un -- gu -- la,
-  de spec -- tu tu -- os tar -- ta -- ri
-  e -- duc et an -- tro ba -- ra -- thri.
+  Ve -- ni, O Jes -- se vír -- gu -- la,
+  ex hos -- tis tu -- os ún -- gu -- la,
+  de spec -- tu tu -- os tár -- ta -- ri
+  e -- duc et an -- tro bá -- ra -- thri.
 }
 altoWordsV = \lyricmode {
 }

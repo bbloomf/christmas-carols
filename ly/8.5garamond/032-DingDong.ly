@@ -101,7 +101,7 @@ altoWords = \lyricmode {
   \set stanza = #"1. "
   Ding dong! mer -- ri -- ly on high in heav’n the bells are ring -- ing:
   Ding dong!  Ve -- ri -- ly the sky is riv’n with an -- gel sing -- ing.
-  \markup\italic Glo -- \markup\italic ri -- \markup\italic a, \markup\italic ho -- \markup\italic san -- \markup\italic na \markup\italic in \markup\italic ex -- \markup\italic cel -- \markup\italic sis!
+  \markup\italic Gló -- \markup\italic ri -- \markup\italic a, \markup\italic ho -- \markup\italic sán -- \markup\italic na \markup\italic in \markup\italic ex -- \markup\italic cél -- \markup\italic sis!
 }
 altoWordsII = \lyricmode {
   \dropLyricsVII
@@ -137,7 +137,7 @@ tenorMusic = \relative c' {
 }
 tenorWords = \lyricmode {
   \repeat unfold 28 { \skip 1}
-  \markup\italic Glo -- _ _ \markup\italic ri -- \markup\italic a, \markup\italic ho -- \markup\italic san -- \markup\italic na \markup\italic in \markup\italic ex -- \markup\italic cel -- \markup\italic sis!
+  \markup\italic Gló -- _ _ \markup\italic ri -- \markup\italic a, \markup\italic ho -- \markup\italic sán -- \markup\italic na \markup\italic in \markup\italic ex -- \markup\italic cél -- \markup\italic sis!
 }
 
 bassMusic = \relative c {

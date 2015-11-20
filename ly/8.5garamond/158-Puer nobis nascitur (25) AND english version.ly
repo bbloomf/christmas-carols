@@ -95,47 +95,47 @@ altoMusic = \relative c' {
 }
 altoWords = \lyricmode {
   \set stanza = #"1. "
-  Pu -- er no -- bis na -- sci -- tur
-  Rec -- tor An -- ge -- lo -- rum,
-  In hoc mun -- do pa -- sci -- tur
-  Do -- mi -- nus do -- mi -- no -- rum,
-  Do -- mi -- nus do -- mi -- no -- rum.
+  Pu -- er no -- bis ná -- sci -- tur
+  Rec -- tor An -- ge -- ló -- rum,
+  In hoc mun -- do pá -- sci -- tur
+  Dó -- mi -- nus do -- mi -- nó -- rum,
+  Dó -- mi -- nus do -- mi -- nó -- rum.
 }
 altoWordsII = \lyricmode {
   \set stanza = #"2. "
   \set ignoreMelismata = ##t
-  In præ -- se -- pe po -- si -- tum
+  In præ -- sé -- pe pó -- si -- tum
   Sub fœ -- no
   \unset ignoreMelismata
-  a -- si -- no -- rum
-  Co -- gno -- ve -- runt Do -- mi -- num
-  Chris -- tum Re -- gem cæ -- lo -- rum,
-  Chris -- tum Re -- gem cæ -- lo -- rum.
+  a -- si -- nó -- rum
+  Co -- gno -- vé -- runt Dó -- mi -- num
+  Chris -- tum Re -- gem cæ -- ló -- rum,
+  Chris -- tum Re -- gem cæ -- ló -- rum.
 }
 altoWordsIII = \lyricmode {
   \set stanza = #"3. "
-  Hunc He -- ro -- des ti -- mu -- it
-  Ma -- gno cum tre -- mo -- re,
-  In in -- fan -- tes ir -- ru -- it
-  Hos cæ -- dens in fu -- ro -- re,
-  Hos cæ -- dens in fu -- ro -- re.
+  Hunc He -- ró -- des tí -- mu -- it
+  Ma -- gno cum tre -- mó -- re,
+  In in -- fán -- tes ír -- ru -- it
+  Hos cæ -- dens in fu -- ró -- re,
+  Hos cæ -- dens in fu -- ró -- re.
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "
-  Qui na -- tus ex Ma -- ri -- a
-  Di -- e ho -- di -- er -- na
-  Duc nos tu -- a gra -- ti -- a
-  Ad gau -- di -- a su -- per -- na,
-  Ad gau -- di -- a su -- per -- na.
+  Qui na -- tus ex Ma -- rí -- a
+  Di -- e ho -- di -- ér -- na
+  Duc nos tu -- a grá -- ti -- a
+  Ad gáu -- di -- a su -- pér -- na,
+  Ad gáu -- di -- a su -- pér -- na.
 }
 altoWordsV = \lyricmode {
   \set stanza = #"5. "
-  Te Sal -- va -- tor A et O
-  Can -- te -- mus in cho -- ro,
-  Can -- te -- mus in or -- ga -- no,
+  Te Sal -- vá -- tor A et O
+  Can -- té -- mus in cho -- ro,
+  Can -- té -- mus in ór -- ga -- no,
   \set ignoreMelismata = ##t
-  Be -- ne -- di -- ca -- mus Do -- mi -- no,
-  Be -- ne -- di -- ca -- mus Do -- mi -- no.
+  Be -- ne -- di -- cá -- mus Dó -- mi -- no,
+  Be -- ne -- di -- cá -- mus Dó -- mi -- no.
 }
 altoWordsVI = \lyricmode {
   \set stanza = #"6. "
@@ -327,10 +327,10 @@ altoWordsV = \lyricmode {
   \set stanza = #"5. "
   \set ignoreMelismata = ##t
   \markup\italic O \markup\italic et \markup\italic A \markup\italic et \markup\italic A \markup\italic et \markup\italic O,
-  \markup\italic Cum \markup\italic can -- \markup\italic ti -- \markup\italic bus \markup\italic in \markup\italic cho -- \markup\italic ro,
-  \markup\italic Cum \markup\italic can -- \markup\italic ti -- \markup\italic cis \markup\italic et \markup\italic or -- \markup\italic ga -- \markup\italic no,
-  \markup\italic Be -- \markup\italic ne -- \markup\italic di -- \markup\italic ca -- \markup\italic mus \markup\italic Do -- \markup\italic mi -- \markup\italic no.
-  \markup\italic Be -- \markup\italic ne -- \markup\italic di -- \markup\italic ca -- \markup\italic mus \markup\italic Do -- \markup\italic mi -- \markup\italic no.
+  \markup\italic Cum \markup\italic cán -- \markup\italic ti -- \markup\italic bus \markup\italic in \markup\italic cho -- \markup\italic ro,
+  \markup\italic Cum \markup\italic cán -- \markup\italic ti -- \markup\italic cis \markup\italic et \markup\italic ór -- \markup\italic ga -- \markup\italic no,
+  \markup\italic Be -- \markup\italic ne -- \markup\italic di -- \markup\italic cá -- \markup\italic mus \markup\italic Dó -- \markup\italic mi -- \markup\italic no.
+  \markup\italic Be -- \markup\italic ne -- \markup\italic di -- \markup\italic cá -- \markup\italic mus \markup\italic Dó -- \markup\italic mi -- \markup\italic no.
 }
 altoWordsVI = \lyricmode {
   \set stanza = #"6. "
