@@ -31,7 +31,6 @@ then
   else
     echo 'Error from gs --^'
   fi
-  rm even.pdf odd.pdf \!even.pdf \!odd.pdf \!ccc-playbook.pdf
 else
   echo 'Error from git --^'
 fi
