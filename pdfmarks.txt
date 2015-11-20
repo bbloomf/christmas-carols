@@ -102,7 +102,7 @@
 [/Title (Joseph, O Dear Joseph Mine) /Page 42 /OUT pdfmark
 [/Title (Joy to the World!) /Page 18 /OUT pdfmark
 [/Title (Kling Glöckchen) /Page 176 /OUT pdfmark
-[/Title (Lætentur Cœli) /Page 187 /OUT pdfmark
+[/Title (Lætentur Cæli) /Page 187 /OUT pdfmark
 [/Title (Lo, How a Rose E'er Blooming) /Page 97 /OUT pdfmark
 [/Title (Make we joy now in this fest (27)) /Page 157 /OUT pdfmark
 [/Title (The Manger Throne) /Page 122 /OUT pdfmark
