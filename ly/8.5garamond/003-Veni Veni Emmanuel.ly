@@ -180,7 +180,7 @@ altoWordsII = \lyricmode {
 altoWordsIII = \lyricmode {
   \dropLyricsVII
   \set stanza = #"3. "
-  Ve -- ni, ve -- ni, A -- do -- na -- i,
+  Ve -- ni, ve -- ni, A -- do -- ná -- i,
   qui pó -- pu -- lo in Si -- na -- i
   le -- gem de -- dís -- ti vér -- ti -- ce
   in ma -- jes -- tá -- te gló -- ri -- æ.
