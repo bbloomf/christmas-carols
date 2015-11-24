@@ -3,63 +3,29 @@
 \header {
   tagline = ""%\markup { "from" \concat{\italic "HymnsAndCarolsOfChristmas.com"}}
 
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Flos de radice Jesse"}}
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \fontsize #2 \smallCapsOldStyle"Flos de radice Jesse"}}
     composer = \markup\oldStyleNum"Arranged by Michael Praetorius (1571–1621)"
     %tagline = \markup { "from" \italic {HymnsAndCarolsOfChristmas.com}}
   }
 \paper {
-  print-all-headers = ##f
-  paper-height = 9\in
-  paper-width = 6\in
+  paper-height = 11\in
+  paper-width = 8.5\in
   indent = 0\in
   %system-system-spacing = #'((basic-distance . 10) (padding . 0))
   system-system-spacing =
     #'((basic-distance . 0)
        (minimum-distance . 0)
-       (padding . -12)
+       (padding . -5)
        (stretchability . 100))
-  %markup-system-spacing =
-  %  #'((basic-distance . 0)
-  %     (minimum-distance . 0)
-  %     (padding . -5)
-  %     (stretchability . 100))
-  score-markup-spacing =
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . -2)
-       (stretchability . 100))
-%{IF_LESSER
-  markup-system-spacing #'stretchability = 50
-  top-markup-spacing #'stretchability = 30
-  last-bottom-spacing #'stretchability = 60
-%}%END_IF_LESSER
-  ragged-last-bottom = ##t
+  ragged-last-bottom = ##f
+  ragged-last = ##f
   ragged-bottom = ##f
   two-sided = ##t
-  inner-margin = 0.5\in
-  outer-margin = 0.25\in
-  top-margin = 0.25\in
-  bottom-margin = 0.25\in
-  first-page-number = #092
-  print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
-  oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
-     \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
-        \oldStylePageNum""
-        }
-        \fill-line{\headerLine}
-  }
-  evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
-     \combine
-        \on-the-fly #print-page-number-check-first
-        \oldStylePageNum""
-        \fill-line{\headerLine}
-  }
+  inner-margin = 0.7\in
+  outer-margin = 0.7\in
+  bottom-margin = 0.5\in
 }
-#(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
+#(set-global-staff-size 20) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 20 20))) }
 
 
 
@@ -81,17 +47,17 @@ sopMusic = \relative c'' {
   d2 d4 d |
   e d d2 |
   b c |
-  b4 a2 g4( |
+  b4 a2 g4( |\break
   
   g) fis g2 |
   d' d4 d |
   e d d2 |
-  b c |
+  b c |\break
   
   b4 a2 g4( |
   g) fis g2 |
   b4\rest b4 a fis |
-  g e d2 |
+  g e d2 |\break
   
   b'4\rest d4 d d |
   e d d2 |
@@ -224,6 +190,14 @@ bassWordsII = \lyricmode {
   \repeat unfold 17 { \skip 1 }
   -cre -- at.
 }
+bassWordsIII = \lyricmode {
+  \repeat unfold 11 { \skip 1 }
+  -li -- um.
+  \repeat unfold 11 { \skip 1 }
+  -li -- um.
+  \repeat unfold 17 { \skip 1 }
+  -mi -- ni.
+}
 
 pianoRH = \relative c' {
   
@@ -253,27 +227,27 @@ pianoLH = \relative c' {
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . 0.2)) } \lyricsto "tenors" \tenorWords
+    %\new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . 0.2)) } \lyricsto "basses" \bassWordsIII
     \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . 0.2)) } \lyricsto "basses" \bassWordsII
     \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . 0.2)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
   \layout {
-    #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14.6 20)))
+    \context {
+      \Lyrics
+      \override LyricText #'font-size = #1.5
+      \override LyricText #'X-offset = #center-on-word
+    }
     \context {
       \Score
-      \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 2)
-      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 2)
+      %\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 8)
+      %\override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
     }
     \context {
       % Remove all empty staves
-      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
-    }
-%6.14g    \context { \Lyrics \override LyricText #'font-size = #0.6 }
-%6x9 \context {\Lyrics\override LyricText #'font-size = #1.2 }
-    \context {
-      \Lyrics
-      \override LyricText #'X-offset = #center-on-word
+      \Staff
+      \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
     }
   }
   
