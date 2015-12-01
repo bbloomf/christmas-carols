@@ -80,7 +80,7 @@ sopMusic = \relative c'' {
   e d8 c |
   b4 a^\markup\italic"rall."
   a gis |
-  a2\fermata \bar ":|"
+  a2\fermata \bar ":|."
   a\fermata \bar "|."
   \once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
   \once \override Score.RehearsalMark #'self-alignment-X = #RIGHT

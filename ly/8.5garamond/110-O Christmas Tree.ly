@@ -59,7 +59,7 @@ sopMusic = \relative c' {
   b8.\noBeam b16 b4. b8 |
   a8\noBeam b c4 fis, | \break
   
-  \partial 8*5 a g b8\rest \bar ":|"
+  \partial 8*5 a g b8\rest \bar ":|."
   \partial 8 d8_\mf |
   d\noBeam b e4. d8 |
   d\noBeam c c4. c8 | \break

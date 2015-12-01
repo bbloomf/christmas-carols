@@ -77,7 +77,7 @@ sopMusic = \relative c' {
   a a b b |
   cis e b cis8[ d] |
   e4 a, b a8[ gis] |
-  \partial 2. a2. \bar ":|" \break
+  \partial 2. a2. \bar ":|." \break
   
   
   

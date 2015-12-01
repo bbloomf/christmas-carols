@@ -84,7 +84,7 @@ sopMusic = \relative c'' {
   d4 e b a8[ g] |
   c4 b a g |
   fis e b' b |
-  \partial 2. e,2. \bar ":|" \break
+  \partial 2. e,2. \bar ":|." \break
   
   
   
@@ -146,7 +146,7 @@ altoMusic = \relative c' {
   a g fis e |
   e8[ fis] g4 fis e |
   c e e dis |
-  e2. \bar ":|"
+  e2. \bar ":|."
   
   
   
@@ -276,7 +276,7 @@ tenorMusic = \relative c' {
   a b b b |
   c d d b |
   a g g fis |
-  g2. \bar ":|"
+  g2. \bar ":|."
   
   
   
@@ -338,7 +338,7 @@ bassMusic = \relative c' {
   fis e dis e |
   a g d e |
   a, c b b |
-  e2. \bar ":|"
+  e2. \bar ":|."
   
   
   

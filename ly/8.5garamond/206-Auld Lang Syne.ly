@@ -63,7 +63,7 @@ sopMusic = \relative c' {
   
   a8. g16 a8 b |
   \slurDashed g8.( e16) e8( d) |
-  \partial 4. g4 b8\rest \bar "|:" \break
+  \partial 4. g4 b8\rest \bar ".|:" \break
   \partial 8 e8 |
   d8.[ b16] b8[ g] |
   a8. g16 a8 b16\rest b |
@@ -73,7 +73,7 @@ sopMusic = \relative c' {
   d8. b16 b8 g |
   a8. g16 a8 b |
   g8.[ e16] e8[ d] |
-  \partial 4. g4  b8\rest \bar ":|"
+  \partial 4. g4  b8\rest \bar ":|."
 }
 sopWords = \lyricmode {
   
@@ -99,7 +99,7 @@ altoMusic = \relative c' {
   b8. g16 g8 g |
   fis8. e16 fis8 fis |
   e4 c4 |
-  b4 s8 \bar ":|"
+  b4 s8 \bar ":|."
 }
 altoWords = \lyricmode {
   \dropLyricsV
@@ -171,7 +171,7 @@ tenorMusic = \relative c' {
   d8. d16 d8 b |
   d8. d16 d8 d |
   b4 fis |
-  g s8 \bar ":|"
+  g s8 \bar ":|."
 }
 tenorWords = \lyricmode {
 
@@ -197,7 +197,7 @@ bassMusic = \relative c {
   g'8. g16 g8 g |
   d8. d16 d8 b |
   e4 d |
-  g, d'8\rest \bar ":|"
+  g, d'8\rest \bar ":|."
 }
 bassWords = \lyricmode {
 

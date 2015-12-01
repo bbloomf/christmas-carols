@@ -85,7 +85,7 @@ sopMusic = \relative c' {
   cis4. b8 a4 d |
   cis b a b |
   a g8[ fis] e4. e8 |
-  d1 \bar ":|" \break
+  d1 \bar ":|." \break
   \once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
   \once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
   \mark "Fine."

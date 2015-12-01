@@ -57,7 +57,7 @@ sopMusic = \relative c' {
   d4 f aes bes bes2 ees, |
   bes'2\rest bes4\rest <aes d,>~ q <g ees> f <ees ces> |
   <ees bes g> bes'\rest bes2\rest bes1\rest |
-  ees,2-> d2 bes'1\rest \bar "|:" 
+  ees,2-> d2 bes'1\rest \bar ".|:" 
 %
   ees,1^\pp ees2. aes4 |
   g1.^\markup\italic"cresc." ees'2 |
@@ -79,7 +79,7 @@ sopMusic = \relative c' {
      { s1. <ees des g,>2_\markup\smallCapsOldStyle"Accomp." }
   >> |
   <ees c aes>1 <ees ces aes> |
-  <ees bes g>1 bes'1\rest \bar ":|"
+  <ees bes g>1 bes'1\rest \bar ":|."
 }
 sopWords = \lyricmode {
   
@@ -91,7 +91,7 @@ altoMusic = \relative c' {
   s1 des |
   s2. ces4~ ces bes c aes |
   s1*2 |
-  aes1 s1 \bar "|:"
+  aes1 s1 \bar ".|:"
 %
   bes1 c2. ees4 |
   ees1 g |
@@ -178,7 +178,7 @@ tenorMusic = \relative c' {
   s1 g |
   s1*2 |
   ees4 g bes c~ c2 bes~ |
-  bes1 bes \bar "|:"
+  bes1 bes \bar ".|:"
 %
   g1_\pp aes2. c4 |
   bes1._\markup\italic"cresc." b2 |
@@ -200,7 +200,7 @@ tenorMusic = \relative c' {
      { s1. ees,2 }
   >> |
   aes4 c ees f f2 ees2~ |
-  ees1 s1 \bar ":|"
+  ees1 s1 \bar ":|."
 }
 tenorWords = \lyricmode {
 
@@ -212,7 +212,7 @@ bassMusic = \relative c {
   d'\rest ees, |
   aes4 c ees f~ f g aes aes, |
   bes bes\rest d2\rest d1\rest |
-  bes1 d\rest \bar "|:"
+  bes1 d\rest \bar ".|:"
 %
   ees1 ees2. ees4 |
   ees1 ees |
@@ -232,7 +232,7 @@ bassMusic = \relative c {
   bes bes bes bes |
   ees1~ ees |
   c,1\rest aes' |
-  ees d'\rest \bar ":|"
+  ees d'\rest \bar ":|."
 }
 bassWords = \lyricmode {
 

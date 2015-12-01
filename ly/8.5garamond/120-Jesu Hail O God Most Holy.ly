@@ -88,7 +88,7 @@ sopMusic = \relative c' {
   ees' ees \bar "||"
   ees2 |
   g,4( f) |
-  ees2\fermata \bar ":|"
+  ees2\fermata \bar ":|."
   ees'^\markup\italic{ "Last Verse"} |
   g4( f) |
   ees2 \bar "|."

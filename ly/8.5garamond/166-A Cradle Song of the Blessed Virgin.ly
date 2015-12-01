@@ -69,7 +69,7 @@ sopMusic = \relative c' {
   c4 a8 g4 f8 |
   f4 g8 a4 bes8 |
   g4.(~ g |
-  \partial 8*5 f~ f4) \bar ":|" \break
+  \partial 8*5 f~ f4) \bar ":|." \break
   
   
   

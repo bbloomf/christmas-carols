@@ -552,7 +552,7 @@ altoMusic = \relative c' {
   \partial 4*12 e2 d4 c e f f d e2 s |
   \partial 4*12 f4 f d c8([ d e f g f d e] f4) d e8 e f2 |
   \partial 4*11 e4 d e d f f e c2 s |
-  \partial 4*15 d4 e g e f2 d8[( e] f4. e8 d4) f e1 \bar ":|"
+  \partial 4*15 d4 e g e f2 d8[( e] f4. e8 d4) f e1 \bar ":|."
 }
 altoWords = \lyricmode {
   \dropLyricsVI
@@ -576,7 +576,7 @@ tenorMusic = \relative c' {
   \partial 4*12 cis2 d4 a g a a g g2 s |
   \partial 4*12 a4 bes f a g4.( a8 bes4 c) d4. cis8 d2 |
   \partial 4*11 c4 f, c' bes d d c a2 s |
-  \partial 4*15 bes4 c d c a2 bes8([ c] d4 c bes) d cis1 \bar ":|"
+  \partial 4*15 bes4 c d c a2 bes8([ c] d4 c bes) d cis1 \bar ":|."
 }
 tenorWords = \lyricmode {
   \repeat unfold 11 \skip1
@@ -591,7 +591,7 @@ bassMusic = \relative c {
   \partial 4*12 a2 d4 f c f d g c,2 d\rest |
   \partial 4*12 f4 bes, bes f' c8[( d e f] g4) a( bes a8) a d,2 |
   \partial 4*11 a4 bes c g' d bes a f2 d'\rest |
-  \partial 4*15 bes4 a g c, f2 g8([ f16 e d8 e] f4 g) d a'1 \bar ":|"
+  \partial 4*15 bes4 a g c, f2 g8([ f16 e d8 e] f4 g) d a'1 \bar ":|."
 }
 bassWords = \lyricmode {
   \repeat unfold 11 \skip1

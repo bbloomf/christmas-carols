@@ -80,7 +80,7 @@ sopMusic = \relative c' {
   a4 d |
   e fis |
   e4. d8 |
-  \partial 4 d4 \bar ":|" \break
+  \partial 4 d4 \bar ":|." \break
   
   
   

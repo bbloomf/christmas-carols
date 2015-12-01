@@ -97,7 +97,7 @@ sopMusic = \relative c' {
   f~ f~ |
   f~ f |
   bes1.\rest |
-  a2.~ a2.\fermata \bar ":|" \break
+  a2.~ a2.\fermata \bar ":|." \break
   
   % verse 4
   c,4 f a c2 a4 |
@@ -220,7 +220,7 @@ altoMusic = \relative c' {
   d2) d4 d2 d4 |
   c2.~ c |
   s1. |
-  f2.~ f \bar ":|"
+  f2.~ f \bar ":|."
   
   % verse 4
   c4 c f f2 f4 |
@@ -421,7 +421,7 @@ tenorMusic = \relative c' {
   bes2) bes4 bes2 bes4 |
   a2.~ a |
   s1. |
-  <c \tweak #'font-size #-2 a>2.~ q \bar ":|"
+  <c \tweak #'font-size #-2 a>2.~ q \bar ":|."
   
   
   %verse 4
@@ -533,7 +533,7 @@ bassMusic = \relative c {
   bes,2.~ bes |
   f'~ f |
   d1.\rest |
-  <\tweak #'font-size #-2 c f,>2.~ q\fermata \bar ":|"
+  <\tweak #'font-size #-2 c f,>2.~ q\fermata \bar ":|."
   
   %verse 4
   a'4 a f c( f) a |

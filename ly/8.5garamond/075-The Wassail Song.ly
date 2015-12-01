@@ -79,7 +79,7 @@ sopMusic = \relative c' {
   a2 gis4 a |
   b2 cis4 gis |
   a fis e( dis) |
-  \partial 2 e2 \bar ":|" 
+  \partial 2 e2 \bar ":|." 
   
   
   
@@ -128,7 +128,7 @@ altoMusic = \relative c' {
   cis( dis) e e |
   fis2 cis4 cis |
   cis cis b2 |
-  b2 \bar ":|"
+  b2 \bar ":|."
   
   
   
@@ -256,7 +256,7 @@ tenorMusic = \relative c' {
   a2 b4 cis |
   b2 gis4 b |
   a4 a gis( fis) |
-  gis2 \bar ":|"
+  gis2 \bar ":|."
   
   
   
@@ -302,7 +302,7 @@ bassMusic = \relative c {
   fis2 e4 cis |
   dis2 eis4 eis |
   fis4 a, b2 |
-  e2 \bar ":|"
+  e2 \bar ":|."
   
   
   

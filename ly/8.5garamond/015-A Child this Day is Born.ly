@@ -83,7 +83,7 @@ sopMusic = \relative c' {
   \slurSolid
   a4.( b8 a4) g |
   fis d' fis, e |
-  \partial 2. d2. \bar ":|"
+  \partial 2. d2. \bar ":|."
   
   
   
