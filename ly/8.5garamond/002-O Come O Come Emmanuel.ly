@@ -151,7 +151,7 @@ altoWords = \lyricmode {
   Re -- joice! Re -- joice! Em -- man -- u -- el Shall come to thee, O Is -- ra -- el.
   
   
-  \set stanza = #"4. "
+  \set stanza = #"5. "
   O come, Thou Key of Da -- vid, come, And o -- pen wide our heav’n -- ly home;
   Make safe the way that leads __ on high, And close the path to mis -- er -- y.
 }
@@ -159,11 +159,14 @@ altoWordsII = \lyricmode {
   \dropLyricsVII
 %\markup\italic
   \set stanza = #"2. "
-  O come, O come, Thou Lord __ of might, Who to Thy tribes, on Si -- nai’s height,
-  In an -- cient times didst give __ the Law, In cloud, and maj -- es -- ty __ and awe.
+  O come, Thou Wis -- dom from __ on high,
+  Who ord -- ’rest all things might -- i -- ly;
+  To us the path of know -- ledge show,
+  And teach us in her ways __ to go.
+
   
   \repeat unfold 16 \skip1
-  \set stanza = #"5. "
+  \set stanza = #"6. "
   O come, Thou Day -- Spring, come __ and cheer Our spi -- rits by Thine ad -- vent here;
   Dis -- perse the gloom -- y clouds __ of night, And death’s dark shad -- ows put __ to flight.
   
@@ -171,10 +174,21 @@ altoWordsII = \lyricmode {
 altoWordsIII = \lyricmode {
   \dropLyricsVII
   \set stanza = #"3. "
-  O come, Thou Rod of Jes -- se, free Thine own from Sa -- tan’s ty -- ran -- ny;
-  From depths of hell Thy peo -- ple save, And give them vic -- t’ry o’er __ the grave.
+  O come, O come, Thou Lord __ of might, Who to Thy tribes, on Si -- nai’s height,
+  In an -- cient times didst give __ the Law, In cloud, and maj -- es -- ty __ and awe.
+  
+  \repeat unfold 16 \skip1
+  \set stanza = #"7. "
+  O come, De -- sire of na -- tions, bind
+  In one the hearts of all __ man -- kind;
+  Bid Thou our sad di -- vis -- ions cease,
+  And be Thy -- self our King __ of Peace.
 }
 altoWordsIV = \lyricmode {
+  \dropLyricsVII
+  \set stanza = #"4. "
+  O come, Thou Rod of Jes -- se, free Thine own from Sa -- tan’s ty -- ran -- ny;
+  From depths of hell Thy peo -- ple save, And give them vic -- t’ry o’er __ the grave.
 }
 altoWordsV = \lyricmode {
 }
