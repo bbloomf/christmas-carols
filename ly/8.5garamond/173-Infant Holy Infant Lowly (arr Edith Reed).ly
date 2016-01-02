@@ -87,15 +87,17 @@ altoMusic = \relative c' {
   d2 |
 }
 
-  d8 d |
-  c4 c c8 c |
-  d4 d d8 d |
-  e4 e |
+\repeat volta 2 {
+    d8 d |
+    c4 c c8 c |
+    d4 d d8 d |
+    e4 e |
 
-  e8 e |
-  fis4 fis e8 e |
-  g4 g fis8 fis |
-  d2 
+    e8 e |
+    fis4 fis e8 e |
+    g4 g fis8 fis |
+    d2 
+  }
 }
 altoWords = \lyricmode {
   \dropLyricsV
@@ -145,36 +147,40 @@ tenorMusic = \relative c {
     d4 e d8 c |
     b2 |
   }
-  g8 g |
-  g4 g a8 a |
-  a4 a b8 b |
-  b4 b a8 a |
-  a4 a g8 g8 |
-  d'4 e d8 c |
-  b2 
+  \repeat volta 2 {
+    g8 g |
+    g4 g a8 a |
+    a4 a b8 b |
+    b4 b a8 a |
+    a4 a g8 g8 |
+    d'4 e d8 c |
+    b2 
+  }
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-\repeat unfold 2 {
-  d8 d |
-  g4 g d8 d |
-  d'4 d g,8 e |
-  b4 c d8 d |
-  g2 |
-}
+  \repeat unfold 2 {
+    d8 d |
+    g4 g d8 d |
+    d'4 d g,8 e |
+    b4 c d8 d |
+    g2 |
+  }
 
-  b,8 b |
-  c4 c a8 a |
-  d4 d b8 b |
-  e4 e |
+  \repeat volta 2 {
+    b,8 b |
+    c4 c a8 a |
+    d4 d b8 b |
+    e4 e |
 
-  a,8 a |
-  d4 d e8 c |
-  b4 c d8 d |
-  g,2 
+    a,8 a |
+    d4 d e8 c |
+    b4 c d8 d |
+    g,2
+  }
 }
 bassWords = \lyricmode {
 

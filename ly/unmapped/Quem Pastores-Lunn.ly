@@ -63,17 +63,17 @@ sopMusic = \relative c' {
   f2 a4 |
   c2 a4 |
   bes( c) d |
-  c2 g4 |
-  a( bes) c |
+  c g2 |
+  a2 c4 |
   
   bes( a) g |
   f2 d4 |
-  e2 c4 |
+  e4 c2 |
   a'2 bes4 |
   c2 d4 |
   
   c2 g4 |
-  a2 f4 |
+  a4 f2 |
   bes2 bes4 |
   a( g) c |
   c( a) b |
@@ -93,11 +93,11 @@ altoMusic = \relative c' {
   f2 f4 f4.( e8) d[ e] |
   
   d4.( c8) b4 |
-  c2 c4 |
+  c4 c2 |
   c2 d4 |
   e2 g8[ f] |
   e4( f) g |
-  f2 d4~ |
+  f4 d2~ |
   
   d4 g e |
   f( g8[ f]) e4 |
@@ -111,7 +111,7 @@ altoWords = \lyricmode {
   \set stanza = #"1. "
   Quem pas -- to -- res lau -- da -- ve -- re,
   Qui -- bus an -- ge -- li di -- xe -- re,
-  “Ab -- sit vo -- bis jam ti -- me -- \set associatedVoice = "tenors"
+  “Ab -- sit vo -- bis jam ti -- me -- 
   re,
   Na -- \unset associatedVoice
   tus est Rex glo -- ri -- æ,
@@ -123,7 +123,7 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   Ad quem ma -- gi am -- bu -- la -- bant,
   Au -- rum, thus, myr -- rham por -- ta -- bant,
-  Im -- mo -- la -- bant hæc sin -- ce -- \set associatedVoice = "tenors"
+  Im -- mo -- la -- bant hæc sin -- ce -- 
   re
   Le -- \unset associatedVoice
   o -- ni vic -- to -- ri -- æ,
@@ -134,7 +134,7 @@ altoWordsIII = \lyricmode {
   \set stanza = #"3. "
   Ex -- ul -- te -- mus cum Ma -- ri -- a
   In cœ -- les -- ti hie -- rar -- chi -- a
-  Na -- tum pro -- mat vo -- ce pi -- \set associatedVoice = "tenors"
+  Na -- tum pro -- mat vo -- ce pi -- 
   a
   Laus, \unset associatedVoice
   ho -- nor et glo -- ri -- a,
@@ -145,7 +145,7 @@ altoWordsIV = \lyricmode {
   \set stanza = #"4. "
   Chris -- to re -- gi, De -- o na -- to,
   Per Ma -- ri -- am no -- bis da -- to,
-  Me -- ri -- to re -- so -- net ve -- \set associatedVoice = "tenors"
+  Me -- ri -- to re -- so -- net ve -- 
   re
   Dul -- \unset associatedVoice
   ci cum me -- lo -- di -- a,
