@@ -62,15 +62,17 @@ sopMusic = \relative c' {
   \partial 2 g2 | \break
 }
 
-\partial 4 g8 fis |
-e4 e a8 g |
-fis4 fis b8 a |
-\partial 2 g4 g | \break
+\repeat volta 2 {
+  \partial 4 g8 fis |
+  e4 e a8 g |
+  fis4 fis b8 a |
+  \partial 2 g4 g | \break
 
-\partial 4 c8 b |
-a4 a b8 c |
-d4 c b8 a |
-\partial 2 g2 \bar "|."
+  \partial 4 c8 b |
+  a4 a b8 c |
+  d4 c b8 a |
+  \partial 2 g2 
+}
 }
 sopWords = \lyricmode {
   
@@ -93,7 +95,7 @@ altoMusic = \relative c' {
   e8 e |
   fis4 fis e8 e |
   g4 g fis8 fis |
-  d2 \bar "|."
+  d2 
 }
 altoWords = \lyricmode {
   \dropLyricsV
@@ -149,7 +151,7 @@ tenorMusic = \relative c {
   b4 b a8 a |
   a4 a g8 g8 |
   d'4 e d8 c |
-  b2 \bar "|."
+  b2 
 }
 tenorWords = \lyricmode {
 
@@ -172,7 +174,7 @@ bassMusic = \relative c {
   a,8 a |
   d4 d e8 c |
   b4 c d8 d |
-  g,2 \bar "|."
+  g,2 
 }
 bassWords = \lyricmode {
 
