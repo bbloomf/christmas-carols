@@ -62,7 +62,7 @@ sopMusic = \relative c' {
   \partial 2 g2 | \break
 }
 
-\repeat volta 2 {
+\repeat unfold 2 {
   \partial 4 g8 fis |
   e4 e a8 g |
   fis4 fis b8 a |
@@ -87,7 +87,7 @@ altoMusic = \relative c' {
   d2 |
 }
 
-\repeat volta 2 {
+\repeat unfold 2 {
     d8 d |
     c4 c c8 c |
     d4 d d8 d |
@@ -147,7 +147,7 @@ tenorMusic = \relative c {
     d4 e d8 c |
     b2 |
   }
-  \repeat volta 2 {
+  \repeat unfold 2 {
     g8 g |
     g4 g a8 a |
     a4 a b8 b |
@@ -170,7 +170,7 @@ bassMusic = \relative c {
     g2 |
   }
 
-  \repeat volta 2 {
+  \repeat unfold 2 {
     b,8 b |
     c4 c a8 a |
     d4 d b8 b |
