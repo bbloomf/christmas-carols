@@ -166,9 +166,9 @@ altoWordsV = \lyricmode {
   I would bring a lamb; ""
   If I were a wise __ _ man ""
   I would do my part;
-  Yet what __ _ can I give 
+  Yet what I can, I give 
   \set associatedVoice = "tenors"
-  Him
+  Him,
   Give my __ _ heart.
 }
 

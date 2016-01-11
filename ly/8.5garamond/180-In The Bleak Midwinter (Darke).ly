@@ -222,11 +222,11 @@ altoWords = {
     \set associatedVoice = "altos"
     I would do my part,
     \set associatedVoice = "sopranos"
-    Yet "" what I can I give \set associatedVoice = "tenors"
+    Yet "" what I can, I give \set associatedVoice = "tenors"
     Him,
     
     Give __ my \set associatedVoice = "basses" heart, __
-    give __ \unset associatedVoice my heart.
+    give __ \unset associatedVoice \set associatedVoice = "altos" my heart.
   }
 }
 altoWordsII = \lyricmode {
