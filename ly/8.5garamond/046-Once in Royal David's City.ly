@@ -185,7 +185,7 @@ bassMusic = \relative c {
   b4. g8 e'4 a, |
   d g g e |
   b4. g8 c4 d |
-  b2 c8[ d] e[ fis] |
+  g,2 c8[ d] e[ fis] |
   
   g[ a b] g d4 d |  
   \slurDashed g4( g) c,8[ d] e[ fis] |
