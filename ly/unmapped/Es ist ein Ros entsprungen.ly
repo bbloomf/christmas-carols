@@ -77,7 +77,7 @@ sopMusic = \relative c'' {
   b4\rest b4 |
   a fis g e | d2 b'4\rest d4 |
   d d e d | d2 b |
-  c b4\! a~ | a g2 fis4 |
+  c b1\! a~ | a g2 fis4 |
   g2 \bar "|."
 }
 sopWords = \lyricmode {
@@ -94,7 +94,7 @@ altoMusic = \relative c'' {
   e d d cis | d8( e fis4) s4 fis |
   a g g g | fis2 e |
   e g4 e | fis4( g a) d, |
-  d2 \bar "|."
+  d1 \bar "|."
 }
 altoWords = \lyricmode {
   \dropLyricsV
@@ -145,7 +145,7 @@ tenorMusic = \relative c' {
   c b b a | a2 s4 a |
   a b c b | a2 gis |
   a d4 c | b2 a |
-  b2 \bar "|."
+  b1 \bar "|."
 }
 tenorWords = \lyricmode {
 
@@ -161,7 +161,7 @@ bassMusic = \relative c {
   d4\rest g | a b g a | d,2 d4\rest d |
   fis g c, g' | d2 e |
   a, b4 c | d2 d |
-  g \bar "|."
+  g1 \bar "|."
 }
 bassWords = \lyricmode {
   \repeat unfold 11 { \skip 1 }
