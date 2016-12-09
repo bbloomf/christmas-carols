@@ -46,7 +46,7 @@
   headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
-     \combine 
+     \combine
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         }
@@ -69,52 +69,32 @@ global = {
 }
 
 sopMusic = \relative c'' {
-  d2 d4 d |
-  e d d2 |
-  b c |
-  b4 a2 g4( |
-  
-  g) fis g2 |
-  d' d4 d |
-  e d d2 |
-  b c |
-  
-  b4 a2 g4( |
-  g) fis g2 |
-  b4\rest b4 a fis |
-  g e d2 |
-  
-  b'4\rest d4 d d |
-  e d d2 |
-  b c |
-  b4\! a2 g4( |
-  g) fis g2 \bar "|."
+  \repeat unfold 2 {
+    \partial 2 d2 | d4 d e d | d2 b |
+    c b4 a~| a g2 fis4 |
+    g2
+  }
+  b4\rest b4 |
+  a fis g e | d2 b'4\rest d4 |
+  d d e d | d2 b |
+  c b1\! a~ | a g2 fis4 |
+  g2 \bar "|."
 }
 sopWords = \lyricmode {
-  
+
 }
 
 altoMusic = \relative c'' {
-  b2 b4 g |
-  g g fis2 |
-  e e |
-  d4 d e4.( b8 |
-  
-  d4) d4 d2 |
-  b'2 b4 g |
-  g g fis2 |
-  e e |
-  
-  d4 d e4.( b8 |
-  d4) d d2 |
-  s4 g e d |
-  d cis d2 |
-  
-  s4 fis a g |
-  g g fis2 |
-  e e |
-  g4 e fis2( |
-  d4) d d2 \bar "|."
+  \repeat unfold 2 {
+    \partial 2 b2 | b4 g g g | fis2 e |
+    e d4 d | e4.( b8 d4) d |
+    d2
+  }
+  s4 g |
+  e d d cis | d8( e fis4) s4 fis |
+  a g g g | fis2 e |
+  e g4 e | fis4( g a) d, |
+  d1 \bar "|."
 }
 altoWords = \lyricmode {
   \dropLyricsV
@@ -122,10 +102,10 @@ altoWords = \lyricmode {
   Es ist ein Ros ent -- sprung -- en,
   aus ein -- er Wur -- zel zart,
   wie uns die Alt -- en sung -- en,
-  von Jes -- se war __ die Art
+  von Jes -- se kam __ die Art
   Und hat ein Blüm -- lein bracht
   mit -- ten im kalt -- en Win -- ter,
-  wohl zu der halb -- en Nacht.
+  wohl zu der hal -- ben Nacht.
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
@@ -156,52 +136,32 @@ altoWordsV = \lyricmode {
 altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
-  d2 d4 b |
-  c b a2 |
-  g g |
-  b4 d c( b~ |
-  
-  b) a b2 |
-  d d4 b |
-  c b a2 |
-  g g |
-  
-  b4 d c( b~ |
-  b) a b2 |
-  s4 d4 c b |
-  b a fis8[( g] a4) |
-  
-  s4 a4 a b |
-  c b a2 |
-  gis a |
-  d4 c b2( |
-  b4) a b2 \bar "|."
+  \repeat unfold 2 {
+    \partial 2 d2 | d4 b c b | a2 g |
+    g b4 d | c b2 a4 |
+    b2
+  }
+  s4 d4 |
+  c b b a | a2 s4 a |
+  a b c b | a2 gis |
+  a d4 c | b2 a |
+  b1 \bar "|."
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-  g'2 g4 g |
-  c g d2 |
-  e c |
-  g'4 fis e2 |
-  
-  d2 g |
-  g g4 g |
-  c g d2 |
-  e c |
-  
-  g'4 fis e2 |
-  d g, |
-  d'4\rest g a b |
-  g a d,8[( e] fis4) |
-  
-  d4\rest d fis g |
-  c, g' d2 |
-  e a, |
-  b4 c d2 |
-  d g \bar "|."
+  \repeat unfold 2 {
+    \partial 2 g'2 | g4 g c g | d2 e |
+    c g'4 fis | e2 d2 |
+    g
+  }
+
+  d4\rest g | a b g a | d,2 d4\rest d |
+  fis g c, g' | d2 e |
+  a, b4 c | d2 d |
+  g1 \bar "|."
 }
 bassWords = \lyricmode {
   \repeat unfold 11 { \skip 1 }
@@ -229,10 +189,10 @@ bassWordsIII = \lyricmode {
 }
 
 pianoRH = \relative c' {
-  
+
 }
 pianoLH = \relative c' {
-  
+
 }
 
 \score {
@@ -281,11 +241,11 @@ pianoLH = \relative c' {
       \override LyricText #'X-offset = #center-on-word
     }
   }
-  
+
   \midi {
     \tempo 4 = 100
     \set Staff.midiInstrument = "flute"
-  
+
     \context {
       \Voice
       \remove "Dynamic_performer"
