@@ -61,55 +61,49 @@ global = {
   \time 4/4
   \override DynamicLineSpanner #'staff-padding = #0.0
   \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
+  \autoBeamOff
 }
 
 sopMusic = \relative c'' {
-  d2 d4 d |
-  e d d2 |
-  b c |
-  b4 a2 g4( |
-  
-  g) fis g2 |
-  d' d4 d |
-  e d d2 |
-  b c |
-  
-  b4 a2 g4( |
-  g) fis g2 |
-  b4\rest b4 a fis |
-  g e d2 |
-  
-  b'4\rest d4 d d |
-  e d d2 |
-  b c |
-  b4\! a2 g4( |
-  g) fis g2 \bar "|."
+  \partial 2
+  \repeat unfold 2 {
+    d2 |
+    d4 d e d |
+    d2 b |
+    c b4 a~ |
+    a g2 fis4 |
+    g2
+  }
+  b4\rest b4 |
+  a fis g e |
+  d2 b'4\rest d4 |
+  d d e d |
+  d2 b |
+  c b4\! a~ |
+  a g2 fis4 |
+  g2 \bar "|."
 }
 sopWords = \lyricmode {
   
 }
 
 altoMusic = \relative c'' {
-  b2 b4 g |
-  g g fis2 |
-  e e |
-  d4 d e4.( b8 |
-  
-  d4) d4 d2 |
-  b'2 b4 g |
-  g g fis2 |
-  e e |
-  
-  d4 d e4.( b8 |
-  d4) d d2 |
-  s4 g e d |
-  d cis d2 |
-  
-  s4 fis a g |
-  g g fis2 |
-  e e |
-  g4 e fis2( |
-  d4) d d2 \bar "|."
+  \repeat unfold 2 {
+    b2 |
+    b4 g g g |
+    fis2 e |
+    e d4 d |
+    e4.( b8 d4) d4 |
+    d2
+  }
+  s4 g |
+  e d d cis |
+  d8[ e]( fis4) s fis |
+  a g g g |
+  fis2 e |
+  e g4( e |
+  fis4) g a d, |
+  d2 \bar "|."
 }
 altoWords = \lyricmode {
   \dropLyricsV
@@ -117,10 +111,12 @@ altoWords = \lyricmode {
   Es ist ein Ros ent -- sprung -- en,
   aus ein -- er Wur -- zel zart,
   wie uns die Alt -- en sung -- en,
-  von Jes -- se war __ die Art
+  von Jes -- se kam __ die Art
+  \set associatedVoice = "tenors"
   Und hat ein Blüm -- lein bracht
+  \unset associatedVoice
   mit -- ten im kalt -- en Win -- ter,
-  wohl zu der halb -- en Nacht.
+  wohl zu der hal -- ben Nacht.
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
@@ -129,7 +125,9 @@ altoWordsII = \lyricmode {
   da -- von Je -- sai -- a sagt,
   ist Ma -- ri -- a die rei -- ne
   die uns das Blüm -- lein bracht.
+  \set associatedVoice = "tenors"
   Aus Got -- tes ew’ -- gem Rat
+  \unset associatedVoice
   hat sie ein Kind ge -- bor -- en
   und blieb ein rei -- ne Magd.
 }
@@ -140,7 +138,9 @@ altoWordsIII = \lyricmode {
   das duf -- tet uns __ so süß,
   mit sein -- em hel -- len Schein -- e
   ver -- treibt’s die Fin -- ster -- nis.
+  \set associatedVoice = "tenors"
   Wahr Mensch und wahr -- er Gott,
+  \unset associatedVoice
   hilft uns aus al -- lem Leid -- e,
   ret -- tet von Sünd und Tod.
 }
@@ -151,76 +151,69 @@ altoWordsV = \lyricmode {
 altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
-  d2 d4 b |
-  c b a2 |
-  g g |
-  b4 d c( b~ |
-  
-  b) a b2 |
-  d d4 b |
-  c b a2 |
-  g g |
-  
-  b4 d c( b~ |
-  b) a b2 |
-  s4 d4 c b |
-  b a fis8[( g] a4) |
-  
-  s4 a4 a b |
-  c b a2 |
-  gis a |
-  d4 c b2( |
-  b4) a b2 \bar "|."
+  \repeat unfold 2 {
+    d2 |
+    d4 b c b |
+    a2 g |
+    g b4 d |
+    c( b2) a4 |
+    b2
+  }
+  s4 d |
+  c b b a |
+  fis8[ g]( a4) s4 a4 |
+
+  a b c b |
+  a2 gis |
+  a d4 c |
+  b2 a |
+  b \bar "|."
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-  g'2 g4 g |
-  c g d2 |
-  e c |
-  g'4 fis e2 |
-  
-  d2 g |
-  g g4 g |
-  c g d2 |
-  e c |
-  
-  g'4 fis e2 |
-  d g, |
-  d'4\rest g a b |
-  g a d,8[( e] fis4) |
-  
-  d4\rest d fis g |
-  c, g' d2 |
-  e a, |
-  b4 c d2 |
-  d g \bar "|."
+  \repeat unfold 2 {
+    g'2 |
+    g4 g c g |
+    d2 e |
+    c g'4 fis |
+    e2 d |
+    g,
+  }
+  d'4\rest g |
+  a b g a |
+  d,2 d4\rest d |
+  fis g c, g' |
+  d2 e |
+  a, b4 c |
+  d2 d |
+  g, \bar "|."
 }
 bassWords = \lyricmode {
-  \repeat unfold 11 { \skip 1 }
-  -zel zart,
-  \repeat unfold 11 { \skip 1 }
-  die Art
-  \repeat unfold 17 { \skip 1 }
-  -en Nacht.
+  \repeat unfold 10 { \skip 1 }
+  Wur -- zel zart,
+  \repeat unfold 10 { \skip 1 }
+  war die Art
+  \repeat unfold 16 { \skip 1 }
+  hal -- ben Nacht.
 }
 bassWordsII = \lyricmode {
-  \repeat unfold 11 { \skip 1 }
-  -a sagt,
-  \repeat unfold 11 { \skip 1 }
-  -lein bracht.
-  \repeat unfold 17 { \skip 1 }
-  -ne Magd.
+  \repeat unfold 10 { \skip 1 }
+  -sai -- a sagt,
+  \repeat unfold 10 { \skip 1 }
+  Blüm -- lein bracht.
+  \repeat unfold 16 { \skip 1 }
+  rei -- ne Magd.
 }
 bassWordsIII = \lyricmode {
-  \repeat unfold 11 { \skip 1 }
-  so süß,
-  \repeat unfold 11 { \skip 1 }
-  -ster -- nis.
-  \repeat unfold 17 { \skip 1 }
-  und Tod.
+  \repeat unfold 10 { \skip 1 }
+  uns so süß,
+  \repeat unfold 10 { \skip 1 }
+  Fin -- ster -- nis.
+  \repeat unfold 16 { \skip 1 }
+  Sünd und Tod.
 }
 
 pianoRH = \relative c' {
@@ -239,17 +232,17 @@ pianoLH = \relative c' {
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "altos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "sopranos" \altoWords
     \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((padding . 0.2)) } \lyricsto "tenors" \tenorWords
 %{IF_LESSER
     \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . 0.2)) } \lyricsto "basses" \bassWordsIII
@@ -296,67 +289,16 @@ pianoLH = \relative c' {
 
 
 %IF_NOT_LESSER
-global = {
-  \key g \major
-  \time 4/4
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
-}
 
-sopMusic = \relative c'' {
-  d2 d4 d |
-  e d d2 |
-  b c |
-  b4 a2 g4( |
-  
-  g) fis g2 |
-  d' d4 d |
-  e d d2 |
-  b c |
-  
-  b4 a2 g4( |
-  g) fis g2 |
-  b4\rest b4 a fis |
-  g e d2 |
-  
-  b'4\rest d4 d d |
-  e d d2 |
-  b c |
-  b4 a2 g4( |
-  g) fis g2 \bar "|."
-}
-sopWords = \lyricmode {
-  
-}
 
-altoMusic = \relative c'' {
-  b2 b4 g |
-  g g fis2 |
-  e e |
-  d4 d e4.( b8 |
-  
-  d4) d4 d2 |
-  b'2 b4 g |
-  g g fis2 |
-  e e |
-  
-  d4 d e4.( b8 |
-  d4) d d2 |
-  s4 g e d |
-  d cis d2 |
-  
-  s4 fis a g |
-  g g fis2 |
-  e e |
-  g4 e fis2( |
-  d4) d d2 \bar "|."
-}
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
   Flos de ra -- dí -- ce Jes -- se, est na -- tus hó -- di -- e.
   Quem no -- bis jam ad -- és -- se, læ -- tá -- mur ú -- ni -- ce.
+  \set associatedVoice = "tenors"
   Flos il -- le Je -- sus est.
+  \unset associatedVoice
   Ma -- rí -- a Vir -- go ra -- dix de qua flos or -- tus est.
 }
 altoWordsII = \lyricmode {
@@ -364,7 +306,9 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   Hunc I -- sá -- i -- as flo -- rem, præ -- sá -- giis cé -- ci -- nit.
   Ad e -- jus nos a -- mó -- rem, Na -- scén -- tis ál -- li -- cit.
+  \set associatedVoice = "tenors"
   Flos vir -- gam sú -- per -- at
+  \unset associatedVoice
   cæ -- li ter -- ræ -- que ci -- ves, Flos il -- le ré -- cre -- at.
 }
 altoWordsIII = \lyricmode {
@@ -372,83 +316,40 @@ altoWordsIII = \lyricmode {
   \set stanza = #"3. "
   Est cam -- pi flos pu -- dí -- ci, est flos con -- vál -- li -- um.
   Pul -- chrúm -- que pot -- est di -- ci, in spi -- nis lí -- li -- um.
+  \set associatedVoice = "tenors"
   O -- dó -- ris óp -- ti -- mi;
+  \unset associatedVoice
   vel so -- li quod -- vis ce -- dit a -- ró -- ma nó -- mi -- ni.
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "
 %  Hic su -- o flos o -- dó -- re, fi -- dé -- les át -- tra -- hit. 
 %  Di -- ví -- no mox a -- mó -- re, at -- trác -- tos ím -- bu -- it.
+%  \set associatedVoice = "tenors"
 %  O flos o grá -- ti -- a:
+%  \unset associatedVoice
 %  ad te su -- spí -- ro, de te me sá -- ti -- a.
 }
 altoWordsV = \lyricmode {
 }
 altoWordsVI = \lyricmode {
 }
-tenorMusic = \relative c' {
-  d2 d4 b |
-  c b a2 |
-  g g |
-  b4 d c( b~ |
-  
-  b) a b2 |
-  d d4 b |
-  c b a2 |
-  g g |
-  
-  b4 d c( b~ |
-  b) a b2 |
-  s4 d4 c b |
-  b a fis8[( g] a4) |
-  
-  s4 a4 a b |
-  c b a2 |
-  gis a |
-  d4 c b2( |
-  b4) a b2 \bar "|."
-}
-tenorWords = \lyricmode {
 
-}
-
-bassMusic = \relative c {
-  g'2 g4 g |
-  c g d2 |
-  e c |
-  g'4 fis e2 |
-  
-  d2 g |
-  g g4 g |
-  c g d2 |
-  e c |
-  
-  g'4 fis e2 |
-  d g, |
-  d'4\rest g a b |
-  g a d,8[( e] fis4) |
-  
-  d4\rest d fis g |
-  c, g' d2 |
-  e a, |
-  b4 c d2 |
-  d g \bar "|."
-}
 bassWords = \lyricmode {
-  \repeat unfold 11 { \skip 1 }
-  -di -- e.
-  \repeat unfold 11 { \skip 1 }
-  -ni -- ce.
-  \repeat unfold 17 { \skip 1 }
-  -tus est.
+  \repeat unfold 10 { \skip 1 }
+  hó -- di -- e.
+  \repeat unfold 10 { \skip 1 }
+  ú -- ni -- ce.
+  \repeat unfold 16 { \skip 1 }
+  or -- tus est.
 }
 bassWordsII = \lyricmode {
-  \repeat unfold 11 { \skip 1 }
-  -ci -- nit.
-  \repeat unfold 11 { \skip 1 }
-  -li -- cit.
-  \repeat unfold 17 { \skip 1 }
-  -cre -- at.
+  \repeat unfold 10 { \skip 1 }
+  cé -- ci -- nit.
+  \repeat unfold 10 { \skip 1 }
+  āl -- li -- cit.
+  \repeat unfold 16 { \skip 1 }
+  ré -- cre -- at.
 }
 
 pianoRH = \relative c' {
@@ -467,17 +368,17 @@ pianoLH = \relative c' {
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "altos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "sopranos" \altoWords
     \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . 0.2)) } \lyricsto "tenors" \tenorWords
     \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . 0.2)) } \lyricsto "basses" \bassWordsII
     \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . 0.2)) } \lyricsto "basses" \bassWords
@@ -520,61 +421,11 @@ pianoLH = \relative c' {
 
 
 
-global = {
-  \key g \major
-  \time 4/4
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
-}
-
-sopMusic = \relative c'' {
-  d2 d4 d |
-  e d d2 |
-  b c |
-  b4 a2 g4( |
-  
-  g) fis g2 |
-  d' d4 d |
-  e d d2 |
-  b c |
-  
-  b4 a2 g4( |
-  g) fis g2 |
-  b4\rest b4 a fis |
-  g e d2 |
-  
-  b'4\rest d4 d d |
-  e d d2 |
-  b c |
-  b4 a2 g4( |
-  g) fis g2 \bar "|."
-}
 sopWords = \lyricmode {
   
 }
 
-altoMusic = \relative c'' {
-  b2 b4 g |
-  g g fis2 |
-  e e |
-  d4 d e4.( b8 |
-  
-  d4) d4 d2 |
-  b'2 b4 g |
-  g g fis2 |
-  e e |
-  
-  d4 d e4.( b8 |
-  d4) d d2 |
-  s4 g e d |
-  d cis d2 |
-  
-  s4 fis a g |
-  g g fis2 |
-  e e |
-  g4 e fis2( |
-  d4) d d2 \bar "|."
-}
+
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
@@ -582,9 +433,11 @@ altoWords = \lyricmode {
   From ten -- der stem __ has sprung!
   Of Jes -- se’s lin -- eage com -- ing
   As men of old __ have sung.
+  \set associatedVoice = "tenors"
   It came, a flow’r -- et bright,
+  \unset associatedVoice
   A -- mid the cold of win -- ter
-  When half -- spent was __ the night.
+  When half -- spent was the night.
 }
 altoWordsII = {
   \dropLyricsV
@@ -594,9 +447,11 @@ altoWordsII = {
     The Rose I had __ in mind;
     With Ma -- ry we be -- hold it,
     The Vir -- gin Moth -- er kind.
+    \set associatedVoice = "tenors"
     To show God’s love a -- right
+    \unset associatedVoice
     She bore to men a Sav -- ior,
-    When half -- spent was __ the night.
+    When half -- spent was the night.
   }
 }
 altoWordsIII = \lyricmode {
@@ -606,7 +461,9 @@ altoWordsIII = \lyricmode {
   With sweet -- ness fills __ the air,
   Dis -- pel with glo -- rious splen -- dor
   The dark -- ness ev -- ’ry -- where;
+  \set associatedVoice = "tenors"
   True man, yet ve -- ry God,
+  \unset associatedVoice
   From Sin and death now save us,
   And share our ev -- ’ry load.
 }
@@ -616,79 +473,32 @@ altoWordsV = \lyricmode {
 }
 altoWordsVI = \lyricmode {
 }
-tenorMusic = \relative c' {
-  d2 d4 b |
-  c b a2 |
-  g g |
-  b4 d c( b~ |
-  
-  b) a b2 |
-  d d4 b |
-  c b a2 |
-  g g |
-  
-  b4 d c( b~ |
-  b) a b2 |
-  s4 d4 c b |
-  b a fis8[( g] a4) |
-  
-  s4 a4 a b |
-  c b a2 |
-  gis a |
-  d4 c b2( |
-  b4) a b2 \bar "|."
-}
-tenorWords = \lyricmode {
 
-}
-
-bassMusic = \relative c {
-  g'2 g4 g |
-  c g d2 |
-  e c |
-  g'4 fis e2 |
-  
-  d2 g |
-  g g4 g |
-  c g d2 |
-  e c |
-  
-  g'4 fis e2 |
-  d g, |
-  d'4\rest g a b |
-  g a d,8[( e] fis4) |
-  
-  d4\rest d fis g |
-  c, g' d2 |
-  e a, |
-  b4 c d2 |
-  d g \bar "|."
-}
 bassWords = \lyricmode {
-  \repeat unfold 11 { \skip 1 }
-  has sprung!
-  \repeat unfold 11 { \skip 1 }
-  have sung.
-  \repeat unfold 17 { \skip 1 }
-  the night.
+  \repeat unfold 10 { \skip 1 }
+  stem has sprung!
+  \repeat unfold 10 { \skip 1 }
+  old have sung.
+  \repeat unfold 16 { \skip 1 }
+  was the night.
 }
 bassWordsII = \lyricmode {
-  \repeat unfold 11 { \skip 1 }
-  in mind;
-  \repeat unfold 11 { \skip 1 }
-  -er kind.
+  \repeat unfold 10 { \skip 1 }
+  had in mind;
+  \repeat unfold 10 { \skip 1 }
+  Moth -- er kind.
 %{IF_LESSER
-  \repeat unfold 17 { \skip 1 }
-  the night.
+  \repeat unfold 16 { \skip 1 }
+  was the night.
 %}%END_IF_LESSER
 }
 bassWordsIII = \lyricmode {
-  \repeat unfold 11 { \skip 1 }
-  the air,
-  \repeat unfold 11 { \skip 1 }
-  ’ry -- where;
-  \repeat unfold 17 { \skip 1 }
-  ’ry load.
+  \repeat unfold 10 { \skip 1 }
+  fills the air,
+  \repeat unfold 10 { \skip 1 }
+  ev -- ’ry -- where;
+  \repeat unfold 16 { \skip 1 }
+  ev -- ’ry load.
 }
 
 pianoRH = \relative c' {
@@ -707,17 +517,17 @@ pianoLH = \relative c' {
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "altos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "sopranos" \altoWords
     \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . 0.2)) } \lyricsto "tenors" \tenorWords
 %{IF_LESSER
     \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . 0.2)) } \lyricsto "basses" \bassWordsIII
