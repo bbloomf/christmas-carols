@@ -320,9 +320,10 @@ pianoLH = \relative c {
       aes,8[ aes' ees aes]
       des,[ aes' f aes]
       des,[ bes' f bes]
-      ees,[ bes' g bes] |
-      ees,[ ees' g, des'] } \\
-     {aes,2 | aes | aes | des | des | ees | ees } >> |
+      ees,2
+      ees } \\
+     {aes,2 | aes | aes | des | des | ees8[ bes' g bes] |
+      ees,[ ees' g, des'] } >> |
      
   <aes c>4 r |
   << {aes,8[ aes' ees aes] |
@@ -376,8 +377,8 @@ pianoLH = \relative c {
   aes[ q q q] |
   des,[ <f aes des> q q] |
   des[ q q q ] |
-  ees[ <aes c> q q] |
-  ees[ <bes' des> q q] |
+  \once \override NoteHead.duration-log = #1 ees[ <aes c> q q] |
+  \once \override NoteHead.duration-log = #1 ees[ <bes' des> q q] |
   <aes c> r <aes, aes,>4 \bar"|."
 }
 
