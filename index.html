@@ -10,8 +10,8 @@ title: A Collection of Christmas Carols
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A Collection of Christmas Carols : A Book of more than 150 traditional Christmas Carols" />
   
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     
     <title>{{ page.title }}</title>
     <!-- midi.js css -->
@@ -35,15 +35,18 @@ title: A Collection of Christmas Carols
     <!-- code to handle the page -->
     <script src="./js/jquery.min.js" type="text/javascript"></script>
     <script src="./js/audioplayer.js" type="text/javascript"></script>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
   </head>
 
   <body>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner">
+        <header class="inner clearfix">
           <a id="forkme_banner" href="https://github.com/bbloomf/christmas-carols">View on GitHub</a>
 
-          <img style="float: left;border:none;box-shadow:none;-webkit-box-shadow:none;margin-right:10px" src="images/cover.jpg">
+          <img class='cover' style="float: left;border:none;box-shadow:none;-webkit-box-shadow:none;margin-right:10px" src="images/cover.jpg">
           <h1 id="project_title">A Collection of Christmas Carols</h1>
           <h2 id="project_tagline">A Book of more than 150 traditional Christmas Carols</h2>
         </header>
@@ -60,8 +63,8 @@ title: A Collection of Christmas Carols
 <li><a href="http://acollectionofchristmascarols.com/pdfs/ccc-playbook.pdf">Tablet version (no margins)</a></li>
 <li><a href="http://acollectionofchristmascarols.com/pdfs/ccc.pdf">8.5x11</a></li>
 </ul><p>It can also be viewed on Google Books <a href="https://books.google.com/books?id=yYr2nNpfo6QC&printsec=frontcover#v=onepage&q&f=false">here</a>, and on Scribd <a href="https://www.scribd.com/doc/90003205/A-Collection-of-Christmas-Carols-8-5x11">here</a>.</p>
-<p>If you would like to make a donation, click this button: <a class="dbox-donation-button" href="https://donorbox.org/a-collection-of-christmas-carols" style="background:#2d81c5 url(https://d1iczxrky3cnb2.cloudfront.net/red_logo.png) no-repeat 18px center; color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 13px 17px 13px 56px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 1px 0 0 #1f5a89; text-shadow: 0 1px rgba(0, 0, 0, 0.3);" >Donate</a></p>
-<p>And here are the MIDIs:</p>
+<p>If you would like to make a donation to support this work, click this button: <a class="btn btn-primary" href="https://donorbox.org/a-collection-of-christmas-carols">Donate</a></p>
+<p>And here are MIDI files for every song in the book:</p>
 
 <ul>
 {% for song in site.data.songs %}

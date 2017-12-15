@@ -14,18 +14,34 @@ $(function() {
       $subtotal = $('.txt-subtotal'),
       $total = $('.txt-total'),
       quantity = $quantity.val(),
-      shipping = 4,
+      shipping = 400,
+      MIN_QUANTITY = 5,
       subtotal,
       total,
       api_key = api_keys[window.location.hostname.match(/^localhost$/)?'test':'live'];
+  var formatUSD = function(cents) {
+    cents = cents.toString();
+    if(cents.length <= 2) {
+      return '$0.' + ("0"+cents).slice(-2);
+    }
+    return '$' + cents.slice(0,-2) + '.' + cents.slice(-2);
+  }
   var onQuantityChange = function() {
     quantity = parseInt($quantity.val()) || 0;
-    subtotal = quantity * 5;
-    $subtotal.text('$' + subtotal + '.00');
+    if(!quantity || quantity < MIN_QUANTITY) {
+      subtotal = total = 0;
+      $subtotal.text('N/A');
+      $total.text('N/A');
+      $('#btnPay').attr('disabled',true);
+      return
+    }
+    $('#btnPay').attr('disabled',null);
+    subtotal = quantity * 500;
+    $subtotal.text(formatUSD(subtotal));
     total = subtotal + shipping;
-    $total.text('$' + total + '.00');
+    $total.text(formatUSD(total));
   };
-  $quantity.change(onQuantityChange).keyup(onQuantityChange).change();
+  $quantity.change(onQuantityChange).keydown(function() { setTimeout(onQuantityChange); }).change();
   var handler = StripeCheckout.configure({
     key: api_key.public,
     allowRememberMe: false,
@@ -36,7 +52,7 @@ $(function() {
       $quantity.attr('disabled',true);
       $('#btnCancelOrder').hide();
       var data = {
-        "amount": total * 100,
+        "amount": total,
         "currency": 'usd',
         "description": quantity + ' copies of A Collection of Christmas Carols',
         "source": token.id
@@ -81,8 +97,8 @@ $(function() {
     $('.error').hide();
     handler.open({
       name: 'A Collection of Christmas Carols',
-      description: quantity + ' copies, $' + total + '.00',
-      amount: total * 100,
+      description: quantity + ' copies, ' + formatUSD(total),
+      amount: total,
       billingAddress: true,
       shippingAddress: true,
       zipCode: true
