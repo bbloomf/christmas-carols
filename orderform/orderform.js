@@ -54,6 +54,7 @@ $(function() {
       var data = {
         "amount": total,
         "currency": 'usd',
+        "statement_descriptor": "Christmas Carol Book",
         "description": quantity + ' copies of A Collection of Christmas Carols',
         "source": token.id
       };
