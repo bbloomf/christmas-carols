@@ -1,4 +1,8 @@
 $(function() {
+  if(!('StripeCheckout' in window)) {
+    $('.only-if-checkout-available').remove();
+    return;
+  }
   var api_keys = {
     test: {
       public: 'pk_test_sqnok8syjX5SqZ8e3s9mJ0Iy',
@@ -9,7 +13,6 @@ $(function() {
       charge: 'rk_live_SjB98QHbCEyBygDLrkKIKcOP'
     }
   },
-      $stripeScript = $('#stripeScript'),
       $quantity = $('#quantity'),
       $subtotal = $('.txt-subtotal'),
       $total = $('.txt-total'),
