@@ -59,7 +59,8 @@ $(function() {
         "currency": 'usd',
         "statement_descriptor": "Christmas Carol Book",
         "description": quantity + ' copies of A Collection of Christmas Carols',
-        "source": token.id
+        "source": token.id,
+        "metadata[email]": token.email
       };
       var keys = Object.keys(args);
       for(var i in keys) {
