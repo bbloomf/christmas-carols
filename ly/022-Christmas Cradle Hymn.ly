@@ -1,13 +1,13 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Stainless the Maiden"}}
-  subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Serdeczna Matko)"}}
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Christmas Cradle Hymn"}}
+  subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Lulajże, Jezuniu)"}}
   poet = \markup\oldStyleNum"Traditional Polish Carol"
-  meter = \markup\oldStyleNum"Translated by Edith M. G. Reed (1885–1933)"
+  %meter = \markup\oldStyleNum"Translated by ??? (1885–1933)"
   composer = \markup\oldStyleNum"Traditional Polish Carol"
-  arranger = \markup\oldStyleNum"Arranged by Edith M. G. Reed (1885–1933)"
-  tagline = \markup { "from" \italic "CyberHymnal.org"}
+  % arranger = \markup\oldStyleNum"Arranged by Edith M. G. Reed (1885–1933)"
+  tagline = ""
 }
 \paper {
   %print-all-headers = ##t
@@ -48,57 +48,158 @@
 }
 #(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
 global = {
-  \key g \major
+  \key ees \major
   \time 3/4
   \autoBeamOff
 }
 
 sopMusic = \relative c' {
+  g'4 g8[ f] g4 |
+  aes aes g |
+  f f g8[ aes] |
+  c4( bes2) |
+  g4 g8[ f] g4 |
+  
+  aes aes g |
+  f bes4. aes8 |
+  aes4( g2) |
+  \repeat volta 2 {
+    bes4 bes ees8[ d] |
+    c4 c8[ bes] c[ bes] |
 
+    aes4 aes c |
+    c( bes2) |
+    g4 g8[ f] g4 |
+    aes aes g |
+    f bes4. aes8 |
+    aes4( g2)
+  }
 }
 sopWords = \lyricmode {
   
 }
 
 altoMusic = \relative c' {
+  ees4 d ees |
+  ees ees d |
+  ees ees ees |
+  ees~ ees2 |
 
+  ees4 ees ees |
+  ees ees d |
+  ees d4. d8 |
+  ees4~ ees2 |
+
+  \repeat volta 2 {
+    g8[ fis] g[ aes] bes4 |
+    bes8[ aes] g[ aes] f4 |
+    f f f |
+    g~ g2 |
+    ees4 ees ees |
+    d8[ ees] f[ ees] d4 |
+    ees d4. d8 |
+    ees4~ ees2 |
+  }
 }
 altoWords = \lyricmode {
-  \dropLyricsV
-  \set stanza = #"1. "
-  
+  \set stanza = "1. "
+
+  Hush Thee, my lit -- tle One,
+  Moth -- er is nigh;
+  At Thy low man -- ger bed
+  Watch -- ing close by.
+  O -- ver the mead -- ows dim
+\set ignoreMelismata = ##t
+  Night winds are blow -- ing,
+\unset ignoreMelismata
+  Here in the qui -- et byre,
+\set ignoreMelismata = ##t
+  Meek cat -- tle low -- ing.
 }
 altoWordsII = \lyricmode {
-  \dropLyricsV
 %\markup\italic
-  \set stanza = #"2. "
+  \set stanza = "2. "
 
+  Look lit -- tle wake -- ful One
+  Out at the sky,
+  Where stars like sil -- ver lamps
+  Swing far on high.
+  Dost know, Child, how three kings
+  Rid -- ing from far
+  Brought to Thy crib rich gifts,
+  Led by Thy star.
 }
 altoWordsIII = \lyricmode {
-  \set stanza = #"3. "
-  \set ignoreMelismata = ##t
+  \set stanza = "3. "
+
+  Dost know how, on the night
+  When Thou wert born,
+  An -- gels sang songs of joy
+  From dark till dawn.
+  But, now, my Ba -- by, rest,
+  While I am nigh,
+  Sleep, drow -- sy lit -- tle Boy,
+  Hush, hush -- a -- by.
 }
 altoWordsIV = \lyricmode {
-  \set stanza = #"4. "
+  \set stanza = "4. "
   \set ignoreMelismata = ##t
 }
 altoWordsV = \lyricmode {
-  \set stanza = #"5. "
+  \set stanza = "5. "
   \set ignoreMelismata = ##t
 }
 altoWordsVI = \lyricmode {
-  \set stanza = #"6. "
+  \set stanza = "6. "
   \set ignoreMelismata = ##t
 }
-tenorMusic = \relative c {
+tenorMusic = \relative c' {
+  bes4 bes b |
+  c c bes? |
+  c c c |
+  aes( g2) |
 
+  bes4 bes a |
+  g f f |
+  c' bes4. f8 |
+  c'4( bes2) |
+
+  \repeat volta 2 {
+    ees4 ees ees |
+    ees ees d |
+    ees8[ f] ees[ d] c[ d] |
+    ees4( bes2) |
+    bes4 bes bes |
+    bes c bes |
+    aes f4. bes8 |
+    c4( bes2) |
+  }
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
+  ees4 ees ees |
+  f f f |
+  aes g f |
+  ees~ ees2 |
 
+  ees4 d c |
+  c b bes |
+  aes bes4. bes8 |
+  ees4~ ees2 |
+
+  \repeat volta 2 {
+    ees4 ees8[ f] g4 |
+    aes aes bes |
+    c bes aes |
+    ees~ ees2 |
+    ees8[ f] ees[ d] c[ bes] |
+    g4 aes bes |
+    b bes4. d8 |
+    ees4~ ees2 |
+  }
 }
 bassWords = \lyricmode {
 
@@ -119,12 +220,12 @@ pianoLH = \relative c' {
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "altos" \altoWords
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
