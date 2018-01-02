@@ -1,12 +1,13 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"As Lately We Watched"}}
-  poet = \markup\oldStyleNum"Anonymous"
-  composer = \markup\oldStyleNum"19th Century Austrian"
-  tagline = ""
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"O Come, Little Children"}}
+  poet = \markup\concat{\italic"Ihr Kinderlein kommet" ", by Christoph von Schmid (1768–1854)"}
+  composer = \markup\oldStyleNum"Johann A. P. Schulz (1747–1800)"
+  tagline = \markup{from \italic"HymnsAndCarolsOfChristmas.com"}
 }
 \paper {
+  %print-all-headers = ##t
   paper-height = 11\in
   paper-width = 8.5\in
   indent = 0\in
@@ -23,7 +24,7 @@
   outer-margin = 0.75\in
   top-margin = 0.26\in
   bottom-margin = 0.25\in
-  first-page-number = #085
+  first-page-number = #021
   print-first-page-number = ##t
   headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
@@ -44,145 +45,145 @@
 }
 #(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
 global = {
-  \key aes \major
-  \time 3/4
+  \key ees \major
+  \time 2/4
   \autoBeamOff
   \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
+  \override DynamicLineSpanner #'Y-extent = #'(-0.5 . 1)
 }
 
-sopMusic = \relative c' {
-  \partial 4 ees4^\mf |
-  aes aes bes |
-  aes c8[ bes] aes[ g] |
-  f4 bes g |
+sopMusic = \relative c'' {
+  \partial 8 bes8 |
+  bes4 g8 bes8\noBeam |
+  bes4 g8 bes\noBeam |
+  aes4 f8\noBeam f |
+  g4 bes8\rest \bar""\break bes |
   
-  aes2 \bar""\break ees4 |
-  aes4 aes4 bes |
-  aes c8[ bes] aes[ g] |
-  f4 bes g |
-  aes2. | \break
+  bes4 g8 bes8\noBeam |
+  bes4 g8 bes\noBeam |
+  aes4 f8\noBeam f |
+  g4 bes8\rest \bar""\break g |
   
-  c4 c8[ bes] aes[ g] |
-  f2. |
-  bes4 bes8[ aes] g[ f] |
-  ees2 \bar""\break ees4 |
+  f4 f8\noBeam f |
+  aes4 aes8\noBeam aes |
+  g4 g8\noBeam g |
+  c4. \bar""\break c8 |
   
-  aes aes bes |
-  aes c8[ bes] aes[ g] |
-  f4 bes g |
-  \partial 2 aes2 \bar "|."
+  bes4 bes8\noBeam bes |
+  ees4 bes8\noBeam g |
+  aes4 f8\noBeam f |
+  \partial 4. ees4 bes'8\rest \bar "|."
 }
 sopWords = \lyricmode {
   
 }
 
-altoMusic = \relative c' {
-  ees4 |
-  ees f g |
-  ees aes8[ g] ees4 |
-  des f ees |
+altoMusic = \relative c'' {
+  g8 |
+  g4 ees8\noBeam g |
+  g4 ees8\noBeam des |
+  c[ ees] ees\noBeam d |
+  ees4 s8 g8 |
   
-  ees2 ees4 |
-  c ees ees |
-  ees aes8[ g] ees4 |
-  des f ees |
-  ees2. |
+  g4 ees8\noBeam g |
+  g4 ees8\noBeam des |
+  c[ ees] ees\noBeam d |
+  ees4 s8 ees |
   
-  ees4 ees8[ e] f[ ees] |
-  des2. |
-  d4 f d |
-  bes2 ees4 |
+  ees4 d8\noBeam d |
+  c4 c8\noBeam d |
+  ees4 ees8\noBeam ees |
+  ees4. ees8 |
   
-  ees c ees |
-  ees aes8[ g] ees4 |
-  des f ees |
-  ees2 \bar "|."
+  f[ d] ees\noBeam f |
+  ees4 ees8\noBeam ees |
+  f[ ees] ees\noBeam d |
+  bes4 s8 \bar "|."
 }
 altoWords = \lyricmode {
-  \dropLyricsV
+  \dropLyricsIX
   \set stanza = #"1. "
-  As late -- ly we watch’d o’er our fields thro’ the night,
-  A star there was seen of __ such glo -- ri -- ous light;
-  All thro’ __ the __ night, an -- gels did __ sing,
-  In ca -- rols, so sweet, of __ the __ birth of a King.
+  O come, lit -- tle chil -- dren, O come one and all,
+  To Beth -- le -- hem haste, to the man -- ger so small,
+  God’s Son for a gift has been sent you this night
+  To be your Re -- deem -- er, your joy and de -- light.
 }
 altoWordsII = \lyricmode {
-  \dropLyricsV
+  \dropLyricsIX
 %\markup\italic
   \set stanza = #"2. "
-  A King of such beau -- ty __ was ne’er  be -- fore seen,
-  And Ma -- ry His moth -- er __ so __ like to a queen.
-  Blest be __ the __ hour, wel -- come the __ morn,
-  For Christ our dear Sav -- ior __ on __ earth now is born.
+  He’s born in a sta -- ble for you and for me,
+  Draw near by the bright gleam -- ing Star light to see,
+  In swad -- dling clothes ly -- ing so meek and so mild,
+  And pur -- er than an -- gels the heav -- en -- ly Child.
 }
 altoWordsIII = \lyricmode {
-  \dropLyricsV
+  \dropLyricsIX
   \set stanza = #"3. "
-  His throne is a man -- ger, __ His court is a loft,
-  But troops of bright an -- gels, in __ lays sweet and soft,
-  Him they __ pro -- claim, our Christ by __ name,
-  And earth, sky and air straight are __ fill’d with His fame.
+  See Ma -- ry and Jo -- seph with love beam -- ing eyes
+  Are gaz -- ing up -- on the rude bed where He lies,
+  The shep -- herds are kneel -- ing, with hearts full of love,
+  While an -- gels sing loud al -- le -- lu -- ias a -- bove.
 }
 altoWordsIV = \lyricmode {
-  \dropLyricsV
+  \dropLyricsIX
   \set stanza = #"4. "
-  Then shep -- herds, be joy -- ful, __ sa -- lute your liege King,
-  Let hills and dales ring to __ the __ song that ye sing,
-  Blest be __ the __ hour, wel -- come the __ morn,
-  For Christ our dear Sav -- ior __ on __ earth now is born.
+  Kneel down and a -- dore Him with shep -- herds to -- day,
+  Lift up lit -- tle hands now and praise Him as they;
+  Re -- joice that a Sav -- ior from sin you can boast,
+  And join in the song of the heav -- en -- ly host.
 }
 altoWordsV = \lyricmode {
 }
 altoWordsVI = \lyricmode {
 }
-tenorMusic = \relative c {
-  ees4_\mf |
-  c' c ees |
-  c ees aes, |
-  aes des des |
+tenorMusic = \relative c' {
+  bes8 |
+  bes4 bes8\noBeam bes |
+  bes[ ees] bes\noBeam g |
+  aes4 bes8\noBeam bes |
+  bes4 s8 bes8 |
   
-  des( c) g |
-  aes aes g8[ des'] |
-  c4 ees aes, |
-  aes des des |
-  des2( c4) |
+  bes4 bes8\noBeam bes |
+  bes[ ees] bes\noBeam g |
+  aes4 bes8\noBeam bes |
+  bes4 s8 bes8 |
   
-  c4 c c |
-  aes2. |
-  bes4 bes bes8[ aes] |
-  g2 g4 |
+  bes4 bes8\noBeam bes |
+  aes4 c8\noBeam bes |
+  bes4 c8\noBeam des |
+  c4. c8 |
   
-  aes4 aes g |
-  c ees aes, |
-  aes des des |
-  c2 \bar "|."
+  d[ bes] c\noBeam d |
+  bes[ aes] g\noBeam c |
+  c[ aes] bes\noBeam aes |
+  g4 s8 \bar "|."
 }
 tenorWords = \lyricmode {
 
 }
 
 bassMusic = \relative c {
-  ees4 |
-  aes8[ g] f4 ees |
-  aes aes,8[ bes] c4 |
-  des8[ c] bes4 ees |
+  ees8 |
+  ees4 ees8\noBeam ees |
+  ees4 ees8\noBeam e |
+  f4 bes,8\noBeam bes |
+  ees4 d8\rest ees8 |
   
-  aes,2 ees'4 |
-  f c ees |
-  aes aes,8[ bes] c4 |
-  des8[ c] bes4 ees |
-  aes,2. |
+  ees4 ees8\noBeam ees |
+  ees4 ees8\noBeam e |
+  f4 bes,8\noBeam bes |
+  ees4 d8\rest ees8 |
   
-  aes'4 aes8[ g] f[ c] |
-  des2. |
-  bes4 d bes |
-  ees2 ees8[ des] |
+  bes4 bes8\noBeam bes |
+  f'4 f8\noBeam bes, |
+  ees4 c8\noBeam bes |
+  aes4. aes'8 |
   
-  c4 f ees |
-  aes aes,8[ bes] c4 |
-  des8[ c] bes4 ees |
-  aes,2 \bar "|."
+  aes4 aes8\noBeam aes |
+  g[ f] ees\noBeam c |
+  f4 bes,8 bes |
+  ees4 d8\rest \bar "|."
 }
 bassWords = \lyricmode {
 
@@ -209,7 +210,7 @@ pianoLH = \relative c' {
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "sopranos" \altoWords
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((padding . -0.5)) } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }

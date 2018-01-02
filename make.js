@@ -12,7 +12,8 @@ function processLy(lyFile,callback) {
         return false;
     }
     var lyName = 'lytemp/'+outputName[1];
-    outputName = 'lytemp/'+outputName[2];
+    var pageNum = outputName[2];
+    outputName = 'lytemp/'+pageNum;
     var psName = outputName + '.ps',
         lyContent = fs.readFileSync(lyFile,'utf8');
     if(lyContent.indexOf('%year%') >= 0) {
@@ -24,6 +25,7 @@ function processLy(lyFile,callback) {
       lyFileToProcess = lyName + '.pre';
       deleteFileAfterProcessed = true;
     }
+    lyContent = lyContent.replace(/(\sfirst-page-number\s+=\s+#)\d+/, '$1' + pageNum);
     if(fs.existsSync(psName)) {
         //Check if the .ly file was the same.
         if(fs.existsSync(lyName)) {
@@ -41,9 +43,7 @@ function processLy(lyFile,callback) {
     if(fs.existsSync(lyName)) {
         fs.unlinkSync(lyName);
     }
-    if(deleteFileAfterProcessed) {
-      fs.writeFileSync(lyFileToProcess,lyContent);
-    }
+    fs.writeFileSync(lyFileToProcess,lyContent);
     var args = ['-dno-point-and-click','--ps','-o'+outputName,lyFileToProcess];
     console.info('Processing ' + lyFile);
     child_process.execFile('lilypond',args,undefined,function(error,stdout,stderr){
@@ -52,9 +52,9 @@ function processLy(lyFile,callback) {
             console.error(stderr);
             console.info(stdout);
         } else {
-            fs.writeFile(lyName,lyContent);
+            fs.writeFileSync(lyName,lyContent);
             if(deleteFileAfterProcessed) {
-              fs.unlink(lyFileToProcess);
+              fs.unlinkSync(lyFileToProcess);
             }
         }
         

@@ -1,9 +1,9 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"O Little Town of Bethlehem"}}
-  poet = \markup\oldStyleNum"Phillips Brooks (1835–1893)"
-  composer = \markup\oldStyleNum"Lewis H. Redner (1831–1908)"
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Once in Royal David’s City"}}
+  poet = \markup\oldStyleNum"Cecil Frances Alexander (1818–1895)"
+  composer = \markup\oldStyleNum"Henry J. Gauntlett (1805–1876)"
   tagline = \markup { "from" \concat{\italic "Christmas Carols and Hymns for School and Choir" \oldStyleNum", 1910"}}
 }
 \paper {
@@ -16,6 +16,11 @@
   %     (minimum-distance . 0)
   %     (padding . -0.35)
   %     (stretchability . 100))
+%{IF_LESSER
+  markup-system-spacing #'stretchability = 50
+  top-markup-spacing #'stretchability = 30
+  last-bottom-spacing #'stretchability = 60
+%}%END_IF_LESSER
   ragged-last-bottom = ##f
   ragged-bottom = ##f
   two-sided = ##t
@@ -23,7 +28,7 @@
   outer-margin = 0.75\in
   top-margin = 0.26\in
   bottom-margin = 0.25\in
-  first-page-number = #039
+  first-page-number = #013
   print-first-page-number = ##t
   headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
@@ -47,172 +52,145 @@ global = {
   \key g \major
   \time 4/4
   \autoBeamOff
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
 }
 
-sopMusic = \relative c'' {
-  \partial 4 b4 |
-  b b ais b |
-  \slurDashed d( c) e, a |
-  \slurSolid g fis8[ g] a4 d, |
-  b'2. \bar""\break b4 |
+sopMusic = \relative c' {
+  \tempo 4 = 108
+  \partial 2 d4 fis |
+  g4. g8 g[ fis] g[ a] |
+  a4 g g b |
   
-  b b e d |
-  d c e, a |
-  g fis8[ g] b4. a8 |
-  g2. \bar""\break b4 |
+  d4. b8 b[ a] g[ fis] |
+  g2 \bar""\break d4 fis |
+  g4. g8 g[ fis] g[ a] |
   
-  b b a g |
-  fis2 fis4 fis |
-  e fis g a |
-  b2. \bar""\break b4 |
+  a4 g g b |
+  d4. b8 b[ a] g[ fis] |
+  g2 \bar""\break e'4 e |
   
-  b b ais b |
-  d c e, e' |
-  d g, b4. a8 |
-  \partial 4*3 g2. \bar "|."
+  d4. g,8 c4 c |
+  \slurDashed b4( b) e e |
+  \slurSolid d4. b8 b[ a] g[ fis] |
+  \partial 2 \slurDashed g4( g) \bar "|."
 }
 sopWords = \lyricmode {
   
 }
 
 altoMusic = \relative c' {
-  d4 |
-  d d cis d |
-  \slurDashed f( e) c e |
-  d d d d |
-  d2. d4 |
+  d4 c |
+  d4. d8 d4 d8[ fis] |
+  fis4 g d g |
+  g4. g8 e4 d |
+  d2 d4 c |
   
-  d g gis gis |
-  a e c e |
-  d d fis fis |
-  g2. g4 |
+  d4. d8 cis4 cis |
+  d8[ c!] b4 d g |
+  g4. g8 e4 d |
+  d2 g4 g |
   
-  g g fis e |
-  dis2 dis4 dis |
-  e fis g e |
-  fis2. g4 |
-  
-  d d cis d |
-  \slurSolid e e c e8[ fis] |
-  g4 cis, d4 c |
-  b2. \bar "|."
+  g8[ fis g] g g4 fis |
+  \slurDashed g4( g) e8[ fis] g[ a] |
+  d,[ fis g] d e4 d |
+  d( d) \bar "|."
 }
 altoWords = \lyricmode {
   \dropLyricsIX
   \set stanza = #"1. "
   \set ignoreMelismata = ##t
-  O lit -- tle town of Beth -- le -- hem,
-  How still we _ see thee lie!
-  A -- bove thy deep and dream -- less sleep
-  The si -- lent _ \set associatedVoice = "altos" stars go by; \unset associatedVoice
-  Yet in thy dark streets shin -- eth
-  The ev -- er -- last -- ing Light;
-  The hopes and fears of all the years
-  Are met in \set associatedVoice = "altos" thee to -- night.
+  Once in roy -- al Da -- _ vid’s _ cit -- y
+  Stood a low -- ly cat -- _ tle _ shed,
+  Where a moth -- er laid _ her _ Ba -- by
+  In a man -- ger for _ His _ bed:
+  \set associatedVoice = "tenors"
+  Ma -- ry was _ _ that moth -- er mild, _
+  Je -- sus Christ _ _ her lit -- _ tle _ Child. _
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"2. "
   \set ignoreMelismata = ##t
-  For Christ is born of Ma -- _ ry,
-  And gath -- er’d _ all a -- bove,
-  While mor -- tals sleep, the an -- gels keep
-  Their watch of _ \set associatedVoice = "altos" won -- d’ring love. \unset associatedVoice
-  O morn -- ning stars, to -- geth -- er
-  Pro -- claim the ho -- ly birth!
-  And prais -- es sing to God the King,
-  And peace to \set associatedVoice = "altos" men on earth!
+  He came down to earth _ from _ heav -- en,
+  Who is God and Lord _ of _ all,
+  And His shel -- ter was _ a _ sta -- ble,
+  And His cra -- dle was _ a _ stall;
+  \set associatedVoice = "tenors"
+  With the poor, _ _ and mean, and low -- ly,
+  Lived on earth _ _ our Sav -- _ ior _ ho -- ly.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"3. "
-  \set ignoreMelismata = ##t
-  How si -- lent -- ly, how si -- lent -- ly
-  The won -- drous _ gift is giv’n!
-  So God im -- parts to hu -- man hearts
-  The bless -- ings _ \set associatedVoice = "altos" of His Heav’n. \unset associatedVoice
-  No ear may hear His com -- ing,
-  But in this world of sin;
-  Where meek souls will re -- ceive Him still,
-  The dear Christ \set associatedVoice = "altos" en -- ters in.
+  And, through all His won -- drous child -- hood,
+    He would hon -- or and o -- bey,
+  Love, and watch the low -- ly maid -- en
+    In whose gen -- tle arms He lay;
+  \set associatedVoice = "tenors"
+  Chris -- tian chil -- dren all must be __
+  Mild, o -- be -- dient, good as He. __
 }
 altoWordsIV = \lyricmode {
   \dropLyricsIX
-\set ignoreMelismata = ##t
   \set stanza = #"4. "
-  Where chil -- dren pure and hap -- _ py
-    pray to the _ bless -- ed Child,
-  Where mis -- e -- ry cries out to Thee,
-    Son of the _ \set associatedVoice = "altos" mo -- ther mild; \unset associatedVoice
-  Where cha -- ri -- ty stands watch -- ing
-    and faith holds wide the door,
-  The dark night wakes, the glo -- ry breaks,
-    and Christ -- \set associatedVoice = "altos" mas comes once more
+  \set ignoreMelismata = ##t
+  Je -- sus is our child -- _ hood’s _ pat -- tern,
+  Day by day like us _ He _ grew;
+  He was lit -- tle, weak, _ and _ help -- less,
+  Tears and smiles, like us, _ He _ knew:
+  \set associatedVoice = "tenors"
+  And He feel -- _ _ eth for our sad -- ness,
+  And He shar -- _ _ eth in _ our _ glad -- ness.
 }
 altoWordsV = \lyricmode {
   \dropLyricsIX
-\set ignoreMelismata = ##t
+  \set ignoreMelismata = ##t
   \set stanza = #"5. "
-
-  O ho -- ly Child of Beth -- le -- hem!
-  De -- scend to _ us, we pray;
-  Cast out our sin, and en -- ter in,
-  Be born in _ \set associatedVoice = "altos" us to -- day. \unset associatedVoice
-  We hear the Christ -- mas an -- gels
-  The great glad tid -- ings tell;
-  O come to us, a -- bide with us,
-  Our Lord \set associatedVoice = "altos" Em -- man -- u -- el!
+  And our eyes at last _ shall _ see Him,
+  Through His own re -- deem -- _ ing _ love;
+  For that Child so dear _ and _ gen -- tle
+  Is our Lord in heav’n _ a -- _ bove:
+  \set associatedVoice = "tenors"
+  And He leads _ _ His chil -- dren on __ _
+  To the place _ _ where He _ is _ gone. _
 }
 
 tenorMusic = \relative c' {
-  g4 |
-  g g g g |
-  \slurDashed gis( a) a c |
-  \slurSolid b a8[ b] c4 c |
-  b2. g4 |
+  b4 a |
+  g4. b8 b[ a] b[ c] |
+  c4 b b g |
+  g4. d'8 d[ c] b[ a] |
+  b2 b4 a |
   
-  g b b e |
-  e e e c |
-  b a8[ b] d4 c |
-  b2. d4 |
+  g4. b8 g4 g |
+  fis g b g |
+  g4. d'8 d[ c] b[ a] |
+  b2 c4 c |
   
-  d b c cis |
-  dis2 dis4 b |
-  e, fis g e' |
-  dis2. d4 |
-  
-  d b g g |
-  gis a a a |
-  b a8[ g] g4 fis |
-  g2. \bar "|."
+  b8[ c d] b a4 d |
+  \slurDashed d4( d) c c |
+  c8[ a b] d d[ c] b[ a] |
+  b4( b) \bar "|."
 }
 tenorWords = \lyricmode {
 
 }
 
-bassMusic = \relative c' {
-  g4 |
-  g g g g |
-  \slurDashed c,( c) c c |
-  d d d d |
-  g,2. g'4 |
+bassMusic = \relative c {
+  g4 a |
+  b4. g8 d'4 d |
+  d g g e |
+  b4. g8 c4 d |
+  g,2 g4 a |
   
-  g f e e |
-  a a a, c |
-  d4. d8 d4 d |
-  g2. g4 |
+  b4. g8 e'4 a, |
+  d g g e |
+  b4. g8 c4 d |
+  g,2 c8[ d] e[ fis] |
   
-  g g a ais | 
-  b2 b4 b, |
-  e fis g c |
-  b2. g4 |
-  
-  g g g g |
-  c, c c c |
-  d e d4 d |
-  g,2. \bar "|."
+  g[ a b] g d4 d |  
+  \slurDashed g4( g) c,8[ d] e[ fis] |
+  g4. g8 c,4 d |
+  g,( g) \bar "|."
 }
 bassWords = \lyricmode {
 
@@ -226,17 +204,17 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
+   \new Staff = men <<
+      \clef bass
+      \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
+      \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
+    >>
     \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
     \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
     \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((padding . -0.5)) } \lyricsto "sopranos" \altoWords
-   \new Staff = men <<
-      \clef bass
-      \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
-      \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
-    >>
     \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
     \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
