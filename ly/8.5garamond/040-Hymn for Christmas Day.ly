@@ -96,7 +96,7 @@ altoMusic = \relative c' {
 altoWords = {
   \dropLyricsV
   \lyricmode {
-    \set stanza = #"1. "
+    \set stanza = "1. "
     See a -- mid the win -- ter’s snow,
     Born for us on earth be -- low,
     See the ten -- der Lamb ap -- pears,
@@ -118,7 +118,7 @@ altoWords = {
 altoWordsII = \lyricmode {
   \dropLyricsV
 %\markup\italic
-  \set stanza = #"2. "
+  \set stanza = "2. "
   Lo, with -- in a man -- ger lies
   He who built the star -- ry skies;
   He, who throned in height sub -- lime,
@@ -126,7 +126,7 @@ altoWordsII = \lyricmode {
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
-  \set stanza = #"3. "
+  \set stanza = "3. "
   Say, ye ho -- ly Shep -- herds, say,
   What your joy -- ful news to -- day;
   Where -- fore have ye left your sheep
@@ -134,7 +134,7 @@ altoWordsIII = \lyricmode {
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
-  \set stanza = #"4. "
+  \set stanza = "4. "
   “As we watched at dead of night,
   Lo, we saw a won -- drous light;
   An -- gels sing -- ing peace on earth,
@@ -142,7 +142,7 @@ altoWordsIV = \lyricmode {
 }
 altoWordsV = \lyricmode {
   \dropLyricsV
-  \set stanza = #"5. "
+  \set stanza = "5. "
   Sa -- cred In -- fant, all Di -- vine,
   What a ten -- der love was Thine;
   Thus to come from high -- est bliss
@@ -150,11 +150,19 @@ altoWordsV = \lyricmode {
 }
 altoWordsVI = \lyricmode {
   \dropLyricsV
-  \set stanza = #"6. "
+  \set stanza = "6. "
   Teach, O teach us, Ho -- ly Child,
   By Thy Face so meek and mild,
   Teach us to re -- sem -- ble Thee,
   In Thy sweet hu -- mil -- i -- ty!
+}
+altoWordsVII = \lyricmode {
+  \dropLyricsV
+  \set stanza = "7. "
+  Vir -- gin Mo -- ther, Ma -- ry blest
+  By the joys that fill thy breast,
+  Pray for us, that we may prove
+  Wor -- thy of the Sav -- ior’s love.
 }
 tenorMusic = \relative c' {
   s1*8
@@ -194,8 +202,8 @@ pianoRH = \relative c' {
   << \new Voice {
         \voiceOne
         \global
-        g'4.( a8 g4 |
-        fis e2 d) |
+        g'4.( a8 g4 fis |
+        e2 d) |
         g4( a c b |
         <b g>2 <a fis>) |
         
@@ -262,7 +270,8 @@ pianoLH = \relative c' {
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-     \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "altos" \altoWordsVI
+    \new Lyrics = "altosVII"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "altos" \altoWordsVII
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "altos" \altoWordsVI
     \new Lyrics = "altosV"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "altos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "altos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "altos" \altoWordsIII
