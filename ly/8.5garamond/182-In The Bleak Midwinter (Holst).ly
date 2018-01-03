@@ -147,7 +147,7 @@ altoWordsIV = \lyricmode {
   \dropLyricsXI
 \set ignoreMelismata = ##t
   \set stanza = #"4. "
-  "" An -- gels and arch -- an -- _ gels May have ga -- thered there ""
+  "" An -- gels and arch -- an -- _ gels May have gath -- ered there ""
   Cher -- u -- bim and Ser -- a -- phim ""
   Throng -- _ ed the air
   But on -- ly His __ _ mo -- _ ther ""
