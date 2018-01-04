@@ -125,8 +125,8 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic pár -- \markup\italic vu -- \markup\italic le, __
   Nach Dir ist mir so weh. __ ""
-  Tröst mir mein Ge -- mü -- te, ""
-  \markup\italic O \markup\italic Puer \markup\italic óp -- \markup\italic ti -- \markup\italic me, __ ""
+  Tröst mir mein Ge -- mü -- te,
+  \markup\italic O \markup\italic Pu -- \markup\italic er \markup\italic óp -- \markup\italic ti -- \markup\italic me, __ ""
   Durch all Dei -- \set associatedVoice = "altos" 
   ne Gü --
   \unset associatedVoice
@@ -365,8 +365,8 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic pár -- \markup\italic vu -- \markup\italic le, __
   For thee I long al -- way; __
-  Com -- fort my heart’s blind -- ness ""
-  \markup\italic O \markup\italic Puer \markup\italic óp -- \markup\italic ti -- \markup\italic me, __
+  Com -- fort my heart’s blind -- ness
+  \markup\italic O \markup\italic Pu -- \markup\italic er \markup\italic óp -- \markup\italic ti -- \markup\italic me, __
   With all Thy lov -- ing kind -- ness,
   \markup\italic O \markup\italic Prin -- \markup\italic ceps \markup\italic gló -- \markup\italic ri -- \markup\italic æ. __
   \markup\italic Tra -- \markup\italic he \markup\italic me \markup\italic post \markup\italic Te! __

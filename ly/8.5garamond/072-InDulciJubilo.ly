@@ -132,8 +132,8 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic pár -- \markup\italic vu -- \markup\italic le, __
   I yearn for Thee al -- way; __
-  Hear me, I be -- seech Thee, ""
-  \markup\italic O \markup\italic Puer \markup\italic óp -- \markup\italic ti -- \markup\italic me, __
+  Hear me, I be -- seech Thee,
+  \markup\italic O \markup\italic Pu -- \markup\italic er \markup\italic óp -- \markup\italic ti -- \markup\italic me, __
   My pray -- ing let it reach Thee,
   \markup\italic O \markup\italic Prin -- \markup\italic ceps \markup\italic gló -- \markup\italic ri -- \markup\italic æ. __
   \markup\italic Tra -- \markup\italic he \markup\italic me \markup\italic post \markup\italic Te! __
