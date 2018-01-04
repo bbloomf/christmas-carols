@@ -107,10 +107,9 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
-  \markup\italic In \markup\italic dul -- \markup\italic ci \markup\italic jú -- \markup\italic bi -- \markup\italic lo __ Now sing with hearts a -- glow!
-__
-  Our de -- light and plea -- sure Lies \markup\italic in \markup\italic præ -- \markup\italic sé -- \markup\italic pi -- \markup\italic o, __
-  Like sun -- shine is our trea -- sure
+  \markup\italic In \markup\italic dul -- \markup\italic ci \markup\italic jú -- \markup\italic bi -- \markup\italic lo __ Now sing with hearts a -- glow! __
+  Our heart’s joy re -- clin -- eth "" \markup\italic In \markup\italic præ -- \markup\italic sé -- \markup\italic pi -- \markup\italic o, __
+  And like a bright star shin -- eth
   \markup\italic Ma -- \markup\italic tris \markup\italic in \markup\italic gré -- \markup\italic mi -- \markup\italic o __
   \markup\italic Al -- \markup\italic pha \markup\italic es \markup\italic et \markup\italic O! __
   \markup\italic Al -- \markup\italic pha \markup\italic es \markup\italic et \markup\italic O!
@@ -136,18 +135,20 @@ altoWordsIII = \lyricmode {
   \markup\italic Per \markup\italic nos -- \markup\italic tra \markup\italic crí -- \markup\italic mi -- \markup\italic na; __
   But Thou for us hast gain -- ed
   \markup\italic Cæ -- \markup\italic ló -- \markup\italic rum \markup\italic gáu -- \markup\italic di -- \markup\italic a. __
-  O that we were there! O that we were there! 
+  \markup\italic Quan -- \markup\italic ta \markup\italic grá -- \markup\italic ti -- \markup\italic a! __
+  \markup\italic Quan -- \markup\italic ta \markup\italic grá -- \markup\italic ti -- \markup\italic a!
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
   \set stanza = #"4. "
   \markup\italic U -- \markup\italic bi \markup\italic sunt \markup\italic gáu -- \markup\italic di -- \markup\italic a __
-  In an -- y place  but there?
+  In an -- y place but there? __
   There are an -- gels sing -- ing ""
   \markup\italic No -- \markup\italic va \markup\italic cán -- \markup\italic ti -- \markup\italic ca __
   And there the bells are ring -- ing
   \markup\italic In \markup\italic Re -- \markup\italic gis \markup\italic cú -- \markup\italic ri -- \markup\italic a __
-  O that we were there! O that we were there!
+  O that we were there! __
+  O that we were there!
 }
 
 tenorMusic = \relative c' {
