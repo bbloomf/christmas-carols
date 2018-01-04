@@ -4,7 +4,7 @@
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Christmas Cradle Hymn"}}
   subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Lulajże, Jezuniu)"}}
   poet = \markup\oldStyleNum"Traditional Polish Carol"
-  %meter = \markup\oldStyleNum"Translated by ??? (1885–1933)"
+  meter = \markup\oldStyleNum"Adapted to English by Mary Strawn Vernon"
   composer = \markup\oldStyleNum"Traditional Polish Carol"
   % arranger = \markup\oldStyleNum"Arranged by Edith M. G. Reed (1885–1933)"
   tagline = ""
@@ -80,25 +80,26 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  ees4 d ees |
-  ees ees d |
+  ees4 ees ees |
   ees ees ees |
+  d d d |
   ees~ ees2 |
 
   ees4 ees ees |
-  ees ees d |
-  ees d4. d8 |
-  ees4~ ees2 |
+  ees ees ees |
+  d d4. f8 |
+  f4( ees2) |
 
   \repeat volta 2 {
-    g8[ fis] g[ aes] bes4 |
-    bes8[ aes] g[ aes] f4 |
-    f f f |
-    g~ g2 |
+    ees4 ees bes' |
+    aes ees ees |
+    d8[ ees] f[ ees] aes4 |
+    aes( g2) |
+
     ees4 ees ees |
-    d8[ ees] f[ ees] d4 |
-    ees d4. d8 |
-    ees4~ ees2 |
+    ees ees ees |
+    d d4. f8 |
+    f4( ees2) |
   }
 }
 altoWords = \lyricmode {
@@ -110,7 +111,9 @@ altoWords = \lyricmode {
   Watch -- ing close by.
   O -- ver the mead -- ows dim
 \set ignoreMelismata = ##t
-  Night winds are blow -- ing,
+   \once \override LyricText.self-alignment-X = #LEFT Night
+   \once \override LyricText.self-alignment-X = #LEFT winds 
+   \once \override LyricText.self-alignment-X = #LEFT are blow -- ing,
 \unset ignoreMelismata
   Here in the qui -- et byre,
 \set ignoreMelismata = ##t
@@ -125,7 +128,9 @@ altoWordsII = \lyricmode {
   Where stars like sil -- ver lamps
   Swing far on high.
   Dost know, Child, how three kings
-  Rid -- ing from far
+  \once \override LyricText.self-alignment-X = #LEFT Rid --
+  \once \override LyricText.self-alignment-X = #LEFT ing
+  \once \override LyricText.self-alignment-X = #LEFT from far
   Brought to Thy crib rich gifts,
   Led by Thy star.
 }
@@ -137,7 +142,9 @@ altoWordsIII = \lyricmode {
   An -- gels sang songs of joy
   From dark till dawn.
   But, now, my Ba -- by, rest,
-  While I am nigh,
+  \once \override LyricText.self-alignment-X = #LEFT While
+  \once \override LyricText.self-alignment-X = #LEFT I
+  \once \override LyricText.self-alignment-X = #LEFT am nigh,
   Sleep, drow -- sy lit -- tle Boy,
   Hush, hush -- a -- by.
 }
@@ -155,24 +162,25 @@ altoWordsVI = \lyricmode {
 }
 tenorMusic = \relative c' {
   bes4 bes b |
-  c c bes? |
-  c c c |
-  aes( g2) |
+  c c bes?8[ ees] |
+  d[ c] bes[ aes] g[ f] |
+  aes4( g2) |
 
-  bes4 bes a |
-  g f f |
-  c' bes4. f8 |
-  c'4( bes2) |
+  bes4 bes ees8[ des] |
+  c4 c bes8[ ees] |
+  d?[ c] bes[ c] d4 |
+  c( bes2) |
 
   \repeat volta 2 {
-    ees4 ees ees |
-    ees ees d |
-    ees8[ f] ees[ d] c[ d] |
-    ees4( bes2) |
-    bes4 bes bes |
-    bes c bes |
-    aes f4. bes8 |
-    c4( bes2) |
+    g4 g8[ f] g4 |
+    aes aes8[ g] aes[ g] |
+    f[ ees] d[ c] d[ ees] |
+    aes4( g2) |
+
+    bes4 bes ees8[ des] |
+    c4 c bes |
+    d?8[ c] bes[ c] d4 |
+    c( bes2) |
   }
 }
 tenorWords = \lyricmode {
@@ -181,23 +189,24 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c {
   ees4 ees ees |
-  f f f |
-  aes g f |
+  aes aes ees |
+  bes bes bes |
   ees~ ees2 |
 
-  ees4 d c |
-  c b bes |
-  aes bes4. bes8 |
+  ees4 ees ees |
+  aes aes ees |
+  bes bes4. bes8 |
   ees4~ ees2 |
 
   \repeat volta 2 {
-    ees4 ees8[ f] g4 |
-    aes aes bes |
-    c bes aes |
-    ees~ ees2 |
-    ees8[ f] ees[ d] c[ bes] |
-    g4 aes bes |
-    b bes4. d8 |
+    ees4 ees ees |
+    ees ees ees |
+    bes bes aes |
+    ees'~ ees2 |
+    
+    ees4 ees ees |
+    aes aes ees |
+    bes bes4. bes8 |
     ees4~ ees2 |
   }
 }
@@ -220,17 +229,17 @@ pianoLH = \relative c' {
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
     \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
     \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
