@@ -309,7 +309,7 @@ altoWords = \lyricmode {
 altoWordsII = \lyricmode {
   \dropLyricsV
   \set stanza = "2. "
-  Hunc I -- sá -- i -- as flo -- rem, præ -- sá -- giis cé -- ci -- nit.
+  Hunc I -- sa -- í -- as flo -- rem, præ -- sá -- giis cé -- ci -- nit.
   Ad e -- jus nos a -- mó -- rem, Na -- scén -- tis ál -- li -- cit.
   \set associatedVoice = "tenors"
   Flos vir -- gam sú -- per -- at
@@ -327,13 +327,14 @@ altoWordsIII = \lyricmode {
   vel so -- li quod -- vis ce -- dit a -- ró -- ma nó -- mi -- ni.
 }
 altoWordsIV = \lyricmode {
+  \dropLyricsV
   \set stanza = "4. "
-%  Hic su -- o flos o -- dó -- re, fi -- dé -- les át -- tra -- hit. 
-%  Di -- ví -- no mox a -- mó -- re, at -- trác -- tos ím -- bu -- it.
-%  \set associatedVoice = "tenors"
-%  O flos o grá -- ti -- a:
-%  \unset associatedVoice
-%  ad te su -- spí -- ro, de te me sá -- ti -- a.
+  Hic su -- o flos o -- dó -- re, fi -- dé -- les át -- tra -- hit. 
+  Di -- ví -- no mox a -- mó -- re, at -- trác -- tos ím -- bu -- it.
+  \set associatedVoice = "tenors"
+  O flos o grá -- ti -- a:
+  \set associatedVoice = "sopranos"
+  ad Te, ad Te su -- spí -- ro, de Te me sá -- ti -- a.
 }
 altoWordsV = \lyricmode {
 }
