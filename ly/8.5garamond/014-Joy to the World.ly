@@ -106,8 +106,10 @@ altoMusic = \relative c' {
 }
 altoWords = \lyricmode {
   \dropLyricsV
-  \set stanza = #"1. "
-  Joy to the world! the Lord is come; Let earth re -- ceive her King; Let ev -- ’ry __ heart __ pre -- pare __ Him
+  \set stanza = "1. "
+  Joy to the world! the Lord is come;
+  Let earth re -- ceive her King;
+  Let ev -- ’ry __ heart __ pre -- pare __ Him
   \raiseLyrics
   room, __
   And heav’n and na -- ture sing,
@@ -117,8 +119,9 @@ altoWords = \lyricmode {
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
-  \set stanza = #"2. "
-  Joy to the world! the Sav -- ior reigns; Let men their songs em -- ploy;
+  \set stanza = "2. "
+  Joy to the world! the Sav -- ior reigns;
+  Let men their songs em -- ploy;
   While fields and __ floods, __ rocks, hills __ and __
   \raiseLyrics
   plains __
@@ -130,8 +133,22 @@ altoWordsII = \lyricmode {
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
-  \set stanza = #"3. "
-  He rules the world with truth and grace And makes the na -- tions prove The glo -- ries __ of __ His right -- eous --
+  \set stanza = "3. "
+  No more let sin and sor -- rows grow,
+  Nor thorns in -- fest the ground;
+  He comes to __ make __ his bles -- sings __
+  \raiseLyrics flow __
+  Far as the curse is found,
+  Far as the curse is found,
+  \dropLyricsXV
+  Far as, __ far as, __ the curse is found.
+}
+altoWordsIV = \lyricmode {
+  \dropLyricsV
+  \set stanza = "4. "
+  He rules the world with truth and grace
+  And makes the na -- tions prove
+  The glo -- ries __ of __ His right -- eous --
   \raiseLyrics
   ness, __
   
@@ -139,8 +156,6 @@ altoWordsIII = \lyricmode {
   And won -- ders of His love,
   \dropLyricsXV
   And won -- ders, won -- ders of His love.
-}
-altoWordsIV = \lyricmode {
 }
 
 tenorMusic = \relative c' {
@@ -228,22 +243,22 @@ bassWordsIII = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "altos" \altoWords
+    \new Lyrics \with { alignAboveContext = "women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosIV"  \with { alignBelowContext = "women" } \lyricsto "altos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = "women" } \lyricsto "altos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = "women" } \lyricsto "altos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = "women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "altos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWordsII
-%    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWordsIII
-%    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWordsIII
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWordsII
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics \with { alignAboveContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignAboveContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWordsII
+%    \new Lyrics \with { alignAboveContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWordsIII
+%    \new Lyrics \with { alignBelowContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWordsIII
+    \new Lyrics \with { alignBelowContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWordsII
+    \new Lyrics \with { alignBelowContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
