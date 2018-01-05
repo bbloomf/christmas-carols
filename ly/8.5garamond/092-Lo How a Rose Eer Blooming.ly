@@ -85,7 +85,7 @@ sopMusic = \relative c'' {
 }
 sopWords = \lyricmode {
   \repeat unfold 41 { \skip 1 }
-  der hal -- ben Nacht.
+  der halb -- en Nacht.
 }
 
 altoMusic = \relative c'' {
@@ -117,7 +117,7 @@ altoWords = \lyricmode {
   Und hat ein Blüm -- lein bracht
   \unset associatedVoice
   mit -- ten im kalt -- en Win -- ter,
-  wohl zu __ der hal -- ben Nacht.
+  wohl zu __ der halb -- en Nacht.
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
@@ -198,7 +198,7 @@ bassWords = \lyricmode {
   \repeat unfold 10 { \skip 1 }
   war die Art
   \repeat unfold 16 { \skip 1 }
-  hal -- ben Nacht.
+  halb -- en Nacht.
 }
 bassWordsII = \lyricmode {
   \repeat unfold 10 { \skip 1 }
