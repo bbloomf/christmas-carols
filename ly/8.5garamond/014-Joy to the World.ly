@@ -136,7 +136,7 @@ altoWordsIII = \lyricmode {
   \set stanza = "3. "
   No more let sin and sor -- rows grow,
   Nor thorns in -- fest the ground;
-  He comes to __ make __ his bles -- sings __
+  He comes to __ make __ his bless -- ings __
   \raiseLyrics flow __
   Far as the curse is found,
   Far as the curse is found,
