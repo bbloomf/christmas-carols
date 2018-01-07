@@ -51,6 +51,11 @@ $(function() {
     image: 'http://acollectionofchristmascarols.com/images/cover.jpg',
     locale: 'auto',
     token: function(token, args) {
+      if(args.shipping_address_country_code != 'US') {
+        $('.txt-error').text('Please email info@acollectionofchristmascarols.com to negotiate shipping outside of the USA.');
+        $('.error').show();
+        return;
+      }
       $('#btnPay').attr('disabled',true).text('Processing...Please wait');
       $quantity.attr('disabled',true);
       $('#btnCancelOrder').hide();
