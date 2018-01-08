@@ -26,6 +26,7 @@ function processLy(lyFile,callback) {
       deleteFileAfterProcessed = true;
     }
     lyContent = lyContent.replace(/(\sfirst-page-number\s+=\s+#)\d+/, '$1' + pageNum);
+    lyContent = lyContent.replace(`headerLine = \\markup{\\override #'(font-name . "Garamond Premier Pro") \\smallCapsOldStyle"christmas"}`,`headerLine = ""`)
     if(fs.existsSync(psName)) {
         //Check if the .ly file was the same.
         if(fs.existsSync(lyName)) {
