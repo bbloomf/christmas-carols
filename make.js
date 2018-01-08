@@ -27,6 +27,7 @@ function processLy(lyFile,callback) {
     }
     lyContent = lyContent.replace(/(\sfirst-page-number\s+=\s+#)\d+/, '$1' + pageNum);
     lyContent = lyContent.replace(`headerLine = \\markup{\\override #'(font-name . "Garamond Premier Pro") \\smallCapsOldStyle"christmas"}`,`headerLine = ""`)
+    lyContent = lyContent.replace(/%CONTENTS%/,lyContents);
     if(fs.existsSync(psName)) {
         //Check if the .ly file was the same.
         if(fs.existsSync(lyName)) {
@@ -91,10 +92,38 @@ function ps2pdf(psFiles,width,height,outputName) {
     child_process.execFile(gsCmd,args,undefined,cb);
 }
 
+function readContentsFromFiles(files) {
+    var contents = files.filter(f => f.match(/^\d+-(?!Contents)/)).sort().reduce((c,f) => {
+        var match = f.match(/^(\d+)-(.*)\.ly/),
+            p = parseInt(match[1]),
+            title = match[2];
+        while((match = title.match(/^\s*([^+]+?)(\s+AND\s+|\s+(\+)\s+|$)/))) {
+            c[match[1]] = p;
+            if(match[3]) ++p;
+            title = title.slice(match[0].length);
+        }
+        return c;
+    }, {});
+    return contents;
+}
+
+function lyContentsFromContents(c) {
+    var sortString = a => a.replace(/^(A|The)\s+/,''),
+        keys = Object.keys(c).sort((a,b) => {
+        return sortString(a).localeCompare(sortString(b));
+    }),
+        lyContents = keys.map(k => `{\\page-link #${2+c[k]} {\\fill-with-pattern #0.1 #CENTER . "${k}" \\oldStyleNum"${c[k]}"}}`),
+        pdfMarks = keys.map(k => `[/Title (${k}) /Page ${2+c[k]} /OUT pdfmark`);
+    fs.writeFileSync('pdfmarks.txt',pdfMarks.join('\n'),{encoding:'ascii'});
+    return lyContents.join('\n');
+}
+
 //processLy('ly/001-Contents.ly');
 //ps2pdf('lytemp/001.ps',8.5,11,'test.pdf');
 var dir = 'ly/8.5garamond/',
     files = fs.readdirSync(dir).sort(),
+    contents = readContentsFromFiles(files),
+    lyContents = lyContentsFromContents(contents),
     maxConcurrent = 6,
     currentlyActive = 0,
     i = 0,
@@ -124,6 +153,7 @@ var dir = 'ly/8.5garamond/',
                   return (a < b)? -1 : ((a > b)? 1 : 0);
                 });
                 psFiles.sort();
+                psFiles = psFiles.concat('pdfmarks.txt');
                 console.info(psFiles);
                 ps2pdf(psFiles,8.5,11,'!full.pdf');
                 ++i;
