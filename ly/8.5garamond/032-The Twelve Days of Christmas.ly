@@ -26,7 +26,7 @@
   outer-margin = 0.75\in
   top-margin = 0.26\in
   bottom-margin = 0.25\in
-  first-page-number = #032
+  first-page-number = #32
   print-first-page-number = ##t
   headerLine = ""
   oddHeaderMarkup = \markup\fill-line{
@@ -361,7 +361,7 @@ pianoLH = \relative c' {
   \layout {
   \context {
     \Lyrics
-    \override LyricText #'font-size = #1.3
+    \override LyricText #'font-size = #2
   }
     \context {
       \Score

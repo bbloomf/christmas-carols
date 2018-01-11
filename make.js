@@ -25,8 +25,9 @@ function processLy(lyFile,callback) {
       lyFileToProcess = lyName + '.pre';
       deleteFileAfterProcessed = true;
     }
-    lyContent = lyContent.replace(/(\sfirst-page-number\s+=\s+#)\d+/, '$1' + pageNum);
+    lyContent = lyContent.replace(/(\sfirst-page-number\s+=\s+#)\d+/, '$1' + (parseInt(pageNum)||1));
     lyContent = lyContent.replace(`headerLine = \\markup{\\override #'(font-name . "Garamond Premier Pro") \\smallCapsOldStyle"christmas"}`,`headerLine = ""`)
+    lyContent = lyContent.replace(/\\override LyricText #'font-size = #(\d+(\.\d+)?)/,`\\override LyricText #'font-size = #2`);
     lyContent = lyContent.replace(/%CONTENTS%/,lyContents);
     if(fs.existsSync(psName)) {
         //Check if the .ly file was the same.
@@ -87,7 +88,11 @@ function ps2pdf(psFiles,width,height,outputName) {
             if ((gsCmd=gsCmds[++gsI])) child_process.execFile(gsCmd,args,undefined,cb);
             return;
         }
-        console.info('Finished');
+        var args = ['-o',outputName.replace(/\.pdf$/,' (cropped).pdf'),'-dNOPAUSE','-dBATCH','-sDEVICE=pdfwrite','-c',
+            "<</EndPage {0 eq {2 mod 0 eq {[/CropBox [72 18 558 774] /PAGE pdfmark true} {[/CropBox [54 18 540 774] /PAGE pdfmark true} ifelse}{false}ifelse}>> setpagedevice",
+            '-f',outputName];
+        child_process.execFile(gsCmd,args,undefined,(error,stderr,stdout)=>{ console.info("Finished with cropped version.")});
+        console.info('Processing cropped version...');
     };
     child_process.execFile(gsCmd,args,undefined,cb);
 }
@@ -155,7 +160,7 @@ var dir = 'ly/8.5garamond/',
                 psFiles.sort();
                 psFiles = psFiles.concat('pdfmarks.txt');
                 console.info(psFiles);
-                ps2pdf(psFiles,8.5,11,'!full.pdf');
+                ps2pdf(psFiles,8.5,11,'Christmas Carols.pdf');
                 ++i;
                 ++currentlyActive;
             } else if(startedWorker) {

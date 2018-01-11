@@ -42,7 +42,7 @@
 % \markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \wordwrap{Inside cover artwork illustrated by Arthur Hughes, as found in \italic Christmas \italic Carols, \italic New \italic and \concat{\italic Old ";"} downloaded from \with-url #"http://www.ccel.org/b/bramley/carols/jpg-hires/0001=i.jpg" \italic"http://www.ccel.org/b/bramley/carols/jpg-hires/0001=i.jpg"}}
 % \pageBreak
 % \markup\vspace #0.8
-%\markup\epsfile #X #85 #"title.eps"
+%\markup\epsfile #X #85 #"Christmas.eps"
 \pageBreak
 \markup\vspace #3
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #38 \smallCapsOldStyle"contents"}}
@@ -50,6 +50,6 @@
 
 %\scale #'(0.98 . 1) 
 
-\markup{\hspace#12.71 {\override #'(line-width . 57.3) \override #'(baseline-skip . 2.5) \override #'(word-space . 0) \column{
+\markup{\hspace#12.71 {\override #'(line-width . 57.3) \override #'(baseline-skip . 2.7) \override #'(word-space . 0) \column{
 %CONTENTS%
 }}}
