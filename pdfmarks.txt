@@ -25,6 +25,7 @@
 [/Title (O Little Town of Bethlehem) /Page 12 /OUT pdfmark
 [/Title (Once in Royal Davids City) /Page 7 /OUT pdfmark
 [/Title (Quem Pastores) /Page 40 /OUT pdfmark
+[/Title (Resonet in Laudibus) /Page 28 /OUT pdfmark
 [/Title (Silent Night) /Page 24 /OUT pdfmark
 [/Title (Stainless the Maiden) /Page 33 /OUT pdfmark
 [/Title (Stille Nacht) /Page 25 /OUT pdfmark
