@@ -54,7 +54,7 @@ sopMusic = \relative c'' {
     c4 a8 f4 a8 |
     c4 d8 c4. |
     c4 a8 f4 a8 |
-    c4 d8 c4. |
+    c4 d8 c4. | \break
     
     bes4 bes8 bes4 c8 |
     bes4 a8 g4 a8 |
@@ -66,7 +66,7 @@ sopMusic = \relative c'' {
     c'4 a8 f4 a8 |
     c4 d8 c4. |
     c4 a8 f4 a8 |
-    c4 d8 c4. |
+    c4 d8 c4. | \break
     
     bes4 bes8 bes4 c8 |
     bes4 a8 g4 a8 |
@@ -103,7 +103,7 @@ sopMusic = \relative c'' {
   
   %page3
   c4 d8 c4\fermata a8 |
-  c4\< d8\< c4\<\fermata f,8 |
+  c4 d8 c4\fermata f,8 |
   f4 g8 a4 bes8 |
   c4 bes8 a4 bes8 |
   
@@ -188,63 +188,109 @@ altoMusic = \relative c' {
   f[ d] e f4. \bar"|."
 }
 altoWords = \lyricmode {
-  \dropLyricsV
-  \set stanza = #" 1."
+  \set stanza = " 1."
   Christ was born on Christ -- mas Day,
   Wreathe the hol -- ly, twine the bay;
   
-  \markup\italic Chri -- \markup\italic stus \markup\italic na -- \markup\italic tus \markup\italic ho -- \markup\italic di -- \markup\italic "e :"
+  \override Lyrics.LyricText.font-shape = #'italic
+  Chri -- stus na -- tus ho -- di -- e:
+  \revert Lyrics.LyricText.font-shape
   The Babe, the Son, the Ho -- ly One of Ma -- ry.
   
-  \set stanza = #" 3."
+  \set stanza = " 3."
   Let the bright red ber -- ries glow
   Ev -- ’ry -- where in good -- ly show;
   
-  \markup\italic Chri -- \markup\italic stus \markup\italic na -- \markup\italic tus \markup\italic ho -- \markup\italic di -- \markup\italic "e :"
+  \override Lyrics.LyricText.font-shape = #'italic
+  Chri -- stus na -- tus ho -- di -- e:
+  \revert Lyrics.LyricText.font-shape
   The Babe, the Son, the Ho -- ly One of Ma -- ry.
   
-  \set stanza = #" 5."
+  \set stanza = " 5."
   Night of sad -- ness: Morn of glad -- ness
   ev -- er -- more:
   Ev -- er, ev -- er:
   Af -- ter ma -- ny trou -- bles sore,
   Morn of glad -- ness ev -- er -- more and ev -- er -- more.
   
-  \set stanza = #"   6."
+  \set stanza = "   6."
   Mid -- night scarce -- ly pass’d and o -- ver,
   Draw -- ing to this ho -- ly morn,
   Ve -- ry ear -- ly, ve -- ry ear -- ly Christ was born.
   
-  \set stanza = #"   7."
+  \set stanza = "   7."
   Sing out with bliss, His Name is this:
   Em -- man -- u -- el:
   As was fore -- told in days of old
   By Ga -- bri -- el.
   
-  \set stanza = #"   8."
+  \set stanza = "   8."
   Mid -- night scarce -- ly pass’d and o -- ver,
   Draw -- ing to this ho -- ly morn,
   Ve -- ry ear -- ly, ve -- ry ear -- ly Christ was born.
 }
 altoWordsII = \lyricmode {
-  \dropLyricsV
-  \set stanza = #" 2."
+  \set stanza = " 2."
   He is born to set us free,
   He is born our Lord to be,
   
-  \markup\italic Ex \markup\italic Ma -- \markup\italic ri -- \markup\italic a \markup\italic Vir -- \markup\italic gi -- \markup\italic "ne :"
+  \override Lyrics.LyricText.font-shape = #'italic
+  Ex Ma -- ri -- a Vir -- gi -- ne:
+  \revert Lyrics.LyricText.font-shape
   The God, the Lord, by all a -- dor’d for ev -- er.
   
-  \set stanza = #" 4."
+  \set stanza = " 4."
   Chris -- tian men, re -- joice and sing;
   ’Tis the birth -- day of a King,
   
-  \markup\italic Ex \markup\italic Ma -- \markup\italic ri -- \markup\italic a \markup\italic Vir -- \markup\italic gi -- \markup\italic "ne :"
+  \override Lyrics.LyricText.font-shape = #'italic
+  Ex Ma -- ri -- a Vir -- gi -- ne:
+  \revert Lyrics.LyricText.font-shape
   The God, the Lord, by all a -- dor’d for ev -- er.
 }
 altoWordsIII = \lyricmode {
+  \dropLyricsIX
+  \set stanza = " 1."
+  % \override Lyrics.LyricText.font-shape = #'italic
+  Ré -- so -- net in láu -- di -- bus
+  cum ju -- cún -- dis pláu -- si -- bus
+  Si -- on cum fi -- dé -- li -- bus,
+  Ap -- pá -- ru -- it quem gé -- nu -- it Ma -- rí -- a.
+
+  \set stanza = " 3."
+  Pú -- e -- ri con -- cí -- ni -- te,
+  na -- to re -- gi psál -- li -- te,
+  vo -- ce pi -- a dí -- ci -- te
+  Ap -- pá -- ru -- it quem gé -- nu -- it Ma -- rí -- a.
+
+  Sunt im -- plé -- ta quæ præ -- dí -- xit Gá -- bri -- el.
+  E -- ia, E -- ia,
+  vir -- go De -- um gé -- nu -- it,
+  quem di -- ví -- na vó -- lu -- it cle -- mén -- ti -- a.
+
+  Hó -- di -- e ap -- pá -- ru -- it, ap -- pá -- ru -- it in Is -- ra -- ël,
+  Ex Ma -- rí -- a vír -- gi -- ne est na -- tus Rex.
+
+  "" Ma -- gnum no -- men Dó -- mi -- ni Em -- má -- nu -- el,
+  "" quod an -- nun -- ti -- á -- tum est per Gá -- bri -- el.
+
+  Hó -- di -- e ap -- pá -- ru -- it, ap -- pá -- ru -- it in Is -- ra -- ël,
+  Ex Ma -- rí -- a vír -- gi -- ne est na -- tus Rex.
 }
 altoWordsIV = \lyricmode {
+  \dropLyricsIX
+  \set stanza = " 2."
+  % \override Lyrics.LyricText.font-shape = #'italic
+  Chri -- stus na -- tus hó -- di -- e
+  ex Ma -- rí -- a vír -- gi -- ne
+  sine vi -- rí -- li sé -- mi -- ne
+  Ap -- pá -- ru -- it quem gé -- nu -- it Ma -- rí -- a.
+  
+  \set stanza = " 4."
+  Si -- on lau -- da Dó -- mi -- num
+  Sal -- va -- tó -- rem hó -- mi -- num,
+  pur -- ga -- tó -- rem crí -- mi -- num
+  Ap -- pá -- ru -- it quem gé -- nu -- it Ma -- rí -- a.
 }
 altoWordsV = \lyricmode {
 }
@@ -407,20 +453,20 @@ pianoLH = \relative c' {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
+    \new Lyrics \with { alignAboveContext = "women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosVI"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics \with { alignAboveContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>

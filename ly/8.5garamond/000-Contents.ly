@@ -44,9 +44,9 @@
 % \markup\vspace #0.8
 %\markup\epsfile #X #85 #"Christmas.eps"
 \pageBreak
-\markup\vspace #3
+\markup\vspace #2.5
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #38 \smallCapsOldStyle"contents"}}
-\markup\vspace #3
+\markup\vspace #2.5
 
 %\scale #'(0.98 . 1) 
 
