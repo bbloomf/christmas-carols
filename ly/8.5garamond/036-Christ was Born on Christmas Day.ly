@@ -497,7 +497,8 @@ pianoLH = \relative c' {
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Christ Was Born on Christmas Day"}}
     subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Resonet in laudibus)"}}
-    poet = \markup\oldStyleNum"John Mason Neale (1818–1866)"
+    poet = \markup\concat  {\oldStyleNum"14th Century Latin carol, as found in " \italic "Piæ Cantiones" \oldStyleNum", 1582"}
+    meter = \markup\oldStyleNum"English words by John Mason Neale (1818–1866)"
     composer = \markup\concat{\oldStyleNum"14th Century German melody, " \italic"Resonet in laudibus"}
     arranger = \markup\oldStyleNum"Arranged chiefly by G. R. Woodward (1848–1934)"
     tagline = \markup \concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
