@@ -56,7 +56,7 @@ sopMusic = \relative c'' {
     c4 a8 f4 a8 |
     c4 d8 c4. | \break
     
-    bes4 bes8 bes4 c8 |
+    bes8[ bes] bes8 bes4 c8 |
     bes4 a8 g4 a8 |
     c4 a8 f4 bes8 |
     a4 g8 g4 a8 |
@@ -98,12 +98,12 @@ sopMusic = \relative c'' {
   
   f,4 g8 a4 bes8 c4 bes8 a4 bes8 |
   g4 g8 f4\fermata \bar"||"
-  c'8 |
+  \teeny c'8 | \normalsize
   c4 a8 f4 a8 |
   
   %page3
   c4 d8 c4\fermata a8 |
-  c4 d8 c4\fermata f,8 |
+  c4 d8 c4\fermata \teeny f,8 | \normalsize
   f4 g8 a4 bes8 |
   c4 bes8 a4 bes8 |
   
@@ -127,7 +127,7 @@ altoMusic = \relative c' {
     f4 f8 f4 f8 |
     f4 f8 e4. |
     
-    f4 f8 f4 f8 |
+    f8[ f] f8 f4 f8 |
     f4 f8 e4 f8 |
     g4 e8 d4 f8 |
     f4 f8 e4 e8 |
@@ -168,12 +168,12 @@ altoMusic = \relative c' {
   f4 e8 f4 f8 |
   f4 f8 f4 f8 |
   f4 e8 c4 \bar"||"
-  c'8 |
+  \teeny c'8 | \normalsize
   c4 a8 f4 f8 |
   
   %page3
   f4 f8 f4 c8 |
-  f4 f8 e4 f8 |
+  f4 f8 e4 \teeny f8 | \normalsize
   f4 e8 f4 f8 |
   f4 f8 f4 f8 |
   
@@ -263,17 +263,21 @@ altoWordsIII = \lyricmode {
   vo -- ce pi -- a dí -- ci -- te
   Ap -- pá -- ru -- it quem gé -- nu -- it Ma -- rí -- a.
 
+  \set stanza = " 5."
   Sunt im -- plé -- ta quæ præ -- dí -- xit Gá -- bri -- el.
   E -- ia, E -- ia,
   vir -- go De -- um gé -- nu -- it,
   quem di -- ví -- na vó -- lu -- it cle -- mén -- ti -- a.
 
+  \set stanza = "   6."
   Hó -- di -- e ap -- pá -- ru -- it, ap -- pá -- ru -- it in Is -- ra -- ël,
   Ex Ma -- rí -- a vír -- gi -- ne est na -- tus Rex.
 
+  \set stanza = "   7."
   "" Ma -- gnum no -- men Dó -- mi -- ni Em -- má -- nu -- el,
   "" quod an -- nun -- ti -- á -- tum est per Gá -- bri -- el.
 
+  \set stanza = "   8."
   Hó -- di -- e ap -- pá -- ru -- it, ap -- pá -- ru -- it in Is -- ra -- ël,
   Ex Ma -- rí -- a vír -- gi -- ne est na -- tus Rex.
 }
@@ -283,7 +287,8 @@ altoWordsIV = \lyricmode {
   % \override Lyrics.LyricText.font-shape = #'italic
   Chri -- stus na -- tus hó -- di -- e
   ex Ma -- rí -- a vír -- gi -- ne
-  sine vi -- rí -- li sé -- mi -- ne
+  \set ignoreMelismata = ##t
+  si -- ne \unset ignoreMelismata vi -- rí -- li sé -- mi -- ne
   Ap -- pá -- ru -- it quem gé -- nu -- it Ma -- rí -- a.
   
   \set stanza = " 4."
@@ -303,7 +308,7 @@ tenorMusic = \relative c' {
     a4 c8 a4 c8 |
     a4 bes8 g4. |
     
-    bes4 bes8 d4 c8 |
+    bes8[ bes] bes8 d4 c8 |
     d4 c8 c4 c8 |
     c4 c8 a4 d8 |
     c4 c8 c4 c8 |
@@ -344,12 +349,12 @@ tenorMusic = \relative c' {
   c4 bes8 c4 d8 |
   c4 d8 c4 d8 |
   c4 c8 a4 \bar"||"
-  c8 |
+  \teeny c8 | \normalsize
   c4 a8 f4 c'8 |
   
   %page3
   a4 a8 a4 f8 |
-  a4 bes8 g4 f8 |
+  a4 bes8 g4 \teeny f8 | \normalsize
   a4 c8 c4 d8 |
   c4 d8 d4 d8 |
   
@@ -374,7 +379,7 @@ bassMusic = \relative c {
     f4 f8 f4 f8 |
     f4 bes,8 c4. |
     
-    d4 d8 bes4 a8 |
+    d8[ d] d8 bes4 a8 |
     bes4 f'8 c4 f8 |
     e4 c8 d4 bes8 |
     f'4 c8 c4 a8 |
@@ -415,12 +420,12 @@ bassMusic = \relative c {
   a'4 g8 f4 d8 |
   a4 bes8 f'4 bes,8 |
   c4 c8 f4\fermata \bar"||"
-  c'8 |
+  \teeny c'8 | \normalsize
   c4 a8 f4 f8 |
   
   %page3
   f4 d8 f4\fermata f8 |
-  f4 bes,8 c4\fermata f8 |
+  f4 bes,8 c4\fermata \teeny f8 | \normalsize
   d4 c8 f4 bes,8 |
   a4 bes8 d4 bes8 |
   
@@ -491,6 +496,7 @@ pianoLH = \relative c' {
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Christ Was Born on Christmas Day"}}
+    subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Resonet in laudibus)"}}
     poet = \markup\oldStyleNum"John Mason Neale (1818–1866)"
     composer = \markup\concat{\oldStyleNum"14th Century German melody, " \italic"Resonet in laudibus"}
     arranger = \markup\oldStyleNum"Arranged chiefly by G. R. Woodward (1848–1934)"
