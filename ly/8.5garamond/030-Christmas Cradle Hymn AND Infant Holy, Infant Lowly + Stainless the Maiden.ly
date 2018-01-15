@@ -102,7 +102,7 @@ sopMusic = \relative c' {
     c4 c8[ bes] c[ bes] |
 
     aes4 aes c |
-    c( bes2) |
+    \slurDashed c( bes2) |
     g4 g8[ f] g4 |
     aes aes g |
     f bes4. aes8 |
@@ -122,18 +122,18 @@ altoMusic = \relative c' {
   ees4 ees ees |
   ees ees ees |
   d d4. f8 |
-  f4( ees2) |
+  ees4~ ees2 |
 
   \repeat volta 2 {
     ees4 ees bes' |
     aes ees ees |
     d8[ ees] f[ ees] aes4 |
-    aes( g2) |
+    \slurDashed aes( g2) |
 
     ees4 ees ees |
     ees ees ees |
     d d4. f8 |
-    f4( ees2) |
+    \tieDashed ees4~ ees2 |
   }
 }
 altoWords = \lyricmode {
@@ -142,7 +142,7 @@ altoWords = \lyricmode {
   Hush Thee, my lit -- tle One,
   Moth -- er is nigh;
   At Thy low man -- ger bed
-  Watch -- ing close by.
+  Watch -- ing close by. __
   O -- ver the mead -- ows dim
 \set ignoreMelismata = ##t
    \once \override LyricText.self-alignment-X = #LEFT Night
@@ -158,13 +158,13 @@ altoWordsII = \lyricmode {
   \set stanza = "2. "
 
   Look lit -- tle wake -- ful One
-  Out at the sky,
+  Out at the sky, __
   Where stars like sil -- ver lamps
   Swing far on high.
   Dost know, Child, how three kings
   \once \override LyricText.self-alignment-X = #LEFT Rid --
   \once \override LyricText.self-alignment-X = #LEFT ing
-  \once \override LyricText.self-alignment-X = #LEFT from far
+  \once \override LyricText.self-alignment-X = #LEFT from far __
   Brought to Thy crib rich gifts,
   Led by Thy star.
 }
@@ -180,7 +180,7 @@ altoWordsIII = \lyricmode {
   \once \override LyricText.self-alignment-X = #LEFT I
   \once \override LyricText.self-alignment-X = #LEFT am nigh,
   Sleep, drow -- sy lit -- tle Boy,
-  Hush, hush -- a -- by.
+  Hush, hush -- a -- by. __
 }
 altoWordsIV = \lyricmode {
   \set stanza = "4. "
@@ -209,7 +209,7 @@ tenorMusic = \relative c' {
     g4 g8[ f] g4 |
     aes aes8[ g] aes[ g] |
     f[ ees] d[ c] d[ ees] |
-    aes4( g2) |
+    \slurDashed aes4( g2) |
 
     bes4 bes ees8[ des] |
     c4 c bes |
@@ -236,7 +236,7 @@ bassMusic = \relative c {
     ees4 ees ees |
     ees ees ees |
     bes bes aes |
-    ees'~ ees2 |
+    \tieDashed ees'~ ees2 |
     
     ees4 ees ees |
     aes aes ees |
@@ -376,7 +376,7 @@ altoMusic = \relative c' {
 \repeat volta 2 {
     d8 d |
     c4 c c8 c |
-    d4 d d8 d |
+    d4 d d8 d
     e4 e
 
     e8 e |
@@ -436,7 +436,7 @@ tenorMusic = \relative c {
   \repeat volta 2 {
     g8 g |
     g4 g a8 a |
-    a4 a b8 b |
+    a4 a b8 b 
     b4 b a8 a |
     a4 a g8 g8 |
     d'4 e d8 c |
@@ -459,7 +459,7 @@ bassMusic = \relative c {
   \repeat volta 2 {
     b,8 b |
     c4 c a8 a |
-    d4 d b8 b |
+    d4 d b8 b
     e4 e
 
     a,8 a |
