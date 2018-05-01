@@ -1,5 +1,7 @@
 var child_process = require('child_process'),
-    fs = require('fs');
+    fs = require('fs'),
+    noop = () => {};
+try { fs.mkdirSync('lytemp'); } catch (e) { }
 function processLy(lyFile,callback) {
     var lyFileToProcess = lyFile;
     var deleteFileAfterProcessed = false;
@@ -52,9 +54,9 @@ function processLy(lyFile,callback) {
             console.error(stderr);
             console.info(stdout);
         } else {
-            fs.writeFile(lyName,lyContent);
+            fs.writeFile(lyName,lyContent, noop);
             if(deleteFileAfterProcessed) {
-              fs.unlink(lyFileToProcess);
+              fs.unlink(lyFileToProcess, noop);
             }
         }
         
