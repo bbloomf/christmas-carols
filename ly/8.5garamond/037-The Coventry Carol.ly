@@ -5,7 +5,7 @@
   poet = \markup\oldStyleNum"Robert Croo, 1534"
   composer = \markup\oldStyleNum"16th Centry English Carol"
   arranger = \markup\oldStyleNum"Arranged by Martin Fallas Shaw (1875–1958)"
-  tagline = \markup { "from" \italic {ChristmasCarolMusic.org}}
+  tagline = "" %\markup { "from" \italic {ChristmasCarolMusic.org}}
 }
 \paper {
   paper-height = 11\in
@@ -108,7 +108,7 @@ altoWords = \lyricmode {
   Lul -- ly, lul -- lay, Thou lit -- tle ti -- ny Child,
   By, by, lul -- ly, lul -- lay;
   
-  \set stanza = #"1. "
+  \set stanza = "1. "
   O sis -- ters too, how may we do,
   For to pre -- serve this day;
   This poor Young -- ling for whom we sing
@@ -117,7 +117,7 @@ altoWords = \lyricmode {
 altoWordsII = \lyricmode {
   \dropLyricsXI
   \repeat unfold 16 { \skip 1 }
-  \set stanza = #"2. "
+  \set stanza = "2. "
   Her -- od, the king, in his rag -- ing,
   Charg -- ed he hath this day;
   His men of might, in his own sight,
@@ -126,7 +126,7 @@ altoWordsII = \lyricmode {
 altoWordsIII = \lyricmode {
   \dropLyricsXI
   \repeat unfold 16 { \skip 1 }
-  \set stanza = #"3. "
+  \set stanza = "3. "
   Then woe is me, poor Child, for Thee!
   And ev -- er mourn and say;
   For Thy part -- ing nor say nor sing,
@@ -134,7 +134,7 @@ altoWordsIII = \lyricmode {
 }
 altoWordsIV = \lyricmode {
   \repeat unfold 2 { \skip 1 }
-  \set stanza = #"4. "
+  \set stanza = "4. "
   
 }
 
@@ -204,18 +204,18 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((padding . -0.5)) } \lyricsto "sopranos" \altoWords
+    \new Lyrics \with { alignAboveContext = "women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosIV"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = "women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((padding . -0.5)) } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics \with { alignAboveContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
@@ -239,4 +239,5 @@ bassWords = \lyricmode {
     }
   }
 }
-
+\markup\vspace#0.1
+\markup\fill-line \center-align {\epsfile #X #59.5 #"art2.eps"}

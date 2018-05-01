@@ -24,12 +24,15 @@
   evenHeaderMarkup = ""
 }
 #(set-global-staff-size 23) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 23 20))) }
-\markup\vspace #8
+\markup\vspace #3.82
 % \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #50 \smallCapsOldStyle"Booklet"}}
 % \markup\vspace #0.75
 % \markup\fill-line \center-align {\abs-fontsize #35 \italic"of"}
 % \markup\vspace #0.5
-\markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #50 \smallCapsOldStyle"Christmas Carols"}}
+\markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #56 \smallCapsOldStyle"Christmas Carols"}}
+\markup\vspace #6.18
+\markup\epsfile #X #85 #"art4.eps"
+% "
 %\markup\vspace #20
 % \markup{\abs-fontsize #12 {Sixth edition, \smallCapsOldStyle"%date% %month% %year%"}}
 % \markup\vspace #0.1
@@ -44,12 +47,13 @@
 % \markup\vspace #0.8
 %\markup\epsfile #X #85 #"Christmas.eps"
 \pageBreak
-\markup\vspace #2.5
-\markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #38 \smallCapsOldStyle"contents"}}
-\markup\vspace #2.5
+%\markup\vspace #2.5
+\markup\fill-line \center-align {\epsfile #X #57.3 #"art1.eps"}
+%\markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #38 \smallCapsOldStyle"contents"}}
+\markup\vspace #0.5
 
 %\scale #'(0.98 . 1) 
 
-\markup{\hspace#12.71 {\override #'(line-width . 57.3) \override #'(baseline-skip . 2.7) \override #'(word-space . 0) \column{
+\markup{\hspace#13.61 {\override #'(line-width . 57.3) \override #'(baseline-skip . 2.7) \override #'(word-space . 0) \column{
 %CONTENTS%
 }}}
