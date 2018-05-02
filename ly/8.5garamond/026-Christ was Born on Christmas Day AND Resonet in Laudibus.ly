@@ -102,7 +102,7 @@ sopMusic = \relative c'' {
   c4 a8 f4 a8 |
   
   %page3
-  c4 d8 c4\fermata a8 |
+  c4 d8 c4 a8 |
   c4 d8 c4\fermata \teeny f,8 | \normalsize
   f4 g8 a4 bes8 |
   c4 bes8 a4 bes8 |
@@ -424,7 +424,7 @@ bassMusic = \relative c {
   c4 a8 f4 f8 |
   
   %page3
-  f4 d8 f4\fermata f8 |
+  f4 d8 f4 f8 |
   f4 bes,8 c4\fermata \teeny f8 | \normalsize
   d4 c8 f4 bes,8 |
   a4 bes8 d4 bes8 |
@@ -470,15 +470,15 @@ pianoLH = \relative c' {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics \with { alignAboveContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 0.2)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 0.2)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
   \layout {
   \context {
     \Lyrics
-    \override LyricText #'font-size = #2
+    \override LyricText #'font-size = #1.9
   }
     \context {
       \Score

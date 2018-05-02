@@ -27,7 +27,7 @@ function processLy(lyFile,callback) {
     }
     lyContent = lyContent.replace(/(\sfirst-page-number\s+=\s+#)\d+/, '$1' + (parseInt(pageNum)||1));
     lyContent = lyContent.replace(`headerLine = \\markup{\\override #'(font-name . "Garamond Premier Pro") \\smallCapsOldStyle"christmas"}`,`headerLine = ""`)
-    lyContent = lyContent.replace(/\\override LyricText #'font-size = #(\d+(\.\d+)?)/,`\\override LyricText #'font-size = #2`);
+    lyContent = lyContent.replace(/\\override LyricText #'font-size = #((?!1\.9)\d+(\.\d+)?)/,`\\override LyricText #'font-size = #2`);
     lyContent = lyContent.replace(/%CONTENTS%/,lyContents);
     if(fs.existsSync(psName)) {
         //Check if the .ly file was the same.
