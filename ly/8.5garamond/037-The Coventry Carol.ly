@@ -240,4 +240,4 @@ bassWords = \lyricmode {
   }
 }
 \markup\vspace#0.1
-\markup\fill-line \center-align {\epsfile #X #59.5 #"art2.eps"}
+\markup\fill-line \center-align {\epsfile #X #80 #"art1.eps"}

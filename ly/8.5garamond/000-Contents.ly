@@ -48,12 +48,12 @@
 %\markup\epsfile #X #85 #"Christmas.eps"
 \pageBreak
 %\markup\vspace #2.5
-\markup\fill-line \center-align {\epsfile #X #57.3 #"art1.eps"}
+\markup\fill-line \center-align {\epsfile #X #57.3 #"art2.eps"}
 %\markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #38 \smallCapsOldStyle"contents"}}
 \markup\vspace #0.5
 
 %\scale #'(0.98 . 1) 
 
-\markup{\hspace#13.61 {\override #'(line-width . 57.3) \override #'(baseline-skip . 2.7) \override #'(word-space . 0) \column{
+\markup{\hspace#13.75 {\override #'(line-width . 57.3) \override #'(baseline-skip . 2.4) \override #'(word-space . 0) \column{
 %CONTENTS%
 }}}
