@@ -77,7 +77,7 @@ sopMusic = \relative c'' {
   
   d cis b a |
   gis2 a4( d) |
-  cis2( b4.) a8) |
+  cis2( b4.) a8 |
   \partial 4*3 a2. \bar "|."
 }
 sopWords = \lyricmode {
@@ -147,8 +147,8 @@ altoWordsIII = \lyricmode {
   \dropLyricsV
   \set stanza = #"3. "
   \set ignoreMelismata = ##t
-  _ Can -- tet nunc ‘I -- o,’ cho -- rus an -- ge -- ló -- _ rum_; ""
-  Can -- tet nunc au -- _ la __ _ cæ -- lés -- ti -- um,
+  _ Can -- tet nunc ‘I -- o,’ cho -- rus an -- ge -- ló -- _ rum; ""
+  Can -- tet nunc au -- _ la cæ -- lés -- _ ti -- um,
   Gló -- ri -- _ a! __ _ So -- li De -- o Gló -- ri -- a!
 }
 altoWordsIV = \lyricmode {

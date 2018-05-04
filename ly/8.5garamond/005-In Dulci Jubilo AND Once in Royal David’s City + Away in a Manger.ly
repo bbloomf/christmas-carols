@@ -450,7 +450,7 @@ bassWords = \lyricmode {
   \layout {
   \context {
     \Lyrics
-    \override LyricText #'font-size = #1.4
+    \override LyricText #'font-size = #2
   }
     \context {
       \Score
@@ -668,7 +668,7 @@ bassWords = \lyricmode {
   \layout {
   \context {
     \Lyrics
-    \override LyricText #'font-size = #1.4
+    \override LyricText #'font-size = #2
   }
     %#(layout-set-staff-size 13)
     #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20)))
