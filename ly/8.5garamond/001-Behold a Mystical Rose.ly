@@ -106,7 +106,8 @@ altoMusic = \relative c' {
   f4.~ f4
 }
 altoWords = \lyricmode {
-  \set stanza = #"1. "
+  \dropLyricsV
+  \set stanza = "1. "
   \set ignoreMelismata = ##t
   Be -- hold a Mys -- ti -- cal Rose __ _
   From thorn -- _ y stem __ _ hath sprung; __ _
@@ -118,7 +119,8 @@ altoWords = \lyricmode {
   Thy womb was the Court of our King. __ _
 }
 altoWordsII = \lyricmode {
-  \set stanza = #"2. "
+  \dropLyricsV
+  \set stanza = "2. "
   \set ignoreMelismata = ##t
   Be -- hold the Mo -- ther of God, __ _
   Yet low -- li -- est daugh -- ter of men; __ _
@@ -130,7 +132,8 @@ altoWordsII = \lyricmode {
   Il -- lu -- mine our path with thy Light. __ _
 }
 altoWordsIII = \lyricmode {
-  \set stanza = #"3. "
+  \dropLyricsV
+  \set stanza = "3. "
   \set ignoreMelismata = ##t
   Be -- hold the Cause of our Joy, __ _
   Who bore _ the In -- fi -- nite Child, __ _
@@ -142,15 +145,15 @@ altoWordsIII = \lyricmode {
   All praised _ and blest be thy name! __ _
 }
 altoWordsIV = \lyricmode {
-  \set stanza = #"4. "
+  \set stanza = "4. "
   \set ignoreMelismata = ##t
 }
 altoWordsV = \lyricmode {
-  \set stanza = #"5. "
+  \set stanza = "5. "
   \set ignoreMelismata = ##t
 }
 altoWordsVI = \lyricmode {
-  \set stanza = #"6. "
+  \set stanza = "6. "
   \set ignoreMelismata = ##t
 }
 tenorMusic = \relative c {

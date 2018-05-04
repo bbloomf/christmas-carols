@@ -137,6 +137,7 @@ altoMusic = \relative c' {
   }
 }
 altoWords = \lyricmode {
+  \dropLyricsV
   \set stanza = "1. "
 
   Hush Thee, my lit -- tle One,
@@ -155,6 +156,7 @@ altoWords = \lyricmode {
 }
 altoWordsII = \lyricmode {
 %\markup\italic
+  \dropLyricsV
   \set stanza = "2. "
 
   Look lit -- tle wake -- ful One
@@ -169,6 +171,7 @@ altoWordsII = \lyricmode {
   Led by Thy star.
 }
 altoWordsIII = \lyricmode {
+  \dropLyricsV
   \set stanza = "3. "
 
   Dost know how, on the night
@@ -609,6 +612,7 @@ altoMusic = \relative c' {
   }
 }
 altoWords = \lyricmode {
+  \dropLyricsV
   \set stanza = "1. "
 
   Stain -- less the Maid -- en
@@ -621,6 +625,7 @@ altoWords = \lyricmode {
   Beth -- le -- hem a heav -- en!
 }
 altoWordsII = \lyricmode {
+  \dropLyricsV
   \set stanza = "2. "
 
   Lan -- tern in dark -- ness,

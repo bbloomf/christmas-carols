@@ -89,6 +89,7 @@ altoMusic = \relative c' {
   bes4.~ bes4 s8 \bar "|."
 }
 altoWords = \lyricmode {
+  \dropLyricsV
   \set stanza = #"1. "
   \set ignoreMelismata = ##t
   Si -- _ lent night!
@@ -102,6 +103,7 @@ altoWords = \lyricmode {
   Sleep _ in heav -- en -- ly peace. __ _
 }
 altoWordsII = {
+  \dropLyricsV
   \set stanza = \markup\concat{\dynamic"p   " "2. "}
   \lyricmode {
     \set ignoreMelismata = ##t
@@ -120,6 +122,7 @@ altoWordsII = {
   }
 }
 altoWordsIII = \lyricmode {
+  \dropLyricsV
   \set stanza = #"3. "
   \set ignoreMelismata = ##t
   Si -- _ lent night!  Ho -- _ ly night!
