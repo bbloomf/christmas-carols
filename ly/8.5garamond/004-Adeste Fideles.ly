@@ -62,7 +62,7 @@ sopMusic = \relative c'' {
   
   \tieSolid\slurSolid
   gis( a) \slurDashed b( cis) |
-  gis2( fis4.) e8 |
+  \slurSolid gis2( fis4.) e8 |
   e2. b'4\rest |
   e2 d4 cis |
   \slurDashed d2( cis) |
@@ -93,7 +93,7 @@ altoMusic = \relative c' {
   \slurSolid cis( dis) \slurDashed e( dis) |
   
   \tieSolid\slurSolid e( dis8[) cis] \slurDashed b4( e) |
-  e2( dis4.) e8 |
+  \slurSolid e2( dis4.) e8 |
   e2. s4 |
   e2 fis8[ gis] a4 |
   \slurSolid a( \slurDashed gis)( a2) |
@@ -114,7 +114,7 @@ altoMusic = \relative c' {
 altoWords = {
   \dropLyricsV
   \lyricmode {
-    \set stanza = #"1. "
+    \set stanza = "1. "
   \set ignoreMelismata = ##t
     Ad -- és -- te fi -- dé -- les, Læ -- ti tri -- um -- phán -- _ tes,
     Ve -- ní -- te, ve -- ní -- _ te in Béth -- _ le -- hem; Na -- tum vi -- dé -- te,
@@ -137,7 +137,7 @@ altoWords = {
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
-  \set stanza = #"2. "
+  \set stanza = "2. "
   \set ignoreMelismata = ##t
   _ De -- um de De -- o, lu -- _ men de lú -- mi -- ne, ""
   Ges -- tant pu -- él -- _ læ __ _ ví -- _ sce -- ra.
@@ -145,7 +145,7 @@ altoWordsII = \lyricmode {
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
-  \set stanza = #"3. "
+  \set stanza = "3. "
   \set ignoreMelismata = ##t
   _ Can -- tet nunc ‘I -- o,’ cho -- rus an -- ge -- ló -- _ rum; ""
   Can -- tet nunc au -- _ la cæ -- lés -- _ ti -- um,
@@ -153,7 +153,7 @@ altoWordsIII = \lyricmode {
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
-  \set stanza = #"4. "
+  \set stanza = "4. "
   \set ignoreMelismata = ##t
   _ Er -- go qui na -- tus di -- e ho -- di -- ér -- _ na. ""
   Je -- su, __ _ ti -- _ bi sit gló -- _ ri -- a,
@@ -169,7 +169,7 @@ tenorMusic = \relative c' {
   a2 b4~ b |
   
   \tieSolid\slurSolid b( a) \slurDashed e'( cis) |
-  b2( a4.) gis8 |
+  \slurSolid b2( a4.) gis8 |
   gis2. d4\rest |
   cis'2 d4 e |
   \slurDashed e2( e2) |
@@ -200,8 +200,8 @@ bassMusic = \relative c' {
   fis2 e4( b) |
   
   \tieSolid\slurSolid e( cis) \slurDashed gis( a) |
-  \tieDashed b2~ b4. e8 |
-  \tieSolid e2. s4 |
+  b2~ b4. e8 |
+  e2. s4 |
   cis'2 b4 a |
   b2( a2) |
   gis4 a fis d |
@@ -230,18 +230,18 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
+    \new Lyrics \with { alignAboveContext = "women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosIV"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics \with { alignAboveContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
