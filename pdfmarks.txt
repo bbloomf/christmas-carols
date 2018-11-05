@@ -32,6 +32,6 @@
 [/Title (The Twelve Days of Christmas) /Page 34 /OUT pdfmark
 [/Title (A Virgin Unspotted) /Page 36 /OUT pdfmark
 [/Title (We Three Kings) /Page 22 /OUT pdfmark
-[/Title (We Wish You a Merry Christmas) /Page 40 /OUT pdfmark
+[/Title (We Wish You a Merry Christmas) /Page 41 /OUT pdfmark
 [/Title (What Child is This) /Page 13 /OUT pdfmark
 [/Title (When Christ was born of Mary free) /Page 38 /OUT pdfmark
