@@ -31,7 +31,7 @@
 % \markup\vspace #0.5
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #56 \smallCapsOldStyle"Christmas Carols"}}
 \markup\vspace #6.18
-\markup\epsfile #X #85 #"art4.eps"
+\markup\epsfile #X #85 #"invenietis-with-border.eps"
 % "
 %\markup\vspace #20
 % \markup{\abs-fontsize #12 {Sixth edition, \smallCapsOldStyle"%date% %month% %year%"}}
