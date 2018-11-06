@@ -255,9 +255,9 @@ pianoLH = \relative c' {
   }
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Quem Pastores"}}
-%    poet = \markup\oldStyleNum"Anonymous, 14th Century"
-%    composer = \markup\oldStyleNum"14th Century German"
-    composer = \markup\oldStyleNum"Arranged by Ralph Vaughan Williams (1872–1958)"
+    poet = \markup\oldStyleNum"Anonymous, 14th Century"
+    composer = \markup\oldStyleNum"14th Century German"
+    arranger = \markup\oldStyleNum"Arranged by Ralph Vaughan Williams (1872–1958)"
     tagline = \markup { "from" \italic {ChristmasCarolMusic.org}}
   }
 }
@@ -270,35 +270,35 @@ pianoLH = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsIX
   \set stanza = "1. "
-  While their flocks the shep -- herds tend -- ed
-  Heav’n -- ly hosts to earth de -- scend -- ed
-  Sing -- ing, with all voic -- es blend -- ed,
-  “Fear not, Christ is born to -- day.”
+  Shep -- herds left their flocks a -- stray -- ing,
+  God’s com -- mand with joy o -- bey -- ing,
+  When they heard the an -- gel say -- ing:
+  “Christ is born in Beth -- le -- hem.”
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set stanza = "2. "
-  East -- ern Seers rich gifts had wrought Him
-  Gold, Frank -- in -- cense, myrrh they brought Him
-  Guid -- ed by a Star, they sought Him
-  Prince of Life and Vic -- to -- ry.
+  Wise Men came from far, __ and saw him:
+  Knelt in hom -- age to a -- dore him;
+  Pre -- cious gifts they laid be -- fore him:
+  Gold and frank -- in -- cense and myrrh.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set stanza = "3. "
-  On that Child with Mar -- y gaz -- ing,
-  Join ye Chris -- tians all in rais -- ing
-  Songs to Him, whom Heav’n is prais -- ing,
-  God in -- car -- nate come to men.
+  % On that Child with Mar -- y gaz -- ing,
+  % Join ye Chris -- tians all in rais -- ing
+  % Songs to Him, whom Heav’n is prais -- ing,
+  % God in -- car -- nate come to men.
 }
 altoWordsIV = \lyricmode {
   \dropLyricsIX
-  \set stanza = "4. "
-  From this day’s first dawn to e -- ven
-  Praise to Christ our King be giv -- en
-  By all Earth, and all in Heav -- en,
-  In our sweet -- est, loft -- iest strain.
+  \set stanza = "3. "
+  Let us now in eve -- ry na -- tion
+  Sing his praise with ex -- ul -- ta -- tion.
+  All the world shall find sal -- va -- tion
+  In the birth of Ma -- ry’s Son.
 }
 \score {
   <<
@@ -308,12 +308,12 @@ altoWordsIV = \lyricmode {
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
     \new Lyrics \with { alignAboveContext = "women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = "women" } \lyricsto "altos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = "women" } \lyricsto "altos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = "women" } \lyricsto "altos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = "women" } \lyricsto "altos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = "women" } \lyricsto "altos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = "women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((padding . -0.5)) } \lyricsto "altos" \altoWords
+    \new Lyrics = "altosVI"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = "women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((padding . -0.5)) } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
@@ -344,10 +344,10 @@ altoWordsIV = \lyricmode {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Quem Pastores"}}
-%    poet = \markup\oldStyleNum"Anonymous, 14th Century"
-%    composer = \markup\oldStyleNum"14th Century German"
-%    composer = \markup\oldStyleNum"Arranged by Ralph Vaughan Williams (1872–1958)"
+    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Shepherds Left Their Flocks Astraying"}}
+    poet = \markup\oldStyleNum"English by Imogen Holst (1907–1984)"
+    composer = \markup\oldStyleNum"14th Century German"
+    arranger = \markup\oldStyleNum"Arranged by Ralph Vaughan Williams (1872–1958)"
 %    tagline = \markup { "from" \italic {ChristmasCarolMusic.org}}
   }
 }

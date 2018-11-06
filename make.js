@@ -3,7 +3,7 @@ var child_process = require('child_process'),
 function processLy(lyFile,callback) {
     var lyFileToProcess = lyFile;
     var deleteFileAfterProcessed = false;
-    var outputName = lyFile.match(/^(?:.*\/)?((\d+).*\.ly)$/);
+    var outputName = lyFile.match(/^(?:.*\/)?((\d+)[^/]*\.ly)$/);
     if(!outputName) {
         console.info('Skipping "' + lyFile + '" because it is not a .ly file.');
         if(typeof(callback)=='function') {

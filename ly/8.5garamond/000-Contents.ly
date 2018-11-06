@@ -50,7 +50,7 @@
 %\markup\vspace #2.5
 \markup\fill-line \center-align {\epsfile #X #57.3 #"art2.eps"}
 %\markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #38 \smallCapsOldStyle"contents"}}
-\markup\vspace #0.5
+\markup\vspace #0.1
 
 %\scale #'(0.98 . 1) 
 
