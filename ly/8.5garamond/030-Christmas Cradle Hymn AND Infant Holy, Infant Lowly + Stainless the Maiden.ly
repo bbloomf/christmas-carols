@@ -168,7 +168,7 @@ altoWordsII = \lyricmode {
   \once \override LyricText.self-alignment-X = #LEFT ing
   \once \override LyricText.self-alignment-X = #LEFT from far __
   Brought to Thy crib rich gifts,
-  Led by Thy star.
+  Led by Thy star. __
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
@@ -181,7 +181,7 @@ altoWordsIII = \lyricmode {
   But, now, my Ba -- by, rest,
   \once \override LyricText.self-alignment-X = #LEFT While
   \once \override LyricText.self-alignment-X = #LEFT I
-  \once \override LyricText.self-alignment-X = #LEFT am nigh,
+  \once \override LyricText.self-alignment-X = #LEFT am nigh, __
   Sleep, drow -- sy lit -- tle Boy,
   Hush, hush -- a -- by. __
 }
