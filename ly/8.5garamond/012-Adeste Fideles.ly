@@ -149,7 +149,7 @@ altoWordsIII = \lyricmode {
   \set ignoreMelismata = ##t
   _ Can -- tet nunc ‘I -- o,’ cho -- rus an -- ge -- ló -- _ rum_; ""
   Can -- tet nunc au -- _ la __ _ cæ -- lés -- ti -- um,
-  Gló -- ri -- _ a! __ _ So -- li De -- o Gló -- ri -- a!
+  Gló -- ri -- _ a __ _ in ex -- cél -- sis De -- _ o!
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
