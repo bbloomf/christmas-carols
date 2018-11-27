@@ -62,7 +62,7 @@ sopMusic = \relative c'' {
   
   \tieSolid\slurSolid
   gis( a) \slurDashed b( cis) |
-  gis2( fis4.) e8 |
+  \slurSolid gis2( fis4.) e8 |
   e2. b'4\rest |
   e2 d4 cis |
   \slurDashed d2( cis) |
@@ -77,7 +77,7 @@ sopMusic = \relative c'' {
   
   d cis b a |
   gis2 a4( d) |
-  cis2( b4.) a8) |
+  cis2( b4.) a8 |
   \partial 4*3 a2. \bar "|."
 }
 sopWords = \lyricmode {
@@ -93,7 +93,7 @@ altoMusic = \relative c' {
   \slurSolid cis( dis) \slurDashed e( dis) |
   
   \tieSolid\slurSolid e( dis8[) cis] \slurDashed b4( e) |
-  e2( dis4.) e8 |
+  \slurSolid e2( dis4.) e8 |
   e2. s4 |
   e2 fis8[ gis] a4 |
   \slurSolid a( \slurDashed gis)( a2) |
@@ -148,7 +148,7 @@ altoWordsIII = \lyricmode {
   \set stanza = #"3. "
   \set ignoreMelismata = ##t
   _ Can -- tet nunc ‘I -- o,’ cho -- rus an -- ge -- ló -- _ rum_; ""
-  Can -- tet nunc au -- _ la __ _ cæ -- lés -- ti -- um,
+  Can -- tet nunc au -- _ la cæ -- lés -- _ ti -- um,
   Gló -- ri -- _ a __ _ in ex -- cél -- sis De -- _ o!
 }
 altoWordsIV = \lyricmode {
@@ -169,7 +169,7 @@ tenorMusic = \relative c' {
   a2 b4~ b |
   
   \tieSolid\slurSolid b( a) \slurDashed e'( cis) |
-  b2( a4.) gis8 |
+  \slurSolid b2( a4.) gis8 |
   gis2. d4\rest |
   cis'2 d4 e |
   \slurDashed e2( e2) |
@@ -200,7 +200,7 @@ bassMusic = \relative c' {
   fis2 e4( b) |
   
   \tieSolid\slurSolid e( cis) \slurDashed gis( a) |
-  \tieDashed b2~ b4. e8 |
+  b2~ b4. e8 |
   \tieSolid e2. s4 |
   cis'2 b4 a |
   b2( a2) |
