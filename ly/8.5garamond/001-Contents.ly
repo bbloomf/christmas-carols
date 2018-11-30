@@ -20,7 +20,14 @@
   first-page-number = #001
   print-first-page-number = ##t
   headerLine = ""
-  oddHeaderMarkup = ""
+  oddHeaderMarkup = \markup\fill-line{
+     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \combine 
+        \fill-line{"" \on-the-fly #(on-page 5)
+        \oldStyleNum"1"
+        }
+        \fill-line{\headerLine}
+  }
   evenHeaderMarkup = ""
 }
 #(set-global-staff-size 23) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 23 20))) }
@@ -182,7 +189,7 @@
 {\page-link #24 {\fill-with-pattern #0.1 #CENTER . "It Came Upon the Midnight Clear" \oldStyleNum"20"}}
 }}}
 \pageBreak
-\markup\vspace#1.275
+\markup\vspace#0.5
 \markup{{\override #'(line-width . 41.3) \override #'(baseline-skip . 2.35) \override #'(word-space . 0) \column{
 {\page-link #172 {\fill-with-pattern #0.1 #CENTER . \italic"It was the very noon of night" \oldStyleNum"168"}}
 {\page-link #171 {\fill-with-pattern #0.1 #CENTER . "Jacob’s Ladder" \oldStyleNum"167"}}
