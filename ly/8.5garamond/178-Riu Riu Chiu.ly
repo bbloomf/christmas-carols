@@ -74,9 +74,9 @@ sopMusic = \relative c' {
 }
 sopWords = \lyricmode {
   \repeat unfold 12 {\skip1}
-  Dios guar -- do el
+  Dios guar -- dó el
   \repeat unfold 8 {\skip1}
-  Dios guar -- do el
+  Dios guar -- dó el
 }
 
 altoMusic = \relative c' {
@@ -106,12 +106,12 @@ altoWords = \lyricmode {
   \dropLyrics
   Ri -- u, ri -- u Chi -- u la guar -- da ri -- be -- ra.
   \dropLyricsIV
-  Dios guar -- do el lo -- bo,_el
+  Dios guar -- dó el lo -- bo,_el
   \dropLyrics
   lo -- bo de nues -- tra cor -- de -- ra.
   
   \dropLyricsIV
-  Dios guar -- do el lo -- bo,_el
+  Dios guar -- dó el lo -- bo,_el
   \dropLyrics
   lo -- bo de nues -- tra cor -- de -- ra.
   
@@ -155,9 +155,9 @@ tenorMusic = \relative c' {
 }
 tenorWords = \lyricmode {
   \repeat unfold 12 {\skip1}
-  Dios guar -- do el lo -- bo, el
+  Dios guar -- dó el lo -- bo, el
   \repeat unfold 8 {\skip1}
-  Dios guar -- do el lo -- bo, el
+  Dios guar -- dó el lo -- bo, el
 }
 
 bassMusic = \relative c' {
@@ -299,7 +299,7 @@ bassMusic = \relative c' {
     d( e) f g a4 a4 |
     
     a8 a g a f4 f8 e |
-    g g e f d4 d \bar "||" \break
+    g4 e8 f d4 d \bar "||" \break
     \once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
     \once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
     \mark "D.S."
@@ -308,55 +308,54 @@ bassMusic = \relative c' {
 bassWords = \lyricmode {
   \dropLyricsIV
   Ri -- u, ri -- u Chi -- u la guar -- da ri -- be -- ra.
-  Dios guar -- do el lo -- bo de nues -- tra cor -- de -- ra.
-  Dios guar -- do el lo -- bo de nues -- tra cor -- de -- ra.
+  Dios guar -- dó el lo -- bo de nues -- tra cor -- de -- ra.
+  Dios guar -- dó el lo -- bo de nues -- tra cor -- de -- ra.
   
   \repeat unfold 42 {\skip1}
   \set stanza = #"1. "
   El lo -- bo ra -- bio -- so la qui -- so mor -- der;
   Mas Dios po -- de -- ro -- so la
   su -- po de -- fen -- der;
-  Qui -- zo -- le ha -- zer que no pu -- dies -- se pe -- car,
+  Quí -- so -- le ha -- zer que no pu -- dies -- se pe -- car,
   Ni aún o -- ri -- gi -- nal es -- ta Vir -- gen no tu -- vie -- ra.
   
   \set stanza = #"2. "
-  Es -- te ques na -- çi -- do es el gran mo -- nar -- cha;
+  Es -- te qu’es na -- çi -- do es el gran mo -- nar -- cha;
   Chris -- to pa -- tri -- ar -- cha de car -- ne ves -- ti -- do;
   Ha -- nos re -- di -- mi -- do con se ha -- zer chi -- qui -- to;
-  A un que -- ra_in -- fi -- ni -- to fi -- ni -- to ses hi -- zie -- ra.
+  A un -- qu’e -- ra_in -- fi -- ni -- to fi -- ni -- to ses hi -- zie -- ra.
   
   \set stanza = #"3. "
-  Mu -- chas pro -- fe -- ci -- as Io -- an pro -- fe -- ti -- za -- do
-  Ya_un en nue -- stra di -- as lo he -- mos al con -- ça -- do
-  A dios hu -- ma -- na -- do ve -- mos en el çie -- lo
-  Y_al hom -- bre nel cie -- lo pues quel le quis -- te -- ra.
+  Mu -- chas pro -- fe -- cí -- as lo han pro -- fe -- ti -- za -- do
+  Y_aún en nue -- stra dí -- as lo he -- mos al -- can -- ça -- do
+  A dios hu -- ma -- na -- do ve -- mos en el sue -- lo
+  Y_al hom -- bre nel cie -- lo por -- que’l le qui -- sie -- ra.
   
   
   \set stanza = #"4. "
-  Yo vi mil’ gar -- ço -- nes que an duan can -- tan -- do
-  Por a -- qui bo -- lan -- do ha -- zien -- do mil -- so -- nes
-  Du -- zien do a -- ga -- sco -- nes Glo -- ria sean el çie -- lo
-  Y pas en el sue -- lo pues Ie -- su nas -- çie -- ra.
+  Yo vi mil gar -- ço -- nes que_an -- da -- van can -- tan -- do
+  Por a -- quí vo -- lan -- do ha -- zien -- do mil so -- nes
+  Di -- zien -- do a ga -- sco -- nes: Glo -- ria sea ’nel cie -- lo
+  Y pas en el sue -- lo pues Je -- sús nas -- çie -- ra.
   
   \set stanza = #"5. "
   Es -- te vie -- ne a dar a -- los muer -- tos vi -- da
-  Y vie -- ne a re -- pa -- rar de to -- dos la sa -- y -- da
-  Es la luz del Di -- a a ques -- te mo -- cue -- lo
-  Es -- tes al dor -- de -- ro Que San Juan di -- xe -- ra.
+  Y vie -- ne a re -- pa -- rar de to -- dos la ca -- y -- da
+  Es la luz del dí -- a a -- ques -- te mo -- çue -- lo
+  Es -- t’es el cor -- de -- ro que San Juan di -- xe -- ra.
   
   
   \set stanza = #"6. "
-  Mi -- ra bien que_os cua -- dre que_an -- si na l’o -- ye -- ra
-  Que Dios no pu -- die -- ra ha -- zer -- la mas que Ma -- dre
-  El que -- ra su Pa -- dre oy d’e -- lla nas -- çio
-  Y el que la cri -- o su hi -- jo se di -- xe -- ra.
+  Mi -- ra bien que_os cua -- dre que_an -- si -- na l’o -- ye -- ra
+  Que Dios no pu -- die -- ra ha -- zer -- la más que Ma -- dre
+  El qu’e -- ra su Pa -- dre hoy d’e -- lla nas -- çió
+  Y el que la cri -- ó, su Hi -- jo se di -- xe -- ra.
   
   \set stanza = #"7. "
-  Pues que ya -- te ne -- mos lo que des -- se a -- mos
-  To -- dos lun -- tos va -- mos pre -- sen -- tes lle -- ve -- mos
-  To -- dos le da -- re -- mos
-  Nue -- stra vo -- lut -- tad
-  Pues as -- ci -- gu -- al -- ar con el hom -- bre vi -- nie -- ra.
+  Pues que ya -- te ne -- mos lo que de -- se -- a -- mos,
+  To -- dos jun -- tos va -- mos, pre -- sen -- tes lle -- ve -- mos;
+  To -- dos le da -- re -- mos nue -- stra vo -- lun -- tad,
+  Pues a se_i -- gua -- lar con el hom -- bre vi -- nie -- ra.
 }
 
 bassWordsII = \lyricmode {
