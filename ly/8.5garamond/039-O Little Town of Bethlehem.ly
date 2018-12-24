@@ -120,7 +120,7 @@ altoWordsII = \lyricmode {
   And gath -- er’d _ all a -- bove,
   While mor -- tals sleep, the an -- gels keep
   Their watch of _ \set associatedVoice = "altos" won -- d’ring love. \unset associatedVoice
-  O morn -- ning stars, to -- geth -- er
+  O morn -- ing stars, to -- geth -- er
   Pro -- claim the ho -- ly birth!
   And prais -- es sing to God the King,
   And peace to \set associatedVoice = "altos" men on earth!
