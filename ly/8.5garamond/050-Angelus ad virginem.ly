@@ -135,7 +135,7 @@ altoWords = \lyricmode {
   Ad hæc vir -- go nó -- bi -- lis
       Re -- spón -- dens in -- quit e -- i;
   An -- cíl -- la sum hú -- mi -- lis
-      O -- mni -- po -- tén -- tis De -- i.
+      Om -- ni -- po -- tén -- tis De -- i.
   Ti -- bi cæ -- lés -- ti nún -- ti -- o,
   Tan -- ta se -- cré -- ti cón -- sci -- o,
       Con -- sén -- ti -- ens
@@ -167,7 +167,7 @@ altoWordsII = \lyricmode {
       Et sta -- tim pu -- el -- lá -- ris
   U -- te -- rus in -- tú -- mu -- it
       Vi par -- tus sa -- lu -- tá -- ris.
-  Qui, cir -- cum -- dá -- tus ú -- te -- ro
+  Qui, cir -- cúm -- da -- tus ú -- te -- ro
   No -- vem mén -- si -- um nú -- me -- ro,
       Hinc éx -- i -- it
       Et ín -- i -- it
