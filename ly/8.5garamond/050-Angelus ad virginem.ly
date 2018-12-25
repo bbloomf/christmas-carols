@@ -154,7 +154,7 @@ altoWordsII = \lyricmode {
   Quá -- li -- ter in -- frín -- ge -- rem,
       quæ fir -- ma men -- te vo -- vi?
   ‘Spí -- ri -- tus San -- cti gra -- ti -- a
-  Per -- fí -- ci -- et hæc ó -- mni -- a;
+  Per -- fí -- ci -- et hæc óm -- ni -- a;
       Ne tí -- me -- as,
       sed gáu -- de -- as,
       se -- cú -- ra,
