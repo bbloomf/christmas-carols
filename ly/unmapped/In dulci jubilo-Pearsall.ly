@@ -150,10 +150,10 @@ altoWordsIII = \lyricmode {
   Deep -- ly were we stain -- ed
   \markup\italic Per \markup\italic nos -- \markup\italic tra \markup\italic cri -- \markup\italic mi -- \markup\italic na; __
   But Thou for us hast gain -- ed
-  \markup\italic Cœ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
+  \markup\italic Cæ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
     \markup\italic Qua -- \markup\italic lis \markup\italic glo -- \markup\italic ri -- \markup\italic a! __
     \markup\italic Qua -- \markup\italic lis \markup\italic glo -- \markup\italic ri -- \markup\italic a! __
-  \markup\italic Cœ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
+  \markup\italic Cæ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
     \markup\italic Qua -- \markup\italic lis \markup\italic glo -- \markup\italic ri -- \markup\italic a! __
     \markup\italic Qua -- \markup\italic lis \markup\italic glo -- \markup\italic ri -- \markup\italic a! __
 }

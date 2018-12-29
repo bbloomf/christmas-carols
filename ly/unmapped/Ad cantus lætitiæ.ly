@@ -88,7 +88,7 @@ altoWords = \lyricmode {
   \set stanza = #"1. "
   Ad can -- tus læ -- ti -- ti -- æ
   Nos in -- vi -- tat ho -- di -- e
-  Spes et a -- mor pa -- tri -- æ Cœ -- le -- stis.
+  Spes et a -- mor pa -- tri -- æ Cæ -- le -- stis.
   
   \set stanza = #"1. "
   Love and hope of heav’n -- ly __ rest,
@@ -99,7 +99,7 @@ bassWords = \lyricmode {
   \set stanza = #"1. "
   Ad can -- tus læ -- ti -- ti -- æ
   Nos in -- vi -- tat ho -- di -- e
-  Spes et a -- mor pa -- tri -- æ Cœ -- le -- stis.
+  Spes et a -- mor pa -- tri -- æ Cæ -- le -- stis.
   
   \set stanza = #"1. "
   Love and hope of heav’n -- ly rest,

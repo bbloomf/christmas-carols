@@ -105,7 +105,7 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   \set ignoreMelismata = ##t
   In præ -- sé -- pe pó -- si -- tum
-  Sub fœ -- no
+  Sub fæ -- no
   \unset ignoreMelismata
   a -- si -- nó -- rum
   Co -- gno -- vé -- runt Dó -- mi -- num

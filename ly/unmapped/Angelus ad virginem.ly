@@ -123,20 +123,20 @@ altoWords = \lyricmode {
   Vir -- gi -- nis for -- mi -- di -- nem
       De -- mul -- cens in -- quit “A -- ve.”
   A -- ve re -- gi -- na vir -- gi -- num,
-  Cœ -- li ter -- ræ -- que do -- mi -- num
+  Cæ -- li ter -- ræ -- que do -- mi -- num
       Con -- ci -- pi -- es
       Et pa -- ri -- es
       In -- tac -- ta,
       Sa -- lu -- tem ho -- mi -- num.
-      Tu por -- ta cœ -- li fac -- ta
+      Tu por -- ta cæ -- li fac -- ta
       Me -- del -- la cri -- mi -- num.
       
   \set stanza = #"3. "
   Ad hæc vir -- go no -- bi -- lis
       Re -- spon -- dens in -- quit e -- i;
   An -- cil -- la sum hu -- mi -- lis
-      O -- mni -- po -- ten -- tis De -- i.
-  Ti -- bi cœ -- les -- ti nun -- ti -- o,
+      Om -- ni -- po -- ten -- tis De -- i.
+  Ti -- bi cæ -- les -- ti nun -- ti -- o,
   Tan -- ta se -- cre -- ti con -- sci -- o,
       Con -- sen -- ti -- ens
       Et cu -- pi -- ens
@@ -154,7 +154,7 @@ altoWordsII = \lyricmode {
   Qua -- li -- ter in -- frin -- ge -- rem,
       quæ fir -- ma men -- te vo -- vi?
   ‘Spi -- ri -- tus san -- cti gra -- ti -- a
-  Per -- fi -- ci -- et hæc o -- mni -- a;
+  Per -- fi -- ci -- et hæc om -- ni -- a;
       Ne ti -- me -- as,
       sed gau -- de -- as,
       se -- cu -- ra,

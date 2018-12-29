@@ -133,7 +133,7 @@ altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"3. "
   Ex -- ul -- te -- mus cum Ma -- ri -- a
-  In cœ -- les -- ti hie -- rar -- chi -- a
+  In cæ -- les -- ti hie -- rar -- chi -- a
   Na -- tum pro -- mat vo -- ce pi -- 
   a
   Laus, \unset associatedVoice

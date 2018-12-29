@@ -154,7 +154,7 @@ altoWordsIII = \lyricmode {
   er -- wor --
   \unset associatedVoice
   ben
-  \markup\italic Cœ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
+  \markup\italic Cæ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
   \markup\italic Quan -- \markup\italic ta \markup\italic gra -- \markup\italic ti -- \markup\italic a! __
   \markup\italic Quan -- \markup\italic ta \markup\italic gra -- 
   \set associatedVoice = "altos"

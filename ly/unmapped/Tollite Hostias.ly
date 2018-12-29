@@ -195,7 +195,7 @@ altoWords = {
   }
   \raiseLyrics
   \lyricmode {
-    Læ -- ten -- tur cœ -- li, et ex -- ul -- tet ter -- ra
+    Læ -- ten -- tur cæ -- li, et ex -- ul -- tet ter -- ra
     
     a fa -- ci -- e Do -- mi -- ni, quo -- ni -- am ve -- nit. \set associatedVoice = "sopranos" Al -- le -- lu -- ia.
     \unset associatedVoice
@@ -212,7 +212,7 @@ altoWords = {
     Al -- le -- lu -- ia.
     
     \set associatedVoice = "tenors"
-    Læ -- ten -- tur cœ -- li, et ex -- ul -- tet ter -- ra
+    Læ -- ten -- tur cæ -- li, et ex -- ul -- tet ter -- ra
     \unset associatedVoice
     a fa -- ci -- e Do -- mi -- ni, quo -- ni -- am ve -- nit. \set associatedVoice = "sopranos" Al -- le -- lu -- ia.
   }
@@ -294,7 +294,7 @@ tenorMusic = \relative c' {
 }
 tenorWords = \lyricmode {
   \repeat unfold 22 \skip1
-  Læ -- ten -- tur cœ -- li, et ex -- ul -- tet ter -- ra
+  Læ -- ten -- tur cæ -- li, et ex -- ul -- tet ter -- ra
   quo -- ni -- am ve -- nit.
   Al -- le -- lu -- ia.
   Al -- le -- lu -- ia.
@@ -309,7 +309,7 @@ tenorWords = \lyricmode {
   Al -- le -- lu -- ia.
   Al -- le -- lu -- ia.
   
-  Læ -- ten -- tur cœ -- li, et ex -- ul -- tet ter -- ra
+  Læ -- ten -- tur cæ -- li, et ex -- ul -- tet ter -- ra
   quo -- ni -- am ve -- nit.
   Al -- le -- lu -- ia.
   Al -- le -- lu -- ia.
