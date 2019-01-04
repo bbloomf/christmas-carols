@@ -443,7 +443,7 @@ altoWordsII = \lyricmode {
   
   \set stanza = #"5. "
   Cum a -- rís -- tis, hór -- de -- um
-  Có -- me -- dit et cár -- du -- um
+  Cóm -- e -- dit et cár -- du -- um
   Trí -- ti -- cum ex pá -- le -- a
   Sé -- gre -- gat in á -- re -- a.
 }
@@ -459,7 +459,7 @@ altoWordsIII = \lyricmode {
   A -- men di -- cas, á -- si -- ne;
   Jam sa -- tur ex grá -- mi -- ne.
   A -- men, a -- men í -- te -- ra
-  As -- per -- ná -- re vé -- te -- ra.
+  A -- sper -- ná -- re vé -- te -- ra.
 }
 altoWordsIV = \lyricmode {
 }

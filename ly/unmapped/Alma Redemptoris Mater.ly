@@ -116,7 +116,7 @@ sopWords = \lyricmode {
   Red -- em -- ptó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
   Et stel -- la ma -- ris, suc -- cúr -- re ca -- dén -- ti,
   súr -- ge -- re qui cu -- rat pó -- pu -- lo_:
-  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um san -- ctum Ge -- ni -- tó -- rem_:
+  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um sanc -- tum Ge -- ni -- tó -- rem_:
   Vir -- go pri -- us ac po -- sté -- ri -- us, 
     ac po -- sté -- ri -- us, 
   Ga -- bri -- é -- lis ab o -- re
@@ -182,7 +182,7 @@ altoWords = \lyricmode {
   Red -- em -- ptó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
   Et stel -- la ma -- ris, suc -- cúr -- re ca -- dén -- ti,
   súr -- ge -- re qui cu -- rat pó -- pu -- lo_:
-  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um san -- ctum Ge -- ni -- tó -- rem_:
+  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um sanc -- tum Ge -- ni -- tó -- rem_:
   Vir -- go pri -- us ac po -- sté -- ri -- us, 
   Ga -- bri -- é -- lis ab o -- re
   su -- mens il -- lud A -- ve, pec -- ca -- tó -- rum mi -- se -- ré -- re,
@@ -248,7 +248,7 @@ tenorWords = \lyricmode {
   Al -- ma Red -- em -- ptó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
   Et stel -- la ma -- ris, suc -- cúr -- re ca -- dén -- ti,
   súr -- ge -- re qui cu -- rat pó -- pu -- lo_:
-  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um san -- ctum Ge -- ni -- tó -- rem_:
+  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um sanc -- tum Ge -- ni -- tó -- rem_:
   Vir -- go pri -- us ac po -- sté -- ri -- us,
   Ga -- bri -- é -- lis ab o -- re
   su -- mens il -- lud A -- ve, pec -- ca -- tó -- rum mi -- se -- ré -- re,
@@ -313,7 +313,7 @@ bassWords = \lyricmode {
   Red -- em -- ptó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
   Et stel -- la ma -- ris, suc -- cúr -- re ca -- dén -- ti,
   súr -- ge -- re qui cu -- rat pó -- pu -- lo_:
-  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um san -- ctum Ge -- ni -- tó -- rem_:
+  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um sanc -- tum Ge -- ni -- tó -- rem_:
   Vir -- go pri -- us ac po -- sté -- ri -- us, Ga -- bri -- é -- lis ab o -- re
   su -- mens il -- lud A -- ve, pec -- ca -- tó -- rum mi -- se -- ré -- re,
     pec -- ca -- tó -- rum mi -- se -- ré -- re.

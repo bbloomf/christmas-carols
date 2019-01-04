@@ -183,7 +183,7 @@ altoWordsIV = \lyricmode {
   \set stanza = #"4. "
   O mi Je -- su, cor de -- vo -- tum
   Post te tra -- he, su -- me to -- tum,
-  I -- gne tu -- o san -- cto u -- re,
+  I -- gne tu -- o sanc -- to u -- re,
   Ah, ah pe -- ni -- tus com -- bu -- re.
 }
 altoWordsV = \lyricmode {

@@ -148,7 +148,7 @@ altoWordsIII = \lyricmode {
   \set stanza = #" 6."
   Vir -- tus, ho -- nor, laus, gló -- ri -- a
   De -- o Pa -- tri cum Fí -- li -- o,
-  San -- cto si -- mul Pa -- rá -- cli -- to,
+  Sanc -- to si -- mul Pa -- rá -- cli -- to,
   In sæ -- cu -- ló -- rum sæ -- cu -- la.
 }
 altoWordsIV = \lyricmode {

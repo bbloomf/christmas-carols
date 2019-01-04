@@ -188,7 +188,7 @@ altoWordsIII = \lyricmode {
   \repeat unfold16\skip1
   \set stanza = #"7. "
   Ve -- ni, ve -- ni, Rex Gén -- ti -- um,
-  ve -- ni, Re -- dém -- ptor óm -- ni -- um,
+  ve -- ni, Red -- émp -- tor óm -- ni -- um,
   ut sal -- vas tu -- os fá -- mu -- los
   pec -- cá -- ti si -- bi cón -- sci -- os.
 }

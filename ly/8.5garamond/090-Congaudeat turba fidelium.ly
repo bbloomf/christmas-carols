@@ -88,7 +88,7 @@ altoWords = \lyricmode {
   
   
   \set stanza = #"5. "
-  In o -- ctá -- va __ dum cir -- cum -- cí -- di -- tur, __
+  In oc -- tá -- va __ dum cir -- cum -- cí -- di -- tur, __
   No -- men e -- i Je -- sus im -- pó -- ni -- tur
   in Béth -- le -- hem. __
 }
@@ -96,7 +96,7 @@ altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set stanza = #"2. "  
-  Ad pa -- stó -- res __ de -- scén -- dit án -- ge -- lus, __
+  Ad pas -- tó -- res __ de -- scén -- dit án -- ge -- lus, __
   Di -- cens e -- is_: na -- tus est Dó -- mi -- nus
   in Béth -- le -- hem. __
   
@@ -109,14 +109,14 @@ altoWordsII = \lyricmode {
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"3. "
-  Lo -- que -- bán -- tur __ pa -- stó -- res ín -- vi -- cem, __
+  Lo -- que -- bán -- tur __ pas -- tó -- res ín -- vi -- cem, __
   Trans -- e -- á -- mus ad no -- vum hó -- mi -- nem
   in Béth -- le -- hem. __
   
   
   \set stanza = #"7. "
   Col -- lý -- ri -- das __ si -- mul cum néc -- ta -- re __
-  Be -- ne -- dí -- cat Chri -- stus Rex gló -- ri -- æ
+  Be -- ne -- dí -- cat Chris -- tus Rex gló -- ri -- æ
   in Béth -- le -- hem. __
 }
 altoWordsIV = \lyricmode {

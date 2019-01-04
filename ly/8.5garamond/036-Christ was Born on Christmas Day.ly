@@ -285,7 +285,7 @@ altoWordsIV = \lyricmode {
   \dropLyricsIX
   \set stanza = " 2."
   % \override Lyrics.LyricText.font-shape = #'italic
-  Chri -- stus na -- tus hó -- di -- e
+  Chris -- tus na -- tus hó -- di -- e
   ex Ma -- rí -- a vír -- gi -- ne
   \set ignoreMelismata = ##t
   si -- ne \unset ignoreMelismata vi -- rí -- li sé -- mi -- ne

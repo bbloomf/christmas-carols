@@ -105,8 +105,8 @@ altoWords = \lyricmode {
   O be -- á -- tus or -- tus il -- le,
   vir -- go cum pu -- ér -- pe -- ra
   E -- di -- dit nos -- tram sa -- lú -- tem,
-  fe -- ta San -- cto Spi -- ri -- tu,
-  Et pu -- er re -- dém -- ptor or -- bis
+  fe -- ta Sanc -- to Spi -- ri -- tu,
+  Et pu -- er red -- émp -- tor or -- bis
   os sa -- crá -- tum pró -- tu -- lit. __
   Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
   
@@ -157,7 +157,7 @@ altoWordsIII = \lyricmode {
   \set stanza = #"3. "
   Cór -- po -- ris for -- mam ca -- dú -- ci,
   mem -- bra mor -- ti~ob -- nó -- xi -- a
-  In -- du -- it, ne gens per -- í -- ret
+  Ind -- u -- it, ne gens per -- í -- ret
   pri -- mo -- plás -- ti~ex gér -- mi -- ne,
   Mér -- se -- rat quem lex pro -- fún -- do
   no -- xi -- á -- lis tár -- ta -- ro. __
@@ -170,13 +170,13 @@ altoWordsIII = \lyricmode {
   Quem pro -- phe -- tá -- rum fi -- dé -- les
   pá -- gi -- næ spo -- pón -- de -- rant,
   E -- mi -- cat pro -- mís -- sus o -- lim;
-  cun -- cta con -- láu -- dent e -- um. __
+  cunc -- ta con -- láu -- dent e -- um. __
   Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
   
   \set stanza = #"9. "
   Ti -- bi, Chris -- te, sit cum Pa -- tre
-  há -- gio -- que Pne -- ú -- ma -- te
-  Hym -- nus, de -- cus, laus pe -- rén -- nis,
+  há -- gi -- o -- que Pnéu -- ma -- te
+  Hym -- nus, de -- cus, laus per -- én -- nis,
   gra -- ti -- á -- rum ác -- ti -- o,
   Ho -- nor, vir -- tus, vic -- tó -- ri -- a,
   re -- gnum æ -- ter -- ná -- li -- ter. __

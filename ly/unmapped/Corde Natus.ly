@@ -105,7 +105,7 @@ altoWords = \lyricmode {
   O be -- a -- tus or -- tus il -- le,
   vir -- go cum pu -- er -- pe -- ra
   E -- di -- dit nos -- tram sa -- lu -- tem,
-  fe -- ta San -- cto Spi -- ri -- tu,
+  fe -- ta Sanc -- to Spi -- ri -- tu,
   Et pu -- er re -- dem -- ptor or -- bis
   os sa -- cra -- tum pro -- tu -- lit. __
   Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
@@ -170,7 +170,7 @@ altoWordsIII = \lyricmode {
   Quem pro -- phe -- ta -- rum fi -- de -- les
   pa -- gi -- næ spo -- pon -- de -- rant,
   E -- mi -- cat pro -- mis -- sus o -- lim;
-  cun -- cta con -- lau -- dent e -- um. __
+  cunc -- ta con -- lau -- dent e -- um. __
   Sæ -- cu -- lo -- rum sæ -- cu -- lis. __
   
   \set stanza = #"9. "

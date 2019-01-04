@@ -138,7 +138,7 @@ altoWordsII = \lyricmode {
   \dropLyricsV
 %\markup\italic
   \set stanza = #"2. "
-  As -- súm -- psit car -- nem hó -- mi -- nis,
+  As -- súmp -- sit car -- nem hó -- mi -- nis,
   Al -- le -- lú -- ia.
   Ver -- bum Pa -- tris al -- tís -- si -- mi,
   Al -- le -- lú -- ia.
@@ -184,7 +184,7 @@ altoWordsIII = \lyricmode {
   Al -- le -- lú -- ia.
   
   \set stanza = #"14. "
-  Lau -- dé -- tur san -- cta Trí -- ni -- tas,
+  Lau -- dé -- tur sanc -- ta Trí -- ni -- tas,
   Al -- le -- lú -- ia.
   De -- o di -- cá -- mus grá -- ti -- as,
   Al -- le -- lú -- ia.

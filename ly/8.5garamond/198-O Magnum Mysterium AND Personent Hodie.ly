@@ -157,8 +157,8 @@ sopMusic = \relative c' {
   g \bar"|."
 }
 sopWords = \lyricmode {
-  O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum.
-    O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le,
+  O ma -- gnum mys -- té -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum.
+    O ma -- gnum mys -- té -- ri -- um et ad -- mi -- rá -- bi -- le,
       et ad -- mi -- rá -- bi -- le
     sa -- cra -- mén -- tum,
   ut a -- ni -- má -- li -- a vi -- dé -- rent Dó -- mi -- num na -- tum,
@@ -167,7 +167,7 @@ sopWords = \lyricmode {
     ja -- cén -- tem in præ -- sé -- pi -- o.
   
   O be -- á -- ta vir -- go cu -- jus ví -- sce -- ra
-  me -- ru -- é -- runt por -- tá -- re Dó -- mi -- num Je -- sum Chri -- stum.
+  me -- ru -- é -- runt por -- tá -- re Dó -- mi -- num Je -- sum Chris -- tum.
   Al -- le -- lú -- ja,
   Al -- le -- lú -- ja,
   Al -- le -- lú -- ja,
@@ -269,8 +269,8 @@ altoMusic = \relative c' {
   d1 \bar"|."
 }
 altoWords = \lyricmode {
-  O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum.
-    O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
+  O ma -- gnum mys -- té -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum.
+    O ma -- gnum mys -- té -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
       et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
   ut a -- ni -- má -- li -- a vi -- dé -- rent Dó -- mi -- num na -- tum,
     vi -- dé -- rent Dó -- mi -- num na -- tum
@@ -280,7 +280,7 @@ altoWords = \lyricmode {
     ja -- cén -- tem in præ -- sé -- pi -- o.
   
   O be -- á -- ta vir -- go cu -- jus ví -- sce -- ra
-  me -- ru -- é -- runt por -- tá -- re Dó -- mi -- num Je -- sum Chri -- stum.
+  me -- ru -- é -- runt por -- tá -- re Dó -- mi -- num Je -- sum Chris -- tum.
   Al -- le -- lú -- ja,
   Al -- le -- lú -- ja,
   Al -- le -- lú -- ja,
@@ -377,7 +377,7 @@ tenorMusic = \relative c' {
 }
 
 tenorWords = \lyricmode {
-  O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
+  O ma -- gnum mys -- té -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
     et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
   ut a -- ni -- má -- li -- a,
     ut a -- ni -- má -- li -- a
@@ -388,7 +388,7 @@ tenorWords = \lyricmode {
       in præ -- sé -- pi -- o.
   
   O be -- á -- ta vir -- go cu -- jus ví -- sce -- ra
-  me -- ru -- é -- runt por -- tá -- re Dó -- mi -- num Je -- sum Chri -- stum.
+  me -- ru -- é -- runt por -- tá -- re Dó -- mi -- num Je -- sum Chris -- tum.
   Al -- le -- lú -- ja,
   Al -- le -- lú -- ja,
   Al -- le -- lú -- ja,
@@ -485,7 +485,7 @@ bassMusic = \relative c' {
   g1 \bar"|."
 }
 bassWords = \lyricmode {
-  O ma -- gnum my -- sté -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
+  O ma -- gnum mys -- té -- ri -- um et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
     et ad -- mi -- rá -- bi -- le sa -- cra -- mén -- tum,
   ut a -- ni -- má -- li -- a vi -- dé -- rent Dó -- mi -- num na -- tum,
   ja -- cén -- tem in præ -- sé -- pi -- o,
@@ -493,7 +493,7 @@ bassWords = \lyricmode {
     in præ -- sé -- pi -- o.
   
   O be -- á -- ta vir -- go cu -- jus ví -- sce -- ra
-  me -- ru -- é -- runt Je -- sum Chri -- stum.
+  me -- ru -- é -- runt Je -- sum Chris -- tum.
   Al -- le -- lú -- ja,
   Al -- le -- lú -- ja,
   Al -- le -- lú -- ja,
@@ -701,9 +701,9 @@ altoWordsIV = \lyricmode {
   \dropLyricsV
   \set stanza = #"4. "
   Om -- nes cle -- rí -- cu -- li,
-  pár -- i -- ter pú -- e -- ri,
+  pá -- ri -- ter pú -- e -- ri,
   can -- tent ut án -- ge -- li:
-  Ad -- ven -- ís -- ti mun -- do,
+  Ad -- ve -- nís -- ti mun -- do,
   lau -- des Ti -- bi fun -- do.
   Id -- e -- o, -o, -o,
   íd -- e -- o, -o, -o,

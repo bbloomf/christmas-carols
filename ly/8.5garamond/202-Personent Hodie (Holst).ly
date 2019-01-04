@@ -122,9 +122,9 @@ altoWordsIII = \lyricmode {
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "
   Om -- nes cle -- rí -- cu -- li,
-  pár -- i -- ter pú -- e -- ri,
+  pá -- ri -- ter pú -- e -- ri,
   can -- tent ut án -- ge -- li:
-  Ad -- ven -- ís -- ti mun -- do,
+  Ad -- ve -- nís -- ti mun -- do,
   lau -- des Ti -- bi fun -- do.
   Id -- e -- o, -o, -o,
   íd -- e -- o, -o, -o,

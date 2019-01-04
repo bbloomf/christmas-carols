@@ -189,10 +189,10 @@ altoWords = \lyricmode {
   \markup\italic E -- \markup\italic ia. __
   
   \set stanza = #"1. "
-  \markup\italic A \markup\italic Pa -- \markup\italic tre \markup\italic U -- \markup\italic ni -- \markup\italic gén -- \markup\italic i -- \markup\italic tus
+  \markup\italic A \markup\italic Pa -- \markup\italic tre \markup\italic U -- \markup\italic ni -- \markup\italic gé -- \markup\italic ni -- \markup\italic tus
   Is through a maid -- en come to us:
   Sing we of Him and say Wel -- come,
-  \markup\italic Ve -- \markup\italic ni, \markup\italic Re -- \markup\italic dém -- \markup\italic ptor
+  \markup\italic Ve -- \markup\italic ni, \markup\italic Red -- \markup\italic émp -- \markup\italic tor
   \set associatedVoice = "sopranos"
   \markup\italic gén -- \markup\italic ti -- \markup\italic um.
   
@@ -210,7 +210,7 @@ altoWordsII = \lyricmode {
   \dropLyricsV
   \repeat unfold 16{\skip1}
   \set stanza = #"2. "
-  \markup\italic A -- \markup\italic gnós -- \markup\italic cat \markup\italic o -- \markup\italic mne \markup\italic sæ -- \markup\italic cu -- \markup\italic lum,
+  \markup\italic A -- \markup\italic gnós -- \markup\italic cat \markup\italic om -- \markup\italic ne \markup\italic sæ -- \markup\italic cu -- \markup\italic lum,
   A bright star made three kings to come,
   Him for to seek with their pre -- sen’s,
   \markup\italic Ver -- \markup\italic bum \markup\italic su -- \markup\italic pér -- \markup\italic num

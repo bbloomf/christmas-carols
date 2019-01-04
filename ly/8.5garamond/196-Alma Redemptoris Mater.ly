@@ -113,12 +113,12 @@ sopMusic = \relative c' {
   bes \bar"|."
 }
 sopWords = \lyricmode {
-  Red -- em -- ptó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
+  Red -- emp -- tó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
   Et stel -- la ma -- ris, suc -- cúr -- re ca -- dén -- ti,
   súr -- ge -- re qui cu -- rat pó -- pu -- lo:
-  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um san -- ctum Ge -- ni -- tó -- rem:
-  Vir -- go pri -- us ac po -- sté -- ri -- us, 
-    ac po -- sté -- ri -- us, 
+  Tu quæ ge -- nu -- ís -- ti, na -- tú -- ra mi -- rán -- te, tu -- um sanc -- tum Ge -- ni -- tó -- rem:
+  Vir -- go pri -- us ac post -- é -- ri -- us, 
+    ac post -- é -- ri -- us, 
   Ga -- bri -- é -- lis ab o -- re
   su -- mens il -- lud A -- ve, __ pec -- ca -- tó -- rum mi -- se -- ré -- re,
     pec -- ca -- tó -- rum mi -- se -- ré -- re.
@@ -179,11 +179,11 @@ altoMusic = \relative c' {
   ees1 \bar"|."
 }
 altoWords = \lyricmode {
-  Red -- em -- ptó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
+  Red -- emp -- tó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
   Et stel -- la ma -- ris, suc -- cúr -- re ca -- dén -- ti,
   súr -- ge -- re qui cu -- rat pó -- pu -- lo:
-  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um san -- ctum Ge -- ni -- tó -- rem:
-  Vir -- go pri -- us ac __ po -- sté -- ri -- us, 
+  Tu quæ ge -- nu -- ís -- ti, na -- tú -- ra mi -- rán -- te, tu -- um sanc -- tum Ge -- ni -- tó -- rem:
+  Vir -- go pri -- us ac __ post -- é -- ri -- us, 
   Ga -- bri -- é -- lis ab o -- re
   su -- mens il -- lud A -- ve, pec -- ca -- tó -- rum mi -- se -- ré -- re,
     pec -- ca -- tó -- rum mi -- se -- ré -- re.
@@ -245,11 +245,11 @@ tenorMusic = \relative c' {
 }
 
 tenorWords = \lyricmode {
-  Al -- ma Red -- em -- ptó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
+  Al -- ma Red -- emp -- tó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
   Et stel -- la ma -- ris, suc -- cúr -- re ca -- dén -- ti,
   súr -- ge -- re qui cu -- rat __ pó -- pu -- lo:
-  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um san -- ctum Ge -- ni -- tó -- rem:
-  Vir -- go pri -- us ac __ po -- sté -- ri -- us,
+  Tu quæ ge -- nu -- ís -- ti, na -- tú -- ra mi -- rán -- te, tu -- um sanc -- tum Ge -- ni -- tó -- rem:
+  Vir -- go pri -- us ac __ post -- é -- ri -- us,
   Ga -- bri -- é -- lis ab o -- re
   su -- mens il -- lud A -- ve, pec -- ca -- tó -- rum mi -- se -- ré -- re,
     pec -- ca -- tó -- rum mi -- se -- ré -- re.
@@ -310,11 +310,11 @@ bassMusic = \relative c' {
   ees \bar"|."
 }
 bassWords = \lyricmode {
-  Red -- em -- ptó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
+  Red -- emp -- tó -- ris Ma -- ter, quæ pér -- vi -- a cæ -- li por -- ta ma -- nes,
   Et stel -- la ma -- ris, suc -- cúr -- re ca -- dén -- ti,
   súr -- ge -- re qui cu -- rat pó -- pu -- lo: __
-  Tu quæ ge -- nu -- í -- sti, na -- tú -- ra mi -- rán -- te, tu -- um san -- ctum Ge -- ni -- tó -- rem:
-  Vir -- go pri -- us ac po -- sté -- ri -- us, Ga -- bri -- é -- lis ab o -- re
+  Tu quæ ge -- nu -- ís -- ti, na -- tú -- ra mi -- rán -- te, tu -- um sanc -- tum Ge -- ni -- tó -- rem:
+  Vir -- go pri -- us ac post -- é -- ri -- us, Ga -- bri -- é -- lis ab o -- re
   su -- mens il -- lud A -- ve, pec -- ca -- tó -- rum mi -- se -- ré -- re,
     pec -- ca -- tó -- rum mi -- se -- ré -- re.
 }

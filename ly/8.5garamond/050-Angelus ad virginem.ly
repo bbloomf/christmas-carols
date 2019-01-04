@@ -135,7 +135,7 @@ altoWords = \lyricmode {
   Ad hæc vir -- go nó -- bi -- lis
       Re -- spón -- dens in -- quit e -- i;
   An -- cíl -- la sum hú -- mi -- lis
-      Om -- ni -- po -- tén -- tis De -- i.
+      Om -- ni -- pot -- én -- tis De -- i.
   Ti -- bi cæ -- lés -- ti nún -- ti -- o,
   Tan -- ta se -- cré -- ti cón -- sci -- o,
       Con -- sén -- ti -- ens
@@ -153,14 +153,14 @@ altoWordsII = \lyricmode {
       quæ vi -- rum non co -- gnó -- vi?
   Quá -- li -- ter in -- frín -- ge -- rem,
       quæ fir -- ma men -- te vo -- vi?
-  ‘Spí -- ri -- tus San -- cti gra -- ti -- a
+  ‘Spí -- ri -- tus Sanc -- ti gra -- ti -- a
   Per -- fí -- ci -- et hæc óm -- ni -- a;
       Ne tí -- me -- as,
       sed gáu -- de -- as,
       se -- cú -- ra,
       quod cas -- ti -- mó -- ni -- a
       Ma -- né -- bit in te pu -- ra
-      De -- i po -- tén -- ti -- a.’
+      De -- i pot -- én -- ti -- a.’
       
   \set stanza = #"4. "
   An -- ge -- lus dis -- pá -- ru -- it
@@ -181,9 +181,9 @@ altoWordsIII = \lyricmode {
   \repeat unfold 74 \skip1
   \set stanza = #"5. "
   E -- ia Ma -- ter Dó -- mi -- ni,
-      Quæ pa -- cem red -- di -- dí -- sti
+      Quæ pa -- cem red -- di -- dís -- ti
   An -- ge -- lis et hó -- mi -- ni,
-      Cum Chri -- stum ge -- nu -- í -- sti;
+      Cum Chris -- tum ge -- nu -- ís -- ti;
   Tu -- um ex -- ó -- ra fí -- li -- um
   Ut se no -- bis pro -- pí -- ti -- um
       Ex -- hí -- be -- at,

@@ -109,9 +109,9 @@ sopWords = \lyricmode {
   
   Læ -- tén -- tur __ cæ -- li.
   An -- te fá -- ci -- em Dó -- mi -- ni.
-  Quó -- ni -- am ve -- nit,
-  quó -- ni -- am ve -- nit, __
-  quó -- ni -- am ve -- nit.
+  Quón -- i -- am ve -- nit,
+  quón -- i -- am ve -- nit, __
+  quón -- i -- am ve -- nit.
   
   ve -- nit, ve -- nit!
 }
@@ -174,10 +174,10 @@ bassWords = \lyricmode {
   
   Læ -- tén -- tur cæ -- li et ex -- súl -- tet ter -- ra.
   An -- te fá -- ci -- em Dó -- mi -- ni.
-  Quó -- ni -- am ve -- nit,
-  quó -- ni -- am ve -- nit,
-  quó -- ni -- am ve -- nit,
-  quó -- ni -- am ve -- nit.
+  Quón -- i -- am ve -- nit,
+  quón -- i -- am ve -- nit,
+  quón -- i -- am ve -- nit,
+  quón -- i -- am ve -- nit.
   
   ve -- nit, ve -- nit!
 }

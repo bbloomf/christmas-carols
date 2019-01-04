@@ -111,7 +111,7 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   Na -- tus est E -- ma -- nu -- el,
   Quod præ -- di -- xit Ga -- bri -- el,
-  Un -- de san -- ctus Da -- ni -- el Est te -- stis.
+  Un -- de sanc -- tus Da -- ni -- el Est te -- stis.
   
   \set stanza = #"2. "
   Born is our E -- man -- u -- el,

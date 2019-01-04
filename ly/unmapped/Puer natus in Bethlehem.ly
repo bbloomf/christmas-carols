@@ -184,7 +184,7 @@ altoWordsIII = \lyricmode {
   Al -- le -- lu -- ia.
   
   \set stanza = #"14. "
-  Lau -- de -- tur san -- cta Tri -- ni -- tas,
+  Lau -- de -- tur sanc -- ta Tri -- ni -- tas,
   Al -- le -- lu -- ia.
   De -- o di -- ca -- mus gra -- ti -- as,
   Al -- le -- lu -- ia.

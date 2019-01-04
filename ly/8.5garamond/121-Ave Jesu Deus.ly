@@ -149,7 +149,7 @@ altoWords = {
   \set stanza = \markup\dynamic"f   "
   \lyricmode {
     \set associatedVoice = "tenors"
-    O po -- tés -- tas, o e -- gés -- tas,
+    O pot -- és -- tas, o e -- gés -- tas,
     O ma -- jés -- tas Dó -- mi -- ni!
     O ma -- jés -- tas, quid non præ -- stas
   }
@@ -166,7 +166,7 @@ altoWordsII = \lyricmode {
   Ut me páu -- pe -- rem di -- tá -- res,
   Ut me pér -- di -- tum sal -- vá -- res,
   Ja -- ces pan -- nis in -- vo -- lú -- tus,
-  Om -- ni o -- pe des -- ti -- tú -- tus.
+  Om -- ni o -- pe de -- sti -- tú -- tus.
 }
 altoWordsIII = {
   \dropLyricsV
@@ -183,7 +183,7 @@ altoWordsIV = \lyricmode {
   \set stanza = #"4. "
   O mi Je -- su, cor de -- vó -- tum
   Post te tra -- he, su -- me to -- tum,
-  I -- gne tu -- o san -- cto u -- re,
+  I -- gne tu -- o sanc -- to u -- re,
   Ah, ah pé -- ni -- tus com -- bú -- re.
 }
 altoWordsV = \lyricmode {

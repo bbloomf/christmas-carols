@@ -106,11 +106,11 @@ altoWords = \lyricmode {
   \set stanza = #"1."
   Cre -- á -- tor al -- me sí -- de -- rum,
   Æ -- tér -- na lux cre -- dén -- ti -- um,
-  Je -- su, Re -- dém -- ptor óm -- ni -- um,
+  Je -- su, Red -- émp -- tor óm -- ni -- um,
   In -- tén -- de vo -- tis súp -- pli -- cum.
 
   \set stanza = #"4."
-  Cu -- jus po -- té -- stas gló -- ri -- æ,
+  Cu -- jus pot -- és -- tas gló -- ri -- æ,
   No -- mén -- que cum pri -- mum so -- nat,
   Et cæ -- li -- tes et ín -- fe -- ri
   Tre -- mén -- te cur -- ván -- tur ge -- nu.
@@ -128,7 +128,7 @@ altoWordsII = \lyricmode {
   Te de -- pre -- cá -- mur úl -- ti -- mæ
   Ma -- gnum di -- é -- i Jú -- di -- cem,
   Ar -- mis su -- pér -- næ grá -- ti -- æ
-  De -- fén -- de nos ab hó -- sti -- bus.
+  De -- fén -- de nos ab hós -- ti -- bus.
 
   A -- men.
 }
@@ -138,12 +138,12 @@ altoWordsIII = \lyricmode {
   Com -- mú -- ne qui mun -- di ne -- fas
   Ut ex -- pi -- á -- res, ad cru -- cem
   E Vír -- gi -- nis sa -- crá -- ri -- o
-  In -- tác -- ta pro -- dis víc -- ti -- ma.
+  In -- tác -- ta prod -- is víc -- ti -- ma.
 
   \set stanza = #" 6."
   Vir -- tus, ho -- nor, laus, gló -- ri -- a
   De -- o Pa -- tri cum Fí -- li -- o,
-  San -- cto si -- mul Pa -- rá -- cli -- to,
+  Sanc -- to si -- mul Pa -- rá -- cli -- to,
   In sæ -- cu -- ló -- rum sæ -- cu -- la.
 }
 altoWordsIV = \lyricmode {
@@ -560,7 +560,7 @@ altoWords = \lyricmode {
   Cón -- di -- tor al -- me sí -- de -- rum,
   Æ -- tér -- na lux __ cre -- dén -- ti -- um,
   \dropLyricsIX
-  Chri -- ste, Re -- dém -- ptor óm -- ni -- um,
+  Chris -- te, Red -- émp -- tor óm -- ni -- um,
   Ex -- áu -- di pre -- ces súp -- pli -- cum.
 }
 altoWordsII = \lyricmode {

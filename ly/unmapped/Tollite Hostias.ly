@@ -191,7 +191,7 @@ altoWords = {
     Tol -- li -- te hos -- ti -- as.
     et ad -- o -- ra -- te
     Do -- mi -- num in a -- tri -- o
-    san -- cto e -- jus.
+    sanc -- to e -- jus.
   }
   \raiseLyrics
   \lyricmode {

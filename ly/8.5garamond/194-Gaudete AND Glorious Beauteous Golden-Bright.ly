@@ -107,7 +107,7 @@ altoWordsIII = \lyricmode {
   \repeat unfold 21 {\skip1}
   \set stanza = #"3. "
   E -- ze -- chíe -- lis por -- ta
-  clau -- sa per -- trán -- si -- tur,
+  clau -- sa per -- tráns -- i -- tur,
   Un -- de lux est or -- ta,
   sa -- lus in -- ve -- ní -- tur.
 }
@@ -117,7 +117,7 @@ altoWordsIV = \lyricmode {
   \set stanza = #"4. "
   \set ignoreMelismata = ##t
   Er -- go nos -- tra cón -- ti -- o
-  psal -- lat jam in lu -- stro,
+  psal -- lat jam in lus -- tro,
   Be -- ne -- dí -- cat Dó -- mi -- no,
   sa -- lus Re -- gi nos -- tro.
 }

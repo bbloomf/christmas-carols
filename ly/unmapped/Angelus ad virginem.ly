@@ -153,7 +153,7 @@ altoWordsII = \lyricmode {
       quæ vi -- rum non co -- gno -- vi?
   Qua -- li -- ter in -- frin -- ge -- rem,
       quæ fir -- ma men -- te vo -- vi?
-  ‘Spi -- ri -- tus san -- cti gra -- ti -- a
+  ‘Spi -- ri -- tus sanc -- ti gra -- ti -- a
   Per -- fi -- ci -- et hæc om -- ni -- a;
       Ne ti -- me -- as,
       sed gau -- de -- as,

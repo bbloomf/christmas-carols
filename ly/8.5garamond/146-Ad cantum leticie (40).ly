@@ -111,7 +111,7 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   Na -- tus est E -- má -- nu -- el,
   Quod præ -- dí -- xit Gá -- bri -- el,
-  Un -- de san -- ctus Dá -- ni -- el Est te -- stis.
+  Un -- de sanc -- tus Dá -- ni -- el Est tes -- tis.
   
   \set stanza = #"2. "
   Born is our E -- man -- u -- el,
@@ -121,7 +121,7 @@ altoWordsII = \lyricmode {
 altoWordsIII = \lyricmode {
   \set stanza = #"3. "
   Er -- go nos cum gáu -- di -- o,
-  No -- stra si -- mul cón -- ti -- o
+  Nos -- tra si -- mul cón -- ti -- o
   Be -- ne -- dí -- cat Dó -- mi -- no Jú -- bi -- lo.
   
   \set stanza = #"3. "
@@ -133,7 +133,7 @@ altoWordsIII = \lyricmode {
 bassWordsIII = \lyricmode {
   \set stanza = #"3. "
   Er -- go nos cum gáu -- di -- o,
-  No -- stra si -- mul cón -- ti -- o
+  Nos -- tra si -- mul cón -- ti -- o
   Be -- ne -- dí -- cat Dó -- mi -- no Jú -- bi -- lo.
   
   \set stanza = #"3. "
