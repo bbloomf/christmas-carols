@@ -193,7 +193,7 @@ altoWords = \lyricmode {
   Wreathe the hol -- ly, twine the bay;
   
   \override Lyrics.LyricText.font-shape = #'italic
-  Chri -- stus na -- tus ho -- di -- e:
+  Chris -- tus na -- tus hó -- di -- e:
   \revert Lyrics.LyricText.font-shape
   The Babe, the Son, the Ho -- ly One of Ma -- ry.
   
@@ -202,7 +202,7 @@ altoWords = \lyricmode {
   Ev -- ’ry -- where in good -- ly show;
   
   \override Lyrics.LyricText.font-shape = #'italic
-  Chri -- stus na -- tus ho -- di -- e:
+  Chris -- tus na -- tus hó -- di -- e:
   \revert Lyrics.LyricText.font-shape
   The Babe, the Son, the Ho -- ly One of Ma -- ry.
   
@@ -235,7 +235,7 @@ altoWordsII = \lyricmode {
   He is born our Lord to be,
   
   \override Lyrics.LyricText.font-shape = #'italic
-  Ex Ma -- ri -- a Vir -- gi -- ne:
+  Ex Ma -- rí -- a Vír -- gi -- ne:
   \revert Lyrics.LyricText.font-shape
   The God, the Lord, by all a -- dor’d for ev -- er.
   
@@ -244,7 +244,7 @@ altoWordsII = \lyricmode {
   ’Tis the birth -- day of a King,
   
   \override Lyrics.LyricText.font-shape = #'italic
-  Ex Ma -- ri -- a Vir -- gi -- ne:
+  Ex Ma -- rí -- a Vír -- gi -- ne:
   \revert Lyrics.LyricText.font-shape
   The God, the Lord, by all a -- dor’d for ev -- er.
 }

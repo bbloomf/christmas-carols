@@ -701,7 +701,7 @@ altoWordsIV = \lyricmode {
   \dropLyricsV
   \set stanza = #"4. "
   Om -- nes cle -- rí -- cu -- li,
-  pá -- ri -- ter pú -- e -- ri,
+  pár -- i -- ter pú -- e -- ri,
   can -- tent ut án -- ge -- li:
   Ad -- ve -- nís -- ti mun -- do,
   lau -- des Ti -- bi fun -- do.
