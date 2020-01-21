@@ -1,9 +1,9 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Adeste Fideles"}}
-  poet = \markup\oldStyleNum"John Francis Wade (1711–1786)"
-  composer = \markup\concat{"from " \italic"Cantus Diversi" \oldStyleNum", 1751"}
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"O Come, All Ye Faithful"}}
+  poet = \markup\oldStyleNum"Translated by Frederick Oakley (1802–1880)"
+  composer = \markup\oldStyleNum"John Francis Wade (1711–1786)"
   tagline = \markup { "from" \concat{\italic "Christmas Carols and Hymns for School and Choir" \oldStyleNum", 1910"}}
 }
 \paper {
@@ -23,7 +23,7 @@
   outer-margin = 0.75\in
   top-margin = 0.26\in
   bottom-margin = 0.25\in
-  first-page-number = #4
+  first-page-number = #2
   print-first-page-number = ##t
   headerLine = ""
   oddHeaderMarkup = \markup\fill-line{
@@ -54,17 +54,17 @@ global = {
 sopMusic = \relative c'' {
   \tempo 4 = 100
   \partial 4 \teeny a4 | \normalsize
-  a2 e4 a |
-  b2 e, |
-  cis'4 b cis d |
-  \tieDashed\slurDashed cis4.~ cis8 b4 \teeny a | \normalsize
-  a2 gis4( fis) | \break
+  \slurDashed
+  a2 e4( a) |
+  b2( e,) |
+  cis'4( b) cis( d) |
+  cis2( b4) \bar"" \teeny a | \normalsize
+  a2 gis4 fis |
   
-  \tieSolid\slurSolid
-  gis( a) \slurDashed b( cis) |
+  gis( a)( b) cis |
   \slurSolid gis2( fis4.) e8 |
   e2. b'4\rest |
-  e2 d4 cis |
+  \slurDashed e2 d4( cis) |
   \slurDashed d2( cis) |
   b4 cis a b |
   \slurSolid \partial 4*3 gis4.( fis8) e4 | \break
@@ -77,7 +77,7 @@ sopMusic = \relative c'' {
   
   d cis b a |
   gis2 a4( d) |
-  cis2( b4.) a8 |
+  cis2( b4.) a8) |
   \partial 4*3 a2. \bar "|."
 }
 sopWords = \lyricmode {
@@ -86,19 +86,20 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   \partial 4 \teeny e4 | \normalsize
-  e2 e4 e |
-  e2 e |
-  e4 e e fis |
-  \tieDashed\slurDashed e4.~ e8 e4 \teeny cis | \normalsize
-  \slurSolid cis( dis) \slurDashed e( dis) |
+  \tieDashed\slurDashed
+  e2 e4~ e |
+  e2~ e |
+  e4~ e e( fis) |
+  e2~ e4 \teeny cis | \normalsize
+  \slurSolid cis( dis) e dis |
   
-  \tieSolid\slurSolid e( dis8[) cis] \slurDashed b4( e) |
+  \slurDashed e( dis8[) cis]( b4) e |
   \slurSolid e2( dis4.) e8 |
   e2. s4 |
-  e2 fis8[ gis] a4 |
-  \slurSolid a( \slurDashed gis)( a2) |
+  \slurDashed e2 fis8[ gis]( a4) | \slurSolid
+  a( \slurDashed gis)( a2) |
   e4 e fis fis |
-  \slurSolid \partial 4*3 e2 e4 |
+  \slurSolid\tieSolid \partial 4*3 e2 e4 |
   
   e4 |
   e1~ |
@@ -114,65 +115,66 @@ altoMusic = \relative c' {
 altoWords = {
   \dropLyricsV
   \lyricmode {
-    \set stanza = "1. "
-  \set ignoreMelismata = ##t
-    Ad -- és -- te fi -- dé -- les, Læ -- ti tri -- um -- phán -- _ tes,
-    Ve -- ní -- te, ve -- ní -- _ te in Béth -- _ le -- hem; Na -- tum vi -- dé -- te,
-    Re -- gem an -- ge -- ló -- _ rum;
-  \unset ignoreMelismata
+    \set stanza = #"1. "
+    \set ignoreMelismata = ##t
+    O come, all ye faith -- ful, Joy -- ful and tri -- um -- phant, O come ye, O come _ ye to Beth -- _ le -- hem; Come and be -- hold Him, Born the King of an -- _ gels;
   }
   \set stanza = \markup\dynamic"mf  "
   \lyricmode {
-    Ve -- ní -- te ad -- o -- ré -- mus,
+    \unset ignoreMelismata
+    O come, let us a -- dore Him,
   }
   \set stanza = \markup\dynamic" f "
   \lyricmode {
-    Ve -- ní -- te ad -- o -- ré -- mus,
+    O come, let us a -- dore Him,
   }
   \set stanza = \markup\dynamic"ff  "
   \lyricmode {
     \raiseLyrics
-    Ve -- ní -- te ad -- o -- ré -- mus, __ Dó -- mi -- num.
+    O come, let us a -- dore Him, __ Christ, __ the Lord!
   }
 }
 altoWordsII = \lyricmode {
   \dropLyricsV
-  \set stanza = "2. "
+  \set stanza = #"2. "
   \set ignoreMelismata = ##t
-  _ De -- um de De -- o, lu -- _ men de lú -- mi -- ne, ""
-  Ges -- tant pu -- él -- _ læ __ _ ví -- _ sce -- ra.
-  De -- um __ _ ve -- rum, gé -- ni -- tum non fac -- _ tum.
+  _ God, of __ _ God, __ _
+  Light __ _ of __ _ Light, _ ""
+  Lo, He ab -- hors _ not the Vir -- _ gin’s womb;
+  Ve -- ry __ _ God,
+  Be -- got -- ten, not cre -- at -- _ ed:
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
-  \set stanza = "3. "
+  \set stanza = #"3. "
   \set ignoreMelismata = ##t
-  _ Can -- tet nunc ‘I -- o,’ cho -- rus an -- ge -- ló -- _ rum; ""
-  Can -- tet nunc au -- _ la cæ -- lés -- _ ti -- um,
-  Gló -- ri -- _ a __ _ in ex -- cél -- sis De -- _ o!
+  _ Sing, choirs of an -- gels, Sing with ex -- ul -- ta -- tions, ""
+  Sing, all ye cit -- i -- zens of heav’n _ a -- bove;
+  Glo -- ry to God, __ _ Glo -- ry in the high -- _ est;
 }
 altoWordsIV = \lyricmode {
   \dropLyricsV
-  \set stanza = "4. "
+  \set stanza = #"4. "
   \set ignoreMelismata = ##t
-  _ Er -- go qui na -- tus di -- e ho -- di -- ér -- _ na. ""
-  Je -- su, __ _ ti -- _ bi sit gló -- _ ri -- a,
-  Pa -- tris æ -- tér -- ni Ver -- bum ca -- ro fac -- _ tum.
+  _ Yea, Lord, we greet Thee, Born this hap -- py morn -- ing, ""
+  Je -- sus, to Thee __ _ _ be glo -- _ ry giv’n;
+  Word of the Fa -- ther, Now in flesh ap -- pear -- _ ing;
 }
 
 tenorMusic = \relative c' {
   \partial 4 \teeny cis4 | \normalsize
-  cis2 cis4 cis |
-  b2 b |
-  a4 b a a |
-  \tieDashed\slurDashed a4.~ a8 gis4 \teeny a | \normalsize
-  a2 b4~ b |
+  \slurDashed\tieDashed
+  cis2 cis4~ cis |
+  b2~ b |
+  a4( b) a~ a |
+  a2( gis4) \teeny a | \normalsize
+  a2 b4 b |
   
-  \tieSolid\slurSolid b( a) \slurDashed e'( cis) |
+  b( a)( e') cis |
   \slurSolid b2( a4.) gis8 |
   gis2. d4\rest |
-  cis'2 d4 e |
-  \slurDashed e2( e2) |
+  \slurDashed cis'2 d4( e) |
+  e2( e2) |
   e4 a, cis d |
   \slurSolid \partial 4*3 b4.( a8) gis4 |
   
@@ -193,16 +195,16 @@ tenorWords = \lyricmode {
 
 bassMusic = \relative c' {
   \partial 4 \teeny a4 | \normalsize
-  a2 a4 a |
-  gis2 gis |
-  a4 gis a d, |
-  \tieDashed\slurDashed e4.~ e8 e4 \teeny fis | \normalsize
-  fis2 e4( b) |
+  \slurDashed\tieDashed a2 a4~ a |
+  gis2~ gis |
+  a4( gis) a( d,) |
+  e2~ e4 \teeny fis | \normalsize
+  fis2 e4 b |
   
-  \tieSolid\slurSolid e( cis) \slurDashed gis( a) |
-  b2~ b4. e8 |
+  e( cis)( gis) a |
+  \tieSolid b2~b4. e8 |
   e2. s4 |
-  cis'2 b4 a |
+  cis'2 b4( a) |
   b2( a2) |
   gis4 a fis d |
   \partial 4*3 e2 e4 |
@@ -230,18 +232,18 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = "women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosIV"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = "women" } \lyricsto "sopranos" \altoWords
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = "men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>

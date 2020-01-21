@@ -1,8 +1,8 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Stille Nacht"}}
-  poet = \markup\oldStyleNum"Joseph Möhr (1792–1848)"
+  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Silent Night"}}
+  poet = \markup\oldStyleNum"Translated by John Freeman Young (1820–1885)"
   composer = \markup\oldStyleNum"Franz Gruber (1787–1863)"
   tagline = \markup { "from" \concat{\italic "Christmas Carols and Hymns for School and Choir" \oldStyleNum", 1910"}}
 }
@@ -23,7 +23,7 @@
   outer-margin = 0.75\in
   top-margin = 0.26\in
   bottom-margin = 0.25\in
-  first-page-number = #23
+  first-page-number = #9
   print-first-page-number = ##t
   headerLine = ""
   oddHeaderMarkup = \markup\fill-line{
@@ -53,15 +53,14 @@ global = {
 
 sopMusic = \relative c' {
   \tempo \markup\italic"Tranquillo" 8 = 90
-  \slurDashed 
   f8.[ g16] f8 d4. |
-  f8. g16 f8 d4. |
+  f8.[ g16] f8 d4. |
   c'8.[ b16] c8 a4. | \break
   bes8.[ a16] bes8 f4. |
   
-  g4 g8 bes8.( a16) g8 |
+  g4 g8 bes8.[ a16] g8 |
   f8.\noBeam g16\noBeam f8 d4 bes'8\rest | \break
-  g4 g8 bes8.( a16) g8 |
+  \slurDashed g4 g8\noBeam bes8.\noBeam( a16\noBeam) g8 |
   f8.\noBeam( g16\noBeam) f8 d4 bes'8\rest |
   
   \slurSolid c4 c8\noBeam ees8.\noBeam c16\noBeam a8 | \break
@@ -74,15 +73,14 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  \slurDashed 
   d8.[ ees16] d8 bes4. |
-  d8. ees16 d8 bes4. |
+  d8.[ ees16] d8 bes4. |
   ees8.[ d16] ees8 c4. |
   d8.[ c16] d8 d4. |
   
-  ees4 ees8 g8.( f16) ees8 |
+  ees4 ees8 g8.[ f16] ees8 |
   d8.\noBeam ees16\noBeam d8\noBeam bes4 s8 |
-  ees4 ees8 g8.( f16) ees8 |
+  \slurDashed ees4 ees8\noBeam g8.\noBeam( f16\noBeam) ees8 |
   d8.\noBeam( ees16\noBeam) d8 bes4 s8 |
   
   \slurSolid ees4 ees8 c8.\noBeam ees16\noBeam c8 |
@@ -93,67 +91,61 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \dropLyricsV
   \set stanza = #"1. "
-  Stil -- le Nacht!
-  hei -- li -- ge Nacht!
-  Al -- les schläft;
-  ein -- sam wacht.
-  Nur das
   \set ignoreMelismata = ##t
-  trau -- te hoch -- hei -- li -- ge Paar. 
-  Hol -- der Kna -- be im lock -- i -- gen Haar,
-  \unset ignoreMelismata
-  Schlaf in himm -- li -- scher Ruh! __ 
-  Schlaf in himm -- li -- scher Ruh! __
+  Si -- _ lent night!
+  Ho -- _ ly night!
+  All __ _ is calm,
+  all __ _ is bright.
+  Round yon Vir -- _ gin
+  Moth -- er and Child,
+  Ho -- ly In -- fant, so ten -- der and mild,
+  Sleep in heav -- en -- ly peace, __ _
+  Sleep _ in heav -- en -- ly peace. __ _
 }
 altoWordsII = {
   \dropLyricsV
   \set stanza = \markup\concat{\dynamic"p   " "2. "}
   \lyricmode {
-    Stil -- le Nacht!
-    hei -- li -- ge Nacht!
-    Hir -- ten erst kund -- ge -- macht,
-    Durch der En -- gel Hal -- le -- lu -- ja!
-    Tönt es laut __ von fern __ und nah:
+    \set ignoreMelismata = ##t
+    Si -- _ lent night!  Ho -- _ ly night!
+    Shep -- _ herds quake at __ _ the sight;
+    Glo -- ries stream _ from heav -- en a -- far,
+    Heav’n -- ly hosts __ _ sing Al -- le -- lu -- ia;
   }
   \set stanza = \markup\dynamic"mf  "
   \lyricmode {
-    Christ, der Ret -- ter ist da! __
+    Christ, the Sav -- ior is born! __ _
   }
   \set stanza = \markup\dynamic"pp      "
   \lyricmode {
-    Christ, der Ret -- ter ist da! __
+    Christ, _ the Sav -- ior is born! __ _
   }
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV
   \set stanza = #"3. "
-  Stil -- le Nacht!
-  hei -- li -- ge Nacht!
-  Got -- tes Sohn, o wie lacht
-  Lieb’ aus dein -- em göt -- tlich -- en Mund,
-  Da uns schlägt die
   \set ignoreMelismata = ##t
-  ret -- ten -- de Stund’. 
-  \unset ignoreMelismata
-  Christ, in dein -- er Ge -- burt! __
-  Christ, in dein -- er Ge -- burt! __
+  Si -- _ lent night!  Ho -- _ ly night!
+  Son __ _ of God, love’s __ _ pure light!
+  Ra -- diant beams _ from Thy ho -- ly face,
+  With the dawn of re -- deem -- _ ing grace,
+  Je -- sus, Lord, at Thy birth! __ _
+  Je -- _ sus, Lord, at Thy birth! __ _
 }
 altoWordsIV = \lyricmode {
 \set ignoreMelismata = ##t
 %\markup\italic 
-  
 }
 
 tenorMusic = \relative c' {
-  \slurDashed 
   bes4 bes8 f4. |
-  bes8. bes16 bes8 f4. |
+  bes4 bes8 f4. |
   a4 a8 f4. |
   f4 f8 bes4. |
   
-  bes4 bes8 g8.( a16) bes8 |
+  bes4 bes8 g8.[ a16] bes8 |
   bes8.\noBeam bes16\noBeam bes8 f4 s8 |
-  bes4 bes8 g8.( a16) bes8 |
+  \slurDashed bes4 bes8 g8.\noBeam( a16\noBeam) bes8 |
   bes8.\noBeam( bes16\noBeam) bes8 f4 s8 |
   
   a4 a8\noBeam a8.\noBeam a16\noBeam f8 |
@@ -166,15 +158,14 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  \slurDashed 
   bes4 bes8 bes4. |
-  bes8. bes16 bes8 bes4. |
+  bes4 bes8 bes4. |
   f'4 f8 f4. |
   bes,4 bes8 bes4. |
   
-  ees4 ees8 ees8.( ees16) ees8 |
+  ees4 ees8 ees4 ees8 |
   bes8.\noBeam bes16\noBeam bes8\noBeam bes4 d8\rest |
-  ees4 ees8 ees8.( ees16) ees8 |
+  \slurDashed ees4 ees8\noBeam ees8.\noBeam( ees16\noBeam) ees8 |
   bes8.\noBeam( bes16\noBeam) bes8 bes4 d8\rest |
   
   f4 f8\noBeam f8.\noBeam f16\noBeam f8 |
@@ -194,11 +185,11 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWords
+    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }

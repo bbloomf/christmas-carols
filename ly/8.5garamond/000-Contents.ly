@@ -29,7 +29,7 @@
 % \markup\vspace #0.75
 % \markup\fill-line \center-align {\abs-fontsize #35 \italic"of"}
 % \markup\vspace #0.5
-\markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #56 \smallCapsOldStyle"Christmas Carols"}}
+\markup\fill-line \center-align {\override #'(font-name . "Garamond Premr Pro Disp Bold"){ \abs-fontsize #56 \smallCapsOldStyle"Christmas  Carols"}}
 \markup\vspace #6.18
 \markup\epsfile #X #85 #"invenietis-with-border.eps"
 % "
