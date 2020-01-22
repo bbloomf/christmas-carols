@@ -1,0 +1,9 @@
+{
+  "name": "CCB",
+  "version": "1.0.0",
+  "main": "make.js",
+  "repository": "https://github.com/bbloomf/christmas-carols.git",
+  "author": "Benjamin Bloomfield <benjamin.bloomfield@travelgpa.com>",
+  "license": "MIT",
+  "private": false
+}
