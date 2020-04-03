@@ -28,7 +28,7 @@
   headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle advent}
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
-     \combine 
+     \combine
         \fill-line{"" \oldStylePageNum"" }
         \fill-line{\headerLine }
   }
@@ -55,17 +55,17 @@ sopMusic = \relative c' {
     a( c b) a |
     g2. a4 |
     b g e g |
-    
+
     a( fis e) d |
     e2. \bar""\break a4 |
     a e e fis |
     g2( fis4) e |
-    
+
     d2. g4 |
     a b b b |
     a( c b) a |
     \partial 2. g2. \bar "||" \break
-    
+
     \partial 4 d'4 |
     d2. b4 |
     b2. b4 |
@@ -75,27 +75,27 @@ sopMusic = \relative c' {
     a( fis e) d |
     \partial 2. <<e2. {s2^\> s8. s16\!}>> \break
   }
-  
-  
-  
+
+
+
   \partial 4 e4 |
   g b b b |
   a( c b) a |
   g2. a4 |
   b g e g |
-  
+
   a( fis e) d |
   e2. \bar""\break a4 |
   a e e fis |
   g2( fis4) e |
-  
+
   d2. g4 |
   a b b b |
   a( c b) a |
   \partial 2. g2. \bar "||" \break
 }
 sopWords = \lyricmode {
-  
+
 }
 
 altoMusic = \relative c' {
@@ -104,17 +104,17 @@ altoMusic = \relative c' {
   g2. fis4 |
   g2. d4 |
   d d c b |
-  
+
   c2(  b4) b |
   b2. e8[ d] |
   c4 c e dis |
   e2( d4) cis |
-  
+
   d2. b4 |
   d d d g |
   g2. fis4 |
   g2. |
-  
+
   g4 |
   fis2. g4 |
   fis2. g4 |
@@ -123,21 +123,21 @@ altoMusic = \relative c' {
   g d e e |
   e( c b) b |
   b2.
-  
-  
-  
-  
+
+
+
+
   b4 |
   e b d g |
   g2. fis4 |
   g2. d4 |
   d d c b |
-  
+
   c2(  b4) b |
   b2. e8[ d] |
   c4 c e dis |
   e2( d4) cis |
-  
+
   d2. b4 |
   d d d g |
   g2. fis4 |
@@ -149,8 +149,8 @@ altoWords = \lyricmode {
   O come, O come, Em -- man -- u -- el,  And ran -- som cap -- tive Is -- ra -- el,
   That mourns in lone -- ly ex -- ile here  Un -- til the Son of God __ ap -- pear.
   Re -- joice! Re -- joice! Em -- man -- u -- el Shall come to thee, O Is -- ra -- el.
-  
-  
+
+
   \set stanza = #"5. "
   O come, Thou Key of Da -- vid, come, And o -- pen wide our heav’n -- ly home;
   Make safe the way that leads __ on high, And close the path to mis -- er -- y.
@@ -164,19 +164,19 @@ altoWordsII = \lyricmode {
   To us the path of know -- ledge show,
   And teach us in her ways __ to go.
 
-  
+
   \repeat unfold 16 \skip1
   \set stanza = #"6. "
   O come, Thou Day -- Spring, come __ and cheer Our spi -- rits by Thine ad -- vent here;
   Dis -- perse the gloom -- y clouds __ of night, And death’s dark shad -- ows put __ to flight.
-  
+
 }
 altoWordsIII = \lyricmode {
   \dropLyricsVII
   \set stanza = #"3. "
   O come, O come, Thou Lord __ of might, Who to Thy tribes, on Si -- nai’s height,
   In an -- cient times didst give __ the Law, In cloud, and maj -- es -- ty __ and awe.
-  
+
   \repeat unfold 16 \skip1
   \set stanza = #"7. "
   O come, De -- sire of na -- tions, bind
@@ -201,17 +201,17 @@ tenorMusic = \relative c' {
   e2( d4) c |
   b2. fis4 |
   g g g g |
-  
+
   e( a g) fis |
   g2. a4 |
   a a b a |
   b( a a) g |
-  
+
   fis2. g4 |
   fis fis g d' |
   e2( d4) c |
   b2. |
-  
+
   b4 |
   a2. e'4 |
   d2. d4 |
@@ -220,21 +220,21 @@ tenorMusic = \relative c' {
   d d c b |
   a2( g4) fis |
   <<g2. {s2_\> s8. s16\!}>>
-  
-  
-  
-  
+
+
+
+
   g4 |
   b fis g d' |
   e2( d4) c |
   b2. fis4 |
   g g g g |
-  
+
   e( a g) fis |
   g2. a4 |
   a a b a |
   b( a a) g |
-  
+
   fis2. g4 |
   fis fis g d' |
   e2( d4) c |
@@ -250,17 +250,17 @@ bassMusic = \relative c {
   c( a b) d |
   e2. d4 |
   g, b c e |
-  
+
   a,2( b4) b |
   e2. c8[ b] |
   a4 a' g fis |
   e( cis d) a |
-  
+
   d2. e4 |
   d b g b |
   c( a b) d |
   g,2. |
-  
+
   g'4 |
   d2. e4 |
   b2. g4 |
@@ -269,21 +269,21 @@ bassMusic = \relative c {
   g b, c e |
   c( a b) b |
   e2.
-  
-  
-  
-  
+
+
+
+
   e4 |
   e d b g |
   c( a b) d |
   e2. d4 |
   g, b c e |
-  
+
   a,2( b4) b |
   e2. c8[ b] |
   a4 a' g fis |
   e( cis d) a |
-  
+
   d2. e4 |
   d b g b |
   c( a b) d |
@@ -338,4 +338,3 @@ bassWords = \lyricmode {
     }
   }
 }
-

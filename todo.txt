@@ -28,7 +28,7 @@ Mé -- di -- a noc -- te fac -- ta
 Som -- no so -- pí -- tus,
 Per com -- plú -- vi -- um a -- trum
 Re -- bus pa -- rá -- tis,
-Ti -- bi -- á -- li -- a cun -- cta
+Ti -- bi -- á -- li -- a cunc -- ta
 Jam in ór -- di -- ne,
 Me -- um e -- rit mí -- ni -- mum
 Si -- ne dú -- bi -- o.
@@ -36,14 +36,14 @@ Si -- ne dú -- bi -- o.
 
 == O Christmas Tree ==
 Ec -- ce ar -- bor hu -- jus noc -- tis
-Fó -- li -- a num -- quam mu -- tant
-Vi -- rí -- di -- a in æ -- sta -- te,
-Et é -- ti -- am in hie -- me.
+Fó -- lia num -- quam mu -- tant
+Vi -- rí -- di -- a in æs -- tá -- te,
+Et é -- tiam in híe -- me.
 
-Nec -- non æ -- sta -- tis tem -- po -- re
+Nec -- non æs -- tá -- tis tém -- po -- re
 Ra -- mi la -- ti et vi -- ri -- des,
-Sed e -- tiam flo -- ret ni -- ve
-Cum ter -- ra al -- ba hie -- me.
+Sed ét -- i -- am flo -- ret ni -- ve
+Cum ter -- ra al -- ba híe -- me.
 
 Nar -- rat no -- bis de cus -- tó -- de
 Et an -- ge -- ló -- rum cár -- mi -- ne,
@@ -55,34 +55,34 @@ Est le -- gén -- dum mi -- rá -- bi -- le.
 Qua -- lis pu -- er qui in Ma -- rí -- æ
   gré -- mi -- o nunc dor -- mit?
 Quem án -- ge -- li nunc sa -- lú -- tant
-  dum pa -- stó -- res ví -- gi -- lant.
+  dum pas -- tó -- res ví -- gi -- lant.
 
-Il -- le est Chri -- stus Rex
-  quem pa -- stó -- res et án -- ge -- li
+Il -- le est Chris -- tus Rex
+  quem pas -- tó -- res et án -- ge -- li
 cur -- runt ad lau -- dán -- dum
   Fí -- li -- um de Ma -- rí -- a.
 
 == Silent Night ==
-Si -- lens nox, san -- cta nox,
+Si -- lens nox, sanc -- ta nox,
 Plá -- ci -- da, lú -- ci -- da.
 Vír -- gi -- nem et Pú -- e -- rum
 Dul -- cem at -- que té -- ne -- rum
 Som -- no óp -- pri -- me.
 Som -- no óp -- pri -- me.
 
-Si -- lens nox, san -- cta nox,
+Si -- lens nox, sanc -- ta nox,
 Án -- ge -- li ní -- ti -- di
 “Al -- le -- lú -- ia” cón -- ci -- nunt.
-Nunc pa -- stó -- res mé -- tu -- unt.
-Chri -- stus na -- tus est.
-Chri -- stus na -- tus est.
+Nunc pas -- tó -- res mé -- tu -- unt.
+Chris -- tus na -- tus est.
+Chris -- tus na -- tus est.
 
-Si -- lens nox, san -- cta nox,
+Si -- lens nox, sanc -- ta nox,
 Cán -- di -- da, splén -- di -- da.
 Fi -- li De -- i fá -- ci -- es
 No -- bis præ -- bet no -- vas spes;
-Chri -- stus na -- tus est.
-Chri -- stus na -- tus est.
+Chris -- tus na -- tus est.
+Chris -- tus na -- tus est.
 
 
 == O Little Town of Bethlehem ==
@@ -95,7 +95,7 @@ Sed noc -- tis in té -- ne -- bris
 Jam tem -- pó -- rum spes óm -- ni -- um
   Cu -- ræ in te ma -- nent.
 
-Nam Chri -- stus ex Ma -- rí -- a
+Nam Chris -- tus ex Ma -- rí -- a
   Na -- tus, et in cæ -- lo
 Sunt con -- grés -- si cum án -- ge -- li
   A -- mó -- re cum pi -- o.
@@ -123,7 +123,7 @@ Me nu -- per mí -- se -- rum
   temp -- tá -- vit lu -- næ lux.
 As -- si -- dé -- bat mi -- hi
   pu -- él -- la fac -- ta dux!
-Vec -- ti sú -- bi -- to
+Vec -- ti súb -- i -- to
   in ni -- vis cú -- mu -- los.
 Ca -- bál -- lus est per -- tér -- ri -- tus
   et tunc e -- vér -- si nos.
@@ -140,19 +140,19 @@ Pu -- él -- lu -- las cum pú -- e -- ris
 
 == Hark the Herald Angels Sing ==
 En ca -- nén -- tes án -- ge -- li,
-“Glo -- ria Re -- gi, In -- fán -- ti;
+“Gló -- ria Re -- gi, In -- fán -- ti;
 Pax in ter -- ra, et De -- us
 con -- cors cum mor -- tá -- li -- bus.”
 Læ -- ti, om -- nes pó -- pu -- li
-Cum cæ -- lé -- sti -- bus jun -- cti,
-Præ -- di -- cá -- te “Nunc Chri -- stus
+Cum cæ -- lés -- ti -- bus junc -- ti,
+Præ -- di -- cá -- te “Nunc Chris -- tus
 Est in Béth -- le -- hem na -- tus.”
 
 En ca -- nén -- tes án -- ge -- li,
-“Glo -- ri -- a Re -- gi In -- fán -- ti.”
+“Gló -- ria Re -- gi In -- fán -- ti.”
 
-A -- do -- rá -- tus cæ -- li -- tus,
-Chri -- stus, sem -- per Dó -- mi -- nus.
+Ad -- o -- rá -- tus cæ -- li -- tus,
+Chris -- tus, sem -- per Dó -- mi -- nus.
 Sé -- ri -- us ad -- vé -- nit spe
 Gé -- ni -- tus a vír -- gi -- ne.
 Car -- ne tam -- quam ób -- si -- tus,
@@ -200,10 +200,10 @@ ac -- cí -- pi -- mus Il -- lum.
 
 
 == God Rest You Merry, Gentlemen ==
-Sal -- vé -- te, læ -- ti có -- mi -- tes,
+Sal -- vé -- te, læ -- ti cóm -- i -- tes,
 Ni -- hil vos tér -- re -- at.
-Nam Je -- sus Chri -- stus na -- tus est
-Ut om -- nes ré -- di -- mat,
+Nam Je -- sus Chris -- tus na -- tus est
+Ut om -- nes réd -- i -- mat,
 Et in Sá -- ta -- næ sé -- mi -- tas
 Er -- rán -- tes re -- dú -- cat.
 O nún -- ti -- um gra -- tís -- si -- mum,
@@ -217,7 +217,7 @@ Pro -- cul do -- na por -- tán -- tes
 Per cam -- pos et mon -- tes i -- mus
 Post stel -- lam se -- quén -- tes.
 
-  O, Stel -- la po -- tens et mi -- ra,
+  O, Stel -- la pot -- ens et mi -- ra,
   Stel -- la re -- gá -- lis pul -- chra,
   Sem -- per mo -- vens ad oc -- cá -- sum
   Duc nos ad cla -- ram lu -- cem.

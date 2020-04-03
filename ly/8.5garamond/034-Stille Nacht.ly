@@ -2,7 +2,7 @@
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Stille Nacht"}}
-  poet = \markup\oldStyleNum"Joseph Möhr (1792–1848)"
+  poet = \markup\oldStyleNum"Joseph Mohr (1792–1848)"
   composer = \markup\oldStyleNum"Franz Gruber (1787–1863)"
   tagline = \markup { "from" \concat{\italic "Christmas Carols and Hymns for School and Choir" \oldStyleNum", 1910"}}
 }
