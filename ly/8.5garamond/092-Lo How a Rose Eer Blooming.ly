@@ -12,8 +12,8 @@
   system-system-spacing =
     #'((basic-distance . 0)
        (minimum-distance . 0)
-       (padding . -12)
-       (stretchability . 100))
+       (padding . -6)
+       (stretchability . 140))
   %markup-system-spacing =
   %  #'((basic-distance . 0)
   %     (minimum-distance . 0)
@@ -22,7 +22,7 @@
   score-markup-spacing =
     #'((basic-distance . 0)
        (minimum-distance . 0)
-       (padding . -2)
+       (padding . -6)
        (stretchability . 100))
 %{IF_LESSER
   markup-system-spacing #'stretchability = 50

@@ -480,6 +480,7 @@ bassWords = \lyricmode {
     \context {
       \Lyrics
       \override LyricText #'X-offset = #center-on-word
+      \override LyricSpace #'minimum-distance = #0.5
     }
   }
   \header {

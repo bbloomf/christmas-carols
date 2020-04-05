@@ -338,6 +338,7 @@ bassWords = \lyricmode {
   \context {
     \Lyrics
     \override LyricText #'font-size = #1.3
+    \override LyricSpace #'minimum-distance = #0.9
   }
 %{IF_LESSER
 \context {

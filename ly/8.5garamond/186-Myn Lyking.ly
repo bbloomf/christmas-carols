@@ -367,6 +367,7 @@ pianoLH = \relative c' {
   \context {
     \Lyrics
     \override LyricText #'font-size = #1.3
+    \override LyricSpace #'minimum-distance = #0.8
   }
     \context {
       \Score

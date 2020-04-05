@@ -197,6 +197,7 @@ pianoLH = \relative c' {
   \context {
     \Lyrics
     \override LyricText #'font-size = #1.3
+    \override LyricSpace #'minimum-distance = #0.8
   }
 %6x9  \context {\Lyrics\override LyricText #'font-size = #0.75 }
 %6.14 \context {\Lyrics\override LyricText #'font-size = #0.25 }

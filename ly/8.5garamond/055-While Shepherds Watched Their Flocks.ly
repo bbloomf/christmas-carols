@@ -201,6 +201,7 @@ bassWords = \lyricmode {
   \context {
     \Lyrics
     \override LyricText #'font-size = #1.3
+    \override LyricSpace #'minimum-distance = #0.8
   }
     %#(layout-set-staff-size 14.6)
     #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20)))
