@@ -25,9 +25,9 @@
   bottom-margin = 0.25\in
   first-page-number = #078
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
+  headerLine = \markup{ \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -35,14 +35,14 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
 }
-#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
+#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20))) }
 global = {
   \key f \major
   \time 3/4
@@ -346,7 +346,7 @@ bassWords = \lyricmode {
 }
 %}%END_IF_LESSER
 %6.14 \context {\Lyrics\override LyricText #'font-size = #0.8 }
-    #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20)))
+    #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20)))
     \context {
       \Score
       \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 2)
@@ -362,7 +362,7 @@ bassWords = \lyricmode {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"The Friendly Beasts"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"The Friendly Beasts"}}
     poet = \markup\oldStyleNum"Robert Davis (1881–1950)"
     composer = \markup\concat{"Adapted from "\italic"Orientis Partibus" \oldStyleNum", 12th Century French"}
     tagline = \markup { "from" \italic {HymnsAndCarolsOfChristmas.com}}
@@ -545,7 +545,7 @@ bassWords = \lyricmode {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Orientis Partibus"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Orientis Partibus"}}
     poet = \markup\oldStyleNum"Attributed to Pierre de Corbeil, Bishop of Sens (d. 1222)"
     composer = \markup\oldStyleNum"12th Century French"
     tagline = \markup \concat{ "Words from " \italic"HymnsAndCarolsOfChristmas.com" ", Music from " \italic"CyberHymnal.org"}
@@ -715,7 +715,7 @@ pianoLH = \relative c' {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Although at Yule it Bloweth Cool"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Although at Yule it Bloweth Cool"}}
     poet = \markup\oldStyleNum"George Ratcliffe Woodward (1848–1934)"
     composer = \markup \concat{\italic "Der wind der wet, der han der kret" \oldStyleNum", 1554"}
     arranger = \markup\oldStyleNum"Arranged by Charles Wood (1866–1926)"

@@ -3,7 +3,7 @@
 \version "2.14.2"
 #(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Stranger Star"}}
+  title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #15 \smallCapsOldStyle"The Stranger Star"}}
   poet = \markup\oldStyleNum"Cecil Frances Alexander (1818–1895)"
   composer = \markup\oldStyleNum"J. A. Shultze, 1780"
   tagline = \markup \concat{ "from " \italic "Favorite Songs and Hymns for School and Home" \oldStyleNum", 1899, via "\italic"books.google.com"}
@@ -28,9 +28,9 @@
   bottom-margin = 0.25\in
   first-page-number = #107
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
+  headerLine = \markup{ \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
+     \abs-fontsize #8.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -38,7 +38,7 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
+     \abs-fontsize #8.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""

@@ -3,7 +3,7 @@
 \header {
   tagline = ""%\markup { "from" \concat{\italic "HymnsAndCarolsOfChristmas.com"}}
 
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \fontsize #2 \smallCapsOldStyle"Flos de radice Jesse"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \fontsize #2 \smallCapsOldStyle"Flos de radice Jesse"}}
     composer = \markup\oldStyleNum"Arranged by Michael Praetorius (1571–1621)"
     %tagline = \markup { "from" \italic {HymnsAndCarolsOfChristmas.com}}
   }
@@ -25,7 +25,7 @@
   outer-margin = 0.7\in
   bottom-margin = 0.5\in
 }
-#(set-global-staff-size 20) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 20 20))) }
+#(set-global-staff-size 20) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 20 20))) }
 
 
 

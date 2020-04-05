@@ -333,3 +333,10 @@ doHlig = ##t
     )
   )
 )
+
+\layout {
+\context {
+    \Lyrics
+    \override LyricSpace #'minimum-distance = #1
+  }
+}

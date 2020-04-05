@@ -33,9 +33,9 @@
   bottom-margin = 0.25\in
   first-page-number = #006
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCaps advent}
+  headerLine = \markup{ \smallCaps advent}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -43,14 +43,14 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
 }
-#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
+#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20))) }
 global = {
   \key bes \major
   \time 4/4
@@ -218,7 +218,7 @@ pianoLH = \relative c' {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"On Jordan’s Bank"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"On Jordan’s Bank"}}
     poet = \markup\concat{\italic"Jordanis oras prævia" \oldStyleNum", by Charles Coffin (1676–1749)"}
     meter = \markup\oldStyleNum"Translated by John Chandler (1806–1876)"
     composer = \markup\italic"Winchester New"
@@ -404,7 +404,7 @@ pianoLH = \relative c' {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Hark! a Herald Voice is Calling"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Hark! a Herald Voice is Calling"}}
     poet = \markup\concat{\italic"Vox clara ecce intonat" \oldStyleNum", 6th Century"}
     meter = \markup\oldStyleNum"Translated by Edward Caswall (1814–1878)"
     composer = \markup\oldStyleNum"William Henry Monk (1823–1889)"

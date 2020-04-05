@@ -1,8 +1,8 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"O Holy Night"}}
-  subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Cantique de Noël)"}}
+  title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"O Holy Night"}}
+  subtitle = \markup{{ \abs-fontsize #12.5 "(Cantique de Noël)"}}
   composer = \markup\oldStyleNum"Adolphe Adam (1803–1856)"
   tagline = \markup { "from" \concat{\italic "Christmas Carols and Hymns for School and Choir" \oldStyleNum", 1910"}}
   poet = \markup\oldStyleNum"Placide Cappeau (1808–1877)"
@@ -28,10 +28,10 @@
        (minimum-distance . 0)
        (padding . 0)
        (stretchability . 0))
-system-system-spacing #'stretchability = 100
-markup-system-spacing #'stretchability = 100
-top-system-spacing #'stretchability = 80
-last-bottom-spacing #'stretchability = 80
+system-system-spacing.stretchability = 100
+markup-system-spacing.stretchability = 100
+top-system-spacing.stretchability = 80
+last-bottom-spacing.stretchability = 80
   ragged-last-bottom = ##f
   ragged-bottom = ##f
   two-sided = ##t
@@ -41,9 +41,9 @@ last-bottom-spacing #'stretchability = 80
   bottom-margin = 0.25\in
   first-page-number = #080
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
+  headerLine = \markup{ \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -51,14 +51,14 @@ last-bottom-spacing #'stretchability = 80
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
 }
-#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
+#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20))) }
 global = {
   \key des \major
   \time 4/4

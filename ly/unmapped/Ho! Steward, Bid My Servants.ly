@@ -1,7 +1,7 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Ho! Steward, Bid My Servants"}}
+  title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #15 \smallCapsOldStyle"Ho! Steward, Bid My Servants"}}
   poet = \markup\oldStyleNum"John Mason Neale (1818–1866)"
   composer = \markup\oldStyleNum"Ancient ecclesiastical pre-Reformation melody"
   arranger = \markup\oldStyleNum"Arranged by Charles Wood (1866–1926)"
@@ -27,9 +27,9 @@
   bottom-margin = 0.25\in
   first-page-number = #150
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
+  headerLine = \markup{ \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
+     \abs-fontsize #8.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -37,7 +37,7 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
+     \abs-fontsize #8.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
