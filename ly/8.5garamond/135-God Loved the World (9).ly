@@ -338,6 +338,9 @@ pianoLH = \relative c' {
   \context {
     \Lyrics
     \override LyricText #'font-size = #1.3
+    \override StanzaNumber #'padding = 0.5
+    %\override StanzaNumber #'font-size = 1.3
+
   }
     \context {
       \Score
