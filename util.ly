@@ -171,27 +171,21 @@ smallCapsACodeLL = ##xE051
          aa)
 )
 
-#(define (to-old-style str) (change-char-helper str char-numeric?
-                                (- oldStyleZeroCode (char->integer #\0))))
-                                
-#(define (to-small-caps str) (change-char-helper str char-lower-case?
-                                (- smallCapsACode (char->integer #\a))))
-
 #(define-markup-command (realCaps layout props str) (markup?)
     "Real small capitals"
-    (interpret-markup layout props (to-small-caps str)))
+    (interpret-markup layout props (markup #:override '(font-features . ("smcp")) str)))
     
 #(define-markup-command (oldStyleNum layout props str) (markup?)
     "Old-style numerals"
-    (interpret-markup layout props (to-old-style str)))
+    (interpret-markup layout props (markup #:override '(font-features . ("onum")) str)))
 
 #(define-markup-command (oldStylePageNum layout props str) (markup?)
     "Old-style Page numbers"
-    (interpret-markup layout props (to-old-style (number->string (chain-assoc-get 'page:page-number props -1)))))
+    (interpret-markup layout props (markup #:override '(font-features . ("onum")) (number->string (chain-assoc-get 'page:page-number props -1)))))
     
 #(define-markup-command (smallCapsOldStyle layout props str) (markup?)
     "Real small caps and old-style numerals"
-    (interpret-markup layout props (to-old-style (to-small-caps str))))
+    (interpret-markup layout props (markup #:override '(font-features . ("smcp" "onum"))  str)))
     
 #(define-markup-command (concat layout props markups) (markup-list?)
     "Concatenate markups with no spaces"

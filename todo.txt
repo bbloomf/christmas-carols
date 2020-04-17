@@ -1,3 +1,10 @@
+Add source material to web page:
+
+Christmas Carols New and Old https://www.ccel.org/b/bramley/carols/home.html
+Cowley Carol Book http://anglicanhistory.org/music/cowley_carol1922.pdf
+Cambridge Carol Book https://books.google.com/books?id=pWEVAAAAQAAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false
+Favorite Songs and Hymns for School and Home https://imslp.org/wiki/Favorite_Songs_and_Hymns_for_School_and_Home_(Various)
+
 Possible script:
  add "\override VerticalAxisGroup #'staff-affinity = #0"
  to the \Lyrics context
