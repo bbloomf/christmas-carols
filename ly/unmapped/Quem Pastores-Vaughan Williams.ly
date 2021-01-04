@@ -11,58 +11,48 @@
   }
 \paper {
   print-all-headers = ##f
-  paper-height = 9\in
-  paper-width = 6\in
+  paper-height = 11\in
+  paper-width = 8.5\in
   indent = 0\in
   %system-system-spacing = #'((basic-distance . 10) (padding . 0))
-  system-system-spacing =
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . -15)
-       (stretchability . 100))
-  score-markup-spacing =
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
+  % system-system-spacing =
+  %   #'((basic-distance . 0)
+  %      (minimum-distance . 0)
+  %      (padding . -15)
+  %      (stretchability . 100))
+  % score-markup-spacing =
+  %   #'((basic-distance . 0)
+  %      (minimum-distance . 0)
+  %      (padding . 0)
+  %      (stretchability . 0))
   ragged-last-bottom = ##t
   ragged-bottom = ##f
   two-sided = ##t
-  inner-margin = 0.5\in
-  outer-margin = 0.25\in
+  inner-margin = 0.7\in
+  outer-margin = 0.7\in
   top-margin = 0.25\in
   bottom-margin = 0.25\in
   first-page-number = #163
-  print-first-page-number = ##t
-  headerLine = \markup{ \smallCapsOldStyle"christmas"}
-  oddHeaderMarkup = \markup\fill-line{
-     \abs-fontsize #8.5
-     \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
-        \oldStylePageNum""
-        }
-        \fill-line{\headerLine}
-  }
-  evenHeaderMarkup = \markup {
-     \abs-fontsize #8.5
-     \combine
-        \on-the-fly #print-page-number-check-first
-        \oldStylePageNum""
-        \fill-line{\headerLine}
-  }
+  print-first-page-number = ##f
+  % headerLine = \markup{ \smallCapsOldStyle"christmas"}
+  % oddHeaderMarkup = \markup\fill-line{
+  %    \abs-fontsize #8.5
+  %    \combine 
+  %       \fill-line{"" \on-the-fly #print-page-number-check-first
+  %       \oldStylePageNum""
+  %       }
+  %       \fill-line{\headerLine}
+  % }
+  % evenHeaderMarkup = \markup {
+  %    \abs-fontsize #8.5
+  %    \combine
+  %       \on-the-fly #print-page-number-check-first
+  %       \oldStylePageNum""
+  %       \fill-line{\headerLine}
+  % }
 }
-#(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
-
-\markup \fill-line {\center-column{
-  \concat{ "Music from " \italic "The Cowley Carol Book" \oldStyleNum", 1919, Words from " \italic "HymnsAndCarolsOfChristmas.com"}}}
-\markup\vspace#1
-
-
-
-
-
-
-
+%#(set-global-staff-size 15) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 15 20))) }
+#(set-global-staff-size 20) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 20 20))) }
 
 
 
