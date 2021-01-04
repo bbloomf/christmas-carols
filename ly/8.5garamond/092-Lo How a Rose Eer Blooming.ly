@@ -314,7 +314,7 @@ altoWordsII = \lyricmode {
   \set associatedVoice = "tenors"
   Flos vir -- gam sú -- per -- at
   \set associatedVoice = "sopranos"
-  cæ -- li ter -- ræ -- que ci -- ves, Flos il -- le ré -- cre -- at.
+  cæ -- li ter -- rǽ -- que ci -- ves, Flos il -- le ré -- cre -- at.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsV

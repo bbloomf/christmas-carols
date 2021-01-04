@@ -112,14 +112,14 @@ altoWords = \lyricmode {
   \set stanza = #"4."
   Cu -- jus pot -- és -- tas gló -- ri -- æ,
   No -- mén -- que cum pri -- mum so -- nat,
-  Et cæ -- li -- tes et ín -- fe -- ri
+  Et cǽ -- li -- tes et ín -- fe -- ri
   Tre -- mén -- te cur -- ván -- tur ge -- nu.
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set stanza = #"2."
-  Qui dæ -- mo -- nis ne fráu -- di -- bus
+  Qui dǽ -- mo -- nis ne fráu -- di -- bus
   Per -- í -- ret or -- bis, ím -- pe -- tu
   A -- mó -- ris ac -- tus, lán -- gui -- di
   Mun -- di me -- dé -- la fac -- tus es.
@@ -144,7 +144,7 @@ altoWordsIII = \lyricmode {
   Vir -- tus, ho -- nor, laus, gló -- ri -- a
   De -- o Pa -- tri cum Fí -- li -- o,
   Sanc -- to si -- mul Pa -- rá -- cli -- to,
-  In sæ -- cu -- ló -- rum sæ -- cu -- la.
+  In sæ -- cu -- ló -- rum sǽ -- cu -- la.
 }
 altoWordsIV = \lyricmode {
   \dropLyricsVII

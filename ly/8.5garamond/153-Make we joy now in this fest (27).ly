@@ -210,7 +210,7 @@ altoWordsII = \lyricmode {
   \dropLyricsV
   \repeat unfold 16{\skip1}
   \set stanza = #"2. "
-  \markup\italic A -- \markup\italic gnós -- \markup\italic cat \markup\italic om -- \markup\italic ne \markup\italic sæ -- \markup\italic cu -- \markup\italic lum,
+  \markup\italic A -- \markup\italic gnós -- \markup\italic cat \markup\italic om -- \markup\italic ne \markup\italic sǽ -- \markup\italic cu -- \markup\italic lum,
   A bright star made three kings to come,
   Him for to seek with their pre -- sen’s,
   \markup\italic Ver -- \markup\italic bum \markup\italic su -- \markup\italic pér -- \markup\italic num

@@ -123,7 +123,7 @@ altoWords = \lyricmode {
   Vír -- gi -- nis for -- mí -- di -- nem
       De -- múl -- cens in -- quit “A -- ve.”
   A -- ve re -- gí -- na vír -- gi -- num,
-  Cæ -- li ter -- ræ -- que Dó -- mi -- num
+  Cæ -- li ter -- rǽ -- que Dó -- mi -- num
       Con -- cí -- pi -- es
       Et pá -- ri -- es
       In -- tác -- ta,
