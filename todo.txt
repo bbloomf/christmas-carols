@@ -1,3 +1,10 @@
+Add source material to web page:
+
+Christmas Carols New and Old https://www.ccel.org/b/bramley/carols/home.html
+Cowley Carol Book http://anglicanhistory.org/music/cowley_carol1922.pdf
+Cambridge Carol Book https://books.google.com/books?id=pWEVAAAAQAAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false
+Favorite Songs and Hymns for School and Home https://imslp.org/wiki/Favorite_Songs_and_Hymns_for_School_and_Home_(Various)
+
 Possible script:
  add "\override VerticalAxisGroup #'staff-affinity = #0"
  to the \Lyrics context
@@ -100,7 +107,7 @@ Nam Chris -- tus ex Ma -- rí -- a
 Sunt con -- grés -- si cum án -- ge -- li
   A -- mó -- re cum pi -- o.
 O stel -- læ ma -- tu -- tí -- næ
-  Can -- tá -- te cæ -- li -- tus!
+  Can -- tá -- te cǽ -- li -- tus!
 De -- o sint lau -- des in -- sí -- gnes
   Et pax ho -- mí -- ni -- bus.
 
@@ -151,7 +158,7 @@ Est in Béth -- le -- hem na -- tus.”
 En ca -- nén -- tes án -- ge -- li,
 “Gló -- ria Re -- gi In -- fán -- ti.”
 
-Ad -- o -- rá -- tus cæ -- li -- tus,
+Ad -- o -- rá -- tus cǽ -- li -- tus,
 Chris -- tus, sem -- per Dó -- mi -- nus.
 Sé -- ri -- us ad -- vé -- nit spe
 Gé -- ni -- tus a vír -- gi -- ne.
@@ -227,7 +234,7 @@ Por -- tá -- mus hanc co -- ró -- nam,
 Rex æ -- tér -- ne, sem -- pi -- tér -- ne,
 Dó -- mi -- ne ter -- rá -- rum!
 
-Dis Sa -- bæ -- um Ti -- bi fe -- ro,
+Dis Sa -- bǽ -- um Ti -- bi fe -- ro,
 Tus di -- gnum ma -- gno De -- o;
 Te lau -- dán -- tes et o -- rán -- tes
 Có -- li -- mus in Cæ -- lo.

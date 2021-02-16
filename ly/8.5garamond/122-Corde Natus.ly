@@ -1,7 +1,7 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Corde Natus"}}
+  title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Corde Natus"}}
   poet = \markup\oldStyleNum"Marcus Aurelius Clemens Prudentius (348–413?)"
   composer = \markup\concat{\italic"Divinum Mysterium" \oldStyleNum", 13th Century Melody"}
   tagline = \markup\center-column{
@@ -29,9 +29,9 @@
   bottom-margin = 0.25\in
   first-page-number = #122
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
+  headerLine = \markup{ \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -39,16 +39,16 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
 }
-#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
-%6.14 #(set-global-staff-size 14) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14 20))) }
-%6x9 #(set-global-staff-size 14.5) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14.5 20))) }
+#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20))) }
+%6.14 #(set-global-staff-size 14) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 14 20))) }
+%6x9 #(set-global-staff-size 14.5) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 14.5 20))) }
 global = {
   \key f \major
   \time 12/2
@@ -99,7 +99,7 @@ altoWords = \lyricmode {
   ip -- se fons et cláu -- su -- la
   Om -- ni -- um quæ sunt, fu -- é -- runt,
   quæ -- que post fu -- tú -- ra sunt. __
-  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
+  Sæ -- cu -- ló -- rum sǽ -- cu -- lis. __
   
   \set stanza = #"4. "
   O be -- á -- tus or -- tus il -- le,
@@ -108,7 +108,7 @@ altoWords = \lyricmode {
   fe -- ta Sanc -- to Spi -- ri -- tu,
   Et pu -- er red -- émp -- tor or -- bis
   os sa -- crá -- tum pró -- tu -- lit. __
-  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
+  Sæ -- cu -- ló -- rum sǽ -- cu -- lis. __
   
   
   \set stanza = #"7. "
@@ -118,7 +118,7 @@ altoWords = \lyricmode {
   qui clu -- is vir -- tú -- ti -- bus,
   Om -- ni -- um ven -- tú -- rus in -- de
   jus -- tus ul -- tor crí -- mi -- num. __
-  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
+  Sæ -- cu -- ló -- rum sǽ -- cu -- lis. __
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
@@ -131,7 +131,7 @@ altoWordsII = \lyricmode {
   tri -- na re -- rum má -- chi -- na,
   Quæ -- que~in his vi -- gent sub al -- to
   so -- lis et lu -- næ glo -- bo. __
-  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
+  Sæ -- cu -- ló -- rum sǽ -- cu -- lis. __
   
   \set stanza = #"5. "
   Psal -- lat al -- ti -- tú -- do cæ -- li,
@@ -140,7 +140,7 @@ altoWordsII = \lyricmode {
   psal -- lat in lau -- dem De -- i,
   Nul -- la lin -- guá -- rum si -- lés -- cat,
   vox et om -- nis cón -- so -- net. __
-  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
+  Sæ -- cu -- ló -- rum sǽ -- cu -- lis. __
   
   \set stanza = #"8. "
   Te se -- nes et te ju -- vén -- tus,
@@ -149,7 +149,7 @@ altoWordsII = \lyricmode {
   sím -- pli -- ces pu -- él -- lu -- læ,
   Vo -- ce con -- cór -- des pu -- dí -- cis
   pér -- stre -- pant con -- cén -- ti -- bus. __
-  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
+  Sæ -- cu -- ló -- rum sǽ -- cu -- lis. __
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
@@ -161,17 +161,17 @@ altoWordsIII = \lyricmode {
   pri -- mo -- plás -- ti~ex gér -- mi -- ne,
   Mér -- se -- rat quem lex pro -- fún -- do
   no -- xi -- á -- lis tár -- ta -- ro. __
-  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
+  Sæ -- cu -- ló -- rum sǽ -- cu -- lis. __
   
   
   \set stanza = #"6. "
   Ec -- ce, quem va -- tes ve -- tús -- tis
-  con -- ci -- né -- bant sæ -- cu -- lis,
+  con -- ci -- né -- bant sǽ -- cu -- lis,
   Quem pro -- phe -- tá -- rum fi -- dé -- les
   pá -- gi -- næ spo -- pón -- de -- rant,
   E -- mi -- cat pro -- mís -- sus o -- lim;
   cunc -- ta con -- láu -- dent e -- um. __
-  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
+  Sæ -- cu -- ló -- rum sǽ -- cu -- lis. __
   
   \set stanza = #"9. "
   Ti -- bi, Chris -- te, sit cum Pa -- tre
@@ -180,7 +180,7 @@ altoWordsIII = \lyricmode {
   gra -- ti -- á -- rum ác -- ti -- o,
   Ho -- nor, vir -- tus, vic -- tó -- ri -- a,
   re -- gnum æ -- ter -- ná -- li -- ter. __
-  Sæ -- cu -- ló -- rum sæ -- cu -- lis. __
+  Sæ -- cu -- ló -- rum sǽ -- cu -- lis. __
 }
 altoWordsIV = \lyricmode {
   \set associatedVoice = "sopranos"

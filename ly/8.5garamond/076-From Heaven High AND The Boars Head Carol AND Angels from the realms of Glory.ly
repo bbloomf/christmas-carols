@@ -30,9 +30,9 @@
   bottom-margin = 0.25\in
   first-page-number = #076
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
+  headerLine = \markup{ \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -40,7 +40,7 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -48,7 +48,7 @@
   }
 }
 
-#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
+#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20))) }
 %IF_NOT_LESSER
 global = {
   \key c \major
@@ -222,7 +222,7 @@ pianoLH = \relative c' {
   }
   
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"From Heaven High I Come to You"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"From Heaven High I Come to You"}}
     poet = \markup\oldStyleNum"Martin Luther (1483–1546)"
     meter = \markup\oldStyleNum"Translated by Catherine Winkworth (1827–1878)"
     composer = \markup\oldStyleNum"Old German Melody Attributed to Martin Luther"
@@ -448,7 +448,7 @@ pianoLH = \relative c' {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"The Boar’s Head Carol"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"The Boar’s Head Carol"}}
     poet = \markup\oldStyleNum"15th Century English"
     composer = \markup\oldStyleNum"Traditional English"
     tagline = ""
@@ -656,7 +656,7 @@ bassWords = \lyricmode {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Angels, from the Realms of Glory"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Angels, from the Realms of Glory"}}
     poet = \markup\oldStyleNum"James Montgomery (1771–1854)"
     composer = \markup\oldStyleNum"Henry Smart (1813–1879)"
     tagline = \markup { "from" \concat{\italic "Christmas Carols and Hymns for School and Choir" \oldStyleNum", 1910"}}

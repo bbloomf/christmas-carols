@@ -2,7 +2,7 @@
 \include "util.ly"
 \version "2.14.2"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"In the Bleak Midwinter"}}
+  title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"In the Bleak Midwinter"}}
   poet = \markup\oldStyleNum"Christina Rosetti (1830–1894)"
   composer = \markup\oldStyleNum"Harold Darke (1888–1976)"
   tagline = \markup { "from" \italic {cpdl.org}}
@@ -28,9 +28,9 @@
   bottom-margin = 0.25\in
   first-page-number = #180
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
+  headerLine = \markup{ \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -38,14 +38,14 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
 }
-#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
+#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20))) }
 global = {
   \key g \major
   \time 4/4
@@ -56,7 +56,7 @@ global = {
 
 sopMusic = \relative c'' {
   \oneVoice
-  \tempo \markup{\override #'(font-name . "Garamond Premier Pro") "Moderato e tranquillo"}
+  \tempo \markup{ "Moderato e tranquillo"}
   r1 |
   r2 r4. \teeny b8 | \normalsize
   b4.^\mp a8 d4 b |

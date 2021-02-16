@@ -1,7 +1,7 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \version "2.14.2"
-#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
+#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20))) }
 \header {tagline = ""}
 \paper {
   print-all-headers = ##t
@@ -33,9 +33,9 @@
   bottom-margin = 0.25\in
   first-page-number = #008
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCaps advent}
+  headerLine = \markup{ \smallCaps advent}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -43,7 +43,7 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -112,14 +112,14 @@ altoWords = \lyricmode {
   \set stanza = #"4."
   Cu -- jus pot -- és -- tas gló -- ri -- æ,
   No -- mén -- que cum pri -- mum so -- nat,
-  Et cæ -- li -- tes et ín -- fe -- ri
+  Et cǽ -- li -- tes et ín -- fe -- ri
   Tre -- mén -- te cur -- ván -- tur ge -- nu.
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set stanza = #"2."
-  Qui dæ -- mo -- nis ne fráu -- di -- bus
+  Qui dǽ -- mo -- nis ne fráu -- di -- bus
   Per -- í -- ret or -- bis, ím -- pe -- tu
   A -- mó -- ris ac -- tus, lán -- gui -- di
   Mun -- di me -- dé -- la fac -- tus es.
@@ -144,7 +144,7 @@ altoWordsIII = \lyricmode {
   Vir -- tus, ho -- nor, laus, gló -- ri -- a
   De -- o Pa -- tri cum Fí -- li -- o,
   Sanc -- to si -- mul Pa -- rá -- cli -- to,
-  In sæ -- cu -- ló -- rum sæ -- cu -- la.
+  In sæ -- cu -- ló -- rum sǽ -- cu -- la.
 }
 altoWordsIV = \lyricmode {
   \dropLyricsVII
@@ -241,7 +241,7 @@ pianoLH = \relative c' {
     \Lyrics
     \override LyricText #'font-size = #1.3
   }
-    #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20)))
+    #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20)))
     \context {
       \Score
       %\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 8)
@@ -259,8 +259,8 @@ pianoLH = \relative c' {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Creator alme siderum"}}
-    %subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Vesper Hymn for Sundays in Advent)"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Creator alme siderum"}}
+    %subtitle = \markup{{ \abs-fontsize #12.5 "(Vesper Hymn for Sundays in Advent)"}}
     %arranger = \markup\oldStyleNum"Edited by Benjamin Bloomfield (1984–)"
     tagline = \markup { "from" \italic "Peters’ Sodality Hymn Book," 1914, via \italic "books.google.com"}
   }
@@ -488,7 +488,7 @@ pianoLH = \relative c' {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Creator of the Stars of Night"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Creator of the Stars of Night"}}
     poet = \markup\oldStyleNum"Translated by John Mason Neale (1818–1866)"
     %arranger = \markup\oldStyleNum"Edited by Benjamin Bloomfield (1984–)"
     tagline = \markup { "from" \italic "Peters’ Sodality Hymn Book," 1914, via \italic "books.google.com"}
@@ -645,7 +645,7 @@ bassWords = \lyricmode {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Conditor alme siderum"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Conditor alme siderum"}}
     poet = \markup\oldStyleNum"Anonymous, 7th Century"
     composer = \markup\oldStyleNum"Arranged by Michael Praetorius (1571–1621)"
     
@@ -725,8 +725,8 @@ sopWords = \lyricmode {
     }
   }
   \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Christmas is Coming"}}
-    %subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Three-part Round)"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Christmas is Coming"}}
+    %subtitle = \markup{{ \abs-fontsize #12.5 "(Three-part Round)"}}
     poet = \markup\oldStyleNum"Traditional"
     composer = \markup\oldStyleNum"Edith Nesbitt (1858–1924)"
   }

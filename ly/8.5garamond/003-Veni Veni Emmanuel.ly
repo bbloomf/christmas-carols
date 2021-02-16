@@ -1,7 +1,7 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Veni, Veni, Emmanuel"}}
+  title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Veni, Veni, Emmanuel"}}
   %composer = \markup\oldStyleNum"Gregorian"
   tagline = ""
 }
@@ -24,9 +24,9 @@
   bottom-margin = 0.25\in
   first-page-number = #003
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCaps advent}
+  headerLine = \markup{ \smallCaps advent}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -34,14 +34,14 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
 }
-#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
+#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20))) }
 global = {
   \key g \major
   \time 4/4
@@ -158,7 +158,7 @@ altoWords = \lyricmode {
   
   \set stanza = #"5. "
   Ve -- ni, Cla -- vis Da -- ví -- di -- ca,
-  re -- gna re -- clú -- de cæ -- li -- ca,
+  re -- gna re -- clú -- de cǽ -- li -- ca,
   fac i -- ter tu -- tum sú -- pe -- rum,
   et clau -- de vi -- as ín -- fe -- rum.
 }

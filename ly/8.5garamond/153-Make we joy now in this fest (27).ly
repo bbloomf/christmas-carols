@@ -1,7 +1,7 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-  title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Make we joy now in this fest"}}
+  title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #18 \smallCapsOldStyle"Make we joy now in this fest"}}
   poet = \markup\oldStyleNum"Old English Carol"
   %composer = \markup\oldStyleNum"Old English Carol"
   composer = \markup\oldStyleNum"Arranged by George Ratcliffe Woodward (1848–1934)"
@@ -27,9 +27,9 @@
   bottom-margin = 0.25\in
   first-page-number = #153
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
+  headerLine = \markup{ \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -37,15 +37,15 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
+     \abs-fontsize #12.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
 }
-#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 18 20))) }
-%6.14 #(set-global-staff-size 14.7) \paper{ #(define fonts (make-pango-font-tree "Garamond Premier Pro" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14.7 20))) }
+#(set-global-staff-size 18) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 18 20))) }
+%6.14 #(set-global-staff-size 14.7) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 14.7 20))) }
 global = {
   \key g \major
   \time 3/4
@@ -210,7 +210,7 @@ altoWordsII = \lyricmode {
   \dropLyricsV
   \repeat unfold 16{\skip1}
   \set stanza = #"2. "
-  \markup\italic A -- \markup\italic gnós -- \markup\italic cat \markup\italic om -- \markup\italic ne \markup\italic sæ -- \markup\italic cu -- \markup\italic lum,
+  \markup\italic A -- \markup\italic gnós -- \markup\italic cat \markup\italic om -- \markup\italic ne \markup\italic sǽ -- \markup\italic cu -- \markup\italic lum,
   A bright star made three kings to come,
   Him for to seek with their pre -- sen’s,
   \markup\italic Ver -- \markup\italic bum \markup\italic su -- \markup\italic pér -- \markup\italic num

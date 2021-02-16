@@ -3,7 +3,7 @@
 \header {
     tagline = \markup { "from" \italic {ChristmasCarolMusic.org}}
 
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Quem Pastores"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #15 \smallCapsOldStyle"Quem Pastores"}}
     poet = \markup\oldStyleNum"Anonymous, 14th Century"
     composer = \markup\oldStyleNum"14th Century German"
     arranger = \markup\oldStyleNum"Arranged by Rev. J.R. Lunn, B.D."
@@ -33,9 +33,9 @@
   bottom-margin = 0.25\in
   first-page-number = #163
   print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
+  headerLine = \markup{ \smallCapsOldStyle"christmas"}
   oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
+     \abs-fontsize #8.5
      \combine 
         \fill-line{"" \on-the-fly #print-page-number-check-first
         \oldStylePageNum""
@@ -43,7 +43,7 @@
         \fill-line{\headerLine}
   }
   evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
+     \abs-fontsize #8.5
      \combine
         \on-the-fly #print-page-number-check-first
         \oldStylePageNum""

@@ -1,63 +1,64 @@
 ﻿\version "2.14.2"
 \include "util.ly"
 \header {
-    title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Puer nobis nascitur"}}
+    title = \markup{\override #'(font-name . "Garamond Premr Pro Smbd Subh"){ \abs-fontsize #15 \smallCapsOldStyle"Puer nobis nascitur"}}
     poet = \markup\concat{\oldStyleNum"Words and tune (14th cent.) from " \italic"Piæ Cantiones" \oldStyleNum", 1582"}
     composer = \markup\oldStyleNum"Arranged by G.H. Palmer"
     tagline = \markup\concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
   }\paper {
   print-all-headers = ##f
-  paper-height = 9\in
-  paper-width = 6\in
+  paper-height = 11\in
+  paper-width = 8.5\in
   indent = 0\in
   %system-system-spacing = #'((basic-distance . 10) (padding . 0))
-  system-system-spacing =
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . -10)
-       (stretchability . 100))
-  score-markup-spacing =
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 75))
-  markup-system-spacing = 
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-  last-bottom-spacing = 
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . -0.5)
-       (stretchability . 0))
+  % system-system-spacing =
+  %   #'((basic-distance . 0)
+  %      (minimum-distance . 0)
+  %      (padding . -10)
+  %      (stretchability . 100))
+  % score-markup-spacing =
+  %   #'((basic-distance . 0)
+  %      (minimum-distance . 0)
+  %      (padding . 0)
+  %      (stretchability . 75))
+  % markup-system-spacing = 
+  %   #'((basic-distance . 0)
+  %      (minimum-distance . 0)
+  %      (padding . 0)
+  %      (stretchability . 0))
+  % last-bottom-spacing = 
+  %   #'((basic-distance . 0)
+  %      (minimum-distance . 0)
+  %      (padding . -0.5)
+  %      (stretchability . 0))
   ragged-last-bottom = ##t
   ragged-bottom = ##f
   two-sided = ##t
-  inner-margin = 0.5\in
-  outer-margin = 0.25\in
+  inner-margin = 0.7\in
+  outer-margin = 0.7\in
   top-margin = 0.25\in
   bottom-margin = 0.25\in
   first-page-number = #158
-  print-first-page-number = ##t
-  headerLine = \markup{\override #'(font-name . "Garamond Premier Pro") \smallCapsOldStyle"christmas"}
-  oddHeaderMarkup = \markup\fill-line{
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
-     \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
-        \oldStylePageNum""
-        }
-        \fill-line{\headerLine}
-  }
-  evenHeaderMarkup = \markup {
-     \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
-     \combine
-        \on-the-fly #print-page-number-check-first
-        \oldStylePageNum""
-        \fill-line{\headerLine}
-  }
+  print-first-page-number = ##f
+  % headerLine = \markup{ \smallCapsOldStyle"christmas"}
+  % oddHeaderMarkup = \markup\fill-line{
+  %    \abs-fontsize #8.5
+  %    \combine 
+  %       \fill-line{"" \on-the-fly #print-page-number-check-first
+  %       \oldStylePageNum""
+  %       }
+  %       \fill-line{\headerLine}
+  % }
+  % evenHeaderMarkup = \markup {
+  %    \abs-fontsize #8.5
+  %    \combine
+  %       \on-the-fly #print-page-number-check-first
+  %       \oldStylePageNum""
+  %       \fill-line{\headerLine}
+  % }
 }
-#(set-global-staff-size 14.8) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14.8 20))) }
+% #(set-global-staff-size 14.8) \paper{ #(define fonts (make-pango-font-tree "GoudyOlSt BT" "Garamond Premier Pro" "Garamond Premier Pro" (/ 14.8 20))) }
+#(set-global-staff-size 20) \paper{ #(define fonts (make-pango-font-tree "Garamond Premr Pro" "Garamond Premr Pro" "Garamond Premr Pro" (/ 20 20))) }
 global = {
   \key d \major
   \time 4/4
