@@ -181,7 +181,7 @@ altoWordsII = {
   }
   \set stanza = \markup {\normal-text\italic "1st Angel" "  3. "}
   \lyricmode {
-    Lay down your crooks, and quit your Flocks,
+    Lay down your Crooks, and quit your flocks,
     to Beth -- le -- hem re -- pair; __
     And let __ your wan -- d’ring steps be squared
     by yon -- der shin -- ing Star,
@@ -200,10 +200,9 @@ altoWordsII = {
     The Roy -- al guest you
     \dropLyricsIX
     en -- ter -- tain is not of com -- mon Birth, __
-    but sec -- ond to the Great I Am;
-    the God of heav’n and earth,
-__
-    the God of heav’n and earth.
+    but sec -- ond in __ the Great I AM;
+    the God of Heav’n and Earth, __
+    the God of Heav’n and Earth.
   }
 }
 altoWordsIII = {
