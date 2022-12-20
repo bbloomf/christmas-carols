@@ -12,7 +12,7 @@ then
   # if pdfcrop \!full.pdf \!cropped.pdf && \
   # gs -o gh-pages/pdfs/ccc-playbook.pdf -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -f \!cropped.pdf pdfmarks.txt
   then
-    rm \!cropped.pdf
+    # rm \!cropped.pdf
     pushd gh-pages
     if git add pdfs/ccc-playbook.pdf pdfs/ccc.pdf
     then
