@@ -28,10 +28,10 @@
        (minimum-distance . 0)
        (padding . 0)
        (stretchability . 0))
-system-system-spacing #'stretchability = 100
-markup-system-spacing #'stretchability = 100
-top-system-spacing #'stretchability = 80
-last-bottom-spacing #'stretchability = 80
+system-system-spacing.stretchability = 100
+markup-system-spacing.stretchability = 100
+top-system-spacing.stretchability = 80
+last-bottom-spacing.stretchability = 80
   ragged-last-bottom = ##f
   ragged-bottom = ##f
   two-sided = ##t

@@ -121,20 +121,20 @@ altoWords = \lyricmode {
   An -- ge -- lus ad vír -- gi -- nem
       Sub -- ín -- trans in con -- clá -- ve.
   Vír -- gi -- nis for -- mí -- di -- nem
-      De -- múl -- cens in -- quit “A -- ve.”
-  A -- ve re -- gí -- na vír -- gi -- num,
-  Cæ -- li ter -- ræ -- que Dó -- mi -- num
+      De -- múl -- cens in -- quit: “A -- ve!
+  A -- ve re -- gí -- na vír -- gi -- num!
+  Cæ -- li ter -- rǽ -- que Dó -- mi -- num
       Con -- cí -- pi -- es
       Et pá -- ri -- es
       In -- tác -- ta,
       Sa -- lú -- tem hó -- mi -- num.
       Tu por -- ta cæ -- li fac -- ta
-      Me -- dél -- la crí -- mi -- num.
+      Me -- dél -- la crí -- mi -- num.”
       
   \set stanza = #"3. "
   Ad hæc vir -- go nó -- bi -- lis
-      Re -- spón -- dens in -- quit e -- i;
-  An -- cíl -- la sum hú -- mi -- lis
+      Re -- spón -- dens in -- quit e -- i:
+  “An -- cíl -- la sum hú -- mi -- lis
       Om -- ni -- pot -- én -- tis De -- i.
   Ti -- bi cæ -- lés -- ti nún -- ti -- o,
   Tan -- ta se -- cré -- ti cón -- sci -- o,
@@ -143,24 +143,24 @@ altoWords = \lyricmode {
       Vi -- dé -- re
       fac -- tum quod áu -- di -- o,
       Pa -- rá -- ta sum pa -- ré -- re
-      De -- i con -- sí -- li -- o.
+      De -- i con -- sí -- li -- o.”
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
 %\markup\italic
   \set stanza = #"2. "
-  Quó -- mo -- do con -- cí -- pe -- rem,
+  “Quó -- mo -- do con -- cí -- pe -- rem,
       quæ vi -- rum non co -- gnó -- vi?
   Quá -- li -- ter in -- frín -- ge -- rem,
-      quæ fir -- ma men -- te vo -- vi?
-  ‘Spí -- ri -- tus Sanc -- ti gra -- ti -- a
+      quæ fir -- ma men -- te vo -- vi?”
+  “Spí -- ri -- tus Sanc -- ti grá -- ti -- a
   Per -- fí -- ci -- et hæc óm -- ni -- a;
       Ne tí -- me -- as,
       sed gáu -- de -- as,
       se -- cú -- ra,
       quod cas -- ti -- mó -- ni -- a
       Ma -- né -- bit in te pu -- ra
-      De -- i pot -- én -- ti -- a.’
+      De -- i pot -- én -- ti -- a.”
       
   \set stanza = #"4. "
   An -- ge -- lus dis -- pá -- ru -- it
