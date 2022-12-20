@@ -97,21 +97,21 @@ altoWordsII = \lyricmode {
 %\markup\italic
   \set stanza = #"2. "  
   Ad pas -- tó -- res __ de -- scén -- dit án -- ge -- lus, __
-  Di -- cens e -- is_: na -- tus est Dó -- mi -- nus
-  in Béth -- le -- hem. __
+  Di -- cens e -- is: “na -- tus est Dó -- mi -- nus
+  in Béth -- le -- hem.” __
   
   
   \set stanza = #"6. "
   Tri -- ni, __ tri -- no, __ tri -- na dant mú -- ne -- ra, __
-  Re -- gi re -- gum fu -- gén -- ti ú -- be -- ra
+  Re -- gi re -- gum su -- gén -- ti ú -- be -- ra
   in Béth -- le -- hem. __
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"3. "
   Lo -- que -- bán -- tur __ pas -- tó -- res ín -- vi -- cem, __
-  Trans -- e -- á -- mus ad no -- vum hó -- mi -- nem
-  in Béth -- le -- hem. __
+  “Trans -- e -- á -- mus ad no -- vum hó -- mi -- nem
+  in Béth -- le -- hem.” __
   
   
   \set stanza = #"7. "
