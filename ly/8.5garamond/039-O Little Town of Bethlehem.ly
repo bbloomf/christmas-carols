@@ -104,66 +104,65 @@ altoWords = \lyricmode {
   \set stanza = #"1. "
   \set ignoreMelismata = ##t
   O lit -- tle town of Beth -- le -- hem,
-  How still we _ see thee lie!
+    How still we _ see thee lie!
   A -- bove thy deep and dream -- less sleep
-  The si -- lent _ \set associatedVoice = "altos" stars go by; \unset associatedVoice
+    The si -- lent _ \set associatedVoice = "altos" stars go by; \unset associatedVoice
   Yet in thy dark streets shin -- eth
-  The ev -- er -- last -- ing Light;
+    The ev -- er -- last -- ing Light;
   The hopes and fears of all the years
-  Are met in \set associatedVoice = "altos" thee to -- night.
+    Are met in \set associatedVoice = "altos" thee to -- night.
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"2. "
   \set ignoreMelismata = ##t
   For Christ is born of Ma -- _ ry,
-  And gath -- er’d _ all a -- bove,
+    And gath -- er’d _ all a -- bove,
   While mor -- tals sleep, the an -- gels keep
-  Their watch of _ \set associatedVoice = "altos" won -- d’ring love. \unset associatedVoice
+    Their watch of _ \set associatedVoice = "altos" won -- d’ring love. \unset associatedVoice
   O morn -- ing stars, to -- geth -- er
-  Pro -- claim the ho -- ly birth!
+    Pro -- claim the ho -- ly birth!
   And prais -- es sing to God the King,
-  And peace to \set associatedVoice = "altos" men on earth!
+    And peace to \set associatedVoice = "altos" men on earth!
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
   \set stanza = #"3. "
   \set ignoreMelismata = ##t
   How si -- lent -- ly, how si -- lent -- ly
-  The won -- drous _ gift is giv’n!
+    The won -- drous _ gift is giv’n!
   So God im -- parts to hu -- man hearts
-  The bless -- ings _ \set associatedVoice = "altos" of His Heav’n. \unset associatedVoice
+    The bless -- ings _ \set associatedVoice = "altos" of His Heav’n. \unset associatedVoice
   No ear may hear His com -- ing,
-  But in this world of sin;
+    But in this world of sin;
   Where meek souls will re -- ceive Him still,
-  The dear Christ \set associatedVoice = "altos" en -- ters in.
+    The dear Christ \set associatedVoice = "altos" en -- ters in.
 }
 altoWordsIV = \lyricmode {
   \dropLyricsIX
 \set ignoreMelismata = ##t
   \set stanza = #"4. "
   Where chil -- dren pure and hap -- _ py
-    pray to the _ bless -- ed Child,
+    Pray to the _ bless -- ed Child,
   Where mis -- e -- ry cries out to Thee,
     Son of the _ \set associatedVoice = "altos" mo -- ther mild; \unset associatedVoice
   Where cha -- ri -- ty stands watch -- ing
-    and faith holds wide the door,
+    And faith holds wide the door,
   The dark night wakes, the glo -- ry breaks,
-    and Christ -- \set associatedVoice = "altos" mas comes once more
+    And Christ -- \set associatedVoice = "altos" mas comes once more.
 }
 altoWordsV = \lyricmode {
   \dropLyricsIX
 \set ignoreMelismata = ##t
   \set stanza = #"5. "
-
   O ho -- ly Child of Beth -- le -- hem!
-  De -- scend to _ us, we pray;
+    De -- scend to _ us, we pray;
   Cast out our sin, and en -- ter in,
-  Be born in _ \set associatedVoice = "altos" us to -- day. \unset associatedVoice
+    Be born in _ \set associatedVoice = "altos" us to -- day. \unset associatedVoice
   We hear the Christ -- mas an -- gels
-  The great glad tid -- ings tell;
+    The great glad tid -- ings tell;
   O come to us, a -- bide with us,
-  Our Lord \set associatedVoice = "altos" Em -- man -- u -- el!
+    Our Lord \set associatedVoice = "altos" Em -- man -- u -- el!
 }
 
 tenorMusic = \relative c' {
