@@ -17,7 +17,8 @@ $(function() {
       $subtotal = $('.txt-subtotal'),
       $total = $('.txt-total'),
       quantity = $quantity.val(),
-      shipping = 400,
+      bookprice = 550,
+      shipping = 500,
       MIN_QUANTITY = 5,
       subtotal,
       total,
@@ -39,7 +40,7 @@ $(function() {
       return
     }
     $('#btnPay').attr('disabled',null);
-    subtotal = quantity * 500;
+    subtotal = quantity * bookprice;
     $subtotal.text(formatUSD(subtotal));
     total = subtotal + shipping;
     $total.text(formatUSD(total));
