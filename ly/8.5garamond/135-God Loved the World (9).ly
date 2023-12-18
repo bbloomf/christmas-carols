@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"God Loved the World"}}
@@ -31,7 +31,7 @@
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -39,7 +39,7 @@
   evenHeaderMarkup = \markup {
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -49,13 +49,13 @@ global = {
   \key c \major
   \time 2/4
   \autoBeamOff
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
+  \override DynamicLineSpanner.staff-padding = #0.0
+  \override DynamicLineSpanner.Y-extent = #'(-1 . 1)
 }
 
 sopMusic = \relative c'' {
-  \override DynamicText #'X-offset = #-4
-  \once\override DynamicText #'X-offset = #-5
+  \override DynamicText.X-offset = #-4
+  \once\override DynamicText.X-offset = #-5
   c4_\mf b8 a |
   g4 g |
   a b c b\rest |
@@ -64,7 +64,7 @@ sopMusic = \relative c'' {
   g4 g |
   a b |
   c b\rest \bar "||" \break
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark "Chorus"
   c2 |
   b4 b |
@@ -82,13 +82,13 @@ sopMusic = \relative c'' {
   a gis |
   a2\fermata \bar ":|."
   a\fermata \bar "|."
-  \once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
-  \once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
+  \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \mark\markup\italic"Last verse." \break
   
   
-  \once\override DynamicText #'X-offset = #-5
-  c4_\mf  % \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once\override DynamicText.X-offset = #-5
+  c4_\mf  % \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark "Additional verses"
     b8 a |
   g4 g |
@@ -258,8 +258,8 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c {
-  \override DynamicText #'X-offset = #-4
-  \once\override DynamicText #'X-offset = #-5
+  \override DynamicText.X-offset = #-4
+  \once\override DynamicText.X-offset = #-5
   a'4^\mf e8 f |
   g[ f] e[ c] |
   f[ e] d4 |
@@ -288,7 +288,7 @@ bassMusic = \relative c {
   
   
   
-  \once\override DynamicText #'X-offset = #-5
+  \once\override DynamicText.X-offset = #-5
   a'4^\mf e8 f |
   g[ f] e[ c] |
   f[ e] d4 |
@@ -317,40 +317,40 @@ pianoLH = \relative c' {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
     \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
     \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "sopranos" \altoWords
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
   \layout {
   \context {
     \Lyrics
-    \override LyricText #'font-size = #1.3
+    \override LyricText.font-size = #1.3
   }
     \context {
       \Score
-      %\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 2)
-      %\override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 2)
+      %\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/2)
+      %\override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/2)
     }
     \context {
       % Remove all empty staves
-      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup.remove-first = ##t
     }
     \context {
       \Lyrics
-      \override LyricText #'X-offset = #center-on-word
+      \override LyricText.X-offset = #center-on-word
     }
   }
 }

@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Kling Glöckchen"}}
@@ -18,9 +18,9 @@
   %     (padding . -0.35)
   %     (stretchability . 100))
 %{IF_LESSER
-  markup-system-spacing #'stretchability = 50
-  top-markup-spacing #'stretchability = 30
-  last-bottom-spacing #'stretchability = 60
+  markup-system-spacing.stretchability = 50
+  top-markup-spacing.stretchability = 30
+  last-bottom-spacing.stretchability = 60
 %}%END_IF_LESSER
   ragged-last-bottom = ##f
   ragged-bottom = ##f
@@ -36,7 +36,7 @@
      \override #'(font-name . "Garamond Premier Pro")
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -45,7 +45,7 @@
      \override #'(font-name . "Garamond Premier Pro")
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -55,8 +55,8 @@ global = {
   \key g \major
   \time 4/4
   \autoBeamOff
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(0 . 0)
+  \override DynamicLineSpanner.staff-padding = #0.0
+  \override DynamicLineSpanner.Y-extent = #'(0 . 0)
 }
 
 sopMusic = \relative c'' {
@@ -224,42 +224,42 @@ pianoLH = \relative c' {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women"  \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsVI
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women"  \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsVI
     \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
-    \new Lyrics = "altosII"  \with { alignBelowContext = #"women"  \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWords
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women"  \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . -0.35)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . -0.35)) } \lyricsto "tenors" \tenorWordsII
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . -0.35)) } \lyricsto "basses" \bassWordsII
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . -0.35)) } \lyricsto "basses" \bassWords
+    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . -0.35)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . -0.35)) } \lyricsto "tenors" \tenorWordsII
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . -0.35)) } \lyricsto "basses" \bassWordsII
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)(padding . -0.35)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
   \layout {
   \context {
     \Lyrics
-    \override LyricText #'font-size = #1.3
+    \override LyricText.font-size = #1.3
   }
     \context {
       \Score
-      %\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 8)
-      %\override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
+      %\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+      %\override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4)
     }
     \context {
       % Remove all empty staves
-      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup.remove-first = ##t
     }
     \context {
       \Lyrics
-      \override LyricText #'X-offset = #center-on-word
+      \override LyricText.X-offset = #center-on-word
     }
   }
 }

@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Rise Up, Shepherds, and Follow"}}
@@ -25,7 +25,7 @@
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -33,7 +33,7 @@
   evenHeaderMarkup = \markup {
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -42,8 +42,8 @@
 global = {
   \key ees \major
   \time 4/4
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-0.5 . 0.5)
+  \override DynamicLineSpanner.staff-padding = #0.0
+  \override DynamicLineSpanner.Y-extent = #'(-0.5 . 0.5)
 }
 
 sopMusic = \relative c'' {
@@ -244,51 +244,51 @@ pianoLH = \relative c' {
 \score {
   <<
    \new ChoirStaff <<
-%    \new Lyrics = sopranos \with { \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) }
+%    \new Lyrics = sopranos \with { \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) }
     \new Staff = women <<
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
     \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
     \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((padding . -0.5)) } \lyricsto "sopranos" \altoWords
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((padding . -0.5)) } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
   \layout {
   \context {
     \Lyrics
-    \override LyricText #'font-size = #1.3
+    \override LyricText.font-size = #1.3
   }
-%6.14 \context {\Lyrics\override LyricText #'font-size = #0.8 }
+%6.14 \context {\Lyrics\override LyricText.font-size = #0.8 }
 %{IF_LESSER
-\context {\Lyrics\override LyricText #'font-size = #1.2 }
+\context {\Lyrics\override LyricText.font-size = #1.2 }
 %}%END_IF_LESSER
     \context {
       \Score
-      \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 4)
-      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/4)
+      \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4)
     }
     \context {
       % a little smaller so lyrics
       % can be closer to the staff
       \Staff
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3)
+      \override VerticalAxisGroup.minimum-Y-extent = #'(-3 . 3)
     }
     \context {
       \Lyrics
-      \override LyricText #'X-offset = #center-on-word
+      \override LyricText.X-offset = #center-on-word
     }
   }
 }

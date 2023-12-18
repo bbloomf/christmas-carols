@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Myn Lyking"}}
@@ -29,7 +29,7 @@
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -37,7 +37,7 @@
   evenHeaderMarkup = \markup {
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -47,8 +47,8 @@ global = {
   \key g \major
   \time 4/4
   \autoBeamOff
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-0 . 0)
+  \override DynamicLineSpanner.staff-padding = #0.0
+  \override DynamicLineSpanner.Y-extent = #'(-0 . 0)
   \mergeDifferentlyHeadedOn
   \mergeDifferentlyDottedOn
 }
@@ -69,8 +69,8 @@ verseMusicII = \relative c'' {
   a4 d,8 d d4. d8 |
   e^\markup\italic"cresc." fis g d e fis g b |
   d--^\markup\italic"rall." b-- e-- b-- d2 \bar "||" 
-  \once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
-  \once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
+  \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \mark "D.S. al Fine"
   \break 
   
@@ -78,8 +78,8 @@ verseMusicII = \relative c'' {
   a4 d,8 d d2 |
   e8 fis g d e fis g^\markup\italic"cresc. molto rall." b |
   d[-- b] e-- b-- d2 \bar "||"
-  \once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
-  \once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
+  \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \mark "D.S. al Fine"
   \break 
   
@@ -87,13 +87,13 @@ verseMusicII = \relative c'' {
   a4 d,8 d d4. d8 |
   e fis g d e fis g^\markup\italic"cresc. molto rit." b |
   d b e[ b] d2 \bar "|."
-  \once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
-  \once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
+  \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \mark "D.S. al Fine"
 }
 
 sopMusic = \relative c'' {
-  \mark \markup { \musicglyph #"scripts.segno" }
+  \mark \markup { \musicglyph "scripts.segno" }
   g4^\markup\italic"a tempo" g8 a b4 d8 b |
   a4 a8 g a4 b |
   g^\markup\italic"cresc. e rall." g8 a b4 c8 b^\markup\italic"dim." |
@@ -109,12 +109,12 @@ verseWords = \lyricmode {
   That same Lord is He that made al -- lé thing,
   Of al -- lé lord -- is He is Lord, of al -- lé kyng -- es Kyng.
   
-\override LyricText #'font-size = #0.8
+\override LyricText.font-size = #0.8
   \set stanza = #"3."
   There was mick -- le mel -- o -- dy at that Chyld -- é’s birth.
   All that were in heav’n -- ly bliss, they made mick -- le mirth.
   
-\override LyricText #'font-size = #1.3
+\override LyricText.font-size = #1.3
   \set stanza = #"4. "
   An -- gels bright sang their song to that Chyld;
   Blyss -- id be Thou, and so be She, so meek and so mild.
@@ -345,7 +345,7 @@ pianoLH = \relative c' {
       \new Voice = "sopranos" { \global \tempo "Allegro moderato" 4 = 112 \verseRests \verseMusic \voiceOne \sopMusic \oneVoice \verseRestsII \verseMusicII }
       \new Voice = "altos" { \voiceTwo \global \chorusRests \altoMusic }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
     \new Lyrics = "altosVI"  \with { alignBelowContext = #"women"} \lyricsto "altos" \altoWordsVI
     \new Lyrics = "altosV"  \with { alignBelowContext = #"women"} \lyricsto "altos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women"} \lyricsto "altos" \altoWordsIV
@@ -358,28 +358,28 @@ pianoLH = \relative c' {
       \new Voice = "tenors" { \voiceOne \global \chorusRests \tenorMusic }
       \new Voice = "basses" { \voiceTwo \global \chorusRests \bassMusic }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
     \new PianoStaff << \new Staff { \global \new Voice { \pianoRH } } \new Staff { \global \clef "bass" \pianoLH } >>
   >>
   \layout {
   \context {
     \Lyrics
-    \override LyricText #'font-size = #1.3
+    \override LyricText.font-size = #1.3
   }
     \context {
       \Score
-      \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 2)
-      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 2)
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/2)
+      \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/2)
     }
     \context {
       % Remove all empty staves
-      \Staff \RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
+      \Staff \RemoveEmptyStaves \override VerticalAxisGroup.remove-first = ##t
     }
     \context {
       \Lyrics
-      \override LyricText #'X-offset = #center-on-word
+      \override LyricText.X-offset = #center-on-word
     }
   }
 }

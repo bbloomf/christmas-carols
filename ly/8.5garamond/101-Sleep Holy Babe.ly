@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Sleep, Holy Babe!"}}
@@ -30,7 +30,7 @@
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -38,7 +38,7 @@
   evenHeaderMarkup = \markup {
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -47,8 +47,8 @@
 global = {
   \key ees \major
   \time 4/2
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
+  \override DynamicLineSpanner.staff-padding = #0.0
+  \override DynamicLineSpanner.Y-extent = #'(-1 . 1)
 }
 
 sopMusic = \relative c' {
@@ -57,7 +57,7 @@ sopMusic = \relative c' {
   d4 f aes bes bes2 ees, |
   bes'2\rest bes4\rest <aes d,>~ q <g ees> f <ees ces> |
   <ees bes g> bes'\rest bes2\rest bes1\rest |
-  ees,2-> d2 bes'1\rest \bar ".|:" 
+  ees,2-> d2 bes'1\rest \bar ".|:-|" 
 %
   ees,1^\pp ees2. aes4 |
   g1.^\markup\italic"cresc." ees'2 |
@@ -91,7 +91,7 @@ altoMusic = \relative c' {
   s1 des |
   s2. ces4~ ces bes c aes |
   s1*2 |
-  aes1 s1 \bar ".|:"
+  aes1 s1 \bar ".|:-|"
 %
   bes1 c2. ees4 |
   ees1 g |
@@ -178,7 +178,7 @@ tenorMusic = \relative c' {
   s1 g |
   s1*2 |
   ees4 g bes c~ c2 bes~ |
-  bes1 bes \bar ".|:"
+  bes1 bes \bar ".|:-|"
 %
   g1_\pp aes2. c4 |
   bes1._\markup\italic"cresc." b2 |
@@ -212,7 +212,7 @@ bassMusic = \relative c {
   d'\rest ees, |
   aes4 c ees f~ f g aes aes, |
   bes bes\rest d2\rest d1\rest |
-  bes1 d\rest \bar ".|:"
+  bes1 d\rest \bar ".|:-|"
 %
   ees1 ees2. ees4 |
   ees1 ees |
@@ -248,7 +248,7 @@ pianoLH = \relative c' {
 \score {
   <<
    \new ChoirStaff <<
-%    \new Lyrics = sopranos \with { \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) }
+%    \new Lyrics = sopranos \with { \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) }
     \new Staff = women <<
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
@@ -258,37 +258,37 @@ pianoLH = \relative c' {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
     \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsVI
     \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsII
-    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((padding . -0.5)) } \lyricsto "altos" \altoWords
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((padding . -0.5)) } \lyricsto "altos" \altoWords
+    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
   \layout {
   \context {
     \Lyrics
-    \override LyricText #'font-size = #1.3
+    \override LyricText.font-size = #1.3
   }
     \context {
       \Score
-      \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 4)
-      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/4)
+      \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4)
     }
     \context {
       % a little smaller so lyrics
       % can be closer to the staff
       \Staff
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3)
+      \override VerticalAxisGroup.minimum-Y-extent = #'(-3 . 3)
     }
     \context {
       \Lyrics
-      \override LyricText #'X-offset = #center-on-word
+      \override LyricText.X-offset = #center-on-word
     }
   }
 }

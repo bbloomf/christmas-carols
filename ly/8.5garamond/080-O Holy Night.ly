@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"O Holy Night"}}
@@ -45,7 +45,7 @@ last-bottom-spacing.stretchability = 80
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -53,7 +53,7 @@ last-bottom-spacing.stretchability = 80
   evenHeaderMarkup = \markup {
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -64,20 +64,20 @@ global = {
   \time 4/4
   \autoBeamOff
   #'line-break-system-details #'((alignment-distances . (-100)))
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
+  \override DynamicLineSpanner.staff-padding = #0.0
+  \override DynamicLineSpanner.Y-extent = #'(-1 . 1)
 }
 globalNoTime = {
   \key des \major
   \autoBeamOff
   #'line-break-system-details #'((alignment-distances . (-100)))
-  \override DynamicLineSpanner #'staff-padding = #0.0
-  \override DynamicLineSpanner #'Y-extent = #'(-1 . 1)
+  \override DynamicLineSpanner.staff-padding = #0.0
+  \override DynamicLineSpanner.Y-extent = #'(-1 . 1)
 }
 
 sopMusicPre = \relative c' {
   \tempo \markup\italic"Andante maestoso" 4 = 72
-  r2 | r1 | r1 | r1 | \mark \markup { \musicglyph #"scripts.segno" }
+  r2 | r1 | r1 | r1 | \mark \markup { \musicglyph "scripts.segno" }
   r2 f4^\mf f8.\noBeam f16 | \break
   
   \slurDashed aes4( aes8.\noBeam) aes16\noBeam bes8.\noBeam( bes16\noBeam) ges8.\noBeam bes16 |
@@ -130,8 +130,8 @@ sopMusic = \relative c'' {
   aes2~^\markup\italic"rit." aes8[ ges]^> f[^> ees]^> |
   des2 c4^\markup\italic"a tempo" des8.\noBeam ees16 |
   des2. bes4\rest\fermata \bar "|."
-  \once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
-  \once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
+  \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \mark\markup\italic"D.S."
 }
 sopWords = \lyricmode {
@@ -320,9 +320,9 @@ bassWords = \lyricmode {
 }
 
 pianoRH = \relative c {
-  \override TupletBracket #'bracket-visibility = ##f 
+  \override TupletBracket.bracket-visibility = ##f 
   \mergeDifferentlyHeadedOn
-%  \times 2/3 { f8[(_\mf des' aes} \times 2/3 { f' des aes])} \times 2/3 { f8[( des' aes } \times 2/3 { f' des aes]) } |
+%  \tuplet 3/2 { f8[(_\mf des' aes} \tuplet 3/2 { f' des aes])} \tuplet 3/2 { f8[( des' aes } \tuplet 3/2 { f' des aes]) } |
   
   \partial 2 <f' des>4_\mf q8.[ f16] |
   << {aes4~ aes8.[ aes16] bes4 ges8.[ bes16] |
@@ -333,8 +333,8 @@ pianoRH = \relative c {
       <aes des f>2 c |
      } >>
   
-  \override TupletNumber #'text = #""
-  \times 2/3 {
+  \override TupletNumber.text = #""
+  \tuplet 3/2 {
     f,,8[( des' aes f' des aes]) f8[( des' aes f' des aes]) |
     
     f8[( des' aes f' des aes]) ges[( des' bes ges' des bes]) |
@@ -357,9 +357,9 @@ pianoRH = \relative c {
     f8[(\! des' aes f' des aes]) f8[( des' aes f' des aes]) |
   }
     %page 3 (Chorus)
-    << \override TupletBracket #'bracket-visibility = ##f
-       \override TupletNumber #'text = #"" \times 2/3 {
-       \once\override DynamicText #'X-offset = #-6
+    << \override TupletBracket.bracket-visibility = ##f
+       \override TupletNumber.text = #"" \tuplet 3/2 {
+       \once\override DynamicText.X-offset = #-6
       f8[_(_\f des' bes f' des bes]) f8[_( des' bes f' des bes]) |
       f8[_( c' aes f' c aes]) f8[_( c' aes f' c aes]) |
       ges[_( ees' bes ges' ees bes]) ges[_( ees' bes ges' ees bes]) |
@@ -380,8 +380,8 @@ pianoRH = \relative c {
       
     %page 4
     %first ending
-    << \override TupletBracket #'bracket-visibility = ##f
-       \override TupletNumber #'text = #"" \times 2/3 {
+    << \override TupletBracket.bracket-visibility = ##f
+       \override TupletNumber.text = #"" \tuplet 3/2 {
       ees8[_( c' aes ees' c aes]) ges[_( c aes ees' c aes]) |
       aes8[_( f' des aes' f des]) ges,[_( ees' bes ges' ees bes]) |
       f8[_( des' aes f' des aes])
@@ -389,13 +389,13 @@ pianoRH = \relative c {
       ees2 ges | aes ges | f
     } >>
     <ges aes c ees>4  r4 |
-    << { \override TupletBracket #'bracket-visibility = ##f
-       \override TupletNumber #'text = #"" \times 2/3 {
+    << { \override TupletBracket.bracket-visibility = ##f
+       \override TupletNumber.text = #"" \tuplet 3/2 {
         f8[_( des' aes f' des aes]) f8[_( des'_\< aes des f aes]\!) |
       }} \\ { f,2 s} 
       >>
     
-    << {       \once\override DynamicText #'X-offset = #-6
+    << {       \once\override DynamicText.X-offset = #-6
         des''8[_\f ees f des] bes[ des] c[ f16 bes,] |
         aes8[ c f g] aes[ g f c] |
         ees[ bes ees f] ges[ aes bes c] |
@@ -405,11 +405,11 @@ pianoRH = \relative c {
         ges2 bes4 ees |
         f2. s4 } >>
     
-    \override TieColumn #'tie-configuration = #'((-2.0 . -1))
+    \override TieColumn.tie-configuration = #'((-2.0 . -1))
     <f aes,>2~^( <ees aes,>4.) aes,8 |
-    \override TieColumn #'tie-configuration = #'()
+    \override TieColumn.tie-configuration = #'()
     <aes des>2~_( <des bes>4) <c aes>8.[ <bes ges>16] |
-    \override TieColumn #'tie-configuration = #'((0.0 . 1))
+    \override TieColumn.tie-configuration = #'((0.0 . 1))
     <aes f>2~_( <aes ges c,>8.)[ q16] <bes ges c,>8.[ <aes ges c,>16] |
     <aes f des>2. <des aes f>4 |
     
@@ -507,7 +507,7 @@ pianoLH = \relative c {
  %   \new Lyrics = "tenors" { s1 }
     \new Staff = men <<
        \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
-         \override Staff.TimeSignature #'stencil = ##f
+         \override Staff.TimeSignature.stencil = ##f
 
       \set Staff.clefGlyph = #""
       \clef bass
@@ -542,22 +542,22 @@ pianoLH = \relative c {
   \layout {
   \context {
     \Lyrics
-    \override LyricText #'font-size = #1.3
+    \override LyricText.font-size = #1.3
   }
    % ragged-right = ##t
     \context {
       \Score
-      \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 4)
-      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
-%      \override LyricText #'font-series = #'bold
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/4)
+      \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4)
+%      \override LyricText.font-series = #'bold
     }
     \context {
       % a little smaller so lyrics
       % can be closer to the staff
       \Staff \RemoveEmptyStaves
-      \override VerticalAxisGroup #'remove-first = ##t
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3)
-      \override VerticalAxisGroup #'staff-staff-spacing =
+      \override VerticalAxisGroup.remove-first = ##t
+      \override VerticalAxisGroup.minimum-Y-extent = #'(-3 . 3)
+      \override VerticalAxisGroup.staff-staff-spacing =
       #'((basic-distance . 5)
          (minimum-distance . 1)
          (padding . 1)
@@ -565,7 +565,7 @@ pianoLH = \relative c {
     }
     \context {
       \Lyrics
-      \override LyricText #'X-offset = #center-on-word
+      \override LyricText.X-offset = #center-on-word
     }
   }
 }

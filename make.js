@@ -1,6 +1,10 @@
 var child_process = require('child_process'),
     fs = require('fs'),
-    noop = () => {};
+    noop = () => {},
+    psContainsDisp = (psName) => {
+        const ps = fs.readFileSync(psName, 'utf8');
+        return /GaramondPremrPro-\S*Disp/.test(ps);
+    };
 try { fs.mkdirSync('lytemp'); } catch (e) { }
 function processLy(lyFile,callback) {
     var lyFileToProcess = lyFile;
@@ -27,8 +31,9 @@ function processLy(lyFile,callback) {
       deleteFileAfterProcessed = true;
     }
     if(fs.existsSync(psName)) {
+        const containsDisp = psContainsDisp(psName);
         //Check if the .ly file was the same.
-        if(fs.existsSync(lyName)) {
+        if(!containsDisp && fs.existsSync(lyName)) {
             var oldLyContent = fs.readFileSync(lyName,'utf8');
             if(lyContent == oldLyContent) {
                 //console.info('Skipping "' + lyFile + '" because its .ps file already exists and the lilypond content was the same.');
@@ -96,7 +101,7 @@ function ps2pdf(psFiles,width,height,outputName) {
 //ps2pdf('lytemp/001.ps',8.5,11,'test.pdf');
 var dir = 'ly/8.5garamond/',
     files = fs.readdirSync(dir).sort(),
-    maxConcurrent = 6,
+    maxConcurrent = 1,
     currentlyActive = 0,
     i = 0,
     psFiles = [],

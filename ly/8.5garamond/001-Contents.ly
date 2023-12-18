@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 \include "util.ly"
 \header {
   title = ""
@@ -23,7 +23,7 @@
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #12.5
      \combine 
-        \fill-line{"" \on-the-fly #(on-page 5)
+        \fill-line{"" \if \on-page #5
         \oldStyleNum"1"
         }
         \fill-line{\headerLine}
@@ -48,11 +48,11 @@
 \markup\vspace #0.1
 \markup{\abs-fontsize #12 "This work is free of known copyright restrictions."}
 \markup\vspace #0.1
-\markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \wordwrap{The latest version of this book is always available at: \with-url #"http://aCollectionOfChristmasCarols.com" \italic"http://aCollectionOfChristmasCarols.com"}}
+\markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \wordwrap{The latest version of this book is always available at: \with-url "http://aCollectionOfChristmasCarols.com" \italic"http://aCollectionOfChristmasCarols.com"}}
 \markup\vspace #0.1
-\markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \wordwrap{Cover artwork, \italic Song \italic of \italic the \concat{\italic Angels ","} painted in \smallCapsOldStyle"1881" by William-Andolphe Bouguereau; downloaded from \with-url #"http://wikipaintings.org" \italic"wikipaintings.org"}}
+\markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \wordwrap{Cover artwork, \italic Song \italic of \italic the \concat{\italic Angels ","} painted in \smallCapsOldStyle"1881" by William-Andolphe Bouguereau; downloaded from \with-url "http://wikipaintings.org" \italic"wikipaintings.org"}}
 \markup\vspace #0.1
-\markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \wordwrap{Inside cover artwork illustrated by Arthur Hughes, as found in \italic Christmas \italic Carols, \italic New \italic and \concat{\italic Old ";"} downloaded from \with-url #"http://www.ccel.org/b/bramley/carols/jpg-hires/0001=i.jpg" \italic"http://www.ccel.org/b/bramley/carols/jpg-hires/0001=i.jpg"}}
+\markup{\abs-fontsize #12 \override #'(baseline-skip . 2.2) \wordwrap{Inside cover artwork illustrated by Arthur Hughes, as found in \italic Christmas \italic Carols, \italic New \italic and \concat{\italic Old ";"} downloaded from \with-url "http://www.ccel.org/b/bramley/carols/jpg-hires/0001=i.jpg" \italic"http://www.ccel.org/b/bramley/carols/jpg-hires/0001=i.jpg"}}
 \pageBreak
 \markup\vspace #0.4
 \markup\fill-line \center-align {\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #32 \smallCapsOldStyle"contents"}}

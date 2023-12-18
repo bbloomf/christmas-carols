@@ -1,73 +1,73 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 % Michael's utilities
 
 dropLyricsIV = {
-  \override LyricText #'extra-offset = #'(0 . -0.4)
-  \override LyricHyphen #'extra-offset = #'(0 . -0.4)
-  \override LyricExtender #'extra-offset = #'(0 . -0.4)
-  \override StanzaNumber #'extra-offset = #'(0 . -0.4)
+  \override LyricText.extra-offset = #'(0 . -0.4)
+  \override LyricHyphen.extra-offset = #'(0 . -0.4)
+  \override LyricExtender.extra-offset = #'(0 . -0.4)
+  \override StanzaNumber.extra-offset = #'(0 . -0.4)
 }
 
 dropLyricsV = {
-  \override LyricText #'extra-offset = #'(0 . -0.5)
-  \override LyricHyphen #'extra-offset = #'(0 . -0.5)
-  \override LyricExtender #'extra-offset = #'(0 . -0.5)
-  \override StanzaNumber #'extra-offset = #'(0 . -0.5)
+  \override LyricText.extra-offset = #'(0 . -0.5)
+  \override LyricHyphen.extra-offset = #'(0 . -0.5)
+  \override LyricExtender.extra-offset = #'(0 . -0.5)
+  \override StanzaNumber.extra-offset = #'(0 . -0.5)
 }
 dropLyricsVI = {
-  \override LyricText #'extra-offset = #'(0 . -0.6)
-  \override LyricHyphen #'extra-offset = #'(0 . -0.6)
-  \override LyricExtender #'extra-offset = #'(0 . -0.6)
-  \override StanzaNumber #'extra-offset = #'(0 . -0.6)
+  \override LyricText.extra-offset = #'(0 . -0.6)
+  \override LyricHyphen.extra-offset = #'(0 . -0.6)
+  \override LyricExtender.extra-offset = #'(0 . -0.6)
+  \override StanzaNumber.extra-offset = #'(0 . -0.6)
 }
 
 dropLyricsVII = {
-  \override LyricText #'extra-offset = #'(0 . -0.7)
-  \override LyricHyphen #'extra-offset = #'(0 . -0.7)
-  \override LyricExtender #'extra-offset = #'(0 . -0.7)
-  \override StanzaNumber #'extra-offset = #'(0 . -0.7)
+  \override LyricText.extra-offset = #'(0 . -0.7)
+  \override LyricHyphen.extra-offset = #'(0 . -0.7)
+  \override LyricExtender.extra-offset = #'(0 . -0.7)
+  \override StanzaNumber.extra-offset = #'(0 . -0.7)
 }
 
 dropLyricsVIII = {
-  \override LyricText #'extra-offset = #'(0 . -0.8)
-  \override LyricHyphen #'extra-offset = #'(0 . -0.8)
-  \override LyricExtender #'extra-offset = #'(0 . -0.8)
-  \override StanzaNumber #'extra-offset = #'(0 . -0.8)
+  \override LyricText.extra-offset = #'(0 . -0.8)
+  \override LyricHyphen.extra-offset = #'(0 . -0.8)
+  \override LyricExtender.extra-offset = #'(0 . -0.8)
+  \override StanzaNumber.extra-offset = #'(0 . -0.8)
 }
 
 dropLyricsIX = {
-  \override LyricText #'extra-offset = #'(0 . -0.9)
-  \override LyricHyphen #'extra-offset = #'(0 . -0.9)
-  \override LyricExtender #'extra-offset = #'(0 . -0.9)
-  \override StanzaNumber #'extra-offset = #'(0 . -0.9)
+  \override LyricText.extra-offset = #'(0 . -0.9)
+  \override LyricHyphen.extra-offset = #'(0 . -0.9)
+  \override LyricExtender.extra-offset = #'(0 . -0.9)
+  \override StanzaNumber.extra-offset = #'(0 . -0.9)
 }
 
 dropLyricsXI = {
-  \override LyricText #'extra-offset = #'(0 . -1.1)
-  \override LyricHyphen #'extra-offset = #'(0 . -1.1)
-  \override LyricExtender #'extra-offset = #'(0 . -1.1)
-  \override StanzaNumber #'extra-offset = #'(0 . -1.1)
+  \override LyricText.extra-offset = #'(0 . -1.1)
+  \override LyricHyphen.extra-offset = #'(0 . -1.1)
+  \override LyricExtender.extra-offset = #'(0 . -1.1)
+  \override StanzaNumber.extra-offset = #'(0 . -1.1)
 }
 
 dropLyricsXII = {
-  \override LyricText #'extra-offset = #'(0 . -1.2)
-  \override LyricHyphen #'extra-offset = #'(0 . -1.2)
-  \override LyricExtender #'extra-offset = #'(0 . -1.2)
-  \override StanzaNumber #'extra-offset = #'(0 . -1.2)
+  \override LyricText.extra-offset = #'(0 . -1.2)
+  \override LyricHyphen.extra-offset = #'(0 . -1.2)
+  \override LyricExtender.extra-offset = #'(0 . -1.2)
+  \override StanzaNumber.extra-offset = #'(0 . -1.2)
 }
 dropLyricsXV = {
-  \override LyricText #'extra-offset = #'(0 . -1.5)
-  \override LyricHyphen #'extra-offset = #'(0 . -1.5)
-  \override LyricExtender #'extra-offset = #'(0 . -1.5)
-  \override StanzaNumber #'extra-offset = #'(0 . -1.5)
+  \override LyricText.extra-offset = #'(0 . -1.5)
+  \override LyricHyphen.extra-offset = #'(0 . -1.5)
+  \override LyricExtender.extra-offset = #'(0 . -1.5)
+  \override StanzaNumber.extra-offset = #'(0 . -1.5)
 }
 
 
 raiseLyrics = {
-  \revert LyricText #'extra-offset
-  \revert LyricHyphen #'extra-offset
-  \revert LyricExtender #'extra-offset
-  \revert StanzaNumber #'extra-offset
+  \revert LyricText.extra-offset
+  \revert LyricHyphen.extra-offset
+  \revert LyricExtender.extra-offset
+  \revert StanzaNumber.extra-offset
 }
 
 #(define (splitUp chars pred)
@@ -154,44 +154,52 @@ smallCapsACodeLL = ##xE051
          aa)
 )
 
-#(define (change-char-helper aa test? offset)
-    (if (string? aa) 
-        (let* ((chars (utf-8->list aa))
-               (tosc (map (lambda (c)
-                               (if (and (<= c 127) (test? (integer->char c)))
-                                   (ly:wide-char->utf-8 (+ c offset))
-                                   (if (and (not (eq? test? char-numeric?)) (and (<= c 255) (>= c 224)))
-                                       (ly:wide-char->utf-8 (+ c offset))
-                                       (if (= c #x0153)
-                                           (ly:wide-char->utf-8 #xF6FA)
-                                           (ly:wide-char->utf-8 c) ) ) ) )
-                           chars))
-                (newStr (apply string-append tosc)))
-             newStr)
-         aa)
-)
+% #(define (change-char-helper aa test? offset)
+%     (if (string? aa) 
+%         (let* ((chars (utf-8->list aa))
+%                (tosc (map (lambda (c)
+%                                (if (and (<= c 127) (test? (integer->char c)))
+%                                    (ly:wide-char->utf-8 (+ c offset))
+%                                    (if (and (not (eq? test? char-numeric?)) (and (<= c 255) (>= c 224)))
+%                                        (ly:wide-char->utf-8 (+ c offset))
+%                                        (if (= c #x0153)
+%                                            (ly:wide-char->utf-8 #xF6FA)
+%                                            (ly:wide-char->utf-8 c) ) ) ) )
+%                            chars))
+%                 (newStr (apply string-append tosc)))
+%              newStr)
+%          aa)
+% )
 
 #(define (to-old-style str) (change-char-helper str char-numeric?
                                 (- oldStyleZeroCode (char->integer #\0))))
                                 
-#(define (to-small-caps str) (change-char-helper str char-lower-case?
-                                (- smallCapsACode (char->integer #\a))))
+% #(define (to-small-caps str) (change-char-helper str char-lower-case?
+%                                 (- smallCapsACode (char->integer #\a))))
 
 #(define-markup-command (realCaps layout props str) (markup?)
     "Real small capitals"
-    (interpret-markup layout props (to-small-caps str)))
+    (interpret-markup layout props 
+      #{\markup \override #'(font-features . ("smcp")) { #str } #}
+    ))
     
 #(define-markup-command (oldStyleNum layout props str) (markup?)
     "Old-style numerals"
-    (interpret-markup layout props (to-old-style str)))
+    (interpret-markup layout props
+      #{\markup \override #'(font-features . ("onum" "pnum")) #str #}
+    ))
 
 #(define-markup-command (oldStylePageNum layout props str) (markup?)
     "Old-style Page numbers"
-    (interpret-markup layout props (to-old-style (number->string (chain-assoc-get 'page:page-number props -1)))))
+    (interpret-markup layout props
+      #{\markup \override #'(font-features . ("onum" "pnum")) #(number->string (chain-assoc-get 'page:page-number props -1)) #}
+    ))
     
 #(define-markup-command (smallCapsOldStyle layout props str) (markup?)
     "Real small caps and old-style numerals"
-    (interpret-markup layout props (to-old-style (to-small-caps str))))
+    (interpret-markup layout props 
+      #{\markup \override #'(font-features . ("onum" "pnum" "smcp")) #str #}
+    ))
     
 #(define-markup-command (concat layout props markups) (markup-list?)
     "Concatenate markups with no spaces"
