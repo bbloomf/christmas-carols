@@ -9,15 +9,13 @@ $(function(){
     player.loadFile(url, player.start);
     playUrl = url;
   }
-  MIDI.loadPlugin(function(){
+  MIDI.loadPlugin(function(a){
     playMIDI = _playMIDI;
     midiLoaded = true;
     if(playUrl) playMIDI(playUrl);
-    if(MIDI.loader) MIDI.loader.stop();
     MIDIPlayerPercentage(MIDI.Player);
   });
   var playMIDI = function(url) {
-    if(!MIDI.loader) MIDI.loader = new widgets.Loader;
     playUrl = url;
   };
   $('a.play').click(function(e){
