@@ -16,22 +16,31 @@ title: A Collection of Christmas Carols
     <title>{{ page.title }}</title>
     <!-- midi.js css -->
     <link href="./css/MIDIPlayer.css" rel="stylesheet" type="text/css" />
-    <!-- midi.js package -->
-    <script src="./js/MIDI/AudioDetect.js" type="text/javascript"></script>
-    <script src="./js/MIDI/LoadPlugin.js" type="text/javascript"></script>
-    <script src="./js/MIDI/Plugin.js" type="text/javascript"></script>
-    <script src="./js/MIDI/Player.js" type="text/javascript"></script>
-    <script src="./js/Widgets/Loader.js" type="text/javascript"></script>
-    <script src="./js/Window/Event.js" type="text/javascript"></script>
-    <script src="./js/Window/DOMLoader.XMLHttp.js" type="text/javascript"></script>
-    <script src="./js/Window/DOMLoader.script.js" type="text/javascript"></script>
+    <!-- shim -->
+    <script src="./inc/shim/Base64.js" type="text/javascript"></script>
+    <script src="./inc/shim/Base64binary.js" type="text/javascript"></script>
+    <script src="./inc/shim/WebAudioAPI.js" type="text/javascript"></script>
+    <script src="./inc/shim/WebMIDIAPI.js" type="text/javascript"></script>
     <!-- jasmid package -->
     <script src="./inc/jasmid/stream.js"></script>
     <script src="./inc/jasmid/midifile.js"></script>
     <script src="./inc/jasmid/replayer.js"></script>
-    <!-- extras -->
-    <script src="./inc/Base64.js" type="text/javascript"></script>
-    <script src="./inc/base64binary.js" type="text/javascript"></script>
+    <!-- midi.js package -->
+    <script src="./js/MIDI/audioDetect.js" type="text/javascript"></script>
+    <script src="./js/MIDI/gm.js" type="text/javascript"></script>
+    <script src="./js/MIDI/loader.js" type="text/javascript"></script>
+    <script src="./js/MIDI/plugin.audiotag.js" type="text/javascript"></script>
+    <script src="./js/MIDI/plugin.webaudio.js" type="text/javascript"></script>
+    <script src="./js/MIDI/plugin.webmidi.js" type="text/javascript"></script>
+    <script src="./js/MIDI/player.js" type="text/javascript"></script>
+    <script src="./js/MIDI/synesthesia.js" type="text/javascript"></script>
+    <!-- utils -->
+    <script src="./js/util/dom_request_xhr.js" type="text/javascript"></script>
+    <script src="./js/util/dom_request_script.js" type="text/javascript"></script>
+    <!-- includes -->
+    <script src="./inc/timer.js" type="text/javascript"></script>
+    <script src="./inc/colorspace.js" type="text/javascript"></script>
+    <script src="./inc/event.js" type="text/javascript"></script>
     <!-- code to handle the page -->
     <script src="./js/jquery.min.js" type="text/javascript"></script>
     <script src="./js/audioplayer.js" type="text/javascript"></script>
