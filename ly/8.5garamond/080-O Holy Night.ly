@@ -448,18 +448,18 @@ pianoLH = \relative c {
   %page 3 (Chorus)
   <bes' bes,>1 |
   <f f,>1 |
-  <ees ees,>1 |
+  <ees ees,>1 | \break
   
   <bes' bes,> |
   <aes aes,>2 <ges ges,> |
   
-  <f f,> <ges ges,> |
+  <f f,> <ges ges,> | \break
   <aes aes,> q |
   <des, des,>4-> <f f,>-> <aes aes,>-> <des des,>-> |
   
   %page 4
   % first ending
-  <aes aes,>2 <ges ges,> |
+  <aes aes,>2 <ges ges,> | \break
   <f f,> <ges ges,> |
   <aes aes,> q4 r4 |
   
