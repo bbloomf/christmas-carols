@@ -187,7 +187,7 @@ altoWordsII = \lyricmode {
   mer -- ry
   \unset associatedVoice
   on this fest, __
-  \markup\italic In \markup\italic quo \markup\italic Chris -- \markup\italic tus \markup\italic na -- \set associatedVoice = "altos" \markup\italic tus \unset associatedVoice \markup{\italic "est" ";"}
+  \markup\italic In \markup\italic quo \markup\italic Chris -- \markup\italic tus \markup\italic na -- \set associatedVoice = "altos" \markup\italic tus \unset associatedVoice \markup\concat{\italic "est" ";"}
   On this Child I pray you call,
   \set associatedVoice = "tenors"
   To as --

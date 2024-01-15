@@ -320,17 +320,31 @@ doHlig = ##t
   )
 )
 
+#(define (is-grob-notehead? grob)
+   (let* (
+      (is-notehead? (eq? 'NoteHead (ly:assoc-get 'name (ly:grob-property grob 'meta))))
+    )
+    is-notehead?
+   ))
+
 #(define (center-on-word grob)
   (let* (
       (text (ly:grob-property-data grob 'text))
+      (markupproc (if (string? text) '() (car text)))
+      (text (if (string? text) text (if (> (length (cdr text)) 1) '() (cadr text))))
+      (text (if (string? text) text (ly:grob-property-data grob 'text)))
       (syllable (if (string? text) text ""))
       (word-position (if (integer? (string-skip syllable space-set)) (string-skip syllable space-set) 0))
       (word-end (if (integer? (string-skip-right syllable space-set)) (+ (string-skip-right syllable space-set) 1) (string-length syllable)))
       (preword (substring syllable 0 word-position))
       (word (substring syllable word-position word-end ))
+      (preword (if (or (null? markupproc) (= 0 (string-length preword))) preword (list markupproc preword)))
+      (word (if (or (null? markupproc) (= 0 (string-length word))) word (list markupproc word)))
       (preword-width (if (string? text) (width grob preword) 0))
       (word-width (if (string? text) (width grob word) (width grob text)))
-      (notehead (ly:grob-parent grob X))
+      (column (ly:grob-parent grob X))
+      (column-objects (ly:grob-object column 'elements))
+      (notehead (car (filter is-grob-notehead? (ly:grob-array->list column-objects))))
       (refp (ly:grob-common-refpoint notehead grob X))
       (note-extent (ly:grob-extent notehead refp X))
       (note-width (- (cdr note-extent) (car note-extent)))
