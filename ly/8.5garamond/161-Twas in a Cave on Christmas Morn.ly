@@ -118,9 +118,9 @@ altoWordsII = \lyricmode {
   
   \set stanza = #"5. "
   Arm -- ies An -- gel -- ic sang for mirth
-  \markup\italic Cum \markup\italic Ma -- \markup\italic ri -- \markup\italic a,
+  \markup\italic Cum \markup\italic Ma -- \markup\italic rí -- \markup\italic a,
   Mar -- vel -- lous glad o’er Je -- su’s birth
-  \markup\italic Ex \markup\italic Ma -- \markup\italic tre \markup\italic Ma -- \markup\italic ri -- \markup\italic a. __
+  \markup\italic Ex \markup\italic Ma -- \markup\italic tre \markup\italic Ma -- \markup\italic rí -- \markup\italic a. __
   \set ignoreMelismata = ##t
 }
 altoWordsIII = \lyricmode {

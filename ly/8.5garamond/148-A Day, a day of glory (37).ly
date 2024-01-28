@@ -119,9 +119,9 @@ altoWords = \lyricmode {
 altoWordsII = \lyricmode {
   \dropLyricsV
   \set stanza = #"2. "
-  With \markup\italic Glo -- \markup\italic ria \markup\italic in \markup\italic ex -- \markup\italic cel -- \markup\italic sis
+  With \markup\italic Gló -- \markup\italic ria \markup\italic in \markup\italic ex -- \markup\italic cél -- \markup\italic sis
     Arch -- an -- gels tell their mirth:
-  With \markup\italic Ky -- \markup\italic ri -- \markup\italic e \markup\italic e -- \markup\italic lei -- \markup\italic son
+  With \markup\italic Ký -- \markup\italic ri -- \markup\italic e \markup\italic e -- \markup\italic léi -- \markup\italic son
     Men an -- swer up -- on earth:
   And an -- gels swell the tri -- umph,
     And mor -- tals raise the horn,
