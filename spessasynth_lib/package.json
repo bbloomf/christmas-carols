@@ -1,0 +1,43 @@
+{
+  "name": "spessasynth_lib",
+  "version": "3.21.3",
+  "description": "MIDI and SoundFont2/DLS library with no compromises",
+  "browser": "index.js",
+  "types": "@types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spessasus/SpessaSynth.git"
+  },
+  "keywords": [
+    "soundfont",
+    "synthesizer",
+    "synth",
+    "sf2",
+    "sf3",
+    "dls",
+    "dls-to-sf2",
+    "midi",
+    "rmi",
+    "midi-player",
+    "web-audio-api",
+    "web-midi-api",
+    "player",
+    "soundfont2",
+    "soundfont3"
+  ],
+  "author": {
+    "name": "spessasus",
+    "email": "spesekspesek@gmail.com",
+    "url": "https://github.com/spessasus"
+  },
+  "license": "(MIT AND Apache-2.0)",
+  "bugs": {
+    "url": "https://github.com/spessasus/SpessaSynth/issues",
+    "email": "spesekspesek@gmail.com"
+  },
+  "homepage": "https://github.com/spessasus/SpessaSynth#readme"
+}
