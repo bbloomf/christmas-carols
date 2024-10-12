@@ -86,18 +86,18 @@ title: A Collection of Christmas Carols
       </footer>
     </div>
     <div class="player" style="display:none">
-      <div style="margin: 5px auto; width: 150px; float: right;">
-        <input type="image" src="./images/pause.png" align="absmiddle" value="pause" onclick="pausePlayStop()" id="pausePlayStop">
-        <input type="image" src="./images/stop.png" align="absmiddle" value="stop" onclick="pausePlayStop(true)">
-        <input type="image" src="./images/backward.png" align="absmiddle" value="stop" onclick="getNextSong(-1);">
-        <input type="image" src="./images/forward.png" align="absmiddle" value="stop" onclick="getNextSong(+1);">
-      </div>
-      <div class="time-controls" style="float: left; margin: 0; position: relative; top: 5px;">
+      <div class="time-controls">
         <span id="time1" class="time">0:00</span>
         <span id="capsule">
           <span id="cursor"></span>
         </span>
         <span id="time2" class="time" style="text-align: left;">-0:00</span>
+      </div>
+      <div style="margin: 5px auto; width: 150px;">
+        <input type="image" src="./images/pause.png" align="absmiddle" value="pause" onclick="pausePlayStop()" id="pausePlayStop">
+        <input type="image" src="./images/stop.png" align="absmiddle" value="stop" onclick="pausePlayStop(true)">
+        <input type="image" src="./images/backward.png" align="absmiddle" value="stop" onclick="getNextSong(-1);">
+        <input type="image" src="./images/forward.png" align="absmiddle" value="stop" onclick="getNextSong(+1);">
       </div>
     </div>
 

@@ -3,6 +3,9 @@ import { Synthetizer } from "../spessasynth_lib/synthetizer/synthetizer.js";
 import { WORKLET_URL_ABSOLUTE } from "../spessasynth_lib/synthetizer/worklet_url.js";
 
 const sfBuffer = fetch('soundfont.sf3').then(async sf => sf.arrayBuffer());
+/**
+ * @type Synthetizer
+ */
 let synth;
 /**
  * @type Sequencer
@@ -24,7 +27,7 @@ $(function(){
 
   var playUrl = null;
   var playMIDI = async function(url) {
-    $('div.player').show(400);
+    $('div.player').css({ display: 'flex' });
 
 
 
@@ -40,6 +43,7 @@ $(function(){
       seq = new Sequencer([{binary: await midiFilePromise}], synth); // create the sequencer
       seq.loop = false;
       setInterval(updatePosition, 100);
+      // synth.worklet.port.addEventListener('message', updatePosition);
     } else {
       seq.loadNewSongList([{binary: await midiFilePromise}]);
       seq.loop = false;
@@ -48,7 +52,11 @@ $(function(){
     seq.play();
     playUrl = url;
   }
+  let lastUpdate = 0;
   const updatePosition = () => {
+    const time = Math.floor(seq.currentTime * 10);
+    if (lastUpdate === time) return;
+    lastUpdate = time;
     var percent = seq.currentTime / seq.duration;
     $timeCursor.width((percent * 100) + "%");
     $time1.html(timeFormatting(seq.currentTime));

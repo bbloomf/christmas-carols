@@ -26,6 +26,8 @@ div.player {
 	position: fixed;
 	bottom:10px;
 	right:10px;
+	width: 510px;
+	max-width: calc(100vw - 20px);
 }
 div.player #capsule {
 	border: 1px solid #000;
@@ -43,7 +45,7 @@ div.player #capsule {
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	width: 220px;
+	flex: 1 0 0;
 	display: inline-block;
 	height: 30px;
 }
@@ -65,16 +67,13 @@ div.player #capsule #cursor {
 	height: 100%;
 }
 div.player span.time {
-	position: relative;
-	top: -9px;
 	padding: 0 10px;
-	width: 40px;
-	display: inline-block;
 	text-align: right;
 }
 div.player div.time-controls {
-	width: 360px;
-	margin: 10px auto 0;
+	flex: 1 0 0;
+	display: flex;
+	align-items: center;
 }
 input[type="image"]:hover {
 	opacity: 1;
