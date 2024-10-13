@@ -45,7 +45,7 @@
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -53,7 +53,7 @@
   evenHeaderMarkup = \markup {
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -320,7 +320,7 @@ bassWords = \lyricmode {
 }
 
 pianoRH = \relative c {
-  \set Staff.midiInstrument = "piano"
+  \set Staff.midiInstrument = "acoustic grand"
   \override TupletBracket #'bracket-visibility = ##f 
   \mergeDifferentlyHeadedOn
 %  \times 2/3 { f8[(_\mf des' aes} \times 2/3 { f' des aes])} \times 2/3 { f8[( des' aes } \times 2/3 { f' des aes]) } |
@@ -421,7 +421,7 @@ pianoRH = \relative c {
     <des aes f>2. r4 \bar "|."
 }
 pianoLH = \relative c {
-  \set Staff.midiInstrument = "piano"
+  \set Staff.midiInstrument = "acoustic grand"
   \partial 2 <des aes'>2 |
   <f aes>2 <ges bes> |
   <g bes>2~ q4 s |
@@ -568,7 +568,7 @@ pianoLH = \relative c {
   }
   \midi {
     \tempo 4 = 90
-    \set Staff.midiInstrument = "flute"
+    \set Staff.midiInstrument = "piccolo"
   
     \context {
       \Voice

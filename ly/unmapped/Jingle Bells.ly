@@ -36,7 +36,7 @@
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -44,7 +44,7 @@
   evenHeaderMarkup = \markup {
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -251,7 +251,7 @@ bassWords = \lyricmode {
 }
 
 pianoRH = \relative c' {
-  \set Staff.midiInstrument = "piano"
+  \set Staff.midiInstrument = "acoustic grand"
   <c ees>8[ c' bes aes] |
   <ees c~>2 |
   q8[ c' bes aes] |
@@ -313,7 +313,7 @@ pianoRH = \relative c' {
   aes8 \ottava #0 r <aes, ees c>4 \bar "|."
 }
 pianoLH = \relative c {
-  \set Staff.midiInstrument = "piano"
+  \set Staff.midiInstrument = "acoustic grand"
   \mergeDifferentlyHeadedOn
   \mergeDifferentlyDottedOn
   << {aes8[ aes' ees aes]
@@ -431,7 +431,7 @@ pianoLH = \relative c {
   }
   \midi {
     \tempo 4 = 105
-    \set Staff.midiInstrument = "flute"
+    \set Staff.midiInstrument = "piccolo"
   
     \context {
       \Voice

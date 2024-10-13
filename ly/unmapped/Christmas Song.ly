@@ -35,7 +35,7 @@
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -43,7 +43,7 @@
   evenHeaderMarkup = \markup {
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -417,7 +417,7 @@ pianoLH = \relative c' {
   }
   \midi {
     \tempo 8 = 144
-    \set Staff.midiInstrument = "flute"
+    \set Staff.midiInstrument = "piccolo"
   
     \context {
       \Voice

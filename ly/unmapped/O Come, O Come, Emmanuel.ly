@@ -321,6 +321,6 @@ bassWords = \lyricmode {
   }
   \midi {
     \tempo 4 = 100
-    \set Staff.midiInstrument = "flute"
+    \set Staff.midiInstrument = "piccolo"
   }
 }

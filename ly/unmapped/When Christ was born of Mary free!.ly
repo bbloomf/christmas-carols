@@ -30,7 +30,7 @@
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -38,7 +38,7 @@
   evenHeaderMarkup = \markup {
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -54,13 +54,13 @@ global = {
 }
 
 sopMusic = \relative c'' {
-  \set Staff.midiInstrument = "piano"
+  \set Staff.midiInstrument = "acoustic grand"
   \partial 4 g4 |
   d' b g a8[ b] |
   c4 b8[ a] b4 a8[ g] |
   fis[ e] <e' c>[ <d b>] <c a>[ <b g>] a[ g] |
   \partial 4*3 g4. fis8 g4 | \break
-  \set Staff.midiInstrument = "flute"
+  \set Staff.midiInstrument = "piccolo"
   
   \mark \markup {\musicglyph #"scripts.segno"} \partial 4 g4_\f |
   \slurDotted d'8\noBeam(d) \slurSolid b4 g a8[ b] |
@@ -89,14 +89,14 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  \set Staff.midiInstrument = "piano"
+  \set Staff.midiInstrument = "acoustic grand"
   d4 |
   d fis e e |
   e <d fis> <d g> d |
   d8[ e] e4 e8[ d] c4 |
   <b d> <a d> <b d> |
   
-  \set Staff.midiInstrument = "flute"
+  \set Staff.midiInstrument = "piccolo"
   d |
   \slurDotted d8\noBeam( d) \slurSolid fis4 g e |
   a fis g g |
@@ -170,14 +170,14 @@ altoWordsIV = \lyricmode {
 }
 
 tenorMusic = \relative c' {
-  \set Staff.midiInstrument = "piano"
+  \set Staff.midiInstrument = "acoustic grand"
   b4 |
   a d b c, |
   a d g g |
   g a,8[ b] c[ d] e4 |
   d d, g \bar "||"
   
-  \set Staff.midiInstrument = "flute"
+  \set Staff.midiInstrument = "piccolo"
   b'^\f |
   \slurDotted a8\noBeam( a) \slurSolid d4 b e |
   e d d d |
@@ -204,14 +204,14 @@ tenorWords = \lyricmode {
 }
 
 bassMusic = \relative c' {
-  \set Staff.midiInstrument = "piano"
+  \set Staff.midiInstrument = "acoustic grand"
   g4 |
   fis d e s |
   s4*3 b4 |
   c s4*3 |
   s4*3 \bar "||"
   
-  \set Staff.midiInstrument = "flute"
+  \set Staff.midiInstrument = "piccolo"
   g'4 |
   \slurDotted fis8\noBeam( fis) \slurSolid d4 e c |
   a d g g |
@@ -278,7 +278,7 @@ bassWords = \lyricmode {
   }
   \midi {
     \tempo 4 = 105
-    \set Staff.midiInstrument = "flute"
+    \set Staff.midiInstrument = "piccolo"
   
     \context {
       \Voice

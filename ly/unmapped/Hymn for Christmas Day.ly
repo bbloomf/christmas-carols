@@ -31,7 +31,7 @@
   oddHeaderMarkup = \markup\fill-line{
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine 
-        \fill-line{"" \on-the-fly #print-page-number-check-first
+        \fill-line{"" \if \should-print-page-number
         \oldStylePageNum""
         }
         \fill-line{\headerLine}
@@ -39,7 +39,7 @@
   evenHeaderMarkup = \markup {
      \override #'(font-name . "Garamond Premier Pro")\abs-fontsize #8.5
      \combine
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \oldStylePageNum""
         \fill-line{\headerLine}
   }
@@ -272,8 +272,8 @@ pianoLH = \relative c' {
     \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
     \new PianoStaff << \new Staff { \new Voice { 
-    \set Staff.midiInstrument = "piano" \pianoRH } } \new Staff { \clef "bass" 
-    \set Staff.midiInstrument = "piano" \pianoLH } >>
+    \set Staff.midiInstrument = "acoustic grand" \pianoRH } } \new Staff { \clef "bass" 
+    \set Staff.midiInstrument = "acoustic grand" \pianoLH } >>
   >>
   \layout {
     \context {
@@ -292,7 +292,7 @@ pianoLH = \relative c' {
   }
   \midi {
     \tempo 4 = 100
-    \set Staff.midiInstrument = "flute"
+    \set Staff.midiInstrument = "piccolo"
   
     \context {
       \Voice
