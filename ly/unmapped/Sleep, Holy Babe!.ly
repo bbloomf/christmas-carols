@@ -110,8 +110,7 @@ altoMusic = \relative c' {
   c1( ees2) |
   d4( c) |
   bes2 ees ees4( d c) bes |
-  \set Staff.midiInstrument = "acoustic grand"
-  s1. <ees d g,>2_\markup\smallCapsOldStyle"Accomp."
+  s1. \set Staff.midiInstrument = "acoustic grand" <ees d g,>2_\markup\smallCapsOldStyle"Accomp."
   <ees c aes>1 <ees ces aes> |
   <ees bes g>1 bes'1\rest \bar ":|"
 }
@@ -206,7 +205,6 @@ tenorMusic = \relative c' {
   << { g4( c bes aes g1) }
      { ees1 ~ ees }
   >> |
-  \set Staff.midiInstrument = "acoustic grand"
   aes,4 c ees f f2 ees2~ |
   ees1 s1 \bar ":|"
 }
@@ -240,8 +238,7 @@ bassMusic = \relative c {
   aes1. |
   a2 |
   bes bes bes bes |
-  \set Staff.midiInstrument = "acoustic grand"
-  s1. ees,2 |
+  s1. \set Staff.midiInstrument = "acoustic grand" ees,2 |
   c1\rest aes' |
   ees d'\rest \bar ":|"
 }
