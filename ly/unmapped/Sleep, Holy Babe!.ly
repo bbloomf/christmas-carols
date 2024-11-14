@@ -78,10 +78,8 @@ sopMusic = \relative c' {
   d2^\pp |
   ees4( g) bes( c) bes2. d,4 |
   << { ees1( ees) }
-     { s1. <ees d g,>2_\markup\smallCapsOldStyle"Accomp." }
+     { bes4( ees d c bes1) }
   >> |
-  <ees c aes>1 <ees ces aes> |
-  <ees bes g>1 bes'1\rest \bar ":|"
 }
 sopWords = \lyricmode {
   
@@ -112,7 +110,10 @@ altoMusic = \relative c' {
   c1( ees2) |
   d4( c) |
   bes2 ees ees4( d c) bes |
-  bes4( ees d c bes1) |
+  \set Staff.midiInstrument = "acoustic grand"
+  s1. <ees d g,>2_\markup\smallCapsOldStyle"Accomp."
+  <ees c aes>1 <ees ces aes> |
+  <ees bes g>1 bes'1\rest \bar ":|"
 }
 altoWords = \lyricmode {
   \dropLyricsIX
@@ -203,9 +204,10 @@ tenorMusic = \relative c' {
   f4(_\pp fis) |
   g2 g aes aes |
   << { g4( c bes aes g1) }
-     { s1. ees,2 }
+     { ees1 ~ ees }
   >> |
-  aes4 c ees f f2 ees2~ |
+  \set Staff.midiInstrument = "acoustic grand"
+  aes,4 c ees f f2 ees2~ |
   ees1 s1 \bar ":|"
 }
 tenorWords = \lyricmode {
@@ -238,8 +240,9 @@ bassMusic = \relative c {
   aes1. |
   a2 |
   bes bes bes bes |
-  ees1~ ees |
-  c,1\rest aes' |
+  \set Staff.midiInstrument = "acoustic grand"
+  s1. ees,2 |
+  c1\rest aes' |
   ees d'\rest \bar ":|"
 }
 bassWords = \lyricmode {
