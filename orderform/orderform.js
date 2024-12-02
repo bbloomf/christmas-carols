@@ -10,7 +10,7 @@ $(function() {
     }, 
     live: {
       public: 'pk_live_uU9tPAfqwliuPVeKQsRhQMKG',
-      charge: 'rk_live_SjB98QHbCEyBygDLrkKIKcOP'
+      charge: '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'
     }
   },
       $quantity = $('#quantity'),
