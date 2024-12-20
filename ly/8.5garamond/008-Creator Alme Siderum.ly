@@ -129,8 +129,6 @@ altoWordsII = \lyricmode {
   Ma -- gnum di -- é -- i Jú -- di -- cem,
   Ar -- mis su -- pér -- næ grá -- ti -- æ
   De -- fén -- de nos ab hós -- ti -- bus.
-
-  A -- men.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
@@ -145,6 +143,8 @@ altoWordsIII = \lyricmode {
   De -- o Pa -- tri cum Fí -- li -- o,
   Sanc -- to si -- mul Pa -- rá -- cli -- to,
   In sæ -- cu -- ló -- rum sǽ -- cu -- la.
+
+  A -- men.
 }
 altoWordsIV = \lyricmode {
   \dropLyricsVII
@@ -362,8 +362,6 @@ altoWordsII = \lyricmode {
   To judge and doom the quick and dead,
   Pre -- serve us, while we dwell be -- low,
   From ev -- ’ry in -- sult of the foe.
-
-  A -- men.
 }
 altoWordsIII = \lyricmode {
   \dropLyricsIX
@@ -378,6 +376,8 @@ altoWordsIII = \lyricmode {
   And God the Spi -- rit, Three in One,
   Laud, hon -- or, might, and glo -- ry be
   From age to age e -- ter -- nal -- ly.
+
+  A -- men.
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "
