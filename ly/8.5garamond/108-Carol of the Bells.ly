@@ -101,6 +101,7 @@ sopMusic = \relative c'' {
   }
   \alternative {
     {
+      \once \override Score.VoltaBracket.extra-offset = #'(0 . 1.5)
       bes4-> a8 bes g4 | 
       bes4-> a8 bes g4 | 
       bes4-> a8 bes g4 | 
@@ -356,7 +357,7 @@ pianoLH = \relative c' {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
+    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup.staff-affinity = #DOWN \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1) (padding . 0.5))} \lyricsto "sopranos" \sopWords
     \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWords
     \context Lyrics = "altos" \lyricsto "sopranos" \sopWordsBelow
     \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "tenors" \tenorWords
