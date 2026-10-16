@@ -196,7 +196,7 @@ altoWordsIV = \lyricmode {
   
   \set stanza = #"8."
   Thus they: I pray you,
-  Up, sirs nor stay you
+  Up, sirs, nor stay you
   Till ye con -- fess Him
   Like -- wise, and bless Him.
 }

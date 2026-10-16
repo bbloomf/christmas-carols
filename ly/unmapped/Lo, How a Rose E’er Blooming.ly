@@ -158,7 +158,7 @@ altoWordsIII = \lyricmode {
   Dis -- pel with glo -- rious splen -- dor
   The dark -- ness ev -- ’ry -- where;
   True man, yet ve -- ry God,
-  From Sin and death now save us,
+  From sin and death now save us,
   And share our ev -- ’ry load.
 }
 altoWordsIV = \lyricmode {

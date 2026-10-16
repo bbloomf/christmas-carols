@@ -2,7 +2,7 @@
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Pat-a-Pan"}}
-  poet = \markup\italic"Guilló, pran ton tamborin"
+  poet = \markup\italic"Guillô, pran ton tamborin"
   composer = \markup\oldStyleNum"Burgundian carol, 1720"
   arranger = \markup\oldStyleNum"Arranged by Charles Wood (1866–1926)"
   tagline = \markup \concat{ "Music from " \italic "The Cambridge Carol Book" \oldStyleNum", 1924"}

@@ -4,7 +4,7 @@
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Carol of the Bells"}}
   subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #10.5 "(Ukrainian Carol)"}}
   poet = \markup\oldStyleNum"Peter J. Wilhousky (1902–1978)"
-  composer = \markup\oldStyleNum"Mikola Dmytrovitch Leontovych (1877–1921)"
+  composer = \markup\oldStyleNum"Mykola Dmytrovych Leontovych (1877–1921)"
   tagline = \markup { "from" \italic {HymnsAndCarolsOfChristmas.com}}
 }
 \paper {

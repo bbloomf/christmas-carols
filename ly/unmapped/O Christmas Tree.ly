@@ -99,11 +99,11 @@ altoWords = \lyricmode {
   \dropLyricsIX
   \set stanza = #"1. "
   O Christ -- mas Tree! O Christ -- mas Tree!
-  Thy leaves are so un -- chan -- ging;
+  Thy leaves are so un -- chang -- ing;
   Not on -- ly green when sum -- mer’s here,
   But al -- so when ’tis cold and drear.
   O Christ -- mas Tree! O Christ -- mas Tree!
-  Thy leaves are so un -- chan -- ging.
+  Thy leaves are so un -- chang -- ing.
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
@@ -131,7 +131,7 @@ altoWordsIV = \lyricmode {
   O Christ -- mas Tree! O Christ -- mas Tree!
   How rich -- ly God has decked thee!
   Thou bidst us true and faith -- ful be,
-  And trust in God un -- chan -- ging -- ly.
+  And trust in God un -- chang -- ing -- ly.
   O Christ -- mas Tree! O Christ -- mas Tree!
   How rich -- ly God has decked thee.
 }

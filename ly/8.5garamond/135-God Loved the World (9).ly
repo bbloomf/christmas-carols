@@ -4,7 +4,7 @@
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"God Loved the World"}}
   subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #12.5 "(Also hat Gott die Welt geliebt)"}}
   poet = \markup\oldStyleNum"from the Trier Gesangbuch, 1871"
-  composer = \markup\oldStyleNum"Arranged by B. Luard Selby (1853–1918)"
+  composer = \markup\oldStyleNum"Arranged by B. Luard-Selby (1853–1918)"
   tagline = \markup \concat { "from " \italic "The Cowley Carol Book" \oldStyleNum", 1919"}
 }
 \paper {

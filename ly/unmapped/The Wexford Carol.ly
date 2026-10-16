@@ -197,7 +197,7 @@ altoWordsII = \lyricmode {
   Were long time seek -- ing up and down
   To find a lodg -- ing in the town.
   But mark how all things came to pass:
-  From ev -- ’ry door re -- pelled A -- las!
+  From ev -- ’ry door re -- pelled, a -- las!
   As long fore -- told __ their ref -- uge all
   Was but a hum -- ble ox -- ’s stall.
   

@@ -2,7 +2,7 @@
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"The Golden Carol"}}
-  subtitle = \markup \center-column { \italic"of" "Melchior, Casper and Balthazar" }
+  subtitle = \markup \center-column { \italic"of" "Melchior, Caspar and Balthazar" }
   poet = \markup\oldStyleNum"Traditional"
   composer = \markup\oldStyleNum"English"
   arranger = \markup\oldStyleNum"Arranged by Sir John Stainer (1840–1901)"
