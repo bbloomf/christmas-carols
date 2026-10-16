@@ -118,7 +118,7 @@ altoWords = \lyricmode {
   \set associatedVoice = "tenors"
   Hail! Ho -- ly Child,
   Lain in an ox -- en man -- ger,
-  Of Je -- se stem,
+  Of Jes -- se stem,
   Yet scorn’d at Beth -- le -- hem,
   In win -- ter wild,
   As ne’er -- to -- fore was stran -- ger,

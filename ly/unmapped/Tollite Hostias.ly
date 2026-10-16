@@ -188,7 +188,7 @@ altoWords = {
   \dropLyricsVIII
   \set stanza = \markup\dynamic"f   "
   \lyricmode {
-    Tol -- li -- te hos -- ti -- as.
+    Tol -- li -- te hos -- ti -- as,
     et ad -- o -- ra -- te
     Do -- mi -- num in a -- tri -- o
     sanc -- to e -- jus.

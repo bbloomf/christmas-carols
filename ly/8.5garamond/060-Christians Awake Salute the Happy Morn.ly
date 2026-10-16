@@ -174,7 +174,7 @@ altoWordsIII = \lyricmode {
   \set associatedVoice = "altos"
   Then may we hope, th’an -- gel -- ic thrones a -- mong,
   To sing, re -- deemed, a glad tri -- um -- phal song;
-  He, that was borne __ up -- on this joy -- ful day,
+  He, that was born __ up -- on this joy -- ful day,
   \unset associatedVoice
   A -- round us all His glo -- ry shall dis -- play;
   Saved by His love, in -- ces -- sant we shall sing

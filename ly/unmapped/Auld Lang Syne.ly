@@ -132,7 +132,7 @@ altoWordsIII = \lyricmode {
   \set stanza = #"3. "
   We twa ha’e sport -- ed i’ the burn,
   Frae morn -- in’ sun till dine,
-  But seas be -- tween us braid ba’e roared
+  But seas be -- tween us braid ha’e roared
   Sin’ auld __ lang __ syne.
 }
 altoWordsIV = \lyricmode {

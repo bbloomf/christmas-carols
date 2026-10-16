@@ -86,7 +86,7 @@ altoWords = \lyricmode {
   This en -- dris night I saw a sight,
   A star as bright as day; __
   And e’er a -- mong, A maid -- en sung,
-  “Lul -- lay, by by, lu -- lay.” __
+  “Lul -- lay, by by, lul -- lay.” __
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX
@@ -102,7 +102,7 @@ altoWordsIII = \lyricmode {
   \set stanza = #"2."
   “My sweet -- est bird, ’tis thus re -- quired,
   Though Thou be King ve -- ray, __
-  But n’er -- the -- less I will not cease
+  But ne’er -- the -- less I will not cease
   To sing ‘By by, lul -- lay.’” __
 }
 altoWordsIV = \lyricmode {

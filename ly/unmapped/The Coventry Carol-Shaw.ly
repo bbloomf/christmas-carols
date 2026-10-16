@@ -3,7 +3,7 @@
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Coventry Carol"}}
   poet = \markup\oldStyleNum"Robert Croo, 1534"
-  composer = \markup\oldStyleNum"16th Centry English Carol"
+  composer = \markup\oldStyleNum"16th Century English Carol"
   arranger = \markup\oldStyleNum"Arranged by Martin Fallas Shaw (1875–1958)"
   tagline = \markup { "from" \italic {ChristmasCarolMusic.org}}
 }

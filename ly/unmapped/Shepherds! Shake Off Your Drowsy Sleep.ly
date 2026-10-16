@@ -134,7 +134,7 @@ altoWordsIV = \lyricmode {
   Com -- eth at length the age of peace,
   Strife and sor -- row now __ shall cease;
   Pro -- phets fore -- told the won -- drous sto -- ry
-  Of __ this Heav’n born Prince __ of Glo -- ry.
+  Of __ this Heav’n -- born Prince __ of Glo -- ry.
 }
 altoWordsV = \lyricmode {
   \dropLyricsIX

@@ -5,7 +5,7 @@
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"The Stranger Star"}}
   poet = \markup\oldStyleNum"Cecil Frances Alexander (1818–1895)"
-  composer = \markup\oldStyleNum"J. A. Shultze, 1780"
+  composer = \markup\oldStyleNum"J. A. P. Schulz, 1780"
   tagline = \markup \concat{ "from " \italic "Favorite Songs and Hymns for School and Home" \oldStyleNum", 1899, via "\italic"books.google.com"}
 }
 \paper {

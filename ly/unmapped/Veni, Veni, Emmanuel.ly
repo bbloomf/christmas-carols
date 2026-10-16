@@ -189,7 +189,7 @@ altoWordsIII = \lyricmode {
   \set stanza = #"7. "
   Ve -- ni, ve -- ni, Rex Gen -- ti -- um,
   ve -- ni, Re -- dem -- ptor om -- ni -- um,
-  ut sal -- vas tu -- os fa -- mu -- los
+  ut sal -- ves tu -- os fa -- mu -- los
   pec -- ca -- ti si -- bi con -- sci -- os.
 }
 altoWordsIV = \lyricmode {
@@ -197,7 +197,7 @@ altoWordsIV = \lyricmode {
   \set stanza = #"4. "
   Ve -- ni, O Jes -- se vir -- gu -- la,
   ex hos -- tis tu -- os un -- gu -- la,
-  de spec -- tu tu -- os tar -- ta -- ri
+  de spe -- cu tu -- os tar -- ta -- ri
   e -- duc et an -- tro ba -- ra -- thri.
 }
 altoWordsV = \lyricmode {

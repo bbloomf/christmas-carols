@@ -5,7 +5,7 @@
   poet = \markup\oldStyleNum"William Morris (1834–1896)"
   composer = \markup\concat{\italic"Marche pour les Matelots" \oldStyleNum", by Marin Marais (1656–1728)"}
   arranger = \markup\oldStyleNum"Arranged by Edmund Sedding (1836–1868)"
-  tagline = \markup\concat{"from " \italic\oldStyleNum"The Musical times and singing-class circular, Volume 52" \oldStyleNum", November 1, 1911, via " \italic"books.google.com"}
+  tagline = \markup\concat{"from " \italic\oldStyleNum"The Musical Times and Singing-Class Circular, Volume 52" \oldStyleNum", November 1, 1911, via " \italic"books.google.com"}
 }
 \paper {
   paper-height = 9\in

@@ -2,7 +2,7 @@
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Noël Nouvelet"}}
-  poet = \markup\column {\concat{"15th Century French Carol from "\italic "Le Grande Bible des Noels"} "Translated by P.S.B."}
+  poet = \markup\column {\concat{"15th Century French Carol from "\italic "La Grande Bible des Noëls"} "Translated by P.S.B."}
   composer = \markup\oldStyleNum"15th Century French Carol"
   tagline = ""
 }

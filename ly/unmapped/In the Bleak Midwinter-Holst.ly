@@ -2,7 +2,7 @@
 \include "util.ly"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"In the Bleak Midwinter"}}
-  poet = \markup\oldStyleNum"Christina Rosetti (1830–1894)"
+  poet = \markup\oldStyleNum"Christina Rossetti (1830–1894)"
   composer = \markup\oldStyleNum"Gustav Holst (1874–1934)"
   tagline = \markup { "from" \italic "CantateDomino.org"}
 }

@@ -163,10 +163,10 @@ sopWordsVI = \lyricmode {
 
 sopWordsVII = \lyricmode {
   \set stanza = #"7. "
-  Mayst thou live to know and fear him,	
-    Trust and love him all thy days;
-  Then go dwell for -- ev -- er near him,	
-    See his face and sing his praise!	
+  Mayst thou live to know and fear Him,	
+    Trust and love Him all thy days;
+  Then go dwell for -- ev -- er near Him,	
+    See His face and sing His praise!	
    
   I could give thee thou -- sand kiss -- es,	
     Hop -- ing what I most de -- sire;	

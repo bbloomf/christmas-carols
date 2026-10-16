@@ -139,11 +139,11 @@ altoWordsIII = {
   \dropLyricsIX
   \set stanza = \markup\dynamic"mf"
   \lyricmode {
-    %\set vocalName = #"Casper"
+    %\set vocalName = #"Caspar"
     %\set stanza = #"3. "
     \set ignoreMelismata = ##t
     _ _ _ _ 
-    \markup\italic {Casper} _ _ _
+    \markup\italic {Caspar} _ _ _
     \set stanza = #"3. "
     Frank -- in -- cense to of -- fer have I,
     In -- cense owns a De -- i -- ty nigh,

@@ -6,7 +6,7 @@
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"Christmas is Coming"}}
     %subtitle = \markup{\override #'(font-name . "Garamond Premier Pro"){ \abs-fontsize #10.5 "(Three-part Round)"}}
     poet = \markup\oldStyleNum"Traditional"
-    composer = \markup\oldStyleNum"Edith Nesbitt (1858–1924)"
+    composer = \markup\oldStyleNum"Edith Nesbit (1858–1924)"
   }
 \paper {
   print-all-headers = ##f

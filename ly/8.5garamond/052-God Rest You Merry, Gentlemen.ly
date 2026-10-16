@@ -158,7 +158,7 @@ altoWordsII = {
     The shep -- herds at those ti -- dings Re -- joic -- ed much in mind,
     And left their flocks a -- feed -- ing, In tem -- pest, storm, and wind:
     \set ignoreMelismata = ##t
-    And went to Beth -- le -- hem straight way, The Son of God to find.
+    And went to Beth -- le -- hem straight -- way, The Son of God to find.
   }
 }
 altoWordsIII = \lyricmode {

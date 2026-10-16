@@ -228,11 +228,11 @@ altoWordsIII = \lyricmode {
   
   \set associatedVoice = "sopranos"
   Ma -- rí -- a Ma -- rí -- a
-  ve a -- cá vo -- lan -- do que
+  ven a -- cá vo -- lan -- do que
   los pa -- ña -- li -- tos los es -- tán lle -- van -- do.
   
   Ma -- rí -- a Ma -- rí -- a
-  ve a -- cá vo -- lan -- do que
+  ven a -- cá vo -- lan -- do que
   los pa -- ña -- li -- tos los es -- tán lle -- van -- do.
 }
 altoWordsIV = \lyricmode {

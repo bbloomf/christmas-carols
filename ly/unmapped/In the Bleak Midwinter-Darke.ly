@@ -3,7 +3,7 @@
 \version "2.14.2"
 \header {
   title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #15 \smallCapsOldStyle"In the Bleak Midwinter"}}
-  poet = \markup\oldStyleNum"Christina Rosetti (1830–1894)"
+  poet = \markup\oldStyleNum"Christina Rossetti (1830–1894)"
   composer = \markup\oldStyleNum"Harold Darke (1888–1976)"
   tagline = \markup { "from" \italic {cpdl.org}}
 }

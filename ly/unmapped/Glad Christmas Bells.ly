@@ -154,7 +154,7 @@ altoWordsV = \lyricmode {
   “Glo -- ry to Thee for -- ev -- er be,
     God in the high -- est, glo -- ry!
   Good will to men, and peace a -- gain
-    O __ earth is beam -- ing o’er Thee!”
+    O __ earth, is beam -- ing o’er thee!”
 }
 altoWordsVI = \lyricmode {
 }

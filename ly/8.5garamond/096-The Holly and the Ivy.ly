@@ -132,7 +132,7 @@ altoWordsII = \lyricmode {
   \set stanza = #"2."
   \set ignoreMelismata = ##t
   The hol -- ly bears a blos -- som,
-  As white __ _ as the lil -- ly flow’r,
+  As white __ _ as the li -- ly flow’r,
   And _ Ma -- ry bore sweet _ Je -- sus Christ, To __ _ be our sweet Sav -- _ ior:
 }
 altoWordsIII = {

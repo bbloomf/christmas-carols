@@ -102,7 +102,7 @@ altoWords = \lyricmode {
   From heav -- en high I come to you,
   To bring you ti -- dings, strange and true.
   Glad ti -- dings of great joy I bring,
-  Where of I now will say and sing.
+  Where -- of I now will say and sing.
 }
 altoWordsII = \lyricmode {
   \dropLyricsIX

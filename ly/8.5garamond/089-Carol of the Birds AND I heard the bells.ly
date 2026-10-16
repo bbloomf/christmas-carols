@@ -222,7 +222,7 @@ pianoLH = \relative c' {
   \header {
     title = \markup{\override #'(font-name . "Garamond Premier Pro Semibold"){ \abs-fontsize #18 \smallCapsOldStyle"Carol of the Birds"}}
     poet = \markup\oldStyleNum"Traditional"
-    composer = \markup\oldStyleNum"Bas-Quercey Carol"
+    composer = \markup\oldStyleNum"Bas-Quercy Carol"
     tagline = \markup \concat{ "from " \italic"Carols Old and Carols New" \oldStyleNum", 1916, via " \italic"HymnsAndCarolsOfChristmas.com" }
   }
 }

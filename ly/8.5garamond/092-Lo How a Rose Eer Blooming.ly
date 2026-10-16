@@ -485,7 +485,7 @@ altoWordsIV = \lyricmode {
   \set associatedVoice = "tenors"
   True man, yet ve -- ry God, __
   \set associatedVoice = "sopranos"
-  From Sin and death now save us,
+  From sin and death now save us,
   And share our ev -- ’ry load.
 }
 altoWordsV = \lyricmode {
