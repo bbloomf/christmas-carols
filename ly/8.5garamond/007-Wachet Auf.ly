@@ -197,8 +197,7 @@ altoWordsV = \lyricmode {
   To length of days,
   \set associatedVoice = "sopranos"
   The tri -- 
-  \once \override LyricHyphen.minimum-length = #0.7
-  \once \override LyricHyphen.minimum-distance = #0.7
+  \forceHyphen
    umph -- cho -- rus of Thy praise.
 }
 altoWordsVI = \lyricmode {

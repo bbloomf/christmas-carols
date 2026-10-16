@@ -1,6 +1,6 @@
 ﻿\version "2.24.0"
 % Michael's utilities
-
+forceHyphen = { \once \override LyricHyphen.minimum-distance = #0.7 }
 dropLyricsIV = {
   \override LyricText.extra-offset = #'(0 . -0.4)
   \override LyricHyphen.extra-offset = #'(0 . -0.4)

@@ -130,7 +130,7 @@ altoWordsIII = \lyricmode {
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "
-  Hail! the heav’n -- born Prince of peace,
+  Hail! the \forceHyphen heav’n -- born Prince of peace,
   Je -- sus, the Light of the world;
   Hail! the sun of right -- eous -- ness,
   Je -- sus, the Light of the world.
