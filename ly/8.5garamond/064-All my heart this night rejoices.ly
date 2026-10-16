@@ -134,9 +134,9 @@ altoWordsIII = \lyricmode {
 altoWordsIV = \lyricmode {
   \dropLyricsV
   \set stanza = #"4. "
-  Thee, dear Lord, with thee I cher -- ish;
+  Thee, dear Lord, with heed I’ll cher -- ish;
   Live to thee, and with thee, Dy -- ing shall not per -- ish;
-  But shall swell with thee for ev -- er,
+  But shall dwell with thee for ev -- er,
   \set associatedVoice = "sopranos"
   Far on high, in the joy
   \unset associatedVoice

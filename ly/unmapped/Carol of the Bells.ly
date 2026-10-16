@@ -137,7 +137,7 @@ sopWords = \lyricmode {
   Their joy -- ful tone to ev -- ’ry home!
   
   Hark! how the bells, sweet sil -- ver bells
-  All seems to say throw cares a -- way.
+  All seem to say, throw cares a -- way.
 }
 
 altoMusic = \relative c'' {

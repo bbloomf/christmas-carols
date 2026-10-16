@@ -445,7 +445,7 @@ pianoLH = \relative c' {
           "     I need no more to say;"
           "          And for all this"
           "          I will Thee kiss,"
-          "     And sing by by, lullay,”"
+          "     And sing by by, lullay.”"
         }
       }
     }
